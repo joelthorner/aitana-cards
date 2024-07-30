@@ -188,6 +188,12 @@ var DATA = [
     brilli: false,
   },
   {
+    image: "toppschromeshapire.png",
+    search: "Topps Chrome Womens UCL Sapphire 2022/23 - Aitana Bonmati FC Barcelona",
+    status: 'falti',
+    brilli: false,
+  },
+  {
     image: "cm5.png",
     search: "Aitana Bonmatí. Cm-5. Topps",
     status: 'falti',
@@ -209,6 +215,12 @@ var DATA = [
     image: "toppsmerlinviejo.png",
     search: "TOPPS MERLIN HERITAGE 2023 2024 23 24 Carta - 70 Aitana Bonmati Barcelona",
     status: 'falti',
+    brilli: false,
+  },
+  {
+    image: "Topps Focus FC Barcelona 2023-24.png",
+    search: "",
+    status: 'pending',
     brilli: false,
   },
 ];
