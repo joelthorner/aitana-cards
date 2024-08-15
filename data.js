@@ -196,7 +196,7 @@ var DATA = [
   {
     image: "cm5.png",
     search: "Aitana Bonmatí. Cm-5. Topps",
-    status: 'falti',
+    status: 'pending',
     brilli: true,
   },
   {
