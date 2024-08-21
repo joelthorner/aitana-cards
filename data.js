@@ -223,4 +223,28 @@ var DATA = [
     status: 'pending',
     brilli: false,
   },
+  {
+    image: "Topps Platinum UWCL Aitana Bonmatí 2023-24_marcaungol.png",
+    search: "",
+    status: 'tengui',
+    brilli: false,
+  },
+  {
+    image: "Topps Platinum UWCL Aitana Bonmatí 2023-24_ganalauwcl.png",
+    search: "",
+    status: 'tengui',
+    brilli: false,
+  },
+  {
+    image: "Topps Platinum UWCL Aitana Bonmatí 2023-24_pioneras.png",
+    search: "",
+    status: 'tengui',
+    brilli: false,
+  },
+  {
+    image: "Topps Platinum UWCL Aitana Bonmatí 2023-24_playmakers.png",
+    search: "",
+    status: 'tengui',
+    brilli: false,
+  },
 ];
