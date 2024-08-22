@@ -88,7 +88,7 @@ var DATA = [
   {
     image: "toppscromo27foil.png",
     search: "CROMO STICKER TOPPS 27 AITANA BONMATI",
-    status: 'pending',
+    status: 'tengui',
     brilli: true,
   },
   {
@@ -208,7 +208,7 @@ var DATA = [
   {
     image: "putaespanya.png",
     search: "#53 AITANA BONMATI PANINI CARREFOUR ¡VAMOS SELECCION! ESPAÑA",
-    status: 'pending',
+    status: 'tengui',
     brilli: false,
   },
   {
@@ -220,7 +220,7 @@ var DATA = [
   {
     image: "Topps Focus FC Barcelona 2023-24.png",
     search: "",
-    status: 'pending',
+    status: 'tengui',
     brilli: false,
   },
   {
