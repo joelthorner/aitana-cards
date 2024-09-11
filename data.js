@@ -1,4 +1,4 @@
-// status: 'tengui' | 'falti' | 'pending'
+// status: 'tengui' | 'falti' | 'tengui'
 
 var DATA = [
   {
@@ -88,7 +88,7 @@ var DATA = [
   {
     image: "toppscromo27foil.png",
     search: "CROMO STICKER TOPPS 27 AITANA BONMATI",
-    status: 'pending',
+    status: 'tengui',
     brilli: true,
   },
   {
@@ -166,13 +166,13 @@ var DATA = [
   {
     image: "Topps Simplicidad 2022 2023 22 23 Aitana Bonmati - FC Barcelona.png",
     search: "Topps Simplicidad 2022 2023 22 23 Aitana Bonmati - FC Barcelona",
-    status: 'falti',
+    status: 'tengui',
     brilli: false,
   },
   {
     image: "Aitana Bonmati Variation 2022-23 Topps Chrome Sapphire Women's UCL FC BARCELONA.png",
     search: "Aitana Bonmati Variation 2022-23 Topps Chrome Sapphire Women's UCL FC BARCELONA",
-    status: 'falti',
+    status: 'tengui',
     brilli: true,
   },
   {
@@ -184,7 +184,7 @@ var DATA = [
   {
     image: "toppschrome.png",
     search: "FC Barcelona Femenino Topps Chrome Women 2022-2023 22 23 14 Aitana Bonmati - FC Barcelona",
-    status: 'falti',
+    status: 'tengui',
     brilli: false,
   },
   {
@@ -196,7 +196,7 @@ var DATA = [
   {
     image: "cm5.png",
     search: "Aitana Bonmatí. Cm-5. Topps",
-    status: 'pending',
+    status: 'tengui',
     brilli: true,
   },
   {
@@ -208,7 +208,7 @@ var DATA = [
   {
     image: "putaespanya.png",
     search: "#53 AITANA BONMATI PANINI CARREFOUR ¡VAMOS SELECCION! ESPAÑA",
-    status: 'pending',
+    status: 'tengui',
     brilli: false,
   },
   {
@@ -220,7 +220,7 @@ var DATA = [
   {
     image: "Topps Focus FC Barcelona 2023-24.png",
     search: "",
-    status: 'pending',
+    status: 'tengui',
     brilli: false,
   },
   {
