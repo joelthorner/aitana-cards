@@ -1,4 +1,4 @@
-// status: 'tengui' | 'falti' | 'tengui'
+// status: 'tengui' | 'falti' | 'pending'
 
 var DATA = [
   {
@@ -10,7 +10,7 @@ var DATA = [
   {
     image: "AitanaBonmatitoppsrookie15.jpg",
     search: "Aitana Bonmati topps rookie",
-    status: 'falti',
+    status: 'pending',
     brilli: false,
   },
   {
@@ -202,7 +202,7 @@ var DATA = [
   {
     image: "toppsdeco.png",
     search: "Topps DECO UCC 2023 2024 23 24 - Aitana Bonmati - FC Barcelona",
-    status: 'falti',
+    status: 'tengui',
     brilli: false,
   },
   {
@@ -214,7 +214,7 @@ var DATA = [
   {
     image: "toppsmerlinviejo.png",
     search: "TOPPS MERLIN HERITAGE 2023 2024 23 24 Carta - 70 Aitana Bonmati Barcelona",
-    status: 'falti',
+    status: 'tengui',
     brilli: false,
   },
   {
