@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.grid-default-cards {
+  grid-template-columns: repeat(2, 1fr);
+}
