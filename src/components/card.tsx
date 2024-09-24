@@ -52,8 +52,8 @@ export default function Card({ card }: CardProps) {
         <img src={card.image} alt={card.name} />
       </div>
 
-      <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800">{card.name}</h3>
-      <p className="mt-1 text-[10px] leading-tight font-medium uppercase text-gray-400 mb-2">{card.collection.name}</p>
+      <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2">{card.name}</h3>
+      <p className="mt-1 text-[10px] leading-tight font-light uppercase text-gray-400 mb-2 line-clamp-2">{card.collection.name}</p>
 
       <div className="p-2 border-t -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
         <div className="flex items-center gap-1">
