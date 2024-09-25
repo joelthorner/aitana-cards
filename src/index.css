@@ -2,34 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .grid-default-cards {
   grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-item {
-  transition: transform 300ms, opacity 300ms;
-}
-
-.grid-item-enter {
-  transform: scale(0);
-  opacity: 0;
-}
-
-.grid-item-enter-active {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.grid-item-exit {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.grid-item-exit-active {
-  transform: scale(0);
-  opacity: 0;
 }

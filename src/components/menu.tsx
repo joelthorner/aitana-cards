@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
-import { Card as CardType } from "../data/cards";
-import { collections } from "../data/collections";
-import FilterCheck from "./filter-check";
+import CollectionsList from "./menu/collections";
+import RarityFilter from "./menu/rarity-filter";
+import StatusFilter from "./menu/status-filter";
 
-interface MenuProps {
-  // card: CardType;
-}
+export default function Menu() {
+  const collapseBtnClasses = "hs-collapse-toggle h-14 px-4 w-full justify-between items-center text-start flex font-medium";
+  const collapseBtnIcon = (
+    <div className="size-8 flex items-center justify-center hs-collapse-open:rotate-180 transition-transform">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+      </svg>
+    </div>
+  );
 
-export default function Menu({}: MenuProps) {
   return (
     <div
       id="hs-offcanvas-right"
@@ -16,7 +20,7 @@ export default function Menu({}: MenuProps) {
       tabIndex={-1}
       aria-labelledby="hs-offcanvas-right-label"
     >
-      <div className="flex justify-between items-center py-3 px-4 border-b border-b-slate-200">
+      <div className="flex justify-between items-center py-3 px-4 border-b h-14 border-b-slate-200">
         {/* <h3 id="hs-offcanvas-right-label" className="font-bold text-gray-800">
         Offcanvas title
       </h3> */}
@@ -45,105 +49,58 @@ export default function Menu({}: MenuProps) {
         </button>
       </div>
 
-      <div className="">
-        <button
-          type="button"
-          className="hs-collapse-toggle h-12 px-4 border-b border-b-slate-200 w-full justify-between items-center text-start flex"
-          id="collapse-collections"
-          aria-expanded="false"
-          aria-controls="#collapse-collections-heading"
-          data-hs-collapse="#collapse-collections-heading"
-        >
-          Collections {/* ({collections.length}) */}
-          <div className="size-8 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-            </svg>
-          </div>
-        </button>
-        <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
-          <div className="flex flex-col py-2">
-            {collections.map((collection) => (
-              <Link key={collection.id} className="px-4 py-2 text-sm" to={`/collections/` + collection.id}>
-                {collection.name}
-              </Link>
-            ))}
+      <div className="h-[calc(100%-3.5rem)] overflow-y-auto">
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-collections"
+            aria-expanded="false"
+            aria-controls="#collapse-collections-heading"
+            data-hs-collapse="#collapse-collections-heading"
+          >
+            Collections
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
+            <div className="flex flex-col pt-1 pb-6 px-4">
+              <CollectionsList />
+            </div>
           </div>
         </div>
-
-        <button
-          type="button"
-          className="hs-collapse-toggle h-12 px-4 border-b border-b-slate-200 w-full justify-between items-center text-start flex"
-          id="collapse-filter"
-          aria-expanded="false"
-          aria-controls="#collapse-filter-heading"
-          data-hs-collapse="#collapse-filter-heading"
-        >
-          Filter by status
-          <div className="size-8 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-            </svg>
-          </div>
-        </button>
-        <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
-          <div className="flex flex-col py-4 px-4 gap-3">
-            <FilterCheck id="tengui" label="Show tenguis" />
-            <FilterCheck id="falti" label="Show faltis" />
-            <FilterCheck id="pending" label="Show pendings" />
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-filter"
+            aria-expanded="false"
+            aria-controls="#collapse-filter-heading"
+            data-hs-collapse="#collapse-filter-heading"
+          >
+            Filter by status
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex flex-col pt-3 pb-7 px-4 gap-4">
+              <StatusFilter />
+            </div>
           </div>
         </div>
-
-        <button
-          type="button"
-          className="hs-collapse-toggle h-12 px-4 border-b border-b-slate-200 w-full justify-between items-center text-start flex"
-          id="collapse-rarity"
-          aria-expanded="false"
-          aria-controls="#collapse-rarity-heading"
-          data-hs-collapse="#collapse-rarity-heading"
-        >
-          Filter by rarity
-          <div className="size-8 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-            </svg>
-          </div>
-        </button>
-        <div id="collapse-rarity-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
-          <div className="flex flex-col py-4 px-4 gap-3">
-            <div className="flex space-x-4 items-center bg-gray-50 p-4">
-              <div className="flex space-x-2">
-                <button className="border border-gray-300 rounded-lg p-3 flex items-center justify-center flex-col w-12 hover:bg-gray-100">
-                  <span className="text-gray-700">1</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-1 h-5 w-5 text-gray-500">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 17l-5 3 1-5.9L3 10l6-1 2-5 2 5 6 1-4.2 4.1 1 5.9-5-3z" />
-                  </svg>
-                </button>
-                <button className="border border-gray-300 rounded-lg p-3 flex items-center justify-center flex-col w-12 hover:bg-gray-100">
-                  <span className="text-gray-700">2</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-1 h-5 w-5 text-gray-500">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 17l-5 3 1-5.9L3 10l6-1 2-5 2 5 6 1-4.2 4.1 1 5.9-5-3z" />
-                  </svg>
-                </button>
-                <button className="border border-gray-300 rounded-lg p-3 flex items-center justify-center flex-col w-12 hover:bg-gray-100">
-                  <span className="text-gray-700">3</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-1 h-5 w-5 text-gray-500">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 17l-5 3 1-5.9L3 10l6-1 2-5 2 5 6 1-4.2 4.1 1 5.9-5-3z" />
-                  </svg>
-                </button>
-                <button className="border border-gray-300 rounded-lg p-3 flex items-center justify-center flex-col w-12 hover:bg-gray-100">
-                  <span className="text-gray-700">4</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-1 h-5 w-5 text-gray-500">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 17l-5 3 1-5.9L3 10l6-1 2-5 2 5 6 1-4.2 4.1 1 5.9-5-3z" />
-                  </svg>
-                </button>
-                <button className="border border-gray-300 rounded-lg p-3 flex items-center justify-center flex-col w-12 hover:bg-gray-100">
-                  <span className="text-gray-700">5</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-1 h-5 w-5 text-gray-500">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 17l-5 3 1-5.9L3 10l6-1 2-5 2 5 6 1-4.2 4.1 1 5.9-5-3z" />
-                  </svg>
-                </button>
-              </div>
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-rarity"
+            aria-expanded="false"
+            aria-controls="#collapse-rarity-heading"
+            data-hs-collapse="#collapse-rarity-heading"
+          >
+            Filter by rarity
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-rarity-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex pt-2 pb-7 px-4 gap-2 flex-wrap justify-between">
+              <RarityFilter />
             </div>
           </div>
         </div>

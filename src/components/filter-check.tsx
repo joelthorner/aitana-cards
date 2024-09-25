@@ -7,9 +7,14 @@ interface FilterCheckProps {
 }
 
 export default function FilterCheck({ id, label }: FilterCheckProps) {
-  const [checked, setChecked] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
+  const getInitialCheckedState = (): boolean => {
+    const searchParams = new URLSearchParams(location.search);
+    return searchParams.get(id) === "true" || searchParams.get(id) === null;
+  };
+
+  const [checked, setChecked] = useState(getInitialCheckedState());
 
   const handleCheckboxChange = () => {
     const newChecked = !checked;

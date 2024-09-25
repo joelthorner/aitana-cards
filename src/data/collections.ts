@@ -4,6 +4,7 @@ import panini_004743spe3w_0 from "./img/collections/004743spe3w_0.webp";
 import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.png";
 import sL1200_480x from "./img/collections/s-l1200_480x.webp";
+import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
 
 export interface Collection {
   id: string;
@@ -79,10 +80,23 @@ export const ToppsChromeFcBarcelonaMésQueUnClub_2022_23: Collection = {
   ],
 };
 
+export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023',
+  image: barcaWomenSetBoxVisual,
+  name: "Topps FC Barcelona Women Winners Team Set 2023",
+  description: `Introduciendo Topps FC Barcelona Women Winners Set 2023! Una increible colección de 40 cartas presentando las estrellas más grandes de uno de los mejores equipos de fútbol mundial. Este set incluye subsets excitantes como “Road to Glory”, “Winning Moments”, “Rookies”, “Assist Queen”, “Goal Machine” y una carta especial “Captain” de la superestrella Alexia Putellas.`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/topps-fc-barcelona-women-team-set-2023-topps-es',
+    'https://www.topps.com/media/amasty/amfile/attach/Ps9ysBLid2wigcrA2dKluHZplGmx4r5r.pdf',
+  ],
+};
+
 export const collections: Collection[] = [
   FinetworkLigaF_22_23Panini,
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   PaniniFifaWomenSWorldCupFrance_2019,
   ToppsNow,
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  ToppsFcBarcelonaWomenWinnersTeamSet_2023,
 ];

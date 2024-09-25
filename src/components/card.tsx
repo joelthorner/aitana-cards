@@ -1,24 +1,13 @@
 import { Link } from "react-router-dom";
 import { Card as CardType } from "../data/cards";
+import { getStarClassName } from "../utils/getStarClassName";
 
 interface CardProps {
   card: CardType;
 }
 
 export default function Card({ card }: CardProps) {
-  let starClassName = "size-3";
-
-  if (card.rarity >= 0 && card.rarity < 2) {
-    starClassName += " fill-slate-400";
-  } else if (card.rarity === 2) {
-    starClassName += " fill-green-400";
-  } else if (card.rarity === 3) {
-    starClassName += " fill-sky-500";
-  } else if (card.rarity === 4) {
-    starClassName += " fill-purple-600";
-  } else if (card.rarity === 5) {
-    starClassName += " fill-orange-500";
-  }
+  let starClassName = "size-3 " + getStarClassName(card.rarity);
 
   let statusIcon = (
     <>
@@ -49,11 +38,11 @@ export default function Card({ card }: CardProps) {
   return (
     <Link to={"/cards/" + card.id} className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition">
       <div className="w-full aspect-[6/8]">
-        <img src={card.image} alt={card.name} />
+        <img src={card.images[0]} alt={card.name} />
       </div>
 
       <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2">{card.name}</h3>
-      <p className="mt-1 text-[10px] leading-tight font-light uppercase text-gray-400 mb-2 line-clamp-2">{card.collection.name}</p>
+      <p className="mt-1 text-[10px] leading-tight font-medium uppercase text-gray-400 mb-2 line-clamp-2">{card.collection.name}</p>
 
       <div className="p-2 border-t -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
         <div className="flex items-center gap-1">
