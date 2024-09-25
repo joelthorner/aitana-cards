@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CollectionsList from "./menu/collections";
 import RarityFilter from "./menu/rarity-filter";
 import StatusFilter from "./menu/status-filter";
@@ -14,21 +15,21 @@ export default function Menu() {
 
   return (
     <div
-      id="hs-offcanvas-right"
+      id="offcanvas-menu"
       className="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 end-0 transition-all duration-300 transform h-full max-w-xs w-full z-[80] bg-white border-s"
       role="dialog"
       tabIndex={-1}
-      aria-labelledby="hs-offcanvas-right-label"
+      aria-labelledby="offcanvas-menu-label"
     >
       <div className="flex justify-between items-center py-3 px-4 border-b h-14 border-b-slate-200">
-        {/* <h3 id="hs-offcanvas-right-label" className="font-bold text-gray-800">
-        Offcanvas title
-      </h3> */}
+        <h3 id="offcanvas-menu-label" className="font-bold text-gray-800 hidden">
+          Menu
+        </h3>
         <button
           type="button"
           className="ml-auto size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
           aria-label="Close"
-          data-hs-overlay="#hs-offcanvas-right"
+          data-hs-overlay="#offcanvas-menu"
         >
           <span className="sr-only">Close</span>
           <svg
@@ -49,7 +50,7 @@ export default function Menu() {
         </button>
       </div>
 
-      <div className="h-[calc(100%-3.5rem)] overflow-y-auto">
+      <div className="h-[calc(100%-3.5rem)] overflow-y-auto flex flex-col">
         <div className="border-b border-b-slate-200">
           <button
             type="button"
@@ -104,6 +105,19 @@ export default function Menu() {
             </div>
           </div>
         </div>
+
+        <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50">
+          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+            <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
+              Changelog
+            </Link>
+          </li>
+          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+            <a className="text-gray-600 hover:text-blue-600" href="https://github.com/joelthorner" target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

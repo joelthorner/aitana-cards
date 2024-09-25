@@ -1,27 +1,67 @@
-import { Collection, FinetworkLigaF_22_23Panini, PaniniFifaWomenSWorldCupFrance_2019, Topps_21_22UefaWomenSChampionsLeagueChrome, ToppsChromeFcBarcelonaMésQueUnClub_2022_23, ToppsFcBarcelonaWomenWinnersTeamSet_2023, ToppsNow } from "./collections";
+import {
+  Collection,
+  FinetworkLigaF_22_23Panini,
+  PaniniFifaWomenSWorldCupFrance_2019,
+  Topps_21_22UefaWomenSChampionsLeagueChrome,
+  ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  ToppsNow,
+  UefaChampionsLeagueStickerCollection_2023_24
+} from "./collections";
 
 import finetworkLigaF_22_23Panini_128 from "./img/cards/finetwork-liga-f-22-23-panini.png";
 import finetworkLigaF_22_23Panini_322 from "./img/cards/aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15 from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
 import franceWomanWC154 from "./img/cards/154franceWomanWC.png";
+
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "./img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
+import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back from "./img/cards/2023-24-topps-womens-champions-league-now-back.webp";
+import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_2.jpg";
+import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_3.jpg";
+import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_4.jpg";
+
 import aitanaBonmati_7ChromeFcb_22_23 from "./img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
 import aitanaBonmati_57ChromeFcb_22_23 from "./img/cards/aitana-bonmati-57-chrome-fcb-22-23.png";
 import aitanaBonmatiBaseFcbWomenWinners_23Base from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-base.png";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
+
 import toppsNowBrilliantBraceInOpeningGame from "./img/cards/topps-now-brilliant-brace-in-opening-game.png";
+import toppsNowBrilliantBraceInOpeningGame2 from "./img/cards/topps-now-brilliant-brace-in-opening-game-2.webp";
+import toppsNowBrilliantBraceInOpeningGame_back from "./img/cards/topps-now-brilliant-brace-in-opening-game-back.webp";
+
+import toppsNowWondergoalSealsSemiFinalSpot from "./img/cards/topps-now-wondergoal-seals-semi-final-spot.png";
+import toppsNowWondergoalSealsSemiFinalSpot2 from "./img/cards/topps-now-wondergoal-seals-semi-final-spot-2.webp";
+import toppsNowWondergoalSealsSemiFinalSpot_back from "./img/cards/topps-now-wondergoal-seals-semi-final-spot-back.webp";
+import toppsNowWondergoalSealsSemiFinalSpot_purple from "./img/cards/2023-24 Topps - UWCL NOW -016b.jpg";
+import toppsNowWondergoalSealsSemiFinalSpot_black from "./img/cards/2023-24 Topps - UWCL NOW -016c.jpg";
+import toppsNowWondergoalSealsSemiFinalSpot_gold from "./img/cards/2023-24 Topps - UWCL NOW -016d.jpg";
+
+import toppsNowTheDeadlyDuo from "./img/cards/topps-now-the-deadly-duo.png";
+import toppsNowTheDeadlyDuo_back from "./img/cards/Topps-Now-Back-1-2-570x760.png";
+import toppsNowTheDeadlyDuo_purple from "./img/cards/2023-24 Topps - UWCL NOW -022b.jpg";
+import toppsNowTheDeadlyDuo_black from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
+import toppsNowTheDeadlyDuo_gold from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
+
+import toppsNowTheDeadlyDuoDualAutograph from "./img/cards/2023-24 Topps - UWCL NOW -022f_cover.jpg";
+import toppsNowTheDeadlyDuoDualAutograph_purple from "./img/cards/2023-24 Topps - UWCL NOW -022f.jpg";
+import toppsNowTheDeadlyDuoDualAutograph_black from "./img/cards/2023-24 Topps - UWCL NOW -022h.jpg";
+import toppsNowTheDeadlyDuoDualAutograph_red from "./img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
+import toppsNowTheDeadlyDuoDualAutograph_gold from "./img/cards/2023-24 Topps - UWCL NOW -022l.jpg";
+
+import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "./img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.png";
 
 export type Card = {
   id: string,
   images: string[],
   name: string,
-  description: string,
+  description?: string,
   rarity: 1 | 2 | 3 | 4 | 5,
   status: 'falti' | 'tengui' | 'pending',
   collection: Collection,
   searchKey?: string,
   year: number,
   brilli?: 'stars' | 'nose',
+  links?: string[];
 };
 
 export const cards: Card[] = [
@@ -30,6 +70,16 @@ export const cards: Card[] = [
     images: [finetworkLigaF_22_23Panini_128],
     name: 'Aitana Bonmatí - #128',
     description: "Cromo base del equip. Finetwork lliga F temporada 2022-2023",
+    rarity: 1,
+    status: 'tengui',
+    collection: FinetworkLigaF_22_23Panini,
+    year: 2023,
+  },
+  {
+    id: 'finetwork-liga-f-22-23-panini-#322',
+    images: [finetworkLigaF_22_23Panini_322],
+    name: 'F stars Aitana Bonmatí - #322',
+    description: "Cromo de la secció F stars. Finetwork lliga F temporada 2022-2023",
     rarity: 1,
     status: 'tengui',
     collection: FinetworkLigaF_22_23Panini,
@@ -58,7 +108,6 @@ export const cards: Card[] = [
     id: 'paniniFifaWomenSWorldCupFrance_2019Sticker_154',
     images: [franceWomanWC154],
     name: 'Sticker 154: Aitana Bonmatí',
-    description: ``,
     rarity: 1,
     status: 'tengui',
     collection: PaniniFifaWomenSWorldCupFrance_2019,
@@ -67,33 +116,93 @@ export const cards: Card[] = [
   },
   {
     id: '2023ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear',
-    images: [ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023],
+    images: [
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold,
+    ],
     name: '2023 Topps Now Aitana Bonmati UEFA Women\'s Player of the Year',
-    description: ``,
-    rarity: 2,
+    rarity: 1,
     status: 'tengui',
     collection: ToppsNow,
     year: 2023,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
+    ],
   },
   {
     id: 'topps-now-brilliant-brace-in-opening-game',
-    images: [toppsNowBrilliantBraceInOpeningGame],
+    images: [
+      toppsNowBrilliantBraceInOpeningGame,
+      toppsNowBrilliantBraceInOpeningGame2,
+      toppsNowBrilliantBraceInOpeningGame_back,
+    ],
     name: 'Brace in opening game',
     description: "",
-    rarity: 2,
+    rarity: 3,
     status: 'falti',
     collection: ToppsNow,
     year: 2023,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2023/11/topps-topps-now-uefa-womens-champions.html',
+    ]
   },
   {
-    id: 'finetwork-liga-f-22-23-panini-#322',
-    images: [finetworkLigaF_22_23Panini_322],
-    name: 'F stars Aitana Bonmatí - #322',
-    description: "Cromo de la secció F stars. Finetwork lliga F temporada 2022-2023",
+    id: 'topps-now-wondergoal-seals-semi-final-spot',
+    images: [
+      toppsNowWondergoalSealsSemiFinalSpot,
+      toppsNowWondergoalSealsSemiFinalSpot2,
+      toppsNowWondergoalSealsSemiFinalSpot_back,
+      toppsNowWondergoalSealsSemiFinalSpot_purple,
+      toppsNowWondergoalSealsSemiFinalSpot_black,
+      toppsNowWondergoalSealsSemiFinalSpot_gold,
+    ],
+    name: "Wondergoal seal semi-final spot",
+    rarity: 2,
+    status: 'tengui',
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo',
+    images: [
+      toppsNowTheDeadlyDuo,
+      toppsNowTheDeadlyDuo_back,
+      toppsNowTheDeadlyDuo_purple,
+      toppsNowTheDeadlyDuo_black,
+      toppsNowTheDeadlyDuo_gold,
+    ],
+    name: "The deadly duo",
     rarity: 1,
     status: 'tengui',
-    collection: FinetworkLigaF_22_23Panini,
-    year: 2023,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-dual-autograph',
+    images: [
+      toppsNowTheDeadlyDuoDualAutograph,
+      toppsNowTheDeadlyDuoDualAutograph_purple,
+      toppsNowTheDeadlyDuoDualAutograph_black,
+      toppsNowTheDeadlyDuoDualAutograph_red,
+      toppsNowTheDeadlyDuoDualAutograph_gold,
+    ],
+    name: "The deadly duo - Dual Autograph",
+    rarity: 5,
+    status: 'falti',
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
   },
   {
     id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-#7',
@@ -133,6 +242,15 @@ export const cards: Card[] = [
     rarity: 2,
     status: 'falti',
     collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+    year: 2023,
+  },
+  {
+    id: 'aitana-bonmati-2022-23-ucl-team-of-the-season-21',
+    images: [Ucl_23_24UwclTotsStickerAitanaBonmati_8_021],
+    name: 'Team of the Season - #21',
+    rarity: 1,
+    status: 'tengui',
+    collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
   },
 ];

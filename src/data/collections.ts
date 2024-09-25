@@ -5,6 +5,7 @@ import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.png";
 import sL1200_480x from "./img/collections/s-l1200_480x.webp";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
+import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
 
 export interface Collection {
   id: string;
@@ -92,6 +93,17 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
   ],
 };
 
+export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
+  id: 'uefa-champions-league-sticker-collection-2023-24',
+  image: multipack_6Packets_1,
+  name: "UEFA Champions League Sticker Collection 2023/24",
+  description: `La colección de stickers de la UEFA Champions League vuelve esta temporada 2023/204, con los 32 equipos en un mega album de 80 páginas. Con 741 stickers para coleccionar y nuevas categorías como Impact stickers, 'Memories that Stick', Super Stickers y UCL Starball, esta nueva colección emocionará a cada fan. Además, entre las novedades encontrarás Team of the Season 2022/2023, Mega Signings, Vote for the Goat y UEFA Champions League Adidas Starball History. Busca la Golden Parallel 1st Sticker, además de muchas más paralelas que encontrarás en la colección.`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
+  ],
+};
+
 export const collections: Collection[] = [
   FinetworkLigaF_22_23Panini,
   Topps_21_22UefaWomenSChampionsLeagueChrome,
@@ -99,4 +111,5 @@ export const collections: Collection[] = [
   ToppsNow,
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  UefaChampionsLeagueStickerCollection_2023_24,
 ];
