@@ -1,5 +1,11 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
+export enum OrderByEnum {
+  DEFAULT = "default",
+  RARITY = "rarity",
+  YEAR = "year",
+}
+
 export interface RarityType {
   rarity_1: boolean;
   rarity_2: boolean;
@@ -17,14 +23,17 @@ export interface StatusType {
 interface FiltersContextType {
   rarity: RarityType;
   status: StatusType;
+  orderBy: OrderByEnum;
   setRarity: (key: keyof RarityType, value: boolean) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
+  setOrderBy: (value: OrderByEnum) => void;
 }
 
 const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
 
 const LOCAL_STORAGE_RARITY_KEY = "filters_rarity";
 const LOCAL_STORAGE_STATUS_KEY = "filters_status";
+const LOCAL_STORAGE_ORDERBY_KEY = "filters_orderBy";
 
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [rarity, setRarityState] = useState<RarityType>(() => {
@@ -51,6 +60,11 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
         };
   });
 
+  const [orderBy, setOrderByState] = useState<OrderByEnum>(() => {
+    const savedOrderBy = localStorage.getItem(LOCAL_STORAGE_ORDERBY_KEY);
+    return savedOrderBy ? (savedOrderBy as OrderByEnum) : OrderByEnum.DEFAULT;
+  });
+
   const setRarity = (key: keyof RarityType, value: boolean) => {
     setRarityState((prev) => {
       const newRarity = { ...prev, [key]: value };
@@ -67,7 +81,12 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     });
   };
 
-  return <FiltersContext.Provider value={{ rarity, status, setRarity, setStatus }}>{children}</FiltersContext.Provider>;
+  const setOrderBy = (value: OrderByEnum) => {
+    setOrderByState(value);
+    localStorage.setItem(LOCAL_STORAGE_ORDERBY_KEY, value);
+  };
+
+  return <FiltersContext.Provider value={{ rarity, status, orderBy, setRarity, setStatus, setOrderBy }}>{children}</FiltersContext.Provider>;
 };
 
 export const useFiltersContext = () => {

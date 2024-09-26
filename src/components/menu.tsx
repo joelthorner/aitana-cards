@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import CollectionsList from "./menu/collections";
 import RarityFilter from "./menu/rarity-filter";
 import StatusFilter from "./menu/status-filter";
+import { useFiltersContext } from "../providers/filters";
+import OrderBy from "./menu/order-by";
+import { getOrderByShortLabel } from "../utils/getOrderByLabel";
 
 export default function Menu() {
+  const { orderBy } = useFiltersContext();
+
   const collapseBtnClasses = "hs-collapse-toggle h-14 px-4 w-full justify-between items-center text-start flex font-medium";
   const collapseBtnIcon = (
     <div className="size-8 flex items-center justify-center hs-collapse-open:rotate-180 transition-transform">
@@ -105,8 +110,29 @@ export default function Menu() {
             </div>
           </div>
         </div>
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-order-by"
+            aria-expanded="false"
+            aria-controls="#collapse-order-by-heading"
+            data-hs-collapse="#collapse-order-by-heading"
+          >
+            Order by&nbsp;<span className="text-slate-500 mr-auto">{getOrderByShortLabel(orderBy)}</span>
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-order-by-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex flex-col pt-1 pb-6 px-4">
+              <OrderBy />
+            </div>
+          </div>
+        </div>
 
         <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50">
+          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+            <span className="text-gray-600">By joelthorner</span>
+          </li>
           <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
             <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
               Changelog
