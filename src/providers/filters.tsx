@@ -1,0 +1,79 @@
+import React, { createContext, useContext, useState, ReactNode } from "react";
+
+export interface RarityType {
+  rarity_1: boolean;
+  rarity_2: boolean;
+  rarity_3: boolean;
+  rarity_4: boolean;
+  rarity_5: boolean;
+}
+
+export interface StatusType {
+  tengui: boolean;
+  falti: boolean;
+  pending: boolean;
+}
+
+interface FiltersContextType {
+  rarity: RarityType;
+  status: StatusType;
+  setRarity: (key: keyof RarityType, value: boolean) => void;
+  setStatus: (key: keyof StatusType, value: boolean) => void;
+}
+
+const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
+
+const LOCAL_STORAGE_RARITY_KEY = "filters_rarity";
+const LOCAL_STORAGE_STATUS_KEY = "filters_status";
+
+export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [rarity, setRarityState] = useState<RarityType>(() => {
+    const savedRarity = localStorage.getItem(LOCAL_STORAGE_RARITY_KEY);
+    return savedRarity
+      ? JSON.parse(savedRarity)
+      : {
+          rarity_1: true,
+          rarity_2: true,
+          rarity_3: true,
+          rarity_4: true,
+          rarity_5: true,
+        };
+  });
+
+  const [status, setStatusState] = useState<StatusType>(() => {
+    const savedStatus = localStorage.getItem(LOCAL_STORAGE_STATUS_KEY);
+    return savedStatus
+      ? JSON.parse(savedStatus)
+      : {
+          tengui: true,
+          falti: true,
+          pending: true,
+        };
+  });
+
+  const setRarity = (key: keyof RarityType, value: boolean) => {
+    setRarityState((prev) => {
+      const newRarity = { ...prev, [key]: value };
+      localStorage.setItem(LOCAL_STORAGE_RARITY_KEY, JSON.stringify(newRarity));
+      return newRarity;
+    });
+  };
+
+  const setStatus = (key: keyof StatusType, value: boolean) => {
+    setStatusState((prev) => {
+      const newStatus = { ...prev, [key]: value };
+      localStorage.setItem(LOCAL_STORAGE_STATUS_KEY, JSON.stringify(newStatus));
+      return newStatus;
+    });
+  };
+
+  return <FiltersContext.Provider value={{ rarity, status, setRarity, setStatus }}>{children}</FiltersContext.Provider>;
+};
+
+export const useFiltersContext = () => {
+  const context = useContext(FiltersContext);
+  if (!context) {
+    throw new Error("useFiltersContext must be used within a FiltersProvider");
+  }
+  return context;
+};

@@ -8,6 +8,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from "./routes/home";
 import Changelog from "./routes/changelog";
+import { FiltersProvider } from "./providers/filters";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <FiltersProvider>
+      <RouterProvider router={router} />
+    </FiltersProvider>
   </React.StrictMode>
 );
 

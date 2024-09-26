@@ -7,7 +7,7 @@ interface CardProps {
 }
 
 export default function Card({ card }: CardProps) {
-  let starClassName = "size-3 " + getStarClassName(card.rarity);
+  let starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
 
   let statusIcon = (
     <>
