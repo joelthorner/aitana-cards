@@ -6,6 +6,7 @@ import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.png";
 import sL1200_480x from "./img/collections/s-l1200_480x.webp";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
 import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
+import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
 
 export interface Collection {
   id: string;
@@ -93,6 +94,17 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
   ],
 };
 
+export const UefaChampionsLeagueStickerCollection_2022_23: Collection = {
+  id: 'uefa-champions-league-sticker-collection-2022-23',
+  image: comprarUcl_22_23SobreUefaChampionsLeagueBarato,
+  name: "Topps UEFA Champions League 2022-2023",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
+    'http://www.owacgames.com/2022/08/coleccion-cromos-stickers-topps-uefa-champions-league-2022-2023-datos-fotos-listado.html',
+  ],
+};
 export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
   id: 'uefa-champions-league-sticker-collection-2023-24',
   image: multipack_6Packets_1,
@@ -101,6 +113,7 @@ export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
   brand: 'Topps',
   links: [
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
+    'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/',
   ],
 };
 
@@ -111,5 +124,6 @@ export const collections: Collection[] = [
   ToppsNow,
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24,
 ];

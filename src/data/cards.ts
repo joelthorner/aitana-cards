@@ -6,6 +6,7 @@ import {
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   ToppsNow,
+  UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24
 } from "./collections";
 
@@ -49,6 +50,11 @@ import toppsNowTheDeadlyDuoDualAutograph_red from "./img/cards/2023-24 Topps - U
 import toppsNowTheDeadlyDuoDualAutograph_gold from "./img/cards/2023-24 Topps - UWCL NOW -022l.jpg";
 
 import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "./img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.png";
+
+import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.png";
+import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
+
+import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "./img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
 
 export type Card = {
   id: string,
@@ -111,7 +117,6 @@ export const cards: Card[] = [
     rarity: 1,
     status: 'tengui',
     collection: PaniniFifaWomenSWorldCupFrance_2019,
-    searchKey: '',
     year: 2019,
   },
   {
@@ -252,5 +257,37 @@ export const cards: Card[] = [
     status: 'tengui',
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
+    brilli: 'stars',
+  },
+  {
+    id: 'aitana-bonmati-2022-23-uwcl-standout-performers-of-2021-22-21',
+    images: [
+      aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21,
+      aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back,
+    ],
+    name: 'Aitana Bonmatí - #21',
+    description: 'Section 2021/22 UWCL Standout Performers',
+    rarity: 2,
+    status: 'tengui',
+    collection: UefaChampionsLeagueStickerCollection_2022_23,
+    year: 2022,
+    brilli: 'stars',
+    links: [
+      'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/21/',
+    ],
+  },
+  {
+    id: 'aitana-bonmati-2022-23-top-midfieler-2021-22-543',
+    images: [
+      aitanaBonmati_2022_23TopMidfieler_2021_22_543
+    ],
+    name: 'Top midfielder 2021/22 - #543',
+    rarity: 1,
+    status: 'tengui',
+    collection: UefaChampionsLeagueStickerCollection_2022_23,
+    year: 2022,
+    links: [
+      'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
+    ],
   },
 ];
