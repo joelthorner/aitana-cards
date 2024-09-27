@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card as CardType } from "../data/cards";
 import { getStarClassName } from "../utils/getStarClassName";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 
 interface CardProps {
@@ -14,7 +14,8 @@ export default function Card({ card }: CardProps) {
   const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
   const statusIcon = getCardStatusIcon(card.status);
 
-  const [animationFrameId, setAnimationFrameId] = useState<number | null>(null);
+  const animationFrameIdRef = useRef<number | null>(null);
+  const isAnimatingRef = useRef(false);
 
   const initialStyles: any = {
     "--pointer-x": "50%",
@@ -48,65 +49,65 @@ export default function Card({ card }: CardProps) {
     "--translate-y": "0px",
   };
 
-  // Funció per actualitzar les variables CSS
-  const updateCSSVariables = (styles: any) => {
-    if (cardRef.current) {
-      for (const key in styles) {
-        cardRef.current.style.setProperty(key, styles[key]);
+  const animateCSSVariables = (start: any, end: any, duration: number) => {
+    const startTime = performance.now();
+    const totalStyles = Object.keys(start).length;
+
+    const updateVariables = (timestamp: number) => {
+      const elapsedTime = timestamp - startTime;
+      const progress = Math.min(elapsedTime / duration, 1);
+
+      // Actualitza les variables CSS de forma progressiva
+      for (const key in start) {
+        const startValue = parseFloat(start[key]) || 0;
+        const endValue = parseFloat(end[key]) || 0;
+        const unit = end[key].match(/[a-z%]+$/) || ""; // Detecta la unitat (%, px, deg)
+        const interpolatedValue = startValue + (endValue - startValue) * progress;
+
+        if (cardRef.current) {
+          cardRef.current.style.setProperty(key, interpolatedValue + unit);
+        }
       }
-    }
-  };
-
-  // Funció per interpolar entre dos estils mantenint les unitats
-  const interpolateStyles = (start: any, end: any, progress: number) => {
-    const newStyles: any = {};
-    for (const key in start) {
-      const startValue = parseFloat(start[key]);
-      const endValue = parseFloat(end[key]);
-      const unit = start[key].replace(startValue.toString(), ""); // Obtenim la unitat
-      newStyles[key] = startValue + (endValue - startValue) * progress + unit; // Afegim la unitat a l'estil
-    }
-    return newStyles;
-  };
-
-  const animate = (startStyles: any, endStyles: any) => {
-    let startTime: number | null = null;
-    const duration = 1000; // Durada de l'animació
-
-    const step = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      // Actualitza les variables CSS
-      const currentStyles = interpolateStyles(startStyles, endStyles, progress);
-      updateCSSVariables(currentStyles);
 
       if (progress < 1) {
-        // Continua animant
-        setAnimationFrameId(requestAnimationFrame(step));
+        animationFrameIdRef.current = requestAnimationFrame(updateVariables);
       } else {
-        // Inverteix els estils
-        animate(endStyles, startStyles);
+        // Quan arriba al final, inicia la animació inversa si és necessari
+        if (isAnimatingRef.current) {
+          animateCSSVariables(end, start, duration);
+        }
       }
     };
 
-    // Comença l'animació
-    setAnimationFrameId(requestAnimationFrame(step));
+    animationFrameIdRef.current = requestAnimationFrame(updateVariables);
   };
 
   const handleMouseEnter = () => {
-    updateCSSVariables(initialStyles); // Aplica els estils inicials
-    animate(initialStyles, finalStyles); // Comença l'animació
+    if (!isAnimatingRef.current) {
+      isAnimatingRef.current = true;
+      animateCSSVariables(initialStyles, finalStyles, 3000);
+    }
   };
 
   const handleMouseLeave = () => {
-    if (animationFrameId) {
-      cancelAnimationFrame(animationFrameId); // Atura l'animació
-      updateCSSVariables(initialStyles); // Torna a l'estil inicial
-      setAnimationFrameId(null);
+    isAnimatingRef.current = false;
+    if (animationFrameIdRef.current !== null) {
+      cancelAnimationFrame(animationFrameIdRef.current); // Para l'animació
+      animationFrameIdRef.current = null; // Reinicia l'ID
+    }
+    // Retorna a l'estil inicial
+    for (const key in initialStyles) {
+      cardRef.current?.style.setProperty(key, initialStyles[key]);
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (animationFrameIdRef.current !== null) {
+        cancelAnimationFrame(animationFrameIdRef.current); // Assegura't que s'aturi l'animació quan el component es desmonte
+      }
+    };
+  }, []);
 
   return (
     <Link
