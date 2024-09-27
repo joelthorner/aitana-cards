@@ -11,7 +11,10 @@ interface CardProps {
 export default function Card({ card }: CardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const [animationInterval, setAnimationInterval] = useState<NodeJS.Timeout | null>(null);
+  const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
+  const statusIcon = getCardStatusIcon(card.status);
+
+  const [animationFrameId, setAnimationFrameId] = useState<number | null>(null);
 
   const initialStyles: any = {
     "--pointer-x": "50%",
@@ -45,61 +48,72 @@ export default function Card({ card }: CardProps) {
     "--translate-y": "0px",
   };
 
-  const animateCSSVariables = (duration: number = 3000) => {
-    const startTime = performance.now();
-
-    function updateVariables(timestamp: number) {
-      const elapsedTime = timestamp - startTime;
-      const progress = Math.min(elapsedTime / duration, 1);
-
-      for (const key in initialStyles) {
-        const initialValue = parseFloat(initialStyles[key]) || 0;
-        const finalValue = parseFloat(finalStyles[key]) || 0;
-        const unit = finalStyles[key].match(/[a-z%]+$/) || "";
-        const interpolatedValue = initialValue + (finalValue - initialValue) * progress;
-
-        if (cardRef.current) {
-          cardRef.current.style.setProperty(key, interpolatedValue + unit);
-        }
+  // Funció per actualitzar les variables CSS
+  const updateCSSVariables = (styles: any) => {
+    if (cardRef.current) {
+      for (const key in styles) {
+        cardRef.current.style.setProperty(key, styles[key]);
       }
+    }
+  };
+
+  // Funció per interpolar entre dos estils mantenint les unitats
+  const interpolateStyles = (start: any, end: any, progress: number) => {
+    const newStyles: any = {};
+    for (const key in start) {
+      const startValue = parseFloat(start[key]);
+      const endValue = parseFloat(end[key]);
+      const unit = start[key].replace(startValue.toString(), ""); // Obtenim la unitat
+      newStyles[key] = startValue + (endValue - startValue) * progress + unit; // Afegim la unitat a l'estil
+    }
+    return newStyles;
+  };
+
+  const animate = (startStyles: any, endStyles: any) => {
+    let startTime: number | null = null;
+    const duration = 1000; // Durada de l'animació
+
+    const step = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Actualitza les variables CSS
+      const currentStyles = interpolateStyles(startStyles, endStyles, progress);
+      updateCSSVariables(currentStyles);
 
       if (progress < 1) {
-        requestAnimationFrame(updateVariables);
+        // Continua animant
+        setAnimationFrameId(requestAnimationFrame(step));
+      } else {
+        // Inverteix els estils
+        animate(endStyles, startStyles);
       }
-    }
+    };
 
-    requestAnimationFrame(updateVariables);
+    // Comença l'animació
+    setAnimationFrameId(requestAnimationFrame(step));
   };
 
-  const startAnimation = () => {
-    if (!animationInterval) {
-      const interval = setInterval(() => animateCSSVariables(500), 500);
-      setAnimationInterval(interval);
-    }
+  const handleMouseEnter = () => {
+    updateCSSVariables(initialStyles); // Aplica els estils inicials
+    animate(initialStyles, finalStyles); // Comença l'animació
   };
 
-  const stopAnimation = () => {
-    if (animationInterval) {
-      clearInterval(animationInterval);
-      setAnimationInterval(null);
-      // Reset styles to initial
-      Object.keys(initialStyles).forEach((key) => {
-        if (cardRef.current) {
-          cardRef.current.style.setProperty(key, initialStyles[key]);
-        }
-      });
+  const handleMouseLeave = () => {
+    if (animationFrameId) {
+      cancelAnimationFrame(animationFrameId); // Atura l'animació
+      updateCSSVariables(initialStyles); // Torna a l'estil inicial
+      setAnimationFrameId(null);
     }
   };
-
-  const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
-  const statusIcon = getCardStatusIcon(card.status);
 
   return (
     <Link
       to={"/cards/" + card.id}
       className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
-      onMouseEnter={startAnimation}
-      onMouseLeave={stopAnimation}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <div className="w-full aspect-[6/8] relative">
         <div className="card-brilli-default absolute inset-0 z-20" ref={cardRef}></div>
