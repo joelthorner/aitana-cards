@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card as CardType } from "../data/cards";
 import { getStarClassName } from "../utils/getStarClassName";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 
 interface CardProps {
@@ -10,6 +10,8 @@ interface CardProps {
 
 export default function Card({ card }: CardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const [animationInterval, setAnimationInterval] = useState<NodeJS.Timeout | null>(null);
 
   const initialStyles: any = {
     "--pointer-x": "50%",
@@ -43,20 +45,17 @@ export default function Card({ card }: CardProps) {
     "--translate-y": "0px",
   };
 
-  // Funció per animar
-  const animateCSSVariables = function (duration: number = 3000) {
+  const animateCSSVariables = (duration: number = 3000) => {
     const startTime = performance.now();
 
     function updateVariables(timestamp: number) {
       const elapsedTime = timestamp - startTime;
-      const progress = Math.min(elapsedTime / duration, 1); // Assegura't que el valor està entre 0 i 1
+      const progress = Math.min(elapsedTime / duration, 1);
 
-      // Actualitza les variables CSS de forma progressiva
       for (const key in initialStyles) {
         const initialValue = parseFloat(initialStyles[key]) || 0;
         const finalValue = parseFloat(finalStyles[key]) || 0;
-
-        const unit = finalStyles[key].match(/[a-z%]+$/) || ""; // Detecta la unitat (%, px, deg)
+        const unit = finalStyles[key].match(/[a-z%]+$/) || "";
         const interpolatedValue = initialValue + (finalValue - initialValue) * progress;
 
         if (cardRef.current) {
@@ -72,6 +71,26 @@ export default function Card({ card }: CardProps) {
     requestAnimationFrame(updateVariables);
   };
 
+  const startAnimation = () => {
+    if (!animationInterval) {
+      const interval = setInterval(() => animateCSSVariables(500), 500);
+      setAnimationInterval(interval);
+    }
+  };
+
+  const stopAnimation = () => {
+    if (animationInterval) {
+      clearInterval(animationInterval);
+      setAnimationInterval(null);
+      // Reset styles to initial
+      Object.keys(initialStyles).forEach((key) => {
+        if (cardRef.current) {
+          cardRef.current.style.setProperty(key, initialStyles[key]);
+        }
+      });
+    }
+  };
+
   const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
   const statusIcon = getCardStatusIcon(card.status);
 
@@ -79,7 +98,8 @@ export default function Card({ card }: CardProps) {
     <Link
       to={"/cards/" + card.id}
       className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
-      onMouseEnter={() => animateCSSVariables(500)}
+      onMouseEnter={startAnimation}
+      onMouseLeave={stopAnimation}
     >
       <div className="w-full aspect-[6/8] relative">
         <div className="card-brilli-default absolute inset-0 z-20" ref={cardRef}></div>
