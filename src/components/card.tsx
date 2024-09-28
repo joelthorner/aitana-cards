@@ -17,7 +17,7 @@ export default function Card({ card }: CardProps) {
     <Link to={"/cards/" + card.id} className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition">
       <div className="w-full aspect-[6/8] relative">
         <img src={card.images[0]} alt={card.name} />
-        <Holo />
+        {card.brilli && <Holo type={card.brilli} />}
       </div>
 
       <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2">{card.name}</h3>

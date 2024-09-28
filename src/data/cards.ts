@@ -55,7 +55,7 @@ import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/card
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
 
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "./img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
-import { Card, CardStatus } from "../types/card";
+import { Card, CardBrilli, CardStatus } from "../types/card";
 
 export const cards: Card[] = [
   {
@@ -244,7 +244,7 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
-    brilli: 'stars',
+    brilli: CardBrilli.Default,
   },
   {
     id: 'aitana-bonmati-2022-23-uwcl-standout-performers-of-2021-22-21',
@@ -258,7 +258,7 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2022_23,
     year: 2022,
-    brilli: 'stars',
+    brilli: CardBrilli.Default,
     links: [
       'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/21/',
     ],

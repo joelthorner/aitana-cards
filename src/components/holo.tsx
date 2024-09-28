@@ -1,7 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { useMouseGyro } from "../providers/mouse-gyro";
+import { CardBrilli } from "../types/card";
 
-export default function Holo() {
+interface HoloProps {
+  type: CardBrilli;
+}
+
+export default function Holo({ type }: HoloProps) {
+  // TODO: implement type
+
   const { mouseX, mouseY, alpha, beta, gamma } = useMouseGyro();
 
   const holographicElement = useRef<HTMLDivElement | null>(null);

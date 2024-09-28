@@ -3,7 +3,12 @@ import { Collection } from "../data/collections";
 export enum CardStatus {
   Falti = 'falti',
   Tengui = 'tengui',
-  Pending = 'pending'
+  Pending = 'pending',
+};
+
+export enum CardBrilli {
+  Default = 'default',
+  Stars = 'stars',
 };
 
 export type Card = {
@@ -16,6 +21,6 @@ export type Card = {
   collection: Collection,
   searchKey?: string,
   year: number,
-  brilli?: 'stars' | 'nose',
+  brilli?: CardBrilli,
   links?: string[];
 };
