@@ -9,7 +9,7 @@ export const getOrderByLabel = (orderBy: OrderByEnum): string => {
     case OrderByEnum.YEAR:
       return "Newest to oldest";
     case OrderByEnum.COLLECTION:
-      return "Grouped by collection";
+      return "Collection A-Z";
     default:
       return "???";
   }
