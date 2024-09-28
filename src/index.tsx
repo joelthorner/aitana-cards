@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <Changelog />,
       },
       {
+        path: "cards",
+        element: <Home />,
+      },
+      {
         path: "cards/:cardId",
         element: <CardDetail />,
       },
