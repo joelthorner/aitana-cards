@@ -1,7 +1,8 @@
-import { Card as CardType, cards } from "../data/cards";
+import { cards } from "../data/cards";
 import Card from "../components/card";
 import { useEffect, useState } from "react";
 import { OrderByEnum, useFiltersContext } from "../providers/filters";
+import { CardStatus, Card as CardType } from "../types/card";
 
 export default function Home() {
   const [filteredCards, setFilteredCards] = useState(cards);
@@ -14,9 +15,9 @@ export default function Home() {
         matchesFalti = false,
         matchesPending = false;
 
-      if (status.tengui) matchesTengui = card.status === "tengui";
-      if (status.falti) matchesFalti = card.status === "falti";
-      if (status.pending) matchesPending = card.status === "pending";
+      if (status[CardStatus.Tengui]) matchesTengui = card.status === CardStatus.Tengui;
+      if (status[CardStatus.Falti]) matchesFalti = card.status === CardStatus.Falti;
+      if (status[CardStatus.Pending]) matchesPending = card.status === CardStatus.Pending;
 
       let matchesRarity1 = false,
         matchesRarity2 = false,

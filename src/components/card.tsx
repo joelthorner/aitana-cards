@@ -1,124 +1,23 @@
 import { Link } from "react-router-dom";
-import { Card as CardType } from "../data/cards";
 import { getStarClassName } from "../utils/getStarClassName";
-import { useEffect, useRef, useState } from "react";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
+import Holo from "./holo";
+import { Card as CardType } from "../types/card";
 
 interface CardProps {
   card: CardType;
 }
 
 export default function Card({ card }: CardProps) {
-  const cardRef = useRef<HTMLDivElement>(null);
-
   const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
+
   const statusIcon = getCardStatusIcon(card.status);
 
-  const animationFrameIdRef = useRef<number | null>(null);
-  const isAnimatingRef = useRef(false);
-
-  const initialStyles: any = {
-    "--pointer-x": "50%",
-    "--pointer-y": "50%",
-    "--pointer-from-center": "0",
-    "--pointer-from-top": "0.5",
-    "--pointer-from-left": "0.5",
-    "--card-opacity": "0",
-    "--rotate-x": "0deg",
-    "--rotate-y": "0deg",
-    "--background-x": "50%",
-    "--background-y": "50%",
-    "--card-scale": "1",
-    "--translate-x": "0px",
-    "--translate-y": "0px",
-  };
-
-  const finalStyles: any = {
-    "--pointer-x": "14.164%",
-    "--pointer-y": "8.499%",
-    "--pointer-from-center": "1",
-    "--pointer-from-top": "0.08499000000000001",
-    "--pointer-from-left": "0.14164",
-    "--card-opacity": "1",
-    "--rotate-x": "10.239deg",
-    "--rotate-y": "-20.75deg",
-    "--background-x": "40.683%",
-    "--background-y": "35.89%",
-    "--card-scale": "1",
-    "--translate-x": "0px",
-    "--translate-y": "0px",
-  };
-
-  const animateCSSVariables = (start: any, end: any, duration: number) => {
-    const startTime = performance.now();
-    const totalStyles = Object.keys(start).length;
-
-    const updateVariables = (timestamp: number) => {
-      const elapsedTime = timestamp - startTime;
-      const progress = Math.min(elapsedTime / duration, 1);
-
-      // Actualitza les variables CSS de forma progressiva
-      for (const key in start) {
-        const startValue = parseFloat(start[key]) || 0;
-        const endValue = parseFloat(end[key]) || 0;
-        const unit = end[key].match(/[a-z%]+$/) || ""; // Detecta la unitat (%, px, deg)
-        const interpolatedValue = startValue + (endValue - startValue) * progress;
-
-        if (cardRef.current) {
-          cardRef.current.style.setProperty(key, interpolatedValue + unit);
-        }
-      }
-
-      if (progress < 1) {
-        animationFrameIdRef.current = requestAnimationFrame(updateVariables);
-      } else {
-        // Quan arriba al final, inicia la animació inversa si és necessari
-        if (isAnimatingRef.current) {
-          animateCSSVariables(end, start, duration);
-        }
-      }
-    };
-
-    animationFrameIdRef.current = requestAnimationFrame(updateVariables);
-  };
-
-  const handleMouseEnter = () => {
-    if (!isAnimatingRef.current) {
-      isAnimatingRef.current = true;
-      animateCSSVariables(initialStyles, finalStyles, 3000);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    isAnimatingRef.current = false;
-    if (animationFrameIdRef.current !== null) {
-      cancelAnimationFrame(animationFrameIdRef.current); // Para l'animació
-      animationFrameIdRef.current = null; // Reinicia l'ID
-    }
-    // Retorna a l'estil inicial
-    for (const key in initialStyles) {
-      cardRef.current?.style.setProperty(key, initialStyles[key]);
-    }
-  };
-
-  useEffect(() => {
-    return () => {
-      if (animationFrameIdRef.current !== null) {
-        cancelAnimationFrame(animationFrameIdRef.current); // Assegura't que s'aturi l'animació quan el component es desmonte
-      }
-    };
-  }, []);
-
   return (
-    <Link
-      to={"/cards/" + card.id}
-      className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <Link to={"/cards/" + card.id} className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition">
       <div className="w-full aspect-[6/8] relative">
-        <div className="card-brilli-default absolute inset-0 z-20" ref={cardRef}></div>
         <img src={card.images[0]} alt={card.name} />
+        <Holo />
       </div>
 
       <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2">{card.name}</h3>

@@ -1,7 +1,8 @@
 import { StatusType, useFiltersContext } from "../providers/filters";
+import { CardStatus } from "../types/card";
 
 interface FilterCheckProps {
-  id: "pending" | "falti" | "tengui";
+  id: CardStatus;
   label: string;
 }
 

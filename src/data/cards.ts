@@ -55,20 +55,7 @@ import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/card
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
 
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "./img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
-
-export type Card = {
-  id: string,
-  images: string[],
-  name: string,
-  description?: string,
-  rarity: 1 | 2 | 3 | 4 | 5,
-  status: 'falti' | 'tengui' | 'pending',
-  collection: Collection,
-  searchKey?: string,
-  year: number,
-  brilli?: 'stars' | 'nose',
-  links?: string[];
-};
+import { Card, CardStatus } from "../types/card";
 
 export const cards: Card[] = [
   {
@@ -77,7 +64,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - #128',
     description: "Cromo base del equip. Finetwork lliga F temporada 2022-2023",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: FinetworkLigaF_22_23Panini,
     year: 2023,
   },
@@ -87,7 +74,7 @@ export const cards: Card[] = [
     name: 'F stars Aitana Bonmatí - #322',
     description: "Cromo de la secció F stars. Finetwork lliga F temporada 2022-2023",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: FinetworkLigaF_22_23Panini,
     year: 2023,
   },
@@ -106,7 +93,7 @@ export const cards: Card[] = [
 - Red Refractor - #/5
 - SuperFractor - 1/1`,
     rarity: 2,
-    status: 'pending',
+    status: CardStatus.Pending,
     collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
     year: 2022,
   },
@@ -115,7 +102,7 @@ export const cards: Card[] = [
     images: [franceWomanWC154],
     name: 'Sticker 154: Aitana Bonmatí',
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: PaniniFifaWomenSWorldCupFrance_2019,
     year: 2019,
   },
@@ -130,7 +117,7 @@ export const cards: Card[] = [
     ],
     name: '2023 Topps Now Aitana Bonmati UEFA Women\'s Player of the Year',
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsNow,
     year: 2023,
     links: [
@@ -147,7 +134,7 @@ export const cards: Card[] = [
     name: 'Brace in opening game',
     description: "",
     rarity: 3,
-    status: 'falti',
+    status: CardStatus.Falti,
     collection: ToppsNow,
     year: 2023,
     links: [
@@ -166,7 +153,7 @@ export const cards: Card[] = [
     ],
     name: "Wondergoal seal semi-final spot",
     rarity: 2,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsNow,
     year: 2024,
     links: [
@@ -184,7 +171,7 @@ export const cards: Card[] = [
     ],
     name: "The deadly duo",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsNow,
     year: 2024,
     links: [
@@ -202,7 +189,7 @@ export const cards: Card[] = [
     ],
     name: "The deadly duo - Dual Autograph",
     rarity: 5,
-    status: 'falti',
+    status: CardStatus.Falti,
     collection: ToppsNow,
     year: 2024,
     links: [
@@ -215,7 +202,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - #7',
     description: "",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
     year: 2023,
   },
@@ -225,7 +212,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - #57',
     description: "",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
     year: 2023,
   },
@@ -235,7 +222,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - Base',
     description: "Carta base de la colecció. Hi han variants.",
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
     year: 2023,
   },
@@ -245,7 +232,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - Assist queen',
     description: "Carta base de la colecció. Hi han variants.",
     rarity: 2,
-    status: 'falti',
+    status: CardStatus.Falti,
     collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
     year: 2023,
   },
@@ -254,7 +241,7 @@ export const cards: Card[] = [
     images: [Ucl_23_24UwclTotsStickerAitanaBonmati_8_021],
     name: 'Team of the Season - #21',
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
     brilli: 'stars',
@@ -268,7 +255,7 @@ export const cards: Card[] = [
     name: 'Aitana Bonmatí - #21',
     description: 'Section 2021/22 UWCL Standout Performers',
     rarity: 2,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2022_23,
     year: 2022,
     brilli: 'stars',
@@ -283,7 +270,7 @@ export const cards: Card[] = [
     ],
     name: 'Top midfielder 2021/22 - #543',
     rarity: 1,
-    status: 'tengui',
+    status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2022_23,
     year: 2022,
     links: [

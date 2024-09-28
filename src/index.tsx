@@ -9,6 +9,7 @@ import ErrorPage from "./error-page";
 import Home from "./routes/home";
 import Changelog from "./routes/changelog";
 import { FiltersProvider } from "./providers/filters";
+import { MouseGyroProvider } from "./providers/mouse-gyro";
 
 const router = createBrowserRouter([
   {
@@ -35,9 +36,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <FiltersProvider>
-      <RouterProvider router={router} />
-    </FiltersProvider>
+    <MouseGyroProvider>
+      <FiltersProvider>
+        <RouterProvider router={router} />
+      </FiltersProvider>
+    </MouseGyroProvider>
   </React.StrictMode>
 );
 

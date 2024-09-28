@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
+import { CardStatus } from "../types/card";
 
 export enum OrderByEnum {
   DEFAULT = "default",
@@ -15,9 +16,9 @@ export interface RarityType {
 }
 
 export interface StatusType {
-  tengui: boolean;
-  falti: boolean;
-  pending: boolean;
+  [CardStatus.Tengui]: boolean;
+  [CardStatus.Falti]: boolean;
+  [CardStatus.Pending]: boolean;
 }
 
 interface FiltersContextType {
@@ -54,9 +55,9 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     return savedStatus
       ? JSON.parse(savedStatus)
       : {
-          tengui: true,
-          falti: true,
-          pending: true,
+          [CardStatus.Tengui]: true,
+          [CardStatus.Falti]: true,
+          [CardStatus.Pending]: true,
         };
   });
 
