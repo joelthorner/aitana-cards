@@ -1,3 +1,4 @@
+import { Card, CardBrilli, CardStatus } from "../types/card";
 import {
   FinetworkLigaF_22_23Panini,
   PaniniFifaWomenSWorldCupFrance_2019,
@@ -54,7 +55,7 @@ import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/card
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
 
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "./img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
-import { Card, CardBrilli, CardStatus } from "../types/card";
+import Ucl_23_24UwclTotsStickerAitanaBonmati_8_027 from "./img/cards/ucl-23-24-uwcl-tots-sticker-aitana-bonmati-8-027.png";
 
 export const cards: Card[] = [
   {
@@ -244,6 +245,23 @@ export const cards: Card[] = [
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
     brilli: CardBrilli.Default,
+    links: [
+      'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/21/',
+    ],
+  },
+  {
+    id: 'aitana-bonmati-2022-23-ucl-team-of-the-season-27',
+    images: [Ucl_23_24UwclTotsStickerAitanaBonmati_8_027],
+    name: 'Aitana Bonmatí - #27',
+    description: 'Section 2022/23 UWCL Player of the Season',
+    rarity: 1,
+    status: CardStatus.Tengui,
+    collection: UefaChampionsLeagueStickerCollection_2023_24,
+    year: 2023,
+    brilli: CardBrilli.Default,
+    links: [
+      'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/27/',
+    ],
   },
   {
     id: 'aitana-bonmati-2022-23-uwcl-standout-performers-of-2021-22-21',
