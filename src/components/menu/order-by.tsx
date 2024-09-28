@@ -25,6 +25,11 @@ export default function OrderBy() {
           {getOrderByLabel(OrderByEnum.YEAR)}
         </button>
       </li>
+      <li>
+        <button className={getButtonClass(OrderByEnum.COLLECTION)} type="button" onClick={() => setOrderBy(OrderByEnum.COLLECTION)}>
+          {getOrderByLabel(OrderByEnum.COLLECTION)}
+        </button>
+      </li>
     </ul>
   );
 }

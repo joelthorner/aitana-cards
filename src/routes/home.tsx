@@ -45,6 +45,8 @@ export default function Home() {
       newOrderedCards.sort((a, b) => b.year - a.year);
     } else if (orderBy === OrderByEnum.RARITY) {
       newOrderedCards.sort((a, b) => b.rarity - a.rarity);
+    } else if (orderBy === OrderByEnum.COLLECTION) {
+      newOrderedCards.sort((a, b) => a.collection.id.localeCompare(b.collection.id));
     }
 
     setFilteredCards(newOrderedCards);

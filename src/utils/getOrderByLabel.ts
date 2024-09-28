@@ -8,8 +8,10 @@ export const getOrderByLabel = (orderBy: OrderByEnum): string => {
       return "Highest to lowest rarity";
     case OrderByEnum.YEAR:
       return "Newest to oldest";
+    case OrderByEnum.COLLECTION:
+      return "Grouped by collection";
     default:
-      return "Ordre desconegut";
+      return "???";
   }
 };
 export const getOrderByShortLabel = (orderBy: OrderByEnum): string => {
@@ -20,7 +22,9 @@ export const getOrderByShortLabel = (orderBy: OrderByEnum): string => {
       return "rarity";
     case OrderByEnum.YEAR:
       return "year";
+    case OrderByEnum.COLLECTION:
+      return "collection";
     default:
-      return "Ordre desconegut";
+      return "???";
   }
 };

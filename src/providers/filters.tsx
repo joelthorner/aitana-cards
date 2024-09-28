@@ -5,6 +5,7 @@ export enum OrderByEnum {
   DEFAULT = "default",
   RARITY = "rarity",
   YEAR = "year",
+  COLLECTION = "collection",
 }
 
 export interface RarityType {
