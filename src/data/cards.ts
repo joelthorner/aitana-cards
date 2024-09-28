@@ -1,5 +1,4 @@
 import {
-  Collection,
   FinetworkLigaF_22_23Panini,
   PaniniFifaWomenSWorldCupFrance_2019,
   Topps_21_22UefaWomenSChampionsLeagueChrome,

@@ -1,3 +1,4 @@
+import { Collection } from "../types/collection";
 
 import uclw_fgc4624h_box_21_22 from "./img/collections/22uclw_fgc4624h_box.png";
 import panini_004743spe3w_0 from "./img/collections/004743spe3w_0.webp";
@@ -7,15 +8,6 @@ import sL1200_480x from "./img/collections/s-l1200_480x.webp";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
 import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
 import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
-
-export interface Collection {
-  id: string;
-  image: string;
-  name: string;
-  description: string;
-  brand: string;
-  links: string[];
-};
 
 export const FinetworkLigaF_22_23Panini: Collection = {
   id: 'finetwork-liga-f-22-23-panini',

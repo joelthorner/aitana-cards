@@ -1,4 +1,4 @@
-import { Collection } from "../data/collections";
+import { Collection } from "./collection";
 
 export enum CardStatus {
   Falti = 'falti',
