@@ -10,6 +10,7 @@ import Home from "./routes/home";
 import Changelog from "./routes/changelog";
 import { FiltersProvider } from "./providers/filters";
 import { MouseGyroProvider } from "./providers/mouse-gyro";
+import CardDetail from "./routes/card-detail";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +26,10 @@ const router = createBrowserRouter([
         path: "changelog",
         element: <Changelog />,
       },
-      // {
-      //   path: "contacts/:contactId",
-      //   element: <Contact />,
-      // },
+      {
+        path: "cards/:cardId",
+        element: <CardDetail />,
+      },
     ],
   },
 ]);

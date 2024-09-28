@@ -58,7 +58,7 @@ import { Card, CardBrilli, CardStatus } from "../types/card";
 
 export const cards: Card[] = [
   {
-    id: 'finetwork-liga-f-22-23-panini-#128',
+    id: 'finetwork-liga-f-22-23-panini-n128',
     images: [finetworkLigaF_22_23Panini_128],
     name: 'Aitana Bonmatí - #128',
     description: "Cromo base del equip. Finetwork lliga F temporada 2022-2023",
@@ -68,7 +68,7 @@ export const cards: Card[] = [
     year: 2023,
   },
   {
-    id: 'finetwork-liga-f-22-23-panini-#322',
+    id: 'finetwork-liga-f-22-23-panini-n322',
     images: [finetworkLigaF_22_23Panini_322],
     name: 'F stars Aitana Bonmatí - #322',
     description: "Cromo de la secció F stars. Finetwork lliga F temporada 2022-2023",
@@ -78,7 +78,7 @@ export const cards: Card[] = [
     year: 2023,
   },
   {
-    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-#15',
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15',
     images: [uwcl_21_22ToppsChromeBaseRcRookie_15],
     name: 'Topps Chrome UWCL #15 RC Rookie Base',
     description: `#2021-22 Topps Chrome UEFA Women's Base Refractor Parallels Breakdown
@@ -196,7 +196,7 @@ export const cards: Card[] = [
     ],
   },
   {
-    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-#7',
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-n7',
     images: [aitanaBonmati_7ChromeFcb_22_23],
     name: 'Aitana Bonmatí - #7',
     description: "",
@@ -206,7 +206,7 @@ export const cards: Card[] = [
     year: 2023,
   },
   {
-    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-#57',
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-n57',
     images: [aitanaBonmati_57ChromeFcb_22_23],
     name: 'Aitana Bonmatí - #57',
     description: "",
