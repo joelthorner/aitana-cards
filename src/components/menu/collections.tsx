@@ -1,14 +1,38 @@
-import { Link } from "react-router-dom";
-import { collections } from "../../data/collections";
+import { useState } from "react";
+import { collections as collectionsData } from "../../data/collections";
+import { useFiltersContext } from "../../providers/filters";
 
 export default function CollectionsList() {
+  const { collections, setCollections } = useFiltersContext();
+
+  const [selectedCollections, setSelectedCollections] = useState<string[]>(collections || []);
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = event.target;
+
+    const updatedCollections = checked ? [...selectedCollections, value] : selectedCollections.filter((id) => id !== value);
+
+    setSelectedCollections(updatedCollections);
+    setCollections(updatedCollections);
+  };
+
   return (
-    <ul className="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600">
-      {collections.map((collection) => (
+    <ul className="space-y-2 text-sm text-gray-600">
+      {collectionsData.map((collection) => (
         <li key={collection.id}>
-          <Link className="text-sm text-slate-600 hover:text-blue-600" to={`/collections/` + collection.id}>
-            {collection.name}
-          </Link>
+          <div className="flex">
+            <input
+              type="checkbox"
+              className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+              id={`hs-${collection.id}-checkbox`}
+              value={collection.id}
+              checked={selectedCollections.includes(collection.id)}
+              onChange={handleCheckboxChange}
+            />
+            <label htmlFor={`hs-${collection.id}-checkbox`} className="text-sm text-gray-500 ms-3">
+              {collection.name}
+            </label>
+          </div>
         </li>
       ))}
     </ul>

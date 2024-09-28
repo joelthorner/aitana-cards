@@ -7,7 +7,7 @@ import { CardStatus, Card as CardType } from "../types/card";
 export default function Home() {
   const [filteredCards, setFilteredCards] = useState(cards);
 
-  const { status, rarity, orderBy } = useFiltersContext();
+  const { status, rarity, orderBy, collections } = useFiltersContext();
 
   useEffect(() => {
     const newFilteredCards = cards.filter((card: CardType) => {
@@ -31,7 +31,13 @@ export default function Home() {
       if (rarity["rarity_4"]) matchesRarity4 = card.rarity === 4;
       if (rarity["rarity_5"]) matchesRarity5 = card.rarity === 5;
 
-      return (matchesTengui || matchesFalti || matchesPending) && (matchesRarity1 || matchesRarity2 || matchesRarity3 || matchesRarity4 || matchesRarity5);
+      let matchesCollection = false;
+
+      if (collections.includes(card.collection.id) || collections.length === 0) {
+        matchesCollection = true;
+      }
+
+      return matchesCollection && (matchesTengui || matchesFalti || matchesPending) && (matchesRarity1 || matchesRarity2 || matchesRarity3 || matchesRarity4 || matchesRarity5);
     });
 
     let newOrderedCards = newFilteredCards;
@@ -42,7 +48,7 @@ export default function Home() {
     }
 
     setFilteredCards(newOrderedCards);
-  }, [status, rarity, orderBy]);
+  }, [status, rarity, orderBy, collections]);
 
   return (
     <div className="grid grid-default-cards gap-x-2 gap-y-4">

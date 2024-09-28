@@ -65,7 +65,7 @@ export default function Menu() {
             aria-controls="#collapse-collections-heading"
             data-hs-collapse="#collapse-collections-heading"
           >
-            Collections
+            Collection
             {collapseBtnIcon}
           </button>
           <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
@@ -83,7 +83,7 @@ export default function Menu() {
             aria-controls="#collapse-filter-heading"
             data-hs-collapse="#collapse-filter-heading"
           >
-            Filter by status
+            Status
             {collapseBtnIcon}
           </button>
           <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
@@ -101,7 +101,7 @@ export default function Menu() {
             aria-controls="#collapse-rarity-heading"
             data-hs-collapse="#collapse-rarity-heading"
           >
-            Filter by rarity
+            Rarity
             {collapseBtnIcon}
           </button>
           <div id="collapse-rarity-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
