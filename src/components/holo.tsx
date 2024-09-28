@@ -7,8 +7,6 @@ interface HoloProps {
 }
 
 export default function Holo({ type }: HoloProps) {
-  // TODO: implement type
-
   const { mouseX, mouseY, alpha, beta, gamma } = useMouseGyro();
 
   const holographicElement = useRef<HTMLDivElement | null>(null);
@@ -82,7 +80,7 @@ export default function Holo({ type }: HoloProps) {
         <br />
         {holographicElement.current && holographicElement.current.style.backgroundPosition}
       </div> */}
-      <div className="absolute inset-0 z-20 holo" ref={holographicElement}></div>
+      <div className={`absolute inset-0 z-20 effect-${type}`} ref={holographicElement}></div>
     </>
   );
 }

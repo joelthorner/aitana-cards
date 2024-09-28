@@ -7,9 +7,9 @@ export enum CardStatus {
 };
 
 export enum CardBrilli {
-  Default = 'default',
-  // Stars = 'stars',
-  Gold = 'gold',
+  ShinyHolo = 'shinyHolo',
+  Holo = 'holo',
+  GoldFoil = 'goldFoil',
 };
 
 export type Card = {

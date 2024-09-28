@@ -1,6 +1,7 @@
 import { Card, CardBrilli, CardStatus } from "../types/card";
 import {
   FinetworkLigaF_22_23Panini,
+  LigaF_22_23Panini,
   PaniniFifaWomenSWorldCupFrance_2019,
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
@@ -14,48 +15,42 @@ import finetworkLigaF_22_23Panini_128 from "./img/cards/finetwork-liga-f-22-23-p
 import finetworkLigaF_22_23Panini_322 from "./img/cards/aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15 from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
 import franceWomanWC154 from "./img/cards/154franceWomanWC.png";
-
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "./img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back from "./img/cards/2023-24-topps-womens-champions-league-now-back.webp";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_2.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_3.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_4.jpg";
-
 import aitanaBonmati_7ChromeFcb_22_23 from "./img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
 import aitanaBonmati_57ChromeFcb_22_23 from "./img/cards/aitana-bonmati-57-chrome-fcb-22-23.png";
 import aitanaBonmatiBaseFcbWomenWinners_23Base from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-base.png";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
-
 import toppsNowBrilliantBraceInOpeningGame from "./img/cards/topps-now-brilliant-brace-in-opening-game.png";
 import toppsNowBrilliantBraceInOpeningGame2 from "./img/cards/topps-now-brilliant-brace-in-opening-game-2.webp";
 import toppsNowBrilliantBraceInOpeningGame_back from "./img/cards/topps-now-brilliant-brace-in-opening-game-back.webp";
-
 import toppsNowWondergoalSealsSemiFinalSpot from "./img/cards/topps-now-wondergoal-seals-semi-final-spot.png";
 import toppsNowWondergoalSealsSemiFinalSpot2 from "./img/cards/topps-now-wondergoal-seals-semi-final-spot-2.webp";
 import toppsNowWondergoalSealsSemiFinalSpot_back from "./img/cards/topps-now-wondergoal-seals-semi-final-spot-back.webp";
 import toppsNowWondergoalSealsSemiFinalSpot_purple from "./img/cards/2023-24 Topps - UWCL NOW -016b.jpg";
 import toppsNowWondergoalSealsSemiFinalSpot_black from "./img/cards/2023-24 Topps - UWCL NOW -016c.jpg";
 import toppsNowWondergoalSealsSemiFinalSpot_gold from "./img/cards/2023-24 Topps - UWCL NOW -016d.jpg";
-
 import toppsNowTheDeadlyDuo from "./img/cards/topps-now-the-deadly-duo.png";
 import toppsNowTheDeadlyDuo_back from "./img/cards/Topps-Now-Back-1-2-570x760.png";
 import toppsNowTheDeadlyDuo_purple from "./img/cards/2023-24 Topps - UWCL NOW -022b.jpg";
 import toppsNowTheDeadlyDuo_black from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
 import toppsNowTheDeadlyDuo_gold from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
-
 import toppsNowTheDeadlyDuoDualAutograph from "./img/cards/2023-24 Topps - UWCL NOW -022f_cover.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_purple from "./img/cards/2023-24 Topps - UWCL NOW -022f.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_black from "./img/cards/2023-24 Topps - UWCL NOW -022h.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_red from "./img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_gold from "./img/cards/2023-24 Topps - UWCL NOW -022l.jpg";
-
 import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "./img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.png";
-
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.png";
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
-
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "./img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
 import Ucl_23_24UwclTotsStickerAitanaBonmati_8_027 from "./img/cards/ucl-23-24-uwcl-tots-sticker-aitana-bonmati-8-027.png";
+import ligaFPremium from './img/cards/ligaFPremium.png';
+import ligaF2324_55 from './img/cards/ligaF2324.png';
+import ligaf2324onfire from './img/cards/ligaf2324onfire.jpg';
 
 export const cards: Card[] = [
   {
@@ -244,7 +239,7 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
-    brilli: CardBrilli.Default,
+    brilli: CardBrilli.ShinyHolo,
     links: [
       'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/21/',
     ],
@@ -258,7 +253,7 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2023_24,
     year: 2023,
-    brilli: CardBrilli.Default,
+    brilli: CardBrilli.ShinyHolo,
     links: [
       'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/27/',
     ],
@@ -275,7 +270,7 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: UefaChampionsLeagueStickerCollection_2022_23,
     year: 2022,
-    brilli: CardBrilli.Default,
+    brilli: CardBrilli.ShinyHolo,
     links: [
       'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/21/',
     ],
@@ -283,7 +278,7 @@ export const cards: Card[] = [
   {
     id: 'aitana-bonmati-2022-23-top-midfieler-2021-22-543',
     images: [
-      aitanaBonmati_2022_23TopMidfieler_2021_22_543
+      aitanaBonmati_2022_23TopMidfieler_2021_22_543,
     ],
     name: 'Top midfielder 2021/22 - #543',
     rarity: 1,
@@ -293,5 +288,40 @@ export const cards: Card[] = [
     links: [
       'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
     ],
+  },
+  {
+    id: 'liga-f-23-24-panini-premium-aitana',
+    images: [
+      ligaFPremium,
+    ],
+    name: 'Aitana Bonmatí	Premium',
+    rarity: 2,
+    status: CardStatus.Tengui,
+    collection: LigaF_22_23Panini,
+    year: 2023,
+    brilli: CardBrilli.GoldFoil,
+  },
+  {
+    id: 'liga-f-23-24-panini-base-aitana-55',
+    images: [
+      ligaF2324_55,
+    ],
+    name: 'Aitana Bonmatí	- #55',
+    rarity: 1,
+    status: CardStatus.Tengui,
+    collection: LigaF_22_23Panini,
+    year: 2023,
+  },
+  {
+    id: 'liga-f-23-24-panini-onfire-aitana-322',
+    images: [
+      ligaf2324onfire,
+    ],
+    name: 'Aitana Bonmatí On fire	- #322',
+    rarity: 1,
+    brilli: CardBrilli.Holo,
+    status: CardStatus.Tengui,
+    collection: LigaF_22_23Panini,
+    year: 2023,
   },
 ];

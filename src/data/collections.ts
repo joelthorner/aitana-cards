@@ -2,6 +2,7 @@ import { Collection } from "../types/collection";
 
 import uclw_fgc4624h_box_21_22 from "./img/collections/22uclw_fgc4624h_box.png";
 import panini_004743spe3w_0 from "./img/collections/004743spe3w_0.webp";
+import panini_004826spe3w_1_1 from "./img/collections/004826spe3w_1_1.webp";
 import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.png";
 import sL1200_480x from "./img/collections/s-l1200_480x.webp";
@@ -20,7 +21,23 @@ Cerca també els 35 cromos *STARS, amb les jugadores més determinants de la com
 Aquesta col·lecció consta de 365 cromos en total… no la deixis escapar!`,
   brand: 'Panini',
   links: [
+    'https://www.laststicker.com/cards/panini_liga_f_2022-2023/',
     'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOopjDFr00cWCN7FS1MQY3x5RmxL04TbsmzvLgfkTu_90hheNB1rY',
+  ],
+};
+
+export const LigaF_22_23Panini: Collection = {
+  id: 'liga-f-23-24-panini',
+  image: panini_004826spe3w_1_1,
+  name: 'Liga F 23/24 Panini',
+  description: `No hay mejor manera de empezar la colección de cromos de la LIGA FEMENINA 2023/24 (LIGA F) que con este fantástico Pack Inicial que te permite conseguir el Álbum Oficial de la Colección y una Cajita de 50 sobres con 400 cromos.
+¡Ya está aquí la NUEVA colección oficial de cromos de la Liga Femenina! 
+Busca los cromos de los 16 equipos de la Liga F en este álbum que ofrece una colección más atractiva, más amplia y mejor en todos los sentidos. Se ha elevado el número de cromos hasta un total de 406.  Se ha aumentado el número de jugadoras por equipo hasta un mínimo de 18. Se ha ampliado el número de cromos realizados con materiales especiales gracias a las series On Fire, Fantásticas y Futuro, todas, siempre con la F de fútbol y femenino bien presente. Y para redondear todas estas novedades, se han creado 10 cromos Premium exclusivos. Los cromos de Aitana, Athenea, Alexia, Leicy, Virginia Torrecilla, Misa y muchos más… están presentes en esta histórica colección. 
+¡No la dejes escapar!`,
+  brand: 'Panini',
+  links: [
+    'https://www.laststicker.com/cards/panini_liga_f_2023-2024/',
+    'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOoph-sKAqYhwrA8z1pJrBZXZ4Y-PjNw6Qim--Y5mpYWlA2X61QAB',
   ],
 };
 
@@ -111,6 +128,7 @@ export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
 
 export const collections: Collection[] = [
   FinetworkLigaF_22_23Panini,
+  LigaF_22_23Panini,
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   PaniniFifaWomenSWorldCupFrance_2019,
   ToppsNow,
