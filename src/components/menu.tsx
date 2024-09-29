@@ -55,7 +55,7 @@ export default function Menu() {
         </button>
       </div>
 
-      <div className="h-[calc(100%-3.5rem)] overflow-y-auto flex flex-col">
+      <div className="h-[calc(100%-6.25rem)] overflow-y-auto flex flex-col">
         <div className="border-b border-b-slate-200">
           <button
             type="button"
@@ -128,23 +128,22 @@ export default function Menu() {
             </div>
           </div>
         </div>
-
-        <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50">
-          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-            <span className="text-gray-600">By joelthorner</span>
-          </li>
-          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-            <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
-              Changelog
-            </Link>
-          </li>
-          <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-            <a className="text-gray-600 hover:text-blue-600" href="https://github.com/joelthorner" target="_blank" rel="noopener noreferrer">
-              Github
-            </a>
-          </li>
-        </ul>
       </div>
+      <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50 h-11">
+        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+          <span className="text-gray-600">By joelthorner</span>
+        </li>
+        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+          <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
+            Changelog
+          </Link>
+        </li>
+        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+          <a className="text-gray-600 hover:text-blue-600" href="https://github.com/joelthorner" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

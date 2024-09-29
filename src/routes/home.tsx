@@ -1,56 +1,8 @@
-import { cards } from "../data/cards";
-import Card from "../components/card";
-import { useEffect, useState } from "react";
-import { OrderByEnum, useFiltersContext } from "../providers/filters";
-import { CardStatus, Card as CardType } from "../types/card";
+import CardsGrid from "../components/cards-grid";
+import { useFilteredCards } from "../hooks/useFilteredCards";
 
 export default function Home() {
-  const [filteredCards, setFilteredCards] = useState(cards);
+  const filteredCards = useFilteredCards();
 
-  const { status, rarity, orderBy, collections } = useFiltersContext();
-
-  useEffect(() => {
-    const newFilteredCards = cards.filter((card: CardType) => {
-      let matchesTengui = false,
-        matchesFalti = false,
-        matchesPending = false;
-
-      if (status[CardStatus.Tengui]) matchesTengui = card.status === CardStatus.Tengui;
-      if (status[CardStatus.Falti]) matchesFalti = card.status === CardStatus.Falti;
-      if (status[CardStatus.Pending]) matchesPending = card.status === CardStatus.Pending;
-
-      let matchesRarity = false;
-      if (rarity.includes(card.rarity) || rarity.length === 0) {
-        matchesRarity = true;
-      }
-
-      let matchesCollection = false;
-      if (collections.includes(card.collection.id) || collections.length === 0) {
-        matchesCollection = true;
-      }
-
-      return matchesCollection && (matchesTengui || matchesFalti || matchesPending) && matchesRarity;
-    });
-
-    let newOrderedCards = newFilteredCards;
-    if (orderBy === OrderByEnum.YEAR) {
-      newOrderedCards.sort((a, b) => b.year - a.year);
-    } else if (orderBy === OrderByEnum.RARITY) {
-      newOrderedCards.sort((a, b) => b.rarity - a.rarity);
-    } else if (orderBy === OrderByEnum.COLLECTION) {
-      newOrderedCards.sort((a, b) => a.collection.id.localeCompare(b.collection.id));
-    }
-
-    setFilteredCards(newOrderedCards);
-  }, [status, rarity, orderBy, collections]);
-
-  return (
-    <div className="grid grid-default-cards gap-x-2 gap-y-4">
-      {filteredCards.map((card) => (
-        <div className="grid-item" key={card.id}>
-          <Card card={card} />
-        </div>
-      ))}
-    </div>
-  );
+  return <CardsGrid cards={filteredCards} />;
 }
