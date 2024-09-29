@@ -8,14 +8,6 @@ export enum OrderByEnum {
   COLLECTION = "collection",
 }
 
-export interface RarityType {
-  rarity_1: boolean;
-  rarity_2: boolean;
-  rarity_3: boolean;
-  rarity_4: boolean;
-  rarity_5: boolean;
-}
-
 export interface StatusType {
   [CardStatus.Tengui]: boolean;
   [CardStatus.Falti]: boolean;
@@ -23,11 +15,11 @@ export interface StatusType {
 }
 
 interface FiltersContextType {
-  rarity: RarityType;
+  rarity: number[];
   status: StatusType;
   orderBy: OrderByEnum;
   collections: string[];
-  setRarity: (key: keyof RarityType, value: boolean) => void;
+  setRarity: (key: number[]) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
   setOrderBy: (value: OrderByEnum) => void;
   setCollections: (value: string[]) => void;
@@ -41,17 +33,9 @@ const LOCAL_STORAGE_ORDERBY_KEY = "filters_orderBy";
 const LOCAL_STORAGE_COLLECTIONS_KEY = "filters_collections";
 
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [rarity, setRarityState] = useState<RarityType>(() => {
+  const [rarity, setRarityState] = useState<number[]>(() => {
     const savedRarity = localStorage.getItem(LOCAL_STORAGE_RARITY_KEY);
-    return savedRarity
-      ? JSON.parse(savedRarity)
-      : {
-          rarity_1: true,
-          rarity_2: true,
-          rarity_3: true,
-          rarity_4: true,
-          rarity_5: true,
-        };
+    return savedRarity ? JSON.parse(savedRarity) : [];
   });
 
   const [status, setStatusState] = useState<StatusType>(() => {
@@ -75,12 +59,9 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     return savedCollections ? JSON.parse(savedCollections) : [];
   });
 
-  const setRarity = (key: keyof RarityType, value: boolean) => {
-    setRarityState((prev) => {
-      const newRarity = { ...prev, [key]: value };
-      localStorage.setItem(LOCAL_STORAGE_RARITY_KEY, JSON.stringify(newRarity));
-      return newRarity;
-    });
+  const setRarity = (value: number[]) => {
+    setRarityState(value);
+    localStorage.setItem(LOCAL_STORAGE_RARITY_KEY, JSON.stringify(value));
   };
 
   const setStatus = (key: keyof StatusType, value: boolean) => {

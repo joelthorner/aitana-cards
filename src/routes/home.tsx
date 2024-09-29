@@ -19,25 +19,17 @@ export default function Home() {
       if (status[CardStatus.Falti]) matchesFalti = card.status === CardStatus.Falti;
       if (status[CardStatus.Pending]) matchesPending = card.status === CardStatus.Pending;
 
-      let matchesRarity1 = false,
-        matchesRarity2 = false,
-        matchesRarity3 = false,
-        matchesRarity4 = false,
-        matchesRarity5 = false;
-
-      if (rarity["rarity_1"]) matchesRarity1 = card.rarity === 1;
-      if (rarity["rarity_2"]) matchesRarity2 = card.rarity === 2;
-      if (rarity["rarity_3"]) matchesRarity3 = card.rarity === 3;
-      if (rarity["rarity_4"]) matchesRarity4 = card.rarity === 4;
-      if (rarity["rarity_5"]) matchesRarity5 = card.rarity === 5;
+      let matchesRarity = false;
+      if (rarity.includes(card.rarity) || rarity.length === 0) {
+        matchesRarity = true;
+      }
 
       let matchesCollection = false;
-
       if (collections.includes(card.collection.id) || collections.length === 0) {
         matchesCollection = true;
       }
 
-      return matchesCollection && (matchesTengui || matchesFalti || matchesPending) && (matchesRarity1 || matchesRarity2 || matchesRarity3 || matchesRarity4 || matchesRarity5);
+      return matchesCollection && (matchesTengui || matchesFalti || matchesPending) && matchesRarity;
     });
 
     let newOrderedCards = newFilteredCards;

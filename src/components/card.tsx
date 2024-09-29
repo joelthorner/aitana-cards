@@ -9,7 +9,7 @@ interface CardProps {
 }
 
 export default function Card({ card }: CardProps) {
-  const starClassName = "size-3 " + getStarClassName("rarity_" + card.rarity);
+  const starClassName = "size-3 " + getStarClassName(card.rarity);
 
   const statusIcon = getCardStatusIcon(card.status);
 
