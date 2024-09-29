@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { collections as collectionsData } from "../../data/collections";
 import { useFiltersContext } from "../../providers/filters";
 
 export default function CollectionsList() {
   const { collections, setCollections } = useFiltersContext();
 
-  const [selectedCollections, setSelectedCollections] = useState<string[]>(collections || []);
+  const [selectedCollections, setSelectedCollections] = useState<string[]>(collections);
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = event.target;
@@ -15,6 +15,10 @@ export default function CollectionsList() {
     setSelectedCollections(updatedCollections);
     setCollections(updatedCollections);
   };
+
+  useEffect(() => {
+    setSelectedCollections(collections);
+  }, [collections]);
 
   return (
     <ul className="space-y-2 text-sm text-gray-600">

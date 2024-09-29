@@ -5,6 +5,7 @@ import StatusFilter from "./menu/status-filter";
 import { useFiltersContext } from "../providers/filters";
 import OrderBy from "./menu/order-by";
 import { getOrderByShortLabel } from "../utils/getOrderByLabel";
+import { ArrowDownUp, BookmarkCheck, LibraryBig, Star } from "lucide-react";
 
 export default function Menu() {
   const { orderBy, collections, status, rarity } = useFiltersContext();
@@ -65,7 +66,13 @@ export default function Menu() {
             aria-controls="#collapse-collections-heading"
             data-hs-collapse="#collapse-collections-heading"
           >
-            Collection {collections.length > 0 && `(${collections.length})`}
+            <LibraryBig strokeWidth={1.5} size={20} className="mr-2 text-slate-400" />{" "}
+            <span className="mr-auto">
+              Collection{" "}
+              {collections.length > 0 && (
+                <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{collections.length}</span>
+              )}
+            </span>
             {collapseBtnIcon}
           </button>
           <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
@@ -83,7 +90,15 @@ export default function Menu() {
             aria-controls="#collapse-filter-heading"
             data-hs-collapse="#collapse-filter-heading"
           >
-            Status {Object.values(status).length !== Object.values(status).filter((s) => s).length && `(${Object.values(status).filter((s) => s).length})`}
+            <BookmarkCheck strokeWidth={1.5} size={20} className="mr-2 text-slate-400" />{" "}
+            <span className="mr-auto">
+              Status{" "}
+              {Object.values(status).length !== Object.values(status).filter((s) => s).length && (
+                <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">
+                  {Object.values(status).filter((s) => s).length}
+                </span>
+              )}
+            </span>
             {collapseBtnIcon}
           </button>
           <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
@@ -101,7 +116,10 @@ export default function Menu() {
             aria-controls="#collapse-rarity-heading"
             data-hs-collapse="#collapse-rarity-heading"
           >
-            Rarity {rarity.length > 0 && `(${rarity.length})`}
+            <Star strokeWidth={1.5} size={20} className="mr-2 text-slate-400" />{" "}
+            <span className="mr-auto">
+              Rarity {rarity.length > 0 && <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{rarity.length}</span>}
+            </span>
             {collapseBtnIcon}
           </button>
           <div id="collapse-rarity-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
@@ -119,7 +137,8 @@ export default function Menu() {
             aria-controls="#collapse-order-by-heading"
             data-hs-collapse="#collapse-order-by-heading"
           >
-            Order by&nbsp;<span className="text-slate-500 mr-auto">{getOrderByShortLabel(orderBy)}</span>
+            <ArrowDownUp strokeWidth={1.5} size={20} className="mr-2 text-slate-400" /> Order by&nbsp;
+            <span className="text-slate-500 mr-auto">{getOrderByShortLabel(orderBy)}</span>
             {collapseBtnIcon}
           </button>
           <div id="collapse-order-by-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
@@ -130,9 +149,9 @@ export default function Menu() {
         </div>
       </div>
       <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50 h-11">
-        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-          <span className="text-gray-600">By joelthorner</span>
-        </li>
+        {/* <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
+          <span className="text-gray-600">by joelthorner</span>
+        </li> */}
         <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
           <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
             Changelog

@@ -7,6 +7,7 @@ import {
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   ToppsNow,
+  ToppsUefaClubCompetitionsSimplicidad_2023_24,
   UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24
 } from "./collections";
@@ -51,6 +52,9 @@ import Ucl_23_24UwclTotsStickerAitanaBonmati_8_027 from "./img/cards/ucl-23-24-u
 import ligaFPremium from './img/cards/ligaFPremium.png';
 import ligaF2324_55 from './img/cards/ligaF2324.png';
 import ligaf2324onfire from './img/cards/ligaf2324onfire.jpg';
+import toppsSimplicidad_23_24Aitana from "./img/cards/toppsSimplicidad_23_24AitanaFront.png";
+import toppsSimplicidad_23_24Aitana_back from "./img/cards/toppsSimplicidad_23_24Aitana.png";
+import toppsSimplicidad_23_24Aitana_autograpth from "./img/cards/toppsSimplicidad_23_24Aitana_autograpth.png";
 
 export const cards: Card[] = [
   {
@@ -323,5 +327,29 @@ export const cards: Card[] = [
     status: CardStatus.Tengui,
     collection: LigaF_22_23Panini,
     year: 2023,
+  },
+  {
+    id: 'topps-simplicidad-23-24-aitana',
+    images: [
+      toppsSimplicidad_23_24Aitana,
+      toppsSimplicidad_23_24Aitana_back,
+    ],
+    name: 'Aitana Bonmatí Base',
+    rarity: 2,
+    status: CardStatus.Tengui,
+    collection: ToppsUefaClubCompetitionsSimplicidad_2023_24,
+    year: 2024,
+  },
+  {
+    id: 'topps-simplicidad-23-24-aitana-autograph',
+    images: [
+      toppsSimplicidad_23_24Aitana_autograpth,
+    ],
+    name: 'Aitana Bonmatí - autograph',
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsUefaClubCompetitionsSimplicidad_2023_24,
+    year: 2024,
+    brilli: CardBrilli.GoldFoil,
   },
 ];

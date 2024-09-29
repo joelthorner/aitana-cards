@@ -9,6 +9,7 @@ import sL1200_480x from "./img/collections/s-l1200_480x.webp";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
 import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
 import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
+import simplicidad24 from "./img/collections/simplicidad24-1.png";
 
 export const FinetworkLigaF_22_23Panini: Collection = {
   id: 'finetwork-liga-f-22-23-panini',
@@ -114,6 +115,7 @@ export const UefaChampionsLeagueStickerCollection_2022_23: Collection = {
     'http://www.owacgames.com/2022/08/coleccion-cromos-stickers-topps-uefa-champions-league-2022-2023-datos-fotos-listado.html',
   ],
 };
+
 export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
   id: 'uefa-champions-league-sticker-collection-2023-24',
   image: multipack_6Packets_1,
@@ -123,6 +125,20 @@ export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
   links: [
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/',
+  ],
+};
+
+export const ToppsUefaClubCompetitionsSimplicidad_2023_24: Collection = {
+  id: 'topps-uefa-club-competitions-simplicidad-2023-24',
+  image: simplicidad24,
+  name: "Topps UEFA Club Competitions Simplicidad 2023/24",
+  description: `¡Topps UEFA Club Competitions Simplicidad vuelve más grande y mejor que nunca para la temporada 2023/2024! Esta nueva colección cuenta con los nombres más grandes del fútbol europeo capturados en siete renovados diseños con una impresionante gama de colores: de monocromo a todo color. 
+Capturamos los mejores talentos futbolísticos en nuevos subsets como "Polaroid" y "Portrait", a la vez que traemos a la vida toda la acción con "Dynamic".  Además, llegan algunas de las mayores leyendas y mejores momentos de la competición europea con el subset "Momentos icónicos".  
+Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más destacados de la historia de la UEFA Champions League. Con más cartas y subsets que nunca, ¡la colección es simplemente imperdible para los aficionados del fútbol! Exclusivo de Topps.es.com. `,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/topps-uefa-club-competitions-simplicidad-2023-24-set-topps-es',
+    'https://www.topps.com/media/amasty/amfile/attach/nllEMaT1R2iWQCzVskNDLvpKIieI7w5r.pdf',
   ],
 };
 
@@ -136,4 +152,5 @@ export const collections: Collection[] = [
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24,
+  ToppsUefaClubCompetitionsSimplicidad_2023_24,
 ];

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, { createContext, useContext, useState, ReactNode, useMemo } from "react";
 import { CardStatus } from "../types/card";
 
 export enum OrderByEnum {
@@ -19,10 +19,12 @@ interface FiltersContextType {
   status: StatusType;
   orderBy: OrderByEnum;
   collections: string[];
+  filtering: boolean;
   setRarity: (key: number[]) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
   setOrderBy: (value: OrderByEnum) => void;
   setCollections: (value: string[]) => void;
+  resetFilters: () => void; // Nova funció
 }
 
 const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
@@ -32,31 +34,35 @@ const LOCAL_STORAGE_STATUS_KEY = "filters_status";
 const LOCAL_STORAGE_ORDERBY_KEY = "filters_orderBy";
 const LOCAL_STORAGE_COLLECTIONS_KEY = "filters_collections";
 
+const defaultStatus = {
+  [CardStatus.Tengui]: true,
+  [CardStatus.Falti]: true,
+  [CardStatus.Pending]: true,
+};
+
+const defaultRarity: number[] = [];
+const defaultCollections: string[] = [];
+const defaultOrderBy = OrderByEnum.DEFAULT;
+
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [rarity, setRarityState] = useState<number[]>(() => {
     const savedRarity = localStorage.getItem(LOCAL_STORAGE_RARITY_KEY);
-    return savedRarity ? JSON.parse(savedRarity) : [];
+    return savedRarity ? JSON.parse(savedRarity) : defaultRarity;
   });
 
   const [status, setStatusState] = useState<StatusType>(() => {
     const savedStatus = localStorage.getItem(LOCAL_STORAGE_STATUS_KEY);
-    return savedStatus
-      ? JSON.parse(savedStatus)
-      : {
-          [CardStatus.Tengui]: true,
-          [CardStatus.Falti]: true,
-          [CardStatus.Pending]: true,
-        };
+    return savedStatus ? JSON.parse(savedStatus) : defaultStatus;
   });
 
   const [orderBy, setOrderByState] = useState<OrderByEnum>(() => {
     const savedOrderBy = localStorage.getItem(LOCAL_STORAGE_ORDERBY_KEY);
-    return savedOrderBy ? (savedOrderBy as OrderByEnum) : OrderByEnum.DEFAULT;
+    return savedOrderBy ? (savedOrderBy as OrderByEnum) : defaultOrderBy;
   });
 
   const [collections, setCollectionsState] = useState<string[]>(() => {
     const savedCollections = localStorage.getItem(LOCAL_STORAGE_COLLECTIONS_KEY);
-    return savedCollections ? JSON.parse(savedCollections) : [];
+    return savedCollections ? JSON.parse(savedCollections) : defaultCollections;
   });
 
   const setRarity = (value: number[]) => {
@@ -82,7 +88,39 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     localStorage.setItem(LOCAL_STORAGE_COLLECTIONS_KEY, JSON.stringify(value));
   };
 
-  return <FiltersContext.Provider value={{ rarity, status, orderBy, collections, setRarity, setStatus, setOrderBy, setCollections }}>{children}</FiltersContext.Provider>;
+  const resetFilters = () => {
+    setRarityState(defaultRarity);
+    setStatusState(defaultStatus);
+    setOrderByState(defaultOrderBy);
+    setCollectionsState(defaultCollections);
+    localStorage.removeItem(LOCAL_STORAGE_RARITY_KEY);
+    localStorage.setItem(LOCAL_STORAGE_STATUS_KEY, JSON.stringify(defaultStatus));
+    localStorage.setItem(LOCAL_STORAGE_ORDERBY_KEY, defaultOrderBy);
+    localStorage.removeItem(LOCAL_STORAGE_COLLECTIONS_KEY);
+  };
+
+  const filtering = useMemo(() => {
+    return rarity.length > 0 || JSON.stringify(status) !== JSON.stringify(defaultStatus) || orderBy !== defaultOrderBy || collections.length > 0;
+  }, [rarity, status, orderBy, collections]);
+
+  return (
+    <FiltersContext.Provider
+      value={{
+        rarity,
+        status,
+        orderBy,
+        collections,
+        filtering,
+        setRarity,
+        setStatus,
+        setOrderBy,
+        setCollections,
+        resetFilters,
+      }}
+    >
+      {children}
+    </FiltersContext.Provider>
+  );
 };
 
 export const useFiltersContext = () => {
