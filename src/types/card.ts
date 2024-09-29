@@ -10,6 +10,8 @@ export enum CardBrilli {
   ShinyHolo = 'shinyHolo',
   Holo = 'holo',
   GoldFoil = 'goldFoil',
+  GoldMetal = 'goldMetal',
+  PurpleFoil = 'purpleFoil',
 };
 
 export type Card = {

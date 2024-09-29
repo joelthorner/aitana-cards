@@ -74,6 +74,7 @@ export const cards: Card[] = [
     description: "Cromo de la secció F stars. Finetwork lliga F temporada 2022-2023",
     rarity: 1,
     status: CardStatus.Tengui,
+    brilli: CardBrilli.GoldMetal,
     collection: FinetworkLigaF_22_23Panini,
     year: 2023,
   },
@@ -189,6 +190,7 @@ export const cards: Card[] = [
     name: "The deadly duo - Dual Autograph",
     rarity: 5,
     status: CardStatus.Falti,
+    brilli: CardBrilli.PurpleFoil,
     collection: ToppsNow,
     year: 2024,
     links: [

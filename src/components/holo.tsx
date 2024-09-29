@@ -4,9 +4,10 @@ import { CardBrilli } from "../types/card";
 
 interface HoloProps {
   type: CardBrilli;
+  cardId: string;
 }
 
-export default function Holo({ type }: HoloProps) {
+export default function Holo({ type, cardId }: HoloProps) {
   const { mouseX, mouseY, alpha, beta, gamma } = useMouseGyro();
 
   const holographicElement = useRef<HTMLDivElement | null>(null);
@@ -80,7 +81,7 @@ export default function Holo({ type }: HoloProps) {
         <br />
         {holographicElement.current && holographicElement.current.style.backgroundPosition}
       </div> */}
-      <div className={`absolute inset-0 z-20 effect-${type}`} ref={holographicElement}></div>
+      <div className={`absolute inset-0 z-20 effect-${type} effect-${type}-${cardId}`} ref={holographicElement}></div>
     </>
   );
 }

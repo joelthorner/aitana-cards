@@ -52,3 +52,43 @@
   filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
+
+.effect-purpleFoil {
+  background-size: 500% 500%;
+  --space: 10%;
+  --angle: -36deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(288, 85%, 60%, 0.5) calc(var(--space)* 1),
+      hsla(295, 100%, 88%, 0.5) calc(var(--space)* 2),
+      hsla(288, 100%, 72%, 0.5) calc(var(--space)* 3),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
+      hsla(276, 90%, 65%, 0.5) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-goldMetal {
+  background-size: 500% 500%;
+  --space: 10%;
+  --angle: -36deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(40, 65%, 50%, 0.5) calc(var(--space) * 1),
+      hsla(0, 0%, 100%, 1) calc(var(--space) * 2),
+      hsla(50, 85%, 70%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 100%, 1) calc(var(--space) * 4),
+      hsla(45, 75%, 60%, 0.5) calc(var(--space) * 5),
+      hsla(0, 0%, 100%, 1) calc(var(--space) * 6),
+      hsla(40, 65%, 50%, 0.5) calc(var(--space) * 7));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-goldMetal-finetwork-liga-f-22-23-panini-n322 {
+  --mask: url(./data/img/cards/_mask_aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.png);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
