@@ -6,7 +6,7 @@ interface CardsGridProps {
 }
 
 export default function CardsGrid({ cards }: CardsGridProps) {
-  return (
+  return cards.length ? (
     <div className="grid grid-default-cards gap-x-2 gap-y-4">
       {cards.map((card) => (
         <div className="grid-item" key={card.id}>
@@ -14,5 +14,7 @@ export default function CardsGrid({ cards }: CardsGridProps) {
         </div>
       ))}
     </div>
+  ) : (
+    <>"no"</>
   );
 }

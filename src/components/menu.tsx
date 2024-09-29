@@ -7,7 +7,7 @@ import OrderBy from "./menu/order-by";
 import { getOrderByShortLabel } from "../utils/getOrderByLabel";
 
 export default function Menu() {
-  const { orderBy } = useFiltersContext();
+  const { orderBy, collections, status, rarity } = useFiltersContext();
 
   const collapseBtnClasses = "hs-collapse-toggle h-14 px-4 w-full justify-between items-center text-start flex font-medium";
   const collapseBtnIcon = (
@@ -65,7 +65,7 @@ export default function Menu() {
             aria-controls="#collapse-collections-heading"
             data-hs-collapse="#collapse-collections-heading"
           >
-            Collection
+            Collection {collections.length > 0 && `(${collections.length})`}
             {collapseBtnIcon}
           </button>
           <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
@@ -83,7 +83,7 @@ export default function Menu() {
             aria-controls="#collapse-filter-heading"
             data-hs-collapse="#collapse-filter-heading"
           >
-            Status
+            Status {Object.values(status).length !== Object.values(status).filter((s) => s).length && `(${Object.values(status).filter((s) => s).length})`}
             {collapseBtnIcon}
           </button>
           <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
@@ -101,7 +101,7 @@ export default function Menu() {
             aria-controls="#collapse-rarity-heading"
             data-hs-collapse="#collapse-rarity-heading"
           >
-            Rarity
+            Rarity {rarity.length > 0 && `(${rarity.length})`}
             {collapseBtnIcon}
           </button>
           <div id="collapse-rarity-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
