@@ -7,6 +7,8 @@ import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import { cards } from "../data/cards";
 import Menu from "../components/menu";
+import { MenuIcon, Search } from "lucide-react";
+import { useFiltersContext } from "../providers/filters";
 
 declare global {
   interface Window {
@@ -16,6 +18,8 @@ declare global {
 
 function Root() {
   const location = useLocation();
+
+  const { filtering } = useFiltersContext();
 
   useEffect(() => {
     window.HSStaticMethods.autoInit();
@@ -32,30 +36,31 @@ function Root() {
           {cards.filter((card) => card.status === "tengui").length}/{cards.length}
         </div>
 
-        <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="offcanvas-menu" data-hs-overlay="#offcanvas-menu">
-          {/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="size-8" viewBox="0 0 16 16">
-            <path
-              fillRule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg> */}
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-menu"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
+        <button
+          type="button"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="offcanvas-menu"
+          data-hs-overlay="#offcanvas-menu"
+          className="relative hover:bg-gray-50 size-10 flex items-center justify-center rounded-full text-gray-900 transition-colors"
+        >
+          <Search strokeWidth={1.5} size={20} />
+          {filtering && (
+            <span className="absolute top-0 end-0 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
+          )}
+        </button>
+        <button
+          type="button"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="offcanvas-menu"
+          data-hs-overlay="#offcanvas-menu"
+          className="relative hover:bg-gray-50 size-10 flex items-center justify-center rounded-full text-gray-900 transition-colors"
+        >
+          <MenuIcon strokeWidth={1.5} />
+          {filtering && (
+            <span className="absolute top-0 end-0 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
+          )}
         </button>
       </div>
       <div className="h-14"></div>

@@ -21,10 +21,10 @@ export default function CollectionsList() {
   }, [collections]);
 
   return (
-    <ul className="space-y-2 text-sm text-gray-600">
+    <ul className="text-sm text-gray-600">
       {collectionsData.map((collection) => (
         <li key={collection.id}>
-          <div className="flex">
+          <div className="flex items-center gap-x-3.5 py-2 px-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50">
             <input
               type="checkbox"
               className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
@@ -33,7 +33,7 @@ export default function CollectionsList() {
               checked={selectedCollections.includes(collection.id)}
               onChange={handleCheckboxChange}
             />
-            <label htmlFor={`hs-${collection.id}-checkbox`} className="text-sm text-gray-500 ms-3">
+            <label htmlFor={`hs-${collection.id}-checkbox`} className="text-sm">
               {collection.name}
             </label>
           </div>
