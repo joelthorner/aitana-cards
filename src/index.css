@@ -92,3 +92,51 @@
   -webkit-mask-size: cover;
   mask-size: cover;
 }
+
+.effect-rainbow {
+  background-size: 400% 400%;
+  --space: 10%;
+  --angle: 110deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 1),
+      hsla(2, 74%, 59%, 0.75) calc(var(--space)* 2),
+      hsla(53, 67%, 53%, 0.75) calc(var(--space)* 3),
+      hsla(176, 38%, 50%, 0.75) calc(var(--space)* 4),
+      hsla(228, 100%, 77%, 0.75) calc(var(--space)* 5),
+      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-blue {
+  background-size: 400% 400%;
+  --space: 10%;
+  --angle: 110deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(209, 98%, 65%, 0.75) calc(var(--space)* 1),
+      hsla(246, 74%, 59%, 0.75) calc(var(--space)* 2),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 3),
+      hsla(216, 88%, 60%, 0.75) calc(var(--space)* 4),
+      hsla(189, 100%, 76%, 0.5) calc(var(--space)* 5),
+      hsla(236, 49%, 60%, 0.75) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-black {
+  background-size: 400% 400%;
+  --space: 10%;
+  --angle: 110deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(0, 0%, 16%, 0.75) calc(var(--space)* 1),
+      hsla(0, 0%, 89%, 0.75) calc(var(--space)* 2),
+      hsla(0, 0%, 1%, 0.5) calc(var(--space)* 3),
+      hsla(0, 0%, 55%, 0.75) calc(var(--space)* 4),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
+      hsla(0, 0%, 16%, 0.75) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}

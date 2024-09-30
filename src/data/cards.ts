@@ -6,6 +6,7 @@ import {
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsNow,
   ToppsUefaClubCompetitionsSimplicidad_2023_24,
   UefaChampionsLeagueStickerCollection_2022_23,
@@ -15,7 +16,9 @@ import {
 import finetworkLigaF_22_23Panini_128 from "./img/cards/finetwork-liga-f-22-23-panini.png";
 import finetworkLigaF_22_23Panini_322 from "./img/cards/aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15 from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_back from "./img/cards/290974-18752677Bk.jpg";
 import franceWomanWC154 from "./img/cards/154franceWomanWC.png";
+import franceWomanWC154_back from "./img/cards/203645-12952030Bk.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "./img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back from "./img/cards/2023-24-topps-womens-champions-league-now-back.webp";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_2.jpg";
@@ -38,11 +41,10 @@ import toppsNowTheDeadlyDuo from "./img/cards/topps-now-the-deadly-duo.png";
 import toppsNowTheDeadlyDuo_back from "./img/cards/Topps-Now-Back-1-2-570x760.png";
 import toppsNowTheDeadlyDuo_purple from "./img/cards/2023-24 Topps - UWCL NOW -022b.jpg";
 import toppsNowTheDeadlyDuo_black from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
-import toppsNowTheDeadlyDuo_gold from "./img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
+import toppsNowTheDeadlyDuo_gold from "./img/cards/2023-24 Topps - UWCL NOW -022d.jpg";
 import toppsNowTheDeadlyDuoDualAutograph from "./img/cards/2023-24 Topps - UWCL NOW -022f_cover.jpg";
-import toppsNowTheDeadlyDuoDualAutograph_purple from "./img/cards/2023-24 Topps - UWCL NOW -022f.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_black from "./img/cards/2023-24 Topps - UWCL NOW -022h.jpg";
-import toppsNowTheDeadlyDuoDualAutograph_red from "./img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
+import toppsNowTheDeadlyDuoDualAutograph_rainbow from "./img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_gold from "./img/cards/2023-24 Topps - UWCL NOW -022l.jpg";
 import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "./img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.png";
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "./img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.png";
@@ -55,6 +57,10 @@ import ligaf2324onfire from './img/cards/ligaf2324onfire.jpg';
 import toppsSimplicidad_23_24Aitana from "./img/cards/toppsSimplicidad_23_24AitanaFront.png";
 import toppsSimplicidad_23_24Aitana_back from "./img/cards/toppsSimplicidad_23_24Aitana.png";
 import toppsSimplicidad_23_24Aitana_autograpth from "./img/cards/toppsSimplicidad_23_24Aitana_autograpth.png";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85 from "./img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85.png";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_back from "./img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_back.png";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5 from "./img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_rainbow_5of5.png";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49 from "./img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_blue_xof49.png";
 
 export const cards: Card[] = [
   {
@@ -80,7 +86,10 @@ export const cards: Card[] = [
   },
   {
     id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15',
-    images: [uwcl_21_22ToppsChromeBaseRcRookie_15],
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_back,
+    ],
     name: 'Topps Chrome UWCL #15 RC Rookie Base',
     description: `#2021-22 Topps Chrome UEFA Women's Base Refractor Parallels Breakdown
 
@@ -99,7 +108,10 @@ export const cards: Card[] = [
   },
   {
     id: 'paniniFifaWomenSWorldCupFrance_2019Sticker_154',
-    images: [franceWomanWC154],
+    images: [
+      franceWomanWC154,
+      franceWomanWC154_back,
+    ],
     name: 'Sticker 154: Aitana Bonmatí',
     rarity: 1,
     status: CardStatus.Tengui,
@@ -111,13 +123,58 @@ export const cards: Card[] = [
     images: [
       ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023,
       ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back,
-      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple,
-      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black,
-      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold,
     ],
-    name: '2023 Topps Now Aitana Bonmati UEFA Women\'s Player of the Year',
+    name: 'UEFA Women\'s Player of the Year',
     rarity: 1,
     status: CardStatus.Tengui,
+    collection: ToppsNow,
+    year: 2023,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
+    ],
+  },
+  {
+    id: '2023ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear-purple',
+    images: [
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back,
+    ],
+    name: 'UEFA Women\'s Player of the Year purple n/99',
+    rarity: 3,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.PurpleFoil,
+    collection: ToppsNow,
+    year: 2023,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
+    ],
+  },
+  {
+    id: '2023ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear-black',
+    images: [
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back,
+    ],
+    name: 'UEFA Women\'s Player of the Year black n/10',
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.BlackTopps,
+    collection: ToppsNow,
+    year: 2023,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
+    ],
+  },
+  {
+    id: '2023ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear-gold',
+    images: [
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold,
+      ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back,
+    ],
+    name: 'UEFA Women\'s Player of the Year gold 1/1',
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
     collection: ToppsNow,
     year: 2023,
     links: [
@@ -147,9 +204,6 @@ export const cards: Card[] = [
       toppsNowWondergoalSealsSemiFinalSpot,
       toppsNowWondergoalSealsSemiFinalSpot2,
       toppsNowWondergoalSealsSemiFinalSpot_back,
-      toppsNowWondergoalSealsSemiFinalSpot_purple,
-      toppsNowWondergoalSealsSemiFinalSpot_black,
-      toppsNowWondergoalSealsSemiFinalSpot_gold,
     ],
     name: "Wondergoal seal semi-final spot",
     rarity: 2,
@@ -161,13 +215,61 @@ export const cards: Card[] = [
     ],
   },
   {
+    id: 'topps-now-wondergoal-seals-semi-final-spot-purple',
+    images: [
+      toppsNowWondergoalSealsSemiFinalSpot_purple,
+      toppsNowWondergoalSealsSemiFinalSpot2,
+      toppsNowWondergoalSealsSemiFinalSpot_back,
+    ],
+    name: "Wondergoal seal semi-final spot purple n/99",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.PurpleFoil,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
+    ],
+  },
+  {
+    id: 'topps-now-wondergoal-seals-semi-final-spot-black',
+    images: [
+      toppsNowWondergoalSealsSemiFinalSpot_black,
+      toppsNowWondergoalSealsSemiFinalSpot2,
+      toppsNowWondergoalSealsSemiFinalSpot_back,
+    ],
+    name: "Wondergoal seal semi-final spot black n/10",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.BlackTopps,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
+    ],
+  },
+  {
+    id: 'topps-now-wondergoal-seals-semi-final-spot-gold',
+    images: [
+      toppsNowWondergoalSealsSemiFinalSpot_gold,
+      toppsNowWondergoalSealsSemiFinalSpot2,
+      toppsNowWondergoalSealsSemiFinalSpot_back,
+    ],
+    name: "Wondergoal seal semi-final spot gold 1/1",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
+    ],
+  },
+  {
     id: 'topps-now-the-deadly-duo',
     images: [
       toppsNowTheDeadlyDuo,
       toppsNowTheDeadlyDuo_back,
-      toppsNowTheDeadlyDuo_purple,
-      toppsNowTheDeadlyDuo_black,
-      toppsNowTheDeadlyDuo_gold,
     ],
     name: "The deadly duo",
     rarity: 1,
@@ -179,18 +281,107 @@ export const cards: Card[] = [
     ],
   },
   {
-    id: 'topps-now-the-deadly-duo-dual-autograph',
+    id: 'topps-now-the-deadly-duo-purple',
+    images: [
+      toppsNowTheDeadlyDuo_purple,
+      toppsNowTheDeadlyDuo_back,
+    ],
+    name: "The deadly duo purple n/99",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.PurpleFoil,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-black',
+    images: [
+      toppsNowTheDeadlyDuo_black,
+      toppsNowTheDeadlyDuo_back,
+    ],
+    name: "The deadly duo black n/10",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.BlackTopps,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-gold',
+    images: [
+      toppsNowTheDeadlyDuo_gold,
+      toppsNowTheDeadlyDuo_back,
+    ],
+    name: "The deadly duo gold 1/1",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-dual-autograph-purple',
     images: [
       toppsNowTheDeadlyDuoDualAutograph,
-      toppsNowTheDeadlyDuoDualAutograph_purple,
-      toppsNowTheDeadlyDuoDualAutograph_black,
-      toppsNowTheDeadlyDuoDualAutograph_red,
-      toppsNowTheDeadlyDuoDualAutograph_gold,
     ],
-    name: "The deadly duo - Dual Autograph",
+    name: "The deadly duo - Dual Autograph purple n/25",
     rarity: 5,
     status: CardStatus.Falti,
     brilli: CardBrilli.PurpleFoil,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-dual-autograph-black',
+    images: [
+      toppsNowTheDeadlyDuoDualAutograph_black,
+    ],
+    name: "The deadly duo - Dual Autograph black n/10",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.BlackTopps,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-dual-autograph-rainbow',
+    images: [
+      toppsNowTheDeadlyDuoDualAutograph_rainbow,
+    ],
+    name: "The deadly duo - Dual Autograph rainbow n/5",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Rainbow,
+    collection: ToppsNow,
+    year: 2024,
+    links: [
+      'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
+    ],
+  },
+  {
+    id: 'topps-now-the-deadly-duo-dual-autograph-gold',
+    images: [
+      toppsNowTheDeadlyDuoDualAutograph_gold,
+    ],
+    name: "The deadly duo - Dual Autograph gold 1/1",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
     collection: ToppsNow,
     year: 2024,
     links: [
@@ -353,5 +544,43 @@ export const cards: Card[] = [
     collection: ToppsUefaClubCompetitionsSimplicidad_2023_24,
     year: 2024,
     brilli: CardBrilli.GoldFoil,
+  },
+  {
+    id: 'topps-merlin-heritage-98-ucc-season-2022-2023_85',
+    images: [
+      toppsMerlinHeritage_98UccSeason_2022_2023_85,
+      toppsMerlinHeritage_98UccSeason_2022_2023_85_back,
+    ],
+    name: 'Aitana Bonmatí - #85',
+    rarity: 2,
+    status: CardStatus.Tengui,
+    collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
+    year: 2022,
+  },
+  {
+    id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85-rainbow-nof5',
+    images: [
+      toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5,
+      toppsMerlinHeritage_98UccSeason_2022_2023_85_back,
+    ],
+    name: 'Autograph rainbow n/5 - #85',
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
+    year: 2022,
+    brilli: CardBrilli.Rainbow,
+  },
+  {
+    id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85-blue-nof5',
+    images: [
+      toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49,
+      toppsMerlinHeritage_98UccSeason_2022_2023_85_back,
+    ],
+    name: 'Autograph blue n/49 - #85',
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
+    year: 2022,
+    brilli: CardBrilli.BlueTopps,
   },
 ];

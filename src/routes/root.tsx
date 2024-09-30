@@ -45,9 +45,6 @@ function Root() {
           className="relative hover:bg-gray-50 size-10 flex items-center justify-center rounded-full text-gray-900 transition-colors"
         >
           <Search strokeWidth={1.5} size={20} />
-          {filtering && (
-            <span className="absolute top-0 end-0 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
-          )}
         </button>
         <button
           type="button"

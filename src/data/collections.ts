@@ -10,6 +10,7 @@ import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
 import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
 import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
 import simplicidad24 from "./img/collections/simplicidad24-1.png";
+import merlin98 from "./img/collections/merlin98-1.png";
 
 export const FinetworkLigaF_22_23Panini: Collection = {
   id: 'finetwork-liga-f-22-23-panini',
@@ -142,6 +143,19 @@ Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más d
   ],
 };
 
+export const ToppsMerlinHeritage_98UccSeason_2022_2023: Collection = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023',
+  image: merlin98,
+  name: "Topps Merlin Heritage 98 UCC Season 2022-2023",
+  description: `¡Las cartas Merlin Heritage vuelven con el clásico diseño ´soccer´ del 1998!
+La nueva colección de competiciones UEFA incluye las estrellas de la temporada 2022/23 impresa en los icónicos diseños ‘Portrait’ de Merlín! Busca los Rookies y Legends más cartas ‘Captains’ y ‘Action’ impresas en retro foil. `,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/uefa-club-competitions-merlin98-topps-es',
+    'https://www.laststicker.com/cards/topps_merlin_heritage_98_ucc_2022-2023/',
+  ],
+};
+
 export const collections: Collection[] = [
   FinetworkLigaF_22_23Panini,
   LigaF_22_23Panini,
@@ -153,4 +167,5 @@ export const collections: Collection[] = [
   UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24,
   ToppsUefaClubCompetitionsSimplicidad_2023_24,
+  ToppsMerlinHeritage_98UccSeason_2022_2023,
 ];
