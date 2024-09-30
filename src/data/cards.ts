@@ -1,4 +1,5 @@
 import { Card, CardBrilli, CardStatus } from "../types/card";
+import FINETWORK_LIGA_F_22_23_PANINI_N128 from "./cards/finetwork-liga-f-22-23-panini-n128";
 import {
   FinetworkLigaF_22_23Panini,
   LigaF_22_23Panini,
@@ -13,7 +14,6 @@ import {
   UefaChampionsLeagueStickerCollection_2023_24
 } from "./collections";
 
-import finetworkLigaF_22_23Panini_128 from "./img/cards/finetwork-liga-f-22-23-panini.png";
 import finetworkLigaF_22_23Panini_322 from "./img/cards/aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15 from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_back from "./img/cards/290974-18752677Bk.jpg";
@@ -37,11 +37,24 @@ import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple from "./img/car
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_3.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_4.jpg";
 import aitanaBonmati_7ChromeFcb_22_23 from "./img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_refractor from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_refractor_back from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor_back.webp";
+import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_bnw_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_x_fractor_back from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor_back.webp";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.png";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back.webp";
 import aitanaBonmati_7ChromeFcb_22_23_blue from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.png";
 import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.png";
 import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png";
 import aitanaBonmati_7ChromeFcb_22_23_blue_back from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.png";
+import aitanaBonmati_7ChromeFcb_22_23_gold_refractor from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_gold_refractor.png";
 import aitanaBonmati_57ChromeFcb_22_23 from "./img/cards/aitana-bonmati-57-chrome-fcb-22-23.png";
+import aitanaBonmati_57ChromeFcb_22_23_refractor from "./img/cards/aitanaBonmati_57ChromeFcb_22_23_refractor.png";
+import aitanaBonmati_57ChromeFcb_22_23_bnw_refractor from "./img/cards/aitanaBonmati_57ChromeFcb_22_23_bnw_refractor.png";
+import aitanaBonmati_57ChromeFcb_22_23_bnw_refractor_back from "./img/cards/aitanaBonmati_57ChromeFcb_22_23_bnw_refractor_back.webp";
+import aitanaBonmati_57ChromeFcb_22_23_x_factor from "./img/cards/aitanaBonmati_57ChromeFcb_22_23_x_factor.png";
+import aitanaBonmati_57ChromeFcb_22_23_x_factor_back from "./img/cards/aitanaBonmati_57ChromeFcb_22_23_x_factor_back.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23Base from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-base.png";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
 import toppsNowBrilliantBraceInOpeningGame from "./img/cards/topps-now-brilliant-brace-in-opening-game.png";
@@ -79,16 +92,7 @@ import toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5 from "./img/car
 import toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49 from "./img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_blue_xof49.png";
 
 export const cards: Card[] = [
-  {
-    id: 'finetwork-liga-f-22-23-panini-n128',
-    images: [finetworkLigaF_22_23Panini_128],
-    name: 'Aitana Bonmatí - #128',
-    description: "Cromo base del equip. Finetwork lliga F temporada 2022-2023",
-    rarity: 1,
-    status: CardStatus.Tengui,
-    collection: FinetworkLigaF_22_23Panini,
-    year: 2023,
-  },
+  FINETWORK_LIGA_F_22_23_PANINI_N128,
   {
     id: 'finetwork-liga-f-22-23-panini-n322',
     images: [finetworkLigaF_22_23Panini_322],
@@ -121,7 +125,7 @@ export const cards: Card[] = [
     name: 'Topps Chrome UWCL #15 RC Rookie refractor',
     rarity: 2,
     status: CardStatus.Falti,
-    brilli: CardBrilli.Refractor,
+    brilli: CardBrilli.Holo,
     collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
     year: 2022,
   },
@@ -180,6 +184,7 @@ export const cards: Card[] = [
   {
     id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-orange',
     images: [],
+    missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
     name: 'Topps Chrome UWCL #15 RC Rookie orange wave refractor n/25',
     rarity: 5,
     status: CardStatus.Falti,
@@ -202,6 +207,7 @@ export const cards: Card[] = [
   {
     id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-superFractor',
     images: [],
+    missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
     name: 'Topps Chrome UWCL #15 RC Rookie superFractor 1/1',
     rarity: 5,
     status: CardStatus.Falti,
@@ -501,6 +507,61 @@ export const cards: Card[] = [
     year: 2023,
   },
   {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-refractor-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_refractor,
+      aitanaBonmati_7ChromeFcb_22_23_refractor_back,
+    ],
+    name: 'Aitana Bonmatí refractor- #7',
+    description: "",
+    rarity: 2,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Refractor,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-bnw-refractor-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_bnw_refractor,
+    ],
+    name: 'Aitana Bonmatí Black & White Wave Refractor - #7',
+    description: "",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.SlimVerticalRefractor,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-x-fractor-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_x_fractor,
+      aitanaBonmati_7ChromeFcb_22_23_x_fractor_back,
+    ],
+    name: 'Aitana Bonmatí X Fractor - #7',
+    description: "",
+    rarity: 2,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Holo,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-barça-refactor-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_barsa_refactor,
+      aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back,
+    ],
+    name: 'Aitana Bonmatí barça refactor n/99 - #7',
+    description: "",
+    rarity: 2,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Refractor,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
     id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-blue-n7',
     images: [
       aitanaBonmati_7ChromeFcb_22_23_blue,
@@ -508,7 +569,7 @@ export const cards: Card[] = [
       aitanaBonmati_7ChromeFcb_22_23_blue_detail_2,
       aitanaBonmati_7ChromeFcb_22_23_blue_back,
     ],
-    name: 'Aitana Bonmatí blue- #7',
+    name: 'Aitana Bonmatí blue refractor n/75 - #7',
     description: "",
     rarity: 4,
     status: CardStatus.Falti,
@@ -517,12 +578,112 @@ export const cards: Card[] = [
     year: 2023,
   },
   {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-gold-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_gold_refractor,
+    ],
+    name: 'Aitana Bonmatí gold refractor n/50 - #7',
+    description: "",
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-orange-x-fractor-n7',
+    images: [],
+    missingImage: aitanaBonmati_7ChromeFcb_22_23_refractor,
+    name: 'Aitana Bonmatí orange X-Fractor n/25 - #7',
+    description: "",
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-purple-refractor-n7',
+    images: [],
+    missingImage: aitanaBonmati_7ChromeFcb_22_23_refractor,
+    name: 'Aitana Bonmatí purple refractor n/15 - #7',
+    description: "",
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-red-x-fractor-n7',
+    images: [],
+    missingImage: aitanaBonmati_7ChromeFcb_22_23_refractor,
+    name: 'Aitana Bonmatí red X-Fractor n/5 - #7',
+    description: "",
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-superfractor-n7',
+    images: [],
+    missingImage: aitanaBonmati_7ChromeFcb_22_23_refractor,
+    name: 'Aitana Bonmatí Superfractor 1/1 - #7',
+    description: "",
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
     id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-n57',
-    images: [aitanaBonmati_57ChromeFcb_22_23],
+    images: [
+      aitanaBonmati_57ChromeFcb_22_23,
+    ],
     name: 'Aitana Bonmatí - #57',
     description: "",
     rarity: 1,
     status: CardStatus.Tengui,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-refactor-n57',
+    images: [
+      aitanaBonmati_57ChromeFcb_22_23_refractor,
+    ],
+    name: 'Aitana Bonmatí refactor - #57',
+    description: "",
+    rarity: 2,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Holo,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-bnw-refractor-n57',
+    images: [
+      aitanaBonmati_57ChromeFcb_22_23_bnw_refractor,
+      aitanaBonmati_57ChromeFcb_22_23_bnw_refractor_back,
+    ],
+    name: 'Aitana Bonmatí Black & White Wave Refractor - #57',
+    description: "",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.SlimVerticalRefractor,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-x-fractor-n57',
+    images: [
+      aitanaBonmati_57ChromeFcb_22_23_x_factor,
+      aitanaBonmati_57ChromeFcb_22_23_x_factor_back,
+    ],
+    name: 'Aitana Bonmatí X-Fractor - #57',
+    description: "",
+    rarity: 3,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Holo,
     collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
     year: 2023,
   },

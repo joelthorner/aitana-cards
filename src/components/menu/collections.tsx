@@ -22,6 +22,7 @@ export default function CollectionsList() {
 
   return (
     <ul className="text-sm text-gray-600">
+      {/* TODO: sort collections by a-z */}
       {collectionsData.map((collection) => (
         <li key={collection.id}>
           <div className="flex items-center gap-x-3.5 py-2 px-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50">

@@ -216,6 +216,21 @@
   opacity: .75;
 }
 
+.effect-slimVerticalRefractor {
+  background-size: 400% 200%;
+  --space: 4%;
+  --angle: 90deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 1),
+      hsla(0, 0%, 28%, 0.75) calc(var(--space) * 2),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 3));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+  opacity: .75;
+}
+
 .effect-infernoRefractor {
   background-image: url(./assets/img/fire.png);
   background-size: 300% 150%;

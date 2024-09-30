@@ -12,6 +12,7 @@ export enum CardBrilli {
   GoldFoil = 'goldFoil',
   GoldMetal = 'goldMetal',
   PurpleFoil = 'purpleFoil',
+  // OrangeFoil = 'orangeFoil',
   Rainbow = 'rainbow',
   BlueTopps = 'blue',
   BlackTopps = 'black',
@@ -20,11 +21,14 @@ export enum CardBrilli {
   GreenRefractorTopps = 'greenRefractor',
   InfernoRefractorTopps = 'infernoRefractor',
   RedRefractorTopps = 'redRefractor',
+  SlimVerticalRefractor = 'slimVerticalRefractor',
+  // SquaresFractor = 'squaresFractor',
 };
 
 export type Card = {
   id: string,
   images: string[],
+  missingImage?: string;
   name: string,
   description?: string,
   rarity: 1 | 2 | 3 | 4 | 5,
