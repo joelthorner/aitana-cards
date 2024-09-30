@@ -140,3 +140,93 @@
   filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
+
+.effect-refractor {
+  background-size: 400% 400%;
+  --space: 10%;
+  --angle: 130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(0, 0%, 16%, 0.5) calc(var(--space)* 1),
+      hsla(0, 0%, 89%, 0.5) calc(var(--space)* 2),
+      hsla(0, 0%, 29%, 0.5) calc(var(--space)* 3),
+      hsla(0, 0%, 55%, 0.5) calc(var(--space)* 4),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
+      hsla(0, 0%, 16%, 0.5) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-pinkRefractor {
+  background-size: 400% 200%;
+  --space: 3%;
+  --angle: -130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(340, 100%, 85%, 0.75) calc(var(--space) * 1),
+      hsla(355, 100%, 70%, 0.75) calc(var(--space) * 2),
+      hsla(325, 100%, 60%, 0.75) calc(var(--space) * 3),
+      hsla(330, 100%, 65%, 0.75) calc(var(--space) * 4),
+      hsla(330, 100%, 95%, 0.75) calc(var(--space) * 5),
+      hsla(305, 100%, 55%, 0.75) calc(var(--space) * 6),
+      hsla(340, 100%, 85%, 0.75) calc(var(--space) * 7),
+      hsla(340, 100%, 85%, 0.75) calc(var(--space) * 8));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-greenRefractor {
+  background-size: 400% 200%;
+  --space: 3%;
+  --angle: -130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(125, 100%, 85%, 0.75) calc(var(--space) * 1),
+      hsla(120, 100%, 70%, 0.75) calc(var(--space) * 2),
+      hsla(143, 71%, 38%, 0.75) calc(var(--space) * 3),
+      hsla(152, 76%, 29%, 0.75) calc(var(--space) * 4),
+      hsla(85, 100%, 74%, 0.75) calc(var(--space) * 5),
+      hsla(88, 100%, 32%, 0.75) calc(var(--space) * 6),
+      hsla(86, 100%, 22%, 0.75) calc(var(--space) * 7),
+      hsla(125, 100%, 85%, 0.75) calc(var(--space) * 8));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+  opacity: .75;
+}
+
+.effect-redRefractor {
+  background-size: 400% 200%;
+  --space: 3%;
+  --angle: -130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(0, 100%, 85%, 0.75) calc(var(--space) * 1),
+      hsla(19, 100%, 70%, 0.75) calc(var(--space) * 2),
+      hsla(0, 71%, 38%, 0.75) calc(var(--space) * 3),
+      hsla(342, 76%, 29%, 0.75) calc(var(--space) * 4),
+      hsla(17, 100%, 74%, 0.75) calc(var(--space) * 5),
+      hsla(24, 100%, 32%, 0.75) calc(var(--space) * 6),
+      hsla(0, 100%, 22%, 0.75) calc(var(--space) * 7),
+      hsla(0, 100%, 85%, 0.75) calc(var(--space) * 8));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+  opacity: .75;
+}
+
+.effect-infernoRefractor {
+  background-image: url(./assets/img/fire.png);
+  background-size: 300% 150%;
+  mix-blend-mode: lighten;
+  opacity: 0.75;
+}
+
+.effect-infernoRefractor-UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-inferno {
+  --mask: url(./data/img/cards/_mask_313506-18754105Fr.png);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}

@@ -15,6 +15,11 @@ export enum CardBrilli {
   Rainbow = 'rainbow',
   BlueTopps = 'blue',
   BlackTopps = 'black',
+  PinkRefractorTopps = 'pinkRefractor',
+  Refractor = 'refractor',
+  GreenRefractorTopps = 'greenRefractor',
+  InfernoRefractorTopps = 'infernoRefractor',
+  RedRefractorTopps = 'redRefractor',
 };
 
 export type Card = {

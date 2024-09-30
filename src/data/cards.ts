@@ -17,6 +17,18 @@ import finetworkLigaF_22_23Panini_128 from "./img/cards/finetwork-liga-f-22-23-p
 import finetworkLigaF_22_23Panini_322 from "./img/cards/aitana-bonmati-f-stars-barcelona-322-liga-f-22-23.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15 from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_back from "./img/cards/290974-18752677Bk.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_refractor from "./img/cards/313503-18753690Fr.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_refractor_back from "./img/cards/313503-18753690Bk.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_pink from "./img/cards/313504-18754633Fr.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_pink_back from "./img/cards/313504-18754633Bk.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_green from "./img/cards/313505-18754423Fr.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_green_back from "./img/cards/313505-18754423Bk.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_inferno from "./img/cards/313506-18754105Fr.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_inferno_back from "./img/cards/313506-18754105Bk.jpg";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_gold from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-gold.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_gold_back from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-gold_back.webp";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_red from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-red.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_red_back from "./img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-red_back.webp";
 import franceWomanWC154 from "./img/cards/154franceWomanWC.png";
 import franceWomanWC154_back from "./img/cards/203645-12952030Bk.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "./img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
@@ -25,6 +37,10 @@ import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_purple from "./img/car
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_black from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_3.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_gold from "./img/cards/2023-24 Topps - Womens Champions League NOW -001_4.jpg";
 import aitanaBonmati_7ChromeFcb_22_23 from "./img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.png";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.png";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png";
+import aitanaBonmati_7ChromeFcb_22_23_blue_back from "./img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.png";
 import aitanaBonmati_57ChromeFcb_22_23 from "./img/cards/aitana-bonmati-57-chrome-fcb-22-23.png";
 import aitanaBonmatiBaseFcbWomenWinners_23Base from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-base.png";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "./img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
@@ -90,19 +106,105 @@ export const cards: Card[] = [
       uwcl_21_22ToppsChromeBaseRcRookie_15,
       uwcl_21_22ToppsChromeBaseRcRookie_15_back,
     ],
-    name: 'Topps Chrome UWCL #15 RC Rookie Base',
-    description: `#2021-22 Topps Chrome UEFA Women's Base Refractor Parallels Breakdown
-
-- Refractor - 1:3 packs
-- Pink Prism Refractor - #/150
-- Neon Green Refractor - #/99
-- Inferno Refractor - #/75
-- Gold Refractor - #/50
-- Orange Wave Refractor - #/25
-- Red Refractor - #/5
-- SuperFractor - 1/1`,
+    name: 'Topps Chrome UWCL #15 RC Rookie',
+    rarity: 1,
+    status: CardStatus.Tengui,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-refractor',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_refractor,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_refractor_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie refractor',
     rarity: 2,
-    status: CardStatus.Pending,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.Refractor,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-pink',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_pink,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_pink_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie pink prism refractor n/150',
+    rarity: 3,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.PinkRefractorTopps,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-green',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_green,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_green_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie neon green refractor n/99',
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GreenRefractorTopps,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-inferno',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_inferno,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_inferno_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie inferno refractor n/75',
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.InfernoRefractorTopps,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-gold',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_gold,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_gold_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie gold refractor n/50',
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.GoldFoil,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-orange',
+    images: [],
+    name: 'Topps Chrome UWCL #15 RC Rookie orange wave refractor n/25',
+    rarity: 5,
+    status: CardStatus.Falti,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-red',
+    images: [
+      uwcl_21_22ToppsChromeBaseRcRookie_15_red,
+      uwcl_21_22ToppsChromeBaseRcRookie_15_red_back,
+    ],
+    name: 'Topps Chrome UWCL #15 RC Rookie red refractor n/5',
+    rarity: 5,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.RedRefractorTopps,
+    collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
+    year: 2022,
+  },
+  {
+    id: 'UWCL-21-22-Topps-Chrome-Base-RC-Rookie-n15-superFractor',
+    images: [],
+    name: 'Topps Chrome UWCL #15 RC Rookie superFractor 1/1',
+    rarity: 5,
+    status: CardStatus.Falti,
     collection: Topps_21_22UefaWomenSChampionsLeagueChrome,
     year: 2022,
   },
@@ -395,6 +497,22 @@ export const cards: Card[] = [
     description: "",
     rarity: 1,
     status: CardStatus.Tengui,
+    collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+    year: 2023,
+  },
+  {
+    id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-blue-n7',
+    images: [
+      aitanaBonmati_7ChromeFcb_22_23_blue,
+      aitanaBonmati_7ChromeFcb_22_23_blue_detail_1,
+      aitanaBonmati_7ChromeFcb_22_23_blue_detail_2,
+      aitanaBonmati_7ChromeFcb_22_23_blue_back,
+    ],
+    name: 'Aitana Bonmatí blue- #7',
+    description: "",
+    rarity: 4,
+    status: CardStatus.Falti,
+    brilli: CardBrilli.BlueTopps,
     collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
     year: 2023,
   },

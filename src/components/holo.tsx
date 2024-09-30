@@ -21,7 +21,6 @@ export default function Holo({ type, cardId }: HoloProps) {
   const gammaMax = 90;
 
   useEffect(() => {
-    // Genera una petita variació aleatòria per a cada component quan es carrega
     const generateRandomOffsets = () => {
       const offsetX = Math.random() * 20 - 5;
       const offsetY = Math.random() * 20 - 5;
@@ -36,35 +35,36 @@ export default function Holo({ type, cardId }: HoloProps) {
   useEffect(() => {
     const updateHolographicBackground = () => {
       if (holographicElement.current) {
-        const rect = holographicElement.current.getBoundingClientRect();
+        const screenCenterX = window.innerWidth / 2;
+        const screenCenterY = window.innerHeight / 2;
 
-        // Posició del centre de l'element
+        const rect = holographicElement.current.getBoundingClientRect();
         const elementCenterX = rect.left + rect.width / 2;
         const elementCenterY = rect.top + rect.height / 2;
 
-        // Calcular la distància entre el ratolí i el centre de l'element
-        const hasGiroscope = alpha !== 0 || beta !== 0 || gamma !== 0; // Comprovem si el giroscopi és vàlid
+        const distanceXToElement = mouseX - elementCenterX;
+        const distanceYToElement = mouseY - elementCenterY;
+
+        const maxElementDistance = Math.sqrt(rect.width ** 2 + rect.height ** 2);
+        const normalizedElementDistanceX = Math.min(distanceXToElement / maxElementDistance, 1);
+        const normalizedElementDistanceY = Math.min(distanceYToElement / maxElementDistance, 1);
+
+        const hasGyroscope = alpha !== 0 || beta !== 0 || gamma !== 0;
         let percentageX, percentageY;
 
-        if (hasGiroscope) {
-          // Utilitzar valors del giroscopi per ajustar el background
+        if (hasGyroscope) {
           percentageX = Math.max(0, Math.min((beta / betaMax) * gyroEffectMultiplierX * (randomOffsetX + 50), 100));
           percentageY = Math.max(0, Math.min(((gamma + 90) / (gammaMax + 90)) * gyroEffectMultiplierY * (randomOffsetY + 50), 100));
         } else {
-          // Utilitzar la posició del ratolí
-          const distanceX = mouseX - elementCenterX;
-          const distanceY = mouseY - elementCenterY;
+          const distanceXToScreenCenter = mouseX - screenCenterX;
+          const distanceYToScreenCenter = mouseY - screenCenterY;
 
-          // Calcular la distància en píxels
-          const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+          const maxDistanceToScreenCenter = Math.max(screenCenterX, screenCenterY);
+          const normalizedDistanceXToScreenCenter = Math.min(distanceXToScreenCenter / maxDistanceToScreenCenter, 1);
+          const normalizedDistanceYToScreenCenter = Math.min(distanceYToScreenCenter / maxDistanceToScreenCenter, 1);
 
-          // Normalitzar la distància (pots ajustar el divisor per controlar la sensibilitat)
-          const maxDistance = 300; // Ajusta aquest valor segons la mida de l'element
-          const normalizedDistance = Math.min(distance / maxDistance, 1); // Manté entre 0 i 1
-
-          // Ajustar la posició del background en funció de la distància
-          percentageX = (1 - normalizedDistance) * (randomOffsetX + 50); // Ajusta el multiplicador segons sigui necessari
-          percentageY = (1 - normalizedDistance) * (randomOffsetY + 50); // Ajusta el multiplicador segons sigui necessari
+          percentageX = (normalizedDistanceXToScreenCenter + 1) * 50 + randomOffsetX + normalizedElementDistanceX * 5;
+          percentageY = (normalizedDistanceYToScreenCenter + 1) * 50 + randomOffsetY + normalizedElementDistanceY * 5;
         }
 
         holographicElement.current.style.backgroundPosition = `${percentageX}% ${percentageY}%`;
@@ -75,13 +75,8 @@ export default function Holo({ type, cardId }: HoloProps) {
   }, [mouseX, mouseY, randomOffsetX, randomOffsetY, alpha, beta, gamma]);
 
   return (
-    <>
-      {/* <div className="absolute bg-white">
-        {Math.round(alpha)}/{Math.round(beta)}/{Math.round(gamma)}
-        <br />
-        {holographicElement.current && holographicElement.current.style.backgroundPosition}
-      </div> */}
-      <div className={`absolute inset-0 z-20 effect-${type} effect-${type}-${cardId}`} ref={holographicElement}></div>
-    </>
+    <div className="overflow-hidden inset-0 absolute">
+      <div className={`absolute z-20 inset-0 effect-${type} effect-${type}-${cardId}`} ref={holographicElement}></div>
+    </div>
   );
 }

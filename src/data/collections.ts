@@ -90,6 +90,7 @@ export const ToppsChromeFcBarcelonaMésQueUnClub_2022_23: Collection = {
   brand: 'Topps',
   links: [
     'https://es.topps.com/products/fc-barcelona-chrome-22-23-topps-es',
+    'https://www.topps.com/media/amasty/amfile/attach/KcX70y08C6Ffn3ZR255UyeQbUD5IJl5p.pdf',
   ],
 };
 
