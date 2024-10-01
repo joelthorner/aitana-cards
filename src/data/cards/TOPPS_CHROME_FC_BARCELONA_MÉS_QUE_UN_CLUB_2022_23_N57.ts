@@ -207,14 +207,14 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO: Card =
   year: 2023,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_GOLD_X: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-gold-x-n57',
+export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_YELLOW_X: Card = {
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-yellow-x-n57',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57_back,
   ],
-  name: 'Aitana Bonmatí autograph gold X /99 - #57',
-  rarity: 3,
+  name: 'Aitana Bonmatí autograph yellow X /99 - #57',
+  rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
   collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
