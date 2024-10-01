@@ -22,24 +22,25 @@ export default function CollectionsList() {
 
   return (
     <ul className="text-sm text-gray-600">
-      {/* TODO: sort collections by a-z */}
-      {collectionsData.map((collection) => (
-        <li key={collection.id}>
-          <div className="flex items-center gap-x-3.5 py-2 px-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50">
-            <input
-              type="checkbox"
-              className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-              id={`hs-${collection.id}-checkbox`}
-              value={collection.id}
-              checked={selectedCollections.includes(collection.id)}
-              onChange={handleCheckboxChange}
-            />
-            <label htmlFor={`hs-${collection.id}-checkbox`} className="text-sm">
-              {collection.name}
-            </label>
-          </div>
-        </li>
-      ))}
+      {collectionsData
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((collection) => (
+          <li key={collection.id}>
+            <div className="flex items-center gap-x-3.5 py-2 px-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50">
+              <input
+                type="checkbox"
+                className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                id={`hs-${collection.id}-checkbox`}
+                value={collection.id}
+                checked={selectedCollections.includes(collection.id)}
+                onChange={handleCheckboxChange}
+              />
+              <label htmlFor={`hs-${collection.id}-checkbox`} className="text-sm">
+                {collection.name}
+              </label>
+            </div>
+          </li>
+        ))}
     </ul>
   );
 }

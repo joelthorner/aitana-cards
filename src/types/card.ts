@@ -12,7 +12,7 @@ export enum CardBrilli {
   GoldFoil = 'goldFoil',
   GoldMetal = 'goldMetal',
   PurpleFoil = 'purpleFoil',
-  // OrangeFoil = 'orangeFoil',
+  OrangeFoil = 'orangeFoil',
   Rainbow = 'rainbow',
   BlueTopps = 'blue',
   BlackTopps = 'black',
