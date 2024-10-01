@@ -17,6 +17,9 @@ import aitanaBonmati_57ChromeFcb_22_23_gold_refractor_back from "../img/cards/ai
 import aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor.png";
 import aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_2 from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_2.webp";
 import aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_back from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_back.webp";
+import aitanaBonmati_57ChromeFcb_22_23_red_x_fractor from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_red_x_fractor.png";
+import aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_2 from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_2.webp";
+import aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_back from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_back.webp";
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57: Card = {
   id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-n57',
@@ -77,7 +80,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_FCB_REFRACTOR_N5
     aitanaBonmati_7ChromeFcb_22_23_fcb_refractor,
     aitanaBonmati_7ChromeFcb_22_23_fcb_refractor_back,
   ],
-  name: 'Aitana Bonmatí Barça refractor n/99 - #57',
+  name: 'Aitana Bonmatí Barça refractor /99 - #57',
   description: "",
   rarity: 3,
   status: CardStatus.Falti,
@@ -93,7 +96,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_BLUE_REFRACTOR_N
     aitanaBonmati_7ChromeFcb_22_23_blue_refractor_2,
     aitanaBonmati_7ChromeFcb_22_23_blue_refractor_back,
   ],
-  name: 'Aitana Bonmatí Blue refractor n/75 - #57',
+  name: 'Aitana Bonmatí Blue refractor /75 - #57',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlueTopps,
@@ -107,7 +110,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_GOLD_REFRACTOR_N
     aitanaBonmati_57ChromeFcb_22_23_gold_refractor,
     aitanaBonmati_57ChromeFcb_22_23_gold_refractor_back,
   ],
-  name: 'Aitana Bonmatí Gold refractor n/50 - #57',
+  name: 'Aitana Bonmatí Gold refractor /50 - #57',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
@@ -122,7 +125,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_ORANGE_X_FRACTOR
     aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_2,
     aitanaBonmati_57ChromeFcb_22_23_orange_x_fractor_back,
   ],
-  name: 'Aitana Bonmatí Orange X-Fractor n/25 - #57',
+  name: 'Aitana Bonmatí Orange X-Fractor /25 - #57',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.OrangeFoil,
@@ -130,4 +133,39 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_ORANGE_X_FRACTOR
   year: 2023,
 };
 
-// Falten todo estic fent ara
+export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_PURPLE_REFRACTOR_N57: Card = {
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-purple-refractor-n57',
+  images: [],
+  missingImage: aitanaBonmati_57ChromeFcb_22_23,
+  name: 'Aitana Bonmatí Purple refractor /15 - #57',
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  year: 2023,
+};
+
+export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_RED_X_FRACTOR_N57: Card = {
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-red-x-fractor-n57',
+  images: [
+    aitanaBonmati_57ChromeFcb_22_23_red_x_fractor,
+    aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_2,
+    aitanaBonmati_57ChromeFcb_22_23_red_x_fractor_back,
+  ],
+  name: 'Aitana Bonmatí Red X-Fractor /5 - #57',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.RedRefractorTopps,
+  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  year: 2023,
+};
+
+export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_SUPERFRACTOR_N57: Card = {
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-superfractor-n57',
+  images: [],
+  missingImage: aitanaBonmati_57ChromeFcb_22_23,
+  name: 'Aitana Bonmatí Superfractor 1/1 - #57',
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  year: 2023,
+};
