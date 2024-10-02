@@ -1,4 +1,8 @@
-import { Card, CardBrilli, CardStatus } from "../../types/card"
+/**
+ * COMPLETED data
+ * @todo missing some image cards
+ */
+import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import aitanaBonmati_7ChromeFcb_22_23 from "../img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
@@ -24,6 +28,11 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   status: CardStatus.Tengui,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
+  cardType: [
+    CardType.BaseCard,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_REFRACTOR_7rf: Card = {
@@ -39,6 +48,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_REFRACTOR_7rf: Card = {
   brilli: CardBrilli.Refractor,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Refractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7x: Card = {
@@ -54,6 +69,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7x: Card = {
   brilli: CardBrilli.Holo,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
+  cardType: [
+    CardType.BaseCard,
+    CardType.XFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7b: Card = {
@@ -68,6 +89,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7b: Card = {
   brilli: CardBrilli.SlimVerticalRefractor,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
+  cardType: [
+    CardType.BaseCard,
+    CardType.BlackAndWhiteWave,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
@@ -84,6 +111,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 99,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Barça,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
@@ -102,6 +135,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 75,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Blue,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
@@ -117,6 +156,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 50,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Gold,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
@@ -130,6 +175,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 25,
+  cardType: [
+    CardType.BaseCard,
+    CardType.OrangeXFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7pu: Card = {
@@ -143,6 +194,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7pu: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 15,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Purple,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7r: Card = {
@@ -156,6 +213,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7r: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 5,
+  cardType: [
+    CardType.BaseCard,
+    CardType.RedXFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7sf: Card = {
@@ -163,10 +226,16 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7sf: Card = {
   number: '7sf',
   images: [],
   missingImage: aitanaBonmati_7ChromeFcb_22_23_refractor,
-  name: 'Aitana Bonmatí Base card /SuperFractor',
+  name: 'Aitana Bonmatí Base card / SuperFractor',
   rarity: 5,
   status: CardStatus.Falti,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   numbered: 1,
+  cardType: [
+    CardType.BaseCard,
+    CardType.SuperFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
 };

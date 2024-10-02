@@ -25,23 +25,58 @@ export enum CardBrilli {
   SlimVerticalRefractor = 'slimVerticalRefractor',
 };
 
+export enum CardType {
+  // Topps
+  BaseCard = 'Base card',
+  BaseInAction = 'Base in action',
+  Refractor = 'Refractor',
+  XFractor = 'X-Fractor',
+  BlackAndWhiteWave = 'Black & White Wave',
+  Barça = 'Barça',
+  Blue = 'Blue',
+  Gold = 'Gold',
+  OrangeXFractor = 'Orange X-Fractor',
+  Purple = 'Purple',
+  RedXFractor = 'Red X-Fractor',
+  SuperFractor = 'SuperFractor',
+  Autographs = 'Autographs',
+  ActionAutographs = 'Action Autographs',
+  YellowXFractor = 'Yellow X-Fractor',
+  QuadAutographBook = 'Quad Autograph Book',
+};
+
+export enum CardProductType {
+  Sticker = 'Sticker',
+  Card = 'Card',
+  BookCard = 'Book Card',
+};
+
+// export type CardData = {
+//   [key: string]: any;
+// };
+
 export type Card = {
   id: string,
-  number?: number | string; // TODO: compatiblitat pero no fer undefined
   images: string[],
   name: string,
+  number: number | string;
+  cardType: CardType[];
   rarity: 1 | 2 | 3 | 4 | 5,
   status: CardStatus,
   collection: Collection,
   year: number,
+  productType: CardProductType;
 
   description?: string,
+  missingImage?: string;
   brilli?: CardBrilli,
   links?: string[];
-  missingImage?: string;
+  numbered?: number; // Limited number series
+  cardSection?: string;
 
-  // Topps numbered series
-  numbered?: number;
-  // Topps variation product
-  cardBook?: boolean;
+  // data?: CardData[];
 };
+
+// cardType
+// cardSection
+// productType
