@@ -28,6 +28,9 @@ export enum CardBrilli {
 export enum CardType {
   // General / no type
   Base = 'Base',
+  Holographic = 'Holographic',
+  // Panini
+  GoldFoil = 'GoldFoil',
   // Topps
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
@@ -81,6 +84,7 @@ export type Card = {
   // data?: CardData[];
 };
 
+// REMEMBER posar
 // cardType
 // cardSection
 // productType

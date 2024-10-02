@@ -12,10 +12,10 @@ import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/co
 import simplicidad24 from "./img/collections/simplicidad24-1.png";
 import merlin98 from "./img/collections/merlin98-1.png";
 
-export const FinetworkLigaF_22_23Panini: Collection = {
-  id: 'finetwork-liga-f-22-23-panini',
+export const PaniniLigaF_2022_2023: Collection = {
+  id: 'panini-liga-f-2022-2023',
   image: panini_004743spe3w_0,
-  name: 'Finetwork Liga F 22/23 Panini',
+  name: 'Panini Liga F 2022-2023',
   description: `No hi ha millor manera de començar la col·lecció de cromos de la LLIGA FEMENINA 2022/23 (LLIGA F) que amb aquest fantàstic *Pack Inicial que et permet aconseguir l'Àlbum Oficial de la Col·lecció i una Capseta de 50 sobres amb 400 cromos.
 Ja és aquí la primera col·lecció oficial de cromos de la Lliga Femenina! 
 Cerca els cromos dels 16 equips de la Lliga *Finetwork Femenina en aquest àlbum històric que es converteix en el primer d'una lliga femenina de la història. Els cromos de *Alexia, Aitana, *Athenea, *Ludmila, Nerea Eizaguirre, Lola Gallardo, Missa… són presents en aquesta històrica col·lecció. 
@@ -28,10 +28,10 @@ Aquesta col·lecció consta de 365 cromos en total… no la deixis escapar!`,
   ],
 };
 
-export const LigaF_22_23Panini: Collection = {
-  id: 'liga-f-23-24-panini',
+export const PaniniLigaF_2023_2024: Collection = {
+  id: 'panini-liga-f-2023-2024',
   image: panini_004826spe3w_1_1,
-  name: 'Liga F 23/24 Panini',
+  name: 'Panini Liga F 2023-2024',
   description: `No hay mejor manera de empezar la colección de cromos de la LIGA FEMENINA 2023/24 (LIGA F) que con este fantástico Pack Inicial que te permite conseguir el Álbum Oficial de la Colección y una Cajita de 50 sobres con 400 cromos.
 ¡Ya está aquí la NUEVA colección oficial de cromos de la Liga Femenina! 
 Busca los cromos de los 16 equipos de la Liga F en este álbum que ofrece una colección más atractiva, más amplia y mejor en todos los sentidos. Se ha elevado el número de cromos hasta un total de 406.  Se ha aumentado el número de jugadoras por equipo hasta un mínimo de 18. Se ha ampliado el número de cromos realizados con materiales especiales gracias a las series On Fire, Fantásticas y Futuro, todas, siempre con la F de fútbol y femenino bien presente. Y para redondear todas estas novedades, se han creado 10 cromos Premium exclusivos. Los cromos de Aitana, Athenea, Alexia, Leicy, Virginia Torrecilla, Misa y muchos más… están presentes en esta histórica colección. 
@@ -159,8 +159,8 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
 };
 
 export const collections: Collection[] = [
-  FinetworkLigaF_22_23Panini,
-  LigaF_22_23Panini,
+  PaniniLigaF_2022_2023,
+  PaniniLigaF_2023_2024,
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   PaniniFifaWomenSWorldCupFrance_2019,
   ToppsNow,
