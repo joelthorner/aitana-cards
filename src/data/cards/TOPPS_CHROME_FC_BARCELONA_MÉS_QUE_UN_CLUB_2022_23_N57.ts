@@ -1,8 +1,8 @@
 /**
- * @todo Is possible missing some refactors autograph?
+ * @todo Is possible missing some refractors autograph?
  */
 import { Card, CardBrilli, CardStatus } from "../../types/card";
-import { ToppsChromeFcBarcelonaMésQueUnClub_2022_23 } from "../collections";
+import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import aitanaBonmati_57ChromeFcb_22_23 from "../img/cards/aitana-bonmati-57-chrome-fcb-22-23.png";
 import aitanaBonmati_57ChromeFcb_22_23_refractor from "../img/cards/aitanaBonmati_57ChromeFcb_22_23_refractor.png";
@@ -42,6 +42,9 @@ import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57 from "../img/ca
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back.webp";
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57.png";
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back.webp";
+import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook.jpg";
+import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_2 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_2.jpg";
+import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_3 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_3.jpg";
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57: Card = {
   id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-n57',
@@ -51,7 +54,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57: Card = {
   name: 'Aitana Bonmatí - #57',
   rarity: 1,
   status: CardStatus.Tengui,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -64,7 +67,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_REFACTOR_N57: Ca
   rarity: 2,
   status: CardStatus.Falti,
   brilli: CardBrilli.Holo,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -78,7 +81,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_BNW_REFRACTOR_N5
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.SlimVerticalRefractor,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -92,7 +95,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_X_FRACTOR_N57: C
   rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.Holo,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -107,7 +110,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_FCB_REFRACTOR_N5
   rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.Refractor,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -122,7 +125,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_BLUE_REFRACTOR_N
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlueTopps,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -136,7 +139,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_GOLD_REFRACTOR_N
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -151,7 +154,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_ORANGE_X_FRACTOR
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.OrangeFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -162,7 +165,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_PURPLE_REFRACTOR
   name: 'Aitana Bonmatí Purple refractor /15 - #57',
   rarity: 5,
   status: CardStatus.Falti,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -177,7 +180,7 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_RED_X_FRACTOR_N5
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.RedRefractorTopps,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
@@ -188,56 +191,56 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_SUPERFRACTOR_N57
   name: 'Aitana Bonmatí Superfractor 1/1 - #57',
   rarity: 5,
   status: CardStatus.Falti,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57_2,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57_back,
   ],
-  name: 'Aitana Bonmatí autograph - #57',
+  name: 'Aitana Bonmatí autograph - AA-7',
   rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.ShinyHolo,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_YELLOW_X: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-yellow-x-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-yellow-x-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57_back,
   ],
-  name: 'Aitana Bonmatí autograph yellow X /99 - #57',
+  name: 'Aitana Bonmatí autograph yellow X /99 - AA-7',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_BLUE: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-blue-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-blue-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBlueN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBlueN57_2,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBlueN57_back,
   ],
-  name: 'Aitana Bonmatí autograph blue /75 - #57',
+  name: 'Aitana Bonmatí autograph blue /75 - AA-7',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlueTopps,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_GOLD: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-gold-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-gold-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57_2,
@@ -247,38 +250,55 @@ export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_GOLD: C
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57_6,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57_7,
   ],
-  name: 'Aitana Bonmatí autograph gold /50 - #57',
+  name: 'Aitana Bonmatí autograph gold /50 - AA-7',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_ORANGE_X: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-orange-x-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-orange-x-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back,
   ],
-  name: 'Aitana Bonmatí autograph orange X /25 - #57',
+  name: 'Aitana Bonmatí autograph orange X /25 - AA-7',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.OrangeFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_N57_AUTO_PURPLE: Card = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-purple-n57',
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-purple-aa7',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back,
   ],
-  name: 'Aitana Bonmatí autograph purple /15 - #57',
+  name: 'Aitana Bonmatí autograph purple /15 - AA-7',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
+};
+
+export const TOPPS_CHROME_FC_BARCELONA_MÉS_QUE_UN_CLUB_2022_23_AUTO_BOOK: Card = {
+  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23-auto-purple-QAB-1g',
+  images: [
+    toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook,
+    toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_2,
+    toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_3,
+  ],
+  name: 'Quad Autograph Book Gold 1/1 - QAB-1g',
+  description: 'Aitana Bonmati / Alexia Putellas / Caroline Graham Hansen / Asisat Oshoala',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.GoldFoil,
+  collection: ToppsChromeFcBarcelona_2022_2023,
+  year: 2023,
+  cardBook: true,
 };

@@ -12,6 +12,7 @@ export enum CardBrilli {
   GoldFoil = 'goldFoil',
   GoldMetal = 'goldMetal',
   PurpleFoil = 'purpleFoil',
+  GreenFoil = 'greenFoil',
   OrangeFoil = 'orangeFoil',
   Rainbow = 'rainbow',
   BlueTopps = 'blue',
@@ -22,20 +23,25 @@ export enum CardBrilli {
   InfernoRefractorTopps = 'infernoRefractor',
   RedRefractorTopps = 'redRefractor',
   SlimVerticalRefractor = 'slimVerticalRefractor',
-  // SquaresFractor = 'squaresFractor',
 };
 
 export type Card = {
   id: string,
+  number?: number | string; // TODO: compatiblitat pero no fer undefined
   images: string[],
-  missingImage?: string;
   name: string,
-  description?: string,
   rarity: 1 | 2 | 3 | 4 | 5,
   status: CardStatus,
   collection: Collection,
-  searchKey?: string,
   year: number,
+
+  description?: string,
   brilli?: CardBrilli,
   links?: string[];
+  missingImage?: string;
+
+  // Topps numbered series
+  numbered?: number;
+  // Topps variation product
+  cardBook?: boolean;
 };

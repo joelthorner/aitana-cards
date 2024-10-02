@@ -68,6 +68,21 @@
   mix-blend-mode: color-dodge;
 }
 
+.effect-greenFoil {
+  background-size: 300% 300%;
+  --space: 10%;
+  --angle: -56deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(101, 100%, 30%, 0.5) calc(var(--space)* 1),
+      hsla(83, 100%, 56%, 0.5) calc(var(--space)* 2),
+      hsla(135, 100%, 94%, 0.5) calc(var(--space)* 3),
+      hsla(91, 100%, 66%, 0.5) calc(var(--space)* 5),
+      hsla(101, 100%, 30%, 0.5) calc(var(--space)* 6));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  mix-blend-mode: color-dodge;
+}
+
 .effect-orangeFoil {
   background-size: 200% 200%;
   --space: 15%;

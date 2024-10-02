@@ -82,7 +82,7 @@ export const ToppsNow: Collection = {
   ],
 };
 
-export const ToppsChromeFcBarcelonaMésQueUnClub_2022_23: Collection = {
+export const ToppsChromeFcBarcelona_2022_2023: Collection = {
   id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23',
   image: sL1200_480x,
   name: "Topps Chrome FC Barcelona 2022/23: ¡Més Que Un Club!",
@@ -91,6 +91,7 @@ export const ToppsChromeFcBarcelonaMésQueUnClub_2022_23: Collection = {
   links: [
     'https://es.topps.com/products/fc-barcelona-chrome-22-23-topps-es',
     'https://www.topps.com/media/amasty/amfile/attach/KcX70y08C6Ffn3ZR255UyeQbUD5IJl5p.pdf',
+    'https://www.laststicker.com/cards/topps_chrome_barcelona_2022-2023/',
   ],
 };
 
@@ -163,7 +164,7 @@ export const collections: Collection[] = [
   Topps_21_22UefaWomenSChampionsLeagueChrome,
   PaniniFifaWomenSWorldCupFrance_2019,
   ToppsNow,
-  ToppsChromeFcBarcelonaMésQueUnClub_2022_23,
+  ToppsChromeFcBarcelona_2022_2023,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   UefaChampionsLeagueStickerCollection_2022_23,
   UefaChampionsLeagueStickerCollection_2023_24,

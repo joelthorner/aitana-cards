@@ -1,3 +1,7 @@
+/**
+ * @todo falten parallels /5 i 1/1
+ */
+
 import { Card, CardBrilli, CardStatus } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
@@ -17,6 +21,8 @@ import aitanaBonmatiBaseFcbWomenWinners_23Parallel99 from "../img/cards/aitanaBo
 import aitanaBonmatiBaseFcbWomenWinners_23Parallel99_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Parallel99_2.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23Parallel99_3 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Parallel99_3.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23Parallel99_4 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Parallel99_4.webp";
+import aitanaBonmatiBaseFcbWomenWinners_23Parallel25 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Parallel25.png";
+import aitanaBonmatiBaseFcbWomenWinners_23Parallel25_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Parallel25_2.webp";
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023: Card = {
   id: 'topps-fc-barcelona-women-winners-team-set-2023',
@@ -39,10 +45,10 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_PARALLEL_99: Card = 
     aitanaBonmatiBaseFcbWomenWinners_23Parallel99_3,
     aitanaBonmatiBaseFcbWomenWinners_23Parallel99_4,
   ],
-  name: 'Aitana Bonmatí /99',
+  name: 'Aitana Bonmatí green /99',
   rarity: 3,
   status: CardStatus.Falti,
-  brilli: CardBrilli.Holo,
+  brilli: CardBrilli.GreenFoil,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
 };
@@ -57,10 +63,24 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_PARALLEL_49: Card = 
     aitanaBonmatiBaseFcbWomenWinners_23Parallel49_5,
     aitanaBonmatiBaseFcbWomenWinners_23Parallel49_6,
   ],
-  name: 'Aitana Bonmatí /49',
+  name: 'Aitana Bonmatí blue /49',
   rarity: 4,
   status: CardStatus.Falti,
-  brilli: CardBrilli.Holo,
+  brilli: CardBrilli.BlueTopps,
+  collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  year: 2023,
+};
+
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_PARALLEL_25: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-parallel-25-2023',
+  images: [
+    aitanaBonmatiBaseFcbWomenWinners_23Parallel25,
+    aitanaBonmatiBaseFcbWomenWinners_23Parallel25_2,
+  ],
+  name: 'Aitana Bonmatí purple /25',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.PurpleFoil,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
 };
@@ -73,12 +93,10 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_PARALLEL_10: Card = 
     aitanaBonmatiBaseFcbWomenWinners_23Parallel10_3,
     aitanaBonmatiBaseFcbWomenWinners_23Parallel10_4,
   ],
-  name: 'Aitana Bonmatí /10',
+  name: 'Aitana Bonmatí red /10',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.Holo,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
 };
-
-// TODO: Buscar i ficar variants de topps
