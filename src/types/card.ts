@@ -26,6 +26,8 @@ export enum CardBrilli {
 };
 
 export enum CardType {
+  // General / no type
+  Base = 'Base',
   // Topps
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
@@ -43,6 +45,8 @@ export enum CardType {
   ActionAutographs = 'Action Autographs',
   YellowXFractor = 'Yellow X-Fractor',
   QuadAutographBook = 'Quad Autograph Book',
+  // Topps stickers
+  Shiny = 'Shiny',
 };
 
 export enum CardProductType {

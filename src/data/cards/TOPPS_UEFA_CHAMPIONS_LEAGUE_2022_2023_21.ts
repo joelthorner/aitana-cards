@@ -1,14 +1,18 @@
-import { Card, CardStatus } from "../../types/card";
+/**
+ * COMPLETED data
+ */
+import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { UefaChampionsLeagueStickerCollection_2022_23 } from "../collections";
 
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "../img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
 
-const AITANA_BONMATI_2022_23_TOP_MIDFIELER_2021_22_N543: Card = {
-  id: 'aitana-bonmati-2022-23-top-midfieler-2021-22-n543',
+const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
+  id: 'topps-uefa-champions-league-2022-2023-21',
+  number: 21,
   images: [
     aitanaBonmati_2022_23TopMidfieler_2021_22_543,
   ],
-  name: 'Top midfielder 2021/22 - #543',
+  name: 'Aitana Bonmatí (FC Barcelona) #21',
   rarity: 1,
   status: CardStatus.Tengui,
   collection: UefaChampionsLeagueStickerCollection_2022_23,
@@ -16,6 +20,11 @@ const AITANA_BONMATI_2022_23_TOP_MIDFIELER_2021_22_N543: Card = {
   links: [
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
   ],
+  cardSection: '2021/22 UWCL Standout Performers',
+  cardType: [
+    CardType.Shiny,
+  ],
+  productType: CardProductType.Card,
 };
 
-export default AITANA_BONMATI_2022_23_TOP_MIDFIELER_2021_22_N543;
+export default TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21;

@@ -83,7 +83,7 @@ export const ToppsNow: Collection = {
 };
 
 export const ToppsChromeFcBarcelona_2022_2023: Collection = {
-  id: 'topps-chrome-fc-barcelona-més-que-un-club-2022-23',
+  id: 'topps-chrome-fc-barcelona-2022-23',
   image: sL1200_480x,
   name: "Topps Chrome FC Barcelona 2022/23: ¡Més Que Un Club!",
   description: ``,

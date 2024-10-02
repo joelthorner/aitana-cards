@@ -1,16 +1,20 @@
-import { Card, CardBrilli, CardStatus } from "../../types/card";
+/**
+ * COMPLETED data
+ */
+import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { UefaChampionsLeagueStickerCollection_2022_23 } from "../collections";
 
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.png";
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
 
-const AITANA_BONMATI_2022_23_UWCL_STANDOUT_PERFORMERS_OF_2021_22_N21: Card = {
-  id: 'aitana-bonmati-2022-23-uwcl-standout-performers-of-2021-22-n21',
+const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543: Card = {
+  id: 'topps-uefa-champions-league-2022-2023-543',
+  number: 543,
   images: [
     aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21,
     aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back,
   ],
-  name: 'Aitana Bonmatí - #21',
+  name: 'Aitana Bonmatí (Top midfielder 2021/22) #543',
   description: 'Section 2021/22 UWCL Standout Performers',
   rarity: 2,
   status: CardStatus.Tengui,
@@ -20,6 +24,11 @@ const AITANA_BONMATI_2022_23_UWCL_STANDOUT_PERFORMERS_OF_2021_22_N21: Card = {
   links: [
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/21/',
   ],
+  cardSection: 'UEFA Women\'s Champions League',
+  cardType: [
+    CardType.Base,
+  ],
+  productType: CardProductType.Card,
 };
 
-export default AITANA_BONMATI_2022_23_UWCL_STANDOUT_PERFORMERS_OF_2021_22_N21;
+export default TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543;
