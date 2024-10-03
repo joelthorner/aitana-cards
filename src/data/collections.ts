@@ -106,6 +106,7 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
   links: [
     'https://es.topps.com/products/topps-fc-barcelona-women-team-set-2023-topps-es',
     'https://www.topps.com/media/amasty/amfile/attach/Ps9ysBLid2wigcrA2dKluHZplGmx4r5r.pdf',
+    'https://cartophilic-info-exch.blogspot.com/2023/07/topps-fc-barcelona-women-champions-2023.html',
   ],
 };
 
