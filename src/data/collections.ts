@@ -71,10 +71,11 @@ export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
   ],
 };
 
-export const ToppsNow: Collection = {
+export const ToppsNowWomenSChampionsLeague_2023_24: Collection = {
   id: 'toppsNow',
   image: Topps_Now_Logo_Black,
-  name: "Topps Now",
+  name: "Topps Now Women's Champions League 2023-24",
+  serie: 'Topps Now',
   description: ``,
   brand: 'Topps',
   links: [
@@ -164,7 +165,7 @@ export const collections: Collection[] = [
   PaniniLigaF_2023_2024,
   ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
   PaniniFifaWomenSWorldCupFrance_2019,
-  ToppsNow,
+  ToppsNowWomenSChampionsLeague_2023_24,
   ToppsChromeFcBarcelona_2022_2023,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   UefaChampionsLeagueStickerCollection_2022_23,

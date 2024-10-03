@@ -58,6 +58,7 @@ export enum CardType {
   NeonGreen = 'Neon Green',
   Inferno = 'Inferno',
   OrangeWave = 'Orange Wave',
+  Black = 'Black',
 
   // Topps stickers
   Shiny = 'Shiny',
@@ -87,5 +88,5 @@ export type Card = {
   links?: string[];
   numbered?: number; // Limited number series
   cardSection?: string;
-
+  teamCard?: boolean;
 };

@@ -1,3 +1,6 @@
+/**
+ * COMPLETED data
+ */
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2021_2022 } from "../collections";
 

@@ -1,5 +1,5 @@
 import { Card, CardBrilli, CardStatus } from "../../types/card"
-import { ToppsNow } from "../collections";
+import { ToppsNowWomenSChampionsLeague_2023_24 } from "../collections";
 
 import toppsNowTheDeadlyDuo from "../img/cards/topps-now-the-deadly-duo.png";
 import toppsNowTheDeadlyDuo_back from "../img/cards/Topps-Now-Back-1-2-570x760.png";
@@ -20,7 +20,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO: Card = {
   name: "The deadly duo",
   rarity: 1,
   status: CardStatus.Tengui,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -37,7 +37,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_PURPLE: Card = {
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -54,7 +54,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_BLACK: Card = {
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlackTopps,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -71,7 +71,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_GOLD: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -87,7 +87,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_DUAL_AUTOGRAPH_PURPLE: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -103,7 +103,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_DUAL_AUTOGRAPH_BLACK: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlackTopps,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -119,7 +119,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_DUAL_AUTOGRAPH_RAINBOW: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.Rainbow,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',
@@ -135,7 +135,7 @@ export const TOPPS_NOW_THE_DEADLY_DUO_DUAL_AUTOGRAPH_GOLD: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsNow,
+  collection: ToppsNowWomenSChampionsLeague_2023_24,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/05/topps-topps-now-uefa-womens-champions_01774122947.html',

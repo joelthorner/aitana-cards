@@ -1,4 +1,6 @@
-
+/**
+ * COMPLETED data
+ */
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniFifaWomenSWorldCupFrance_2019 } from "../collections";
 import franceWomanWC154 from "../img/cards/154franceWomanWC.png";
