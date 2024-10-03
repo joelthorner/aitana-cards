@@ -43,10 +43,10 @@ Busca los cromos de los 16 equipos de la Liga F en este álbum que ofrece una co
   ],
 };
 
-export const Topps_21_22UefaWomenSChampionsLeagueChrome: Collection = {
-  id: '2021-2022-toppsr-chrome-uefa-women-s-champions-league-topps',
+export const ToppsUefaWomenSChampionsLeagueChrome_2021_2022: Collection = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2021-2022',
   image: uclw_fgc4624h_box_21_22,
-  name: "2021-22 Topps UEFA Women’s Champions League Chrome",
+  name: "Topps UEFA Women's Champions League Chrome 2021-2022",
   description: `2021-2022 Topps® Chrome UEFA Women's Champions League
 ¡1 Carta con Autógrafo Chrome en Cada Caja!
 ¡Presentando, por la primera vez en historia la colección Topps Chrome 2021/2022 de la UEFA Women’s Champions League!
@@ -54,6 +54,7 @@ Celebrando lo mejor del fútbol femenino, este producto premium Chrome incluye l
 Colecciona tus favoritos en un Base Set de 100 cartas con insert sets como Future Stars y Goal Machines. Busca las raras FIERCE inserts que exhiben  los jugadores más “on-fire” de la competición.`,
   brand: 'Topps',
   links: [
+    'https://www.laststicker.com/cards/topps_womens_champions_league_chrome_2021-2022/checklist',
     'https://www.topps.com/media/pdf/CheckList_22WUCC_FINAL.pdf',
     'https://www.cardboardconnection.com/2021-22-topps-chrome-uefa-womens-champions-league-cards',
   ],
@@ -161,7 +162,7 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
-  Topps_21_22UefaWomenSChampionsLeagueChrome,
+  ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
   PaniniFifaWomenSWorldCupFrance_2019,
   ToppsNow,
   ToppsChromeFcBarcelona_2022_2023,

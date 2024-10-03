@@ -29,11 +29,16 @@ export enum CardType {
   // General / no type
   Base = 'Base',
   Holographic = 'Holographic',
+
   // Panini
   GoldFoil = 'GoldFoil',
+
   // Topps
+  RookieCard = 'Rookie Card',
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
+  FutureStars = 'Future Stars',
+
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
   BlackAndWhiteWave = 'Black & White Wave',
@@ -42,12 +47,18 @@ export enum CardType {
   Gold = 'Gold',
   OrangeXFractor = 'Orange X-Fractor',
   Purple = 'Purple',
+  Red = 'Red',
   RedXFractor = 'Red X-Fractor',
   SuperFractor = 'SuperFractor',
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
   YellowXFractor = 'Yellow X-Fractor',
   QuadAutographBook = 'Quad Autograph Book',
+  PinkPrism = 'Pink Prism',
+  NeonGreen = 'Neon Green',
+  Inferno = 'Inferno',
+  OrangeWave = 'Orange Wave',
+
   // Topps stickers
   Shiny = 'Shiny',
 };
@@ -57,10 +68,6 @@ export enum CardProductType {
   Card = 'Card',
   BookCard = 'Book Card',
 };
-
-// export type CardData = {
-//   [key: string]: any;
-// };
 
 export type Card = {
   id: string,
@@ -81,10 +88,4 @@ export type Card = {
   numbered?: number; // Limited number series
   cardSection?: string;
 
-  // data?: CardData[];
 };
-
-// REMEMBER posar
-// cardType
-// cardSection
-// productType
