@@ -88,5 +88,4 @@ export type Card = {
   links?: string[];
   numbered?: number; // Limited number series
   cardSection?: string;
-  teamCard?: boolean;
 };
