@@ -2,7 +2,7 @@
  * COMPLETED data
  */
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
-import { ToppsNowWomenSChampionsLeague_2023_24 } from "../collections";
+import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowWondergoalSealsSemiFinalSpot from "../img/cards/topps-now-wondergoal-seals-semi-final-spot.png";
 import toppsNowWondergoalSealsSemiFinalSpot2 from "../img/cards/topps-now-wondergoal-seals-semi-final-spot-2.webp";
@@ -22,7 +22,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16: Card = {
   name: "Aitana Bonmatí - Wondergoal seals semi-final spot",
   rarity: 2,
   status: CardStatus.Tengui,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
@@ -45,7 +45,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16pu: Card = {
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
@@ -69,7 +69,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16bl: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlackTopps,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',
@@ -93,7 +93,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16g: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2024/03/topps-topps-now-uefa-womens-champions.html',

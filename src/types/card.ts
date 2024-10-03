@@ -53,6 +53,7 @@ export enum CardType {
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
   YellowXFractor = 'Yellow X-Fractor',
+  DualAutographs = 'Dual Autographs',
   QuadAutographBook = 'Quad Autograph Book',
   PinkPrism = 'Pink Prism',
   NeonGreen = 'Neon Green',

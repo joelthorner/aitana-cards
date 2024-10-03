@@ -2,7 +2,7 @@
  * COMPLETED data
  */
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
-import { ToppsNowWomenSChampionsLeague_2023_24 } from "../collections";
+import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import cardnow21 from "../img/cards/cardnow21.png";
 import cardnow21_2 from "../img/cards/artwcl-16c2s-24tn-021_5.png";
@@ -25,7 +25,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
   name: "Aitana Bonmatí - UEFA Women's Champions League winners 2023-24",
   rarity: 2,
   status: CardStatus.Falti,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
@@ -47,7 +47,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21pu: Card = {
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
@@ -70,7 +70,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21bl: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlackTopps,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
@@ -93,7 +93,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21g: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",

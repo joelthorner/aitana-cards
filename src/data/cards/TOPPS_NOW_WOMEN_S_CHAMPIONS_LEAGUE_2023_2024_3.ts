@@ -2,7 +2,7 @@
  * COMPLETED data
  */
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
-import { ToppsNowWomenSChampionsLeague_2023_24 } from "../collections";
+import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.png";
 import toppsNowBrilliantBraceInOpeningGame2 from "../img/cards/topps-now-brilliant-brace-in-opening-game-2.webp";
@@ -20,7 +20,7 @@ const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_3: Card = {
   description: "",
   rarity: 2,
   status: CardStatus.Falti,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2023,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2023/11/topps-topps-now-uefa-womens-champions.html',

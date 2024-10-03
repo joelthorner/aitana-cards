@@ -2,7 +2,7 @@
  * COMPLETED data
  */
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
-import { ToppsNowWomenSChampionsLeague_2023_24 } from "../collections";
+import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "../img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023_back from "../img/cards/2023-24-topps-womens-champions-league-now-back.webp";
@@ -20,7 +20,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1: Card = {
   name: "Aitana Bonmatí - UEFA Women's Player of the Year",
   rarity: 1,
   status: CardStatus.Tengui,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2023,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html',
@@ -43,7 +43,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1pu: Card = {
   rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2023,
   numbered: 99,
   links: [
@@ -65,7 +65,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1bl: Card = {
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlackTopps,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2023,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
@@ -87,7 +87,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1g: Card = {
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
-  collection: ToppsNowWomenSChampionsLeague_2023_24,
+  collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2023,
   links: [
     'https://cartophilic-info-exch.blogspot.com/2023/09/topps-topps-now-uefa-womens-champions.html'
