@@ -107,6 +107,7 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
     'https://es.topps.com/products/topps-fc-barcelona-women-team-set-2023-topps-es',
     'https://www.topps.com/media/amasty/amfile/attach/Ps9ysBLid2wigcrA2dKluHZplGmx4r5r.pdf',
     'https://cartophilic-info-exch.blogspot.com/2023/07/topps-fc-barcelona-women-champions-2023.html',
+    'https://www.collectosk.com/2022-23-topps-fc-barcelona-women-official-team-set-soccer-cards/#checklist',
   ],
 };
 
@@ -122,15 +123,15 @@ export const UefaChampionsLeagueStickerCollection_2022_23: Collection = {
   ],
 };
 
-export const UefaChampionsLeagueStickerCollection_2023_24: Collection = {
-  id: 'uefa-champions-league-sticker-collection-2023-24',
+export const ToppsUefaChampionsLeague_2023_2024: Collection = {
+  id: 'topps-uefa-champions-league-2023-2024',
   image: multipack_6Packets_1,
-  name: "UEFA Champions League Sticker Collection 2023/24",
+  name: "Topps UEFA Champions League 2023-2024",
   description: `La colección de stickers de la UEFA Champions League vuelve esta temporada 2023/204, con los 32 equipos en un mega album de 80 páginas. Con 741 stickers para coleccionar y nuevas categorías como Impact stickers, 'Memories that Stick', Super Stickers y UCL Starball, esta nueva colección emocionará a cada fan. Además, entre las novedades encontrarás Team of the Season 2022/2023, Mega Signings, Vote for the Goat y UEFA Champions League Adidas Starball History. Busca la Golden Parallel 1st Sticker, además de muchas más paralelas que encontrarás en la colección.`,
   brand: 'Topps',
   links: [
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
-    'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/',
+    'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/checklist',
   ],
 };
 
@@ -170,7 +171,7 @@ export const collections: Collection[] = [
   ToppsChromeFcBarcelona_2022_2023,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   UefaChampionsLeagueStickerCollection_2022_23,
-  UefaChampionsLeagueStickerCollection_2023_24,
+  ToppsUefaChampionsLeague_2023_2024,
   ToppsUefaClubCompetitionsSimplicidad_2023_24,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
 ];

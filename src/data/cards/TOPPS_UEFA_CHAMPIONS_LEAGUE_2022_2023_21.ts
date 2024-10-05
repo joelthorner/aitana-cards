@@ -24,7 +24,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
   cardType: [
     CardType.Shiny,
   ],
-  productType: CardProductType.Card,
+  productType: CardProductType.Sticker,
 };
 
 export default TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21;
