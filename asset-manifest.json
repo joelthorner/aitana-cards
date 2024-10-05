@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aitana-cards/static/css/main.dce5b58a.css",
-    "main.js": "/aitana-cards/static/js/main.93d620d2.js",
+    "main.js": "/aitana-cards/static/js/main.7d363d0a.js",
     "static/js/453.24aa0ee5.chunk.js": "/aitana-cards/static/js/453.24aa0ee5.chunk.js",
     "static/media/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png": "/aitana-cards/static/media/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.995dd53cf287c7ebdac5.png",
     "static/media/aitanaBonmati_7ChromeFcb_22_23_blue_back.png": "/aitana-cards/static/media/aitanaBonmati_7ChromeFcb_22_23_blue_back.9f59e6fd5952acce3855.png",
@@ -173,11 +173,11 @@
     "static/media/313503-18753690Bk.jpg": "/aitana-cards/static/media/313503-18753690Bk.4ea5da39889f6d964ddb.jpg",
     "index.html": "/aitana-cards/index.html",
     "main.dce5b58a.css.map": "/aitana-cards/static/css/main.dce5b58a.css.map",
-    "main.93d620d2.js.map": "/aitana-cards/static/js/main.93d620d2.js.map",
+    "main.7d363d0a.js.map": "/aitana-cards/static/js/main.7d363d0a.js.map",
     "453.24aa0ee5.chunk.js.map": "/aitana-cards/static/js/453.24aa0ee5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dce5b58a.css",
-    "static/js/main.93d620d2.js"
+    "static/js/main.7d363d0a.js"
   ]
 }
