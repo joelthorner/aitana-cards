@@ -38,6 +38,7 @@ export enum CardType {
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
+  TeamCard = 'Team Card',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',

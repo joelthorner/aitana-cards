@@ -1,7 +1,7 @@
 /**
  * @todo Missing data of [13g] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [13rb] Excel data 4 more detail [no evidence]
  */
-
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 

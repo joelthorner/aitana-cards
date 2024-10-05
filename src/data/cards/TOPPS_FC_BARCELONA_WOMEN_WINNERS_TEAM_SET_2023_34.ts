@@ -1,7 +1,13 @@
 /**
- * @todo /49, /10, /5, 1/1, auto 
+ * @todo Missing data of [34bu] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [34r] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [34g] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [AA-34] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [AA-34gr] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [AA-34r] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [AA-34rb] Excel data 4 more detail [no evidence]
+ * @todo Missing data of [AA-34g] Excel data 4 more detail [no evidence]
  */
-
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
