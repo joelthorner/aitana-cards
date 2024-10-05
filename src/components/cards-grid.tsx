@@ -17,7 +17,7 @@ export default function CardsGrid({ cards }: CardsGridProps) {
   });
 
   return cards.length ? (
-    <div className="grid grid-default-cards gap-x-2 gap-y-4">
+    <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
       {cards.map((card) => (
         <div className="grid-item" key={card.id}>
           <Card card={card} />

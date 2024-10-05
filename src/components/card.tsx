@@ -15,7 +15,7 @@ export default function Card({ card }: CardProps) {
   const statusIcon = getCardStatusIcon(card.status);
 
   const defaultImage = card.images.length ? (
-    <img src={card.images[0]} alt={card.name} />
+    <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full" />
   ) : (
     <div className="bg-gray-100 h-full w-full">
       <CameraOff className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-10" />
@@ -25,9 +25,9 @@ export default function Card({ card }: CardProps) {
 
   return (
     <Link to={"/cards/" + card.id} className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition">
-      <div className="w-full aspect-[6/8] relative">
+      <div className="w-full aspect-[5/7] relative">
         {defaultImage}
-        {card.brilli && <Holo type={card.brilli} cardId={card.id} />}
+        {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
       </div>
 
       <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2" title={card.name}>

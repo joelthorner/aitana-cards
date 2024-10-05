@@ -135,10 +135,10 @@ export const ToppsUefaChampionsLeague_2023_2024: Collection = {
   ],
 };
 
-export const ToppsUefaClubCompetitionsSimplicidad_2023_24: Collection = {
-  id: 'topps-uefa-club-competitions-simplicidad-2023-24',
+export const ToppsSimplicidadUefaClubCompetitions_2023_2024: Collection = {
+  id: 'topps-simplicidad-uefa-club-competitions-2023-2024',
   image: simplicidad24,
-  name: "Topps UEFA Club Competitions Simplicidad 2023/24",
+  name: "Topps Simplicidad UEFA Club Competitions 2023-2024",
   description: `¡Topps UEFA Club Competitions Simplicidad vuelve más grande y mejor que nunca para la temporada 2023/2024! Esta nueva colección cuenta con los nombres más grandes del fútbol europeo capturados en siete renovados diseños con una impresionante gama de colores: de monocromo a todo color. 
 Capturamos los mejores talentos futbolísticos en nuevos subsets como "Polaroid" y "Portrait", a la vez que traemos a la vida toda la acción con "Dynamic".  Además, llegan algunas de las mayores leyendas y mejores momentos de la competición europea con el subset "Momentos icónicos".  
 Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más destacados de la historia de la UEFA Champions League. Con más cartas y subsets que nunca, ¡la colección es simplemente imperdible para los aficionados del fútbol! Exclusivo de Topps.es.com. `,
@@ -146,6 +146,7 @@ Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más d
   links: [
     'https://es.topps.com/products/topps-uefa-club-competitions-simplicidad-2023-24-set-topps-es',
     'https://www.topps.com/media/amasty/amfile/attach/nllEMaT1R2iWQCzVskNDLvpKIieI7w5r.pdf',
+    'https://www.collectosk.com/2023-24-topps-simplicidad-uefa-club-competitions-soccer-cards/',
   ],
 };
 
@@ -172,6 +173,6 @@ export const collections: Collection[] = [
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   UefaChampionsLeagueStickerCollection_2022_23,
   ToppsUefaChampionsLeague_2023_2024,
-  ToppsUefaClubCompetitionsSimplicidad_2023_24,
+  ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
 ];

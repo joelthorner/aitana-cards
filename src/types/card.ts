@@ -39,30 +39,35 @@ export enum CardType {
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
   TeamCard = 'Team Card',
+  Dynamic = 'Dynamic',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
+
   BlackAndWhiteWave = 'Black & White Wave',
   Barça = 'Barça',
+
   Blue = 'Blue',
   Gold = 'Gold',
-  OrangeXFractor = 'Orange X-Fractor',
+  Black = 'Black',
+  Green = 'Green',
+  Rainbow = 'Rainbow',
   Purple = 'Purple',
   Red = 'Red',
+
   RedXFractor = 'Red X-Fractor',
+  OrangeXFractor = 'Orange X-Fractor',
   SuperFractor = 'SuperFractor',
-  Autographs = 'Autographs',
-  ActionAutographs = 'Action Autographs',
   YellowXFractor = 'Yellow X-Fractor',
-  DualAutographs = 'Dual Autographs',
-  QuadAutographBook = 'Quad Autograph Book',
   PinkPrism = 'Pink Prism',
   NeonGreen = 'Neon Green',
   Inferno = 'Inferno',
   OrangeWave = 'Orange Wave',
-  Black = 'Black',
-  Green = 'Green',
-  Rainbow = 'Rainbow',
+
+  Autographs = 'Autographs',
+  ActionAutographs = 'Action Autographs',
+  DualAutographs = 'Dual Autographs',
+  QuadAutographBook = 'Quad Autograph Book',
 
   // Topps stickers
   Shiny = 'Shiny',
