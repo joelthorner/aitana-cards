@@ -2,7 +2,7 @@
  * @todo /49, /10, /5, 1/1, auto 
  */
 
-import { Card, CardBrilli, CardStatus } from "../../types/card";
+import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "../img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
@@ -17,84 +17,130 @@ import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2 from "../img/cards/ait
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto.png";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto.png";
 
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen',
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-34',
+  number: 34,
   images: [
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen,
   ],
-  name: 'Aitana Bonmatí - Assist queen',
+  name: 'Aitana Bonmatí Base in action',
   rarity: 1,
   status: CardStatus.Falti,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
+  cardSection: "Assist Queen",
+  cardType: [
+    CardType.BaseInAction,
+  ],
+  productType: CardProductType.Card,
 };
 
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN_99: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen_99',
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34gr: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-34gr',
+  number: '34gr',
   images: [
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99,
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99_2,
   ],
-  name: 'Aitana Bonmatí - Assist queen /99',
+  name: 'Aitana Bonmatí Base in action / Green',
   rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.GreenFoil,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
+  cardSection: "Assist Queen",
+  cardType: [
+    CardType.BaseInAction,
+    CardType.Green,
+  ],
+  productType: CardProductType.Card,
+  numbered: 99,
 };
 
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN_25: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen_25',
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34pu: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-34pu',
+  number: '34pu',
   images: [
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25,
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2,
   ],
-  name: 'Aitana Bonmatí - Assist queen /25',
+  name: 'Aitana Bonmatí Base in action / Purple',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
+  cardSection: "Assist Queen",
+  cardType: [
+    CardType.BaseInAction,
+    CardType.Purple,
+  ],
+  productType: CardProductType.Card,
+  numbered: 25,
 };
 
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN_5: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen_5',
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34rb: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-34rb',
+  number: '34rb',
   images: [
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5,
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_2,
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_3,
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_4,
   ],
-  name: 'Aitana Bonmatí - Assist queen /5',
+  name: 'Aitana Bonmatí Base in action / Rainbow',
   rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.Holo,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
-};
-
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN_25_AUTO: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen_25_auto',
-  images: [
-    aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto,
+  cardSection: "Assist Queen",
+  cardType: [
+    CardType.BaseInAction,
+    CardType.Rainbow,
   ],
-  name: 'Aitana Bonmatí - Assist queen Autograph /25',
-  rarity: 5,
-  status: CardStatus.Falti,
-  brilli: CardBrilli.PurpleFoil,
-  collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
-  year: 2023,
+  productType: CardProductType.Card,
+  numbered: 5,
 };
 
-export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_ASSIST_QUEEN_49_AUTO: Card = {
-  id: 'topps-fc-barcelona-women-winners-team-set-2023-assist-queen_49_auto',
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34bu: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-AA-34bu',
+  number: 'AA-34bu',
   images: [
     aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto,
   ],
-  name: 'Aitana Bonmatí - Assist queen Autograph /49',
+  name: 'Aitana Bonmatí Action Autograph / Blue',
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.Holo,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
+  cardSection: "Assist Queen Autograph",
+  cardType: [
+    CardType.ActionAutographs,
+    CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+  numbered: 49,
+};
+
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34pu: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-AA-34pu',
+  number: 'AA-34pu',
+  images: [
+    aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto,
+  ],
+  name: 'Aitana Bonmatí Action Autograph / Purple',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.PurpleFoil,
+  collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  year: 2023,
+  cardSection: "Assist Queen Autograph",
+  cardType: [
+    CardType.ActionAutographs,
+    CardType.Purple,
+  ],
+  productType: CardProductType.Card,
+  numbered: 25,
 };

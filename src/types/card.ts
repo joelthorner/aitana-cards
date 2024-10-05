@@ -60,6 +60,8 @@ export enum CardType {
   Inferno = 'Inferno',
   OrangeWave = 'Orange Wave',
   Black = 'Black',
+  Green = 'Green',
+  Rainbow = 'Rainbow',
 
   // Topps stickers
   Shiny = 'Shiny',
