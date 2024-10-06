@@ -6,11 +6,14 @@ export default function CardDetail() {
   const { cardId } = useParams<{ cardId: string }>();
 
   const cardFind = cards.filter((card) => card.id === cardId);
-  console.log(cardId);
 
   if (!cardFind.length) {
     return <ErrorPage />;
   }
 
-  return <div>{cardFind[0].name}</div>;
+  return (
+    <div>
+      <pre className="text-xs overflow-auto">{JSON.stringify(cardFind, null, 2)}</pre>
+    </div>
+  );
 }
