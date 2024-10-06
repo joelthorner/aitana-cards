@@ -1,1 +1,0 @@
-- revisar efectes trencats per id fixe
