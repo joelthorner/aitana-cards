@@ -12,31 +12,36 @@ import { FiltersProvider } from "./providers/filters";
 import { MouseGyroProvider } from "./providers/mouse-gyro";
 import CardDetail from "./routes/card-detail";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "",
+          element: <Home />,
+        },
+        {
+          path: "/changelog",
+          element: <Changelog />,
+        },
+        {
+          path: "/cards",
+          element: <Home />,
+        },
+        {
+          path: "/cards/:cardId",
+          element: <CardDetail />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "changelog",
-        element: <Changelog />,
-      },
-      {
-        path: "cards",
-        element: <Home />,
-      },
-      {
-        path: "cards/:cardId",
-        element: <CardDetail />,
-      },
-    ],
-  },
-]);
+    basename: "/aitana-cards",
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

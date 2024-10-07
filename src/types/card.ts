@@ -9,6 +9,7 @@ export enum CardStatus {
 export enum CardBrilli {
   ShinyHolo = 'shinyHolo',
   Holo = 'holo',
+  RedFoil = 'redFoil',
   GoldFoil = 'goldFoil',
   GoldMetal = 'goldMetal',
   PurpleFoil = 'purpleFoil',
