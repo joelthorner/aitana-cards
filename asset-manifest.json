@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aitana-cards/static/css/main.41dae34c.css",
-    "main.js": "/aitana-cards/static/js/main.f19276de.js",
+    "main.css": "/aitana-cards/static/css/main.d9ad3f4a.css",
+    "main.js": "/aitana-cards/static/js/main.613934b8.js",
     "static/js/453.24aa0ee5.chunk.js": "/aitana-cards/static/js/453.24aa0ee5.chunk.js",
     "static/media/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png": "/aitana-cards/static/media/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.995dd53cf287c7ebdac5.png",
     "static/media/aitanaBonmati_7ChromeFcb_22_23_blue_back.png": "/aitana-cards/static/media/aitanaBonmati_7ChromeFcb_22_23_blue_back.9f59e6fd5952acce3855.png",
@@ -154,6 +154,7 @@
     "static/media/Topps_Now_Logo_Black.png": "/aitana-cards/static/media/Topps_Now_Logo_Black.46a8bcc6a0e7902cfedf.png",
     "static/media/451600600___n.jpeg": "/aitana-cards/static/media/451600600_1181376919733201_6458277606198802199_n.a3f5cc64669a33a634a4.jpeg",
     "static/media/adidas.jpeg": "/aitana-cards/static/media/adidas.a05e1d24d7c4df77570c.jpeg",
+    "static/media/_mask_topps-simplicidad-uefa-club-competitions-2023-2024-41.png": "/aitana-cards/static/media/_mask_topps-simplicidad-uefa-club-competitions-2023-2024-41.47fd549679021d524e37.png",
     "static/media/313503-18753690Fr.jpg": "/aitana-cards/static/media/313503-18753690Fr.349443551fae28422735.jpg",
     "static/media/2023-24 Topps - UWCL NOW -022d.jpg": "/aitana-cards/static/media/2023-24 Topps - UWCL NOW -022d.d30b9e9b43080710e196.jpg",
     "static/media/2023-24 Topps - UWCL NOW -022j.jpg": "/aitana-cards/static/media/2023-24 Topps - UWCL NOW -022j.5c319ba00a18a3d1b2ac.jpg",
@@ -185,13 +186,14 @@
     "static/media/aitanaBonmati_57ChromeFcb_22_23_gold_refractor_back.webp": "/aitana-cards/static/media/aitanaBonmati_57ChromeFcb_22_23_gold_refractor_back.f0a2b2b491586cd0c0c0.webp",
     "static/media/313505-18754423Bk.jpg": "/aitana-cards/static/media/313505-18754423Bk.cfca3d6ebe90b0c03bb7.jpg",
     "static/media/313503-18753690Bk.jpg": "/aitana-cards/static/media/313503-18753690Bk.4ea5da39889f6d964ddb.jpg",
+    "static/media/autographs.webp": "/aitana-cards/static/media/autographs.4a8366ecbe9ba1ebc09d.webp",
     "index.html": "/aitana-cards/index.html",
-    "main.41dae34c.css.map": "/aitana-cards/static/css/main.41dae34c.css.map",
-    "main.f19276de.js.map": "/aitana-cards/static/js/main.f19276de.js.map",
+    "main.d9ad3f4a.css.map": "/aitana-cards/static/css/main.d9ad3f4a.css.map",
+    "main.613934b8.js.map": "/aitana-cards/static/js/main.613934b8.js.map",
     "453.24aa0ee5.chunk.js.map": "/aitana-cards/static/js/453.24aa0ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41dae34c.css",
-    "static/js/main.f19276de.js"
+    "static/css/main.d9ad3f4a.css",
+    "static/js/main.613934b8.js"
   ]
 }
