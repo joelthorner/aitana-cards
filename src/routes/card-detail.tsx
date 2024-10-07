@@ -3,13 +3,15 @@ import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Archive, BookText, Bug, Calendar, Folder, Hash, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
+import { Archive, BookText, Bug, Calendar, Folder, Hash, Medal, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
 import "photoswipe/style.css";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import PhotoSwipe from "photoswipe";
+import { CardType } from "../types/card";
+import RCImage from "../assets/img/rookie.png";
 
 interface GalleryItem {
   src: string;
@@ -22,24 +24,20 @@ export default function CardDetail() {
 
   const galleryRef = useRef<HTMLDivElement>(null);
 
-  const [galleryData, setGalleryData] = useState<GalleryItem[]>([]);
+  const initPhotoSwipe = (event: React.MouseEvent<HTMLAnchorElement>, index: number) => {
+    event.preventDefault();
 
-  useEffect(() => {
     if (galleryRef.current) {
       const imgTags = galleryRef.current.getElementsByTagName("img");
-      const imagesData = Array.from(imgTags).map((img) => ({
+      const imagesData: GalleryItem[] = Array.from(imgTags).map((img) => ({
         src: img.src,
         width: img.naturalWidth,
         height: img.naturalHeight,
       }));
-      setGalleryData(imagesData);
-    }
-  }, []);
 
-  const initPhotoSwipe = (event: React.MouseEvent<HTMLAnchorElement>, index: number) => {
-    event.preventDefault();
-    const pswp = new PhotoSwipe({ dataSource: galleryData, index: index });
-    pswp.init();
+      const pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
+      pswp.init();
+    }
   };
 
   const [card] = cards.filter((card) => card.id === cardId);
@@ -71,7 +69,7 @@ export default function CardDetail() {
             </div>
           </a>
 
-          <div className="grid grid-cols-4 gap-1">
+          <div className="grid grid-cols-3 gap-1">
             {card.images.slice(1, card.images.length).map((image, index) => (
               <a
                 key={image}
@@ -81,7 +79,7 @@ export default function CardDetail() {
                 className="h-full flex flex-col bg-white border shadow-sm rounded-lg p-[2px] transition cursor-pointer"
                 onClick={(event) => initPhotoSwipe(event, index + 1)}
               >
-                <img src={image} alt={`${card.name} - ${index + 1}`} className="size-full" />
+                <img src={image} alt={`${card.name} - ${index + 1}`} className="size-full rounded-md" />
               </a>
             ))}
           </div>
@@ -108,6 +106,12 @@ export default function CardDetail() {
               </svg>
             </div>
           </div>
+
+          {card.cardType.includes(CardType.RookieCard) && (
+            <div className="flex gap-2 mt-1">
+              <img src={RCImage} alt="Rookie Card" className="w-6" title="Rookie Card" />
+            </div>
+          )}
         </div>
       </div>
 
@@ -117,6 +121,16 @@ export default function CardDetail() {
           <span className="font-medium">Card number</span>
           <span className="text-slate-700 text-right ml-auto">{card.number}</span>
         </li>
+        {card.numbered && (
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <Medal size={16} className="shrink-0" />
+            <span className="font-medium">Numbered</span>
+            <span className="text-slate-700 text-right ml-auto">
+              {card.numbered === 1 ? "" : "/"}
+              {card.numbered}
+            </span>
+          </li>
+        )}
         <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
           <Calendar size={16} className="shrink-0" />
           <span className="font-medium">Year</span>
@@ -153,22 +167,24 @@ export default function CardDetail() {
         </li>
       </ul>
 
-      <div className="flex flex-col">
-        {card.links?.map((link) => (
-          <a
-            key={link}
-            className="inline-flex items-center gap-x-3.5 py-3 px-4 text-xs font-medium border border-gray-200 text-blue-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SquareArrowOutUpRight size={16} className="shrink-0" />
-            {getUrlDomain(link)}
-          </a>
-        ))}
-      </div>
+      {card.links && (
+        <div className="flex flex-col">
+          {card.links?.map((link) => (
+            <a
+              key={link}
+              className="inline-flex items-center gap-x-3.5 py-3 px-4 text-xs font-medium border border-gray-200 text-blue-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SquareArrowOutUpRight size={16} className="shrink-0" />
+              {getUrlDomain(link)}
+            </a>
+          ))}
+        </div>
+      )}
 
-      {relatedCards && (
+      {relatedCards.length > 0 && (
         <div>
           <div className="mb-2 pl-[2px] text-sm font-medium">Related cards</div>
           <CardsGrid cards={relatedCards} />

@@ -11,6 +11,7 @@ import { FiltersProvider } from "./providers/filters";
 import { MouseGyroProvider } from "./providers/mouse-gyro";
 import CardDetail from "./routes/card-detail";
 import Collections from "./routes/collections";
+import CollectionDetail from "./routes/collection-detail";
 
 const router = createBrowserRouter(
   [
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
         },
         {
           path: "/collections/:collectionId",
-          element: <Collections />,
+          element: <CollectionDetail />,
         },
         {
           path: "/changelog",

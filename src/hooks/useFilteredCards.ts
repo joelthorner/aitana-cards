@@ -17,7 +17,6 @@ export function useFilteredCards() {
       const matchesRarity = rarity.length === 0 || rarity.includes(card.rarity);
       const matchesCollection = collections.length === 0 || collections.includes(card.collection.id);
       const matchesCardTypes = cardTypes.length === 0 || cardTypes.some(value => card.cardType.includes(value as CardType));
-      console.log(cardTypes);
 
       return matchesStatus && matchesRarity && matchesCollection && matchesCardTypes;
     });
