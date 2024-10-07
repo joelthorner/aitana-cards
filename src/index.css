@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.pswp__button.pswp__button--arrow--next,
+.pswp__button.pswp__button--arrow--prev {
+  display: none;
+}
+
 .grid-default-cards {
   grid-template-columns: repeat(2, 1fr);
 }

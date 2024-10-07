@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
@@ -11,6 +10,7 @@ import Changelog from "./routes/changelog";
 import { FiltersProvider } from "./providers/filters";
 import { MouseGyroProvider } from "./providers/mouse-gyro";
 import CardDetail from "./routes/card-detail";
+import Collections from "./routes/collections";
 
 const router = createBrowserRouter(
   [
@@ -22,6 +22,14 @@ const router = createBrowserRouter(
         {
           path: "",
           element: <Home />,
+        },
+        {
+          path: "/collections",
+          element: <Collections />,
+        },
+        {
+          path: "/collections/:collectionId",
+          element: <Collections />,
         },
         {
           path: "/changelog",

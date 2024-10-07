@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../App.css";
 
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
@@ -66,6 +66,7 @@ function Root() {
 
       <div className="p-4 2xl:container mx-auto">
         <Outlet />
+        <ScrollRestoration />
       </div>
 
       <Menu />

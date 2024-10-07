@@ -2,7 +2,7 @@
  * COMPLETED data
  */
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
-import { UefaChampionsLeagueStickerCollection_2022_23 } from "../collections";
+import { ToppsUefaChampionsLeague_2022_2023 } from "../collections";
 
 import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "../img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
 
@@ -15,7 +15,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
   name: 'Aitana Bonmatí (FC Barcelona) #21',
   rarity: 1,
   status: CardStatus.Tengui,
-  collection: UefaChampionsLeagueStickerCollection_2022_23,
+  collection: ToppsUefaChampionsLeague_2022_2023,
   year: 2022,
   links: [
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
