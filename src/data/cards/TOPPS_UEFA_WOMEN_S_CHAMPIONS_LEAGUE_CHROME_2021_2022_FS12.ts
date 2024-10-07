@@ -47,6 +47,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card =
   cardType: [
     CardType.FutureStars,
     CardType.OrangeWave,
+    CardType.RookieCard,
   ],
   numbered: 25,
   productType: CardProductType.Card,
@@ -67,6 +68,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
   cardType: [
     CardType.FutureStars,
     CardType.Red,
+    CardType.RookieCard,
   ],
   numbered: 5,
   productType: CardProductType.Card,
@@ -87,6 +89,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12sf: Card =
   cardType: [
     CardType.FutureStars,
     CardType.SuperFractor,
+    CardType.RookieCard,
   ],
   numbered: 1,
   productType: CardProductType.Card,

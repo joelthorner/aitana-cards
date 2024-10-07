@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { OrderByEnum, useFiltersContext } from "../providers/filters";
 import { cards } from "../data/cards";
-import { Card, CardStatus } from "../types/card";
+import { Card, CardStatus, CardType } from "../types/card";
 
 export function useFilteredCards() {
   const [filteredCards, setFilteredCards] = useState(cards);
-  const { status, rarity, orderBy, collections } = useFiltersContext();
+  const { status, rarity, orderBy, collections, cardTypes } = useFiltersContext();
 
   useEffect(() => {
     const newFilteredCards = cards.filter((card: Card) => {
@@ -16,8 +16,9 @@ export function useFilteredCards() {
 
       const matchesRarity = rarity.length === 0 || rarity.includes(card.rarity);
       const matchesCollection = collections.length === 0 || collections.includes(card.collection.id);
+      const matchesCardTypes = cardTypes.length === 0 || cardTypes.some(value => card.cardType.includes(value as CardType));
 
-      return matchesStatus && matchesRarity && matchesCollection;
+      return matchesStatus && matchesRarity && matchesCollection && matchesCardTypes;
     });
 
     let newOrderedCards = newFilteredCards;
@@ -30,7 +31,7 @@ export function useFilteredCards() {
     }
 
     setFilteredCards(newOrderedCards);
-  }, [status, rarity, orderBy, collections]);
+  }, [status, rarity, orderBy, collections, cardTypes]);
 
   return filteredCards;
 }

@@ -22,7 +22,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.QuadAutographBook,
+    CardType.QuadAutograph,
     CardType.Gold,
   ],
   cardSection: 'FC Barcelona',
@@ -46,7 +46,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1g: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.QuadAutographBook,
+    CardType.QuadAutograph,
     CardType.Gold,
   ],
   cardSection: 'FC Barcelona',

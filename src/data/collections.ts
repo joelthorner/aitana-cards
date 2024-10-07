@@ -61,7 +61,7 @@ Colecciona tus favoritos en un Base Set de 100 cartas con insert sets como Futur
 };
 
 export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
-  id: 'paniniFifaWomenSWorldCupFrance_2019',
+  id: 'panini-fifa-women-s-world-cup-france-2019',
   image: paniniFifaWomenSWorldCupFrance_2019,
   name: "Panini FIFA Women's World Cup France 2019",
   description: ``,
@@ -72,7 +72,7 @@ export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
 };
 
 export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
-  id: 'toppsNow',
+  id: 'topps-now',
   image: Topps_Now_Logo_Black,
   name: "Topps Now Women's Champions League 2023-24",
   serie: 'Topps Now',
@@ -85,7 +85,7 @@ export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
 };
 
 export const ToppsChromeFcBarcelona_2022_2023: Collection = {
-  id: 'topps-chrome-fc-barcelona-2022-23',
+  id: 'topps-chrome-fc-barcelona-2022-2023',
   image: sL1200_480x,
   name: "Topps Chrome FC Barcelona 2022/23: ¡Més Que Un Club!",
   description: ``,
@@ -111,8 +111,8 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
   ],
 };
 
-export const UefaChampionsLeagueStickerCollection_2022_23: Collection = {
-  id: 'uefa-champions-league-sticker-collection-2022-23',
+export const ToppsUefaChampionsLeague_2022_2023: Collection = {
+  id: 'topps-uefa-champions-league-2022-2023',
   image: comprarUcl_22_23SobreUefaChampionsLeagueBarato,
   name: "Topps UEFA Champions League 2022-2023",
   description: ``,
@@ -171,7 +171,7 @@ export const collections: Collection[] = [
   ToppsNowWomenSChampionsLeague_2023_2024,
   ToppsChromeFcBarcelona_2022_2023,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
-  UefaChampionsLeagueStickerCollection_2022_23,
+  ToppsUefaChampionsLeague_2022_2023,
   ToppsUefaChampionsLeague_2023_2024,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,

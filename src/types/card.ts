@@ -26,13 +26,19 @@ export enum CardBrilli {
   SlimVerticalRefractor = 'slimVerticalRefractor',
 };
 
+/**
+ * Add new CarTypes todo:
+ * - Add value to src\data\card-type-groups.ts
+ * - Add css filter btn effect (?)
+ */
 export enum CardType {
-  // General / no type
+  // Generic / no type
   Base = 'Base',
   Holographic = 'Holographic',
 
   // Panini
-  GoldFoil = 'GoldFoil',
+  GoldFoil = 'Gold Foil',
+  GoldMetalic = 'Gold Metalic',
 
   // Topps
   RookieCard = 'Rookie Card',
@@ -68,7 +74,7 @@ export enum CardType {
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
   DualAutographs = 'Dual Autographs',
-  QuadAutographBook = 'Quad Autograph Book',
+  QuadAutograph = 'Quad Autograph',
 
   // Topps stickers
   Shiny = 'Shiny',

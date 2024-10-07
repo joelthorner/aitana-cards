@@ -1,10 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { useMouseGyro } from "../providers/mouse-gyro";
 import { CardBrilli } from "../types/card";
+import { CardBrilliMask } from "../data/card-masks";
 
 interface HoloProps {
   type: CardBrilli;
   cardId: string;
+}
+
+interface CustomCSSProperties extends React.CSSProperties {
+  "--mask"?: string;
 }
 
 export default function Holo({ type, cardId }: HoloProps) {
@@ -19,6 +24,16 @@ export default function Holo({ type, cardId }: HoloProps) {
 
   const betaMax = 90;
   const gammaMax = 90;
+
+  const mask = CardBrilliMask.hasOwnProperty(cardId) ? CardBrilliMask[cardId] : null;
+
+  const cardMask: CustomCSSProperties = mask
+    ? {
+        "--mask": `url(${mask})` as string,
+      }
+    : {};
+
+  const cardStyles = { ...cardMask };
 
   useEffect(() => {
     const generateRandomOffsets = () => {
@@ -79,7 +94,7 @@ export default function Holo({ type, cardId }: HoloProps) {
 
   return (
     <div className="overflow-hidden inset-0 absolute">
-      <div className={`absolute z-20 inset-0 effect-${type} effect-${type}-${cardId}`} ref={holographicElement}></div>
+      <div className={`absolute z-20 inset-0 effect-${type} ${mask ? "effect-mask" : ""}`} style={cardStyles} ref={holographicElement}></div>
     </div>
   );
 }

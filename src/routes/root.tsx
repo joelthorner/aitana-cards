@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../App.css";
 
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
@@ -57,7 +57,7 @@ function Root() {
           >
             <MenuIcon strokeWidth={1.5} />
             {filtering && (
-              <span className="absolute top-0 end-0 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
+              <span className="absolute top-3 end-2 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
             )}
           </button>
         </div>
@@ -66,6 +66,7 @@ function Root() {
 
       <div className="p-4 2xl:container mx-auto">
         <Outlet />
+        <ScrollRestoration />
       </div>
 
       <Menu />
