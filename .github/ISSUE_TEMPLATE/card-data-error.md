@@ -2,7 +2,7 @@
 name: Card data error
 about: Template to report card data error
 title: Card data error - [cardName]
-labels: ''
+labels: Card data error
 assignees: joelthorner
 
 ---
