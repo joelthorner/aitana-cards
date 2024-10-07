@@ -22,7 +22,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
   ],
   cardSection: '2021/22 UWCL Standout Performers',
   cardType: [
-    CardType.Shiny,
+    CardType.Base,
   ],
   productType: CardProductType.Sticker,
 };

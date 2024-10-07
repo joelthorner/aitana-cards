@@ -19,12 +19,14 @@ interface FiltersContextType {
   status: StatusType;
   orderBy: OrderByEnum;
   collections: string[];
+  cardTypes: string[];
   filtering: boolean;
   setRarity: (key: number[]) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
   setOrderBy: (value: OrderByEnum) => void;
   setCollections: (value: string[]) => void;
-  resetFilters: () => void; // Nova funció
+  setCardTypes: (value: string[]) => void;
+  resetFilters: () => void;
 }
 
 const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
@@ -33,6 +35,7 @@ const LOCAL_STORAGE_RARITY_KEY = "filters_rarity";
 const LOCAL_STORAGE_STATUS_KEY = "filters_status";
 const LOCAL_STORAGE_ORDERBY_KEY = "filters_orderBy";
 const LOCAL_STORAGE_COLLECTIONS_KEY = "filters_collections";
+const LOCAL_STORAGE_CARD_TYPES_KEY = "filters_cardTypes";
 
 const defaultStatus = {
   [CardStatus.Tengui]: true,
@@ -42,6 +45,7 @@ const defaultStatus = {
 
 const defaultRarity: number[] = [];
 const defaultCollections: string[] = [];
+const defaultCardTypes: string[] = [];
 const defaultOrderBy = OrderByEnum.DEFAULT;
 
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -63,6 +67,11 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
   const [collections, setCollectionsState] = useState<string[]>(() => {
     const savedCollections = localStorage.getItem(LOCAL_STORAGE_COLLECTIONS_KEY);
     return savedCollections ? JSON.parse(savedCollections) : defaultCollections;
+  });
+
+  const [cardTypes, setCardTypesState] = useState<string[]>(() => {
+    const savedCardTypes = localStorage.getItem(LOCAL_STORAGE_CARD_TYPES_KEY);
+    return savedCardTypes ? JSON.parse(savedCardTypes) : defaultCardTypes;
   });
 
   const setRarity = (value: number[]) => {
@@ -88,20 +97,27 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     localStorage.setItem(LOCAL_STORAGE_COLLECTIONS_KEY, JSON.stringify(value));
   };
 
+  const setCardTypes = (value: string[]) => {
+    setCardTypesState(value);
+    localStorage.setItem(LOCAL_STORAGE_CARD_TYPES_KEY, JSON.stringify(value));
+  };
+
   const resetFilters = () => {
     setRarityState(defaultRarity);
     setStatusState(defaultStatus);
     setOrderByState(defaultOrderBy);
     setCollectionsState(defaultCollections);
+    setCardTypesState(defaultCardTypes);
     localStorage.removeItem(LOCAL_STORAGE_RARITY_KEY);
     localStorage.setItem(LOCAL_STORAGE_STATUS_KEY, JSON.stringify(defaultStatus));
     localStorage.setItem(LOCAL_STORAGE_ORDERBY_KEY, defaultOrderBy);
     localStorage.removeItem(LOCAL_STORAGE_COLLECTIONS_KEY);
+    localStorage.removeItem(LOCAL_STORAGE_CARD_TYPES_KEY);
   };
 
   const filtering = useMemo(() => {
-    return rarity.length > 0 || JSON.stringify(status) !== JSON.stringify(defaultStatus) || orderBy !== defaultOrderBy || collections.length > 0;
-  }, [rarity, status, orderBy, collections]);
+    return rarity.length > 0 || JSON.stringify(status) !== JSON.stringify(defaultStatus) || orderBy !== defaultOrderBy || collections.length > 0 || cardTypes.length > 0;
+  }, [rarity, status, orderBy, collections, cardTypes]);
 
   return (
     <FiltersContext.Provider
@@ -110,11 +126,13 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
         status,
         orderBy,
         collections,
+        cardTypes,
         filtering,
         setRarity,
         setStatus,
         setOrderBy,
         setCollections,
+        setCardTypes,
         resetFilters,
       }}
     >

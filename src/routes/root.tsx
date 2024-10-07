@@ -57,7 +57,7 @@ function Root() {
           >
             <MenuIcon strokeWidth={1.5} />
             {filtering && (
-              <span className="absolute top-0 end-0 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
+              <span className="absolute top-3 end-2 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
             )}
           </button>
         </div>

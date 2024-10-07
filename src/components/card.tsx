@@ -24,7 +24,11 @@ export default function Card({ card }: CardProps) {
   );
 
   return (
-    <Link to={"/cards/" + card.id} className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition">
+    <Link
+      id={card.id}
+      to={"/cards/" + card.id}
+      className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
+    >
       <div className="w-full aspect-[5/7] relative">
         {defaultImage}
         {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}

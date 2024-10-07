@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
 import CollectionsList from "./menu/collections";
 import RarityFilter from "./menu/rarity-filter";
 import StatusFilter from "./menu/status-filter";
 import { useFiltersContext } from "../providers/filters";
 import OrderBy from "./menu/order-by";
 import { getOrderByShortLabel } from "../utils/getOrderByLabel";
-import { ArrowDownUp, BookmarkCheck, LibraryBig, Star } from "lucide-react";
+import { ArrowDownUp, BookmarkCheck, LibraryBig, Sparkles, Star } from "lucide-react";
+import CardTypeFilter from "./menu/card-type-filter";
 
 export default function Menu() {
-  const { orderBy, collections, status, rarity, resetFilters, filtering } = useFiltersContext();
+  const { orderBy, collections, status, rarity, resetFilters, filtering, cardTypes } = useFiltersContext();
 
   const collapseBtnClasses = "hs-collapse-toggle h-14 px-4 w-full justify-between items-center text-start flex font-medium";
   const collapseBtnIcon = (
@@ -104,6 +104,28 @@ export default function Menu() {
           <div id="collapse-filter-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
             <div className="flex flex-col pt-3 pb-7 px-4 gap-4">
               <StatusFilter />
+            </div>
+          </div>
+        </div>
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-cardType"
+            aria-expanded="false"
+            aria-controls="#collapse-cardType-heading"
+            data-hs-collapse="#collapse-cardType-heading"
+          >
+            <Sparkles strokeWidth={1.5} size={20} className="mr-2 text-slate-400" />{" "}
+            <span className="mr-auto">
+              Type{" "}
+              {cardTypes.length > 0 && <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{cardTypes.length}</span>}
+            </span>
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-cardType-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex pt-2 pb-7 px-4 gap-2 flex-wrap justify-between">
+              <CardTypeFilter />
             </div>
           </div>
         </div>
