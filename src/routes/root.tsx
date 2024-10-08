@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "../App.css";
 
 import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
@@ -6,9 +6,10 @@ import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import { cards } from "../data/cards";
-import Menu from "../components/menu";
-import { MenuIcon, Search } from "lucide-react";
+import FiltersOffcanvas from "../components/filters-offcanvas";
+import { MenuIcon, Search, SlidersHorizontal } from "lucide-react";
 import { useFiltersContext } from "../providers/filters";
+import MenuOffcanvas from "../components/menu-offcanvas";
 
 declare global {
   interface Window {
@@ -47,6 +48,21 @@ function Root() {
           >
             <Search strokeWidth={1.5} size={20} />
           </button>
+          {location.pathname === "/" && (
+            <button
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="offcanvas-filters"
+              data-hs-overlay="#offcanvas-filters"
+              className="relative hover:bg-gray-50 size-10 flex items-center justify-center rounded-full text-gray-900 transition-colors"
+            >
+              <SlidersHorizontal strokeWidth={1.5} size={20} />
+              {filtering && (
+                <span className="absolute top-3 end-2 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
+              )}
+            </button>
+          )}
           <button
             type="button"
             aria-haspopup="dialog"
@@ -56,9 +72,6 @@ function Root() {
             className="relative hover:bg-gray-50 size-10 flex items-center justify-center rounded-full text-gray-900 transition-colors"
           >
             <MenuIcon strokeWidth={1.5} />
-            {filtering && (
-              <span className="absolute top-3 end-2 inline-flex items-center size-3.5 rounded-full border-2 border-white text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"></span>
-            )}
           </button>
         </div>
       </div>
@@ -69,7 +82,8 @@ function Root() {
         <ScrollRestoration />
       </div>
 
-      <Menu />
+      <FiltersOffcanvas />
+      <MenuOffcanvas />
     </>
   );
 }
