@@ -12,6 +12,7 @@ import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/co
 import simplicidad24 from "./img/collections/simplicidad24-1.png";
 import merlin98 from "./img/collections/merlin98-1.png";
 import matchattaxextra from "./img/collections/matchattaxextra.jpg";
+import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-2022-de-panini.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -175,11 +176,25 @@ export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Coll
   ],
 };
 
+export const PaniniUefaWomenSEuroEngland_2022: Collection = {
+  id: 'panini-uefa-women-s-euro-england-2022',
+  image: cromosWomensEuro_2022DePanini,
+  name: "Panini UEFA Women's Euro England 2022",
+  description: `La col·lecció Panini UEFA Women's Euro England 2022 celebra el torneig de futbol femení més important d'Europa. Aquesta edició inclou una selecció d'adhesius amb les millors jugadores de cada selecció participant, així com moments destacats del campionat. Amb un disseny vibrant i atractiu, els col·leccionistes poden immortalitzar la passió i l'emoció del torneig que va tenir lloc a Anglaterra. La col·lecció no només destaca les jugadores, sinó que també reflecteix l'esperit de competició i la creixent popularitat del futbol femení a nivell mundial.`,
+  brand: 'Panini',
+  links: [
+    'https://www.laststicker.com/cards/panini_womens_euro_2022/',
+    'http://www.owacgames.com/2022/03/coleccion-cromos-stickers-uefa-womens-euro-england-2022-datos-fotos-listado-panin.html',
+    'https://cartophilic-info-exch.blogspot.com/2022/05/panini-uefa-womens-euro-england-2022-07_02063639260.html',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
-  ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
+  PaniniUefaWomenSEuroEngland_2022,
   PaniniFifaWomenSWorldCupFrance_2019,
+  ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
   ToppsNowWomenSChampionsLeague_2023_2024,
   ToppsChromeFcBarcelona_2022_2023,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,

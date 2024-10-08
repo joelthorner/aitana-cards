@@ -1,10 +1,10 @@
-// https://preline.co/docs/timeline.html
-
 import { format } from "date-fns";
-import { changelog, LineType } from "../data/changelog";
+import { changelog } from "../data/changelog";
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { BookPlus, FilePlus2 } from "lucide-react";
+import { LineType } from "../types/changelog";
 
 export default function Changelog() {
   const badgeClassName = (value: LineType) => {
@@ -34,9 +34,16 @@ export default function Changelog() {
               </div>
 
               <div className="grow pt-0.5 pb-8">
-                <Link id={item.card.id} to={"/cards/" + item.card.id} className="font-semibold text-gray-800 hover:text-blue-600 hover:underline flex leading-tight">
-                  {item.card.name}
-                </Link>
+                {item.card && (
+                  <Link to={"/cards/" + item.card.id} className="font-semibold text-gray-800 hover:text-blue-600 hover:underline flex leading-tight">
+                    {item.card.name}
+                  </Link>
+                )}
+                {item.collection && (
+                  <Link to={"/collections/" + item.collection.id} className="font-semibold text-gray-800 hover:text-blue-600 hover:underline flex leading-tight">
+                    {item.collection.name}
+                  </Link>
+                )}
                 {item.text && (
                   <p className="mt-2 text-sm text-gray-600">
                     <ReactMarkdown className="markdown text-xs" remarkPlugins={[remarkGfm]}>
@@ -48,6 +55,12 @@ export default function Changelog() {
                   <div className={`inline-flex -ml-[2px] items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[11px] leading-none font-medium ${badgeClassName(item.type)}`}>
                     {item.type}
                   </div>
+                  <span className="py-1 px-2 inline-flex items-center gap-x-1 text-xs bg-gray-100 text-gray-800 rounded-full">
+                    {item.card && <FilePlus2 className="shrink-0 size-3" />}
+                    {item.collection && <BookPlus className="shrink-0 size-3" />}
+                    {item.card && "Card"}
+                    {item.collection && "Collection"}
+                  </span>
                   <a
                     href={`https://github.com/${item.user}`}
                     target="_blank"
