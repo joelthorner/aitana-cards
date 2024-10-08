@@ -51,3 +51,9 @@ export const CardTypeGroupToppsCards: string[] = [
 export const CardTypeGroupToppsStickers: string[] = [
   CardType.Shiny,
 ];
+
+export const CardTypeGroupToppsMatchAttax: string[] = [
+  CardType.T_100Club,
+  CardType.UWCL_Limelight,
+  CardType.BlueCrystall,
+];

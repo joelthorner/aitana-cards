@@ -28,6 +28,8 @@ export function useFilteredCards() {
       newOrderedCards.sort((a, b) => b.rarity - a.rarity);
     } else if (orderBy === OrderByEnum.COLLECTION) {
       newOrderedCards.sort((a, b) => a.collection.id.localeCompare(b.collection.id));
+    } else if (orderBy === OrderByEnum.RECENTLY_ADDED) {
+      newOrderedCards.reverse();
     }
 
     setFilteredCards(newOrderedCards);

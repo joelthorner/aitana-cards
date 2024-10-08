@@ -57,6 +57,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
     CardType.Autographs,
     CardType.Blue,
   ],
+  numbered: 49,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
@@ -79,4 +80,5 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
     CardType.Autographs,
     CardType.Rainbow,
   ],
+  numbered: 5,
 };

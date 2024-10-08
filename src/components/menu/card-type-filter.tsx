@@ -1,4 +1,4 @@
-import { CardTypeGroupGeneric, CardTypeGroupPanini, CardTypeGroupToppsCards, CardTypeGroupToppsStickers } from "../../data/card-type-groups";
+import { CardTypeGroupGeneric, CardTypeGroupPanini, CardTypeGroupToppsCards, CardTypeGroupToppsMatchAttax, CardTypeGroupToppsStickers } from "../../data/card-type-groups";
 import { useClassName } from "../../hooks/useClassName";
 import { useFiltersContext } from "../../providers/filters";
 import { CardType } from "../../types/card";
@@ -64,8 +64,14 @@ export default function CardTypeFilter() {
         ))}
       </div>
       <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Topps sticker types</div>
-      <div className="grid grid-cols-3 gap-2 w-full">
+      <div className="grid grid-cols-3 gap-2 w-full mb-3">
         {Object.values(CardTypeGroupToppsStickers).map((type) => (
+          <CardTypeButton value={type} key={type} />
+        ))}
+      </div>
+      <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Topps Match Attax types</div>
+      <div className="grid grid-cols-3 gap-2 w-full">
+        {Object.values(CardTypeGroupToppsMatchAttax).map((type) => (
           <CardTypeButton value={type} key={type} />
         ))}
       </div>
