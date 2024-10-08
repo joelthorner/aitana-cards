@@ -30,6 +30,11 @@ export default function OrderBy() {
           {getOrderByLabel(OrderByEnum.COLLECTION)}
         </button>
       </li>
+      <li>
+        <button className={getButtonClass(OrderByEnum.RECENTLY_ADDED)} type="button" onClick={() => setOrderBy(OrderByEnum.RECENTLY_ADDED)}>
+          {getOrderByLabel(OrderByEnum.RECENTLY_ADDED)}
+        </button>
+      </li>
     </ul>
   );
 }

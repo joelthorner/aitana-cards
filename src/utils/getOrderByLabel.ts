@@ -10,6 +10,8 @@ export const getOrderByLabel = (orderBy: OrderByEnum): string => {
       return "Newest to oldest";
     case OrderByEnum.COLLECTION:
       return "Collection A-Z";
+    case OrderByEnum.RECENTLY_ADDED:
+      return "Recently Added";
     default:
       return "???";
   }
@@ -24,6 +26,8 @@ export const getOrderByShortLabel = (orderBy: OrderByEnum): string => {
       return "year";
     case OrderByEnum.COLLECTION:
       return "collection";
+    case OrderByEnum.RECENTLY_ADDED:
+      return "Recently Added";
     default:
       return "???";
   }

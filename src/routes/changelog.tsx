@@ -34,12 +34,12 @@ export default function Changelog() {
               </div>
 
               <div className="grow pt-0.5 pb-8">
-                <Link id={item.card.id} to={"/cards/" + item.card.id} className="font-semibold text-gray-800 hover:text-blue-600 hover:underline flex">
+                <Link id={item.card.id} to={"/cards/" + item.card.id} className="font-semibold text-gray-800 hover:text-blue-600 hover:underline flex leading-tight">
                   {item.card.name}
                 </Link>
                 {item.text && (
                   <p className="mt-2 text-sm text-gray-600">
-                    <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]}>
+                    <ReactMarkdown className="markdown text-xs" remarkPlugins={[remarkGfm]}>
                       {item.text}
                     </ReactMarkdown>
                   </p>

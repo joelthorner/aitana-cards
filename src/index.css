@@ -15,6 +15,27 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.effect-blueCristall {
+  background-size: 200% 200%;
+  --space: 10%;
+  --angle: 110deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(214, 49%, 60%, 0.5) calc(var(--space)* 1),
+      hsla(212, 100%, 93%, 0.801) calc(var(--space)* 2),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 3),
+      hsla(212, 100%, 97%, 0.5) calc(var(--space)* 4),
+      hsla(202, 100%, 68%, 0.5) calc(var(--space)* 5),
+      hsla(212, 100%, 93%, 0.5) calc(var(--space)* 6),
+      hsla(214, 100%, 70%, 0.5) calc(var(--space)* 7),
+      hsla(212, 100%, 82%, 0.5) calc(var(--space)* 8),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 9),
+      hsla(207, 100%, 79%, 0.5) calc(var(--space)* 10),
+      hsla(202, 100%, 68%, 0.5) calc(var(--space)* 11));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.5);
+  mix-blend-mode: color-dodge;
+}
+
 .effect-shinyHolo {
   background-size: 400% 400%;
   --space: 5%;

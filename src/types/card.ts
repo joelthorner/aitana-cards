@@ -24,6 +24,7 @@ export enum CardBrilli {
   InfernoRefractorTopps = 'infernoRefractor',
   RedRefractorTopps = 'redRefractor',
   SlimVerticalRefractor = 'slimVerticalRefractor',
+  BlueCristall = 'blueCristall',
 };
 
 /**
@@ -81,6 +82,8 @@ export enum CardType {
 
   // Topps Match Attax
   UWCL_Limelight = 'UWCL Limelight',
+  BlueCrystall = 'Blue Crystall',
+  T_100Club = '100 Club',
 };
 
 export enum CardProductType {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Album, Bell } from "lucide-react";
+import { Album, Bell, LayoutGrid } from "lucide-react";
 
 export default function MenuOffcanvas() {
   const LinkItemClasses = "h-14 px-4 w-full justify-between items-center text-start flex font-medium hover:bg-gray-50 transition-colors";
@@ -49,6 +49,12 @@ export default function MenuOffcanvas() {
       </div>
 
       <div className="h-[calc(100%-7rem)] overflow-y-auto flex flex-col">
+        <div className="border-b border-b-slate-200">
+          <Link to="/" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
+            <LayoutGrid strokeWidth={1.5} size={20} className="mr-2 text-slate-400" /> <span className="mr-auto">Cards</span>
+            {linkItemIcon}
+          </Link>
+        </div>
         <div className="border-b border-b-slate-200">
           <Link to="/collections" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
             <Album strokeWidth={1.5} size={20} className="mr-2 text-slate-400" /> <span className="mr-auto">Collections</span>

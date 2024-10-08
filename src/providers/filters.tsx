@@ -6,6 +6,7 @@ export enum OrderByEnum {
   RARITY = "rarity",
   YEAR = "year",
   COLLECTION = "collection",
+  RECENTLY_ADDED = "recentlyAdded",
 }
 
 export interface StatusType {
