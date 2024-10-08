@@ -78,6 +78,9 @@ export enum CardType {
 
   // Topps stickers
   Shiny = 'Shiny',
+
+  // Topps Match Attax
+  UWCL_Limelight = 'UWCL Limelight',
 };
 
 export enum CardProductType {

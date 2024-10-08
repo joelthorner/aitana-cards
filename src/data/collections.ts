@@ -11,6 +11,7 @@ import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
 import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
 import simplicidad24 from "./img/collections/simplicidad24-1.png";
 import merlin98 from "./img/collections/merlin98-1.png";
+import matchattaxextra from "./img/collections/matchattaxextra.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -163,6 +164,17 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
   ],
 };
 
+export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Collection = {
+  id: 'topps-uefa-champions-league-europa-league-2023-2024-match-attax-extra',
+  image: matchattaxextra,
+  name: "Topps UEFA Champions League & Europa League 2023-2024. Match Attax Extra",
+  description: `La col·lecció Topps UEFA Champions League & Europa League 2023-2024. Match Attax Extra ofereix una sèrie d'emocionants targetes de col·leccionista dedicades a les millors competicions de futbol europeu. Inclou jugadors estrella de la Champions i l'Europa League, amb dissenys millorats i noves edicions especials. Ideal per als fans que volen ampliar les seves col·leccions amb targetes úniques de la temporada actual!`,
+  brand: 'Topps',
+  links: [
+    'https://www.laststicker.com/cards/topps_ucc_2023-2024_match_attax_extra/',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -175,4 +187,5 @@ export const collections: Collection[] = [
   ToppsUefaChampionsLeague_2023_2024,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
+  ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
 ];
