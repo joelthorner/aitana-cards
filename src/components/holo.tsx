@@ -84,6 +84,8 @@ export default function Holo({ type, cardId }: HoloProps) {
 
         if (percentageX > 100) percentageX = 100;
         if (percentageY > 100) percentageY = 100;
+        if (percentageX < 0) percentageX = 0;
+        if (percentageY < 0) percentageY = 0;
 
         holographicElement.current.style.backgroundPosition = `${percentageX}% ${percentageY}%`;
       }

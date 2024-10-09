@@ -14,6 +14,7 @@ import merlin98 from "./img/collections/merlin98-1.png";
 import matchattaxextra from "./img/collections/matchattaxextra.jpg";
 import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-2022-de-panini.jpg";
 import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/topps-champions-league-living-set-2022-2023-anuncio.webp";
+import tsucsb23 from "./img/collections/2022-23-Topps-Simplicidad-UEFA-cards-sealed-box.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -204,6 +205,18 @@ Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer
   ],
 };
 
+export const ToppsUefaSimplicidad_2023: Collection = {
+  id: 'topps-uefa-simplicidad-2023',
+  image: tsucsb23,
+  name: "Topps uefa simplicidad 2023",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.topps.com/media/amasty/amfile/attach/fQfUXOgDqj12iE25NfNjwSLAarHGVLsJ.pdf',
+    'https://www.cardboardconnection.com/2022-23-topps-simplicidad-uefa-cards',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -219,4 +232,5 @@ export const collections: Collection[] = [
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
+  ToppsUefaSimplicidad_2023,
 ];

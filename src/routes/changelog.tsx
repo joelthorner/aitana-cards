@@ -45,11 +45,11 @@ export default function Changelog() {
                   </Link>
                 )}
                 {item.text && (
-                  <p className="mt-2 text-sm text-gray-600">
+                  <div className="mt-2 text-sm text-gray-600">
                     <ReactMarkdown className="markdown text-xs" remarkPlugins={[remarkGfm]}>
                       {item.text}
                     </ReactMarkdown>
-                  </p>
+                  </div>
                 )}
                 <div className="flex gap-2 mt-2 items-center">
                   <div className={`inline-flex -ml-[2px] items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[11px] leading-none font-medium ${badgeClassName(item.type)}`}>
