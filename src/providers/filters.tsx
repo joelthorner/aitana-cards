@@ -17,12 +17,14 @@ export interface StatusType {
 
 interface FiltersContextType {
   rarity: number[];
+  years: number[];
   status: StatusType;
   orderBy: OrderByEnum;
   collections: string[];
   cardTypes: string[];
   filtering: boolean;
   setRarity: (key: number[]) => void;
+  setYears: (key: number[]) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
   setOrderBy: (value: OrderByEnum) => void;
   setCollections: (value: string[]) => void;
@@ -37,6 +39,7 @@ const LOCAL_STORAGE_STATUS_KEY = "filters_status";
 const LOCAL_STORAGE_ORDERBY_KEY = "filters_orderBy";
 const LOCAL_STORAGE_COLLECTIONS_KEY = "filters_collections";
 const LOCAL_STORAGE_CARD_TYPES_KEY = "filters_cardTypes";
+const LOCAL_STORAGE_YEARS_KEY = "filters_years";
 
 const defaultStatus = {
   [CardStatus.Tengui]: true,
@@ -45,6 +48,7 @@ const defaultStatus = {
 };
 
 const defaultRarity: number[] = [];
+const defaultYears: number[] = [];
 const defaultCollections: string[] = [];
 const defaultCardTypes: string[] = [];
 const defaultOrderBy = OrderByEnum.RECENTLY_ADDED;
@@ -53,6 +57,11 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
   const [rarity, setRarityState] = useState<number[]>(() => {
     const savedRarity = localStorage.getItem(LOCAL_STORAGE_RARITY_KEY);
     return savedRarity ? JSON.parse(savedRarity) : defaultRarity;
+  });
+
+  const [years, setYearsState] = useState<number[]>(() => {
+    const savedYears = localStorage.getItem(LOCAL_STORAGE_YEARS_KEY);
+    return savedYears ? JSON.parse(savedYears) : defaultYears;
   });
 
   const [status, setStatusState] = useState<StatusType>(() => {
@@ -80,6 +89,11 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     localStorage.setItem(LOCAL_STORAGE_RARITY_KEY, JSON.stringify(value));
   };
 
+  const setYears = (value: number[]) => {
+    setYearsState(value);
+    localStorage.setItem(LOCAL_STORAGE_YEARS_KEY, JSON.stringify(value));
+  };
+
   const setStatus = (key: keyof StatusType, value: boolean) => {
     setStatusState((prev) => {
       const newStatus = { ...prev, [key]: value };
@@ -105,10 +119,12 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   const resetFilters = () => {
     setRarityState(defaultRarity);
+    setYearsState(defaultYears);
     setStatusState(defaultStatus);
     setOrderByState(defaultOrderBy);
     setCollectionsState(defaultCollections);
     setCardTypesState(defaultCardTypes);
+    localStorage.removeItem(LOCAL_STORAGE_YEARS_KEY);
     localStorage.removeItem(LOCAL_STORAGE_RARITY_KEY);
     localStorage.setItem(LOCAL_STORAGE_STATUS_KEY, JSON.stringify(defaultStatus));
     localStorage.setItem(LOCAL_STORAGE_ORDERBY_KEY, defaultOrderBy);
@@ -117,19 +133,28 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
   };
 
   const filtering = useMemo(() => {
-    return rarity.length > 0 || JSON.stringify(status) !== JSON.stringify(defaultStatus) || orderBy !== defaultOrderBy || collections.length > 0 || cardTypes.length > 0;
-  }, [rarity, status, orderBy, collections, cardTypes]);
+    return (
+      rarity.length > 0 ||
+      years.length > 0 ||
+      JSON.stringify(status) !== JSON.stringify(defaultStatus) ||
+      orderBy !== defaultOrderBy ||
+      collections.length > 0 ||
+      cardTypes.length > 0
+    );
+  }, [rarity, years, status, orderBy, collections, cardTypes]);
 
   return (
     <FiltersContext.Provider
       value={{
         rarity,
+        years,
         status,
         orderBy,
         collections,
         cardTypes,
         filtering,
         setRarity,
+        setYears,
         setStatus,
         setOrderBy,
         setCollections,

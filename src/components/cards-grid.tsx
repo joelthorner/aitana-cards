@@ -18,11 +18,16 @@ export default function CardsGrid({ cards }: CardsGridProps) {
 
   return cards.length ? (
     <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-      {cards.map((card) => (
-        <div className="grid-item" key={card.id}>
-          <Card card={card} />
-        </div>
-      ))}
+      {cards.map((card) => {
+        if (card.missingImage) {
+          return <></>;
+        }
+        return (
+          <div className="grid-item" key={card.id}>
+            <Card card={card} />
+          </div>
+        );
+      })}
     </div>
   ) : (
     <div className="max-w-sm w-full min-h-[400px] flex flex-col justify-center mx-auto px-6 py-4">

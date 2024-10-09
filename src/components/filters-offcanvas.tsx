@@ -4,11 +4,12 @@ import StatusFilter from "./menu/status-filter";
 import { useFiltersContext } from "../providers/filters";
 import OrderBy from "./menu/order-by";
 import { getOrderByShortLabel } from "../utils/getOrderByLabel";
-import { ArrowDownUp, BookmarkCheck, LibraryBig, Sparkles, Star } from "lucide-react";
+import { ArrowDownUp, BookmarkCheck, CalendarSearch, LibraryBig, Sparkles, Star } from "lucide-react";
 import CardTypeFilter from "./menu/card-type-filter";
+import YearsFilter from "./menu/years-filter";
 
 export default function FiltersOffcanvas() {
-  const { orderBy, collections, status, rarity, resetFilters, filtering, cardTypes } = useFiltersContext();
+  const { orderBy, collections, status, rarity, resetFilters, filtering, cardTypes, years } = useFiltersContext();
 
   const collapseBtnClasses = "hs-collapse-toggle h-14 px-4 w-full justify-between items-center text-start flex font-medium";
   const collapseBtnIcon = (
@@ -57,6 +58,25 @@ export default function FiltersOffcanvas() {
       </div>
 
       <div className="h-[calc(100%-7rem)] overflow-y-auto flex flex-col">
+        <div className="border-b border-b-slate-200">
+          <button
+            type="button"
+            className={collapseBtnClasses}
+            id="collapse-order-by"
+            aria-expanded="false"
+            aria-controls="#collapse-order-by-heading"
+            data-hs-collapse="#collapse-order-by-heading"
+          >
+            <ArrowDownUp strokeWidth={1.5} size={20} className="mr-2 text-slate-400" /> Order by&nbsp;
+            <span className="text-slate-500 mr-auto">{getOrderByShortLabel(orderBy)}</span>
+            {collapseBtnIcon}
+          </button>
+          <div id="collapse-order-by-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex flex-col pt-1 pb-6 px-4">
+              <OrderBy />
+            </div>
+          </div>
+        </div>
         <div className="border-b border-b-slate-200">
           <button
             type="button"
@@ -154,18 +174,20 @@ export default function FiltersOffcanvas() {
           <button
             type="button"
             className={collapseBtnClasses}
-            id="collapse-order-by"
+            id="collapse-year"
             aria-expanded="false"
-            aria-controls="#collapse-order-by-heading"
-            data-hs-collapse="#collapse-order-by-heading"
+            aria-controls="#collapse-year-heading"
+            data-hs-collapse="#collapse-year-heading"
           >
-            <ArrowDownUp strokeWidth={1.5} size={20} className="mr-2 text-slate-400" /> Order by&nbsp;
-            <span className="text-slate-500 mr-auto">{getOrderByShortLabel(orderBy)}</span>
+            <CalendarSearch strokeWidth={1.5} size={20} className="mr-2 text-slate-400" />{" "}
+            <span className="mr-auto">
+              Card year {years.length > 0 && <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{years.length}</span>}
+            </span>
             {collapseBtnIcon}
           </button>
-          <div id="collapse-order-by-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
-            <div className="flex flex-col pt-1 pb-6 px-4">
-              <OrderBy />
+          <div id="collapse-year-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-filter">
+            <div className="flex pt-2 pb-7 px-4 gap-2 flex-wrap justify-between">
+              <YearsFilter />
             </div>
           </div>
         </div>
