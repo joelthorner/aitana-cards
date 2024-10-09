@@ -171,4 +171,4 @@ export const cards: Card[] = [
   TOPPS_UEFA_SIMPLICIDAD_2023_A5gr,
   TOPPS_UEFA_SIMPLICIDAD_2023_A5pu,
   TOPPS_UEFA_SIMPLICIDAD_2023_A5r,
-];
+].reverse();

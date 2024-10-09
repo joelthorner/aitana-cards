@@ -2,11 +2,11 @@ import React, { createContext, useContext, useState, ReactNode, useMemo } from "
 import { CardStatus } from "../types/card";
 
 export enum OrderByEnum {
-  DEFAULT = "default",
+  RECENTLY_ADDED = "recentlyAdded",
+  OLDLY_ADDED = "oldlyAdded",
   RARITY = "rarity",
   YEAR = "year",
   COLLECTION = "collection",
-  RECENTLY_ADDED = "recentlyAdded",
 }
 
 export interface StatusType {
@@ -47,7 +47,7 @@ const defaultStatus = {
 const defaultRarity: number[] = [];
 const defaultCollections: string[] = [];
 const defaultCardTypes: string[] = [];
-const defaultOrderBy = OrderByEnum.DEFAULT;
+const defaultOrderBy = OrderByEnum.RECENTLY_ADDED;
 
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [rarity, setRarityState] = useState<number[]>(() => {
