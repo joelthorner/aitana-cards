@@ -46,6 +46,8 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.ActionAutographs,
   CardType.DualAutographs,
   CardType.QuadAutograph,
+
+  CardType.Filmstrip,
 ];
 
 export const CardTypeGroupToppsStickers: string[] = [

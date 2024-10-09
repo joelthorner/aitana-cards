@@ -76,10 +76,10 @@ export default function CardDetail() {
                 href={image}
                 target="_blank"
                 rel="noreferrer"
-                className="h-full flex flex-col bg-white border shadow-sm rounded-lg p-[2px] transition cursor-pointer"
+                className="h-full flex flex-col bg-white border shadow-sm rounded-lg p-[2px] transition cursor-pointer aspect-square"
                 onClick={(event) => initPhotoSwipe(event, index + 1)}
               >
-                <img src={image} alt={`${card.name} - ${index + 1}`} className="size-full rounded-md" />
+                <img src={image} alt={`${card.name} - ${index + 1}`} className="size-full rounded-md object-contain" />
               </a>
             ))}
           </div>

@@ -62,6 +62,7 @@ export enum CardType {
   Rainbow = 'Rainbow',
   Purple = 'Purple',
   Red = 'Red',
+  Pink = 'Pink',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',
@@ -76,6 +77,8 @@ export enum CardType {
   ActionAutographs = 'Action Autographs',
   DualAutographs = 'Dual Autographs',
   QuadAutograph = 'Quad Autograph',
+
+  Filmstrip = 'Filmstrip',
 
   // Topps stickers
   Shiny = 'Shiny',

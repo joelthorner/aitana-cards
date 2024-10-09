@@ -11,8 +11,13 @@ export default function OrderBy() {
   return (
     <ul className="marker:text-blue-600 list-disc ps-5 space-y-2 text-sm text-gray-600">
       <li>
-        <button className={getButtonClass(OrderByEnum.DEFAULT)} type="button" onClick={() => setOrderBy(OrderByEnum.DEFAULT)}>
-          {getOrderByLabel(OrderByEnum.DEFAULT)}
+        <button className={getButtonClass(OrderByEnum.RECENTLY_ADDED)} type="button" onClick={() => setOrderBy(OrderByEnum.RECENTLY_ADDED)}>
+          {getOrderByLabel(OrderByEnum.RECENTLY_ADDED)}
+        </button>
+      </li>
+      <li>
+        <button className={getButtonClass(OrderByEnum.OLDLY_ADDED)} type="button" onClick={() => setOrderBy(OrderByEnum.OLDLY_ADDED)}>
+          {getOrderByLabel(OrderByEnum.OLDLY_ADDED)}
         </button>
       </li>
       <li>
@@ -28,11 +33,6 @@ export default function OrderBy() {
       <li>
         <button className={getButtonClass(OrderByEnum.COLLECTION)} type="button" onClick={() => setOrderBy(OrderByEnum.COLLECTION)}>
           {getOrderByLabel(OrderByEnum.COLLECTION)}
-        </button>
-      </li>
-      <li>
-        <button className={getButtonClass(OrderByEnum.RECENTLY_ADDED)} type="button" onClick={() => setOrderBy(OrderByEnum.RECENTLY_ADDED)}>
-          {getOrderByLabel(OrderByEnum.RECENTLY_ADDED)}
         </button>
       </li>
     </ul>
