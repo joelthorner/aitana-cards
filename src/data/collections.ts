@@ -13,6 +13,7 @@ import simplicidad24 from "./img/collections/simplicidad24-1.png";
 import merlin98 from "./img/collections/merlin98-1.png";
 import matchattaxextra from "./img/collections/matchattaxextra.jpg";
 import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-2022-de-panini.jpg";
+import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/topps-champions-league-living-set-2022-2023-anuncio.webp";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -189,6 +190,20 @@ export const PaniniUefaWomenSEuroEngland_2022: Collection = {
   ],
 };
 
+export const ToppsUefaLivingSet_2023: Collection = {
+  id: 'topps-uefa-living-set-2023',
+  image: toppsChampionsLeagueLivingSet_2022_2023Anuncio,
+  name: "Topps UEFA Living Set 2023",
+  description: `Living Set 2023 son cartas de jugadores y jugadoras de la Champions League dibujadas a mano por los artistas Louise Cobbold y Mike O’Brien.
+La primera edición de UEFA Living Set se editó entre 2019 y 2022 y contó con 509 cartas dibujadas por Musa Drammeh, mas conocido por DeMoose Art.
+Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer dibujos de jugadores del Wolverhampton Wanderers.`,
+  brand: 'Topps',
+  links: [
+    'http://www.owacgames.com/2023/03/coleccion-topps-uefa-living-set-datos-fotos-listado.html',
+    'https://www.cardboardconnection.com/topps-living-set-uefa-champions-league-cards#post_anchor_4_305957',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -203,4 +218,5 @@ export const collections: Collection[] = [
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
+  ToppsUefaLivingSet_2023,
 ];
