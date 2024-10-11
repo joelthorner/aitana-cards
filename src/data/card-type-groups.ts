@@ -41,6 +41,9 @@ export const CardTypeGroupToppsCards: string[] = [
 
   CardType.BlackAndWhiteWave,
   CardType.OrangeWave,
+  CardType.RoseGoldMojo,
+  CardType.BlueMojo,
+  CardType.AquaPrismRefactor,
 
   CardType.Autographs,
   CardType.ActionAutographs,
@@ -48,6 +51,7 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.QuadAutograph,
 
   CardType.Filmstrip,
+  CardType.CrowningMoments,
 ];
 
 export const CardTypeGroupToppsStickers: string[] = [

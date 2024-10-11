@@ -43,6 +43,8 @@ import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57 from "../img/ca
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back.webp";
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57.png";
 import toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back.webp";
+import a57rf_2 from "../img/cards/a57rf_2.webp";
+import a57rf_3 from "../img/cards/a57rf_3.webp";
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57: Card = {
   id: 'topps-chrome-fc-barcelona-2022-2023-n57',
@@ -67,6 +69,8 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57rf: Card = {
   number: '57rf',
   images: [
     aitanaBonmati_57ChromeFcb_22_23_refractor,
+    a57rf_2,
+    a57rf_3,
   ],
   name: 'Aitana Bonmatí Base in action / Refractor',
   rarity: 2,

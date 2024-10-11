@@ -15,6 +15,7 @@ import matchattaxextra from "./img/collections/matchattaxextra.jpg";
 import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-2022-de-panini.jpg";
 import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/topps-champions-league-living-set-2022-2023-anuncio.webp";
 import tsucsb23 from "./img/collections/2022-23-Topps-Simplicidad-UEFA-cards-sealed-box.jpg";
+import tuwsclc2223 from "./img/collections/Topps-Chrome-Womens-Champions-League.webp";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -61,6 +62,17 @@ Colecciona tus favoritos en un Base Set de 100 cartas con insert sets como Futur
     'https://www.laststicker.com/cards/topps_womens_champions_league_chrome_2021-2022/checklist',
     'https://www.topps.com/media/pdf/CheckList_22WUCC_FINAL.pdf',
     'https://www.cardboardconnection.com/2021-22-topps-chrome-uefa-womens-champions-league-cards',
+  ],
+};
+
+export const ToppsUefaWomenSChampionsLeagueChrome_2022_2023: Collection = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023',
+  image: tuwsclc2223,
+  name: "Topps UEFA Women's Champions League Chrome 2022-2023",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.cardboardconnection.com/2022-23-topps-chrome-uefa-womens-champions-league-cards',
   ],
 };
 
@@ -208,7 +220,7 @@ Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer
 export const ToppsUefaSimplicidad_2023: Collection = {
   id: 'topps-uefa-simplicidad-2023',
   image: tsucsb23,
-  name: "Topps uefa simplicidad 2023",
+  name: "Topps Simplicidad UEFA 2022-2023",
   description: ``,
   brand: 'Topps',
   links: [
@@ -233,4 +245,5 @@ export const collections: Collection[] = [
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
   ToppsUefaSimplicidad_2023,
+  ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
 ];

@@ -250,6 +250,44 @@
   mix-blend-mode: color-dodge;
 }
 
+.effect-roseGoldMojo {
+  background-size: 400% 200%;
+  --space: 3%;
+  --angle: -130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(30, 40%, 75%, 0.75) calc(var(--space) * 1),
+      hsla(19, 50%, 70%, 0.75) calc(var(--space) * 2),
+      hsla(15, 45%, 60%, 0.75) calc(var(--space) * 3),
+      hsla(15, 55%, 65%, 0.75) calc(var(--space) * 4),
+      hsla(20, 30%, 85%, 0.75) calc(var(--space) * 5),
+      hsla(10, 40%, 60%, 0.75) calc(var(--space) * 6),
+      hsla(30, 40%, 75%, 0.75) calc(var(--space) * 7),
+      hsla(30, 40%, 75%, 0.75) calc(var(--space) * 8));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-aquaPrism {
+  background-size: 400% 200%;
+  --space: 3%;
+  --angle: -130deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(180, 100%, 85%, 0.5) calc(var(--space) * 1),
+      hsla(170, 80%, 75%, 0.5) calc(var(--space) * 2),
+      hsla(160, 90%, 65%, 0.5) calc(var(--space) * 3),
+      hsla(150, 70%, 60%, 0.5) calc(var(--space) * 4),
+      hsla(140, 80%, 70%, 0.5) calc(var(--space) * 5),
+      hsla(130, 70%, 50%, 0.5) calc(var(--space) * 6),
+      hsla(180, 100%, 85%, 0.5) calc(var(--space) * 7),
+      hsla(180, 100%, 85%, 0.5) calc(var(--space) * 8));
+
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  mix-blend-mode: color-dodge;
+}
+
 .effect-greenRefractor {
   background-size: 400% 200%;
   --space: 3%;

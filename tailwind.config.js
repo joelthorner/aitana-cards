@@ -9,6 +9,9 @@ module.exports = {
       screens: {
         'xs': '500px',
       },
+      gridTemplateColumns: {
+        'collection': '33fr 66fr',
+      },
     },
     screens: {
       'sm': '640px',
