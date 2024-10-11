@@ -37,6 +37,9 @@ import c14AAB_2 from "../img/cards/c14AAB_2.webp";
 import c14g_0 from "../img/cards/c14g_0.png";
 import c14g_1 from "../img/cards/c14g_1.webp";
 import c14g_2 from "../img/cards/c14g_2.webp";
+import c14r_0 from "../img/cards/c14r_0.png";
+import c14r_1 from "../img/cards/c14r_1.webp";
+import c14r_2 from "../img/cards/c14r_2.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -174,6 +177,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
   cardType: [
     CardType.BaseCard,
     CardType.Gold,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14r',
+  number: '14r',
+  images: [
+    c14r_0,
+    c14r_1,
+    c14r_2,
+  ],
+  name: 'Aitana Bonmatí Red Refractor',
+  numbered: 5,
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.RedRefractorTopps,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Red,
   ],
   productType: CardProductType.Card,
 };

@@ -84,6 +84,7 @@ export enum CardType {
   QuadAutograph = 'Quad Autograph',
 
   Filmstrip = 'Filmstrip',
+  CrowningMoments = 'Crowning Moments',
 
   // Topps stickers
   Shiny = 'Shiny',
