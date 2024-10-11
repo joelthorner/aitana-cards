@@ -7,12 +7,38 @@ import { TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_1
 import { TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_343 } from "./cards/TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_343";
 import TOPPS_UEFA_LIVING_SET_2023_512 from "./cards/TOPPS_UEFA_LIVING_SET_2023_512";
 import { TOPPS_UEFA_SIMPLICIDAD_2023_5, TOPPS_UEFA_SIMPLICIDAD_2023_5gr, TOPPS_UEFA_SIMPLICIDAD_2023_5p, TOPPS_UEFA_SIMPLICIDAD_2023_5pu, TOPPS_UEFA_SIMPLICIDAD_2023_5r, TOPPS_UEFA_SIMPLICIDAD_2023_5rb, TOPPS_UEFA_SIMPLICIDAD_2023_A5gr, TOPPS_UEFA_SIMPLICIDAD_2023_A5pu, TOPPS_UEFA_SIMPLICIDAD_2023_A5r } from "./cards/TOPPS_UEFA_SIMPLICIDAD_2023_5";
+import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14";
+import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_A_AB";
 import { PaniniUefaWomenSEuroEngland_2022, ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra, ToppsUefaLivingSet_2023, ToppsUefaSimplicidad_2023, ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "./collections";
 
 export const changelog: Changelog[] = [
   {
     date: new Date('2024-10-11'),
     items: [
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm,
+        text: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm.collection.name,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp,
+        text: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp.collection.name,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm,
+        text: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm.collection.name,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo,
+        text: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo.collection.name,
+        user: 'joelthorner',
+      },
       {
         type: LineType.ADDED,
         collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,

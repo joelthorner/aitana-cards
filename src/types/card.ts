@@ -25,6 +25,7 @@ export enum CardBrilli {
   RedRefractorTopps = 'redRefractor',
   SlimVerticalRefractor = 'slimVerticalRefractor',
   BlueCristall = 'blueCristall',
+  RoseGoldMojo = 'roseGoldMojo',
 };
 
 /**
@@ -72,6 +73,8 @@ export enum CardType {
   NeonGreen = 'Neon Green',
   Inferno = 'Inferno',
   OrangeWave = 'Orange Wave',
+  RoseGoldMojo = 'Rose Gold Mojo',
+  BlueMojo = 'Blue Mojo',
 
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
