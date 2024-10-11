@@ -34,7 +34,7 @@ export const TOPPS_UEFA_SIMPLICIDAD_2023_5: Card = {
   ],
   name: 'Aitana Bonmatí #5 Filmstrip',
   rarity: 1,
-  status: CardStatus.Falti,
+  status: CardStatus.Tengui,
   collection: ToppsUefaSimplicidad_2023,
   year: 2023,
   cardSection: 'FC Barcelona',

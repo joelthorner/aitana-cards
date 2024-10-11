@@ -126,7 +126,7 @@ export default function CollectionDetail() {
 
             <tbody className="divide-y divide-gray-200 text-[10px]">
               {collectionCards.map((collectionCard) => (
-                <tr>
+                <tr key={collectionCard.id}>
                   <td className="size-px whitespace-nowrap p-0">
                     <div className="ps-3 py-2">
                       <code className="text-pink-600">{collectionCard.number}</code>
