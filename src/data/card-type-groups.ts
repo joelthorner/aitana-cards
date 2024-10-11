@@ -43,6 +43,7 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.OrangeWave,
   CardType.RoseGoldMojo,
   CardType.BlueMojo,
+  CardType.AquaPrismRefactor,
 
   CardType.Autographs,
   CardType.ActionAutographs,
