@@ -217,10 +217,10 @@ Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer
   ],
 };
 
-export const ToppsUefaSimplicidad_2023: Collection = {
-  id: 'topps-uefa-simplicidad-2023',
+export const ToppsSimplicidadUefaClubCompetitions_2022_2023: Collection = {
+  id: 'topps-simplicidad-uefa-club-competitions-2022-2023',
   image: tsucsb23,
-  name: "Topps Simplicidad UEFA 2022-2023",
+  name: "Topps Simplicidad UEFA Club Competitions 2022-2023",
   description: ``,
   brand: 'Topps',
   links: [
@@ -244,6 +244,6 @@ export const collections: Collection[] = [
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
-  ToppsUefaSimplicidad_2023,
+  ToppsSimplicidadUefaClubCompetitions_2022_2023,
   ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
 ];

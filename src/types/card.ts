@@ -53,6 +53,7 @@ export enum CardType {
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
+  PulsarRefractor = 'Pulsar Refractor',
 
   BlackAndWhiteWave = 'Black & White Wave',
   Barça = 'Barça',
@@ -65,6 +66,7 @@ export enum CardType {
   Purple = 'Purple',
   Red = 'Red',
   Pink = 'Pink',
+  Orange = 'Orange',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',

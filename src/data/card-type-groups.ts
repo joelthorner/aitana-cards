@@ -20,6 +20,7 @@ export const CardTypeGroupToppsCards: string[] = [
 
   CardType.Refractor,
   CardType.XFractor,
+  CardType.PulsarRefractor,
   CardType.Barça,
 
   CardType.Blue,
@@ -29,6 +30,7 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.Rainbow,
   CardType.Purple,
   CardType.Red,
+  CardType.Orange,
 
   CardType.RedXFractor,
   CardType.OrangeXFractor,

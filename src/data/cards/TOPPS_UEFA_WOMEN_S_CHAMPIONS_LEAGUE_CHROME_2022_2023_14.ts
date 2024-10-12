@@ -40,6 +40,20 @@ import c14g_2 from "../img/cards/c14g_2.webp";
 import c14r_0 from "../img/cards/c14r_0.png";
 import c14r_1 from "../img/cards/c14r_1.webp";
 import c14r_2 from "../img/cards/c14r_2.webp";
+import c14pl_0 from "../img/cards/c14pl_0.jpg";
+import c14pl_1 from "../img/cards/c14pl_1.jpg";
+import c14ref_0 from "../img/cards/c14ref_0.jpg";
+import c14ref_1 from "../img/cards/c14ref_1.jpg";
+import c14pup_0 from "../img/cards/c14pup_0.png";
+import c14pup_1 from "../img/cards/c14pup_1.webp";
+import c14pup_2 from "../img/cards/c14pup_2.webp";
+import c14A_ABow_0 from "../img/cards/c14A_ABow_0.png";
+import c14A_ABow_1 from "../img/cards/c14A_ABow_1.webp";
+import c14A_ABow_2 from "../img/cards/c14A_ABow_2.webp";
+import c14AAB_3 from "../img/cards/c14AAB_3.jpg";
+import c14AAB_4 from "../img/cards/c14AAB_4.jpg";
+import c14o_0 from "../img/cards/c14o_0.png";
+import c14o_1 from "../img/cards/c14o_1.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -57,6 +71,48 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   cardSection: 'FC Barcelona',
   cardType: [
     CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14ref',
+  number: '14ref',
+  images: [
+    c14ref_0,
+    c14ref_1,
+  ],
+  name: 'Aitana Bonmatí Refractor',
+  rarity: 3,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.Refractor,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  cardType: [
+    CardType.BaseCard,
+    CardType.Refractor,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14pl',
+  number: '14pl',
+  images: [
+    c14pl_0,
+    c14pl_1,
+  ],
+  name: 'Aitana Bonmatí Pulsar Refractor',
+  rarity: 3,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.Holo,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  cardType: [
+    CardType.BaseCard,
+    CardType.PulsarRefractor,
   ],
   productType: CardProductType.Card,
 };
@@ -85,6 +141,30 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap: Card = {
     CardType.AquaPrismRefactor,
   ],
   productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14pup',
+  number: '14pup',
+  images: [
+    c14pup_0,
+    c14pup_1,
+    c14pup_2,
+  ],
+  name: 'Aitana Bonmatí Purple Pulsar Refractor',
+  rarity: 3,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.PurpleFoil,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Purple,
+    CardType.PulsarRefractor,
+  ],
+  productType: CardProductType.Card,
+  numbered: 299,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm: Card = {
@@ -181,6 +261,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
   productType: CardProductType.Card,
 };
 
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14o',
+  number: '14o',
+  images: [
+    c14o_0,
+    c14o_1,
+  ],
+  name: 'Aitana Bonmatí Orange Refractor',
+  numbered: 25,
+  rarity: 4,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.OrangeFoil,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Orange,
+    CardType.Refractor,
+  ],
+  productType: CardProductType.Card,
+};
+
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14r',
   number: '14r',
@@ -200,6 +303,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
   cardType: [
     CardType.BaseCard,
     CardType.Red,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
 };
@@ -211,6 +315,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AAB: Card = {
     c14AAB_0,
     c14AAB_1,
     c14AAB_2,
+    c14AAB_3,
+    c14AAB_4,
   ],
   name: 'Aitana Bonmatí Autograph',
   rarity: 4,
@@ -289,6 +395,30 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABg: Card = {
   cardType: [
     CardType.Autographs,
     CardType.Gold,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-A-ABow',
+  number: 'A-ABow',
+  images: [
+    c14A_ABow_0,
+    c14A_ABow_1,
+    c14A_ABow_2,
+  ],
+  name: 'Aitana Bonmatí Autograph / Orange Wave',
+  numbered: 25,
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.OrangeFoil,
+  cardType: [
+    CardType.Autographs,
+    CardType.Orange,
+    CardType.OrangeWave,
   ],
   productType: CardProductType.Card,
 };
