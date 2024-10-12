@@ -3,12 +3,14 @@ import { ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra } from ".
 
 import i_162 from "../img/cards/aitana-bonmati-barcelona-162-match-attax-extra-23-24.jpg";
 import i_162bc from "../img/cards/aitana-bonmati-barcelona-crystal-parallel-162-match-attax-extra-23-24.jpg";
+import i_162_b from "../img/cards/i_162_b.jpg";
 
 export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_162: Card = {
   id: 'topps-uefa-champions-league-europa-league-2023-2024-match-attax-extra-162',
   number: 162,
   images: [
     i_162,
+    i_162_b,
   ],
   name: 'Aitana Bonmatí #162',
   rarity: 1,
@@ -27,6 +29,7 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
   number: '162bc',
   images: [
     i_162bc,
+    i_162_b,
   ],
   name: 'Aitana Bonmatí #162 Blue Crystall',
   rarity: 2,

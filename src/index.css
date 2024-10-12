@@ -346,8 +346,9 @@
 .effect-infernoRefractor {
   background-image: url(./assets/img/fire.png);
   background-size: 300% 150%;
-  mix-blend-mode: lighten;
+  /* mix-blend-mode: lighten; */
   opacity: 0.75;
+  mix-blend-mode: color-dodge;
 }
 
 .btn-card-type-Base {}
