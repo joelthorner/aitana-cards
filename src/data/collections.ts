@@ -16,6 +16,7 @@ import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-
 import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/topps-champions-league-living-set-2022-2023-anuncio.webp";
 import tsucsb23 from "./img/collections/2022-23-Topps-Simplicidad-UEFA-cards-sealed-box.jpg";
 import tuwsclc2223 from "./img/collections/Topps-Chrome-Womens-Champions-League.webp";
+import merlinhucc2324 from "./img/collections/01-merlin-visual.png";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -179,6 +180,20 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
   ],
 };
 
+export const ToppsMerlinHeritageUefaClubCompetitions_2023_2024: Collection = {
+  id: 'topps-merlin-heritage-uefa-club-competitions-2023-2024',
+  image: merlinhucc2324,
+  name: "Topps Merlin Heritage UEFA Club Competitions 2023-2024",
+  description: `Las cartas de Merlin Heritage vuelven para la 2023/24 con un toque clásico y las estrellas modernas.
+Esta nueva colección de la UEFA Club Competitions include a todos los jugadores top de la temporada 2023/24, impresos en los diseños vintage Merlin. Busca en ella las Merlin’s Most Wanted, Shiny Logo Cards, Young Guns, Legends of the Game, Fan Favourites, Vintage Illustraded, además de la ultra rara Merlin Dream Team.`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/topps-uefa-club-competitions-merlin-heritage-23-24-topps-es',
+    'https://www.laststicker.com/cards/topps_merlin_heritage_uefa_2023-2024/checklist',
+    'https://launchesuk.topps.com/en-US/launch/topps-uefa-club-competitions-merlin-heritage-2324',
+  ],
+};
+
 export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Collection = {
   id: 'topps-uefa-champions-league-europa-league-2023-2024-match-attax-extra',
   image: matchattaxextra,
@@ -242,6 +257,7 @@ export const collections: Collection[] = [
   ToppsUefaChampionsLeague_2023_2024,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
+  ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
