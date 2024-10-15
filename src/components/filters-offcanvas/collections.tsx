@@ -1,3 +1,4 @@
+import { Minus, Plus } from "lucide-react";
 import { collections as collectionsData } from "../../data/collections";
 import { useFiltersContext } from "../../providers/filters";
 import { Collection } from "../../types/collection";
@@ -33,19 +34,24 @@ function CollectionItem({ collection }: { collection: Collection }) {
 function CollectionGroup({ index, serieName, groupCollections }: { index: number; serieName: string; groupCollections: Collection[] }) {
   const { collections } = useFiltersContext();
 
+  const groupSelectedItems = groupCollections.filter((collectionItem) => collections.includes(collectionItem.id));
+
   return (
     <div className="hs-accordion" id={`hs-basic-heading-collection-${index}`}>
       <button
-        className="hs-accordion-toggle hs-accordion-active:text-blue-600 px-4 py-3 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none"
+        className="hs-accordion-toggle hs-accordion-active:text-blue-600 px-4 py-2 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none"
         aria-expanded="true"
         aria-controls={`hs-basic-collapse-collection-${index}`}
       >
         {serieName}
-        {groupCollections.filter((collectionItem) => collections.includes(collectionItem.id)).length > 0 && (
-          <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">
-            {groupCollections.filter((collectionItem) => collections.includes(collectionItem.id)).length}
-          </span>
+        {groupSelectedItems.length > 0 && (
+          <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{groupSelectedItems.length}</span>
         )}
+
+        <div className="size-8 flex items-center justify-center transition-transform hs-accordion-active:rotate-180 ml-auto">
+          <Plus size={16} className="hs-accordion-active:hidden block" />
+          <Minus size={16} className="hs-accordion-active:block hidden" />
+        </div>
       </button>
       <div
         id={`hs-basic-collapse-collection-${index}`}
