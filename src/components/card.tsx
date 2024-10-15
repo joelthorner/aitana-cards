@@ -15,11 +15,11 @@ export default function Card({ card }: CardProps) {
   const statusIcon = getCardStatusIcon(card.status);
 
   const defaultImage = card.images.length ? (
-    <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full" />
+    <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full" loading="lazy" />
   ) : (
     <div className="bg-gray-100 h-full w-full">
       <CameraOff className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-10" />
-      <img src={card.missingImage} alt={card.name} className="opacity-20 saturate-0 contrast-200" />
+      <img src={card.missingImage} alt={card.name} className="opacity-20 saturate-0 contrast-200" loading="lazy" />
     </div>
   );
 
