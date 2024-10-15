@@ -3,7 +3,7 @@ import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Archive, BookText, Bug, Calendar, Folder, Hash, Medal, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
+import { Archive, BookText, BookType, Bug, Calendar, Folder, Hash, Medal, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
@@ -160,6 +160,13 @@ export default function CardDetail() {
             {card.collection.name}
           </Link>
         </li>
+        {card.collection.serie && (
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <BookType size={16} className="shrink-0" />
+            <span className="font-medium">Collection serie</span>
+            <span className="text-slate-700 text-right ml-auto">{card.collection.serie}</span>
+          </li>
+        )}
         <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
           <Archive size={16} className="shrink-0" />
           <span className="font-medium">Brand</span>

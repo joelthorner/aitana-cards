@@ -3,6 +3,8 @@ import { CardType } from "../types/card";
 export const CardTypeGroupGeneric: string[] = [
   CardType.Base,
   CardType.Holographic,
+  CardType.TeamCard,
+  CardType.Collage,
 ];
 
 export const CardTypeGroupPanini: string[] = [
@@ -15,13 +17,14 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.BaseCard,
   CardType.BaseInAction,
   CardType.FutureStars,
-  CardType.TeamCard,
   CardType.Dynamic,
 
   CardType.Refractor,
   CardType.XFractor,
   CardType.PulsarRefractor,
   CardType.Barça,
+  CardType.Sapphire,
+  CardType.AltImage,
 
   CardType.Blue,
   CardType.Gold,

@@ -38,6 +38,8 @@ export enum CardType {
   // Generic / no type
   Base = 'Base',
   Holographic = 'Holographic',
+  TeamCard = 'Team Card',
+  Collage = 'Collage',
 
   // Panini
   GoldFoil = 'Gold Foil',
@@ -48,8 +50,9 @@ export enum CardType {
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
-  TeamCard = 'Team Card',
   Dynamic = 'Dynamic',
+  Sapphire = 'Sapphire',
+  AltImage = 'Alternative Image',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',

@@ -31,7 +31,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard],
+  cardType: [CardType.BaseCard, CardType.TeamCard],
   productType: CardProductType.Card,
 };
 
@@ -53,7 +53,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21pu: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.Purple],
+  cardType: [CardType.Purple, CardType.TeamCard],
   productType: CardProductType.Card,
   numbered: 99,
 };
@@ -76,7 +76,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21bl: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.Black],
+  cardType: [CardType.Black, CardType.TeamCard],
   productType: CardProductType.Card,
   numbered: 10,
 };
@@ -99,7 +99,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21g: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.Gold],
+  cardType: [CardType.Gold, CardType.TeamCard],
   productType: CardProductType.Card,
   numbered: 1,
 };

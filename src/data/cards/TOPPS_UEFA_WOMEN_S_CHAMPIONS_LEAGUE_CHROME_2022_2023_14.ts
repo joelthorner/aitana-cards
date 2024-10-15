@@ -56,6 +56,7 @@ import c14o_0 from "../img/cards/c14o_0.png";
 import c14o_1 from "../img/cards/c14o_1.webp";
 import c14ref_2 from "../img/cards/c14ref_2.webp";
 import c14ref_3 from "../img/cards/c14ref_3.webp";
+import c14AABpp_mixed from "../img/cards/c14AABpp_mixed.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -341,6 +342,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp: Card = 
     c14AABpp_0,
     c14AABpp_1,
     c14AABpp_2,
+    c14AABpp_mixed,
   ],
   name: 'Aitana Bonmatí Autograph / Pink Prism',
   numbered: 150,
@@ -410,6 +412,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = 
     c14A_ABow_0,
     c14A_ABow_1,
     c14A_ABow_2,
+    c14AABpp_mixed,
   ],
   name: 'Aitana Bonmatí Autograph / Orange Wave',
   numbered: 25,
