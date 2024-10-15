@@ -1,12 +1,12 @@
-import CollectionsList from "./menu/collections";
-import RarityFilter from "./menu/rarity-filter";
-import StatusFilter from "./menu/status-filter";
+import CollectionsList from "./filters-offcanvas/collections";
+import RarityFilter from "./filters-offcanvas/rarity-filter";
+import StatusFilter from "./filters-offcanvas/status-filter";
 import { useFiltersContext } from "../providers/filters";
-import OrderBy from "./menu/order-by";
+import OrderBy from "./filters-offcanvas/order-by";
 import { getOrderByShortLabel } from "../utils/getOrderByLabel";
 import { ArrowDownUp, BookmarkCheck, CalendarSearch, LibraryBig, Sparkles, Star } from "lucide-react";
-import CardTypeFilter from "./menu/card-type-filter";
-import YearsFilter from "./menu/years-filter";
+import CardTypeFilter from "./filters-offcanvas/card-type-filter";
+import YearsFilter from "./filters-offcanvas/years-filter";
 
 export default function FiltersOffcanvas() {
   const { orderBy, collections, status, rarity, resetFilters, filtering, cardTypes, years } = useFiltersContext();
@@ -96,7 +96,7 @@ export default function FiltersOffcanvas() {
             {collapseBtnIcon}
           </button>
           <div id="collapse-collections-heading" className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="collapse-collections">
-            <div className="flex flex-col pt-1 pb-6 px-2">
+            <div className="flex flex-col pt-1 pb-6">
               <CollectionsList />
             </div>
           </div>

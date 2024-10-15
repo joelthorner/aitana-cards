@@ -34,6 +34,7 @@ Aquesta col·lecció consta de 365 cromos en total… no la deixis escapar!`,
     'https://www.laststicker.com/cards/panini_liga_f_2022-2023/',
     'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOopjDFr00cWCN7FS1MQY3x5RmxL04TbsmzvLgfkTu_90hheNB1rY',
   ],
+  serie: 'Panini Liga F',
 };
 
 export const PaniniLigaF_2023_2024: Collection = {
@@ -49,6 +50,7 @@ Busca los cromos de los 16 equipos de la Liga F en este álbum que ofrece una co
     'https://www.laststicker.com/cards/panini_liga_f_2023-2024/',
     'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOoph-sKAqYhwrA8z1pJrBZXZ4Y-PjNw6Qim--Y5mpYWlA2X61QAB',
   ],
+  serie: 'Panini Liga F',
 };
 
 export const ToppsUefaWomenSChampionsLeagueChrome_2021_2022: Collection = {
@@ -90,6 +92,7 @@ export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
   links: [
     'https://www.laststicker.com/cards/panini_fifa_womens_world_cup_2019/154/',
   ],
+  serie: 'Panini Spain National Team',
 };
 
 export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
@@ -144,6 +147,7 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
     'https://cartophilic-info-exch.blogspot.com/2023/07/topps-fc-barcelona-women-champions-2023.html',
     'https://www.collectosk.com/2022-23-topps-fc-barcelona-women-official-team-set-soccer-cards/#checklist',
   ],
+  serie: 'Topps FC Barcelona',
 };
 
 export const ToppsUefaChampionsLeague_2022_2023: Collection = {
@@ -156,6 +160,7 @@ export const ToppsUefaChampionsLeague_2022_2023: Collection = {
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
     'http://www.owacgames.com/2022/08/coleccion-cromos-stickers-topps-uefa-champions-league-2022-2023-datos-fotos-listado.html',
   ],
+  serie: 'Topps Stickers',
 };
 
 export const ToppsUefaChampionsLeague_2023_2024: Collection = {
@@ -168,6 +173,7 @@ export const ToppsUefaChampionsLeague_2023_2024: Collection = {
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/checklist',
   ],
+  serie: 'Topps Stickers',
 };
 
 export const ToppsSimplicidadUefaClubCompetitions_2023_2024: Collection = {
@@ -183,6 +189,7 @@ Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más d
     'https://www.topps.com/media/amasty/amfile/attach/nllEMaT1R2iWQCzVskNDLvpKIieI7w5r.pdf',
     'https://www.collectosk.com/2023-24-topps-simplicidad-uefa-club-competitions-soccer-cards/',
   ],
+  serie: 'Topps Simplicidad',
 };
 
 export const ToppsMerlinHeritage_98UccSeason_2022_2023: Collection = {
@@ -196,6 +203,7 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
     'https://es.topps.com/products/uefa-club-competitions-merlin98-topps-es',
     'https://www.laststicker.com/cards/topps_merlin_heritage_98_ucc_2022-2023/',
   ],
+  serie: 'Topps Merlin Heritage',
 };
 
 export const ToppsMerlinHeritageUefaClubCompetitions_2023_2024: Collection = {
@@ -210,6 +218,7 @@ Esta nueva colección de la UEFA Club Competitions include a todos los jugadores
     'https://www.laststicker.com/cards/topps_merlin_heritage_uefa_2023-2024/checklist',
     'https://launchesuk.topps.com/en-US/launch/topps-uefa-club-competitions-merlin-heritage-2324',
   ],
+  serie: 'Topps Merlin Heritage',
 };
 
 export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Collection = {
@@ -221,6 +230,7 @@ export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Coll
   links: [
     'https://www.laststicker.com/cards/topps_ucc_2023-2024_match_attax_extra/',
   ],
+  serie: 'Topps Match Attax',
 };
 
 export const PaniniUefaWomenSEuroEngland_2022: Collection = {
@@ -234,6 +244,7 @@ export const PaniniUefaWomenSEuroEngland_2022: Collection = {
     'http://www.owacgames.com/2022/03/coleccion-cromos-stickers-uefa-womens-euro-england-2022-datos-fotos-listado-panin.html',
     'https://cartophilic-info-exch.blogspot.com/2022/05/panini-uefa-womens-euro-england-2022-07_02063639260.html',
   ],
+  serie: 'Panini Spain National Team',
 };
 
 export const ToppsUefaLivingSet_2023: Collection = {
@@ -248,6 +259,7 @@ Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer
     'http://www.owacgames.com/2023/03/coleccion-topps-uefa-living-set-datos-fotos-listado.html',
     'https://www.cardboardconnection.com/topps-living-set-uefa-champions-league-cards#post_anchor_4_305957',
   ],
+  serie: 'Topps Living',
 };
 
 export const ToppsSimplicidadUefaClubCompetitions_2022_2023: Collection = {
@@ -260,6 +272,7 @@ export const ToppsSimplicidadUefaClubCompetitions_2022_2023: Collection = {
     'https://www.topps.com/media/amasty/amfile/attach/fQfUXOgDqj12iE25NfNjwSLAarHGVLsJ.pdf',
     'https://www.cardboardconnection.com/2022-23-topps-simplicidad-uefa-cards',
   ],
+  serie: 'Topps Simplicidad',
 };
 
 export const ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023: Collection = {
