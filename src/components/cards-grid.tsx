@@ -42,8 +42,7 @@ export default function CardsGrid({ cards }: CardsGridProps) {
         dataLength={items.length}
         next={fetchMoreData}
         hasMore={hasMore}
-        loader={"carregant"}
-        endMessage={"final"}
+        loader={"TODO carregant spinner"}
       >
         {items.map((card) => (
           <div className="grid-item" key={card.id}>

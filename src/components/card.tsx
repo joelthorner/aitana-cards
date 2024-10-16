@@ -3,7 +3,6 @@ import { getStarClassName } from "../utils/getStarClassName";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import Holo from "./holo";
 import { Card as CardType } from "../types/card";
-import { CameraOff } from "lucide-react";
 
 interface CardProps {
   card: CardType;

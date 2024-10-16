@@ -35,6 +35,7 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.Purple,
   CardType.Red,
   CardType.Orange,
+  CardType.Yellow,
 
   CardType.RedXFractor,
   CardType.OrangeXFractor,
@@ -58,6 +59,7 @@ export const CardTypeGroupToppsCards: string[] = [
 
   CardType.Filmstrip,
   CardType.CrowningMoments,
+  CardType.ShutterSpeed,
 ];
 
 export const CardTypeGroupToppsStickers: string[] = [

@@ -71,6 +71,7 @@ export enum CardType {
   Red = 'Red',
   Pink = 'Pink',
   Orange = 'Orange',
+  Yellow = 'Yellow',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',
@@ -91,6 +92,7 @@ export enum CardType {
 
   Filmstrip = 'Filmstrip',
   CrowningMoments = 'Crowning Moments',
+  ShutterSpeed = 'Shutter Speed',
 
   // Topps stickers
   Shiny = 'Shiny',

@@ -20,6 +20,8 @@ import merlinhucc2324 from "./img/collections/01-merlin-visual.png";
 import sapphire22_23 from "./img/collections/sapphire22_23.jpg";
 import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.webp";
 import deco2324 from "./img/collections/deco2324.png";
+import carrefour24 from "./img/collections/carrefour24.webp";
+import focus2324 from "./img/collections/focus2324.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -92,6 +94,19 @@ export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
   brand: 'Panini',
   links: [
     'https://www.laststicker.com/cards/panini_fifa_womens_world_cup_2019/154/',
+  ],
+  serie: 'Panini Spain National Team',
+};
+
+export const PaniniCarrefourVamosSeleccion_2024: Collection = {
+  id: 'panini-carrefour-vamos-seleccion-2024',
+  image: carrefour24,
+  name: "Panini Carrefour ¡Vamos Selección! 2024",
+  description: `¡VAMOS SELECCIÓN! - Promoción Eurocopa Carrefour`,
+  brand: 'Panini',
+  links: [
+    'https://www.laststicker.com/cards/carrefour_vamos_seleccion-2024/',
+    'https://www.panini.es/shp_esp_es/vamos-selecci-n-promoci-n-eurocopa-carrefour-cromos-faltantes-005105b-its.html',
   ],
   serie: 'Panini Spain National Team',
 };
@@ -314,11 +329,26 @@ export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
   serie: 'Topps DECO',
 };
 
+export const ToppsFocusFcBarcelona_2023_2024: Collection = {
+  id: 'topps-focus-fc-barcelona-2023-2024',
+  image: focus2324,
+  name: "Topps FOCUS FC Barcelona 2023-2024",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.beckett.com/news/2023-24-topps-focus-fc-barcelona-soccer-cards/',
+    'https://es.topps.com/products/topps-focus-fc-barcelona-2023-24-topps-eu',
+    'https://www.collectosk.com/2023-24-topps-focus-fc-barcelona-soccer-cards/',
+  ],
+  serie: 'Topps FOCUS',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
   PaniniUefaWomenSEuroEngland_2022,
   PaniniFifaWomenSWorldCupFrance_2019,
+  PaniniCarrefourVamosSeleccion_2024,
   ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
   ToppsNowWomenSChampionsLeague_2023_2024,
   ToppsChromeFcBarcelona_2022_2023,
@@ -336,4 +366,5 @@ export const collections: Collection[] = [
   ToppsNowWomenSChampionsLeague_2022_2023,
   PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
   ToppsDecoUefaClubCompetitions_2023_2024,
+  ToppsFocusFcBarcelona_2023_2024,
 ].sort((a, b) => a.name.localeCompare(b.name));
