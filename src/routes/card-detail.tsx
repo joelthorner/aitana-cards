@@ -8,7 +8,7 @@ import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
 import "photoswipe/style.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import PhotoSwipe from "photoswipe";
 import { CardType } from "../types/card";
 import RCImage from "../assets/img/rookie.png";
@@ -21,6 +21,8 @@ interface GalleryItem {
 
 export default function CardDetail() {
   const { cardId } = useParams<{ cardId: string }>();
+
+  let pswp: PhotoSwipe | null = null;
 
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -35,12 +37,20 @@ export default function CardDetail() {
         height: img.naturalHeight,
       }));
 
-      const pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
+      pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
       pswp.init();
     }
   };
 
   const [card] = cards.filter((card) => card.id === cardId);
+
+  useEffect(() => {
+    return () => {
+      if (pswp !== null) {
+        pswp.destroy();
+      }
+    };
+  }, [pswp]);
 
   if (!card) {
     return <ErrorPage />;
@@ -210,10 +220,10 @@ export default function CardDetail() {
         Report a card error
       </a>
 
-      <div>
+      {/* <div>
         <div className="mb-2 pl-[2px] text-sm font-medium">Debug info</div>
         <pre className="text-xs overflow-auto">{JSON.stringify(card, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 }

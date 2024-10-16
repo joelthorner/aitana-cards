@@ -76,23 +76,23 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
   productType: CardProductType.Card,
 };
 
-export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12sf: Card = {
-  id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12-sf',
-  number: 'FS-12-sf',
-  images: [],
-  missingImage: img_FC12_1,
-  name: 'Aitana Bonmatí RC Future Stars / SuperFractor',
-  rarity: 5,
-  status: CardStatus.Falti,
-  collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
-  year: 2022,
-  cardSection: 'FC Barcelona',
-  brilli: CardBrilli.Holo,
-  cardType: [
-    CardType.FutureStars,
-    CardType.SuperFractor,
-    CardType.RookieCard,
-  ],
-  numbered: 1,
-  productType: CardProductType.Card,
-};
+// export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12sf: Card = {
+//   id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12-sf',
+//   number: 'FS-12-sf',
+//   images: [],
+//   missingImage: img_FC12_1,
+//   name: 'Aitana Bonmatí RC Future Stars / SuperFractor',
+//   rarity: 5,
+//   status: CardStatus.Falti,
+//   collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
+//   year: 2022,
+//   cardSection: 'FC Barcelona',
+//   brilli: CardBrilli.Holo,
+//   cardType: [
+//     CardType.FutureStars,
+//     CardType.SuperFractor,
+//     CardType.RookieCard,
+//   ],
+//   numbered: 1,
+//   productType: CardProductType.Card,
+// };

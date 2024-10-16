@@ -50,6 +50,7 @@ export enum CardType {
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
+  CurrentStars = 'Current Stars',
   Dynamic = 'Dynamic',
   Sapphire = 'Sapphire',
   AltImage = 'Alternative Image',
@@ -117,9 +118,7 @@ export type Card = {
   collection: Collection,
   year: number,
   productType: CardProductType;
-
   description?: string,
-  missingImage?: string;
   brilli?: CardBrilli,
   links?: string[];
   numbered?: number; // Limited number series

@@ -17,6 +17,7 @@ export const CardTypeGroupToppsCards: string[] = [
   CardType.BaseCard,
   CardType.BaseInAction,
   CardType.FutureStars,
+  CardType.CurrentStars,
   CardType.Dynamic,
 
   CardType.Refractor,

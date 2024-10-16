@@ -41,7 +41,7 @@ export default function CollectionDetail() {
     return <ErrorPage />;
   }
 
-  const collectionCards = cards.filter((card) => card.collection.id === collection.id && !card.missingImage).reverse();
+  const collectionCards = cards.filter((card) => card.collection.id === collection.id).reverse();
 
   return (
     <div className="flex flex-col gap-8">
@@ -161,10 +161,10 @@ export default function CollectionDetail() {
         </div>
       )}
 
-      <div>
+      {/* <div>
         <div className="mb-2 pl-[2px] text-sm font-medium">Debug info</div>
         <pre className="text-xs overflow-auto">{JSON.stringify(collection, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 }

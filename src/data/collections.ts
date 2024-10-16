@@ -19,6 +19,7 @@ import tuwsclc2223 from "./img/collections/Topps-Chrome-Womens-Champions-League.
 import merlinhucc2324 from "./img/collections/01-merlin-visual.png";
 import sapphire22_23 from "./img/collections/sapphire22_23.jpg";
 import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.webp";
+import deco2324 from "./img/collections/deco2324.png";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -300,6 +301,19 @@ export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
   serie: 'Topps Chrome',
 };
 
+export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
+  id: 'topps-deco-uefa-club-competitions-2023-2024',
+  image: deco2324,
+  name: "Topps DECO UEFA Club Competitions 2023-2024",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/topps-uefa-club-competitions-deco-2023-24-set-topps-es',
+    'https://www.laststicker.com/cards/topps_deco_uefa_club_competitions_2023-2024/checklist',
+  ],
+  serie: 'Topps DECO',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -321,4 +335,5 @@ export const collections: Collection[] = [
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   ToppsNowWomenSChampionsLeague_2022_2023,
   PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
-];
+  ToppsDecoUefaClubCompetitions_2023_2024,
+].sort((a, b) => a.name.localeCompare(b.name));

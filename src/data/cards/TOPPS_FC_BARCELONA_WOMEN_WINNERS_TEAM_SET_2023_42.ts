@@ -11,7 +11,7 @@ import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.png";
 import tcbwwts42gr_0 from "../img/cards/tcbwwts42gr_0.png";
 import tcbwwts42gr_1 from "../img/cards/tcbwwts42gr_1.webp";
-import tcbwwts42gr_2 from "../img/cards/tcbwwts42gr_1.webp";
+import tcbwwts42gr_2 from "../img/cards/tcbwwts42gr_2.webp";
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42: Card = {
   id: 'topps-fc-barcelona-women-winners-team-set-2023-42',
@@ -41,7 +41,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
     tcbwwts42gr_2,
   ],
   name: 'FC Barcelona Champions 2023 Green',
-  rarity: 1,
+  rarity: 3,
+  numbered: 99,
   status: CardStatus.Falti,
   collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   year: 2023,
