@@ -38,6 +38,8 @@ export enum CardType {
   // Generic / no type
   Base = 'Base',
   Holographic = 'Holographic',
+  TeamCard = 'Team Card',
+  Collage = 'Collage',
 
   // Panini
   GoldFoil = 'Gold Foil',
@@ -48,8 +50,10 @@ export enum CardType {
   BaseCard = 'Base card',
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
-  TeamCard = 'Team Card',
+  CurrentStars = 'Current Stars',
   Dynamic = 'Dynamic',
+  Sapphire = 'Sapphire',
+  AltImage = 'Alternative Image',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -67,6 +71,7 @@ export enum CardType {
   Red = 'Red',
   Pink = 'Pink',
   Orange = 'Orange',
+  Yellow = 'Yellow',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',
@@ -87,6 +92,7 @@ export enum CardType {
 
   Filmstrip = 'Filmstrip',
   CrowningMoments = 'Crowning Moments',
+  ShutterSpeed = 'Shutter Speed',
 
   // Topps stickers
   Shiny = 'Shiny',
@@ -114,9 +120,7 @@ export type Card = {
   collection: Collection,
   year: number,
   productType: CardProductType;
-
   description?: string,
-  missingImage?: string;
   brilli?: CardBrilli,
   links?: string[];
   numbered?: number; // Limited number series

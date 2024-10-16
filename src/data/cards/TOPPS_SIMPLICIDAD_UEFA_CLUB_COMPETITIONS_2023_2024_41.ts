@@ -27,6 +27,8 @@ import toppsSimplicidad_23_24Aitana_autograpthRed_2 from "../img/cards/451600600
 import toppsSimplicidad_23_24Aitana41bu from "../img/cards/toppsSimplicidad_23_24Aitana41bu.png";
 import toppsSimplicidad_23_24Aitana41bu_2 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_2.webp";
 import toppsSimplicidad_23_24Aitana41bu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_3.webp";
+import tducc_9r_5 from "../img/cards/tducc_9r_5.webp";
+import tducc_9r_6 from "../img/cards/tducc_9r_6.webp";
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41',
@@ -77,6 +79,8 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41gr: Card = {
     toppsSimplicidad_23_24Aitana41gr,
     toppsSimplicidad_23_24Aitana41gr_2,
     toppsSimplicidad_23_24Aitana41gr_3,
+    tducc_9r_5,
+    tducc_9r_6,
   ],
   name: 'Aitana Bonmatí Dynamic / Green',
   rarity: 3,

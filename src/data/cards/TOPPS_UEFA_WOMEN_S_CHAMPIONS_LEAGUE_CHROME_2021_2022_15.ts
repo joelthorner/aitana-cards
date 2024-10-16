@@ -150,25 +150,25 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15g: Card = {
   productType: CardProductType.Card,
 };
 
-export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15ow: Card = {
-  id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-15ow',
-  number: '15ow',
-  images: [],
-  missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
-  name: 'Aitana Bonmatí RC Base card / Orange Wave',
-  rarity: 5,
-  status: CardStatus.Falti,
-  collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
-  year: 2022,
-  numbered: 25,
-  cardSection: 'FC Barcelona',
-  cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
-    CardType.OrangeWave,
-  ],
-  productType: CardProductType.Card,
-};
+// export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15ow: Card = {
+//   id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-15ow',
+//   number: '15ow',
+//   images: [],
+//   missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
+//   name: 'Aitana Bonmatí RC Base card / Orange Wave',
+//   rarity: 5,
+//   status: CardStatus.Falti,
+//   collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
+//   year: 2022,
+//   numbered: 25,
+//   cardSection: 'FC Barcelona',
+//   cardType: [
+//     CardType.BaseCard,
+//     CardType.RookieCard,
+//     CardType.OrangeWave,
+//   ],
+//   productType: CardProductType.Card,
+// };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15r: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-15r',
@@ -193,22 +193,22 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15r: Card = {
   productType: CardProductType.Card,
 };
 
-export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15sf: Card = {
-  id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-15sf',
-  number: '15sf',
-  images: [],
-  missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
-  name: 'Aitana Bonmatí RC Base card / SuperFractor',
-  rarity: 5,
-  status: CardStatus.Falti,
-  collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
-  year: 2022,
-  numbered: 1,
-  cardSection: 'FC Barcelona',
-  cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
-    CardType.SuperFractor,
-  ],
-  productType: CardProductType.Card,
-};
+// export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15sf: Card = {
+//   id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-15sf',
+//   number: '15sf',
+//   images: [],
+//   missingImage: uwcl_21_22ToppsChromeBaseRcRookie_15,
+//   name: 'Aitana Bonmatí RC Base card / SuperFractor',
+//   rarity: 5,
+//   status: CardStatus.Falti,
+//   collection: ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
+//   year: 2022,
+//   numbered: 1,
+//   cardSection: 'FC Barcelona',
+//   cardType: [
+//     CardType.BaseCard,
+//     CardType.RookieCard,
+//     CardType.SuperFractor,
+//   ],
+//   productType: CardProductType.Card,
+// };

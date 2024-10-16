@@ -51,6 +51,12 @@ export default function Changelog() {
                     </ReactMarkdown>
                   </div>
                 )}
+                {/* Show collection on new added card if text not exists */}
+                {!item.text && item.type === LineType.ADDED && item.card && (
+                  <div className="mt-2 text-sm text-gray-600">
+                    <span className="text-xs">{item.card.collection.name}</span>
+                  </div>
+                )}
                 <div className="flex gap-2 mt-2 items-center">
                   <div className={`inline-flex -ml-[2px] items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[11px] leading-none font-medium ${badgeClassName(item.type)}`}>
                     {item.type}

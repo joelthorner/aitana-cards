@@ -5,5 +5,5 @@ export interface Collection {
   description: string;
   brand: string;
   links: string[];
-  serie?: string;
+  serie: string;
 };

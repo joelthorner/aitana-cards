@@ -3,12 +3,12 @@ import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Archive, BookText, Bug, Calendar, Folder, Hash, Medal, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
+import { Archive, BookText, BookType, Bug, Calendar, Folder, Hash, Medal, Package2, SquareArrowOutUpRight, SwatchBook } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
 import "photoswipe/style.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import PhotoSwipe from "photoswipe";
 import { CardType } from "../types/card";
 import RCImage from "../assets/img/rookie.png";
@@ -21,6 +21,8 @@ interface GalleryItem {
 
 export default function CardDetail() {
   const { cardId } = useParams<{ cardId: string }>();
+
+  let pswp: PhotoSwipe | null = null;
 
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -35,12 +37,20 @@ export default function CardDetail() {
         height: img.naturalHeight,
       }));
 
-      const pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
+      pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
       pswp.init();
     }
   };
 
   const [card] = cards.filter((card) => card.id === cardId);
+
+  useEffect(() => {
+    return () => {
+      if (pswp !== null) {
+        pswp.destroy();
+      }
+    };
+  }, [pswp]);
 
   if (!card) {
     return <ErrorPage />;
@@ -160,6 +170,13 @@ export default function CardDetail() {
             {card.collection.name}
           </Link>
         </li>
+        {card.collection.serie && (
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <BookType size={16} className="shrink-0" />
+            <span className="font-medium">Collection serie</span>
+            <span className="text-slate-700 text-right ml-auto">{card.collection.serie}</span>
+          </li>
+        )}
         <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
           <Archive size={16} className="shrink-0" />
           <span className="font-medium">Brand</span>
@@ -203,10 +220,10 @@ export default function CardDetail() {
         Report a card error
       </a>
 
-      <div>
+      {/* <div>
         <div className="mb-2 pl-[2px] text-sm font-medium">Debug info</div>
         <pre className="text-xs overflow-auto">{JSON.stringify(card, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 }
