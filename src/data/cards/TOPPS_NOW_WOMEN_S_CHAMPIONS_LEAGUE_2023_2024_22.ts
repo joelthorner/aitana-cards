@@ -176,10 +176,10 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
     toppsNowTheDeadlyDuoDualAutograph_rainbow,
     toppsNowTheDeadlyDuoDualAutograph_back,
   ],
-  name: "Aitana Bonmatí & Alexia Putellas - Deadly Duo Dual Autograph / Red",
+  name: "Aitana Bonmatí & Alexia Putellas - Deadly Duo Dual Autograph / Rainbow",
   rarity: 5,
   status: CardStatus.Falti,
-  brilli: CardBrilli.RedRefractorTopps,
+  brilli: CardBrilli.Rainbow,
   collection: ToppsNowWomenSChampionsLeague_2023_2024,
   year: 2024,
   links: [
@@ -191,7 +191,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
   productType: CardProductType.Card,
   cardType: [
     CardType.DualAutographs,
-    CardType.Red,
+    CardType.Rainbow,
   ],
 };
 

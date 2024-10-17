@@ -22,6 +22,7 @@ import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-w
 import deco2324 from "./img/collections/deco2324.png";
 import carrefour24 from "./img/collections/carrefour24.webp";
 import focus2324 from "./img/collections/focus2324.jpg";
+import knockout23 from "./img/collections/knockout23.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -313,7 +314,7 @@ export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
     'https://www.laststicker.com/cards/panini_womens_world_cup_2023/',
     'http://www.owacgames.com/2023/05/coleccion-cromos-mundial-femenino-2023-fifa-womens-world-cup-au-nz-2023-datos-fotos-listado-panini.html',
   ],
-  serie: 'Topps Chrome',
+  serie: 'Panini Spain National Team',
 };
 
 export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
@@ -343,6 +344,21 @@ export const ToppsFocusFcBarcelona_2023_2024: Collection = {
   serie: 'Topps FOCUS',
 };
 
+export const ToppsUefaWomensChampionsLeagueKnockout_2023: Collection = {
+  id: 'topps-uefa-womens-champions-league-knockout-2023',
+  image: knockout23,
+  name: "Topps UEFA Womens Champions League - Knockout 2023",
+  description: `Topps celebra la fase eliminatoria de la UEFA Women´s Champions League 2022/23!
+Este set de 40 cartas presenta las estrellas más grandes de los ocho equipos que quedan en la competición e incluye un ‘Star Player´ subset . Busca dos cartas paralelas numeradas garantizadas en cada caja y podrás encontrar cartas autografiadas en las cajas afortunadas!`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/uefa-womens-champions-league-knockout-2023-topps-es',
+    'https://www.topps.com/media/amasty/amfile/attach/UxdYyaqrOpdN8RSWJZV5KgMgCwMzvyqC.pdf',
+    'https://www.collectosk.com/2022-23-topps-knockout-uefa-womens-champions-league-soccer-cards/',
+  ],
+  serie: 'Topps Knockout',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -367,4 +383,5 @@ export const collections: Collection[] = [
   PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
   ToppsDecoUefaClubCompetitions_2023_2024,
   ToppsFocusFcBarcelona_2023_2024,
+  ToppsUefaWomensChampionsLeagueKnockout_2023,
 ].sort((a, b) => a.name.localeCompare(b.name));
