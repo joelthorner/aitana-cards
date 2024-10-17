@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  min-height: 100%;
+  @apply bg-zinc-950;
+}
+
 .markdown code {
   @apply text-pink-500;
 }
@@ -13,4 +18,35 @@
 
 .grid-default-cards {
   grid-template-columns: repeat(2, 1fr);
+}
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 10000px;
+  }
+}
+
+.logo {
+  color: transparent;
+  background: linear-gradient(to left, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799);
+  background-size: 1000px 100%;
+  animation: bg 30s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.aspect-square-2::before {
+  content: "";
+  display: block;
+  padding-bottom: calc(100% + 4rem);
+}
+
+.swiper-card-detail {
+  --swiper-pagination-bottom: 4.5rem;
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #FFF;
 }
