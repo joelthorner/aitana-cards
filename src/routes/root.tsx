@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "../App.css";
 
 import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
