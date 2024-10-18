@@ -34,12 +34,20 @@ export default function CardDetail() {
     event.preventDefault();
 
     if (galleryRef.current) {
-      const imgTags = galleryRef.current.getElementsByTagName("img");
-      const imagesData: GalleryItem[] = Array.from(imgTags).map((img) => ({
-        src: img.src,
-        width: img.naturalWidth,
-        height: img.naturalHeight,
-      }));
+      const images = Array.from(galleryRef.current.querySelectorAll(".swiper-slide img")).sort((a, b) => {
+        const indexA = parseInt(a.closest(".swiper-slide")?.getAttribute("data-swiper-slide-index") || "0", 10);
+        const indexB = parseInt(b.closest(".swiper-slide")?.getAttribute("data-swiper-slide-index") || "0", 10);
+        return indexA - indexB;
+      });
+
+      const imagesData: GalleryItem[] = images.map((img) => {
+        const imageElement = img as HTMLImageElement;
+        return {
+          src: imageElement.src,
+          width: imageElement.naturalWidth,
+          height: imageElement.naturalHeight,
+        };
+      });
 
       pswp = new PhotoSwipe({ dataSource: imagesData, index: index });
       pswp.init();
@@ -77,7 +85,7 @@ export default function CardDetail() {
           loop
           className="!absolute inset-0 swiper-card-detail"
         >
-          <SwiperSlide className="relative">
+          <SwiperSlide className="relative overflow-hidden">
             <a
               href={card.images[0]}
               target="_blank"
@@ -92,11 +100,11 @@ export default function CardDetail() {
             </a>
             <div
               style={{ backgroundImage: `url(${card.images[0]})` }}
-              className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s"
+              className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s bg-fixed"
             />
           </SwiperSlide>
           {card.images.slice(1, card.images.length).map((image, index) => (
-            <SwiperSlide key={image} className="relative">
+            <SwiperSlide key={image} className="relative overflow-hidden">
               <a
                 key={image}
                 href={image}
@@ -116,17 +124,160 @@ export default function CardDetail() {
       </div>
       <div className="aspect-square-2"></div>
 
-      <div className="bg-white rounded-t-2xl px-5 pt-6 pb-10 -mt-12 relative z-20 flex flex-col gap-2">
-        <h1 className="text-lg font-medium leading-normal">{card.name}</h1>
-        <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-blue-500 hover:underline">
-          {card.collection.name}
-        </Link>
+      <div className={`bg-white rounded-t-2xl px-5 pt-6 pb-20 relative z-20 flex flex-col gap-4 ${card.images.length > 1 ? "-mt-12" : "-mt-16"}`}>
+        <div className="flex flex-col gap-2">
+          <h1 className="text-lg font-medium leading-normal">{card.name}</h1>
+
+          <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600 hover:underline">
+            {card.collection.name}
+          </Link>
+        </div>
 
         {card.description && <p className="text-sm text-slate-500">{card.description}</p>}
-        <br />
-        <br />
-        <br />
-        <br />
+
+        <div className="flex gap-2 flex-wrap items-center">
+          {/* <div className="flex items-center gap-1 justify-end">
+            <p className="text-[10px] text-gray-500 capitalize">{card.rarity}/5</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={starClassName} viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+            </svg>
+          </div> */}
+
+          <div className="hs-tooltip">
+            <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={starClassName} viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              {card.rarity}/5
+              <span
+                className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                role="tooltip"
+              >
+                Card rarity {card.rarity}
+              </span>
+            </span>
+          </div>
+          {/* <div className="hs-tooltip">
+            <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+              {card.year}
+              <span
+                className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                role="tooltip"
+              >
+                Year
+              </span>
+            </span>
+          </div> */}
+          {card.cardType.map((type) => (
+            <div key={type} className="hs-tooltip">
+              <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                {type}
+                <span
+                  className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                  role="tooltip"
+                >
+                  Card type {type}
+                </span>
+              </span>
+            </div>
+          ))}
+          {card.cardType.includes(CardType.RookieCard) && (
+            <div className="hs-tooltip text-xs font-medium">
+              <img src={RCImage} alt="Rookie Card" className="hs-tooltip-toggle h-6" title="Rookie Card" />
+              <span
+                className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                role="tooltip"
+              >
+                Rookie Card
+              </span>
+            </div>
+          )}
+        </div>
+
+        <ul className="flex flex-col mt-6">
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <Hash size={16} className="shrink-0" />
+            <span className="font-medium">Card number</span>
+            <span className="text-slate-700 text-right ml-auto">{card.number}</span>
+          </li>
+          {card.numbered && (
+            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+              <Medal size={16} className="shrink-0" />
+              <span className="font-medium">Numbered</span>
+              <span className="text-slate-700 text-right ml-auto">
+                {card.numbered === 1 ? "" : "/"}
+                {card.numbered}
+              </span>
+            </li>
+          )}
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <Calendar size={16} className="shrink-0" />
+            <span className="font-medium">Year</span>
+            <span className="text-slate-700 text-right ml-auto">{card.year}</span>
+          </li>
+          {card.cardSection && (
+            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+              <Folder size={16} className="shrink-0" />
+              <span className="font-medium">Card section</span>
+              <span className="text-slate-700 text-right ml-auto">{card.cardSection}</span>
+            </li>
+          )}
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <SwatchBook size={16} className="shrink-0" />
+            <span className="font-medium">Card type</span>
+            <span className="text-slate-700 text-right ml-auto">{card.cardType.join(", ")}</span>
+          </li>
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <Package2 size={16} className="shrink-0" />
+            <span className="font-medium">Product type</span>
+            <span className="text-slate-700 text-right ml-auto">{card.productType}</span>
+          </li>
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <BookText size={16} className="shrink-0" />
+            <span className="font-medium">Collection</span>
+            <Link to={`/collections/${card.collection.id}`} className="text-slate-700 text-right ml-auto hover:text-blue-500 hover:underline">
+              {card.collection.name}
+            </Link>
+          </li>
+          {card.collection.serie && (
+            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+              <BookType size={16} className="shrink-0" />
+              <span className="font-medium">Collection serie</span>
+              <span className="text-slate-700 text-right ml-auto">{card.collection.serie}</span>
+            </li>
+          )}
+          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
+            <Archive size={16} className="shrink-0" />
+            <span className="font-medium">Brand</span>
+            <span className="text-slate-700 text-right ml-auto">{card.collection.brand}</span>
+          </li>
+        </ul>
+
+        {card.links && (
+          <div className="flex flex-col mt-4">
+            {card.links?.map((link) => (
+              <a
+                key={link}
+                className="flex items-center gap-x-3.5 py-3 px-4 text-xs font-medium border border-gray-200 text-rose-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg hover:pl-6 transition-all"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SquareArrowOutUpRight size={16} className="shrink-0" />
+                {getUrlDomain(link)}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="bg-zinc-950 rounded-t-2xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-4 -mt-12">
+        {relatedCards.length > 0 && (
+          <div>
+            <div className="mb-4 pl-[2px] font-medium text-white text-center">Related cards</div>
+            <CardsGrid cards={relatedCards} infiniteScroll={false} />
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col gap-8">
@@ -190,89 +341,6 @@ export default function CardDetail() {
             )}
           </div>
         </div> */}
-
-        <ul className="flex flex-col">
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <Hash size={16} className="shrink-0" />
-            <span className="font-medium">Card number</span>
-            <span className="text-slate-700 text-right ml-auto">{card.number}</span>
-          </li>
-          {card.numbered && (
-            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-              <Medal size={16} className="shrink-0" />
-              <span className="font-medium">Numbered</span>
-              <span className="text-slate-700 text-right ml-auto">
-                {card.numbered === 1 ? "" : "/"}
-                {card.numbered}
-              </span>
-            </li>
-          )}
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <Calendar size={16} className="shrink-0" />
-            <span className="font-medium">Year</span>
-            <span className="text-slate-700 text-right ml-auto">{card.year}</span>
-          </li>
-          {card.cardSection && (
-            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-              <Folder size={16} className="shrink-0" />
-              <span className="font-medium">Card section</span>
-              <span className="text-slate-700 text-right ml-auto">{card.cardSection}</span>
-            </li>
-          )}
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <SwatchBook size={16} className="shrink-0" />
-            <span className="font-medium">Card type</span>
-            <span className="text-slate-700 text-right ml-auto">{card.cardType.join(", ")}</span>
-          </li>
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <Package2 size={16} className="shrink-0" />
-            <span className="font-medium">Product type</span>
-            <span className="text-slate-700 text-right ml-auto">{card.productType}</span>
-          </li>
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <BookText size={16} className="shrink-0" />
-            <span className="font-medium">Collection</span>
-            <Link to={`/collections/${card.collection.id}`} className="text-slate-700 text-right ml-auto hover:text-blue-500 hover:underline">
-              {card.collection.name}
-            </Link>
-          </li>
-          {card.collection.serie && (
-            <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-              <BookType size={16} className="shrink-0" />
-              <span className="font-medium">Collection serie</span>
-              <span className="text-slate-700 text-right ml-auto">{card.collection.serie}</span>
-            </li>
-          )}
-          <li className="inline-flex justify-between items-center gap-x-3 py-3 px-4 text-xs bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg">
-            <Archive size={16} className="shrink-0" />
-            <span className="font-medium">Brand</span>
-            <span className="text-slate-700 text-right ml-auto">{card.collection.brand}</span>
-          </li>
-        </ul>
-
-        {card.links && (
-          <div className="flex flex-col">
-            {card.links?.map((link) => (
-              <a
-                key={link}
-                className="inline-flex items-center gap-x-3.5 py-3 px-4 text-xs font-medium border border-gray-200 text-blue-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-600"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SquareArrowOutUpRight size={16} className="shrink-0" />
-                {getUrlDomain(link)}
-              </a>
-            ))}
-          </div>
-        )}
-
-        {relatedCards.length > 0 && (
-          <div>
-            <div className="mb-2 pl-[2px] text-sm font-medium">Related cards</div>
-            <CardsGrid cards={relatedCards} infiniteScroll={false} />
-          </div>
-        )}
 
         <a
           href={`https://github.com/joelthorner/aitana-cards/issues/new?assignees=joelthorner&labels=Card+data+error&projects=&template=card-data-error.md&title=Card+data+error+-+${encodeURIComponent(
