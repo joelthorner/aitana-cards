@@ -1,27 +1,29 @@
 import { Collection } from "../types/collection";
 
-import uclw_fgc4624h_box_21_22 from "./img/collections/22uclw_fgc4624h_box.png";
-import panini_004743spe3w_0 from "./img/collections/004743spe3w_0.webp";
-import panini_004826spe3w_1_1 from "./img/collections/004826spe3w_1_1.webp";
-import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
+import uclw_fgc4624h_box_21_22 from "./img/collections/uclw_fgc4624h_box_21_22_b.png";
+import panini_004743spe3w_0 from "./img/collections/panini2223.png";
+import panini_004826spe3w_1_1 from "./img/collections/panini_004826spe3w_1_1.png";
+import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.png";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.png";
-import sL1200_480x from "./img/collections/s-l1200_480x.webp";
+import Topps_Now_Logo_Black_2 from "./img/collections/Topps_Now_Logo_Black_2.png";
+import sL1200_480x from "./img/collections/sL1200_480x.png";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.png";
-import multipack_6Packets_1 from "./img/collections/multipack-6_packets_1.png";
-import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprar-ucl-22-23-sobre-uefa-champions-league-barato.jpg";
-import simplicidad24 from "./img/collections/simplicidad24-1.png";
+import multipack_6Packets_1 from "./img/collections/multipack_6Packets_1_b.png";
+import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprarUcl_22_23Sobre_b.png";
+import simplicidad24 from "./img/collections/simplicidad24-1_b.png";
 import merlin98 from "./img/collections/merlin98-1.png";
-import matchattaxextra from "./img/collections/matchattaxextra.jpg";
-import cromosWomensEuro_2022DePanini from "./img/collections/cromos-womens-euro-2022-de-panini.jpg";
-import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/topps-champions-league-living-set-2022-2023-anuncio.webp";
-import tsucsb23 from "./img/collections/2022-23-Topps-Simplicidad-UEFA-cards-sealed-box.jpg";
-import tuwsclc2223 from "./img/collections/Topps-Chrome-Womens-Champions-League.webp";
+import matchattaxextra from "./img/collections/maxattax.png";
+import cromosWomensEuro_2022DePanini from "./img/collections/cromosWomensEuro_2022DePanini.png";
+import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/livingset.png";
+import tsucsb23 from "./img/collections/tsucsb23.png";
+import tuwsclc2223 from "./img/collections/tuwsclc2223.png";
 import merlinhucc2324 from "./img/collections/01-merlin-visual.png";
-import sapphire22_23 from "./img/collections/sapphire22_23.jpg";
-import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.webp";
+import sapphire22_23 from "./img/collections/sapphire22_23_b.png";
+import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.png";
 import deco2324 from "./img/collections/deco2324.png";
-import carrefour24 from "./img/collections/carrefour24.webp";
-import focus2324 from "./img/collections/focus2324.jpg";
+import carrefour24 from "./img/collections/carrefour24.png";
+import focus2324 from "./img/collections/focus.png";
+import knockout23 from "./img/collections/knockout23.jpg";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -113,7 +115,7 @@ export const PaniniCarrefourVamosSeleccion_2024: Collection = {
 
 export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
   id: 'topps-now-women-s-champions-league-2023-2024',
-  image: Topps_Now_Logo_Black,
+  image: Topps_Now_Logo_Black_2,
   name: "Topps Now Women's Champions League 2023-24",
   serie: 'Topps Now',
   description: ``,
@@ -313,7 +315,7 @@ export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
     'https://www.laststicker.com/cards/panini_womens_world_cup_2023/',
     'http://www.owacgames.com/2023/05/coleccion-cromos-mundial-femenino-2023-fifa-womens-world-cup-au-nz-2023-datos-fotos-listado-panini.html',
   ],
-  serie: 'Topps Chrome',
+  serie: 'Panini Spain National Team',
 };
 
 export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
@@ -343,6 +345,21 @@ export const ToppsFocusFcBarcelona_2023_2024: Collection = {
   serie: 'Topps FOCUS',
 };
 
+export const ToppsUefaWomensChampionsLeagueKnockout_2023: Collection = {
+  id: 'topps-uefa-womens-champions-league-knockout-2023',
+  image: knockout23,
+  name: "Topps UEFA Womens Champions League - Knockout 2023",
+  description: `Topps celebra la fase eliminatoria de la UEFA Women´s Champions League 2022/23!
+Este set de 40 cartas presenta las estrellas más grandes de los ocho equipos que quedan en la competición e incluye un ‘Star Player´ subset . Busca dos cartas paralelas numeradas garantizadas en cada caja y podrás encontrar cartas autografiadas en las cajas afortunadas!`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/products/uefa-womens-champions-league-knockout-2023-topps-es',
+    'https://www.topps.com/media/amasty/amfile/attach/UxdYyaqrOpdN8RSWJZV5KgMgCwMzvyqC.pdf',
+    'https://www.collectosk.com/2022-23-topps-knockout-uefa-womens-champions-league-soccer-cards/',
+  ],
+  serie: 'Topps Knockout',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -367,4 +384,5 @@ export const collections: Collection[] = [
   PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
   ToppsDecoUefaClubCompetitions_2023_2024,
   ToppsFocusFcBarcelona_2023_2024,
+  ToppsUefaWomensChampionsLeagueKnockout_2023,
 ].sort((a, b) => a.name.localeCompare(b.name));

@@ -1,4 +1,4 @@
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2022_2023 } from "../collections";
 
 import cardnow23 from "../img/cards/cardnow23.png";
@@ -21,4 +21,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2022_2023_23: Card = {
   cardSection: "FC Barcelona",
   cardType: [CardType.BaseCard, CardType.TeamCard],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };

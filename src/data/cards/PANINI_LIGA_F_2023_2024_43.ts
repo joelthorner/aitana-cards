@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2023_2024 } from "../collections";
 
 import lifaFTeam from '../img/cards/lifaFTeam.png';
@@ -24,6 +24,7 @@ const PANINI_LIGA_F_2023_2024_43: Card = {
   cardSection: 'FC Barcelona',
   number: 43,
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Horizontal,
 };
 
 export default PANINI_LIGA_F_2023_2024_43;

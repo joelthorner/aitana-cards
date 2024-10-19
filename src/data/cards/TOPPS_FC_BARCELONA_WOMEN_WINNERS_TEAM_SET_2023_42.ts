@@ -5,7 +5,7 @@
  * @todo Missing data of [42rb] Excel data 4 more detail [no evidence]
  * @todo Missing data of [42g] Excel data 4 more detail [no evidence]
  */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
 import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.png";
@@ -30,6 +30,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42: Card = {
     CardType.TeamCard,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
@@ -54,4 +55,5 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
     CardType.Green,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };

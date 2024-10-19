@@ -12,7 +12,7 @@ export default function CollectionsGrid({ collections }: CollectionsGridProps) {
   });
 
   return (
-    <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
+    <div className="grid gap-x-2 gap-y-4 grid-cols-2">
       {collections.map((collection) => (
         <div className="grid-item" key={collection.id}>
           <Collection collection={collection} />

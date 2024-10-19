@@ -13,25 +13,25 @@ export default function Card({ card }: CardProps) {
 
   const statusIcon = getCardStatusIcon(card.status);
 
-  const defaultImage = card.images.length && <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full" loading="lazy" />;
+  const defaultImage = card.images.length && <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full rounded-md" loading="lazy" />;
 
   return (
     <Link
       id={card.id}
       to={"/cards/" + card.id}
-      className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
+      className="h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
     >
       <div className="w-full aspect-[5/7] relative">
         {defaultImage}
         {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
       </div>
 
-      <h3 className="mt-2 text-[12px] font-bold leading-tight text-gray-800 line-clamp-2" title={card.name}>
+      <h3 className="mt-2 text-[12px] font-bold leading-tight text-white line-clamp-2" title={card.name}>
         {card.name}
       </h3>
       <p className="mt-1 text-[10px] leading-tight font-medium uppercase text-gray-400 mb-2 line-clamp-2">{card.collection.name}</p>
 
-      <div className="p-2 border-t -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
+      <div className="p-2 -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
         <div className="flex items-center gap-1">
           {statusIcon}
           <p className="text-[10px] text-gray-500 capitalize">{card.status}</p>

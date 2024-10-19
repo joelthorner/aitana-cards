@@ -8,9 +8,10 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 interface CardsGridProps {
   cards: CardType[];
+  infiniteScroll?: boolean;
 }
 
-export default function CardsGrid({ cards }: CardsGridProps) {
+export default function CardsGrid({ cards, infiniteScroll = true }: CardsGridProps) {
   const { filtering, resetFilters } = useFiltersContext();
 
   const [hasMore, setHasMore] = useState(true);
@@ -37,19 +38,29 @@ export default function CardsGrid({ cards }: CardsGridProps) {
 
   return items.length ? (
     <div className="relative">
-      <InfiniteScroll
-        className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7"
-        dataLength={items.length}
-        next={fetchMoreData}
-        hasMore={hasMore}
-        loader={"TODO carregant spinner"}
-      >
-        {items.map((card) => (
-          <div className="grid-item" key={card.id}>
-            <Card card={card} />
-          </div>
-        ))}
-      </InfiniteScroll>
+      {infiniteScroll ? (
+        <InfiniteScroll
+          className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7"
+          dataLength={items.length}
+          next={fetchMoreData}
+          hasMore={hasMore}
+          loader={"TODO carregant spinner"}
+        >
+          {items.map((card) => (
+            <div className="grid-item" key={card.id}>
+              <Card card={card} />
+            </div>
+          ))}
+        </InfiniteScroll>
+      ) : (
+        <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
+          {cards.map((card) => (
+            <div className="grid-item" key={card.id}>
+              <Card card={card} />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   ) : (
     <div className="max-w-sm w-full min-h-[400px] flex flex-col justify-center mx-auto px-6 py-4">
