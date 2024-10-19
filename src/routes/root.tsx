@@ -27,7 +27,7 @@ function Root() {
 
   return (
     <>
-      {(location.pathname === "/" || location.pathname === "/collections") && (
+      {(location.pathname === "/" || location.pathname === "/collections" || location.pathname === "/changelog") && (
         <div className="h-16 bg-zinc-950">
           <div className="2xl:container mx-auto h-16">
             <div className="flex items-center justify-between gap-2 px-3 pt-6">

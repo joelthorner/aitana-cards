@@ -1,4 +1,4 @@
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniCarrefourVamosSeleccion_2024 } from "../collections";
 
 import pcvs_38_0 from "../img/cards/pcvs_38_0.png";
@@ -29,6 +29,7 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_38: Card = {
   name: 'Once Inicial Femenino contra Países Bajos 2024',
   status: CardStatus.Falti,
   rarity: 1,
+  orientation: CardOrientation.Horizontal,
 };
 
 export default PANINI_CARREFOUR_VAMOS_SELECCION_2024_38;

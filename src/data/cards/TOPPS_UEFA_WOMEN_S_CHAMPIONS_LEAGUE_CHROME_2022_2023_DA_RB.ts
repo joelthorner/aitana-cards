@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "../collections";
 
 import DA_RBo_0 from "../img/cards/DA_RBo_0.png";
@@ -34,6 +34,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARB: Card = {
     CardType.DualAutographs,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo: Card = {
@@ -61,6 +62,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo: Card = 
     CardType.OrangeWave,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBbl: Card = {
@@ -84,4 +86,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBbl: Card =
     CardType.Black,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };

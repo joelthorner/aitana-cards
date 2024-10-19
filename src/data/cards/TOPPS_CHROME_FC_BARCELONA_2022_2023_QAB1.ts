@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardType, CardStatus, CardProductType } from "../../types/card";
+import { Card, CardBrilli, CardType, CardStatus, CardProductType, CardOrientation } from "../../types/card";
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import QAB1 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook.jpg";
@@ -33,6 +33,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1: Card = {
   cardSection: 'FC Barcelona',
   numbered: 10,
   productType: CardProductType.BookCard,
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1g: Card = {
@@ -57,4 +58,5 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1g: Card = {
   cardSection: 'FC Barcelona',
   numbered: 1,
   productType: CardProductType.BookCard,
+  orientation: CardOrientation.Horizontal,
 };

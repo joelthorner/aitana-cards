@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniUefaWomenSEuroEngland_2022 } from "../collections";
 
 import img1 from '../img/cards/2022 Panini - Womens Euro 2022 -21.jpg';
@@ -22,6 +22,7 @@ const PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_21: Card = {
   cardType: [CardType.Base, CardType.TeamCard],
   cardSection: 'Spain',
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Horizontal,
 };
 
 export default PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_21;

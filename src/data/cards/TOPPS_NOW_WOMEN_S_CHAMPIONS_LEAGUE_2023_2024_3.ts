@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.png";
@@ -29,6 +29,7 @@ const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_3: Card = {
   cardSection: "FC Barcelona",
   cardType: [CardType.BaseCard],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
 };
 
 export default TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_3;

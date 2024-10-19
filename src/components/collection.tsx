@@ -12,7 +12,7 @@ export default function Collection({ collection }: CollectionProps) {
       to={"/collections/" + collection.id}
       className="h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
     >
-      <div className="w-full relative">
+      <div className="w-full relative aspect-[768/530]">
         <img src={collection.image} alt={collection.name} className="w-full rounded-md" loading="lazy" />
       </div>
 

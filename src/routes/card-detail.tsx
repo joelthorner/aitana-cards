@@ -10,7 +10,7 @@ import Holo from "../components/holo";
 import "photoswipe/style.css";
 import { useEffect, useRef } from "react";
 import PhotoSwipe from "photoswipe";
-import { CardType } from "../types/card";
+import { CardOrientation, CardType } from "../types/card";
 import RCImage from "../assets/img/rookie.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -100,14 +100,16 @@ export default function CardDetail() {
               className="cursor-pointer aspect-square flex relative items-center justify-center overflow-hidden"
               onClick={(event) => initPhotoSwipe(event, 0)}
             >
-              <div className="aspect-[5/7] w-1/2 relative rounded-lg overflow-hidden">
+              <div className={`aspect-[5/7] w-1/2 relative rounded-lg overflow-hidden ${card?.orientation === CardOrientation.Horizontal && "rotate-90"}`}>
                 <img src={card.images[0]} alt={card.name} className="size-full" />
                 {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
               </div>
             </a>
             <div
-              style={{ backgroundImage: `url(${card.images[0]})` }}
-              className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s bg-fixed"
+              style={{ backgroundImage: `url('${card.images[0]}')` }}
+              className={`bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s bg-fixed ${
+                card?.orientation === CardOrientation.Horizontal && "rotate-90"
+              }`}
             />
           </SwiperSlide>
           {card.images.slice(1, card.images.length).map((image, index) => (
@@ -124,7 +126,10 @@ export default function CardDetail() {
                   <img src={image} alt={`${card.name} - ${index + 1}`} className="object-contain max-h-full rounded-md overflow-hidden" />
                 </div>
               </a>
-              <div style={{ backgroundImage: `url(${image})` }} className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s" />
+              <div
+                style={{ backgroundImage: `url('${image}')` }}
+                className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

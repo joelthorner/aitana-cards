@@ -109,6 +109,11 @@ export enum CardProductType {
   BookCard = 'Book Card',
 };
 
+export enum CardOrientation {
+  Vertical = 'vertical',
+  Horizontal = 'horizontal',
+};
+
 export type Card = {
   id: string,
   images: string[],
@@ -123,6 +128,7 @@ export type Card = {
   description?: string,
   brilli?: CardBrilli,
   links?: string[];
-  numbered?: number; // Limited number series
+  numbered?: number;
   cardSection?: string;
+  orientation?: CardOrientation,
 };

@@ -48,7 +48,7 @@ export default function CollectionDetail() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 aspect-[768/530] z-10" id={"gallery-" + collectionId} ref={galleryRef}>
-        <button className="absolute top-0 left-0 z-40 text-white py-4 px-4" onClick={() => navigate(-1)}>
+        <button className="absolute top-0 left-0 z-40 text-white py-4 px-4 drop-shadow-md" onClick={() => navigate(-1)}>
           <MoveLeft />
         </button>
         <a href={collection.image} target="_blank" rel="noreferrer" className="transition cursor-pointer" onClick={(event) => initPhotoSwipe(event, 0)}>
@@ -59,7 +59,7 @@ export default function CollectionDetail() {
       </div>
       <div className="aspect-[768/530]"></div>
 
-      <div className="bg-white px-5 pt-6 pb-20 rounded-t-2xl -mt-5 flex flex-col gap-4 relative z-20">
+      <div className="bg-white px-5 pt-6 pb-20 rounded-t-2xl -mt-4 flex flex-col gap-4 relative z-20">
         <h1 className="text-xl font-medium leading-normal">{collection.name}</h1>
         <div className="flex gap-2 flex-wrap items-center">
           <div className="hs-tooltip">

@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowTheDeadlyDuo from "../img/cards/topps-now-the-deadly-duo.png";
@@ -37,6 +37,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22: Card = {
   cardType: [
     CardType.BaseCard,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu: Card = {
@@ -63,6 +64,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu: Card = {
   cardType: [
     CardType.Purple,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl: Card = {
@@ -89,6 +91,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl: Card = {
   cardType: [
     CardType.Black,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g: Card = {
@@ -115,6 +118,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g: Card = {
   cardType: [
     CardType.Gold,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu: Card = {
@@ -141,6 +145,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu: Card = {
     CardType.DualAutographs,
     CardType.Purple,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl: Card = {
@@ -167,6 +172,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl: Card = {
     CardType.DualAutographs,
     CardType.Black,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
@@ -193,6 +199,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
     CardType.DualAutographs,
     CardType.Rainbow,
   ],
+  orientation: CardOrientation.Horizontal,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g: Card = {
@@ -202,7 +209,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g: Card = {
     toppsNowTheDeadlyDuoDualAutograph_gold,
     toppsNowTheDeadlyDuoDualAutograph_back,
   ],
-  name: "Aitana Bonmatí & Alexia Putellas - Deadly Duo - Dual Autograph gold 1/1",
+  name: "Aitana Bonmatí & Alexia Putellas - Deadly Duo Dual Autograph / Gold",
   rarity: 5,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
@@ -219,4 +226,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g: Card = {
     CardType.DualAutographs,
     CardType.Gold,
   ],
+  orientation: CardOrientation.Horizontal,
 };
