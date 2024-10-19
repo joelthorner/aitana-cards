@@ -8,6 +8,7 @@ import { Bell, House, Info, Layers, MenuIcon, Search, SlidersHorizontal } from "
 import { useFiltersContext } from "../providers/filters";
 import MenuOffcanvas from "../components/menu-offcanvas";
 import logo from "../assets/logo.png";
+import { ModalCardDetailNumbered, ModalCardDetailProductType } from "../components/modals";
 
 declare global {
   interface Window {
@@ -148,6 +149,8 @@ function Root() {
 
       <FiltersOffcanvas />
       <MenuOffcanvas />
+      {location.pathname.includes("/cards/") && <ModalCardDetailProductType />}
+      {location.pathname.includes("/cards/") && <ModalCardDetailNumbered />}
     </>
   );
 }
