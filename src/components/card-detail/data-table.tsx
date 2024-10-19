@@ -3,6 +3,17 @@ import { Card } from "../../types/card";
 import { Archive, BookText, BookType, Calendar, ChevronRight, Clipboard, Fingerprint, Folder, Hash, Info, Medal, Package2, SwatchBook } from "lucide-react";
 
 export default function DataTable({ card }: { card: Card }) {
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        console.log("Text copiat al porta-retalls!");
+      })
+      .catch((error) => {
+        console.error("Error en copiar el text:", error);
+      });
+  };
+
   return (
     <>
       <ul className="mt-6">
@@ -18,6 +29,7 @@ export default function DataTable({ card }: { card: Card }) {
             <div className="hs-tooltip [--placement:left]">
               <button
                 type="button"
+                onClick={() => copyToClipboard(card.id)}
                 className="hs-tooltip-toggle flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1 text-zinc-500 hover:bg-zinc-50"
               >
                 <Clipboard size={16} strokeWidth={1.5} />
@@ -43,6 +55,7 @@ export default function DataTable({ card }: { card: Card }) {
             <div className="hs-tooltip [--placement:left]">
               <button
                 type="button"
+                onClick={() => copyToClipboard(card.number.toString())}
                 className="hs-tooltip-toggle flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1 text-zinc-500 hover:bg-zinc-50"
               >
                 <Clipboard size={16} strokeWidth={1.5} />

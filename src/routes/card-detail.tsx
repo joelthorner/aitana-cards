@@ -1,9 +1,9 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 // import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Bug, SquareArrowOutUpRight } from "lucide-react";
+import { Bug, MoveLeft, SquareArrowOutUpRight } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
@@ -30,6 +30,8 @@ export default function CardDetail() {
   let pswp: PhotoSwipe | null = null;
 
   const galleryRef = useRef<HTMLDivElement>(null);
+
+  const navigate = useNavigate();
 
   const initPhotoSwipe = (event: React.MouseEvent<HTMLAnchorElement>, index: number) => {
     event.preventDefault();
@@ -78,6 +80,10 @@ export default function CardDetail() {
   return (
     <>
       <div id={"gallery-" + cardId} ref={galleryRef} className="aspect-square-2 fixed top-0 left-0 right-0 z-[5]">
+        <button className="absolute top-0 left-0 z-40 text-white py-4 px-4" onClick={() => navigate(-1)}>
+          <MoveLeft />
+        </button>
+
         <Swiper
           pagination={{
             dynamicBullets: false,
@@ -115,7 +121,7 @@ export default function CardDetail() {
                 onClick={(event) => initPhotoSwipe(event, index + 1)}
               >
                 <div className="size-[calc(100%-6rem)] flex items-center justify-center">
-                  <img src={image} alt={`${card.name} - ${index + 1}`} className="object-contain rounded-md overflow-hidden" />
+                  <img src={image} alt={`${card.name} - ${index + 1}`} className="object-contain max-h-full rounded-md overflow-hidden" />
                 </div>
               </a>
               <div style={{ backgroundImage: `url(${image})` }} className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s" />

@@ -10,15 +10,16 @@ export default function Collection({ collection }: CollectionProps) {
     <Link
       id={collection.id}
       to={"/collections/" + collection.id}
-      className="h-full flex flex-col bg-white border shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
+      className="h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
     >
-      <div className="w-full aspect-square relative">
-        <img src={collection.image} alt={collection.name} className="absolute inset-0 size-full object-contain" />
+      <div className="w-full relative">
+        <img src={collection.image} alt={collection.name} className="w-full rounded-md" loading="lazy" />
       </div>
 
-      <h3 className="mt-2 text-[12px] font-bold leading-tight text-center text-gray-800" title={collection.name}>
+      <h3 className="mt-2 text-[12px] font-bold leading-tight text-white" title={collection.name}>
         {collection.name}
       </h3>
+      {collection.serie && <p className="mt-1 text-[10px] leading-tight font-medium uppercase text-gray-400 mb-2">{collection.serie}</p>}
     </Link>
   );
 }
