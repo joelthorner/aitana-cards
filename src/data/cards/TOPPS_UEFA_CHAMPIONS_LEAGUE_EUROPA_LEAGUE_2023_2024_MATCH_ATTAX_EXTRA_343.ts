@@ -21,5 +21,5 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
   cardType: [
     CardType.T_100Club,
   ],
-  productType: CardProductType.Card,
+  productType: CardProductType.GameCard,
 };

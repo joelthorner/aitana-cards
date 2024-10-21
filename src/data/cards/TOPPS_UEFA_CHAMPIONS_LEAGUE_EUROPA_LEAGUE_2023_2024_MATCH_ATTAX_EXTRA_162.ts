@@ -21,7 +21,7 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
   cardType: [
     CardType.UWCL_Limelight,
   ],
-  productType: CardProductType.Card,
+  productType: CardProductType.GameCard,
 };
 
 export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_162bc: Card = {
@@ -42,5 +42,5 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
     CardType.UWCL_Limelight,
     CardType.BlueCrystall,
   ],
-  productType: CardProductType.Card,
+  productType: CardProductType.GameCard,
 };

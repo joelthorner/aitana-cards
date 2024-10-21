@@ -107,6 +107,7 @@ export enum CardType {
 export enum CardProductType {
   Sticker = 'Sticker',
   Card = 'Card',
+  GameCard = 'Game Card',
   BookCard = 'Book Card',
 };
 

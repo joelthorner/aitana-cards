@@ -41,11 +41,30 @@ import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_65, TOPPS_AITANA_BONMATI
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64p } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45bu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45g, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45pu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45r } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70bu } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70";
+import { CardProductType } from "../types/card";
 
 export const changelog: Changelog[] = [
   {
     date: new Date('2024-10-21'),
     items: [
+      {
+        type: LineType.CHANGED,
+        card: TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_343,
+        text: `Set new product type \`"${CardProductType.GameCard}"\``,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.CHANGED,
+        card: TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_162bc,
+        text: `Set new product type \`"${CardProductType.GameCard}"\``,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.CHANGED,
+        card: TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_162,
+        text: `Set new product type \`"${CardProductType.GameCard}"\``,
+        user: 'joelthorner',
+      },
       {
         type: LineType.ADDED,
         card: TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70bu,

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { cards } from "../data/cards";
-import { Book, Square, SquareCheck, Sticker, StickyNote, X } from "lucide-react";
+import { Book, Gamepad2, Medal, Package2, Square, SquareCheck, Sticker, StickyNote, X } from "lucide-react";
 import { CardProductType } from "../types/card";
 
 export function ModalCardDetailProductType() {
@@ -22,8 +22,8 @@ export function ModalCardDetailProductType() {
         <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
           <div className="w-full flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto">
             <div className="flex justify-between items-center py-3 px-4 border-b">
-              <h3 id="hs-card-detail-product-type-modal-label" className="font-bold text-gray-800">
-                Product types
+              <h3 id="hs-card-detail-product-type-modal-label" className="font-bold text-gray-800 flex gap-2 items-center">
+                <Package2 size={20} strokeWidth={2} /> Product types
               </h3>
               <button
                 type="button"
@@ -43,8 +43,11 @@ export function ModalCardDetailProductType() {
                       {type === CardProductType.Sticker && <Sticker size={20} strokeWidth={1.5} />}
                       {type === CardProductType.Card && <StickyNote size={20} strokeWidth={1.5} />}
                       {type === CardProductType.BookCard && <Book size={20} strokeWidth={1.5} />}
+                      {type === CardProductType.GameCard && <Gamepad2 size={20} strokeWidth={1.5} />}
                       {type}
-                      <div className="ml-auto">{type === card.productType ? <SquareCheck size={20} strokeWidth={1.5} /> : <Square size={20} strokeWidth={1.5} />}</div>
+                      <div className="ml-auto">
+                        {type === card.productType ? <SquareCheck size={20} strokeWidth={1.5} /> : <Square size={20} strokeWidth={1.5} className="text-zinc-400" />}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -69,8 +72,8 @@ export function ModalCardDetailNumbered() {
         <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
           <div className="w-full flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto">
             <div className="flex justify-between items-center py-3 px-4 border-b">
-              <h3 id="hs-card-detail-numbered-modal-label" className="font-bold text-gray-800">
-                Numbered
+              <h3 id="hs-card-detail-numbered-modal-label" className="font-bold text-gray-800 flex gap-2 items-center">
+                <Medal size={20} strokeWidth={2} /> Numbered
               </h3>
               <button
                 type="button"
@@ -83,9 +86,11 @@ export function ModalCardDetailNumbered() {
               </button>
             </div>
             <div className="p-4 overflow-y-auto">
-              <p className="text-gray-800">
-                Numbered cards are short-printed (e.g. limited edition), and the print run is specified on either the front or back of the card. For example, a card may be
-                sequentially numbered 10/100 to indicate that it is the 10th card out of a print run of 100.
+              <p className="text-gray-800 text-sm">
+                Numbered cards are short-printed (e.g. limited edition), and the print run is specified on either the front or back of the card.
+                <br />
+                <br />
+                For example, a card may be sequentially numbered 10/100 to indicate that it is the 10th card out of a print run of 100.
               </p>
             </div>
           </div>
