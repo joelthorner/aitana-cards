@@ -19,6 +19,7 @@ export enum CardBrilli {
   BlueTopps = 'blue',
   BlackTopps = 'black',
   PinkRefractorTopps = 'pinkRefractor',
+  PinkFoil = 'pinkFoil',
   Refractor = 'refractor',
   GreenRefractorTopps = 'greenRefractor',
   InfernoRefractorTopps = 'infernoRefractor',
@@ -106,6 +107,7 @@ export enum CardType {
 export enum CardProductType {
   Sticker = 'Sticker',
   Card = 'Card',
+  GameCard = 'Game Card',
   BookCard = 'Book Card',
 };
 
