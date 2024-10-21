@@ -2,27 +2,30 @@ import { Minus, Plus } from "lucide-react";
 import { collections as collectionsData } from "../../data/collections";
 import { useFiltersContext } from "../../providers/filters";
 import { Collection } from "../../types/collection";
+import { useEffect, useState } from "react";
 
-function CollectionItem({ collection }: { collection: Collection }) {
-  const { collections, setCollections } = useFiltersContext();
+interface CollectionItemProps {
+  collection: Collection;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  checked: boolean;
+}
 
-  const handleCheckboxChange = () => {
-    if (collections.includes(collection.id)) {
-      setCollections(collections.filter((r) => r !== collection.id));
-    } else {
-      setCollections([...collections, collection.id]);
-    }
-  };
+interface CollectionGroupProps {
+  index: number;
+  serieName: string;
+  groupCollections: Collection[];
+}
 
+function CollectionItem({ collection, onChange, checked }: CollectionItemProps) {
   return (
     <div key={collection.id} className="flex items-center gap-x-3.5 py-2 px-2 rounded-lg text-sm text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50">
       <input
         type="checkbox"
-        className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+        className="shrink-0 m-0 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
         id={`hs-${collection.id}-checkbox`}
         value={collection.id}
-        checked={collections.includes(collection.id)}
-        onChange={handleCheckboxChange}
+        checked={checked}
+        onChange={onChange}
       />
       <label htmlFor={`hs-${collection.id}-checkbox`} className="text-xs">
         {collection.name}
@@ -31,39 +34,88 @@ function CollectionItem({ collection }: { collection: Collection }) {
   );
 }
 
-function CollectionGroup({ index, serieName, groupCollections }: { index: number; serieName: string; groupCollections: Collection[] }) {
-  const { collections } = useFiltersContext();
+function CollectionGroup({ index, serieName, groupCollections }: CollectionGroupProps) {
+  const { collections, setCollections } = useFiltersContext();
 
   const groupSelectedItems = groupCollections.filter((collectionItem) => collections.includes(collectionItem.id));
 
+  const [checked, setChecked] = useState<boolean>(collections.length > 0 && groupCollections.every((obj) => collections.includes(obj.id)));
+
+  const handleGroupCheckbox = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked(event.target.checked);
+
+    const valuesToAddOrRemove = groupCollections.map((c) => c.id);
+
+    if (event.target.checked) {
+      const newValues: string[] = [...collections, ...valuesToAddOrRemove];
+      const uniqueValues: string[] = Array.from(new Set(newValues));
+
+      setCollections(uniqueValues);
+    } else {
+      const updatedValues: string[] = collections.filter((value) => !valuesToAddOrRemove.includes(value));
+      setCollections(updatedValues);
+    }
+  };
+
+  const handleItemCheckbox = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (collections.includes(event.target.value)) {
+      // setChecked(false);
+      setCollections(collections.filter((r) => r !== event.target.value));
+    } else {
+      setCollections([...collections, event.target.value]);
+      // if (collections.length > 0 && groupSelectedItems.every((obj) => collections.includes(obj.id))) {
+      //   setChecked(true);
+      // }
+    }
+  };
+
+  useEffect(() => {
+    if (!collections.length) {
+      setChecked(false);
+    } else if (collections.length > 0) {
+      // console.log(groupCollections.every((obj) => collections.includes(obj.id)));
+      // console.log(groupCollections.map((c) => c.id));
+      // console.log(collections);
+      setChecked(groupCollections.every((obj) => collections.includes(obj.id)));
+    }
+  }, [collections, groupCollections]);
+
   return (
     <div className="hs-accordion" id={`hs-basic-heading-collection-${index}`}>
-      <button
-        className="hs-accordion-toggle hs-accordion-active:text-blue-600 px-4 py-2 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none"
-        aria-expanded="true"
-        aria-controls={`hs-basic-collapse-collection-${index}`}
-      >
-        {serieName}
-        {groupSelectedItems.length > 0 && (
-          <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{groupSelectedItems.length}</span>
-        )}
+      <div className="relative">
+        <input
+          type="checkbox"
+          className="shrink-0 border-gray-200 rounded text-blue-600 focus:ring-blue-500 absolute top-1/2 -translate-y-1/2 left-4"
+          checked={checked}
+          onChange={handleGroupCheckbox}
+        />
+        <button
+          className="hs-accordion-toggle hs-accordion-active:text-blue-600 px-4 py-2 pl-11 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500 rounded-lg"
+          aria-expanded="true"
+          aria-controls={`hs-basic-collapse-collection-${index}`}
+        >
+          {serieName}
+          {groupSelectedItems.length > 0 && (
+            <span className="inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium bg-red-500 text-white">{groupSelectedItems.length}</span>
+          )}
 
-        <div className="size-8 flex items-center justify-center transition-transform hs-accordion-active:rotate-180 ml-auto">
-          <Plus size={16} className="hs-accordion-active:hidden block" />
-          <Minus size={16} className="hs-accordion-active:block hidden" />
-        </div>
-      </button>
+          <div className="size-8 flex items-center justify-center transition-transform hs-accordion-active:rotate-180 ml-auto">
+            <Plus size={16} className="hs-accordion-active:hidden block" />
+            <Minus size={16} className="hs-accordion-active:block hidden" />
+          </div>
+        </button>
+      </div>
       <div
         id={`hs-basic-collapse-collection-${index}`}
         className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
         role="region"
         aria-labelledby={`hs-basic-heading-collection-${index}`}
       >
-        <div className="px-4 pb-3">
+        <div className="px-2 pb-3">
           {groupCollections
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((collection) => (
-              <CollectionItem key={collection.id} collection={collection} />
+              <CollectionItem key={collection.id} collection={collection} onChange={handleItemCheckbox} checked={collections.includes(collection.id)} />
             ))}
         </div>
       </div>
