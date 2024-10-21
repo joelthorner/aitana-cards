@@ -9,6 +9,32 @@ import tabpcs_56bu_2 from "../img/cards/tabpcs_56bu_2.webp";
 import tabpcs_56gr_0 from "../img/cards/tabpcs_56gr_0.png";
 import tabpcs_56gr_1 from "../img/cards/tabpcs_56gr_1.webp";
 import tabpcs_56gr_2 from "../img/cards/tabpcs_56gr_2.webp";
+import tabpcs_56_0 from "../img/cards/tabpcs_56_0.png";
+import tabpcs_56_1 from "../img/cards/tabpcs_56_1.webp";
+import tabpcs_56_2 from "../img/cards/tabpcs_56_2.webp";
+import tabpcs_56bu_3 from "../img/cards/tabpcs_56bu_3.webp";
+import tabpcs_56bu_4 from "../img/cards/tabpcs_56bu_4.webp";
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-56',
+  number: 56,
+  images: [
+    tabpcs_56_0,
+    tabpcs_56_1,
+    tabpcs_56_2,
+  ],
+  name: 'Aitana Bonmatí - Pioneras',
+  rarity: 1,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Pioneras',
+  cardType: [
+    CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56gr: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-56gr',
@@ -41,6 +67,8 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56bu: Card = {
     tabpcs_56bu_0,
     tabpcs_56bu_1,
     tabpcs_56bu_2,
+    tabpcs_56bu_3,
+    tabpcs_56bu_4,
   ],
   name: 'Aitana Bonmatí - Pioneras / Blue',
   rarity: 4,

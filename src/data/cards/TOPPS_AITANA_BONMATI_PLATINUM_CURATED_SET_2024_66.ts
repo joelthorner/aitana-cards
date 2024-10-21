@@ -9,26 +9,27 @@ import tabpcs_A66p_0 from "../img/cards/tabpcs_A66p_0.png";
 import tabpcs_A66p_1 from "../img/cards/tabpcs_A66p_1.webp";
 import tabpcs_A66p_2 from "../img/cards/tabpcs_A66p_2.webp";
 import tabpcs_A66p_3 from "../img/cards/tabpcs_A66p_3.webp";
+import tabpcs_66_0 from "../img/cards/tabpcs_66_0.png";
+import tabpcs_66_1 from "../img/cards/tabpcs_66_1.webp";
 
-// export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66: Card = {
-//   id: 'topps-aitana-bonmati-platinum-curated-set-2024-66',
-//   number: 66,
-//   images: [
-//     tabpcs_66_0,
-//     tabpcs_66_1,
-//     tabpcs_66_2,
-//   ],
-//   name: 'Gana el premio UEFA Women\'s Player of the Year 2022/23',
-//   rarity: 1,
-//   status: CardStatus.Falti,
-//   collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
-//   year: 2024,
-//   cardSection: 'Mejores Momentos',
-//   cardType: [
-//     CardType.BaseCard,
-//   ],
-//   productType: CardProductType.Card,
-// };
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-66',
+  number: 66,
+  images: [
+    tabpcs_66_0,
+    tabpcs_66_1,
+  ],
+  name: 'Gana el premio UEFA Women\'s Player of the Year 2022/23',
+  rarity: 1,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  cardType: [
+    CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+};
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66bu: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-66bu',

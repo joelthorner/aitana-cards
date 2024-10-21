@@ -6,6 +6,28 @@ import tabpcs_67bu_2 from "../img/cards/tabpcs_67bu_2.webp";
 import tabpcs_67pu_0 from "../img/cards/tabpcs_67pu_0.png";
 import tabpcs_67pu_1 from "../img/cards/tabpcs_67pu_1.webp";
 import tabpcs_67pu_2 from "../img/cards/tabpcs_67pu_2.webp";
+import tabpcs_67_0 from "../img/cards/tabpcs_67_0.png";
+import tabpcs_67_1 from "../img/cards/tabpcs_67_1.webp";
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_67: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-67',
+  number: 67,
+  images: [
+    tabpcs_67_0,
+    tabpcs_67_1,
+  ],
+  name: 'Marca en una victoria récord (9-0) contra SL Benfica',
+  rarity: 1,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  cardType: [
+    CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+};
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_67bu: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-67bu',
