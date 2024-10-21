@@ -24,6 +24,7 @@ import deco2324 from "./img/collections/deco2324.png";
 import carrefour24 from "./img/collections/carrefour24.png";
 import focus2324 from "./img/collections/focus.png";
 import knockout23 from "./img/collections/knockout23.jpg";
+import abcs from "./img/collections/abcs.png";
 
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
@@ -360,6 +361,22 @@ Este set de 40 cartas presenta las estrellas más grandes de los ocho equipos qu
   serie: 'Topps Knockout',
 };
 
+export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024',
+  image: abcs,
+  name: "Topps Aitana Bonmatí Platinum Curated Set 2024",
+  description: `Topps presenta el primer Topps Platinum Curated set de la UEFA Women's Champions League, ¡con la superestrella del FC Barcelona Aitana Bonmatí!`,
+  brand: 'Topps',
+  links: [
+    'https://womsports.es/proyecto/aitana-topps-curated-set/',
+    'https://es.topps.com/products/toppsr-aitana-bonmati-curated-set-2',
+    'https://es.topps.com/amfile/file/download/file/2394/',
+    'https://uk.topps.com/pages/aitana-bonmat-curated-set',
+    'https://www.collectosk.com/2023-24-topps-platinum-uefa-womens-champions-league-aitana-bonmati-curated-set-soccer-cards/',
+  ],
+  serie: 'Topps Curated set',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -385,4 +402,5 @@ export const collections: Collection[] = [
   ToppsDecoUefaClubCompetitions_2023_2024,
   ToppsFocusFcBarcelona_2023_2024,
   ToppsUefaWomensChampionsLeagueKnockout_2023,
+  ToppsAitanaBonmatiPlatinumCuratedSet_2024,
 ].sort((a, b) => a.name.localeCompare(b.name));

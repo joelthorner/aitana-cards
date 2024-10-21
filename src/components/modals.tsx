@@ -36,10 +36,10 @@ export function ModalCardDetailProductType() {
               </button>
             </div>
             <div className="p-4 overflow-y-auto">
-              <p className="text-gray-800">
+              <div className="text-gray-800">
                 <ul className="max-w-xs flex flex-col divide-y divide-gray-200">
                   {Object.values(CardProductType).map((type) => (
-                    <li className="inline-flex items-center gap-x-2 py-3 px-2 text-sm font-medium text-gray-800">
+                    <li className="inline-flex items-center gap-x-2 py-3 px-2 text-sm font-medium text-gray-800" key={type}>
                       {type === CardProductType.Sticker && <Sticker size={20} strokeWidth={1.5} />}
                       {type === CardProductType.Card && <StickyNote size={20} strokeWidth={1.5} />}
                       {type === CardProductType.BookCard && <Book size={20} strokeWidth={1.5} />}
@@ -48,7 +48,7 @@ export function ModalCardDetailProductType() {
                     </li>
                   ))}
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
         </div>

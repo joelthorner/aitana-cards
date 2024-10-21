@@ -3,7 +3,7 @@ import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 // import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Bug, MoveLeft, SquareArrowOutUpRight } from "lucide-react";
+import { Bug, MoveLeft, Regex, SquareArrowOutUpRight } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
@@ -17,6 +17,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import DataTable from "../components/card-detail/data-table";
+import { getRelatedCardsIdValue } from "../utils/getRelatedCardsIdValue";
 
 interface GalleryItem {
   src: string;
@@ -67,15 +68,14 @@ export default function CardDetail() {
     };
   }, [pswp]);
 
-  if (!card) {
+  if (!cardId) {
     return <ErrorPage />;
   }
 
   // const statusIcon = getCardStatusIcon(card.status);
   const starClassName = "size-3 " + getStarClassName(card.rarity);
 
-  const cardRelatedsIdSearch = card.id.replace(/[a-zA-Z]+$/, "");
-  const relatedCards = cards.filter((card) => card.id.includes(cardRelatedsIdSearch) && card.id !== cardId);
+  const relatedCards = cards.filter((card) => card.id.includes(getRelatedCardsIdValue(cardId)) && cardId !== card.id);
 
   return (
     <>
