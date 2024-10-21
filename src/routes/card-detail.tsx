@@ -17,7 +17,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import DataTable from "../components/card-detail/data-table";
-import { getRelatedCardsIdValue } from "../utils/getRelatedCardsIdValue";
+import { isRelatedCard } from "../utils/isRelatedCard";
 
 interface GalleryItem {
   src: string;
@@ -75,7 +75,7 @@ export default function CardDetail() {
   // const statusIcon = getCardStatusIcon(card.status);
   const starClassName = "size-3 " + getStarClassName(card.rarity);
 
-  const relatedCards = cards.filter((card) => card.id.includes(getRelatedCardsIdValue(cardId)) && cardId !== card.id);
+  const relatedCards = cards.filter((filterCard) => isRelatedCard(card, filterCard));
 
   return (
     <>
