@@ -12,6 +12,9 @@ import tabpcs_A69r_2 from "../img/cards/tabpcs_A69r_2.webp";
 import tabpcs_69_0 from "../img/cards/tabpcs_69_0.png";
 import tabpcs_69_1 from "../img/cards/tabpcs_69_1.webp";
 import tabpcs_69_2 from "../img/cards/tabpcs_69_2.webp";
+import tabpcs_69pu_0 from "../img/cards/tabpcs_69pu_0.png";
+import tabpcs_69pu_1 from "../img/cards/tabpcs_69pu_1.jpg";
+import tabpcs_69pu_2 from "../img/cards/tabpcs_69pu_2.jpg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-69',
@@ -53,6 +56,30 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69bu: Card = {
   cardType: [
     CardType.BaseCard,
     CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69pu: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-69pu',
+  number: '69pu',
+  images: [
+    tabpcs_69pu_0,
+    tabpcs_69pu_1,
+    tabpcs_69pu_2,
+  ],
+  name: 'Marca un gol en El Clásico en una victoria de cuartos de final Purple',
+  rarity: 4,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.PurpleFoil,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Purple,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,

@@ -72,7 +72,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A71p: Card = {
   collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
   year: 2024,
   cardSection: 'Mejores Momentos',
-  brilli: CardBrilli.PinkRefractorTopps,
+  brilli: CardBrilli.PinkFoil,
   cardType: [
     CardType.Autographs,
     CardType.Pink,

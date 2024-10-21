@@ -373,6 +373,7 @@ export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
     'https://es.topps.com/amfile/file/download/file/2394/',
     'https://uk.topps.com/pages/aitana-bonmat-curated-set',
     'https://www.collectosk.com/2023-24-topps-platinum-uefa-womens-champions-league-aitana-bonmati-curated-set-soccer-cards/',
+    'http://www.owacgames.com/2024/07/aitana-bonmati-platinum-curated-set-topps-datos-fotos-listado.html',
   ],
   serie: 'Topps Curated set',
 };

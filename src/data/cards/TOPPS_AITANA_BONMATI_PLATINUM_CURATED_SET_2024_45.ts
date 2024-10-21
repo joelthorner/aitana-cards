@@ -8,6 +8,12 @@ import tabpcs_45r_2 from "../img/cards/tabpcs_45r_2.webp";
 import tabpcs_45_0 from "../img/cards/tabpcs_45_0.png";
 import tabpcs_45_1 from "../img/cards/tabpcs_45_1.webp";
 import tabpcs_45_2 from "../img/cards/tabpcs_45_2.webp";
+import tabpcs_45pu_0 from "../img/cards/tabpcs_45pu_0.png";
+import tabpcs_45pu_1 from "../img/cards/tabpcs_45pu_1.webp";
+import tabpcs_45pu_2 from "../img/cards/tabpcs_45pu_2.webp";
+import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.png";
+import tabpcs_45bu_1 from "../img/cards/tabpcs_45bu_1.webp";
+import tabpcs_45bu_2 from "../img/cards/tabpcs_45bu_2.webp";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-45',
@@ -25,6 +31,52 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45: Card = {
   cardSection: 'Playmakers',
   cardType: [
     CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45bu: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-45bu',
+  number: '45bu',
+  images: [
+    tabpcs_45bu_0,
+    tabpcs_45bu_1,
+    tabpcs_45bu_2,
+  ],
+  name: 'Aitana Bonmatí Playmakers / Blue',
+  rarity: 4,
+  numbered: 49,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Playmakers',
+  brilli: CardBrilli.BlueTopps,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45pu: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-45pu',
+  number: '45pu',
+  images: [
+    tabpcs_45pu_0,
+    tabpcs_45pu_1,
+    tabpcs_45pu_2,
+  ],
+  name: 'Aitana Bonmatí Playmakers / Purple',
+  rarity: 5,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Playmakers',
+  brilli: CardBrilli.PurpleFoil,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Purple,
   ],
   productType: CardProductType.Card,
 };
