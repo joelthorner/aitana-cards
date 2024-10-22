@@ -50,3 +50,7 @@ html {
   --swiper-pagination-color: #fff;
   --swiper-pagination-bullet-inactive-color: #FFF;
 }
+
+.swiper-card-detail .swiper-pagination {
+  @apply pointer-events-none;
+}

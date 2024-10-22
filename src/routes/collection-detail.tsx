@@ -59,7 +59,7 @@ export default function CollectionDetail() {
       </div>
       <div className="aspect-[768/530]"></div>
 
-      <div className="bg-white px-5 pt-6 pb-20 rounded-t-2xl -mt-4 flex flex-col gap-4 relative z-20">
+      <div className="bg-white px-5 pt-6 pb-20 rounded-t-3xl -mt-5 flex flex-col gap-4 relative z-20">
         <h1 className="text-xl font-medium leading-normal">{collection.name}</h1>
         <div className="flex gap-2 flex-wrap items-center">
           <div className="hs-tooltip">
@@ -104,7 +104,7 @@ export default function CollectionDetail() {
         )}
       </div>
 
-      <div className="bg-zinc-950 rounded-t-2xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-6">
+      <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-6">
         <div>
           <div className="mb-4 pl-[2px] font-medium text-white text-center">Collection cards</div>
           {collectionCards.length > 0 && (
