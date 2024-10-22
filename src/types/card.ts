@@ -40,7 +40,7 @@ export enum CardType {
   Base = 'Base',
   Holographic = 'Holographic',
   TeamCard = 'Team Card',
-  Collage = 'Collage',
+  Collage = 'Collage', // Carta composta
 
   // Panini
   GoldFoil = 'Gold Foil',
@@ -55,6 +55,10 @@ export enum CardType {
   Dynamic = 'Dynamic',
   Sapphire = 'Sapphire',
   AltImage = 'Alternative Image',
+  Fierce = 'Fierce',
+  Filmstrip = 'Filmstrip',
+  CrowningMoments = 'Crowning Moments',
+  ShutterSpeed = 'Shutter Speed',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -85,15 +89,12 @@ export enum CardType {
   RoseGoldMojo = 'Rose Gold Mojo',
   BlueMojo = 'Blue Mojo',
   AquaPrismRefactor = 'Aqua Prism Refractor',
+  PurplePulsarRefractor = 'Purple Pulsar Refractor',
 
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
   DualAutographs = 'Dual Autographs',
   QuadAutograph = 'Quad Autograph',
-
-  Filmstrip = 'Filmstrip',
-  CrowningMoments = 'Crowning Moments',
-  ShutterSpeed = 'Shutter Speed',
 
   // Topps stickers
   Shiny = 'Shiny',
@@ -133,4 +134,5 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   orientation?: CardOrientation,
+  customRelateds?: Card[];
 };

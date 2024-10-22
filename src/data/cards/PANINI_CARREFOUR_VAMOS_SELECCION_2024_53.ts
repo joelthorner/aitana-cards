@@ -18,7 +18,7 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_53: Card = {
   productType: CardProductType.Sticker,
   cardType: [
     CardType.Base,
-    CardType.GoldFoil,
+    CardType.GoldMetalic,
   ],
   year: 2024,
   links: [

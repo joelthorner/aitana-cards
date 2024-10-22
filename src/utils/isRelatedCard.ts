@@ -15,10 +15,9 @@ export const isRelatedCard = (mainCard: Card, card: Card): boolean => {
 
   let toSearch = parts.slice(0, -1).join('-');
 
-  if (parts[parts.length - 2].includes('A')) {
+  if (/[A-Z]/.test(parts[parts.length - 2])) {
     toSearch = parts.slice(0, -2).join('-');
   }
-
 
   return card.id.includes(toSearch) && ((parsedNumberCard !== null && card.id.includes(parsedNumberCard)) || (parsedNumberCard === null));
 };

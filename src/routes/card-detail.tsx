@@ -136,7 +136,7 @@ export default function CardDetail() {
       </div>
       <div className="aspect-square-2"></div>
 
-      <div className={`bg-white rounded-t-2xl px-5 pt-6 pb-20 relative z-20 flex flex-col gap-4 ${card.images.length > 1 ? "-mt-12" : "-mt-16"}`}>
+      <div className={`bg-white rounded-t-3xl px-5 pt-6 pb-20 relative z-20 flex flex-col gap-4 ${card.images.length > 1 ? "-mt-12" : "-mt-16"}`}>
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-medium leading-normal">{card.name}</h1>
 
@@ -211,7 +211,7 @@ export default function CardDetail() {
         )}
       </div>
 
-      <div className="bg-zinc-950 rounded-t-2xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-12">
+      <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-12">
         {relatedCards.length > 0 && (
           <div>
             <div className="mb-4 pl-[2px] font-medium text-white text-center">Related cards</div>
