@@ -44,12 +44,47 @@ import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70, TOPPS_AITANA_BONMATI
 import { CardProductType } from "../types/card";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_DAPBb } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_DA_PB";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_FR1 } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_FR1";
-import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1";
+import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pp, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1";
 
 export const changelog: Changelog[] = [
   {
     date: new Date('2024-10-22'),
     items: [
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pp,
+        user: 'joelthorner',
+      },
       {
         type: LineType.CHANGED,
         card: PANINI_CARREFOUR_VAMOS_SELECCION_2024_53,

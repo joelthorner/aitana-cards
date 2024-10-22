@@ -89,6 +89,7 @@ export enum CardType {
   RoseGoldMojo = 'Rose Gold Mojo',
   BlueMojo = 'Blue Mojo',
   AquaPrismRefactor = 'Aqua Prism Refractor',
+  PurplePulsarRefractor = 'Purple Pulsar Refractor',
 
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
@@ -133,4 +134,5 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   orientation?: CardOrientation,
+  customRelateds?: Card[];
 };
