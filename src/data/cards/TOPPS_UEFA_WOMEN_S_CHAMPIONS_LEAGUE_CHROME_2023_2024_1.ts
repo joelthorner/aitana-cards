@@ -28,6 +28,18 @@ import c1pup_2 from "../img/cards/c1pup_2.webp";
 import c1pr_0 from "../img/cards/c1pr_0.png";
 import c1pr_1 from "../img/cards/c1pr_1.webp";
 import c1pr_2 from "../img/cards/c1pr_2.webp";
+import c1bum_0 from "../img/cards/c1bum_0.png";
+import c1bum_1 from "../img/cards/c1bum_1.webp";
+import c1bum_2 from "../img/cards/c1bum_2.webp";
+import c1rgm_0 from "../img/cards/c1rgm_0.png";
+import c1rgm_1 from "../img/cards/c1rgm_1.webp";
+import c1rgm_2 from "../img/cards/c1rgm_2.webp";
+import c1r_0 from "../img/cards/c1r_0.png";
+import c1r_1 from "../img/cards/c1r_1.webp";
+import c1r_2 from "../img/cards/c1r_2.webp";
+import AAB1r_0 from "../img/cards/AAB1r_0.png";
+import c1cm_0 from "../img/cards/c1cm_0.png";
+import c1cm_1 from "../img/cards/c1cm_1.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1',
@@ -46,6 +58,50 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   cardType: [
     CardType.BaseCard,
   ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1r: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1r',
+  number: '1r',
+  images: [
+    c1r_0,
+    c1r_1,
+    c1r_2,
+  ],
+  name: "Aitana Bonmatí Refractor",
+  rarity: 2,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.Refractor,
+  ],
+  productType: CardProductType.Card,
+  brilli: CardBrilli.Refractor,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1ap',
+  number: '1ap',
+  images: [
+    c1ap_0,
+    c1ap_1,
+    c1ap_2,
+  ],
+  name: "Aitana Bonmatí Aqua Prism Parallel",
+  rarity: 2,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.AquaPrismRefactor,
+  ],
+  brilli: CardBrilli.AquaPrism,
   productType: CardProductType.Card,
 };
 
@@ -71,28 +127,6 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr: Card = {
   brilli: CardBrilli.Holo,
 };
 
-export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap: Card = {
-  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1ap',
-  number: '1ap',
-  images: [
-    c1ap_0,
-    c1ap_1,
-    c1ap_2,
-  ],
-  name: "Aitana Bonmatí Aqua Prism Parallel",
-  rarity: 2,
-  status: CardStatus.Falti,
-  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
-  year: 2024,
-  cardSection: "Base set",
-  cardType: [
-    CardType.BaseCard,
-    CardType.AquaPrismRefactor,
-  ],
-  brilli: CardBrilli.AquaPrism,
-  productType: CardProductType.Card,
-};
-
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1pup',
   number: '1pup',
@@ -113,6 +147,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup: Card = {
     CardType.PurplePulsarRefractor,
   ],
   brilli: CardBrilli.PurpleFoil,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1bum: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1bum',
+  number: '1bum',
+  images: [
+    c1bum_0,
+    c1bum_1,
+    c1bum_2,
+  ],
+  name: "Aitana Bonmatí Blue Mojo Parallel",
+  rarity: 3,
+  numbered: 250,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.BlueMojo,
+  ],
+  brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
 };
 
@@ -159,6 +216,52 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ngrp: Card = 
     CardType.NeonGreen,
   ],
   brilli: CardBrilli.GreenRefractorTopps,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rgm: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1rgm',
+  number: '1rgm',
+  images: [
+    c1rgm_0,
+    c1rgm_1,
+    c1rgm_2,
+  ],
+  name: "Aitana Bonmatí Rose Gold Mojo Parallel",
+  rarity: 3,
+  numbered: 125,
+  status: CardStatus.Tengui,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.RoseGoldMojo,
+  ],
+  brilli: CardBrilli.RoseGoldMojo,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1cm: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1cm',
+  number: '1cm',
+  images: [
+    c1cm_0,
+    c1cm_1,
+  ],
+  name: "Aitana Bonmatí Color Match Refractor Variation",
+  rarity: 3,
+  numbered: 99,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.ColorMatch,
+    CardType.Blue,
+  ],
+  brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
 };
 
@@ -228,5 +331,26 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card 
     CardType.RoseGoldMojo,
   ],
   brilli: CardBrilli.RoseGoldMojo,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1r: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1r',
+  number: 'A-AB1r',
+  images: [
+    AAB1r_0,
+  ],
+  name: "Aitana Bonmatí Autograph / Red Refractors",
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Chrome Autographs",
+  cardType: [
+    CardType.Autographs,
+    CardType.Red,
+  ],
+  brilli: CardBrilli.RedFoil,
   productType: CardProductType.Card,
 };

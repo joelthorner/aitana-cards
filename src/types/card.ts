@@ -7,6 +7,7 @@ export enum CardStatus {
 };
 
 export enum CardBrilli {
+  Stars = 'stars',
   ShinyHolo = 'shinyHolo',
   Holo = 'holo',
   RedFoil = 'redFoil',
@@ -47,8 +48,9 @@ export enum CardType {
   GoldMetalic = 'Gold Metalic',
 
   // Topps
-  RookieCard = 'Rookie Card',
   BaseCard = 'Base card',
+  RookieCard = 'Rookie Card',
+
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
   CurrentStars = 'Current Stars',
@@ -59,6 +61,8 @@ export enum CardType {
   Filmstrip = 'Filmstrip',
   CrowningMoments = 'Crowning Moments',
   ShutterSpeed = 'Shutter Speed',
+  QueensOfFootball = 'Queens of football',
+  HiddenGems = 'Hidden Gems',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -90,6 +94,7 @@ export enum CardType {
   BlueMojo = 'Blue Mojo',
   AquaPrismRefactor = 'Aqua Prism Refractor',
   PurplePulsarRefractor = 'Purple Pulsar Refractor',
+  ColorMatch = 'Color Match Variation',
 
   Autographs = 'Autographs',
   ActionAutographs = 'Action Autographs',
@@ -117,6 +122,12 @@ export enum CardOrientation {
   Horizontal = 'horizontal',
 };
 
+export enum CardLanguage {
+  CA = 'Català',
+  ES = 'Spanish',
+  EN = 'English',
+};
+
 export type Card = {
   id: string,
   images: string[],
@@ -134,5 +145,7 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   orientation?: CardOrientation,
+  // TODO implement
   customRelateds?: Card[];
+  language?: CardLanguage;
 };

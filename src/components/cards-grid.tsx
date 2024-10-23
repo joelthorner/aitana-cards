@@ -3,64 +3,30 @@ import { Card as CardType } from "../types/card";
 import Card from "./card";
 import NotFoundImg from "../assets/img/adidas.jpeg";
 import { useFiltersContext } from "../providers/filters";
-import { useEffect, useState } from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
+import { useMemo } from "react";
 
 interface CardsGridProps {
   cards: CardType[];
-  infiniteScroll?: boolean;
 }
 
-export default function CardsGrid({ cards, infiniteScroll = true }: CardsGridProps) {
+export default function CardsGrid({ cards }: CardsGridProps) {
   const { filtering, resetFilters } = useFiltersContext();
 
-  const [hasMore, setHasMore] = useState(true);
-
-  const [items, setItems] = useState(cards.slice(0, 50));
-
-  const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    setItems(cards.slice(0, 50));
-    setPage(1);
-    setHasMore(cards.length > 50);
+  const renderedItems = useMemo(() => {
+    return (
+      <>
+        {cards.map((card) => (
+          <div className="grid-item" key={card.id}>
+            <Card card={card} />
+          </div>
+        ))}
+      </>
+    );
   }, [cards]);
 
-  const fetchMoreData = () => {
-    if (items.length >= cards.length) {
-      setHasMore(false);
-      return;
-    }
-
-    setItems(items.concat(cards.slice(page * 50, page * 50 + 50)));
-    setPage(page + 1);
-  };
-
-  return items.length ? (
+  return cards.length ? (
     <div className="relative">
-      {infiniteScroll ? (
-        <InfiniteScroll
-          className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7"
-          dataLength={items.length}
-          next={fetchMoreData}
-          hasMore={hasMore}
-          loader={"TODO carregant spinner"}
-        >
-          {items.map((card) => (
-            <div className="grid-item" key={card.id}>
-              <Card card={card} />
-            </div>
-          ))}
-        </InfiniteScroll>
-      ) : (
-        <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-          {cards.map((card) => (
-            <div className="grid-item" key={card.id}>
-              <Card card={card} />
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="grid grid-default-cards gap-x-2 gap-y-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">{renderedItems}</div>
     </div>
   ) : (
     <div className="max-w-sm w-full min-h-[400px] flex flex-col justify-center mx-auto px-6 py-4">
