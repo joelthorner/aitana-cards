@@ -1,29 +1,39 @@
+import { memo, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getStarClassName } from "../utils/getStarClassName";
-// import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import Holo from "./holo";
 import { Card as CardType } from "../types/card";
+import { useClassName } from "../hooks/useClassName";
+import { useIsVisible } from "../hooks/useIsVisible";
 
 interface CardProps {
   card: CardType;
+  emptyCard?: boolean;
 }
 
-export default function Card({ card }: CardProps) {
-  const starClassName = "size-3 " + getStarClassName(card.rarity);
+const Card = memo(({ card, emptyCard = false }: CardProps) => {
+  const starClassName = useMemo(() => "size-3 " + getStarClassName(card.rarity), [card.rarity]);
 
-  // const statusIcon = getCardStatusIcon(card.status);
+  const ref = useRef<HTMLDivElement>(null);
 
-  const defaultImage = card.images.length && <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full rounded-md" loading="lazy" />;
+  const isVisible = useIsVisible(ref);
+
+  const defaultImage = useMemo(
+    () => (card.images.length > 0 ? <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full rounded-md" loading="lazy" /> : null),
+    [card.images, card.name]
+  );
+  const holoElement = useMemo(() => isVisible && card.brilli && defaultImage && <Holo type={card.brilli} cardId={card.id} />, [isVisible, card.brilli, card.id, defaultImage]);
+
+  const cardClassName = useClassName([
+    "h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition",
+    emptyCard ? "invisible opacity-0" : "",
+  ]);
 
   return (
-    <Link
-      id={card.id}
-      to={"/cards/" + card.id}
-      className="h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
-    >
-      <div className="w-full aspect-[5/7] relative">
+    <Link id={card.id} to={`/cards/${card.id}`} className={cardClassName}>
+      <div className="w-full aspect-[5/7] relative" ref={ref}>
         {defaultImage}
-        {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
+        {holoElement}
       </div>
 
       <h3 className="mt-2 text-[12px] font-bold leading-tight text-white line-clamp-2" title={card.name}>
@@ -32,10 +42,6 @@ export default function Card({ card }: CardProps) {
       <p className="mt-1 text-[10px] leading-tight font-medium uppercase text-zinc-500 mb-2 line-clamp-2">{card.collection.name}</p>
 
       <div className="p-2 -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
-        {/* <div className="flex items-center gap-1">
-          {statusIcon}
-          <p className="text-[10px] text-gray-500 capitalize">{card.status}</p>
-        </div> */}
         <div className="flex items-center gap-1 justify-center">
           <p className="text-[10px] text-zinc-400 capitalize">{card.number}</p>
         </div>
@@ -51,4 +57,6 @@ export default function Card({ card }: CardProps) {
       </div>
     </Link>
   );
-}
+});
+
+export default Card;

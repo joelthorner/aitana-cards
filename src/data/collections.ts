@@ -27,6 +27,14 @@ import knockout23 from "./img/collections/knockout23.jpg";
 import abcs from "./img/collections/abcs.png";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.png";
 
+export const NoCollection: Collection = {
+  id: 'no-collection',
+  name: 'No collection',
+  brand: 'No brand',
+  links: [],
+  serie: 'No serie',
+};
+
 export const PaniniLigaF_2022_2023: Collection = {
   id: 'panini-liga-f-2022-2023',
   image: panini_004743spe3w_0,
@@ -97,6 +105,7 @@ export const ToppsUefaWomenSChampionsLeagueChrome_2023_2024: Collection = {
   description: `Women’s soccer on chrome technology returns with 2023/24 Topps Chrome UEFA Women’s Champions League.Hobby-favorite inserts Queens of Football and Golazo are joined by newcomers Power On, Topps Chrome Layers, and more.A 100-card base set includes UEFA Women’s Champion League’s biggest stars and teams, along with new teams, and emerging rookies. All featured on an eye-catching array of parallels and team color match variations.`,
   brand: 'Topps',
   links: [
+    'https://www.collectosk.com/2023-24-topps-chrome-uefa-womens-champions-league-soccer-cards/',
     'https://es.topps.com/products/2023-24-topps-chromer-uefa-women-s-champions-league-hobby-box',
     'https://www.topps.com/media/pdf/CHP2432-24UWCLChrome_Checklist.pdf',
     'https://www.beckett.com/news/2023-24-topps-chrome-uefa-wcl/',

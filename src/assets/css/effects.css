@@ -348,3 +348,11 @@
   opacity: 0.75;
   mix-blend-mode: color-dodge;
 }
+
+.effect-stars {
+  background-image: url(../img/sparkles.gif);
+  background-size: 300% 150%;
+  /* mix-blend-mode: lighten; */
+  opacity: 0.75;
+  mix-blend-mode: color-dodge;
+}

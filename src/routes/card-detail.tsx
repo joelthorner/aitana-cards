@@ -1,11 +1,9 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
-// import { getCardStatusIcon } from "../utils/getCardStatusIcon";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Bug, MoveLeft, Regex, SquareArrowOutUpRight } from "lucide-react";
+import { Bug, MoveLeft, SquareArrowOutUpRight } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
-import CardsGrid from "../components/cards-grid";
 import Holo from "../components/holo";
 import "photoswipe/style.css";
 import { useEffect, useRef } from "react";
@@ -18,6 +16,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import DataTable from "../components/card-detail/data-table";
 import { isRelatedCard } from "../utils/isRelatedCard";
+import CardsGridStatic from "../components/cards-grid-static";
 
 interface GalleryItem {
   src: string;
@@ -89,7 +88,7 @@ export default function CardDetail() {
             dynamicBullets: false,
           }}
           modules={[Pagination]}
-          loop
+          loop={card.images.length > 1}
           className="!absolute inset-0 swiper-card-detail"
         >
           <SwiperSlide className="relative overflow-hidden">
@@ -215,7 +214,7 @@ export default function CardDetail() {
         {relatedCards.length > 0 && (
           <div>
             <div className="mb-4 pl-[2px] font-medium text-white text-center">Related cards</div>
-            <CardsGrid cards={relatedCards} infiniteScroll={false} />
+            <CardsGridStatic cards={relatedCards} />
           </div>
         )}
         <div>
