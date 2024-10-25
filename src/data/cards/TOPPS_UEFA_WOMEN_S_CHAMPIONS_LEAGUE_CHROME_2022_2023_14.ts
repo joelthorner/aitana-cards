@@ -57,6 +57,9 @@ import c14o_1 from "../img/cards/c14o_1.webp";
 import c14ref_2 from "../img/cards/c14ref_2.webp";
 import c14ref_3 from "../img/cards/c14ref_3.webp";
 import c14AABpp_mixed from "../img/cards/c14AABpp_mixed.jpg";
+import c14i2_0 from "../img/cards/c14i2_0.png";
+import c14i2_1 from "../img/cards/c14i2_1.webp";
+import c14i2_2 from "../img/cards/c14i2_2.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -239,6 +242,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = 
   cardType: [
     CardType.BaseCard,
     CardType.RoseGoldMojo,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14i',
+  number: '14i',
+  images: [
+    c14i2_0,
+    c14i2_1,
+    c14i2_2,
+  ],
+  name: 'Aitana Bonmatí Inferno Refractor',
+  numbered: 75,
+  rarity: 3,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.InfernoRefractorTopps,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Inferno,
   ],
   productType: CardProductType.Card,
 };

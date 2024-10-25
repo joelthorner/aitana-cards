@@ -29,6 +29,7 @@ export enum CardBrilli {
   BlueCristall = 'blueCristall',
   RoseGoldMojo = 'roseGoldMojo',
   AquaPrism = 'aquaPrism',
+  FractedGoldEffect = 'fractedGoldEffect',
 };
 
 /**
@@ -70,6 +71,7 @@ export enum CardType {
 
   BlackAndWhiteWave = 'Black & White Wave',
   Barça = 'Barça',
+  XI = 'XI',
 
   Blue = 'Blue',
   Gold = 'Gold',
@@ -149,3 +151,12 @@ export type Card = {
   customRelateds?: Card[];
   language?: CardLanguage;
 };
+
+export type CardSearch = {
+  id: string;
+  name: string;
+  image: string;
+  collection: string;
+  number: string | number;
+  cardType: CardType[];
+}

@@ -3,11 +3,12 @@ import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from "react-rou
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import FiltersOffcanvas from "../components/filters-offcanvas";
-import { Bell, House, Info, MenuIcon, Search, SlidersHorizontal } from "lucide-react";
+import { Bell, House, Info, MenuIcon, SearchIcon, SlidersHorizontal } from "lucide-react";
 import { useFiltersContext } from "../providers/filters";
 import MenuOffcanvas from "../components/menu-offcanvas";
 import logo from "../assets/logo.png";
 import { ModalCardDetailNumbered, ModalCardDetailProductType } from "../components/modals";
+import SearchModal from "../components/search/search-modal";
 
 declare global {
   interface Window {
@@ -118,11 +119,11 @@ function Root() {
             type="button"
             aria-haspopup="dialog"
             aria-expanded="false"
-            aria-controls="offcanvas-filters"
-            data-hs-overlay="#offcanvas-filters"
+            aria-controls="search-modal"
+            data-hs-overlay="#search-modal"
             className="relative px-3 py-2 rounded-2xl flex flex-1 flex-col gap-1 items-center justify-center hover:text-zinc-100"
           >
-            <Search size={24} strokeWidth={1.5} />
+            <SearchIcon size={24} strokeWidth={1.5} />
             <span className="text-[11px] leading-none">Search</span>
           </button>
           <button
@@ -148,6 +149,7 @@ function Root() {
 
       <FiltersOffcanvas />
       <MenuOffcanvas />
+      <SearchModal />
       {location.pathname.includes("/cards/") && <ModalCardDetailProductType />}
       {location.pathname.includes("/cards/") && <ModalCardDetailNumbered />}
     </>

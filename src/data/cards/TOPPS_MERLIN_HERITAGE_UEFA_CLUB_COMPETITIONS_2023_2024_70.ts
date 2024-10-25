@@ -18,6 +18,9 @@ import c70gr_3 from "../img/cards/c70gr_3.webp";
 import c70bu_0 from "../img/cards/c70bu_0.png";
 import c70bu_1 from "../img/cards/c70bu_1.webp";
 import c70bu_2 from "../img/cards/c70bu_2.webp";
+import c70pi_0 from "../img/cards/c70pi_0.png";
+import c70pi_1 from "../img/cards/c70pi_1.webp";
+import c70pi_2 from "../img/cards/c70pi_2.webp";
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70: Card = {
   id: 'topps-merlin-heritage-uefa-club-competitions-2023-2024-70',
@@ -105,6 +108,29 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70bu: Card =
   cardType: [
     CardType.BaseCard,
     CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+  cardSection: 'FC Barcelona',
+};
+
+export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pi: Card = {
+  id: 'topps-merlin-heritage-uefa-club-competitions-2023-2024-70pi',
+  number: '70pi',
+  images: [
+    c70pi_0,
+    c70pi_1,
+    c70pi_2,
+  ],
+  name: "Aitana Bonmatí Pink",
+  rarity: 5,
+  numbered: 10,
+  brilli: CardBrilli.PinkFoil,
+  status: CardStatus.Falti,
+  collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
+  year: 2023,
+  cardType: [
+    CardType.BaseCard,
+    CardType.Pink,
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
