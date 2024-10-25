@@ -37,9 +37,22 @@ import c1rgm_2 from "../img/cards/c1rgm_2.webp";
 import c1r_0 from "../img/cards/c1r_0.png";
 import c1r_1 from "../img/cards/c1r_1.webp";
 import c1r_2 from "../img/cards/c1r_2.webp";
+import AAB1g_0 from "../img/cards/AAB1g_0.png";
+import AAB1g_1 from "../img/cards/AAB1g_1.webp";
+import AAB1g_2 from "../img/cards/AAB1g_2.webp";
+import AAB1ow_0 from "../img/cards/AAB1ow_0.png";
+import AAB1ow_1 from "../img/cards/AAB1ow_1.webp";
+import AAB1ow_2 from "../img/cards/AAB1ow_2.webp";
+import c1xi_0 from "../img/cards/c1xi_0.png";
+import c1xi_1 from "../img/cards/c1xi_1.webp";
+import c1xi_2 from "../img/cards/c1xi_2.webp";
 import AAB1r_0 from "../img/cards/AAB1r_0.png";
 import c1cm_0 from "../img/cards/c1cm_0.png";
 import c1cm_1 from "../img/cards/c1cm_1.jpg";
+import c1i_0 from "../img/cards/c1i_0.png";
+import c1i_1 from "../img/cards/c1i_1.webp";
+import c1i_2 from "../img/cards/c1i_2.webp";
+import c1i_3 from "../img/cards/c1i_3.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1',
@@ -265,6 +278,30 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1cm: Card = {
   productType: CardProductType.Card,
 };
 
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1i: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1i',
+  number: '1i',
+  images: [
+    c1i_0,
+    c1i_1,
+    c1i_2,
+    c1i_3,
+  ],
+  name: "Aitana Bonmatí Inferno Refractor Parallel",
+  rarity: 3,
+  numbered: 75,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.Inferno,
+  ],
+  brilli: CardBrilli.InfernoRefractorTopps,
+  productType: CardProductType.Card,
+};
+
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1g',
   number: '1g',
@@ -311,6 +348,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o: Card = {
   productType: CardProductType.Card,
 };
 
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1xi: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1xi',
+  number: '1xi',
+  images: [
+    c1xi_0,
+    c1xi_1,
+    c1xi_2,
+  ],
+  name: "Aitana Bonmatí XI Parallel",
+  rarity: 5,
+  numbered: 11,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.XI,
+  ],
+  brilli: CardBrilli.FractedGoldEffect,
+  productType: CardProductType.Card,
+};
+
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1rgm',
   number: 'A-AB1rgm',
@@ -331,6 +391,52 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card 
     CardType.RoseGoldMojo,
   ],
   brilli: CardBrilli.RoseGoldMojo,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1g: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1g',
+  number: 'A-AB1g',
+  images: [
+    AAB1g_0,
+    AAB1g_1,
+    AAB1g_2,
+  ],
+  name: "Aitana Bonmatí Autograph / Gold Refractor",
+  rarity: 4,
+  numbered: 50,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Chrome Autographs",
+  cardType: [
+    CardType.Autographs,
+    CardType.Gold,
+  ],
+  brilli: CardBrilli.GoldFoil,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1ow: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1ow',
+  number: 'A-AB1ow',
+  images: [
+    AAB1ow_0,
+    AAB1ow_1,
+    AAB1ow_2,
+  ],
+  name: "Aitana Bonmatí Autograph / Orange Wave Refractor",
+  rarity: 5,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Chrome Autographs",
+  cardType: [
+    CardType.Autographs,
+    CardType.OrangeWave,
+  ],
+  brilli: CardBrilli.OrangeFoil,
   productType: CardProductType.Card,
 };
 

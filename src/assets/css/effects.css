@@ -356,3 +356,11 @@
   opacity: 0.75;
   mix-blend-mode: color-dodge;
 }
+
+.effect-fractedGoldEffect {
+  background-image: url(../img/craks.png);
+  background-size: 200% 300%;
+  /* mix-blend-mode: lighten; */
+  opacity: 0.2;
+  mix-blend-mode: color-dodge;
+}
