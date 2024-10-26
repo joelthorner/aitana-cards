@@ -1,6 +1,6 @@
 {
   "name": "aitana-cards",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": true,
   "homepage": "https://joelthorner.github.io/aitana-cards",
   "dependencies": {

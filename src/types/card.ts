@@ -30,6 +30,7 @@ export enum CardBrilli {
   RoseGoldMojo = 'roseGoldMojo',
   AquaPrism = 'aquaPrism',
   FractedGoldEffect = 'fractedGoldEffect',
+  TurquoiseFoil = 'turquoiseFoil',
 };
 
 /**
@@ -51,6 +52,7 @@ export enum CardType {
   // Topps
   BaseCard = 'Base card',
   RookieCard = 'Rookie Card',
+  Relic = 'Relic',
 
   BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
@@ -64,6 +66,7 @@ export enum CardType {
   ShutterSpeed = 'Shutter Speed',
   QueensOfFootball = 'Queens of football',
   HiddenGems = 'Hidden Gems',
+  StarQuality = 'Star Quality',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -83,6 +86,7 @@ export enum CardType {
   Pink = 'Pink',
   Orange = 'Orange',
   Yellow = 'Yellow',
+  Turquoise = 'Turquoise',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',
@@ -117,6 +121,7 @@ export enum CardProductType {
   Card = 'Card',
   GameCard = 'Game Card',
   BookCard = 'Book Card',
+  PatchBookCard = 'Patch Book Card',
 };
 
 export enum CardOrientation {
