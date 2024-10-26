@@ -147,8 +147,8 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   orientation?: CardOrientation,
+  customRelatedsRegexp?: RegExp;
   // TODO implement
-  customRelateds?: Card[];
   language?: CardLanguage;
 };
 

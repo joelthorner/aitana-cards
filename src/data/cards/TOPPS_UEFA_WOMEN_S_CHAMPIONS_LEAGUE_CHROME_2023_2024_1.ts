@@ -55,6 +55,7 @@ import c1i_2 from "../img/cards/c1i_2.webp";
 import c1i_3 from "../img/cards/c1i_3.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1',
   number: 1,
   images: [
@@ -75,6 +76,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1r: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1r',
   number: '1r',
   images: [
@@ -97,6 +99,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1r: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1ap',
   number: '1ap',
   images: [
@@ -119,6 +122,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1pr',
   number: '1pr',
   images: [
@@ -141,6 +145,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1pup',
   number: '1pup',
   images: [
@@ -164,6 +169,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1bum: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1bum',
   number: '1bum',
   images: [
@@ -187,6 +193,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1bum: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pp: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1pp',
   number: '1pp',
   images: [
@@ -210,6 +217,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pp: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ngrp: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1ngrp',
   number: '1ngrp',
   images: [
@@ -233,6 +241,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ngrp: Card = 
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rgm: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1rgm',
   number: '1rgm',
   images: [
@@ -256,6 +265,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rgm: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1cm: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1cm',
   number: '1cm',
   images: [
@@ -279,6 +289,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1cm: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1i: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1i',
   number: '1i',
   images: [
@@ -303,6 +314,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1i: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1g',
   number: '1g',
   images: [
@@ -326,6 +338,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1o',
   number: '1o',
   images: [
@@ -349,6 +362,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1xi: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1xi',
   number: '1xi',
   images: [
@@ -372,6 +386,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1xi: Card = {
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card = {
+  customRelatedsRegexp: /(A-AB1[a-z]{1,6}?|1[a-z]{1,6}?)$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1rgm',
   number: 'A-AB1rgm',
   images: [
@@ -395,6 +410,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card 
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1g: Card = {
+  customRelatedsRegexp: /(A-AB1[a-z]{1,6}?|1[a-z]{1,6}?)$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1g',
   number: 'A-AB1g',
   images: [
@@ -418,6 +434,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1g: Card = 
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1ow: Card = {
+  customRelatedsRegexp: /(A-AB1[a-z]{1,6}?|1[a-z]{1,6}?)$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1ow',
   number: 'A-AB1ow',
   images: [
@@ -441,6 +458,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1ow: Card =
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1r: Card = {
+  customRelatedsRegexp: /(A-AB1[a-z]{1,6}?|1[a-z]{1,6}?)$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1r',
   number: 'A-AB1r',
   images: [

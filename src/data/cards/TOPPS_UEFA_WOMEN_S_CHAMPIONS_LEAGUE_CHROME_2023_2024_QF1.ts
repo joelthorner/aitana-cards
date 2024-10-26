@@ -27,6 +27,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {
   ],
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
+  customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {
@@ -50,5 +51,6 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {
   ],
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
+  customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
 };
 

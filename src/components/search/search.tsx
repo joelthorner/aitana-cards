@@ -10,11 +10,17 @@ const searchClient = algoliasearch(appId, apiKey);
 
 export const Search = () => {
   return (
-    <InstantSearch searchClient={searchClient} indexName="cards_index">
+    <InstantSearch
+      searchClient={searchClient}
+      indexName="cards"
+      future={{
+        preserveSharedStateOnUnmount: true,
+      }}
+    >
       <Configure hitsPerPage={20} />
       <div className="ais-InstantSearch">
         <SearchBox />
-        <div className="max-h-[calc(100vh-1.5rem-2rem-2px-46px-1rem)] overflow-auto">
+        <div className="max-h-[75vh] overflow-auto">
           <Hits hitComponent={Hit} />
         </div>
       </div>
