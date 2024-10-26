@@ -34,8 +34,8 @@ export default function CardsGrid({ cards }: CardsGridProps) {
         <img src={NotFoundImg} alt="Aitana in a Addidas promo" />
       </div>
 
-      <h2 className="mt-5 font-semibold text-gray-800">No cards found</h2>
-      <p className="mt-2 text-sm mb-1 text-gray-600">{filtering ? `Canvia o elimina els filtres per trobar resultats. L'Aitana ens mira!` : `No hi han cartes :(`}</p>
+      <h2 className="mt-5 font-semibold text-zinc-200">No cards found</h2>
+      <p className="mt-2 text-sm mb-1 text-zinc-500">{filtering ? `Canvia o elimina els filtres per trobar resultats. L'Aitana ens mira!` : `No hi han cartes :(`}</p>
       <div>
         <button
           className="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-1 hover:underline focus:outline-none focus:underline font-medium"

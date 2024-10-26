@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { cards } from "../data/cards";
-import { Book, Gamepad2, Medal, Package2, Square, SquareCheck, Sticker, StickyNote, X } from "lucide-react";
+import { Book, BookHeart, Gamepad2, Medal, Package2, Square, SquareCheck, Sticker, StickyNote, X } from "lucide-react";
 import { CardProductType } from "../types/card";
 
 export function ModalCardDetailProductType() {
@@ -44,6 +44,7 @@ export function ModalCardDetailProductType() {
                       {type === CardProductType.Card && <StickyNote size={20} strokeWidth={1.5} />}
                       {type === CardProductType.BookCard && <Book size={20} strokeWidth={1.5} />}
                       {type === CardProductType.GameCard && <Gamepad2 size={20} strokeWidth={1.5} />}
+                      {type === CardProductType.PatchBookCard && <BookHeart size={20} strokeWidth={1.5} />}
                       {type}
                       <div className="ml-auto">
                         {type === card.productType ? <SquareCheck size={20} strokeWidth={1.5} /> : <Square size={20} strokeWidth={1.5} className="text-zinc-400" />}

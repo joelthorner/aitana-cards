@@ -26,6 +26,7 @@ import focus2324 from "./img/collections/focus.png";
 import knockout23 from "./img/collections/knockout23.jpg";
 import abcs from "./img/collections/abcs.png";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.png";
+import inception2324 from "./img/collections/inception2324.png";
 
 export const NoCollection: Collection = {
   id: 'no-collection',
@@ -403,6 +404,32 @@ export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
   serie: 'Topps Curated set',
 };
 
+export const ToppsInceptionUefaClubCompetitions_2023_2024: Collection = {
+  id: 'topps-inception-uefa-club-competitions-2023-2024',
+  image: inception2324,
+  name: "Topps Inception UEFA Club Competitions 2023-2024",
+  description: `Prepárate para el lanzamiento de la nueva colección Topps Inception UEFA Club Competitions 2023/24.
+
+Cargada con los mejores jugadores de las tres competiciones de la UEFA, así también con los mejores jugadores de la UEFA Women's Champions League, ¡Cada caja de Topps Inception incluirá una gran selección de las mayores estrellas!
+
+Busca a los grandes jugadores de la UCL en First XI y a los mejores jóvenes en Emerging Stars y Succession. Las leyendas de todos los tiempos como Zidane y Beckenbauer se pueden encontrar en Legacy, mientras que Star Quality honra a las mayores estrellas de la competición. Por último, pero no por ello menos importante, las nuevas cartas "Inception Point" destacan los grandes debuts en la UCL.
+
+Como siempre, los coleccionistas podrán encontrar un autógrafo en cada caja de Inception. No pierdas de vista los autógrafos base de edición corta, que no superan los 10 ejemplares, los rarísimos autógrafos dobles, los cromos de libro cuádruples y muchos más.
+
+Silver Signing on-cards de Ronaldinho, Haaland, Iniesta, R9 y Figo serán algunas de las grandes capturas de la edición de este año de la colección Inception, además de un excepcional destaque adicional: La 1/1 Les Gagnants, con 21 autos de los mejores jugadores de la historia en una sola cartilla
+
+También podrás encontrar autógrafos inéditos "Marks of Excellence" en los cromos de jugadores de alto nivel para completar la nueva e increíble colección Topps Inception.`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/pages/ucc-inception',
+    'https://www.collectosk.com/2023-24-topps-inception-uefa-club-competitions-soccer-cards/',
+    'https://www.beckett.com/news/2023-24-topps-inception-uefa-club-competitions/',
+    'https://www.topps.com/media/amasty/amfile/attach/nZmBqPPHUtUQXoyqtWDnqjanH0Hao9Pi.pdf',
+    'https://cartophilic-info-exch.blogspot.com/2024/08/topps-202324-topps-uefa-club_02140667989.html',
+  ],
+  serie: 'Topps Inception',
+};
+
 export const collections: Collection[] = [
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
@@ -430,4 +457,5 @@ export const collections: Collection[] = [
   ToppsUefaWomensChampionsLeagueKnockout_2023,
   ToppsAitanaBonmatiPlatinumCuratedSet_2024,
   ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  ToppsInceptionUefaClubCompetitions_2023_2024,
 ].sort((a, b) => a.name.localeCompare(b.name));

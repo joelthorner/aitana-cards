@@ -26,4 +26,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_HG1: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.Stars,
+  customRelatedsRegexp: /HG-1[a-z]{1,6}?$/,
 };

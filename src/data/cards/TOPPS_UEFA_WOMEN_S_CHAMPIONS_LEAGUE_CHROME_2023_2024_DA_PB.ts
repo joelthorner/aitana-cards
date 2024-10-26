@@ -7,6 +7,7 @@ import DA_PBb_2 from "../img/cards/DA_PBb_2.webp";
 import DA_PBb_3 from "../img/cards/DA_PBb_3.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_DAPBb: Card = {
+  customRelatedsRegexp: /DA-PB[a-z]{1,6}?$/,
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-DA-PBb',
   number: 'DA-PBb',
   images: [
