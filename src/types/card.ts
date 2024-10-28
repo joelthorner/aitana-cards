@@ -49,6 +49,10 @@ export enum CardType {
   GoldFoil = 'Gold Foil',
   GoldMetalic = 'Gold Metalic',
 
+  // Panini 365 or Adrenalyn XL no se com va encara
+  Icons = 'Icons',
+  TheBest = 'The Best',
+
   // Topps
   BaseCard = 'Base card',
   RookieCard = 'Rookie Card',
@@ -155,6 +159,7 @@ export type Card = {
   customRelatedsRegexp?: RegExp;
   // TODO implement
   language?: CardLanguage;
+  // team?: Team;
 };
 
 export type CardSearch = {

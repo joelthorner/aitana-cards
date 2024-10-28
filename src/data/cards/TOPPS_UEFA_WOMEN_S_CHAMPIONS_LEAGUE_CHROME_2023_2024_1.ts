@@ -53,6 +53,9 @@ import c1i_0 from "../img/cards/c1i_0.png";
 import c1i_1 from "../img/cards/c1i_1.webp";
 import c1i_2 from "../img/cards/c1i_2.webp";
 import c1i_3 from "../img/cards/c1i_3.webp";
+import AAB1i_0 from "../img/cards/AAB1i_0.jpg";
+import AAB1i_1 from "../img/cards/AAB1i_1.jpg";
+import AAB1i_2 from "../img/cards/AAB1i_2.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   customRelatedsRegexp: /1[a-z]{1,6}?$/,
@@ -406,6 +409,30 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card 
     CardType.RoseGoldMojo,
   ],
   brilli: CardBrilli.RoseGoldMojo,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1i: Card = {
+  customRelatedsRegexp: /(A-AB1[a-z]{1,6}?|1[a-z]{1,6}?)$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-A-AB1i',
+  number: 'A-AB1i',
+  images: [
+    AAB1i_0,
+    AAB1i_1,
+    AAB1i_2,
+  ],
+  name: "Aitana Bonmatí Autograph / Inferno Refractors",
+  rarity: 3,
+  numbered: 75,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Chrome Autographs",
+  cardType: [
+    CardType.Autographs,
+    CardType.Inferno,
+  ],
+  brilli: CardBrilli.InfernoRefractorTopps,
   productType: CardProductType.Card,
 };
 

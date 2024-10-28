@@ -1,4 +1,4 @@
-import { Collection } from "../types/collection";
+import { Collection, CollectionSerie } from "../types/collection";
 
 import uclw_fgc4624h_box_21_22 from "./img/collections/uclw_fgc4624h_box_21_22_b.png";
 import panini_004743spe3w_0 from "./img/collections/panini2223.png";
@@ -24,16 +24,37 @@ import deco2324 from "./img/collections/deco2324.png";
 import carrefour24 from "./img/collections/carrefour24.png";
 import focus2324 from "./img/collections/focus.png";
 import knockout23 from "./img/collections/knockout23.jpg";
+import panini_365_24_25 from "./img/collections/panini_365_24_25.jpg";
+import panini_365_24 from "./img/collections/panini_365_24.jpg";
 import abcs from "./img/collections/abcs.png";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.png";
 import inception2324 from "./img/collections/inception2324.png";
+import dragon from "./img/collections/dragon.jpg";
 
-export const NoCollection: Collection = {
-  id: 'no-collection',
-  name: 'No collection',
-  brand: 'No brand',
-  links: [],
-  serie: 'No serie',
+export const PaniniFifa_365AdrenalynXl_2024_2025: Collection = {
+  id: 'panini-fifa-365-adrenalyn-xl-2024-2025',
+  image: panini_365_24_25,
+  name: 'Panini FIFA 365 Adrenalyn XL™ 2024-2025',
+  description: ``,
+  brand: 'Panini',
+  links: [
+    'https://www.laststicker.com/cards/panini_fifa_365_2024-2025_adrenalyn_xl/',
+    'http://www.owacgames.com/2024/07/coleccion-adrenalyn-fifa-365-edicion-2025-datos-fotos-listado-panini.html',
+  ],
+  serie: CollectionSerie.PaniniFIFA365,
+};
+
+export const PaniniFifa_365_2024: Collection = {
+  id: 'panini-fifa-365-2024',
+  image: panini_365_24,
+  name: 'Panini FIFA 365 2024',
+  description: ``,
+  brand: 'Panini',
+  links: [
+    'https://www.laststicker.com/cards/panini_fifa_365_2023-2024/',
+    'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/panini-fifa-365/fifa-365-2024.html',
+  ],
+  serie: CollectionSerie.PaniniFIFA365,
 };
 
 export const PaniniLigaF_2022_2023: Collection = {
@@ -50,7 +71,7 @@ Aquesta col·lecció consta de 365 cromos en total… no la deixis escapar!`,
     'https://www.laststicker.com/cards/panini_liga_f_2022-2023/',
     'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOopjDFr00cWCN7FS1MQY3x5RmxL04TbsmzvLgfkTu_90hheNB1rY',
   ],
-  serie: 'Panini Liga F',
+  serie: CollectionSerie.PaniniLigaF,
 };
 
 export const PaniniLigaF_2023_2024: Collection = {
@@ -66,7 +87,7 @@ Busca los cromos de los 16 equipos de la Liga F en este álbum que ofrece una co
     'https://www.laststicker.com/cards/panini_liga_f_2023-2024/',
     'https://www.panini.es/shp_esp_es/cromos-coleccionables/deporte/la-liga/liga-femenina.html?srsltid=AfmBOoph-sKAqYhwrA8z1pJrBZXZ4Y-PjNw6Qim--Y5mpYWlA2X61QAB',
   ],
-  serie: 'Panini Liga F',
+  serie: CollectionSerie.PaniniLigaF,
 };
 
 export const ToppsUefaWomenSChampionsLeagueChrome_2021_2022: Collection = {
@@ -84,7 +105,7 @@ Colecciona tus favoritos en un Base Set de 100 cartas con insert sets como Futur
     'https://www.topps.com/media/pdf/CheckList_22WUCC_FINAL.pdf',
     'https://www.cardboardconnection.com/2021-22-topps-chrome-uefa-womens-champions-league-cards',
   ],
-  serie: 'Topps Chrome',
+  serie: CollectionSerie.ToppsChrome,
 };
 
 export const ToppsUefaWomenSChampionsLeagueChrome_2022_2023: Collection = {
@@ -96,7 +117,7 @@ export const ToppsUefaWomenSChampionsLeagueChrome_2022_2023: Collection = {
   links: [
     'https://www.cardboardconnection.com/2022-23-topps-chrome-uefa-womens-champions-league-cards',
   ],
-  serie: 'Topps Chrome',
+  serie: CollectionSerie.ToppsChrome,
 };
 
 export const ToppsUefaWomenSChampionsLeagueChrome_2023_2024: Collection = {
@@ -112,7 +133,7 @@ export const ToppsUefaWomenSChampionsLeagueChrome_2023_2024: Collection = {
     'https://www.beckett.com/news/2023-24-topps-chrome-uefa-wcl/',
     'https://ripped.topps.com/2023-24-topps-chrome-uefa-womens-champions-league-checklist-spotlight-product/'
   ],
-  serie: 'Topps Chrome',
+  serie: CollectionSerie.ToppsChrome,
 };
 
 export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
@@ -124,7 +145,7 @@ export const PaniniFifaWomenSWorldCupFrance_2019: Collection = {
   links: [
     'https://www.laststicker.com/cards/panini_fifa_womens_world_cup_2019/154/',
   ],
-  serie: 'Panini Spain National Team',
+  serie: CollectionSerie.PaniniFIFAWorldCup,
 };
 
 export const PaniniCarrefourVamosSeleccion_2024: Collection = {
@@ -137,14 +158,14 @@ export const PaniniCarrefourVamosSeleccion_2024: Collection = {
     'https://www.laststicker.com/cards/carrefour_vamos_seleccion-2024/',
     'https://www.panini.es/shp_esp_es/vamos-selecci-n-promoci-n-eurocopa-carrefour-cromos-faltantes-005105b-its.html',
   ],
-  serie: 'Panini Spain National Team',
+  serie: CollectionSerie.PaniniFamily,
 };
 
 export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
   id: 'topps-now-women-s-champions-league-2023-2024',
   image: Topps_Now_Logo_Black_2,
   name: "Topps Now Women's Champions League 2023-24",
-  serie: 'Topps Now',
+  serie: CollectionSerie.ToppsNow,
   description: ``,
   brand: 'Topps',
   links: [
@@ -157,7 +178,7 @@ export const ToppsNowWomenSChampionsLeague_2022_2023: Collection = {
   id: 'topps-now-women-s-champions-league-2022-2023',
   image: Topps_Now_Logo_Black,
   name: "Topps Now Women's Champions League 2022-23",
-  serie: 'Topps Now',
+  serie: CollectionSerie.ToppsNow,
   description: ``,
   brand: 'Topps',
   links: [
@@ -177,7 +198,7 @@ export const ToppsChromeFcBarcelona_2022_2023: Collection = {
     'https://www.topps.com/media/amasty/amfile/attach/KcX70y08C6Ffn3ZR255UyeQbUD5IJl5p.pdf',
     'https://www.laststicker.com/cards/topps_chrome_barcelona_2022-2023/',
   ],
-  serie: 'Topps Chrome',
+  serie: CollectionSerie.ToppsChrome,
 };
 
 export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
@@ -192,7 +213,19 @@ export const ToppsFcBarcelonaWomenWinnersTeamSet_2023: Collection = {
     'https://cartophilic-info-exch.blogspot.com/2023/07/topps-fc-barcelona-women-champions-2023.html',
     'https://www.collectosk.com/2022-23-topps-fc-barcelona-women-official-team-set-soccer-cards/#checklist',
   ],
-  serie: 'Topps FC Barcelona',
+  serie: CollectionSerie.ToppsFCBarcelona,
+};
+
+export const ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024: Collection = {
+  id: 'topps-fc-barcelona-the-year-of-the-dragon-china-2023-2024',
+  image: dragon,
+  name: "Topps FC Barcelona The Year of The Dragon China 2023-2024",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    // 'https://www.psacard.com/auctionprices/soccer-cards/2023-2024-topps-fc-barcelona-year-dragon/276063',
+  ],
+  serie: CollectionSerie.ToppsFCBarcelona,
 };
 
 export const ToppsUefaChampionsLeague_2022_2023: Collection = {
@@ -205,7 +238,7 @@ export const ToppsUefaChampionsLeague_2022_2023: Collection = {
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2022-2023/',
     'http://www.owacgames.com/2022/08/coleccion-cromos-stickers-topps-uefa-champions-league-2022-2023-datos-fotos-listado.html',
   ],
-  serie: 'Topps Stickers',
+  serie: CollectionSerie.ToppsUEFAStickers,
 };
 
 export const ToppsUefaChampionsLeague_2023_2024: Collection = {
@@ -218,7 +251,7 @@ export const ToppsUefaChampionsLeague_2023_2024: Collection = {
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/checklist',
   ],
-  serie: 'Topps Stickers',
+  serie: CollectionSerie.ToppsUEFAStickers,
 };
 
 export const ToppsSimplicidadUefaClubCompetitions_2023_2024: Collection = {
@@ -234,7 +267,7 @@ Por primera vez, presentamos las "Dual Cards" especiales de los jugadores más d
     'https://www.topps.com/media/amasty/amfile/attach/nllEMaT1R2iWQCzVskNDLvpKIieI7w5r.pdf',
     'https://www.collectosk.com/2023-24-topps-simplicidad-uefa-club-competitions-soccer-cards/',
   ],
-  serie: 'Topps Simplicidad',
+  serie: CollectionSerie.ToppsSimplicidad,
 };
 
 export const ToppsMerlinHeritage_98UccSeason_2022_2023: Collection = {
@@ -248,7 +281,7 @@ La nueva colección de competiciones UEFA incluye las estrellas de la temporada 
     'https://es.topps.com/products/uefa-club-competitions-merlin98-topps-es',
     'https://www.laststicker.com/cards/topps_merlin_heritage_98_ucc_2022-2023/',
   ],
-  serie: 'Topps Merlin Heritage',
+  serie: CollectionSerie.ToppsMerlinHeritage,
 };
 
 export const ToppsMerlinHeritageUefaClubCompetitions_2023_2024: Collection = {
@@ -263,7 +296,7 @@ Esta nueva colección de la UEFA Club Competitions include a todos los jugadores
     'https://www.laststicker.com/cards/topps_merlin_heritage_uefa_2023-2024/checklist',
     'https://launchesuk.topps.com/en-US/launch/topps-uefa-club-competitions-merlin-heritage-2324',
   ],
-  serie: 'Topps Merlin Heritage',
+  serie: CollectionSerie.ToppsMerlinHeritage,
 };
 
 export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Collection = {
@@ -275,7 +308,7 @@ export const ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra: Coll
   links: [
     'https://www.laststicker.com/cards/topps_ucc_2023-2024_match_attax_extra/',
   ],
-  serie: 'Topps Match Attax',
+  serie: CollectionSerie.ToppsMatchAttax,
 };
 
 export const PaniniUefaWomenSEuroEngland_2022: Collection = {
@@ -289,7 +322,7 @@ export const PaniniUefaWomenSEuroEngland_2022: Collection = {
     'http://www.owacgames.com/2022/03/coleccion-cromos-stickers-uefa-womens-euro-england-2022-datos-fotos-listado-panin.html',
     'https://cartophilic-info-exch.blogspot.com/2022/05/panini-uefa-womens-euro-england-2022-07_02063639260.html',
   ],
-  serie: 'Panini Spain National Team',
+  serie: CollectionSerie.PaniniUEFAEuro,
 };
 
 export const ToppsUefaLivingSet_2023: Collection = {
@@ -304,7 +337,7 @@ Louise Cobbold es una artista británica que hasta hace poco se dedicaba a hacer
     'http://www.owacgames.com/2023/03/coleccion-topps-uefa-living-set-datos-fotos-listado.html',
     'https://www.cardboardconnection.com/topps-living-set-uefa-champions-league-cards#post_anchor_4_305957',
   ],
-  serie: 'Topps Living',
+  serie: CollectionSerie.ToppsLiving,
 };
 
 export const ToppsSimplicidadUefaClubCompetitions_2022_2023: Collection = {
@@ -317,7 +350,7 @@ export const ToppsSimplicidadUefaClubCompetitions_2022_2023: Collection = {
     'https://www.topps.com/media/amasty/amfile/attach/fQfUXOgDqj12iE25NfNjwSLAarHGVLsJ.pdf',
     'https://www.cardboardconnection.com/2022-23-topps-simplicidad-uefa-cards',
   ],
-  serie: 'Topps Simplicidad',
+  serie: CollectionSerie.ToppsSimplicidad,
 };
 
 export const ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023: Collection = {
@@ -329,7 +362,7 @@ export const ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023: Coll
   links: [
     'https://www.cardboardconnection.com/2022-23-topps-chrome-sapphire-edition-uefa-womens-champions-league-cards',
   ],
-  serie: 'Topps Chrome',
+  serie: CollectionSerie.ToppsChrome,
 };
 
 export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
@@ -342,7 +375,7 @@ export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
     'https://www.laststicker.com/cards/panini_womens_world_cup_2023/',
     'http://www.owacgames.com/2023/05/coleccion-cromos-mundial-femenino-2023-fifa-womens-world-cup-au-nz-2023-datos-fotos-listado-panini.html',
   ],
-  serie: 'Panini Spain National Team',
+  serie: CollectionSerie.PaniniFIFAWorldCup,
 };
 
 export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
@@ -355,7 +388,7 @@ export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
     'https://es.topps.com/products/topps-uefa-club-competitions-deco-2023-24-set-topps-es',
     'https://www.laststicker.com/cards/topps_deco_uefa_club_competitions_2023-2024/checklist',
   ],
-  serie: 'Topps DECO',
+  serie: CollectionSerie.ToppsDECO,
 };
 
 export const ToppsFocusFcBarcelona_2023_2024: Collection = {
@@ -369,7 +402,7 @@ export const ToppsFocusFcBarcelona_2023_2024: Collection = {
     'https://es.topps.com/products/topps-focus-fc-barcelona-2023-24-topps-eu',
     'https://www.collectosk.com/2023-24-topps-focus-fc-barcelona-soccer-cards/',
   ],
-  serie: 'Topps FOCUS',
+  serie: CollectionSerie.ToppsFOCUS,
 };
 
 export const ToppsUefaWomensChampionsLeagueKnockout_2023: Collection = {
@@ -384,7 +417,7 @@ Este set de 40 cartas presenta las estrellas más grandes de los ocho equipos qu
     'https://www.topps.com/media/amasty/amfile/attach/UxdYyaqrOpdN8RSWJZV5KgMgCwMzvyqC.pdf',
     'https://www.collectosk.com/2022-23-topps-knockout-uefa-womens-champions-league-soccer-cards/',
   ],
-  serie: 'Topps Knockout',
+  serie: CollectionSerie.ToppsKnockout,
 };
 
 export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
@@ -401,7 +434,6 @@ export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
     'https://www.collectosk.com/2023-24-topps-platinum-uefa-womens-champions-league-aitana-bonmati-curated-set-soccer-cards/',
     'http://www.owacgames.com/2024/07/aitana-bonmati-platinum-curated-set-topps-datos-fotos-listado.html',
   ],
-  serie: 'Topps Curated set',
 };
 
 export const ToppsInceptionUefaClubCompetitions_2023_2024: Collection = {
@@ -427,35 +459,38 @@ También podrás encontrar autógrafos inéditos "Marks of Excellence" en los cr
     'https://www.topps.com/media/amasty/amfile/attach/nZmBqPPHUtUQXoyqtWDnqjanH0Hao9Pi.pdf',
     'https://cartophilic-info-exch.blogspot.com/2024/08/topps-202324-topps-uefa-club_02140667989.html',
   ],
-  serie: 'Topps Inception',
+  serie: CollectionSerie.ToppsInception,
 };
 
 export const collections: Collection[] = [
+  PaniniCarrefourVamosSeleccion_2024,
+  PaniniFifa_365_2024,
+  PaniniFifa_365AdrenalynXl_2024_2025,
+  PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
+  PaniniFifaWomenSWorldCupFrance_2019,
   PaniniLigaF_2022_2023,
   PaniniLigaF_2023_2024,
   PaniniUefaWomenSEuroEngland_2022,
-  PaniniFifaWomenSWorldCupFrance_2019,
-  PaniniCarrefourVamosSeleccion_2024,
-  ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
-  ToppsNowWomenSChampionsLeague_2023_2024,
+  ToppsAitanaBonmatiPlatinumCuratedSet_2024,
   ToppsChromeFcBarcelona_2022_2023,
+  ToppsDecoUefaClubCompetitions_2023_2024,
+  ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
-  ToppsUefaChampionsLeague_2022_2023,
-  ToppsUefaChampionsLeague_2023_2024,
-  ToppsSimplicidadUefaClubCompetitions_2023_2024,
+  ToppsFocusFcBarcelona_2023_2024,
+  ToppsInceptionUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
+  ToppsNowWomenSChampionsLeague_2022_2023,
+  ToppsNowWomenSChampionsLeague_2023_2024,
+  ToppsSimplicidadUefaClubCompetitions_2022_2023,
+  ToppsSimplicidadUefaClubCompetitions_2023_2024,
+  ToppsUefaChampionsLeague_2022_2023,
+  ToppsUefaChampionsLeague_2023_2024,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
-  ToppsSimplicidadUefaClubCompetitions_2022_2023,
+  ToppsUefaWomenSChampionsLeagueChrome_2021_2022,
   ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
-  ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
-  ToppsNowWomenSChampionsLeague_2022_2023,
-  PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
-  ToppsDecoUefaClubCompetitions_2023_2024,
-  ToppsFocusFcBarcelona_2023_2024,
-  ToppsUefaWomensChampionsLeagueKnockout_2023,
-  ToppsAitanaBonmatiPlatinumCuratedSet_2024,
   ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
-  ToppsInceptionUefaClubCompetitions_2023_2024,
+  ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
+  ToppsUefaWomensChampionsLeagueKnockout_2023,
 ].sort((a, b) => a.name.localeCompare(b.name));
