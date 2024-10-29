@@ -7,6 +7,8 @@ import c_qf1_2 from "../img/cards/c_qf1_2.webp";
 import c_QAAB_0 from "../img/cards/c_QAAB_0.png";
 import c_QAAB_1 from "../img/cards/c_QAAB_1.webp";
 import c_QAAB_2 from "../img/cards/c_QAAB_2.webp";
+import c_qf1g_0 from "../img/cards/c_qf1g_0.jpg";
+import c_qf1g_1 from "../img/cards/c_qf1g_1.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-QF-1',
@@ -26,6 +28,28 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {
     CardType.QueensOfFootball,
   ],
   brilli: CardBrilli.Holo,
+  productType: CardProductType.Card,
+  customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1g: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-QF-1g',
+  number: 'QF-1g',
+  images: [
+    c_qf1g_0,
+    c_qf1g_1,
+  ],
+  name: "Aitana Bonmatí Queens of Football / Gold Refractor",
+  rarity: 4,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Insert Cards",
+  cardType: [
+    CardType.QueensOfFootball,
+    CardType.Gold,
+  ],
+  brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
 };

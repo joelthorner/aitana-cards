@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024 } from "../collections";
 
 import tfbtyotdc_5_0 from "../img/cards/tfbtyotdc_5_0.jpg";
@@ -9,6 +9,9 @@ import tfbtyotdc_5g_2 from "../img/cards/tfbtyotdc_5g_2.webp";
 import tfbtyotdc_5gr_0 from "../img/cards/tfbtyotdc_5gr_0.jpg";
 import tfbtyotdc_5gr_1 from "../img/cards/tfbtyotdc_5gr_1.webp";
 import tfbtyotdc_5gr_2 from "../img/cards/tfbtyotdc_5gr_2.webp";
+import tfbtyotdc_5w_0 from "../img/cards/tfbtyotdc_5w_0.jpg";
+import tfbtyotdc_5w_1 from "../img/cards/tfbtyotdc_5w_1.webp";
+import tfbtyotdc_5w_2 from "../img/cards/tfbtyotdc_5w_2.webp";
 
 export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5: Card = {
   id: 'topps-fc-barcelona-the-year-of-the-dragon-china-2023-2024-5',
@@ -25,6 +28,28 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5: Card =
   cardSection: 'Base set',
   cardType: [
     CardType.BaseCard,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5w: Card = {
+  id: 'topps-fc-barcelona-the-year-of-the-dragon-china-2023-2024-5w',
+  number: '5w',
+  images: [
+    tfbtyotdc_5w_0,
+    tfbtyotdc_5w_1,
+    tfbtyotdc_5w_2,
+  ],
+  name: 'Aitana Bonmatí Wooden',
+  rarity: 4,
+  numbered: 35,
+  status: CardStatus.Falti,
+  collection: ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
+  year: 2024,
+  cardSection: 'Base set',
+  cardType: [
+    CardType.BaseCard,
+    CardType.Wooden,
   ],
   productType: CardProductType.Card,
 };
@@ -49,7 +74,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5g: Card 
     CardType.Gold,
   ],
   productType: CardProductType.Card,
-  brilli: CardBrilli.GoldFoil,
+  // brilli: CardBrilli.GoldFoil,
 };
 
 export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5gr: Card = {
@@ -72,5 +97,5 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5gr: Card
     CardType.Green,
   ],
   productType: CardProductType.Card,
-  brilli: CardBrilli.GreenFoil,
+  // brilli: CardBrilli.GreenFoil,
 };
