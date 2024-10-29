@@ -78,7 +78,7 @@ export default function DataTable({ card }: { card: Card }) {
               <span className="flex-grow">
                 <span className="font-medium text-zinc-800 block">Numbered</span>
                 <span className="text-xs text-zinc-500 block">
-                  {card.numbered === 1 ? "" : "/"}
+                  {card.numbered === 1 ? "1/" : "/"}
                   {card.numbered}
                 </span>
               </span>

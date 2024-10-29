@@ -56,6 +56,8 @@ import c1i_3 from "../img/cards/c1i_3.webp";
 import AAB1i_0 from "../img/cards/AAB1i_0.jpg";
 import AAB1i_1 from "../img/cards/AAB1i_1.jpg";
 import AAB1i_2 from "../img/cards/AAB1i_2.jpg";
+import c1rd_0 from "../img/cards/c1rd_0.jpg";
+import c1rd_1 from "../img/cards/c1rd_1.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   customRelatedsRegexp: /1[a-z]{1,6}?$/,
@@ -385,6 +387,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1xi: Card = {
     CardType.XI,
   ],
   brilli: CardBrilli.FractedGoldEffect,
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rd: Card = {
+  customRelatedsRegexp: /1[a-z]{1,6}?$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-1rd',
+  number: '1rd',
+  images: [
+    c1rd_0,
+    c1rd_1,
+  ],
+  name: "Aitana Bonmatí Red Refractor Parallel",
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Base set",
+  cardType: [
+    CardType.BaseCard,
+    CardType.Red,
+  ],
+  brilli: CardBrilli.RedFoil,
   productType: CardProductType.Card,
 };
 

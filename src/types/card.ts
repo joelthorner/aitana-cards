@@ -71,6 +71,7 @@ export enum CardType {
   QueensOfFootball = 'Queens of football',
   HiddenGems = 'Hidden Gems',
   StarQuality = 'Star Quality',
+  ChineseZodiac = 'Chinese Zodiac',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -78,8 +79,10 @@ export enum CardType {
 
   BlackAndWhiteWave = 'Black & White Wave',
   Barça = 'Barça',
+  Wooden = 'Wooden',
   XI = 'XI',
 
+  White = 'White',
   Blue = 'Blue',
   Gold = 'Gold',
   Black = 'Black',
