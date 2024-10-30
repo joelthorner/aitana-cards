@@ -140,7 +140,20 @@
   @apply text-white;
 }
 
-.btn-card-type-Rainbow {}
+.btn-card-type-Rainbow {
+  --blue: #23aaff;
+  --purple: #4562f2;
+  --pink: #7a45f8;
+  --coral: #bb0bf6;
+  --orange: #fc2953;
+  --yellow: #ffc743;
+  --bg: #000000;
+  background-image: linear-gradient(45deg, var(--blue) 3%, var(--purple) 20%, var(--pink) 36%, var(--coral) 52%, var(--orange) 69%, var(--yellow) 100%);
+}
+
+.btn-text-card-type-Rainbow {
+  @apply text-white;
+}
 
 .btn-card-type-Autographs {}
 
@@ -152,4 +165,6 @@
 
 .btn-card-type-UWCL_Limelight {}
 
-.btn-card-type-BlueCrystall {}
+.btn-card-type-BlueCrystall {
+  @apply bg-sky-200;
+}

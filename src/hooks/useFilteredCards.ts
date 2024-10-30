@@ -9,15 +9,15 @@ export function useFilteredCards() {
 
   useEffect(() => {
     const newFilteredCards = cards.filter((card: Card) => {
+      const matchesCollection = collections.length === 0 || collections.includes(card.collection.id);
+      const matchesCardTypes = cardTypes.length === 0 || cardTypes.every(value => card.cardType.includes(value as CardType));
+      const matchesRarity = rarity.length === 0 || rarity.includes(card.rarity);
+      const matchesYears = years.length === 0 || years.includes(card.year);
+
       const matchesStatus =
         (status[CardStatus.Tengui] && card.status === CardStatus.Tengui) ||
         (status[CardStatus.Falti] && card.status === CardStatus.Falti) ||
         (status[CardStatus.Pending] && card.status === CardStatus.Pending);
-
-      const matchesRarity = rarity.length === 0 || rarity.includes(card.rarity);
-      const matchesYears = years.length === 0 || years.includes(card.year);
-      const matchesCollection = collections.length === 0 || collections.includes(card.collection.id);
-      const matchesCardTypes = cardTypes.length === 0 || cardTypes.some(value => card.cardType.includes(value as CardType));
 
       return matchesYears && matchesStatus && matchesRarity && matchesCollection && matchesCardTypes;
     });
