@@ -72,6 +72,8 @@ export enum CardType {
   HiddenGems = 'Hidden Gems',
   StarQuality = 'Star Quality',
   ChineseZodiac = 'Chinese Zodiac',
+  EtchedInStone = 'Etched in Stone',
+  DiamondEyesDragon = 'Diamond Eyes Dragon',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -94,6 +96,7 @@ export enum CardType {
   Orange = 'Orange',
   Yellow = 'Yellow',
   Turquoise = 'Turquoise',
+  Gray = 'Gray',
 
   RedXFractor = 'Red X-Fractor',
   OrangeXFractor = 'Orange X-Fractor',
