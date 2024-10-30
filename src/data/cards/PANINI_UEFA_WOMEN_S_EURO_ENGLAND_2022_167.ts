@@ -21,7 +21,7 @@ const PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_167: Card = {
   status: CardStatus.Tengui,
   collection: PaniniUefaWomenSEuroEngland_2022,
   year: 2022,
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
   cardSection: 'Spain',
   productType: CardProductType.Sticker,
 };

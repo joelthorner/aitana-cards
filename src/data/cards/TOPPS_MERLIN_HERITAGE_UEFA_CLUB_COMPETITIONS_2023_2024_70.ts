@@ -37,7 +37,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70: Card = {
   collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
@@ -59,7 +59,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pu: Card =
   collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -83,7 +83,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70gr: Card =
   collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
   productType: CardProductType.Card,
@@ -106,7 +106,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70bu: Card =
   collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -129,7 +129,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pi: Card =
   collection: ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Pink,
   ],
   productType: CardProductType.Card,

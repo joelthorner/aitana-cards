@@ -14,7 +14,7 @@ export const PANINI_FIFA_WOMEN_S_WORLD_CUP_AUSTRALIA_NEW_ZEALAND_2023_J6: Card =
   collection: PaniniFifaWomenSWorldCupAustraliaNewZealand_2023,
   cardSection: 'Spain',
   productType: CardProductType.Sticker,
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
   year: 2023,
   links: [
     'https://www.laststicker.com/cards/panini_womens_world_cup_2023/j6/',

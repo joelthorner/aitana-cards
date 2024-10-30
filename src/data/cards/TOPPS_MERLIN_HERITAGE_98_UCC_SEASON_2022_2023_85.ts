@@ -46,7 +46,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85: Card = {
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona / Women',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
 };
 
@@ -69,7 +69,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85gr: Card = {
   cardSection: 'FC Barcelona / Women',
   brilli: CardBrilli.GreenFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
 };
@@ -93,7 +93,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85b: Card = {
   cardSection: 'FC Barcelona / Women',
   brilli: CardBrilli.BlueTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
 };
@@ -114,7 +114,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85p: Card = {
   cardSection: 'FC Barcelona / Women',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
 };
@@ -136,7 +136,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85r: Card = {
   cardSection: 'FC Barcelona / Women',
   brilli: CardBrilli.Holo,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Rainbow,
   ],
 };
@@ -157,7 +157,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona / Women',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Autographs,
     CardType.Blue,
   ],
@@ -180,7 +180,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona / Women',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Autographs,
     CardType.Orange,
   ],
@@ -206,7 +206,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona / Women',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Autographs,
     CardType.Rainbow,
   ],

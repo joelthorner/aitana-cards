@@ -35,7 +35,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   orientation: CardOrientation.Horizontal,
 };

@@ -60,7 +60,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
   ],
   productType: CardProductType.Card,
@@ -83,7 +83,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44rf: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Rainbow,
   ],
@@ -108,7 +108,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44t: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Turquoise,
   ],
@@ -134,7 +134,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44gr: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Green,
   ],
@@ -159,7 +159,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44p: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Pink,
   ],
@@ -185,7 +185,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44bu: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Blue,
   ],
@@ -210,7 +210,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44pu: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Purple,
   ],
@@ -236,7 +236,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44r: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Red,
   ],
@@ -261,7 +261,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABbu: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Autographs,
     CardType.Blue,
@@ -287,7 +287,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABpu: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Autographs,
     CardType.Purple,
@@ -313,7 +313,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABr: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Autographs,
     CardType.Red,
@@ -339,7 +339,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABo: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Autographs,
     CardType.Orange,
@@ -365,7 +365,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABg: Card = {
   year: 2024,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.StarQuality,
     CardType.Autographs,
     CardType.Gold,

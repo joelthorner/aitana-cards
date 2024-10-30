@@ -33,7 +33,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   year: 2023,
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.Sapphire],
+  cardType: [CardType.BaseSet, CardType.Sapphire],
   brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
 };
@@ -51,7 +51,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   year: 2023,
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.Sapphire, CardType.Gold],
+  cardType: [CardType.BaseSet, CardType.Sapphire, CardType.Gold],
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
 };
@@ -71,7 +71,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   year: 2023,
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.Sapphire, CardType.Green],
+  cardType: [CardType.BaseSet, CardType.Sapphire, CardType.Green],
   brilli: CardBrilli.GreenFoil,
   productType: CardProductType.Card,
 };

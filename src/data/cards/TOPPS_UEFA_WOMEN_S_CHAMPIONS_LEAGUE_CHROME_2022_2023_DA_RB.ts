@@ -59,7 +59,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo: Card = 
   brilli: CardBrilli.OrangeFoil,
   cardType: [
     CardType.DualAutographs,
-    CardType.OrangeWave,
+    CardType.Orange,
+    CardType.Wave,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,

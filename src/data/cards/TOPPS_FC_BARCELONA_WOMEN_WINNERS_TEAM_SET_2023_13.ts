@@ -38,7 +38,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13: Card = {
   year: 2023,
   cardSection: "Base",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -60,7 +60,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13gr: Card = {
   year: 2023,
   cardSection: "Base",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
   productType: CardProductType.Card,
@@ -86,7 +86,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13bu: Card = {
   year: 2023,
   cardSection: "Base",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -108,7 +108,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13pu: Card = {
   year: 2023,
   cardSection: "Base",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -132,7 +132,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13r: Card = {
   year: 2023,
   cardSection: "Base",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   productType: CardProductType.Card,

@@ -26,7 +26,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543: Card = {
   ],
   cardSection: 'UEFA Women\'s Champions League',
   cardType: [
-    CardType.Base,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Sticker,
 };

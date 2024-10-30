@@ -19,7 +19,7 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_38: Card = {
   cardSection: '¡Allá vamos!',
   productType: CardProductType.Sticker,
   cardType: [
-    CardType.Base,
+    CardType.BaseSet,
     CardType.TeamCard,
   ],
   year: 2024,

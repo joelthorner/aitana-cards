@@ -16,7 +16,7 @@ const PANINI_LIGA_F_2022_2023_128: Card = {
   collection: PaniniLigaF_2022_2023,
   year: 2023,
   cardSection: 'FC Barcelona',
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Sticker,
 };
 

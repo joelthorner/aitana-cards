@@ -25,7 +25,7 @@ const TOPPS_UEFA_LIVING_SET_2023_512: Card = {
   collection: ToppsUefaLivingSet_2023,
   year: 2023,
   cardSection: "FC Barcelona",
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
 };
 

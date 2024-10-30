@@ -27,7 +27,7 @@ const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_3: Card = {
     "https://es.topps.com/products/topps-es-aitana-bonmati-brilliant-brace-in-opening-game-uwcl-topps-now-reg-carta-3",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
 };

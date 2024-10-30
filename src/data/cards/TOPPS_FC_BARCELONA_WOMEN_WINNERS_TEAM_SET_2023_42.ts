@@ -26,7 +26,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42: Card = {
   year: 2023,
   cardSection: "Champions Team Card",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.TeamCard,
   ],
   productType: CardProductType.Card,
@@ -50,7 +50,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
   cardSection: "Champions Team Card",
   brilli: CardBrilli.GreenFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.TeamCard,
     CardType.Green,
   ],

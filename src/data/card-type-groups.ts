@@ -1,73 +1,92 @@
 import { CardType } from "../types/card";
 
-export const CardTypeGroupGeneric: string[] = [
-  CardType.Base,
-  CardType.Holographic,
-  CardType.TeamCard,
-  CardType.Collage,
+export const CardTypeGroupGeneric: CardType[][] = [
+  [
+    CardType.BaseSet,
+    CardType.TeamCard,
+    CardType.Collage,
+  ],
+  [
+    CardType.Holographic,
+  ],
 ];
 
-export const CardTypeGroupPanini: string[] = [
-  CardType.GoldFoil,
-  CardType.GoldMetalic,
+export const CardTypeGroupPanini: CardType[][] = [
+  [
+    CardType.Icons,
+    CardType.TheBest,
+  ],
 ];
 
-export const CardTypeGroupToppsCards: string[] = [
-  CardType.RookieCard,
-  CardType.BaseCard,
-  CardType.BaseInAction,
-  CardType.FutureStars,
-  CardType.CurrentStars,
-  CardType.Dynamic,
-
-  CardType.Refractor,
-  CardType.XFractor,
-  CardType.PulsarRefractor,
-  CardType.Barça,
-  CardType.Sapphire,
-  CardType.AltImage,
-
-  CardType.Blue,
-  CardType.Gold,
-  CardType.Black,
-  CardType.Green,
-  CardType.Rainbow,
-  CardType.Purple,
-  CardType.Red,
-  CardType.Orange,
-  CardType.Yellow,
-
-  CardType.RedXFractor,
-  CardType.OrangeXFractor,
-  CardType.YellowXFractor,
-  CardType.SuperFractor,
-
-  CardType.PinkPrism,
-  CardType.NeonGreen,
-  CardType.Inferno,
-
-  CardType.BlackAndWhiteWave,
-  CardType.OrangeWave,
-  CardType.RoseGoldMojo,
-  CardType.BlueMojo,
-  CardType.AquaPrismRefactor,
-
-  CardType.Autographs,
-  CardType.ActionAutographs,
-  CardType.DualAutographs,
-  CardType.QuadAutograph,
-
-  CardType.Filmstrip,
-  CardType.CrowningMoments,
-  CardType.ShutterSpeed,
+export const CardTypeGroupToppsCards: CardType[][] = [
+  [
+    CardType.Rookie,
+    CardType.Relic,
+  ],
+  [
+    CardType.FutureStars,
+    CardType.CurrentStars,
+    CardType.Dynamic,
+    CardType.InAction,
+    CardType.Sapphire,
+    CardType.AltImage,
+    CardType.Fierce,
+    CardType.Filmstrip,
+    CardType.CrowningMoments,
+    CardType.ShutterSpeed,
+    CardType.QueensOfFootball,
+    CardType.HiddenGems,
+    CardType.StarQuality,
+    CardType.ChineseZodiac,
+    CardType.EtchedInStone,
+    CardType.DiamondEyesDragon,
+  ],
+  [
+    CardType.Refractor,
+    CardType.XFractor,
+    CardType.Pulsar,
+    CardType.SuperFractor,
+    CardType.Wave,
+    CardType.Prism,
+    CardType.Mojo,
+  ],
+  [
+    CardType.Barça,
+    CardType.Wooden,
+    CardType.Inferno,
+    CardType.XI,
+    CardType.ColorMatch,
+  ],
+  [
+    CardType.White,
+    CardType.Yellow,
+    CardType.Gold,
+    CardType.Orange,
+    CardType.RoseGold,
+    CardType.Red,
+    CardType.Pink,
+    CardType.Purple,
+    CardType.Blue,
+    CardType.Aqua,
+    CardType.Turquoise,
+    CardType.Green,
+    CardType.NeonGreen,
+    CardType.Gray,
+    CardType.BlackAndWhite,
+    CardType.Black,
+    CardType.Rainbow,
+  ],
+  [
+    CardType.Autographs,
+    CardType.DualAutographs,
+    CardType.QuadAutograph,
+  ],
 ];
 
-export const CardTypeGroupToppsStickers: string[] = [
-  CardType.Shiny,
-];
-
-export const CardTypeGroupToppsMatchAttax: string[] = [
-  CardType.T_100Club,
-  CardType.UWCL_Limelight,
-  CardType.BlueCrystall,
+export const CardTypeGroupToppsMatchAttax: CardType[][] = [
+  [
+    CardType.T_100Club,
+    CardType.UWCL_Limelight,
+    CardType.BlueCrystall,
+  ],
 ];

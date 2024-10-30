@@ -29,7 +29,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16: Card = {
     "https://es.topps.com/products/aitana-bonmati-wondergoal-seals-semi-final-spot-uwcl-topps-now-reg-carta-16",
   ],
   productType: CardProductType.Card,
-  cardType: [CardType.BaseCard],
+  cardType: [CardType.BaseSet],
   cardSection: 'FC Barcelona',
 };
 

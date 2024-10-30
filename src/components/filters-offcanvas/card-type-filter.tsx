@@ -1,4 +1,4 @@
-import { CardTypeGroupGeneric, CardTypeGroupPanini, CardTypeGroupToppsCards, CardTypeGroupToppsMatchAttax, CardTypeGroupToppsStickers } from "../../data/card-type-groups";
+import { CardTypeGroupGeneric, CardTypeGroupPanini, CardTypeGroupToppsCards, CardTypeGroupToppsMatchAttax } from "../../data/card-type-groups";
 import { useClassName } from "../../hooks/useClassName";
 import { useFiltersContext } from "../../providers/filters";
 import { CardType } from "../../types/card";
@@ -22,7 +22,7 @@ function CardTypeButton({ value }: CardTypeButtonProps) {
   const cardTypeId = getKeyByValue(CardType, value);
 
   const btnClassName = useClassName([
-    "group relative flex flex-1 h-14 justify-center gap-1 flex-col px-1 items-center font-medium text-xs rounded-lg shadow-sm transition-colors",
+    "group relative flex flex-1 h-14 justify-center gap-1 flex-col px-2 items-center font-medium text-xs rounded-lg shadow-sm transition-colors",
     // cardTypes.includes(value) ? "border-blue-600 bg-blue-600 text-white" : "border-gray-200 bg-white text-gray-500",
     // cardTypes.includes(value) ? "hover:bg-blue-700 hover:border-blue-700" : "hover:bg-gray-50",
   ]);
@@ -34,7 +34,7 @@ function CardTypeButton({ value }: CardTypeButtonProps) {
   return (
     <button type="button" className={btnClassName} onClick={handleCheckboxChange}>
       {cardTypes.includes(value) && activeElement}
-      <span className={`relative z-40 text-gray-500 btn-text-card-type-${cardTypeId}`}>{value}</span>
+      <span className={`relative z-40 text-black/65 btn-text-card-type-${cardTypeId}`}>{value}</span>
       <div className="rounded-lg absolute inset-0 transition-all opacity-0 group-hover:opacity-50 bg-black z-30 mix-blend-soft-light"></div>
       <div className={`rounded-lg absolute z-20 inset-0 border border-[rgba(0,0,0,.10)] group-hover:border-[rgba(0,0,0,.15)]`}></div>
       <div className={`rounded-lg absolute z-10 inset-0 btn-card-type-${cardTypeId}`}></div>
@@ -46,33 +46,43 @@ export default function CardTypeFilter() {
   return (
     <>
       <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Generic types</div>
-      <div className="grid grid-cols-3 gap-2 w-full mb-3">
-        {Object.values(CardTypeGroupGeneric).map((type) => (
-          <CardTypeButton value={type} key={type} />
+      <div className="w-full">
+        {Object.values(CardTypeGroupGeneric).map((group, index) => (
+          <div className="grid grid-cols-3 gap-2 w-full mb-3" key={index}>
+            {group.map((type) => (
+              <CardTypeButton value={type} key={type} />
+            ))}
+          </div>
         ))}
       </div>
       <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Panini types</div>
-      <div className="grid grid-cols-3 gap-2 w-full mb-3">
-        {Object.values(CardTypeGroupPanini).map((type) => (
-          <CardTypeButton value={type} key={type} />
+      <div className="w-full">
+        {Object.values(CardTypeGroupPanini).map((group, index) => (
+          <div className="grid grid-cols-3 gap-2 w-full mb-3" key={index}>
+            {group.map((type) => (
+              <CardTypeButton value={type} key={type} />
+            ))}
+          </div>
         ))}
       </div>
       <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Topps card types</div>
-      <div className="grid grid-cols-3 gap-2 w-full mb-3">
-        {Object.values(CardTypeGroupToppsCards).map((type) => (
-          <CardTypeButton value={type} key={type} />
-        ))}
-      </div>
-      <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Topps sticker types</div>
-      <div className="grid grid-cols-3 gap-2 w-full mb-3">
-        {Object.values(CardTypeGroupToppsStickers).map((type) => (
-          <CardTypeButton value={type} key={type} />
+      <div className="w-full">
+        {Object.values(CardTypeGroupToppsCards).map((group, index) => (
+          <div className="grid grid-cols-3 gap-2 w-full mb-3" key={index}>
+            {group.map((type) => (
+              <CardTypeButton value={type} key={type} />
+            ))}
+          </div>
         ))}
       </div>
       <div className="text-left text-xs text-slate-500 w-full pl-[2px]">Topps Match Attax types</div>
-      <div className="grid grid-cols-3 gap-2 w-full">
-        {Object.values(CardTypeGroupToppsMatchAttax).map((type) => (
-          <CardTypeButton value={type} key={type} />
+      <div className="w-full">
+        {Object.values(CardTypeGroupToppsMatchAttax).map((group, index) => (
+          <div className="grid grid-cols-3 gap-2 w-full" key={index}>
+            {group.map((type) => (
+              <CardTypeButton value={type} key={type} />
+            ))}
+          </div>
         ))}
       </div>
     </>

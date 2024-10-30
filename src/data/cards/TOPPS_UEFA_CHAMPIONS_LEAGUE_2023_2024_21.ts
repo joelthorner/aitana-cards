@@ -21,7 +21,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
   ],
   cardSection: '2022/23 UWCL Team of the Season',
   cardType: [
-    CardType.Shiny,
+    CardType.Holographic,
   ],
   productType: CardProductType.Sticker,
 };

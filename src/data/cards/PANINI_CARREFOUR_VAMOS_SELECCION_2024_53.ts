@@ -17,8 +17,8 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_53: Card = {
   cardSection: 'Selección Femenina',
   productType: CardProductType.Sticker,
   cardType: [
-    CardType.Base,
-    CardType.GoldMetalic,
+    CardType.BaseSet,
+    CardType.Gold,
   ],
   year: 2024,
   links: [

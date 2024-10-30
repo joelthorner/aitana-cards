@@ -16,7 +16,7 @@ const PANINI_LIGA_F_2022_2023_16: Card = {
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.Base,
+    CardType.BaseSet,
     CardType.Collage,
     CardType.TeamCard,
   ],

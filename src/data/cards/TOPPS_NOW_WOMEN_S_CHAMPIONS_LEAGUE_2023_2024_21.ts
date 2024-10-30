@@ -31,7 +31,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.TeamCard],
+  cardType: [CardType.BaseSet, CardType.TeamCard],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
 };

@@ -19,7 +19,7 @@ const PANINI_FIFA_WOMEN_S_WORLD_CUP_FRANCE_2019_154: Card = {
   collection: PaniniFifaWomenSWorldCupFrance_2019,
   year: 2019,
   cardSection: "Spain",
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Sticker,
 };
 

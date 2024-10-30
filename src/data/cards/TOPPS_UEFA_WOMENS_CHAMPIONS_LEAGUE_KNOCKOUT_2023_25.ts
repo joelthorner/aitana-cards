@@ -30,7 +30,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
   year: 2023,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -50,7 +50,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25bu: Card = {
   year: 2023,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -73,7 +73,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25pu: Card = {
   year: 2023,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -95,7 +95,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
   year: 2023,
   cardSection: "FC Barcelona",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Black,
   ],
   productType: CardProductType.Card,

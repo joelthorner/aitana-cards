@@ -30,8 +30,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15: Card = {
   year: 2022,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
   ],
   productType: CardProductType.Card,
 };
@@ -51,8 +51,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15ref: Card = 
   year: 2022,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
@@ -74,9 +74,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15pp: Card = {
   numbered: 150,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
-    CardType.PinkPrism,
+    CardType.BaseSet,
+    CardType.Rookie,
+    CardType.Pink,
+    CardType.Prism,
   ],
   productType: CardProductType.Card,
 };
@@ -97,8 +98,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15ngr: Card = 
   numbered: 99,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
     CardType.NeonGreen,
   ],
   productType: CardProductType.Card,
@@ -120,8 +121,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15i: Card = {
   numbered: 75,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
     CardType.Inferno,
   ],
   productType: CardProductType.Card,
@@ -143,8 +144,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15g: Card = {
   numbered: 50,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -163,9 +164,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15g: Card = {
 //   numbered: 25,
 //   cardSection: 'FC Barcelona',
 //   cardType: [
-//     CardType.BaseCard,
-//     CardType.RookieCard,
-//     CardType.OrangeWave,
+//     CardType.BaseSet,
+//     CardType.Rookie,
+//     CardType.Orange,
+//     CardType.Wave,
 //   ],
 //   productType: CardProductType.Card,
 // };
@@ -186,8 +188,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15r: Card = {
   numbered: 5,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.RookieCard,
+    CardType.BaseSet,
+    CardType.Rookie,
     CardType.Red,
   ],
   productType: CardProductType.Card,
@@ -206,8 +208,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15r: Card = {
 //   numbered: 1,
 //   cardSection: 'FC Barcelona',
 //   cardType: [
-//     CardType.BaseCard,
-//     CardType.RookieCard,
+//     CardType.BaseSet,
+//     CardType.Rookie,
 //     CardType.SuperFractor,
 //   ],
 //   productType: CardProductType.Card,

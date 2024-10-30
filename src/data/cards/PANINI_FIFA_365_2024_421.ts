@@ -19,9 +19,9 @@ const PANINI_FIFA_365_2024_421: Card = {
   year: 2023,
   cardSection: "FiFa Women's World Cup Australia & New Zealand 2023",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.TeamCard,
-    CardType.GoldFoil,
+    CardType.Gold,
   ],
   links: [
     'https://www.laststicker.com/cards/panini_fifa_365_2023-2024/421/',

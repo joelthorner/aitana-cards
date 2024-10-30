@@ -27,7 +27,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1: Card = {
     'https://www.topps.com/products/aitana-bonmati-uefa-women-s-player-of-the-year-uwcl-topps-now-reg-card-1',
     'https://es.topps.com/products/topps-es-aitana-bonmati-uefa-women-s-player-of-the-year-uwcl-topps-now-reg-carta-1',
   ],
-  cardType: [CardType.BaseCard],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
 };

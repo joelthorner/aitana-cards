@@ -76,7 +76,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -98,7 +98,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref: Card = 
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
@@ -119,8 +119,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl: Card = {
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.PulsarRefractor,
+    CardType.BaseSet,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
 };
@@ -145,8 +146,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.AquaPrism,
   cardType: [
-    CardType.BaseCard,
-    CardType.AquaPrismRefactor,
+    CardType.BaseSet,
+    CardType.Aqua,
+    CardType.Prism,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
 };
@@ -167,9 +170,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup: Card = 
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
-    CardType.PulsarRefractor,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
   numbered: 299,
@@ -192,8 +196,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.BlueCristall,
   cardType: [
-    CardType.BaseCard,
-    CardType.BlueMojo,
+    CardType.BaseSet,
+    CardType.Blue,
+    CardType.Mojo,
   ],
   productType: CardProductType.Card,
 };
@@ -217,8 +222,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.PinkRefractorTopps,
   cardType: [
-    CardType.BaseCard,
-    CardType.PinkPrism,
+    CardType.BaseSet,
+    CardType.Pink,
+    CardType.Prism,
   ],
   productType: CardProductType.Card,
 };
@@ -240,8 +246,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = 
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.RoseGoldMojo,
   cardType: [
-    CardType.BaseCard,
-    CardType.RoseGoldMojo,
+    CardType.BaseSet,
+    CardType.RoseGold,
+    CardType.Mojo,
   ],
   productType: CardProductType.Card,
 };
@@ -263,7 +270,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.InfernoRefractorTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Inferno,
   ],
   productType: CardProductType.Card,
@@ -286,7 +293,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.GoldFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -308,7 +315,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.OrangeFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
     CardType.Refractor,
   ],
@@ -332,7 +339,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.RedRefractorTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
     CardType.Refractor,
   ],
@@ -380,7 +387,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp: Card = 
   brilli: CardBrilli.PinkRefractorTopps,
   cardType: [
     CardType.Autographs,
-    CardType.PinkPrism,
+    CardType.Pink,
+    CardType.Prism,
   ],
   productType: CardProductType.Card,
 };
@@ -451,7 +459,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = 
   cardType: [
     CardType.Autographs,
     CardType.Orange,
-    CardType.OrangeWave,
+    CardType.Wave,
   ],
   productType: CardProductType.Card,
 };

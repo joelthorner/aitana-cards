@@ -19,7 +19,7 @@ const PANINI_FIFA_365_2024_425: Card = {
   year: 2023,
   cardSection: "FiFa Women's World Cup 2023",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   links: [
     'https://www.laststicker.com/cards/panini_fifa_365_2023-2024/425/',

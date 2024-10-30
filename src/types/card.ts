@@ -40,28 +40,24 @@ export enum CardBrilli {
  */
 export enum CardType {
   // Generic / no type
-  Base = 'Base',
-  Holographic = 'Holographic',
+  BaseSet = 'Base set',
   TeamCard = 'Team Card',
   Collage = 'Collage', // Carta composta
 
-  // Panini
-  GoldFoil = 'Gold Foil',
-  GoldMetalic = 'Gold Metalic',
+  Holographic = 'Holographic', // penjat
 
   // Panini 365 or Adrenalyn XL no se com va encara
   Icons = 'Icons',
   TheBest = 'The Best',
 
   // Topps
-  BaseCard = 'Base card',
-  RookieCard = 'Rookie Card',
+  Rookie = 'Rookie',
   Relic = 'Relic',
 
-  BaseInAction = 'Base in action',
   FutureStars = 'Future Stars',
   CurrentStars = 'Current Stars',
   Dynamic = 'Dynamic',
+  InAction = 'In action',
   Sapphire = 'Sapphire',
   AltImage = 'Alternative Image',
   Fierce = 'Fierce',
@@ -77,48 +73,39 @@ export enum CardType {
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
-  PulsarRefractor = 'Pulsar Refractor',
+  Pulsar = 'Pulsar',
+  SuperFractor = 'SuperFractor',
+  Wave = 'Wave',
+  Prism = 'Prism',
+  Mojo = 'Mojo',
 
-  BlackAndWhiteWave = 'Black & White Wave',
   Barça = 'Barça',
   Wooden = 'Wooden',
-  XI = 'XI',
-
-  White = 'White',
-  Blue = 'Blue',
-  Gold = 'Gold',
-  Black = 'Black',
-  Green = 'Green',
-  Rainbow = 'Rainbow',
-  Purple = 'Purple',
-  Red = 'Red',
-  Pink = 'Pink',
-  Orange = 'Orange',
-  Yellow = 'Yellow',
-  Turquoise = 'Turquoise',
-  Gray = 'Gray',
-
-  RedXFractor = 'Red X-Fractor',
-  OrangeXFractor = 'Orange X-Fractor',
-  SuperFractor = 'SuperFractor',
-  YellowXFractor = 'Yellow X-Fractor',
-  PinkPrism = 'Pink Prism',
-  NeonGreen = 'Neon Green',
   Inferno = 'Inferno',
-  OrangeWave = 'Orange Wave',
-  RoseGoldMojo = 'Rose Gold Mojo',
-  BlueMojo = 'Blue Mojo',
-  AquaPrismRefactor = 'Aqua Prism Refractor',
-  PurplePulsarRefractor = 'Purple Pulsar Refractor',
+  XI = 'XI',
   ColorMatch = 'Color Match Variation',
 
+  White = 'White',
+  Yellow = 'Yellow',
+  Gold = 'Gold',
+  Orange = 'Orange',
+  RoseGold = 'Rose Gold',
+  Red = 'Red',
+  Pink = 'Pink',
+  Purple = 'Purple',
+  Blue = 'Blue',
+  Aqua = 'Aqua',
+  Turquoise = 'Turquoise',
+  Green = 'Green',
+  NeonGreen = 'Neon Green',
+  Gray = 'Gray',
+  BlackAndWhite = 'Black & White',
+  Black = 'Black',
+  Rainbow = 'Rainbow',
+
   Autographs = 'Autographs',
-  ActionAutographs = 'Action Autographs',
   DualAutographs = 'Dual Autographs',
   QuadAutograph = 'Quad Autograph',
-
-  // Topps stickers
-  Shiny = 'Shiny',
 
   // Topps Match Attax
   UWCL_Limelight = 'UWCL Limelight',

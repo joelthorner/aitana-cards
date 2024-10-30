@@ -26,7 +26,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12: Card = {
   brilli: CardBrilli.Holo,
   cardType: [
     CardType.FutureStars,
-    CardType.RookieCard,
+    CardType.Rookie,
   ],
   productType: CardProductType.Card,
 };
@@ -47,8 +47,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card =
   brilli: CardBrilli.OrangeFoil,
   cardType: [
     CardType.FutureStars,
-    CardType.OrangeWave,
-    CardType.RookieCard,
+    CardType.Orange,
+    CardType.Wave,
+    CardType.Rookie,
   ],
   numbered: 25,
   productType: CardProductType.Card,
@@ -70,7 +71,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
   cardType: [
     CardType.FutureStars,
     CardType.Red,
-    CardType.RookieCard,
+    CardType.Rookie,
   ],
   numbered: 5,
   productType: CardProductType.Card,
@@ -91,7 +92,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
 //   cardType: [
 //     CardType.FutureStars,
 //     CardType.SuperFractor,
-//     CardType.RookieCard,
+//     CardType.Rookie,
 //   ],
 //   numbered: 1,
 //   productType: CardProductType.Card,

@@ -57,7 +57,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -77,7 +77,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ShutterSpeed,
   ],
   productType: CardProductType.Card,
@@ -101,7 +101,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
   productType: CardProductType.Card,
@@ -125,7 +125,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -149,7 +149,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -173,7 +173,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
   ],
   productType: CardProductType.Card,
@@ -196,7 +196,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   productType: CardProductType.Card,
@@ -220,7 +220,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Yellow,
     CardType.Autographs,
   ],
@@ -245,7 +245,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
     CardType.Autographs,
   ],
@@ -268,7 +268,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
     CardType.Autographs,
   ],
@@ -292,7 +292,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
     CardType.Autographs,
   ],
@@ -315,7 +315,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
     CardType.Autographs,
   ],

@@ -17,7 +17,9 @@ const PANINI_LIGA_F_2023_2024_P1: Card = {
   collection: PaniniLigaF_2023_2024,
   year: 2023,
   brilli: CardBrilli.GoldFoil,
-  cardType: [CardType.GoldFoil],
+  cardType: [
+    CardType.Gold,
+  ],
   cardSection: 'Premium',
   number: 'P1',
   productType: CardProductType.Sticker,

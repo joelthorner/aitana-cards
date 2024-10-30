@@ -31,7 +31,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69: Card = {
   year: 2024,
   cardSection: 'Mejores Momentos',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
@@ -54,7 +54,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69bu: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.BlueTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -78,7 +78,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69pu: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -102,7 +102,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69r: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.RedFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   productType: CardProductType.Card,

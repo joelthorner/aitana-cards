@@ -36,7 +36,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
   year: 2023,
   cardSection: "Assist Queen",
   cardType: [
-    CardType.BaseInAction,
+    CardType.BaseSet,
+    CardType.InAction,
   ],
   productType: CardProductType.Card,
 };
@@ -56,7 +57,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34gr: Card = {
   year: 2023,
   cardSection: "Assist Queen",
   cardType: [
-    CardType.BaseInAction,
+    CardType.BaseSet,
+    CardType.InAction,
     CardType.Green,
   ],
   productType: CardProductType.Card,
@@ -78,7 +80,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34pu: Card = {
   year: 2023,
   cardSection: "Assist Queen",
   cardType: [
-    CardType.BaseInAction,
+    CardType.BaseSet,
+    CardType.InAction,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -102,7 +105,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34rb: Card = {
   year: 2023,
   cardSection: "Assist Queen",
   cardType: [
-    CardType.BaseInAction,
+    CardType.BaseSet,
+    CardType.InAction,
     CardType.Rainbow,
   ],
   productType: CardProductType.Card,
@@ -123,7 +127,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34bu: Card = {
   year: 2023,
   cardSection: "Assist Queen Autograph",
   cardType: [
-    CardType.ActionAutographs,
+    CardType.InAction,
+    CardType.Autographs,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -144,7 +149,8 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34pu: Card = {
   year: 2023,
   cardSection: "Assist Queen Autograph",
   cardType: [
-    CardType.ActionAutographs,
+    CardType.InAction,
+    CardType.Autographs,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
