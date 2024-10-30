@@ -1,9 +1,9 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
 
-import tabpcs_119_0 from "../img/cards/tabpcs_119_0.png";
-import tabpcs_119_1 from "../img/cards/tabpcs_119_1.png";
-import tabpcs_A119bu_0 from "../img/cards/tabpcs_A119bu_0.png";
+import tabpcs_119_0 from "../img/cards/tabpcs_119_0.jpg";
+import tabpcs_119_1 from "../img/cards/tabpcs_119_1.jpg";
+import tabpcs_A119bu_0 from "../img/cards/tabpcs_A119bu_0.jpg";
 import tabpcs_A119bu_1 from "../img/cards/tabpcs_A119bu_1.webp";
 import tabpcs_A119bu_2 from "../img/cards/tabpcs_A119bu_2.webp";
 

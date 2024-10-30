@@ -1,17 +1,17 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_45g_0 from "../img/cards/tabpcs_45g_0.png";
-import tabpcs_45g_1 from "../img/cards/tabpcs_45g_1.png";
-import tabpcs_45r_0 from "../img/cards/tabpcs_45r_0.png";
+import tabpcs_45g_0 from "../img/cards/tabpcs_45g_0.jpg";
+import tabpcs_45g_1 from "../img/cards/tabpcs_45g_1.jpg";
+import tabpcs_45r_0 from "../img/cards/tabpcs_45r_0.jpg";
 import tabpcs_45r_1 from "../img/cards/tabpcs_45r_1.webp";
 import tabpcs_45r_2 from "../img/cards/tabpcs_45r_2.webp";
-import tabpcs_45_0 from "../img/cards/tabpcs_45_0.png";
+import tabpcs_45_0 from "../img/cards/tabpcs_45_0.jpg";
 import tabpcs_45_1 from "../img/cards/tabpcs_45_1.webp";
 import tabpcs_45_2 from "../img/cards/tabpcs_45_2.webp";
-import tabpcs_45pu_0 from "../img/cards/tabpcs_45pu_0.png";
+import tabpcs_45pu_0 from "../img/cards/tabpcs_45pu_0.jpg";
 import tabpcs_45pu_1 from "../img/cards/tabpcs_45pu_1.webp";
 import tabpcs_45pu_2 from "../img/cards/tabpcs_45pu_2.webp";
-import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.png";
+import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.jpg";
 import tabpcs_45bu_1 from "../img/cards/tabpcs_45bu_1.webp";
 import tabpcs_45bu_2 from "../img/cards/tabpcs_45bu_2.webp";
 
@@ -30,7 +30,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45: Card = {
   year: 2024,
   cardSection: 'Playmakers',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -52,7 +52,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45bu: Card = {
   cardSection: 'Playmakers',
   brilli: CardBrilli.BlueTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -75,7 +75,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45pu: Card = {
   cardSection: 'Playmakers',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -98,7 +98,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45r: Card = {
   cardSection: 'Playmakers',
   brilli: CardBrilli.RedFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   productType: CardProductType.Card,
@@ -120,7 +120,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45g: Card = {
   cardSection: 'Playmakers',
   brilli: CardBrilli.GoldFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,

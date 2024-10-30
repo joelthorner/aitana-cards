@@ -1,28 +1,28 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsSimplicidadUefaClubCompetitions_2022_2023 } from "../collections";
 
-import tus23_1 from "../img/cards/tus23_1.png";
-import tus23_5p_0 from "../img/cards/tus23_5p_0.png";
+import tus23_1 from "../img/cards/tus23_1.jpg";
+import tus23_5p_0 from "../img/cards/tus23_5p_0.jpg";
 import tus23_5p_1 from "../img/cards/tus23_5p_1.webp";
 import tus23_5p_2 from "../img/cards/tus23_5p_2.webp";
-import tus23_5gr_0 from "../img/cards/tus23_5gr_0.png";
+import tus23_5gr_0 from "../img/cards/tus23_5gr_0.jpg";
 import tus23_5gr_1 from "../img/cards/tus23_5gr_1.webp";
 import tus23_5gr_2 from "../img/cards/tus23_5gr_2.webp";
 import tus23_5gr_3 from "../img/cards/tus23_5gr_3.webp";
-import tus23_5r_0 from "../img/cards/tus23_5r_0.png";
+import tus23_5r_0 from "../img/cards/tus23_5r_0.jpg";
 import tus23_5r_1 from "../img/cards/tus23_5r_1.webp";
 import tus23_5r_2 from "../img/cards/tus23_5r_2.webp";
-import tus23_5pu_0 from "../img/cards/tus23_5pu_0.png";
-import tus23_A5pu_0 from "../img/cards/tus23_A5pu_0.png";
-import tus23_A5gr_0 from "../img/cards/tus23_A5gr_0.png";
+import tus23_5pu_0 from "../img/cards/tus23_5pu_0.jpg";
+import tus23_A5pu_0 from "../img/cards/tus23_A5pu_0.jpg";
+import tus23_A5gr_0 from "../img/cards/tus23_A5gr_0.jpg";
 import tus23_A5gr_1 from "../img/cards/tus23_A5gr_1.jpg";
 import tus23_A5gr_2 from "../img/cards/tus23_A5gr_2.jpg";
 import tus23_A5gr_3 from "../img/cards/tus23_A5gr_3.jpg";
-import tus23_A5r_0 from "../img/cards/tus23_A5r_0.png";
+import tus23_A5r_0 from "../img/cards/tus23_A5r_0.jpg";
 import tus23_A5r_1 from "../img/cards/tus23_A5r_1.webp";
 import tus23_A5r_2 from "../img/cards/tus23_A5r_2.webp";
 import tus23_A5r_3 from "../img/cards/tus23_A5r_3.webp";
-import tus23_5rb_0 from "../img/cards/tus23_5rb_0.png";
+import tus23_5rb_0 from "../img/cards/tus23_5rb_0.jpg";
 import tus23_5rb_1 from "../img/cards/tus23_5rb_1.webp";
 import tus23_5rb_2 from "../img/cards/tus23_5rb_2.webp";
 

@@ -3,13 +3,13 @@
  */
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_118g_0 from "../img/cards/tabpcs_118_0.png";
+import tabpcs_118g_0 from "../img/cards/tabpcs_118_0.jpg";
 import tabpcs_118g_1 from "../img/cards/tabpcs_118_1.webp";
 import tabpcs_118g_2 from "../img/cards/tabpcs_118_2.webp";
-import tabpcs_118r_0 from "../img/cards/tabpcs_118r_0.png";
+import tabpcs_118r_0 from "../img/cards/tabpcs_118r_0.jpg";
 import tabpcs_118r_1 from "../img/cards/tabpcs_118r_1.webp";
 import tabpcs_118r_2 from "../img/cards/tabpcs_118r_2.webp";
-import tabpcs_118p_0 from "../img/cards/tabpcs_118p_0.png";
+import tabpcs_118p_0 from "../img/cards/tabpcs_118p_0.jpg";
 import tabpcs_118p_1 from "../img/cards/tabpcs_118p_1.webp";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118r: Card = {

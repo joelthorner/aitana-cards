@@ -1,44 +1,44 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFocusFcBarcelona_2023_2024 } from "../collections";
 
-import tffb2324_12_0 from "../img/cards/tffb2324_12_0.png";
+import tffb2324_12_0 from "../img/cards/tffb2324_12_0.jpg";
 import tffb2324_12_1 from "../img/cards/tffb2324_12_1.webp";
 import tffb2324_12_2 from "../img/cards/tffb2324_12_2.webp";
-import tffb2324_SAABr_0 from "../img/cards/tffb2324_SAABr_0.png";
+import tffb2324_SAABr_0 from "../img/cards/tffb2324_SAABr_0.jpg";
 import tffb2324_SAABr_1 from "../img/cards/tffb2324_SAABr_1.webp";
-import tffb2324_SAABg_0 from "../img/cards/tffb2324_SAABg_0.png";
+import tffb2324_SAABg_0 from "../img/cards/tffb2324_SAABg_0.jpg";
 import tffb2324_SAABg_1 from "../img/cards/tffb2324_SAABg_1.webp";
-import tffb2324_SAABgr_0 from "../img/cards/tffb2324_SAABgr_0.png";
+import tffb2324_SAABgr_0 from "../img/cards/tffb2324_SAABgr_0.jpg";
 import tffb2324_SAABgr_1 from "../img/cards/tffb2324_SAABgr_1.webp";
 import tffb2324_SAABgr_2 from "../img/cards/tffb2324_SAABgr_2.webp";
 import tffb2324_SAABgr_3 from "../img/cards/tffb2324_SAABgr_3.webp";
-import tffb2324_SAABy_0 from "../img/cards/tffb2324_SAABy_0.png";
+import tffb2324_SAABy_0 from "../img/cards/tffb2324_SAABy_0.jpg";
 import tffb2324_SAABy_1 from "../img/cards/tffb2324_SAABy_1.webp";
 import tffb2324_SAABy_2 from "../img/cards/tffb2324_SAABy_2.webp";
 import tffb2324_SAABy_3 from "../img/cards/tffb2324_SAABy_3.webp";
-import tffb2324_12gr_0 from "../img/cards/tffb2324_12gr_0.png";
+import tffb2324_12gr_0 from "../img/cards/tffb2324_12gr_0.jpg";
 import tffb2324_12gr_1 from "../img/cards/tffb2324_12gr_1.webp";
 import tffb2324_12gr_2 from "../img/cards/tffb2324_12gr_2.webp";
 import tffb2324_12gr_3 from "../img/cards/tffb2324_12gr_3.webp";
-import tffb2324_12g_0 from "../img/cards/tffb2324_12g_0.png";
+import tffb2324_12g_0 from "../img/cards/tffb2324_12g_0.jpg";
 import tffb2324_12g_1 from "../img/cards/tffb2324_12g_1.webp";
 import tffb2324_12g_2 from "../img/cards/tffb2324_12g_2.webp";
 import tffb2324_12g_3 from "../img/cards/tffb2324_12g_3.webp";
-import tffb2324_SAABo_0 from "../img/cards/tffb2324_SAABo_0.png";
+import tffb2324_SAABo_0 from "../img/cards/tffb2324_SAABo_0.jpg";
 import tffb2324_SAABo_1 from "../img/cards/tffb2324_SAABo_1.webp";
 import tffb2324_SAABo_2 from "../img/cards/tffb2324_SAABo_2.webp";
-import tffb2324_12bu_0 from "../img/cards/tffb2324_12bu_0.png";
-import tffb2324_12bu_1 from "../img/cards/tffb2324_12bu_1.png";
-import tffb2324_12bu_2 from "../img/cards/tffb2324_12bu_2.png";
+import tffb2324_12bu_0 from "../img/cards/tffb2324_12bu_0.jpg";
+import tffb2324_12bu_1 from "../img/cards/tffb2324_12bu_1.jpg";
+import tffb2324_12bu_2 from "../img/cards/tffb2324_12bu_2.jpg";
 import tffb2324_12bu_3 from "../img/cards/tffb2324_12bu_3.webp";
-import tffb2324_12ss_0 from "../img/cards/tffb2324_12ss_0.png";
+import tffb2324_12ss_0 from "../img/cards/tffb2324_12ss_0.jpg";
 import tffb2324_12ss_1 from "../img/cards/tffb2324_12ss_1.webp";
 import tffb2324_12ss_2 from "../img/cards/tffb2324_12ss_2.webp";
-import tffb2324_12o_0 from "../img/cards/tffb2324_12o_0.png";
+import tffb2324_12o_0 from "../img/cards/tffb2324_12o_0.jpg";
 import tffb2324_12o_1 from "../img/cards/tffb2324_12o_1.jpg";
 import tffb2324_12o_2 from "../img/cards/tffb2324_12o_2.jpg";
 import tffb2324_12o_3 from "../img/cards/tffb2324_12o_3.webp";
-import tffb2324_12r_0 from "../img/cards/tffb2324_12r_0.png";
+import tffb2324_12r_0 from "../img/cards/tffb2324_12r_0.jpg";
 import tffb2324_12r_1 from "../img/cards/tffb2324_12r_1.jpg";
 import tffb2324_12r_2 from "../img/cards/tffb2324_12r_2.jpg";
 
@@ -57,7 +57,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -77,7 +77,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ShutterSpeed,
   ],
   productType: CardProductType.Card,
@@ -101,7 +101,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
   productType: CardProductType.Card,
@@ -125,7 +125,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   productType: CardProductType.Card,
@@ -149,7 +149,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -173,7 +173,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
   ],
   productType: CardProductType.Card,
@@ -196,7 +196,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
   year: 2024,
   cardSection: "Snapshots",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   productType: CardProductType.Card,
@@ -220,7 +220,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Yellow,
     CardType.Autographs,
   ],
@@ -245,7 +245,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
     CardType.Autographs,
   ],
@@ -268,7 +268,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
     CardType.Autographs,
   ],
@@ -292,7 +292,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
     CardType.Autographs,
   ],
@@ -315,7 +315,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
   year: 2024,
   cardSection: "Snapshots Autographs",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
     CardType.Autographs,
   ],

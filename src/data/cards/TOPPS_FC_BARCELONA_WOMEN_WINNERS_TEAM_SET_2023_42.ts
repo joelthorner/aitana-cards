@@ -8,8 +8,8 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
-import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.png";
-import tcbwwts42gr_0 from "../img/cards/tcbwwts42gr_0.png";
+import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.jpg";
+import tcbwwts42gr_0 from "../img/cards/tcbwwts42gr_0.jpg";
 import tcbwwts42gr_1 from "../img/cards/tcbwwts42gr_1.webp";
 import tcbwwts42gr_2 from "../img/cards/tcbwwts42gr_2.webp";
 
@@ -26,7 +26,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42: Card = {
   year: 2023,
   cardSection: "Champions Team Card",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.TeamCard,
   ],
   productType: CardProductType.Card,
@@ -50,7 +50,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
   cardSection: "Champions Team Card",
   brilli: CardBrilli.GreenFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.TeamCard,
     CardType.Green,
   ],

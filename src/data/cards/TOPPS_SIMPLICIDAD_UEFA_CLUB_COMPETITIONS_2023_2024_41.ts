@@ -10,21 +10,21 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsSimplicidadUefaClubCompetitions_2023_2024 } from "../collections"
 
-import toppsSimplicidad_23_24Aitana from "../img/cards/toppsSimplicidad_23_24AitanaFront.png";
-import toppsSimplicidad_23_24Aitana_back from "../img/cards/toppsSimplicidad_23_24Aitana.png";
-import toppsSimplicidad_23_24Aitana41pu from "../img/cards/toppsSimplicidad_23_24Aitana41pu.png";
+import toppsSimplicidad_23_24Aitana from "../img/cards/toppsSimplicidad_23_24AitanaFront.jpg";
+import toppsSimplicidad_23_24Aitana_back from "../img/cards/toppsSimplicidad_23_24Aitana.jpg";
+import toppsSimplicidad_23_24Aitana41pu from "../img/cards/toppsSimplicidad_23_24Aitana41pu.jpg";
 import toppsSimplicidad_23_24Aitana41pu_2 from "../img/cards/toppsSimplicidad_23_24Aitana41pu_2.webp";
 import toppsSimplicidad_23_24Aitana41pu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41pu_3.webp";
-import toppsSimplicidad_23_24Aitana_autograpth from "../img/cards/toppsSimplicidad_23_24Aitana_autograpth.png";
-import toppsSimplicidad_23_24Aitana41gr from "../img/cards/toppsSimplicidad_23_24Aitana41gr.png";
+import toppsSimplicidad_23_24Aitana_autograpth from "../img/cards/toppsSimplicidad_23_24Aitana_autograpth.jpg";
+import toppsSimplicidad_23_24Aitana41gr from "../img/cards/toppsSimplicidad_23_24Aitana41gr.jpg";
 import toppsSimplicidad_23_24Aitana41gr_2 from "../img/cards/toppsSimplicidad_23_24Aitana41gr_2.webp";
 import toppsSimplicidad_23_24Aitana41gr_3 from "../img/cards/toppsSimplicidad_23_24Aitana41gr_3.webp";
-import toppsSimplicidad_23_24Aitana41rb from "../img/cards/toppsSimplicidad_23_24Aitana41rb.png";
+import toppsSimplicidad_23_24Aitana41rb from "../img/cards/toppsSimplicidad_23_24Aitana41rb.jpg";
 import toppsSimplicidad_23_24Aitana41rb_2 from "../img/cards/toppsSimplicidad_23_24Aitana41rb_2.webp";
 import toppsSimplicidad_23_24Aitana41rb_3 from "../img/cards/toppsSimplicidad_23_24Aitana41rb_3.webp";
-import toppsSimplicidad_23_24Aitana_autograpthRed from "../img/cards/toppsSimplicidad_23_24Aitana_autograpthRed.png";
+import toppsSimplicidad_23_24Aitana_autograpthRed from "../img/cards/toppsSimplicidad_23_24Aitana_autograpthRed.jpg";
 import toppsSimplicidad_23_24Aitana_autograpthRed_2 from "../img/cards/451600600_1181376919733201_6458277606198802199_n.jpeg";
-import toppsSimplicidad_23_24Aitana41bu from "../img/cards/toppsSimplicidad_23_24Aitana41bu.png";
+import toppsSimplicidad_23_24Aitana41bu from "../img/cards/toppsSimplicidad_23_24Aitana41bu.jpg";
 import toppsSimplicidad_23_24Aitana41bu_2 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_2.webp";
 import toppsSimplicidad_23_24Aitana41bu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_3.webp";
 import tducc_9r_5 from "../img/cards/tducc_9r_5.webp";

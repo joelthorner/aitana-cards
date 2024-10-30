@@ -1,55 +1,55 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
-import AAB1rgm_0 from "../img/cards/AAB1rgm_0.png";
+import AAB1rgm_0 from "../img/cards/AAB1rgm_0.jpg";
 import AAB1rgm_1 from "../img/cards/AAB1rgm_1.webp";
 import AAB1rgm_2 from "../img/cards/AAB1rgm_2.webp";
-import c1pp_0 from "../img/cards/c1pp_0.png";
+import c1pp_0 from "../img/cards/c1pp_0.jpg";
 import c1pp_1 from "../img/cards/c1pp_1.webp";
 import c1pp_2 from "../img/cards/c1pp_2.webp";
-import c1o_0 from "../img/cards/c1o_0.png";
+import c1o_0 from "../img/cards/c1o_0.jpg";
 import c1o_1 from "../img/cards/c1o_1.webp";
 import c1o_2 from "../img/cards/c1o_2.webp";
-import c1ap_0 from "../img/cards/c1ap_0.png";
+import c1ap_0 from "../img/cards/c1ap_0.jpg";
 import c1ap_1 from "../img/cards/c1ap_1.webp";
 import c1ap_2 from "../img/cards/c1ap_2.webp";
-import c1g_0 from "../img/cards/c1g_0.png";
+import c1g_0 from "../img/cards/c1g_0.jpg";
 import c1g_1 from "../img/cards/c1g_1.webp";
 import c1g_2 from "../img/cards/c1g_2.webp";
-import c1_0 from "../img/cards/c1_0.png";
+import c1_0 from "../img/cards/c1_0.jpg";
 import c1_1 from "../img/cards/c1_1.webp";
 import c1_2 from "../img/cards/c1_2.webp";
-import c1ngrp_0 from "../img/cards/c1ngrp_0.png";
+import c1ngrp_0 from "../img/cards/c1ngrp_0.jpg";
 import c1ngrp_1 from "../img/cards/c1ngrp_1.webp";
 import c1ngrp_2 from "../img/cards/c1ngrp_2.webp";
-import c1pup_0 from "../img/cards/c1pup_0.png";
+import c1pup_0 from "../img/cards/c1pup_0.jpg";
 import c1pup_1 from "../img/cards/c1pup_1.webp";
 import c1pup_2 from "../img/cards/c1pup_2.webp";
-import c1pr_0 from "../img/cards/c1pr_0.png";
+import c1pr_0 from "../img/cards/c1pr_0.jpg";
 import c1pr_1 from "../img/cards/c1pr_1.webp";
 import c1pr_2 from "../img/cards/c1pr_2.webp";
-import c1bum_0 from "../img/cards/c1bum_0.png";
+import c1bum_0 from "../img/cards/c1bum_0.jpg";
 import c1bum_1 from "../img/cards/c1bum_1.webp";
 import c1bum_2 from "../img/cards/c1bum_2.webp";
-import c1rgm_0 from "../img/cards/c1rgm_0.png";
+import c1rgm_0 from "../img/cards/c1rgm_0.jpg";
 import c1rgm_1 from "../img/cards/c1rgm_1.webp";
 import c1rgm_2 from "../img/cards/c1rgm_2.webp";
-import c1r_0 from "../img/cards/c1r_0.png";
+import c1r_0 from "../img/cards/c1r_0.jpg";
 import c1r_1 from "../img/cards/c1r_1.webp";
 import c1r_2 from "../img/cards/c1r_2.webp";
-import AAB1g_0 from "../img/cards/AAB1g_0.png";
+import AAB1g_0 from "../img/cards/AAB1g_0.jpg";
 import AAB1g_1 from "../img/cards/AAB1g_1.webp";
 import AAB1g_2 from "../img/cards/AAB1g_2.webp";
-import AAB1ow_0 from "../img/cards/AAB1ow_0.png";
+import AAB1ow_0 from "../img/cards/AAB1ow_0.jpg";
 import AAB1ow_1 from "../img/cards/AAB1ow_1.webp";
 import AAB1ow_2 from "../img/cards/AAB1ow_2.webp";
-import c1xi_0 from "../img/cards/c1xi_0.png";
+import c1xi_0 from "../img/cards/c1xi_0.jpg";
 import c1xi_1 from "../img/cards/c1xi_1.webp";
 import c1xi_2 from "../img/cards/c1xi_2.webp";
-import AAB1r_0 from "../img/cards/AAB1r_0.png";
-import c1cm_0 from "../img/cards/c1cm_0.png";
+import AAB1r_0 from "../img/cards/AAB1r_0.jpg";
+import c1cm_0 from "../img/cards/c1cm_0.jpg";
 import c1cm_1 from "../img/cards/c1cm_1.jpg";
-import c1i_0 from "../img/cards/c1i_0.png";
+import c1i_0 from "../img/cards/c1i_0.jpg";
 import c1i_1 from "../img/cards/c1i_1.webp";
 import c1i_2 from "../img/cards/c1i_2.webp";
 import c1i_3 from "../img/cards/c1i_3.webp";
@@ -75,7 +75,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -96,7 +96,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1r: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
@@ -119,8 +119,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ap: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.AquaPrismRefactor,
+    CardType.BaseSet,
+    CardType.Aqua,
+    CardType.Prism,
+    CardType.Refractor,
   ],
   brilli: CardBrilli.AquaPrism,
   productType: CardProductType.Card,
@@ -142,8 +144,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pr: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.PulsarRefractor,
+    CardType.BaseSet,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.Holo,
@@ -166,8 +169,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pup: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.PurplePulsarRefractor,
+    CardType.BaseSet,
+    CardType.Purple,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   brilli: CardBrilli.PurpleFoil,
   productType: CardProductType.Card,
@@ -190,8 +195,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1bum: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.BlueMojo,
+    CardType.BaseSet,
+    CardType.Blue,
+    CardType.Mojo,
   ],
   brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
@@ -214,8 +220,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1pp: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.PinkPrism,
+    CardType.BaseSet,
+    CardType.Pink,
+    CardType.Prism,
   ],
   brilli: CardBrilli.PinkRefractorTopps,
   productType: CardProductType.Card,
@@ -238,7 +245,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1ngrp: Card = 
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.NeonGreen,
   ],
   brilli: CardBrilli.GreenRefractorTopps,
@@ -262,8 +269,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rgm: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
-    CardType.RoseGoldMojo,
+    CardType.BaseSet,
+    CardType.RoseGold,
+    CardType.Mojo,
   ],
   brilli: CardBrilli.RoseGoldMojo,
   productType: CardProductType.Card,
@@ -285,7 +293,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1cm: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ColorMatch,
     CardType.Blue,
   ],
@@ -311,7 +319,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1i: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Inferno,
   ],
   brilli: CardBrilli.InfernoRefractorTopps,
@@ -335,7 +343,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1g: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   brilli: CardBrilli.GoldFoil,
@@ -359,7 +367,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1o: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
   ],
   brilli: CardBrilli.OrangeFoil,
@@ -383,7 +391,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1xi: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.XI,
   ],
   brilli: CardBrilli.FractedGoldEffect,
@@ -406,7 +414,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_1rd: Card = {
   year: 2024,
   cardSection: "Base set",
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
   ],
   brilli: CardBrilli.RedFoil,
@@ -431,7 +439,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1rgm: Card 
   cardSection: "Chrome Autographs",
   cardType: [
     CardType.Autographs,
-    CardType.RoseGoldMojo,
+    CardType.RoseGold,
+    CardType.Mojo,
   ],
   brilli: CardBrilli.RoseGoldMojo,
   productType: CardProductType.Card,
@@ -503,7 +512,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AAB1ow: Card =
   cardSection: "Chrome Autographs",
   cardType: [
     CardType.Autographs,
-    CardType.OrangeWave,
+    CardType.Orange,
+    CardType.Wave,
   ],
   brilli: CardBrilli.OrangeFoil,
   productType: CardProductType.Card,

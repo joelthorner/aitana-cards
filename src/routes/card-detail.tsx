@@ -162,7 +162,7 @@ export default function CardDetail() {
             </span>
           </div>
           {card.cardType
-            .filter((type) => type !== CardType.RookieCard)
+            .filter((type) => type !== CardType.Rookie)
             .map((type) => (
               <div key={type} className="hs-tooltip">
                 <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
@@ -177,7 +177,7 @@ export default function CardDetail() {
                 </span>
               </div>
             ))}
-          {card.cardType.includes(CardType.RookieCard) && (
+          {card.cardType.includes(CardType.Rookie) && (
             <div className="hs-tooltip text-xs font-medium">
               <img src={RCImage} alt="Rookie Card" className="hs-tooltip-toggle h-6" title="Rookie Card" />
               <span

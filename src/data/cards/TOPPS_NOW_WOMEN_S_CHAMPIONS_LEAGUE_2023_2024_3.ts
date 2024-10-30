@@ -4,7 +4,7 @@
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
-import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.png";
+import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.jpg";
 import toppsNowBrilliantBraceInOpeningGame2 from "../img/cards/topps-now-brilliant-brace-in-opening-game-2.webp";
 import toppsNowBrilliantBraceInOpeningGame_back from "../img/cards/topps-now-brilliant-brace-in-opening-game-back.webp";
 
@@ -27,7 +27,7 @@ const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_3: Card = {
     "https://es.topps.com/products/topps-es-aitana-bonmati-brilliant-brace-in-opening-game-uwcl-topps-now-reg-carta-3",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard],
+  cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
 };

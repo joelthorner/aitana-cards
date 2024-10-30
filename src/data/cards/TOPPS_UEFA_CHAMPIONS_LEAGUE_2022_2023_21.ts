@@ -4,7 +4,7 @@
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2022_2023 } from "../collections";
 
-import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "../img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.png";
+import aitanaBonmati_2022_23TopMidfieler_2021_22_543 from "../img/cards/aitana-bonmati-2022-23-top-midfieler-2021-22-543.jpg";
 
 const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
   id: 'topps-uefa-champions-league-2022-2023-21',
@@ -22,7 +22,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_21: Card = {
   ],
   cardSection: '2021/22 UWCL Standout Performers',
   cardType: [
-    CardType.Base,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Sticker,
 };

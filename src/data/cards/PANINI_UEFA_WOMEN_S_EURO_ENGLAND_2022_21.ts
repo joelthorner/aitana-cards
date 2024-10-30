@@ -19,7 +19,7 @@ const PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_21: Card = {
   status: CardStatus.Falti,
   collection: PaniniUefaWomenSEuroEngland_2022,
   year: 2022,
-  cardType: [CardType.Base, CardType.TeamCard],
+  cardType: [CardType.BaseSet, CardType.TeamCard],
   cardSection: 'Spain',
   productType: CardProductType.Sticker,
   orientation: CardOrientation.Horizontal,

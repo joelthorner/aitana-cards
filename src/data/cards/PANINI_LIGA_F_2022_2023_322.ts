@@ -18,8 +18,8 @@ const PANINI_LIGA_F_2022_2023_322: Card = {
   year: 2023,
   cardSection: 'F STARS',
   cardType: [
-    CardType.Base,
-    CardType.GoldMetalic,
+    CardType.BaseSet,
+    CardType.Gold,
   ],
   productType: CardProductType.Sticker,
 };

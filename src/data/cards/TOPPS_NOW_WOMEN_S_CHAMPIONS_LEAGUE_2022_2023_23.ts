@@ -1,7 +1,7 @@
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2022_2023 } from "../collections";
 
-import cardnow23 from "../img/cards/cardnow23.png";
+import cardnow23 from "../img/cards/cardnow23.jpg";
 import cardnow23_1 from "../img/cards/cardnow23_1.webp";
 import cardnow23_2 from "../img/cards/cardnow23_2.webp";
 
@@ -19,7 +19,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2022_2023_23: Card = {
   collection: ToppsNowWomenSChampionsLeague_2022_2023,
   year: 2023,
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.TeamCard],
+  cardType: [CardType.BaseSet, CardType.TeamCard],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
 };

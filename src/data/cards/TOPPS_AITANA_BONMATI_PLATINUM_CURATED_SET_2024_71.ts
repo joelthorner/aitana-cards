@@ -1,13 +1,13 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_A71p_0 from "../img/cards/tabpcs_116p_0.png";
+import tabpcs_A71p_0 from "../img/cards/tabpcs_116p_0.jpg";
 import tabpcs_A71p_1 from "../img/cards/tabpcs_116p_1.webp";
 import tabpcs_A71p_2 from "../img/cards/tabpcs_116p_2.webp";
 import tabpcs_A71p_3 from "../img/cards/tabpcs_116p_3.webp";
-import tabpcs_71pu_0 from "../img/cards/tabpcs_71pu_0.png";
+import tabpcs_71pu_0 from "../img/cards/tabpcs_71pu_0.jpg";
 import tabpcs_71pu_1 from "../img/cards/tabpcs_71pu_1.webp";
 import tabpcs_71pu_2 from "../img/cards/tabpcs_71pu_2.webp";
-import tabpcs_71_0 from "../img/cards/tabpcs_71_0.png";
+import tabpcs_71_0 from "../img/cards/tabpcs_71_0.jpg";
 import tabpcs_71_1 from "../img/cards/tabpcs_71_1.webp";
 import tabpcs_71_2 from "../img/cards/tabpcs_71_2.webp";
 import tabpcs_71g_0 from "../img/cards/tabpcs_71g_0.jpg";
@@ -28,7 +28,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71: Card = {
   year: 2024,
   cardSection: 'Mejores Momentos',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
@@ -51,7 +51,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71pu: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
   ],
   productType: CardProductType.Card,
@@ -74,7 +74,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71g: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.GoldFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,

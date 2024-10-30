@@ -6,18 +6,18 @@ import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../t
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import aitanaBonmati_7ChromeFcb_22_23 from "../img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
-import aitanaBonmati_7ChromeFcb_22_23_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_refractor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_bnw_refractor.png";
-import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_bnw_refractor.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_x_fractor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.png";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_blue from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.png";
-import aitanaBonmati_7ChromeFcb_22_23_gold_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_gold_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_blue from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_gold_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_gold_refractor.jpg";
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   id: 'topps-chrome-fc-barcelona-2022-2023-7',
@@ -29,7 +29,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
@@ -49,7 +49,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_REFRACTOR_7rf: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Refractor,
   ],
   cardSection: 'FC Barcelona',
@@ -70,7 +70,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7x: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.XFractor,
   ],
   cardSection: 'FC Barcelona',
@@ -90,8 +90,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7b: Card = {
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
   cardType: [
-    CardType.BaseCard,
-    CardType.BlackAndWhiteWave,
+    CardType.BaseSet,
+    CardType.Wave,
+    CardType.BlackAndWhite,
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
@@ -112,7 +113,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
   year: 2023,
   numbered: 99,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Barça,
   ],
   cardSection: 'FC Barcelona',
@@ -136,7 +137,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
   year: 2023,
   numbered: 75,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Blue,
   ],
   cardSection: 'FC Barcelona',
@@ -157,7 +158,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
   year: 2023,
   numbered: 50,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   cardSection: 'FC Barcelona',
@@ -176,8 +177,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
 //   year: 2023,
 //   numbered: 25,
 //   cardType: [
-//     CardType.BaseCard,
-//     CardType.OrangeXFractor,
+//     CardType.BaseSet,
+//     CardType.Orange,
+//     CardType.XFractor,
 //   ],
 //   cardSection: 'FC Barcelona',
 //   productType: CardProductType.Card,
@@ -195,7 +197,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
 //   year: 2023,
 //   numbered: 15,
 //   cardType: [
-//     CardType.BaseCard,
+//     CardType.BaseSet,
 //     CardType.Purple,
 //   ],
 //   cardSection: 'FC Barcelona',
@@ -214,8 +216,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
 //   year: 2023,
 //   numbered: 5,
 //   cardType: [
-//     CardType.BaseCard,
-//     CardType.RedXFractor,
+//     CardType.BaseSet,
+//     CardType.XFractor,
+//     CardType.Red,
 //   ],
 //   cardSection: 'FC Barcelona',
 //   productType: CardProductType.Card,
@@ -233,7 +236,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
 //   year: 2023,
 //   numbered: 1,
 //   cardType: [
-//     CardType.BaseCard,
+//     CardType.BaseSet,
 //     CardType.SuperFractor,
 //   ],
 //   cardSection: 'FC Barcelona',

@@ -1,22 +1,22 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsDecoUefaClubCompetitions_2023_2024 } from "../collections";
 
-import tducc_9_0 from "../img/cards/tducc_9_0.png";
+import tducc_9_0 from "../img/cards/tducc_9_0.jpg";
 import tducc_9_1 from "../img/cards/tducc_9_1.webp";
 import tducc_9_2 from "../img/cards/tducc_9_2.webp";
 import tducc_9_3 from "../img/cards/tducc_9_3.webp";
 import tducc_9_4 from "../img/cards/tducc_9_4.webp";
-import tducc_9r_0 from "../img/cards/tducc_9r_0.png";
+import tducc_9r_0 from "../img/cards/tducc_9r_0.jpg";
 import tducc_9r_1 from "../img/cards/tducc_9r_1.webp";
 import tducc_9r_2 from "../img/cards/tducc_9r_2.webp";
 import tducc_9r_3 from "../img/cards/tducc_9r_3.webp";
 import tducc_9r_4 from "../img/cards/tducc_9r_4.webp";
 import tducc_9r_5 from "../img/cards/tducc_9r_5.webp";
 import tducc_9r_6 from "../img/cards/tducc_9r_6.webp";
-import tducc_9b_0 from "../img/cards/tducc_9b_0.png";
+import tducc_9b_0 from "../img/cards/tducc_9b_0.jpg";
 import tducc_9b_1 from "../img/cards/tducc_9b_1.webp";
 import tducc_9b_2 from "../img/cards/tducc_9b_2.webp";
-import tducc_9p_0 from "../img/cards/tducc_9p_0.png";
+import tducc_9p_0 from "../img/cards/tducc_9p_0.jpg";
 import tducc_9p_1 from "../img/cards/tducc_9p_1.webp";
 import tducc_9p_2 from "../img/cards/tducc_9p_2.webp";
 import tducc_9p_3 from "../img/cards/tducc_9p_3.webp";

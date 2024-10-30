@@ -27,7 +27,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5: Card =
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -48,7 +48,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5w: Card 
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Wooden,
   ],
   productType: CardProductType.Card,
@@ -70,7 +70,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5g: Card 
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -93,7 +93,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5gr: Card
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Green,
   ],
   productType: CardProductType.Card,

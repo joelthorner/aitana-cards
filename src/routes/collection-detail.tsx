@@ -73,20 +73,24 @@ export default function CollectionDetail() {
               Total cards found
             </span>
           </div>
-          <div className="hs-tooltip">
-            <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">{collection.serie}</span>
-            <span
-              className="hs-tooltip-content font-normal text-xs hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
-              role="tooltip"
-            >
-              Collection serie
-            </span>
-          </div>
+          {collection.serie && (
+            <div className="hs-tooltip">
+              <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                {collection.serie}
+              </span>
+              <span
+                className="hs-tooltip-content font-normal text-xs hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                role="tooltip"
+              >
+                Collection serie
+              </span>
+            </div>
+          )}
         </div>
 
-        {collection.description && <p className="text-sm mt-4 text-zinc-500">{collection.description}</p>}
+        {collection.description && collection.description.length > 0 && <p className="text-sm mt-4 text-zinc-500">{collection.description}</p>}
 
-        {collection.links && (
+        {collection.links.length > 0 && (
           <div className="flex flex-col mt-4">
             {collection.links?.map((link) => (
               <a

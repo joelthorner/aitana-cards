@@ -4,8 +4,8 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2022_2023 } from "../collections";
 
-import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.png";
-import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.png";
+import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.jpg";
+import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21_back.jpg";
 
 const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543: Card = {
   id: 'topps-uefa-champions-league-2022-2023-543',
@@ -26,7 +26,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543: Card = {
   ],
   cardSection: 'UEFA Women\'s Champions League',
   cardType: [
-    CardType.Base,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Sticker,
 };

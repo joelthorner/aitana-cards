@@ -1,9 +1,9 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_64p_0 from "../img/cards/tabpcs_64p_0.png";
+import tabpcs_64p_0 from "../img/cards/tabpcs_64p_0.jpg";
 import tabpcs_64p_1 from "../img/cards/tabpcs_64p_1.webp";
 import tabpcs_64p_2 from "../img/cards/tabpcs_64p_2.webp";
-import tabpcs_64_0 from "../img/cards/tabpcs_64_0.png";
+import tabpcs_64_0 from "../img/cards/tabpcs_64_0.jpg";
 import tabpcs_64_1 from "../img/cards/tabpcs_64_1.webp";
 import tabpcs_64_2 from "../img/cards/tabpcs_64_2.webp";
 
@@ -22,7 +22,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64: Card = {
   year: 2024,
   cardSection: 'Mejores Momentos',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
@@ -45,7 +45,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64p: Card = {
   cardSection: 'Mejores Momentos',
   brilli: CardBrilli.PinkFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Pink,
   ],
   productType: CardProductType.Card,

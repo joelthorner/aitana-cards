@@ -4,15 +4,15 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
-import cardnow21 from "../img/cards/cardnow21.png";
-import cardnow21_2 from "../img/cards/artwcl-16c2s-24tn-021_5.png";
-import cardnow21_back from "../img/cards/artwcl-16c2s-24tn-021-back_5.png";
-import cardnow21pu from "../img/cards/cardnow21pu.png";
-import cardnow21pu_2 from "../img/cards/artwcl-16c2s-24tn-021-p99_5.png";
-import cardnow21bl from "../img/cards/cardnow21bl.png";
-import cardnow21bl_2 from "../img/cards/artwcl-16c2s-24tn-021-p10_5.png";
-import cardnow21g from "../img/cards/cardnow21g.png";
-import cardnow21g_2 from "../img/cards/artwcl-16c2s-24tn-021-p1_5.png";
+import cardnow21 from "../img/cards/cardnow21.jpg";
+import cardnow21_2 from "../img/cards/artwcl-16c2s-24tn-021_5.jpg";
+import cardnow21_back from "../img/cards/artwcl-16c2s-24tn-021-back_5.jpg";
+import cardnow21pu from "../img/cards/cardnow21pu.jpg";
+import cardnow21pu_2 from "../img/cards/artwcl-16c2s-24tn-021-p99_5.jpg";
+import cardnow21bl from "../img/cards/cardnow21bl.jpg";
+import cardnow21bl_2 from "../img/cards/artwcl-16c2s-24tn-021-p10_5.jpg";
+import cardnow21g from "../img/cards/cardnow21g.jpg";
+import cardnow21g_2 from "../img/cards/artwcl-16c2s-24tn-021-p1_5.jpg";
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
   id: 'topps-now-women-s-champions-league-2023-2024-21',
@@ -31,7 +31,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
     "https://es.topps.com/products/uefa-women-s-champions-league-winners-2023-24-23-24-uwcl-topps-now-reg-card-21-2",
   ],
   cardSection: "FC Barcelona",
-  cardType: [CardType.BaseCard, CardType.TeamCard],
+  cardType: [CardType.BaseSet, CardType.TeamCard],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
 };

@@ -28,7 +28,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_CZ09y: Ca
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ChineseZodiac,
     CardType.Yellow,
   ],
@@ -52,7 +52,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_CZ09g: Ca
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ChineseZodiac,
     CardType.Gold,
   ],
@@ -75,7 +75,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_CZ09w: Ca
   year: 2024,
   cardSection: 'Base set',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.ChineseZodiac,
     CardType.White,
   ],

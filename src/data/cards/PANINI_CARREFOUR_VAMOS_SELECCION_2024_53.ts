@@ -1,7 +1,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniCarrefourVamosSeleccion_2024 } from "../collections";
 
-import pcvs_53_0 from "../img/cards/pcvs_53_0.png";
+import pcvs_53_0 from "../img/cards/pcvs_53_0.jpg";
 import pcvs_53_1 from "../img/cards/pcvs_53_1.webp";
 import pcvs_53_2 from "../img/cards/pcvs_53_2.webp";
 
@@ -17,8 +17,8 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_53: Card = {
   cardSection: 'Selección Femenina',
   productType: CardProductType.Sticker,
   cardType: [
-    CardType.Base,
-    CardType.GoldMetalic,
+    CardType.BaseSet,
+    CardType.Gold,
   ],
   year: 2024,
   links: [

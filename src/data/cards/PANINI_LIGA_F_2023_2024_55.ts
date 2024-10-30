@@ -4,7 +4,7 @@
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2023_2024 } from "../collections";
 
-import ligaF2324_55 from '../img/cards/ligaF2324.png';
+import ligaF2324_55 from '../img/cards/ligaF2324.jpg';
 
 const PANINI_LIGA_F_2023_2024_55: Card = {
   id: 'panini-liga-f-2023-2024-55',
@@ -19,7 +19,7 @@ const PANINI_LIGA_F_2023_2024_55: Card = {
   year: 2023,
   productType: CardProductType.Sticker,
   cardSection: 'FC Barcelona',
-  cardType: [CardType.Base],
+  cardType: [CardType.BaseSet],
 };
 
 export default PANINI_LIGA_F_2023_2024_55;

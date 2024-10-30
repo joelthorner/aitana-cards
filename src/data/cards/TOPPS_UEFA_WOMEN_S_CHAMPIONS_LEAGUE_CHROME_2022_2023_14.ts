@@ -1,63 +1,63 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "../collections";
 
-import c14pp_0 from "../img/cards/c14pp_0.png";
+import c14pp_0 from "../img/cards/c14pp_0.jpg";
 import c14pp_1 from "../img/cards/c14pp_1.webp";
 import c14pp_2 from "../img/cards/c14pp_2.webp";
 import c14pp_3 from "../img/cards/c14pp_3.webp";
 import c14pp_4 from "../img/cards/c14pp_4.webp";
-import c14rgm_0 from "../img/cards/c14rgm_0.png";
+import c14rgm_0 from "../img/cards/c14rgm_0.jpg";
 import c14rgm_1 from "../img/cards/c14rgm_1.webp";
 import c14rgm_2 from "../img/cards/c14rgm_2.webp";
-import c14bm_0 from "../img/cards/c14bm_0.png";
+import c14bm_0 from "../img/cards/c14bm_0.jpg";
 import c14bm_1 from "../img/cards/c14bm_1.webp";
 import c14bm_2 from "../img/cards/c14bm_2.webp";
-import c14ap_0 from "../img/cards/c14ap_0.png";
+import c14ap_0 from "../img/cards/c14ap_0.jpg";
 import c14ap_1 from "../img/cards/c14ap_1.webp";
 import c14ap_2 from "../img/cards/c14ap_2.webp";
 import c14ap_3 from "../img/cards/c14ap_3.webp";
 import c14ap_4 from "../img/cards/c14ap_4.webp";
 import c14ap_5 from "../img/cards/c14ap_5.webp";
 import c14ap_6 from "../img/cards/c14ap_6.webp";
-import c14_0 from "../img/cards/c14_0.png";
+import c14_0 from "../img/cards/c14_0.jpg";
 import c14_1 from "../img/cards/c14_1.webp";
 import c14_2 from "../img/cards/c14_2.webp";
-import c14AABi_0 from "../img/cards/c14i_0.png";
+import c14AABi_0 from "../img/cards/c14i_0.jpg";
 import c14AABi_1 from "../img/cards/c14i_1.webp";
 import c14AABi_2 from "../img/cards/c14i_2.webp";
-import c14A_ABg_0 from "../img/cards/c14A_ABg_0.png";
+import c14A_ABg_0 from "../img/cards/c14A_ABg_0.jpg";
 import c14A_ABg_1 from "../img/cards/c14A_ABg_1.webp";
 import c14A_ABg_2 from "../img/cards/c14A_ABg_2.webp";
-import c14AABpp_0 from "../img/cards/c14AABpp_0.png";
+import c14AABpp_0 from "../img/cards/c14AABpp_0.jpg";
 import c14AABpp_1 from "../img/cards/c14AABpp_1.webp";
 import c14AABpp_2 from "../img/cards/c14AABpp_2.webp";
-import c14AAB_0 from "../img/cards/c14AAB_0.png";
+import c14AAB_0 from "../img/cards/c14AAB_0.jpg";
 import c14AAB_1 from "../img/cards/c14AAB_1.webp";
 import c14AAB_2 from "../img/cards/c14AAB_2.webp";
-import c14g_0 from "../img/cards/c14g_0.png";
+import c14g_0 from "../img/cards/c14g_0.jpg";
 import c14g_1 from "../img/cards/c14g_1.webp";
 import c14g_2 from "../img/cards/c14g_2.webp";
-import c14r_0 from "../img/cards/c14r_0.png";
+import c14r_0 from "../img/cards/c14r_0.jpg";
 import c14r_1 from "../img/cards/c14r_1.webp";
 import c14r_2 from "../img/cards/c14r_2.webp";
 import c14pl_0 from "../img/cards/c14pl_0.jpg";
 import c14pl_1 from "../img/cards/c14pl_1.jpg";
 import c14ref_0 from "../img/cards/c14ref_0.jpg";
 import c14ref_1 from "../img/cards/c14ref_1.jpg";
-import c14pup_0 from "../img/cards/c14pup_0.png";
+import c14pup_0 from "../img/cards/c14pup_0.jpg";
 import c14pup_1 from "../img/cards/c14pup_1.webp";
 import c14pup_2 from "../img/cards/c14pup_2.webp";
-import c14A_ABow_0 from "../img/cards/c14A_ABow_0.png";
+import c14A_ABow_0 from "../img/cards/c14A_ABow_0.jpg";
 import c14A_ABow_1 from "../img/cards/c14A_ABow_1.webp";
 import c14A_ABow_2 from "../img/cards/c14A_ABow_2.webp";
 import c14AAB_3 from "../img/cards/c14AAB_3.jpg";
 import c14AAB_4 from "../img/cards/c14AAB_4.jpg";
-import c14o_0 from "../img/cards/c14o_0.png";
+import c14o_0 from "../img/cards/c14o_0.jpg";
 import c14o_1 from "../img/cards/c14o_1.webp";
 import c14ref_2 from "../img/cards/c14ref_2.webp";
 import c14ref_3 from "../img/cards/c14ref_3.webp";
 import c14AABpp_mixed from "../img/cards/c14AABpp_mixed.jpg";
-import c14i2_0 from "../img/cards/c14i2_0.png";
+import c14i2_0 from "../img/cards/c14i2_0.jpg";
 import c14i2_1 from "../img/cards/c14i2_1.webp";
 import c14i2_2 from "../img/cards/c14i2_2.webp";
 
@@ -76,7 +76,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
   ],
   productType: CardProductType.Card,
 };
@@ -98,7 +98,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref: Card = 
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
@@ -119,8 +119,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl: Card = {
   year: 2023,
   cardSection: 'FC Barcelona',
   cardType: [
-    CardType.BaseCard,
-    CardType.PulsarRefractor,
+    CardType.BaseSet,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
 };
@@ -145,8 +146,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.AquaPrism,
   cardType: [
-    CardType.BaseCard,
-    CardType.AquaPrismRefactor,
+    CardType.BaseSet,
+    CardType.Aqua,
+    CardType.Prism,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
 };
@@ -167,9 +170,10 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup: Card = 
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.PurpleFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Purple,
-    CardType.PulsarRefractor,
+    CardType.Pulsar,
+    CardType.Refractor,
   ],
   productType: CardProductType.Card,
   numbered: 299,
@@ -192,8 +196,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.BlueCristall,
   cardType: [
-    CardType.BaseCard,
-    CardType.BlueMojo,
+    CardType.BaseSet,
+    CardType.Blue,
+    CardType.Mojo,
   ],
   productType: CardProductType.Card,
 };
@@ -217,8 +222,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.PinkRefractorTopps,
   cardType: [
-    CardType.BaseCard,
-    CardType.PinkPrism,
+    CardType.BaseSet,
+    CardType.Pink,
+    CardType.Prism,
   ],
   productType: CardProductType.Card,
 };
@@ -240,8 +246,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = 
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.RoseGoldMojo,
   cardType: [
-    CardType.BaseCard,
-    CardType.RoseGoldMojo,
+    CardType.BaseSet,
+    CardType.RoseGold,
+    CardType.Mojo,
   ],
   productType: CardProductType.Card,
 };
@@ -263,7 +270,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.InfernoRefractorTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Inferno,
   ],
   productType: CardProductType.Card,
@@ -286,7 +293,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.GoldFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Gold,
   ],
   productType: CardProductType.Card,
@@ -308,7 +315,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.OrangeFoil,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Orange,
     CardType.Refractor,
   ],
@@ -332,7 +339,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
   cardSection: 'FC Barcelona',
   brilli: CardBrilli.RedRefractorTopps,
   cardType: [
-    CardType.BaseCard,
+    CardType.BaseSet,
     CardType.Red,
     CardType.Refractor,
   ],
@@ -380,7 +387,8 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp: Card = 
   brilli: CardBrilli.PinkRefractorTopps,
   cardType: [
     CardType.Autographs,
-    CardType.PinkPrism,
+    CardType.Pink,
+    CardType.Prism,
   ],
   productType: CardProductType.Card,
 };
@@ -451,7 +459,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = 
   cardType: [
     CardType.Autographs,
     CardType.Orange,
-    CardType.OrangeWave,
+    CardType.Wave,
   ],
   productType: CardProductType.Card,
 };

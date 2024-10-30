@@ -4,7 +4,7 @@ import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 import QAB1 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook.jpg";
 import QAB1_2 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_2.jpg";
 import QAB1_3 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_3.jpg";
-import QAB1ng_0 from "../img/cards/QAB1ng_0.png";
+import QAB1ng_0 from "../img/cards/QAB1ng_0.jpg";
 import QAB1ng_1 from "../img/cards/QAB1ng_1.webp";
 import QAB1ng_2 from "../img/cards/QAB1ng_2.webp";
 import QAB1ng_3 from "../img/cards/QAB1ng_3.webp";

@@ -1,7 +1,7 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsInceptionUefaClubCompetitions_2023_2024 } from "../collections";
 
-import cDA170r_0 from "../img/cards/cDA170r_0.png";
+import cDA170r_0 from "../img/cards/cDA170r_0.jpg";
 import cDA170r_1 from "../img/cards/cDA170r_1.webp";
 import cDA170r_2 from "../img/cards/cDA170r_2.webp";
 import cDA170r_3 from "../img/cards/cDA170r_3.webp";
