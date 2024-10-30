@@ -4,7 +4,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
-import toppsNowWondergoalSealsSemiFinalSpot from "../img/cards/topps-now-wondergoal-seals-semi-final-spot.png";
+import toppsNowWondergoalSealsSemiFinalSpot from "../img/cards/topps-now-wondergoal-seals-semi-final-spot.jpg";
 import toppsNowWondergoalSealsSemiFinalSpot2 from "../img/cards/topps-now-wondergoal-seals-semi-final-spot-2.webp";
 import toppsNowWondergoalSealsSemiFinalSpot_back from "../img/cards/topps-now-wondergoal-seals-semi-final-spot-back.webp";
 import toppsNowWondergoalSealsSemiFinalSpot_purple from "../img/cards/2023-24 Topps - UWCL NOW -016b.jpg";

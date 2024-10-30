@@ -1,7 +1,7 @@
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2022_2023 } from "../collections";
 
-import cardnow23 from "../img/cards/cardnow23.png";
+import cardnow23 from "../img/cards/cardnow23.jpg";
 import cardnow23_1 from "../img/cards/cardnow23_1.webp";
 import cardnow23_2 from "../img/cards/cardnow23_2.webp";
 

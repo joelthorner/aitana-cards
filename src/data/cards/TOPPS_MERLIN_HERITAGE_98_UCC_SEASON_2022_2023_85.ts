@@ -10,25 +10,25 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsMerlinHeritage_98UccSeason_2022_2023 } from "../collections";
 
-import toppsMerlinHeritage_98UccSeason_2022_2023_85 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85.png";
-import toppsMerlinHeritage_98UccSeason_2022_2023_85_back from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_back.png";
-import toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_rainbow_5of5.png";
-import toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_blue_xof49.png";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85.jpg";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_back from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_back.jpg";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_rainbow_5of5.jpg";
+import toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85_blue_xof49.jpg";
 import tmh85ar_3 from "../img/cards/tmh85ar_3.webp";
 import tmh85ar_4 from "../img/cards/tmh85ar_4.webp";
 import tmh85ar_5 from "../img/cards/tmh85ar_5.webp";
-import tmh98us85 from "../img/cards/tmh98us85.png";
-import tmh98us85b_0 from "../img/cards/tmh98us85b_0.png";
+import tmh98us85 from "../img/cards/tmh98us85.jpg";
+import tmh98us85b_0 from "../img/cards/tmh98us85b_0.jpg";
 import tmh98us85b_1 from "../img/cards/tmh98us85b_1.webp";
 import tmh98us85b_2 from "../img/cards/tmh98us85b_2.webp";
 import tmh98us85b_3 from "../img/cards/tmh98us85b_3.webp";
-import tmh98usgr_0 from "../img/cards/tmh98usgr_0.png";
+import tmh98usgr_0 from "../img/cards/tmh98usgr_0.jpg";
 import tmh98usgr_1 from "../img/cards/tmh98usgr_1.webp";
 import tmh98usgr_2 from "../img/cards/tmh98usgr_2.webp";
 import tmh98usgr_3 from "../img/cards/tmh98usgr_3.webp";
-import tmh98us85r1 from "../img/cards/tmh98us85r1.png";
+import tmh98us85r1 from "../img/cards/tmh98us85r1.jpg";
 import tmh98us85r2 from "../img/cards/tmh98us85r2.webp";
-import tmh85ao_1 from "../img/cards/tmh85ao_1.png";
+import tmh85ao_1 from "../img/cards/tmh85ao_1.jpg";
 import tmh85ao_2 from "../img/cards/tmh85ao_2.jpg";
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85: Card = {

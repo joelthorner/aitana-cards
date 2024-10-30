@@ -11,17 +11,17 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "../img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.png";
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5.png";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "../img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.jpg";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5.jpg";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_2.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_3 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_3.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_4 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_4.webp";
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99.png";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99.jpg";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen99_2.webp";
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25.png";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25.jpg";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2.webp";
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto.png";
-import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto.png";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto.jpg";
+import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto.jpg";
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
   id: 'topps-fc-barcelona-women-winners-team-set-2023-34',

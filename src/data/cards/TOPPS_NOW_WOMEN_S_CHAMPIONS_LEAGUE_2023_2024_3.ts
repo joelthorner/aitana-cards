@@ -4,7 +4,7 @@
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
-import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.png";
+import toppsNowBrilliantBraceInOpeningGame from "../img/cards/topps-now-brilliant-brace-in-opening-game.jpg";
 import toppsNowBrilliantBraceInOpeningGame2 from "../img/cards/topps-now-brilliant-brace-in-opening-game-2.webp";
 import toppsNowBrilliantBraceInOpeningGame_back from "../img/cards/topps-now-brilliant-brace-in-opening-game-back.webp";
 

@@ -1,7 +1,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra } from "../collections";
 
-import i_343 from "../img/cards/aitanaclub100.png";
+import i_343 from "../img/cards/aitanaclub100.jpg";
 import i_162_b from "../img/cards/i_162_b.jpg";
 
 export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_343: Card = {

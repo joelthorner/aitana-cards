@@ -1,19 +1,19 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023 } from "../collections";
 
-import sapp14_0 from "../img/cards/sapp14_0.png";
+import sapp14_0 from "../img/cards/sapp14_0.jpg";
 import sapp14_1 from "../img/cards/sapp14_1.webp";
 import sapp14_2 from "../img/cards/sapp14_2.webp";
 import sapp14_3 from "../img/cards/sapp14_3.webp";
 import sapp14_4 from "../img/cards/sapp14_4.webp";
-import sapp14g_0 from "../img/cards/sapp14g_0.png";
-import sapp14gr_0 from "../img/cards/sapp14gr_0.png";
+import sapp14g_0 from "../img/cards/sapp14g_0.jpg";
+import sapp14gr_0 from "../img/cards/sapp14gr_0.jpg";
 import sapp14gr_1 from "../img/cards/sapp14gr_1.webp";
 import sapp14gr_2 from "../img/cards/sapp14gr_2.webp";
-import sappalt14_0 from "../img/cards/sappalt14_0.png";
+import sappalt14_0 from "../img/cards/sappalt14_0.jpg";
 import sappalt14_1 from "../img/cards/sappalt14_1.webp";
 import sappalt14_2 from "../img/cards/sappalt14_2.webp";
-import sappalt14g_0 from "../img/cards/sappalt14g_0.png";
+import sappalt14g_0 from "../img/cards/sappalt14g_0.jpg";
 import sappalt14g_1 from "../img/cards/sappalt14g_1.webp";
 import sappalt14g_2 from "../img/cards/sappalt14g_2.webp";
 

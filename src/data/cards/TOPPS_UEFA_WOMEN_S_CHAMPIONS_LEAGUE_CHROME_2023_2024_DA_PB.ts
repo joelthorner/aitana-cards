@@ -1,7 +1,7 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
-import DA_PBb_0 from "../img/cards/DA_PBb_0.png";
+import DA_PBb_0 from "../img/cards/DA_PBb_0.jpg";
 import DA_PBb_1 from "../img/cards/DA_PBb_1.jpg";
 import DA_PBb_2 from "../img/cards/DA_PBb_2.webp";
 import DA_PBb_3 from "../img/cards/DA_PBb_3.webp";

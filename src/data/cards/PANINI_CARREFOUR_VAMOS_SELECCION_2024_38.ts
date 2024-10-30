@@ -1,10 +1,10 @@
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniCarrefourVamosSeleccion_2024 } from "../collections";
 
-import pcvs_38_0 from "../img/cards/pcvs_38_0.png";
+import pcvs_38_0 from "../img/cards/pcvs_38_0.jpg";
 import pcvs_38_1 from "../img/cards/pcvs_38_1.webp";
 import pcvs_38_2 from "../img/cards/pcvs_38_2.webp";
-import pcvs_38_3 from "../img/cards/pcvs_38_3.png";
+import pcvs_38_3 from "../img/cards/pcvs_38_3.jpg";
 
 const PANINI_CARREFOUR_VAMOS_SELECCION_2024_38: Card = {
   id: 'panini-carrefour-vamos-seleccion-2024-38',

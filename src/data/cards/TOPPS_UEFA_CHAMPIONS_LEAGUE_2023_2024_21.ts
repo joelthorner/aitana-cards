@@ -4,7 +4,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2023_2024 } from "../collections";
 
-import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "../img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.png";
+import Ucl_23_24UwclTotsStickerAitanaBonmati_8_021 from "../img/cards/021_ucl_23-24_uwcl_tots_sticker_-_aitana_bonmati__8.jpg";
 
 const TOPPS_UEFA_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
   id: 'topps-uefa-champions-league-2023-2024-21',

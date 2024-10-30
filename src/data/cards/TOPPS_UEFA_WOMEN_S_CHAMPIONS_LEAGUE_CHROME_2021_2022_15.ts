@@ -1,7 +1,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2021_2022 } from "../collections";
 
-import uwcl_21_22ToppsChromeBaseRcRookie_15 from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15 from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_back from "../img/cards/290974-18752677Bk.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_refractor from "../img/cards/313503-18753690Fr.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_refractor_back from "../img/cards/313503-18753690Bk.jpg";
@@ -11,9 +11,9 @@ import uwcl_21_22ToppsChromeBaseRcRookie_15_green from "../img/cards/313505-1875
 import uwcl_21_22ToppsChromeBaseRcRookie_15_green_back from "../img/cards/313505-18754423Bk.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_inferno from "../img/cards/313506-18754105Fr.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_inferno_back from "../img/cards/313506-18754105Bk.jpg";
-import uwcl_21_22ToppsChromeBaseRcRookie_15_gold from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-gold.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_gold from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-gold.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_gold_back from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-gold_back.webp";
-import uwcl_21_22ToppsChromeBaseRcRookie_15_red from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-red.png";
+import uwcl_21_22ToppsChromeBaseRcRookie_15_red from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-red.jpg";
 import uwcl_21_22ToppsChromeBaseRcRookie_15_red_back from "../img/cards/UWCL-21-22-Topps-Chrome-Base-RC-Rookie-15-red_back.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_15: Card = {

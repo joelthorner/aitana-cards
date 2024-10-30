@@ -4,7 +4,7 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2023_2024 } from "../collections";
 
-import ligaFPremium from '../img/cards/ligaFPremium.png';
+import ligaFPremium from '../img/cards/ligaFPremium.jpg';
 
 const PANINI_LIGA_F_2023_2024_P1: Card = {
   id: 'panini-liga-f-2023-2024-p1',

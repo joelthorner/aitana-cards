@@ -8,8 +8,8 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
-import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.png";
-import tcbwwts42gr_0 from "../img/cards/tcbwwts42gr_0.png";
+import aitanaBonmatiBaseFcbWomenWinners_23TeamCard from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23TeamCard.jpg";
+import tcbwwts42gr_0 from "../img/cards/tcbwwts42gr_0.jpg";
 import tcbwwts42gr_1 from "../img/cards/tcbwwts42gr_1.webp";
 import tcbwwts42gr_2 from "../img/cards/tcbwwts42gr_2.webp";
 

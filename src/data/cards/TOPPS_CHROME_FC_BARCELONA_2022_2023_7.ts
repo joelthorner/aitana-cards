@@ -6,18 +6,18 @@ import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../t
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import aitanaBonmati_7ChromeFcb_22_23 from "../img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
-import aitanaBonmati_7ChromeFcb_22_23_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_refractor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_refractor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_bnw_refractor.png";
-import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_bnw_refractor.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_x_fractor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.png";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back.webp";
-import aitanaBonmati_7ChromeFcb_22_23_blue from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.png";
-import aitanaBonmati_7ChromeFcb_22_23_blue_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.png";
-import aitanaBonmati_7ChromeFcb_22_23_gold_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_gold_refractor.png";
+import aitanaBonmati_7ChromeFcb_22_23_blue from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_blue_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_back.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_gold_refractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_gold_refractor.jpg";
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   id: 'topps-chrome-fc-barcelona-2022-2023-7',

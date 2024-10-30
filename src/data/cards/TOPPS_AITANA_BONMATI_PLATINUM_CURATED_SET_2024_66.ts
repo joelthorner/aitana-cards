@@ -1,15 +1,15 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_66bu_0 from "../img/cards/tabpcs_66bu_0.png";
+import tabpcs_66bu_0 from "../img/cards/tabpcs_66bu_0.jpg";
 import tabpcs_66bu_1 from "../img/cards/tabpcs_66bu_1.jpg";
-import tabpcs_66r_0 from "../img/cards/tabpcs_66r_0.png";
+import tabpcs_66r_0 from "../img/cards/tabpcs_66r_0.jpg";
 import tabpcs_66r_1 from "../img/cards/tabpcs_66r_1.webp";
 import tabpcs_66r_2 from "../img/cards/tabpcs_66r_2.webp";
-import tabpcs_A66p_0 from "../img/cards/tabpcs_A66p_0.png";
+import tabpcs_A66p_0 from "../img/cards/tabpcs_A66p_0.jpg";
 import tabpcs_A66p_1 from "../img/cards/tabpcs_A66p_1.webp";
 import tabpcs_A66p_2 from "../img/cards/tabpcs_A66p_2.webp";
 import tabpcs_A66p_3 from "../img/cards/tabpcs_A66p_3.webp";
-import tabpcs_66_0 from "../img/cards/tabpcs_66_0.png";
+import tabpcs_66_0 from "../img/cards/tabpcs_66_0.jpg";
 import tabpcs_66_1 from "../img/cards/tabpcs_66_1.webp";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66: Card = {

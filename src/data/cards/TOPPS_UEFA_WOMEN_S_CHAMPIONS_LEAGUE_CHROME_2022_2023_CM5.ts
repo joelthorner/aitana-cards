@@ -1,18 +1,18 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "../collections";
 
-import cCM_5g_0 from "../img/cards/cCM_5g_0.png";
+import cCM_5g_0 from "../img/cards/cCM_5g_0.jpg";
 import cCM_5g_1 from "../img/cards/cCM_5g_1.webp";
 import cCM_5g_2 from "../img/cards/cCM_5g_2.webp";
-import cCM_5_0 from "../img/cards/cCM_5_0.png";
+import cCM_5_0 from "../img/cards/cCM_5_0.jpg";
 import cCM_5_1 from "../img/cards/cCM_5_1.webp";
 import cCM_5_2 from "../img/cards/cCM_5_2.webp";
 import cCM_5_3 from "../img/cards/cCM_5_3.webp";
 import cCM_5_4 from "../img/cards/cCM_5_4.webp";
-import cCM_5o_0 from "../img/cards/cCM_5o_0.png";
+import cCM_5o_0 from "../img/cards/cCM_5o_0.jpg";
 import cCM_5o_1 from "../img/cards/cCM_5o_1.webp";
 import cCM_5o_2 from "../img/cards/cCM_5o_2.webp";
-import cCM_55r_0 from "../img/cards/cCM_55r_0.png";
+import cCM_55r_0 from "../img/cards/cCM_55r_0.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-CM-5',

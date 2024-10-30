@@ -1,17 +1,17 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
-import tabpcs_45g_0 from "../img/cards/tabpcs_45g_0.png";
-import tabpcs_45g_1 from "../img/cards/tabpcs_45g_1.png";
-import tabpcs_45r_0 from "../img/cards/tabpcs_45r_0.png";
+import tabpcs_45g_0 from "../img/cards/tabpcs_45g_0.jpg";
+import tabpcs_45g_1 from "../img/cards/tabpcs_45g_1.jpg";
+import tabpcs_45r_0 from "../img/cards/tabpcs_45r_0.jpg";
 import tabpcs_45r_1 from "../img/cards/tabpcs_45r_1.webp";
 import tabpcs_45r_2 from "../img/cards/tabpcs_45r_2.webp";
-import tabpcs_45_0 from "../img/cards/tabpcs_45_0.png";
+import tabpcs_45_0 from "../img/cards/tabpcs_45_0.jpg";
 import tabpcs_45_1 from "../img/cards/tabpcs_45_1.webp";
 import tabpcs_45_2 from "../img/cards/tabpcs_45_2.webp";
-import tabpcs_45pu_0 from "../img/cards/tabpcs_45pu_0.png";
+import tabpcs_45pu_0 from "../img/cards/tabpcs_45pu_0.jpg";
 import tabpcs_45pu_1 from "../img/cards/tabpcs_45pu_1.webp";
 import tabpcs_45pu_2 from "../img/cards/tabpcs_45pu_2.webp";
-import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.png";
+import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.jpg";
 import tabpcs_45bu_1 from "../img/cards/tabpcs_45bu_1.webp";
 import tabpcs_45bu_2 from "../img/cards/tabpcs_45bu_2.webp";
 

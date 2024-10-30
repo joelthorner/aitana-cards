@@ -4,13 +4,13 @@
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
-import toppsNowTheDeadlyDuo from "../img/cards/topps-now-the-deadly-duo.png";
-import toppsNowTheDeadlyDuo_back from "../img/cards/Topps-Now-Back-1-2-570x760.png";
+import toppsNowTheDeadlyDuo from "../img/cards/topps-now-the-deadly-duo.jpg";
+import toppsNowTheDeadlyDuo_back from "../img/cards/Topps-Now-Back-1-2-570x760.jpg";
 import toppsNowTheDeadlyDuo_purple from "../img/cards/2023-24 Topps - UWCL NOW -022b.jpg";
 import toppsNowTheDeadlyDuo_black from "../img/cards/2023-24 Topps - UWCL NOW -022c.jpg";
 import toppsNowTheDeadlyDuo_gold from "../img/cards/2023-24 Topps - UWCL NOW -022d.jpg";
 import toppsNowTheDeadlyDuoDualAutograph from "../img/cards/2023-24 Topps - UWCL NOW -022f_cover.jpg";
-import toppsNowTheDeadlyDuoDualAutograph_back from "../img/cards/artwcl-16c2s-24tn-022-back_2.png";
+import toppsNowTheDeadlyDuoDualAutograph_back from "../img/cards/artwcl-16c2s-24tn-022-back_2.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_black from "../img/cards/2023-24 Topps - UWCL NOW -022h.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_rainbow from "../img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_gold from "../img/cards/2023-24 Topps - UWCL NOW -022l.jpg";

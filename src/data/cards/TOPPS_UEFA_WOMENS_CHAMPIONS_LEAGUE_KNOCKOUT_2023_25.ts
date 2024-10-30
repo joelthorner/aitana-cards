@@ -1,18 +1,18 @@
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomensChampionsLeagueKnockout_2023 } from "../collections";
 
-import tuwclk_25_0 from "../img/cards/tuwclk_25_0.png";
+import tuwclk_25_0 from "../img/cards/tuwclk_25_0.jpg";
 import tuwclk_25_1 from "../img/cards/tuwclk_25_1.webp";
 import tuwclk_25_2 from "../img/cards/tuwclk_25_2.webp";
-import tuwclk_A25bu_0 from "../img/cards/tuwclk_A25bu_0.png";
+import tuwclk_A25bu_0 from "../img/cards/tuwclk_A25bu_0.jpg";
 import tuwclk_A25bu_1 from "../img/cards/tuwclk_A25bu_1.jpg";
 import tuwclk_A25bu_2 from "../img/cards/tuwclk_A25bu_2.jpg";
-import tuwclk_25pu_0 from "../img/cards/tuwclk_25pu_0.png";
+import tuwclk_25pu_0 from "../img/cards/tuwclk_25pu_0.jpg";
 import tuwclk_25pu_1 from "../img/cards/tuwclk_25pu_1.jpg";
 import tuwclk_25pu_2 from "../img/cards/tuwclk_25pu_2.jpg";
-import tuwclk_25b_0 from "../img/cards/tuwclk_25b_0.png";
+import tuwclk_25b_0 from "../img/cards/tuwclk_25b_0.jpg";
 import tuwclk_25b_1 from "../img/cards/tuwclk_25b_1.jpg";
-import tuwclk_25bu_0 from "../img/cards/tuwclk_25bu_0.png";
+import tuwclk_25bu_0 from "../img/cards/tuwclk_25bu_0.jpg";
 import tuwclk_25bu_1 from "../img/cards/tuwclk_25bu_1.webp";
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
