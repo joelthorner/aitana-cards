@@ -60,6 +60,9 @@ import c14AABpp_mixed from "../img/cards/c14AABpp_mixed.jpg";
 import c14i2_0 from "../img/cards/c14i2_0.jpg";
 import c14i2_1 from "../img/cards/c14i2_1.webp";
 import c14i2_2 from "../img/cards/c14i2_2.webp";
+import c14ng_0 from "../img/cards/c14ng_0.jpg";
+import c14ng_1 from "../img/cards/c14ng_1.webp";
+import c14ng_2 from "../img/cards/c14ng_2.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -249,6 +252,29 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = 
     CardType.BaseSet,
     CardType.RoseGold,
     CardType.Mojo,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ng: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14ng',
+  number: '14ng',
+  images: [
+    c14ng_0,
+    c14ng_1,
+    c14ng_2,
+  ],
+  name: 'Aitana Bonmatí Neon Green Refractor',
+  numbered: 99,
+  rarity: 3,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.GreenRefractorTopps,
+  cardType: [
+    CardType.BaseSet,
+    CardType.NeonGreen,
   ],
   productType: CardProductType.Card,
 };

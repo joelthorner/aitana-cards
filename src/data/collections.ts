@@ -30,6 +30,7 @@ import abcs from "./img/collections/abcs.jpg";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.jpg";
 import inception2324 from "./img/collections/inception2324.jpg";
 import dragon from "./img/collections/dragon.jpg";
+import inception22_23 from "./img/collections/inception22_23.jpg";
 
 export const PaniniFifa_365AdrenalynXl_2024_2025: Collection = {
   id: 'panini-fifa-365-adrenalyn-xl-2024-2025',
@@ -436,6 +437,22 @@ export const ToppsAitanaBonmatiPlatinumCuratedSet_2024: Collection = {
   ],
 };
 
+export const ToppsInceptionUefaClubCompetitions_2022_2023: Collection = {
+  id: 'topps-inception-uefa-club-competitions-2022-2023',
+  image: inception22_23,
+  name: "Topps Inception UEFA Club Competitions 2022-2023",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.collectosk.com/2022-23-topps-inception-uefa-club-competitions-soccer-cards/',
+    'https://cartophilic-info-exch.blogspot.com/2023/05/topps-uefa-club-competitions-inception_01308789315.html',
+    'https://www.cardboardconnection.com/2022-23-topps-inception-uefa-cards',
+    'https://www.topps.com/media/amasty/amfile/attach/oYGuWQx7qGnPrYCDPGBKeNsp2dxkx47A.pdf',
+    'https://www.laststicker.com/cards/topps_inception_uefa_club_competitions_2022-2023/',
+  ],
+  serie: CollectionSerie.ToppsInception,
+};
+
 export const ToppsInceptionUefaClubCompetitions_2023_2024: Collection = {
   id: 'topps-inception-uefa-club-competitions-2023-2024',
   image: inception2324,
@@ -493,4 +510,5 @@ export const collections: Collection[] = [
   ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   ToppsUefaWomensChampionsLeagueKnockout_2023,
+  ToppsInceptionUefaClubCompetitions_2022_2023,
 ].sort((a, b) => a.name.localeCompare(b.name));

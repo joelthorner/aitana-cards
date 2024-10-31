@@ -40,6 +40,7 @@ export const CardTypeGroupToppsCards: CardType[][] = [
     CardType.ChineseZodiac,
     CardType.EtchedInStone,
     CardType.DiamondEyesDragon,
+    CardType.ShortPrint,
   ],
   [
     CardType.Refractor,

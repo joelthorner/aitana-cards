@@ -14,6 +14,7 @@ import tuwclk_25b_0 from "../img/cards/tuwclk_25b_0.jpg";
 import tuwclk_25b_1 from "../img/cards/tuwclk_25b_1.jpg";
 import tuwclk_25bu_0 from "../img/cards/tuwclk_25bu_0.jpg";
 import tuwclk_25bu_1 from "../img/cards/tuwclk_25bu_1.webp";
+import tuwclk_25bu_2 from "../img/cards/tuwclk_25bu_2.webp";
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
   id: 'topps-uefa-womens-champions-league-knockout-2023-25',
@@ -41,6 +42,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25bu: Card = {
   images: [
     tuwclk_25bu_0,
     tuwclk_25bu_1,
+    tuwclk_25bu_2,
   ],
   numbered: 49,
   name: "Aitana Bonmatí Blue",

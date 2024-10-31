@@ -43,6 +43,8 @@ import c44r_0 from "../img/cards/c44r_0.jpg";
 import c44r_1 from "../img/cards/c44r_1.webp";
 import c44r_2 from "../img/cards/c44r_2.webp";
 import c44r_3 from "../img/cards/c44r_3.webp";
+import c44o_0 from "../img/cards/c44o_0.jpg";
+import c44o_1 from "../img/cards/c44o_1.jpg";
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44: Card = {
   customRelatedsRegexp: /(SQA-AB[a-z]{1,6}?|44[a-z]{1,6}?)$/,
@@ -242,6 +244,30 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44r: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.RedFoil,
+};
+
+export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44o: Card = {
+  customRelatedsRegexp: /(SQA-AB[a-z]{1,6}?|44[a-z]{1,6}?)$/,
+  id: 'topps-inception-uefa-club-competitions-2023-2024-44o',
+  number: '44o',
+  images: [
+    c44o_0,
+    c44o_1,
+  ],
+  name: 'Aitana Bonmatí Star Quality / Orange',
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsInceptionUefaClubCompetitions_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.BaseSet,
+    CardType.StarQuality,
+    CardType.Orange,
+  ],
+  productType: CardProductType.Card,
+  brilli: CardBrilli.OrangeFoil,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABbu: Card = {

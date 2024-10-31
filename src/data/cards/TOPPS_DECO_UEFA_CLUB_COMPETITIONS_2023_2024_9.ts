@@ -21,8 +21,11 @@ import tducc_9p_1 from "../img/cards/tducc_9p_1.webp";
 import tducc_9p_2 from "../img/cards/tducc_9p_2.webp";
 import tducc_9p_3 from "../img/cards/tducc_9p_3.webp";
 import tducc_9p_4 from "../img/cards/tducc_9p_4.webp";
+import tducc_AU7r_0 from "../img/cards/tducc_AU7r_0.jpg";
+import tducc_AU7r_1 from "../img/cards/tducc_AU7r_1.jpg";
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
   id: 'topps-deco-uefa-club-competitions-2023-2024-9',
   number: 9,
   images: [
@@ -45,6 +48,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9: Card = {
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9gr: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
   id: 'topps-deco-uefa-club-competitions-2023-2024-9gr',
   number: '9gr',
   images: [
@@ -72,6 +76,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9gr: Card = {
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9b: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
   id: 'topps-deco-uefa-club-competitions-2023-2024-9b',
   number: '9b',
   images: [
@@ -95,6 +100,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9b: Card = {
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9p: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
   id: 'topps-deco-uefa-club-competitions-2023-2024-9p',
   number: '9p',
   images: [
@@ -115,6 +121,30 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9p: Card = {
   cardType: [
     CardType.CurrentStars,
     CardType.Purple,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_AU7r: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
+  id: 'topps-deco-uefa-club-competitions-2023-2024-AU7r',
+  number: 'AU7r',
+  images: [
+    tducc_AU7r_0,
+    tducc_AU7r_1,
+  ],
+  numbered: 10,
+  name: 'Aitana Bonmati Current Stars Autograph / Red',
+  rarity: 5,
+  brilli: CardBrilli.RedFoil,
+  status: CardStatus.Falti,
+  collection: ToppsDecoUefaClubCompetitions_2023_2024,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.CurrentStars,
+    CardType.Red,
+    CardType.Autographs,
   ],
   productType: CardProductType.Card,
 };

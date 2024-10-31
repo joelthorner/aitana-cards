@@ -70,6 +70,7 @@ export enum CardType {
   ChineseZodiac = 'Chinese Zodiac',
   EtchedInStone = 'Etched in Stone',
   DiamondEyesDragon = 'Diamond Eyes Dragon',
+  ShortPrint = 'Short Print',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
