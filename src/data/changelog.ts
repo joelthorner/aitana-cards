@@ -10,7 +10,7 @@ import { TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5, TOPPS_SIMPLICIDAD
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ng, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AAB, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABg, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABi, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARB, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBbl, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DA_RB";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM55r, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5g, TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5o } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5";
-import { PaniniUefaWomenSEuroEngland_2022, ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra, ToppsUefaLivingSet_2023, ToppsSimplicidadUefaClubCompetitions_2022_2023, ToppsUefaWomenSChampionsLeagueChrome_2022_2023, ToppsMerlinHeritageUefaClubCompetitions_2023_2024, ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023, ToppsNowWomenSChampionsLeague_2023_2024, ToppsNowWomenSChampionsLeague_2022_2023, ToppsDecoUefaClubCompetitions_2023_2024, PaniniCarrefourVamosSeleccion_2024, ToppsFocusFcBarcelona_2023_2024, ToppsUefaWomensChampionsLeagueKnockout_2023, PaniniFifaWomenSWorldCupAustraliaNewZealand_2023, ToppsAitanaBonmatiPlatinumCuratedSet_2024, ToppsUefaWomenSChampionsLeagueChrome_2023_2024, ToppsInceptionUefaClubCompetitions_2023_2024, PaniniFifa_365AdrenalynXl_2024_2025, PaniniFifa_365_2024, ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024, ToppsInceptionUefaClubCompetitions_2022_2023 } from "./collections";
+import { PaniniUefaWomenSEuroEngland_2022, ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra, ToppsUefaLivingSet_2023, ToppsSimplicidadUefaClubCompetitions_2022_2023, ToppsUefaWomenSChampionsLeagueChrome_2022_2023, ToppsMerlinHeritageUefaClubCompetitions_2023_2024, ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023, ToppsNowWomenSChampionsLeague_2023_2024, ToppsNowWomenSChampionsLeague_2022_2023, ToppsDecoUefaClubCompetitions_2023_2024, PaniniCarrefourVamosSeleccion_2024, ToppsFocusFcBarcelona_2023_2024, ToppsUefaWomensChampionsLeagueKnockout_2023, PaniniFifaWomenSWorldCupAustraliaNewZealand_2023, ToppsAitanaBonmatiPlatinumCuratedSet_2024, ToppsUefaWomenSChampionsLeagueChrome_2023_2024, ToppsInceptionUefaClubCompetitions_2023_2024, PaniniFifa_365AdrenalynXl_2024_2025, PaniniFifa_365_2024, ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024, ToppsInceptionUefaClubCompetitions_2022_2023, ToppsNowWomenSChampionsLeague_2021_2022, UnlicensedCards } from "./collections";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12";
 import { TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70, TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70api, TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70bu, TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70gr, TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pi, TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pu } from "./cards/TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70";
 import PANINI_LIGA_F_2023_2024_43 from "./cards/PANINI_LIGA_F_2023_2024_43";
@@ -59,8 +59,47 @@ import { TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_DEABb, TOPPS_
 import { TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_DBA1r } from "./cards/TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_DBA1";
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_ARAB } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_AR_AB";
 import { TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_SPA1r } from "./cards/TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_SPA1";
+import { TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2021_2022_1 } from "./cards/TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2021_2022_1";
+import { UNLICENSED_CARDS_MEDUSA_CARD_WO_NUMBER_1 } from "./cards/UNLICENSED_CARDS_MEDUSA_CARD";
 
 export const changelog: Changelog[] = [
+  {
+    date: new Date('2024-11-1'),
+    items: [
+      {
+        type: LineType.CHANGED,
+        card: TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_DA170r,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.CHANGED,
+        card: TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_DBA1r,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: UNLICENSED_CARDS_MEDUSA_CARD_WO_NUMBER_1,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2021_2022_1,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        collection: ToppsNowWomenSChampionsLeague_2021_2022,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        collection: UnlicensedCards,
+        user: 'joelthorner',
+      },
+    ],
+  },
   {
     date: new Date('2024-10-31'),
     items: [

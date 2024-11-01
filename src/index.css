@@ -54,3 +54,7 @@ html {
 .swiper-card-detail .swiper-pagination {
   @apply pointer-events-none;
 }
+
+.markdown-card-text a {
+  @apply pointer-events-none;
+}

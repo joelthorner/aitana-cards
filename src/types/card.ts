@@ -1,4 +1,5 @@
 import { Collection } from "./collection";
+import { Teammate } from "../data/teammates";
 
 export enum CardStatus {
   Falti = 'falti',
@@ -43,6 +44,7 @@ export enum CardType {
   BaseSet = 'Base set',
   TeamCard = 'Team Card',
   Collage = 'Collage', // Carta composta
+  UnlicensedCard = 'Unlicensed Card',
 
   Holographic = 'Holographic', // penjat
 
@@ -153,7 +155,9 @@ export type Card = {
   customRelatedsRegexp?: RegExp;
   // TODO implement
   language?: CardLanguage;
-  // team?: Team;
+  cardTextFront?: string;
+  cardTextBack?: string;
+  teammates?: Teammate[];
 };
 
 export type CardSearch = {

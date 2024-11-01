@@ -6,6 +6,7 @@ import panini_004826spe3w_1_1 from "./img/collections/panini_004826spe3w_1_1.jpg
 import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.jpg";
 import Topps_Now_Logo_Black_2 from "./img/collections/Topps_Now_Logo_Black_2.jpg";
+import Topps_Now_Logo_Black_3 from "./img/collections/Topps_Now_Logo_Black_3.jpg";
 import sL1200_480x from "./img/collections/sL1200_480x.jpg";
 import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.jpg";
 import multipack_6Packets_1 from "./img/collections/multipack_6Packets_1_b.jpg";
@@ -31,6 +32,16 @@ import tuwsclc2324 from "./img/collections/tuwsclc2324.jpg";
 import inception2324 from "./img/collections/inception2324.jpg";
 import dragon from "./img/collections/dragon.jpg";
 import inception22_23 from "./img/collections/inception22_23.jpg";
+import un from "./img/collections/un.jpg";
+
+export const UnlicensedCards: Collection = {
+  id: 'unlicensed-cards',
+  image: un,
+  name: 'Unlicensed cards',
+  description: `Unlicensed and/or uncollected cards. These cards exist but there is no verified information about them.`,
+  brand: '?',
+  links: [],
+};
 
 export const PaniniFifa_365AdrenalynXl_2024_2025: Collection = {
   id: 'panini-fifa-365-adrenalyn-xl-2024-2025',
@@ -179,6 +190,19 @@ export const ToppsNowWomenSChampionsLeague_2022_2023: Collection = {
   id: 'topps-now-women-s-champions-league-2022-2023',
   image: Topps_Now_Logo_Black,
   name: "Topps Now Women's Champions League 2022-23",
+  serie: CollectionSerie.ToppsNow,
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/collections/topps-now-es',
+    'https://www.topps.com/pages/toppsnow',
+  ],
+};
+
+export const ToppsNowWomenSChampionsLeague_2021_2022: Collection = {
+  id: 'topps-now-women-s-champions-league-2021-2022',
+  image: Topps_Now_Logo_Black_3,
+  name: "Topps Now Women's Champions League 2021-22",
   serie: CollectionSerie.ToppsNow,
   description: ``,
   brand: 'Topps',
@@ -497,6 +521,7 @@ export const collections: Collection[] = [
   ToppsInceptionUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
+  ToppsNowWomenSChampionsLeague_2021_2022,
   ToppsNowWomenSChampionsLeague_2022_2023,
   ToppsNowWomenSChampionsLeague_2023_2024,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
@@ -511,4 +536,5 @@ export const collections: Collection[] = [
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   ToppsUefaWomensChampionsLeagueKnockout_2023,
   ToppsInceptionUefaClubCompetitions_2022_2023,
+  UnlicensedCards,
 ].sort((a, b) => a.name.localeCompare(b.name));

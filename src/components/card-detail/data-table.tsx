@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Card } from "../../types/card";
-import { Archive, BookText, BookType, Calendar, ChevronRight, Clipboard, Fingerprint, Folder, Hash, Info, Medal, Package2, SwatchBook } from "lucide-react";
+import { Archive, BookText, BookType, Calendar, ChevronRight, Clipboard, Fingerprint, Folder, Hash, Info, Languages, Medal, Package2, SwatchBook } from "lucide-react";
 
 export default function DataTable({ card }: { card: Card }) {
   const copyToClipboard = (text: string) => {
@@ -114,17 +114,32 @@ export default function DataTable({ card }: { card: Card }) {
             </span>
           </div>
         </li>
-        <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
-          <div className="flex gap-x-3">
-            <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
-              <Folder size={16} strokeWidth={1.5} className="shrink-0" />
-            </span>
-            <span className="flex-grow">
-              <span className="font-medium text-zinc-800 block">Card Section</span>
-              <span className="text-xs text-zinc-500 block">{card.cardSection}</span>
-            </span>
-          </div>
-        </li>
+        {card.language && (
+          <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
+            <div className="flex gap-x-3">
+              <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
+                <Languages size={16} strokeWidth={1.5} className="shrink-0" />
+              </span>
+              <span className="flex-grow">
+                <span className="font-medium text-zinc-800 block">Card language</span>
+                <span className="text-xs text-zinc-500 block">{card.language}</span>
+              </span>
+            </div>
+          </li>
+        )}
+        {card.cardSection && (
+          <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
+            <div className="flex gap-x-3">
+              <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
+                <Folder size={16} strokeWidth={1.5} className="shrink-0" />
+              </span>
+              <span className="flex-grow">
+                <span className="font-medium text-zinc-800 block">Card Section</span>
+                <span className="text-xs text-zinc-500 block">{card.cardSection}</span>
+              </span>
+            </div>
+          </li>
+        )}
         <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
           <div className="flex gap-x-3">
             <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
