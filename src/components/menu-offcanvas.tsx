@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Album, Bell, Github, LayoutGrid, SquareArrowOutUpRight } from "lucide-react";
+import { Album, Bell, Github, LayoutGrid } from "lucide-react";
 import { cards } from "../data/cards";
 
 export default function MenuOffcanvas() {
@@ -86,18 +86,6 @@ export default function MenuOffcanvas() {
           </div>
         </div>
       </div>
-      {/* <ul className="text-sm mt-auto flex items-center justify-center px-4 py-3 bg-slate-50 h-11">
-        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-          <Link className="text-gray-600 hover:text-blue-600" to="/changelog" data-hs-overlay="#offcanvas-menu">
-            Changelog
-          </Link>
-        </li>
-        <li className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full">
-          <a className="text-gray-600 hover:text-blue-600" href="https://github.com/joelthorner" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-        </li>
-      </ul> */}
     </div>
   );
 }

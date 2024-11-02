@@ -33,6 +33,7 @@ import inception2324 from "./img/collections/inception2324.jpg";
 import dragon from "./img/collections/dragon.jpg";
 import inception22_23 from "./img/collections/inception22_23.jpg";
 import un from "./img/collections/un.jpg";
+import nowballonor from "./img/collections/nowballonor.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -171,6 +172,19 @@ export const PaniniCarrefourVamosSeleccion_2024: Collection = {
     'https://www.panini.es/shp_esp_es/vamos-selecci-n-promoci-n-eurocopa-carrefour-cromos-faltantes-005105b-its.html',
   ],
   serie: CollectionSerie.PaniniFamily,
+};
+
+export const ToppsNowBalonDOr_2024: Collection = {
+  id: 'topps-now-balon-d-or-2024',
+  image: nowballonor,
+  name: "Topps Now Balon d'Or 2024",
+  serie: CollectionSerie.ToppsNow,
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://cartophilic-info-exch.blogspot.com/2024/10/topps-topps-now-2024-balon-dor.html',
+    'https://www.topps.com/products/aitana-bonmati-2024-ballon-d-or-feminin-winner-ballon-d-or-topps-now-reg-card-2-look-for-auto-or-relics',
+  ],
 };
 
 export const ToppsNowWomenSChampionsLeague_2023_2024: Collection = {
@@ -524,6 +538,7 @@ export const collections: Collection[] = [
   ToppsNowWomenSChampionsLeague_2021_2022,
   ToppsNowWomenSChampionsLeague_2022_2023,
   ToppsNowWomenSChampionsLeague_2023_2024,
+  ToppsNowBalonDOr_2024,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsUefaChampionsLeague_2022_2023,
