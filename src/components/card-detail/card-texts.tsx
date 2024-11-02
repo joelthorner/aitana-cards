@@ -7,7 +7,7 @@ export default function CardTexts({ front, back, language }: { front?: string; b
     <div className="py-4">
       <div className="mb-4 font-medium text-center text-lg">Card text content</div>
 
-      <div className="w-full bg-white rounded-lg border">
+      <div className="w-full bg-white rounded-3xl border">
         <div className="border-b border-gray-200 px-4">
           <nav className="flex items-center justify-center gap-x-2" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
             <button
