@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsInceptionUefaClubCompetitions_2023_2024 } from "../collections";
 
 import cDA170r_0 from "../img/cards/cDA170r_0.jpg";
@@ -9,6 +9,7 @@ import cDA170r_4 from "../img/cards/cDA170r_4.jpg";
 import cDA170r_5 from "../img/cards/cDA170r_5.jpg";
 import cDA170r_6 from "../img/cards/cDA170r_6.jpg";
 import cDA170r_7 from "../img/cards/cDA170r_7.jpg";
+import { AlexiaPutellas } from "../teammates";
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_DA170r: Card = {
   id: 'topps-inception-uefa-club-competitions-2023-2024-DA-170r',
@@ -38,4 +39,38 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_DA170r: Card = {
   productType: CardProductType.PatchBookCard,
   brilli: CardBrilli.RedFoil,
   orientation: CardOrientation.Horizontal,
+  teammates: [
+    AlexiaPutellas,
+  ],
+  language: CardLanguage.EN,
+  cardTextFront: `INCEPTION
+
+ALEXIA PUTELLAS
+
+---
+
+AITANA BONMATÍ
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE`,
+  cardTextBack: `
+DAP-PB
+
+DUAL AUTOGRAPH RELIC BOOK CARD 
+
+from Topps Inception UEFA Club Competitions 2023/24.
+
+ALEXIA PUTELLAS FC BARCELONA/MIDFIELDER
+
+AITANA BONMATÍ FC BARCELONA/MIDFIELDER
+
+The signing of all autograph cards is witnessed by a Topps representative to guarantee authenticity. 
+
+The relics contained in this card were worn by the featured players. The execution of all player-worn memorabilia is witnessed by a Topps representative to guarantee authenticity.
+
+
+® & © 2024 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS AND TOPPS INCEPTION ARE TRADEMARKS OF THE TOPPS COMPANY, INC.. The word(s) UEFA, WOMEN'S CHAMPIONS LEAGUE, and all other UEFA Women's Champions League marks, names, logos, mascots and trophies are the property, registered trade marks, designs and/or copyright of UEFA. All rights reserved.
+
+WWW.TOPPS.COM.CODE#CMP079818.
+
+© FC BARCELONA`,
 };

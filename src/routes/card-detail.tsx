@@ -17,6 +17,8 @@ import "swiper/css/pagination";
 import DataTable from "../components/card-detail/data-table";
 import { isRelatedCard } from "../utils/isRelatedCard";
 import CardsGridStatic from "../components/cards-grid-static";
+import Teammates from "../components/card-detail/teammates";
+import CardTexts from "../components/card-detail/card-texts";
 
 interface GalleryItem {
   src: string;
@@ -192,6 +194,10 @@ export default function CardDetail() {
 
         <DataTable card={card} />
 
+        {(card.cardTextFront || card.cardTextBack) && <CardTexts front={card.cardTextFront} back={card.cardTextBack} language={card.language} />}
+
+        {card.teammates && <Teammates teammates={card.teammates} />}
+
         {card.links && (
           <div className="flex flex-col mt-4">
             {card.links?.map((link) => (
@@ -213,7 +219,7 @@ export default function CardDetail() {
       <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-12">
         {relatedCards.length > 0 && (
           <div>
-            <div className="mb-4 pl-[2px] font-medium text-white text-center">Related cards</div>
+            <div className="mb-4 font-medium text-white text-center">Related cards</div>
             <CardsGridStatic cards={relatedCards} />
           </div>
         )}

@@ -1,4 +1,5 @@
 import { Collection } from "./collection";
+import { Teammate } from "../data/teammates";
 
 export enum CardStatus {
   Falti = 'falti',
@@ -43,6 +44,7 @@ export enum CardType {
   BaseSet = 'Base set',
   TeamCard = 'Team Card',
   Collage = 'Collage', // Carta composta
+  UnlicensedCard = 'Unlicensed Card',
 
   Holographic = 'Holographic', // penjat
 
@@ -70,6 +72,7 @@ export enum CardType {
   ChineseZodiac = 'Chinese Zodiac',
   EtchedInStone = 'Etched in Stone',
   DiamondEyesDragon = 'Diamond Eyes Dragon',
+  ShortPrint = 'Short Print',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -152,7 +155,9 @@ export type Card = {
   customRelatedsRegexp?: RegExp;
   // TODO implement
   language?: CardLanguage;
-  // team?: Team;
+  cardTextFront?: string;
+  cardTextBack?: string;
+  teammates?: Teammate[];
 };
 
 export type CardSearch = {

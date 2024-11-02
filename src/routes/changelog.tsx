@@ -7,6 +7,7 @@ import { BookPlus, FilePlus2 } from "lucide-react";
 import { LineType } from "../types/changelog";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Sticky from "react-sticky-el";
 
 export default function Changelog() {
   const badgeClassName = (value: LineType) => {
@@ -43,15 +44,17 @@ export default function Changelog() {
 
   return (
     <div className="p-2 2xl:container mx-auto">
-      <div className="text-xl font-medium leading-normal text-white px-2 mb-4 mt-2">Changelog</div>
-
       <div className="bg-zinc-900 px-5 pl-3 pt-5 pb-20 rounded-t-3xl relative">
+        <div className="text-xl text-center font-medium leading-normal text-white px-2 mb-4 mt-0">Changelog</div>
+
         <InfiniteScroll dataLength={items.length} next={fetchMoreData} hasMore={hasMore} loader={"TODO carregant spinner"}>
           {items.map((day, index) => (
             <div key={format(day.date, "dd MMM, yyyy")}>
-              <div className={"ps-2 my-2"}>
-                <h3 className="text-xs font-medium uppercase text-zinc-500">{format(day.date, "dd MMM, yyyy")}</h3>
-              </div>
+              <Sticky scrollElement="window" wrapperClassName="z-50 bg-zinc-900/40 backdrop-blur-sm">
+                <div className="ps-2 py-1 my-2">
+                  <h3 className="text-xs font-medium uppercase text-fuchsia-500">{format(day.date, "dd MMM, yyyy")}</h3>
+                </div>
+              </Sticky>
 
               {day.items.map((item, index) => (
                 <div className="flex gap-x-3" key={index}>
@@ -63,12 +66,12 @@ export default function Changelog() {
 
                   <div className="grow pt-0.5 pb-8">
                     {item.card && (
-                      <Link to={"/cards/" + item.card.id} className="font-semibold text-zinc-100 hover:text-rose-600 flex leading-tight">
+                      <Link to={"/cards/" + item.card.id} className="font-semibold text-zinc-100 hover:text-lime-500 flex leading-tight">
                         {item.card.name}
                       </Link>
                     )}
                     {item.collection && (
-                      <Link to={"/collections/" + item.collection.id} className="font-semibold text-zinc-100 hover:text-rose-600 flex leading-tight">
+                      <Link to={"/collections/" + item.collection.id} className="font-semibold text-zinc-100 hover:text-yellow-500 flex leading-tight">
                         {item.collection.name}
                       </Link>
                     )}

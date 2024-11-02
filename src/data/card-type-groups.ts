@@ -5,6 +5,7 @@ export const CardTypeGroupGeneric: CardType[][] = [
     CardType.BaseSet,
     CardType.TeamCard,
     CardType.Collage,
+    CardType.UnlicensedCard,
   ],
   [
     CardType.Holographic,
@@ -40,6 +41,7 @@ export const CardTypeGroupToppsCards: CardType[][] = [
     CardType.ChineseZodiac,
     CardType.EtchedInStone,
     CardType.DiamondEyesDragon,
+    CardType.ShortPrint,
   ],
   [
     CardType.Refractor,
