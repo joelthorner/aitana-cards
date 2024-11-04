@@ -1,0 +1,26 @@
+"use strict";
+exports.__esModule = true;
+exports.CollectionSerie = void 0;
+var CollectionSerie;
+(function (CollectionSerie) {
+    CollectionSerie["_NONE"] = "_none";
+    CollectionSerie["PaniniFamily"] = "Panini Family";
+    CollectionSerie["PaniniFIFA365"] = "Panini FIFA 365";
+    CollectionSerie["PaniniFIFAWorldCup"] = "Panini FIFA World Cup";
+    CollectionSerie["PaniniLigaF"] = "Panini Liga F";
+    CollectionSerie["PaniniUEFAEuro"] = "Panini UEFA Euro";
+    CollectionSerie["ToppsChrome"] = "Topps Chrome";
+    CollectionSerie["ToppsDECO"] = "Topps DECO";
+    CollectionSerie["ToppsFCBarcelona"] = "Topps FC Barcelona";
+    CollectionSerie["ToppsFOCUS"] = "Topps FOCUS";
+    CollectionSerie["ToppsInception"] = "Topps Inception";
+    CollectionSerie["ToppsKnockout"] = "Topps Knockout";
+    CollectionSerie["ToppsLiving"] = "Topps Living";
+    CollectionSerie["ToppsMatchAttax"] = "Topps Match Attax";
+    CollectionSerie["ToppsMerlinHeritage"] = "Topps Merlin Heritage";
+    CollectionSerie["ToppsNow"] = "Topps Now";
+    CollectionSerie["ToppsSimplicidad"] = "Topps Simplicidad";
+    CollectionSerie["ToppsUEFAStickers"] = "Topps UEFA Stickers";
+})(CollectionSerie = exports.CollectionSerie || (exports.CollectionSerie = {}));
+;
+;

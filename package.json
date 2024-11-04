@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.3.0",
     "algoliasearch": "^5.10.2",
     "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
     "gh-pages": "^6.1.1",
     "instantsearch.css": "^8.5.1",
     "lodash": "^4.17.21",
@@ -42,7 +43,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build:cards": "tsc src/data/cards.ts --outDir temp_dist",
+    "algolia-update": "npm run build:cards && node src/scripts/algolia.mjs"
   },
   "eslintConfig": {
     "extends": [

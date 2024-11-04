@@ -34,6 +34,7 @@ import dragon from "./img/collections/dragon.jpg";
 import inception22_23 from "./img/collections/inception22_23.jpg";
 import un from "./img/collections/un.jpg";
 import nowballonor from "./img/collections/nowballonor.jpg";
+import deco2425 from "./img/collections/deco2425.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -430,6 +431,24 @@ export const ToppsDecoUefaClubCompetitions_2023_2024: Collection = {
   serie: CollectionSerie.ToppsDECO,
 };
 
+export const ToppsDecoUefaClubCompetitions_2024_2025: Collection = {
+  id: 'topps-deco-uefa-club-competitions-2024-2025',
+  image: deco2425,
+  name: "Topps DECO UEFA Club Competitions 2024-2025",
+  description: `As the UEFA competitions heat up, Topps is back with the newest release in its highly acclaimed Deco series. Known for its bold and innovative designs, UCC Deco 2024/25 promises to deliver more excitement than ever, with exclusive cards, unique designs, and standout players from UEFA’s elite club competitions. Available exclusively on Topps.com, Deco 24/25 is set to be a hit with collectors across Europe. Here’s a closer look at what makes this set one of the most anticipated releases this season.`,
+  brand: 'Topps',
+  links: [
+    'https://cartophilic-info-exch.blogspot.com/2024/10/topps-uefa-deco-uefa-club-competitions.html',
+    'https://ripped.topps.com/uk/topps-ucc-deco-2024-25-set-release/',
+    'https://uk.topps.com/pages/ucc-deco-2024-25',
+    'https://es.topps.com/pages/ucc-deco-2024-25',
+    'https://www.topps.com/media/amasty/amfile/attach/iqrYhwHwRHQ96qY0Am6Ntm3EnubQHIf7.pdf',
+    'https://www.beckett.com/news/2024-25-topps-deco-uefa-club-competitions/',
+    'https://www.collectosk.com/2024-25-topps-deco-uefa-club-competitions-soccer-cards/',
+  ],
+  serie: CollectionSerie.ToppsDECO,
+};
+
 export const ToppsFocusFcBarcelona_2023_2024: Collection = {
   id: 'topps-focus-fc-barcelona-2023-2024',
   image: focus2324,
@@ -552,4 +571,5 @@ export const collections: Collection[] = [
   ToppsUefaWomensChampionsLeagueKnockout_2023,
   ToppsInceptionUefaClubCompetitions_2022_2023,
   UnlicensedCards,
+  ToppsDecoUefaClubCompetitions_2024_2025,
 ].sort((a, b) => a.name.localeCompare(b.name));
