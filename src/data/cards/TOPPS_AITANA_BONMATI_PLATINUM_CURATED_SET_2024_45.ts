@@ -14,6 +14,9 @@ import tabpcs_45pu_2 from "../img/cards/tabpcs_45pu_2.webp";
 import tabpcs_45bu_0 from "../img/cards/tabpcs_45bu_0.jpg";
 import tabpcs_45bu_1 from "../img/cards/tabpcs_45bu_1.webp";
 import tabpcs_45bu_2 from "../img/cards/tabpcs_45bu_2.webp";
+import tabpcs_45p_0 from "../img/cards/tabpcs_45p_0.jpg";
+import tabpcs_45p_1 from "../img/cards/tabpcs_45p_1.webp";
+import tabpcs_45p_2 from "../img/cards/tabpcs_45p_2.webp";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-45',
@@ -100,6 +103,29 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45r: Card = {
   cardType: [
     CardType.BaseSet,
     CardType.Red,
+  ],
+  productType: CardProductType.Card,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_45p: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-45p',
+  number: '45p',
+  images: [
+    tabpcs_45p_0,
+    tabpcs_45p_1,
+    tabpcs_45p_2,
+  ],
+  name: 'Aitana Bonmatí Playmakers / Pink',
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Playmakers',
+  brilli: CardBrilli.PinkFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Pink,
   ],
   productType: CardProductType.Card,
 };

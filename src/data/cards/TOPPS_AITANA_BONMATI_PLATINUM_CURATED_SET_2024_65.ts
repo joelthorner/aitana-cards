@@ -7,6 +7,9 @@ import tabpcs_65_0 from "../img/cards/tabpcs_65_0.jpg";
 import tabpcs_65_1 from "../img/cards/tabpcs_65_1.webp";
 import tabpcs_65r_0 from "../img/cards/tabpcs_65r_0.jpg";
 import tabpcs_65r_1 from "../img/cards/tabpcs_65r_1.jpg";
+import tabpcs_65pu_0 from "../img/cards/tabpcs_65pu_0.jpg";
+import tabpcs_65pu_1 from "../img/cards/tabpcs_65pu_1.webp";
+import tabpcs_65pu_2 from "../img/cards/tabpcs_65pu_2.webp";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_65: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-65',
@@ -47,6 +50,30 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_65bu: Card = {
   cardType: [
     CardType.BaseSet,
     CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_65pu: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-65pu',
+  number: '65pu',
+  images: [
+    tabpcs_65pu_0,
+    tabpcs_65pu_1,
+    tabpcs_65pu_2,
+  ],
+  name: 'Su gol en la final de la UEFA Women´s Champions League Purple',
+  rarity: 4,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.PurpleFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Purple,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,

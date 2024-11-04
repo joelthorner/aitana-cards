@@ -1,32 +1,6 @@
-// import { searchClient } from "@algolia/client-search";
-// import { cards } from "../../data/cards";
 import { Search } from "./search";
 
 export default function SearchModal() {
-  // Nse on ficar-ho pero es per indexar
-  // const appId = process.env.REACT_APP_ALGOLIA_SEARCH_APP_ID ?? "";
-  // const apiKey = process.env.REACT_APP_ALGOLIA_SEARCH_API_KEY ?? "";
-  // const client = searchClient(appId, apiKey);
-
-  // const processRecords = async () => {
-  //   const movies = cards.map((card) => {
-  //     return { id: card.id, name: card.name, collection: card.collection.name, number: card.number, cardType: card.cardType, image: card.images[0] };
-  //   });
-  //   return await client.saveObjects({ indexName: "cards", objects: movies });
-  // };
-
-  // processRecords()
-  //   .then(() => console.log("Successfully indexed objects!"))
-  //   .catch((err) => console.error(err));
-
-  // console.log(
-  //   JSON.stringify(
-  //     cards.map((card) => {
-  //       return { id: card.id, name: card.name, collection: card.collection.name, number: card.number, cardType: card.cardType, image: card.images[0] };
-  //     })
-  //   )
-  // );
-
   return (
     <div
       id="search-modal"

@@ -1,4 +1,4 @@
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniFifa_365AdrenalynXl_2024_2025 } from "../collections";
 import pf365axl_431_0 from "../img/cards/pf365axl_431_0.jpg";
 import pf365axl_431_1 from "../img/cards/pf365axl_431_1.webp";
@@ -25,6 +25,7 @@ const PANINI_FIFA_365_ADRENALYN_XL_2024_2025_431: Card = {
     CardType.TheBest,
   ],
   productType: CardProductType.GameCard,
+  brilli: CardBrilli.Holo,
 };
 
 export default PANINI_FIFA_365_ADRENALYN_XL_2024_2025_431;
