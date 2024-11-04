@@ -1,6 +1,6 @@
 {
   "name": "aitana-cards",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "private": true,
   "homepage": "https://joelthorner.github.io/aitana-cards",
   "dependencies": {
@@ -43,9 +43,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build:cards": "tsc src/data/cards.ts --outDir temp_dist",
-    "algolia-update": "npm run build:cards && node src/scripts/algolia.mjs"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

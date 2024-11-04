@@ -20,7 +20,7 @@ export const Search = () => {
       <Configure hitsPerPage={20} />
       <div className="ais-InstantSearch">
         <SearchBox />
-        <div className="max-h-[75vh] overflow-auto">
+        <div className="max-h-[70vh] overflow-auto">
           <Hits hitComponent={Hit} />
         </div>
       </div>
