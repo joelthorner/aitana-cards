@@ -3,14 +3,15 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useClassName } from "../../hooks/useClassName";
 
-export default function CardTexts({ front, back, language }: { front?: string; back?: string; language?: CardLanguage }) {
+export default function CardTexts({ front, back, language, className }: { front?: string; back?: string; language?: CardLanguage; className?: string }) {
+  const containerClassName = useClassName([className, "py-4"]);
   const tabClassName =
     "hs-tab-active:font-semibold hs-tab-active:border-violet-600 hs-tab-active:text-violet-600 py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-violet-600 focus:outline-none focus:text-violet-600 disabled:opacity-50 disabled:pointer-events-none";
   const frontTabClassName = useClassName([tabClassName, front && !back ? "active" : ""]);
   const backTabClassName = useClassName([tabClassName, back ? "active" : ""]);
 
   return (
-    <div className="py-4">
+    <div className={containerClassName}>
       <div className="mb-4 font-medium text-center text-lg">Card text content</div>
 
       <div className="w-full bg-white rounded-3xl border">

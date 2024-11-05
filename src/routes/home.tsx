@@ -8,7 +8,7 @@ export default function Home() {
   // const initialCards: Card[] = filteredCards.slice(0, 50);
 
   return (
-    <div className="p-2 2xl:container mx-auto pt-1">
+    <div className="p-2 2xl:container mx-auto pt-1 md:p-4">
       <CardsGrid cards={filteredCards} />
     </div>
   );

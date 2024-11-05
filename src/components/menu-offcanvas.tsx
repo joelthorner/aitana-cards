@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Album, Bell, Github, LayoutGrid } from "lucide-react";
+import { Album, Bell, Github, Info, LayoutGrid } from "lucide-react";
 import { cards } from "../data/cards";
 
 export default function MenuOffcanvas() {
@@ -70,6 +70,20 @@ export default function MenuOffcanvas() {
             <span className="mr-auto">Changelog</span>
             {linkItemIcon}
           </Link>
+        </div>
+        <div className="border-b border-b-zinc-200">
+          <button
+            className={LinkItemClasses}
+            type="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="hs-subscription-with-image"
+            data-hs-overlay="#hs-subscription-with-image"
+          >
+            <Info strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <span className="mr-auto">Information</span>
+            {linkItemIcon}
+          </button>
         </div>
         <div className="border-b border-b-zinc-200">
           <a className={LinkItemClasses} href="https://github.com/joelthorner/aitana-cards" target="_blank" rel="noopener noreferrer">

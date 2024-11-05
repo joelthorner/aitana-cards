@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
   min-height: 100%;
   @apply bg-zinc-950;
 }
@@ -58,3 +59,33 @@ html {
 .markdown-card-text a {
   @apply pointer-events-none;
 }
+
+@media(min-width: 480px) {
+  .aspect-square-2::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(70% + 4rem);
+  }
+}
+
+@media(min-width: 640px) {
+  .aspect-square-2::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(60% + 4rem);
+  }
+}
+
+@media(min-width: 1024px) {
+  .aspect-square-2::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100%);
+  }
+
+  .swiper-card-detail {
+    --swiper-pagination-bottom: 2rem;
+  }
+}
+
+@layer utilities {}
