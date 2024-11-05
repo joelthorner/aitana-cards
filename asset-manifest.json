@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aitana-cards/static/css/main.7b56275f.css",
-    "main.js": "/aitana-cards/static/js/main.a706bb59.js",
+    "main.css": "/aitana-cards/static/css/main.e3a2b9f2.css",
+    "main.js": "/aitana-cards/static/js/main.ee40b1b5.js",
     "static/js/453.73604254.chunk.js": "/aitana-cards/static/js/453.73604254.chunk.js",
     "static/media/tfbtyotdc_DEABw_1.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_1.fd1b3015cfbba701c2be.jpg",
     "static/media/tfbtyotdc_DEABw_2.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_2.cb55e41d2ae75e0fdac1.jpg",
@@ -483,6 +483,7 @@
     "static/media/tcbwwts42gr_2.webp": "/aitana-cards/static/media/tcbwwts42gr_2.734e519dbe28c8b369a3.webp",
     "static/media/aitana-bonmati-barcelona-162-match-attax-extra-23-24.jpg": "/aitana-cards/static/media/aitana-bonmati-barcelona-162-match-attax-extra-23-24.b9cc3b66afb477b2a112.jpg",
     "static/media/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_4.webp": "/aitana-cards/static/media/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_4.d4074b56f1ce0a057fa0.webp",
+    "static/media/cHG1_3.webp": "/aitana-cards/static/media/cHG1_3.53673cc0a7235a55eaef.webp",
     "static/media/tnbo_1pu_1.jpg": "/aitana-cards/static/media/tnbo_1pu_1.300a2ce35b903bcf879a.jpg",
     "static/media/tabpcs_A69r_1.webp": "/aitana-cards/static/media/tabpcs_A69r_1.034e0898072c0ec82936.webp",
     "static/media/lifaFTeam.jpg": "/aitana-cards/static/media/lifaFTeam.2ed77e28e74ad363fc12.jpg",
@@ -840,6 +841,7 @@
     "static/media/2023-24 Topps - UWCL NOW -016b.jpg": "/aitana-cards/static/media/2023-24 Topps - UWCL NOW -016b.54ba108d251d4de62a12.jpg",
     "static/media/MelanieSerrano.jpg": "/aitana-cards/static/media/MelanieSerrano.5f527c0e299a6c223faa.jpg",
     "static/media/FridolinaRolfo.jpg": "/aitana-cards/static/media/FridolinaRolfo.18df638ddde42764c71a.jpg",
+    "static/media/AndresIniesta.jpg": "/aitana-cards/static/media/AndresIniesta.752d4fa498a832136c4a.jpg",
     "static/media/IreneParedes.jpg": "/aitana-cards/static/media/IreneParedes.06ae9c1f89e73eb54a1e.jpg",
     "static/media/mask_14i_2.png": "/aitana-cards/static/media/mask_14i_2.19a70da069666ec4f295.png",
     "static/media/lifaFTeam_2.webp": "/aitana-cards/static/media/lifaFTeam_2.9cf8bcb4c851b72f1b9d.webp",
@@ -853,7 +855,6 @@
     "static/media/pf365axl_431_3.webp": "/aitana-cards/static/media/pf365axl_431_3.58bfced00dcc4d3bfe4d.webp",
     "static/media/SandraPanos.jpg": "/aitana-cards/static/media/SandraPanos.8077563d17d045ed0caf.jpg",
     "static/media/tabpcs_70p_2.webp": "/aitana-cards/static/media/tabpcs_70p_2.bb899f9409c9d2eb370d.webp",
-    "static/media/cHG1_3.webp": "/aitana-cards/static/media/cHG1_3.b364249a5c133fa2d557.webp",
     "static/media/topps-now-brilliant-brace-in-opening-game-2.webp": "/aitana-cards/static/media/topps-now-brilliant-brace-in-opening-game-2.70e45530a2a118ee3940.webp",
     "static/media/c14r_1.webp": "/aitana-cards/static/media/c14r_1.d0a73cdae9882c982ba5.webp",
     "static/media/tffb2324_SAABy_1.webp": "/aitana-cards/static/media/tffb2324_SAABy_1.94ae89d3f96c73484606.webp",
@@ -903,12 +904,12 @@
     "static/media/c14pl_0.jpg": "/aitana-cards/static/media/c14pl_0.e9baf3735fe74ac37dbc.jpg",
     "static/media/c14pl_1.jpg": "/aitana-cards/static/media/c14pl_1.7251626b46390deaf51e.jpg",
     "index.html": "/aitana-cards/index.html",
-    "main.7b56275f.css.map": "/aitana-cards/static/css/main.7b56275f.css.map",
-    "main.a706bb59.js.map": "/aitana-cards/static/js/main.a706bb59.js.map",
+    "main.e3a2b9f2.css.map": "/aitana-cards/static/css/main.e3a2b9f2.css.map",
+    "main.ee40b1b5.js.map": "/aitana-cards/static/js/main.ee40b1b5.js.map",
     "453.73604254.chunk.js.map": "/aitana-cards/static/js/453.73604254.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b56275f.css",
-    "static/js/main.a706bb59.js"
+    "static/css/main.e3a2b9f2.css",
+    "static/js/main.ee40b1b5.js"
   ]
 }
