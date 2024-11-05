@@ -1,11 +1,13 @@
 import { AitanaBonmati, Teammate } from "../../data/teammates";
+import { useClassName } from "../../hooks/useClassName";
 
-export default function Teammates({ teammates }: { teammates: Teammate[] }) {
+export default function Teammates({ teammates, className }: { teammates: Teammate[]; className?: string }) {
+  const containerClassName = useClassName([className, "py-4"]);
   const _teammates = [...teammates, AitanaBonmati];
 
   return (
-    <div className="py-4">
-      <div className="mb-4 font-medium text-center text-lg">Players appearing on the card</div>
+    <div className={containerClassName}>
+      <div className="mb-4 font-medium text-center text-lg">Card teammates</div>
 
       <div className="flex flex-wrap justify-center gap-3">
         {_teammates.map((teammate) => (

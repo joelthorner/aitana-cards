@@ -16,7 +16,7 @@ export default function DataTable({ card }: { card: Card }) {
 
   return (
     <>
-      <ul className="mt-6">
+      <ul className="mt-6 lg:mt-2 xl:grid xl:grid-cols-2 xl:gap-x-4">
         <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
           <div className="flex gap-x-3">
             <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
@@ -197,17 +197,19 @@ export default function DataTable({ card }: { card: Card }) {
             </Link>
           </div>
         </li>
-        <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
-          <div className="flex gap-x-3">
-            <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
-              <BookType size={16} strokeWidth={1.5} className="shrink-0" />
-            </span>
-            <span className="flex-grow">
-              <span className="font-medium text-zinc-800 block">Collection serie</span>
-              <span className="text-xs text-zinc-500 block">{card.collection.serie}</span>
-            </span>
-          </div>
-        </li>
+        {card.collection.serie && (
+          <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
+            <div className="flex gap-x-3">
+              <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
+                <BookType size={16} strokeWidth={1.5} className="shrink-0" />
+              </span>
+              <span className="flex-grow">
+                <span className="font-medium text-zinc-800 block">Collection serie</span>
+                <span className="text-xs text-zinc-500 block">{card.collection.serie}</span>
+              </span>
+            </div>
+          </li>
+        )}
         <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
           <div className="flex gap-x-3">
             <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '500px',
+        'xs': '480px',
       },
       gridTemplateColumns: {
         'collection': '33fr 66fr',

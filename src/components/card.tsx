@@ -26,8 +26,9 @@ const Card = memo(({ card, emptyCard = false }: CardProps) => {
   const holoElement = useMemo(() => isVisible && card.brilli && defaultImage && <Holo type={card.brilli} cardId={card.id} />, [isVisible, card.brilli, card.id, defaultImage]);
 
   const cardClassName = useClassName([
-    "h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition",
+    "border border-zinc-900 h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition",
     emptyCard ? "invisible opacity-0" : "",
+    "md:hover:bg-zinc-950 md:hover:border-zinc-800",
   ]);
 
   return (
