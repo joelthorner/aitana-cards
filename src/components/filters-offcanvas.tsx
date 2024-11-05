@@ -23,7 +23,7 @@ export default function FiltersOffcanvas() {
   return (
     <div
       id="offcanvas-filters"
-      className="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 end-0 transition-all duration-300 transform h-full max-w-xs w-full z-[80] bg-white border-s"
+      className="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 end-0 transition-all duration-300 transform h-full max-w-[350px] w-full z-[80] bg-white border-s"
       role="dialog"
       tabIndex={-1}
       aria-labelledby="offcanvas-filters-label"

@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
 import tabpcs_118g_0 from "../img/cards/tabpcs_118_0.jpg";
 import tabpcs_118g_1 from "../img/cards/tabpcs_118_1.webp";
@@ -11,6 +11,7 @@ import tabpcs_118r_1 from "../img/cards/tabpcs_118r_1.webp";
 import tabpcs_118r_2 from "../img/cards/tabpcs_118r_2.webp";
 import tabpcs_118p_0 from "../img/cards/tabpcs_118p_0.jpg";
 import tabpcs_118p_1 from "../img/cards/tabpcs_118p_1.webp";
+import { AlexiaPutellas } from "../teammates";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118r: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-A-118r',
@@ -34,6 +35,27 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118r: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  cardTextFront: `01/10
+  
+TOPPS
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ
+ALEXIA PUTELLAS`,
+  cardTextBack: `**AITANA BONMATÍ**  
+**ALEXIA PUTELLAS**  
+**FC BARCELONA**
+
+---
+
+© 2024 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS IS A REGISTERED TRADEMARK OF THE TOPPS COMPANY, INC. ALL UEFA Champions League and UEFA Women’s Champions League names, logos and trophies are the property, registered trade marks, designs and/or copyright of UEFA. All rights reserved. 
+
+© FC BARCELONA`,
+  teammates: [
+    AlexiaPutellas,
+  ],
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118p: Card = {
@@ -57,6 +79,27 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118p: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  cardTextFront: `3/5
+  
+TOPPS
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ
+ALEXIA PUTELLAS`,
+  cardTextBack: `**AITANA BONMATÍ**  
+**ALEXIA PUTELLAS**  
+**FC BARCELONA**
+
+---
+
+© 2024 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS IS A REGISTERED TRADEMARK OF THE TOPPS COMPANY, INC. ALL UEFA Champions League and UEFA Women’s Champions League names, logos and trophies are the property, registered trade marks, designs and/or copyright of UEFA. All rights reserved. 
+
+© FC BARCELONA`,
+  teammates: [
+    AlexiaPutellas,
+  ],
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118g: Card = {
@@ -81,4 +124,25 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A118g: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  cardTextFront: `1/1
+  
+TOPPS
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ
+ALEXIA PUTELLAS`,
+  cardTextBack: `**AITANA BONMATÍ**  
+**ALEXIA PUTELLAS**  
+**FC BARCELONA**
+
+---
+
+© 2024 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS IS A REGISTERED TRADEMARK OF THE TOPPS COMPANY, INC. ALL UEFA Champions League and UEFA Women’s Champions League names, logos and trophies are the property, registered trade marks, designs and/or copyright of UEFA. All rights reserved. 
+
+© FC BARCELONA`,
+  teammates: [
+    AlexiaPutellas,
+  ],
 };

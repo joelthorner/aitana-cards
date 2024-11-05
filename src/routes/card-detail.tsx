@@ -82,61 +82,70 @@ export default function CardDetail() {
   return (
     <>
       <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:p-4 lg:items-start">
-        <div id={"gallery-" + cardId} ref={galleryRef} className="aspect-square-2 fixed top-0 left-0 right-0 z-[5] md:relative lg:sticky lg:top-20 lg:h-auto">
-          <button className="absolute top-0 left-0 z-40 text-white py-4 px-4" onClick={() => navigate(-1)}>
-            <MoveLeft />
-          </button>
+        <div className="lg:flex lg:flex-col lg:gap-4 lg:sticky lg:top-20">
+          <div id={"gallery-" + cardId} ref={galleryRef} className="aspect-square-2 fixed top-0 left-0 right-0 z-[5] md:relative lg:h-auto">
+            <button className="absolute top-0 left-0 z-40 text-white py-4 px-4" onClick={() => navigate(-1)}>
+              <MoveLeft />
+            </button>
 
-          <Swiper
-            pagination={{
-              dynamicBullets: false,
-            }}
-            modules={[Pagination]}
-            loop={card.images.length > 1}
-            className="!absolute inset-0 swiper-card-detail lg:rounded-3xl"
-          >
-            <SwiperSlide className="relative overflow-hidden">
-              <a
-                href={card.images[0]}
-                target="_blank"
-                rel="noreferrer"
-                className="cursor-pointer aspect-square xs:aspect-[100/70] sm:aspect-[100/60] lg:aspect-square flex relative items-center justify-center overflow-hidden"
-                onClick={(event) => initPhotoSwipe(event, 0)}
-              >
-                <div className={`aspect-[5/7] w-1/2 xs:w-1/3 lg:w-1/2 relative rounded-lg overflow-hidden ${card?.orientation === CardOrientation.Horizontal && "rotate-90"}`}>
-                  <img src={card.images[0]} alt={card.name} className="size-full" />
-                  {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
-                </div>
-              </a>
-              <div
-                style={{ backgroundImage: `url('${card.images[0]}')` }}
-                className={`bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s bg-fixed ${
-                  card?.orientation === CardOrientation.Horizontal && "rotate-90"
-                }`}
-              />
-            </SwiperSlide>
-            {card.images.slice(1, card.images.length).map((image, index) => (
-              <SwiperSlide key={image} className="relative overflow-hidden">
+            <Swiper
+              pagination={{
+                dynamicBullets: false,
+              }}
+              modules={[Pagination]}
+              loop={card.images.length > 1}
+              className="!absolute inset-0 swiper-card-detail lg:rounded-3xl"
+            >
+              <SwiperSlide className="relative overflow-hidden">
                 <a
-                  key={image}
-                  href={image}
+                  href={card.images[0]}
                   target="_blank"
                   rel="noreferrer"
-                  className="cursor-pointer aspect-square xs:aspect-[100/70] sm:aspect-[100/60] lg:aspect-square flex items-center justify-center overflow-hidden"
-                  onClick={(event) => initPhotoSwipe(event, index + 1)}
+                  className="cursor-pointer aspect-square xs:aspect-[100/70] sm:aspect-[100/60] lg:aspect-square flex relative items-center justify-center overflow-hidden"
+                  onClick={(event) => initPhotoSwipe(event, 0)}
                 >
-                  <div className="size-[calc(100%-6rem)] lg:size-[calc(100%-10rem)] flex items-center justify-center">
-                    <img src={image} alt={`${card.name} - ${index + 1}`} className="object-contain max-h-full rounded-md overflow-hidden" />
+                  <div className={`aspect-[5/7] w-1/2 xs:w-1/3 lg:w-1/2 relative rounded-lg overflow-hidden ${card?.orientation === CardOrientation.Horizontal && "rotate-90"}`}>
+                    <img src={card.images[0]} alt={card.name} className="size-full" />
+                    {card.brilli && card.images.length > 0 && <Holo type={card.brilli} cardId={card.id} />}
                   </div>
                 </a>
                 <div
-                  style={{ backgroundImage: `url('${image}')` }}
-                  className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s"
+                  style={{ backgroundImage: `url('${card.images[0]}')` }}
+                  className={`bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s bg-fixed ${
+                    card?.orientation === CardOrientation.Horizontal && "rotate-90"
+                  }`}
                 />
               </SwiperSlide>
-            ))}
-          </Swiper>
+              {card.images.slice(1, card.images.length).map((image, index) => (
+                <SwiperSlide key={image} className="relative overflow-hidden">
+                  <a
+                    key={image}
+                    href={image}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="cursor-pointer aspect-square xs:aspect-[100/70] sm:aspect-[100/60] lg:aspect-square flex items-center justify-center overflow-hidden"
+                    onClick={(event) => initPhotoSwipe(event, index + 1)}
+                  >
+                    <div className="size-[calc(100%-6rem)] lg:size-[calc(100%-10rem)] flex items-center justify-center">
+                      <img src={image} alt={`${card.name} - ${index + 1}`} className="object-contain max-h-full rounded-md overflow-hidden" />
+                    </div>
+                  </a>
+                  <div
+                    style={{ backgroundImage: `url('${image}')` }}
+                    className="bg-center size-[120%] absolute left-[-10%] top-[-10%] -z-10 background-cover blur-md opacity-30 bg-s"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {card.teammates && (
+            <div className="hidden lg:block bg-white rounded-3xl p-4">
+              <Teammates teammates={card.teammates} />
+            </div>
+          )}
         </div>
+
         <div className="aspect-square-2 md:hidden"></div>
 
         <div
@@ -145,9 +154,9 @@ export default function CardDetail() {
           } lg:mt-0 lg:rounded-3xl lg:py-6 lg:h-full`}
         >
           <div className="flex flex-col gap-2">
-            <h1 className="text-xl font-medium leading-normal">{card.name}</h1>
+            <h1 className="text-xl font-medium leading-normal xl:text-2xl text-pretty">{card.name}</h1>
 
-            <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600 hover:underline">
+            <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600">
               {card.collection.name}
             </Link>
           </div>
@@ -204,7 +213,7 @@ export default function CardDetail() {
 
           {card.teammates && <Teammates className="lg:hidden" teammates={card.teammates} />}
 
-          <CardLinks className="lg:hidden" links={card.links} />
+          <CardLinks links={card.links} />
         </div>
       </div>
       <div className="lg:grid">

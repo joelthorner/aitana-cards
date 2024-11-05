@@ -21,6 +21,7 @@ import img_MartaTorrejon from "./img/teammates/MartaTorrejon.jpg";
 import img_AnaMariaCrnogorcevic from "./img/teammates/AnaMariaCrnogorcevic.jpg";
 import img_JanaFernandez from "./img/teammates/JanaFernandez.jpg";
 import img_GemmaFont from "./img/teammates/GemmaFont.jpg";
+import img_AndresIniesta from "./img/teammates/AndresIniesta.jpg";
 
 export type Teammate = {
   number: number;
@@ -51,3 +52,4 @@ export const MartaTorrejon: Teammate = { number: 20, name: 'Marta Torrejón', im
 export const AnaMariaCrnogorcevic: Teammate = { number: 21, name: 'Ana-Maria Crnogorčević', image: img_AnaMariaCrnogorcevic, };
 export const JanaFernandez: Teammate = { number: 22, name: 'Jana Fernández', image: img_JanaFernandez, };
 export const GemmaFont: Teammate = { number: 24, name: 'Gemma Font', image: img_GemmaFont, };
+export const AndresIniesta: Teammate = { number: 8, name: 'Andrés Iniesta', image: img_AndresIniesta, };

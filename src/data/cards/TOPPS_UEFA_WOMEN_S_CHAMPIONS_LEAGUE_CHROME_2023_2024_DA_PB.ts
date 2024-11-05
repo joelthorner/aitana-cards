@@ -1,10 +1,11 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import DA_PBb_0 from "../img/cards/DA_PBb_0.jpg";
 import DA_PBb_1 from "../img/cards/DA_PBb_1.jpg";
 import DA_PBb_2 from "../img/cards/DA_PBb_2.webp";
 import DA_PBb_3 from "../img/cards/DA_PBb_3.webp";
+import { AlexiaPutellas } from "../teammates";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_DAPBb: Card = {
   customRelatedsRegexp: /DA-PB[a-z]{1,6}?$/,
@@ -30,4 +31,15 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_DAPBb: Card = 
   brilli: CardBrilli.BlackTopps,
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  teammates: [
+    AlexiaPutellas,
+  ],
+  language: CardLanguage.EN,
+  cardTextFront: `TOPPS CERTIFIED AUTOGRAPH ISSUE
+  
+ALEXIA PUTELLAS
+
+07/10
+
+AITANA BONMATÍ`
 };

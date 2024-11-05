@@ -7,7 +7,7 @@ export default function Teammates({ teammates, className }: { teammates: Teammat
 
   return (
     <div className={containerClassName}>
-      <div className="mb-4 font-medium text-center text-lg">Players appearing on the card</div>
+      <div className="mb-4 font-medium text-center text-lg">Card teammates</div>
 
       <div className="flex flex-wrap justify-center gap-3">
         {_teammates.map((teammate) => (

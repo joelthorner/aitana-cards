@@ -89,3 +89,16 @@ body {
 }
 
 @layer utilities {}
+
+/* Afegir aquest CSS al teu fitxer de CSS global o al component */
+.markdown table {
+  @apply w-full border-collapse border border-gray-200;
+}
+
+.markdown th {
+  @apply bg-gray-100 border border-gray-200 p-2 text-left font-semibold;
+}
+
+.markdown td {
+  @apply border border-gray-200 p-2;
+}
