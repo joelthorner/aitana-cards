@@ -1,3 +1,4 @@
+import ReactMarkdown from "react-markdown";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ErrorPage from "../error-page";
 import { collections } from "../data/collections";
@@ -7,6 +8,7 @@ import PhotoSwipe from "photoswipe";
 import { useRef } from "react";
 import { MoveLeft, SquareArrowOutUpRight } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
+import remarkGfm from "remark-gfm";
 
 interface GalleryItem {
   src: string;
@@ -88,7 +90,11 @@ export default function CollectionDetail() {
           )}
         </div>
 
-        {collection.description && collection.description.length > 0 && <p className="text-sm mt-4 text-zinc-500">{collection.description}</p>}
+        {collection.description && collection.description.length > 0 && (
+          <ReactMarkdown className="markdown grid gap-2 text-sm mt-4 text-zinc-500" remarkPlugins={[remarkGfm]}>
+            {collection.description}
+          </ReactMarkdown>
+        )}
 
         {collection.links.length > 0 && (
           <div className="flex flex-col mt-4">

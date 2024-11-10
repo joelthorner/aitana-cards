@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowTheDeadlyDuo from "../img/cards/topps-now-the-deadly-duo.jpg";
@@ -14,6 +14,7 @@ import toppsNowTheDeadlyDuoDualAutograph_back from "../img/cards/artwcl-16c2s-24
 import toppsNowTheDeadlyDuoDualAutograph_black from "../img/cards/2023-24 Topps - UWCL NOW -022h.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_rainbow from "../img/cards/2023-24 Topps - UWCL NOW -022j.jpg";
 import toppsNowTheDeadlyDuoDualAutograph_gold from "../img/cards/2023-24 Topps - UWCL NOW -022l.jpg";
+import { AlexiaPutellas } from "../teammates";
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22: Card = {
   id: 'topps-now-women-s-champions-league-2023-2024-22',
@@ -38,6 +39,31 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22: Card = {
     CardType.BaseSet,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+  
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu: Card = {
@@ -65,6 +91,33 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu: Card = {
     CardType.Purple,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+1/99
+  
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl: Card = {
@@ -92,6 +145,33 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl: Card = {
     CardType.Black,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+1/10
+  
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g: Card = {
@@ -119,6 +199,33 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g: Card = {
     CardType.Gold,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+1/1
+
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu: Card = {
@@ -146,6 +253,37 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu: Card = {
     CardType.Purple,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO
+
+1/25`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl: Card = {
@@ -173,6 +311,37 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl: Card = {
     CardType.Black,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO
+
+1/10`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
@@ -200,6 +369,37 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r: Card = {
     CardType.Rainbow,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO
+
+1/5`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g: Card = {
@@ -227,4 +427,35 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g: Card = {
     CardType.Gold,
   ],
   orientation: CardOrientation.Horizontal,
+  language: CardLanguage.EN,
+  teammates: [AlexiaPutellas],
+  cardTextFront: `TOPPS NOW
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+AITANA BONMATÍ & ALEXIA PUTELLAS
+
+25.05.24
+
+THE DEADLY DUO
+
+1/1`,
+  cardTextBack: `**ALEXIA PUTELLAS & AITANA BONMATÍ**  
+*THE DEADLY DUO*
+
+---
+
+FC Barcelona’s deadly duo Aitana Bonmatí and Alexia Putellas both scored in the Spanish side’s UEFA Women’s Champions League final victory over Olympique Lyonnais.
+
+It was a night that showed the best of Bonmatí and Putellas as FC Barcelona beat the French side 2-0 to win their third UEFA Women’s Champions League title. Bonmatí ran the game in typical fashion and opened the scoring in the 63rd minute. Caldentey played the midfielder in down the left and Bonmatí’s dinked finish was deflected into the goal. FC Barcelona legend Putellas came on in the 92nd minute and put the game beyond doubt three minutes later. Claudia Pina’s clever cut-back found Putellas in the box who launched a ferocious shot into the goal to make it 2-0 and seal the victory. A wonderful night for two of FC Barcelona’s, and the game’s, greatest players.
+
+---
+
+© FC BARCELONA  
+Published under license by The Topps Company, Inc.  
+© & © 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED.  
+Topps and Topps Chrome are registered trademarks of the Topps Company, Inc.  
+All UEFA Women’s Champions League marks, logos, mascots and trophies are the property of UEFA and are used by permission.`,
 };

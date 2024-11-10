@@ -73,6 +73,7 @@ export enum CardType {
   EtchedInStone = 'Etched in Stone',
   DiamondEyesDragon = 'Diamond Eyes Dragon',
   ShortPrint = 'Short Print',
+  Infinite = 'Infinite',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',

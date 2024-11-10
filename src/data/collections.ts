@@ -35,6 +35,8 @@ import inception22_23 from "./img/collections/inception22_23.jpg";
 import un from "./img/collections/un.jpg";
 import nowballonor from "./img/collections/nowballonor.jpg";
 import deco2425 from "./img/collections/deco2425.jpg";
+import shap2324 from "./img/collections/shap2324.jpg";
+import p22_2223 from "./img/collections/p22_2223.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -405,6 +407,27 @@ export const ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023: Coll
   serie: CollectionSerie.ToppsChrome,
 };
 
+export const ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024: Collection = {
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024',
+  image: shap2324,
+  name: "Topps UEFA Women's Champions League Chrome Sapphire edition 2023-2024",
+  description: `Get ready for the new high quality Sapphire designs.
+
+Each box comes with a guaranteed Sapphire Chrome autograph and three numbered parallels.
+
+Discover the Queens of Football insert in the unique Sapphire design, as well as rare base card variations.
+
+Look for the popular Sapphire Selections cards as well as the super rare and wonderful Sapphire Infinity cards that can be found on average 1 time per box, featuring the best players in the world.`,
+  brand: 'Topps',
+  links: [
+    'https://es.topps.com/pages/uwcl-chrome-sapphire-23-24',
+    'https://www.topps.com/media/amasty/amfile/attach/JPYZcOrXkTdrkRIUKLLwCQx21HEph3vG.pdf',
+    'https://cartophilic-info-exch.blogspot.com/2024/11/topps-2023-24-topps-chrome-uefa-womens.html',
+    'https://www.beckett.com/news/2023-24-topps-chrome-sapphire-uefa-womens-champions-league/',
+  ],
+  serie: CollectionSerie.ToppsChrome,
+};
+
 export const PaniniFifaWomenSWorldCupAustraliaNewZealand_2023: Collection = {
   id: 'panini-fifa-women-s-world-cup-australia-new-zealand-2023',
   image: fifaWomensWorldCup_2023PortadaAlbum,
@@ -536,6 +559,19 @@ También podrás encontrar autógrafos inéditos "Marks of Excellence" en los cr
   serie: CollectionSerie.ToppsInception,
 };
 
+export const ToppsProject22Uefa_2022_2023: Collection = {
+  id: 'topps-project22-uefa-2022-2023',
+  image: p22_2223,
+  name: "Topps Project22 UEFA 2022-2023",
+  description: `Project 22 es una colección de cartas diseñadas por 22 artistas, de ahí su nombre, que incluye a los mejores jugadores, rookies, leyendas de las competiciones UEFA de clubs tanto en categoría masculina como femenina.`,
+  brand: 'Topps',
+  links: [
+    'https://www.cardboardconnection.com/topps-project22-uefa-soccer-cards',
+    'http://www.owacgames.com/2022/07/coleccion-cartas-topps-project-22-champions-league.html',
+    'https://www.beckett.com/news/topps-project-22-uefa/',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniCarrefourVamosSeleccion_2024,
   PaniniFifa_365_2024,
@@ -548,16 +584,18 @@ export const collections: Collection[] = [
   ToppsAitanaBonmatiPlatinumCuratedSet_2024,
   ToppsChromeFcBarcelona_2022_2023,
   ToppsDecoUefaClubCompetitions_2023_2024,
+  ToppsDecoUefaClubCompetitions_2024_2025,
   ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   ToppsFocusFcBarcelona_2023_2024,
+  ToppsInceptionUefaClubCompetitions_2022_2023,
   ToppsInceptionUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
   ToppsMerlinHeritageUefaClubCompetitions_2023_2024,
+  ToppsNowBalonDOr_2024,
   ToppsNowWomenSChampionsLeague_2021_2022,
   ToppsNowWomenSChampionsLeague_2022_2023,
   ToppsNowWomenSChampionsLeague_2023_2024,
-  ToppsNowBalonDOr_2024,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsUefaChampionsLeague_2022_2023,
@@ -568,8 +606,21 @@ export const collections: Collection[] = [
   ToppsUefaWomenSChampionsLeagueChrome_2022_2023,
   ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
+  ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
   ToppsUefaWomensChampionsLeagueKnockout_2023,
-  ToppsInceptionUefaClubCompetitions_2022_2023,
+  ToppsProject22Uefa_2022_2023,
   UnlicensedCards,
-  ToppsDecoUefaClubCompetitions_2024_2025,
-].sort((a, b) => a.name.localeCompare(b.name));
+].sort((a, b) => {
+  if (a.serie && b.serie) {
+    const serieComparison = a.serie.localeCompare(b.serie);
+    if (serieComparison !== 0) {
+      return serieComparison;
+    }
+  } else if (a.serie) {
+    return -1;
+  } else if (b.serie) {
+    return 1;
+  }
+
+  return a.name.localeCompare(b.name);
+});
