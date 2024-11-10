@@ -31,7 +31,7 @@ import { TOPPS_FOCUS_FC_BARCELONA_2023_2024_12, TOPPS_FOCUS_FC_BARCELONA_2023_20
 import { TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1 } from "./cards/TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66bu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66r, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66p, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66r } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A71p, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71pu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A71r } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71";
-import { TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r } from "./cards/TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22";
+import { TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu, TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r } from "./cards/TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22";
 import { TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25, TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b, TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25bu, TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25pu, TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25bu } from "./cards/TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56bu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56gr, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56pu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A56p } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56";
 import { TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69bu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69pu, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69r, TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A69r } from "./cards/TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69";
@@ -67,6 +67,77 @@ import { TOPPS_NOW_BALON_D_OR_2024_2 } from "./cards/TOPPS_NOW_BALON_D_OR_2024_2
 import { TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_HG1 } from "./cards/TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_HG_1";
 
 export const changelog: Changelog[] = [
+  {
+    date: new Date('2024-11-06'),
+    items: [
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22pu,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22bl,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_22g,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22pu,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22bl,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22r,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_DA22g,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBbl,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARBo,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+      {
+        type: LineType.ADDED,
+        card: TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_DARB,
+        text: `Added \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields `,
+        user: 'joelthorner',
+      },
+    ],
+  },
   {
     date: new Date('2024-11-05'),
     items: [
