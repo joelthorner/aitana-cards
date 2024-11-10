@@ -1,9 +1,9 @@
+import ReactMarkdown from "react-markdown";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { cards } from "../data/cards";
 import ErrorPage from "../error-page";
 import { getStarClassName } from "../utils/getStarClassName";
-import { Bug, MoveLeft, SquareArrowOutUpRight } from "lucide-react";
-import { getUrlDomain } from "../utils/getUrlDomain";
+import { Bug, MoveLeft } from "lucide-react";
 import Holo from "../components/holo";
 import "photoswipe/style.css";
 import { useEffect, useRef } from "react";
@@ -20,6 +20,7 @@ import CardsGridStatic from "../components/cards-grid-static";
 import Teammates from "../components/card-detail/teammates";
 import CardTexts from "../components/card-detail/card-texts";
 import CardLinks from "../components/card-detail/card-links";
+import remarkGfm from "remark-gfm";
 
 interface GalleryItem {
   src: string;
@@ -161,7 +162,11 @@ export default function CardDetail() {
             </Link>
           </div>
 
-          {card.description && <p className="text-sm text-slate-500">{card.description}</p>}
+          {card.description && (
+            <ReactMarkdown className="markdown grid gap-2 text-sm text-zinc-500" remarkPlugins={[remarkGfm]}>
+              {card.description}
+            </ReactMarkdown>
+          )}
 
           <div className="flex gap-2 flex-wrap items-center">
             <div className="hs-tooltip">

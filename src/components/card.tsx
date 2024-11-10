@@ -23,7 +23,7 @@ const Card = memo(({ card, emptyCard = false }: CardProps) => {
     () => (card.images.length > 0 ? <img src={card.images[0]} alt={card.name} className="absolute inset-0 size-full rounded-md" loading="lazy" /> : null),
     [card.images, card.name]
   );
-  const holoElement = useMemo(() => isVisible && card.brilli && defaultImage && <Holo type={card.brilli} cardId={card.id} />, [isVisible, card.brilli, card.id, defaultImage]);
+  const holoElement = isVisible && card.brilli && defaultImage && <Holo type={card.brilli} cardId={card.id} />;
 
   const cardClassName = useClassName([
     "border border-zinc-900 h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition",

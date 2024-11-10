@@ -45,7 +45,7 @@ export default function Changelog() {
   return (
     <div className="p-2 2xl:container mx-auto">
       <div className="bg-zinc-900 px-5 pl-3 pt-5 pb-20 rounded-t-3xl relative">
-        <div className="text-xl text-center font-medium leading-normal text-white px-2 mb-4 mt-0">Changelog</div>
+        <div className="text-xl font-medium leading-normal text-white px-2 mb-4 mt-0">Changelog</div>
 
         <InfiniteScroll dataLength={items.length} next={fetchMoreData} hasMore={hasMore} loader={"TODO carregant spinner"}>
           {items.map((day, index) => (

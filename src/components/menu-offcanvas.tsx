@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Album, Bell, Github, Info, LayoutGrid } from "lucide-react";
 import { cards } from "../data/cards";
+import { collections } from "../data/collections";
 
 export default function MenuOffcanvas() {
   const LinkItemClasses = "h-14 px-4 w-full justify-between items-center text-start flex font-medium hover:bg-gray-50 transition-colors";
@@ -93,8 +94,12 @@ export default function MenuOffcanvas() {
           </a>
         </div>
 
-        <div className="mt-auto flex flex-col mb-2 text-sm text-zinc-600">
-          <div className="h-10 px-4 flex items-center justify-between">
+        <div className="mt-auto flex flex-col gap-2 mb-4 text-sm text-zinc-500">
+          <div className="px-4 flex items-center justify-between">
+            <span className="font-medium">Total collections added</span>
+            <span>{collections.length}</span>
+          </div>
+          <div className="px-4 flex items-center justify-between">
             <span className="font-medium">Total cards added</span>
             <span>{cards.length}</span>
           </div>

@@ -7,6 +7,7 @@ import tabpcs_70_0 from "../img/cards/tabpcs_70_0.jpg";
 import tabpcs_70_1 from "../img/cards/tabpcs_70_1.webp";
 import tabpcs_70bu_0 from "../img/cards/tabpcs_70bu_0.jpg";
 import tabpcs_70bu_1 from "../img/cards/tabpcs_70bu_1.webp";
+import tabpcs_70bu_2 from "../img/cards/tabpcs_70bu_2.webp";
 import tabpcs_70p_0 from "../img/cards/tabpcs_70p_0.jpg";
 import tabpcs_70p_1 from "../img/cards/tabpcs_70p_1.webp";
 import tabpcs_70p_2 from "../img/cards/tabpcs_70p_2.webp";
@@ -38,6 +39,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70bu: Card = {
   images: [
     tabpcs_70bu_0,
     tabpcs_70bu_1,
+    tabpcs_70bu_2,
   ],
   name: 'Abre el marcador en una semifinal con una asistencia que batió todos los récord - Blue',
   rarity: 4,

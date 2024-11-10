@@ -3,12 +3,10 @@ import { CardType } from "../types/card";
 export const CardTypeGroupGeneric: CardType[][] = [
   [
     CardType.BaseSet,
+    CardType.Holographic,
     CardType.TeamCard,
     CardType.Collage,
     CardType.UnlicensedCard,
-  ],
-  [
-    CardType.Holographic,
   ],
 ];
 
@@ -42,6 +40,7 @@ export const CardTypeGroupToppsCards: CardType[][] = [
     CardType.EtchedInStone,
     CardType.DiamondEyesDragon,
     CardType.ShortPrint,
+    CardType.Infinite,
   ],
   [
     CardType.Refractor,
