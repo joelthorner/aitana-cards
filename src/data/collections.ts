@@ -37,6 +37,7 @@ import nowballonor from "./img/collections/nowballonor.jpg";
 import deco2425 from "./img/collections/deco2425.jpg";
 import shap2324 from "./img/collections/shap2324.jpg";
 import p22_2223 from "./img/collections/p22_2223.jpg";
+import comprarUcl_21_22 from "./img/collections/comprarUcl_21_22.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -268,6 +269,19 @@ export const ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024: Collection = {
     // 'https://www.psacard.com/auctionprices/soccer-cards/2023-2024-topps-fc-barcelona-year-dragon/276063',
   ],
   serie: CollectionSerie.ToppsFCBarcelona,
+};
+
+export const ToppsUefaChampionsLeague_2021_2022: Collection = {
+  id: 'topps-uefa-champions-league-2021-2022',
+  image: comprarUcl_21_22,
+  name: "Topps UEFA Champions League 2021-2022",
+  description: ``,
+  brand: 'Topps',
+  links: [
+    'https://www.laststicker.com/cards/topps_uefa_champions_league_2021-2022/',
+    'http://www.owacgames.com/2021/10/coleccion-cromos-stickers-uefa-champions-league-2021-2022-datos-fotos-listado-topps.html',
+  ],
+  serie: CollectionSerie.ToppsUEFAStickers,
 };
 
 export const ToppsUefaChampionsLeague_2022_2023: Collection = {
@@ -598,6 +612,7 @@ export const collections: Collection[] = [
   ToppsNowWomenSChampionsLeague_2023_2024,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
+  ToppsUefaChampionsLeague_2021_2022,
   ToppsUefaChampionsLeague_2022_2023,
   ToppsUefaChampionsLeague_2023_2024,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,

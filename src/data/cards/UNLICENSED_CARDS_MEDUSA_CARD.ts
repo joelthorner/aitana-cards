@@ -7,14 +7,15 @@ import won_1_2 from "../img/cards/won_1_2.webp";
 
 export const UNLICENSED_CARDS_MEDUSA_CARD_WO_NUMBER_1: Card = {
   id: 'unlicensed-cards-medusa-card-wo-number-1',
-  number: 'w/o num 1',
+  number: 'w/o',
   images: [
     won_1_0,
     won_1_1,
     won_1_2,
   ],
   name: "Aitana Bonmatí Balon de Oro 2023",
-  rarity: 3,
+  description: "Medusa card unlicensed collection",
+  rarity: 2,
   status: CardStatus.Falti,
   collection: UnlicensedCards,
   year: 2023,

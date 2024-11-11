@@ -168,3 +168,11 @@
 .btn-card-type-BlueCrystall {
   @apply bg-sky-200;
 }
+
+.btn-card-type-Papradascha {
+  @apply bg-[#ba0046];
+}
+
+.btn-text-card-type-Papradascha {
+  @apply text-white;
+}

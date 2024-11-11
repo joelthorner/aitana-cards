@@ -5,7 +5,8 @@ import Holo from "./holo";
 import { Card as CardType, CardType as CardCardType } from "../types/card";
 import { useClassName } from "../hooks/useClassName";
 import { useIsVisible } from "../hooks/useIsVisible";
-import { Shirt } from "lucide-react";
+import { Shirt, TriangleAlert } from "lucide-react";
+import { UnlicensedCards } from "../data/collections";
 
 interface CardProps {
   card: CardType;
@@ -45,11 +46,16 @@ const Card = memo(({ card, emptyCard = false }: CardProps) => {
 
       <div className="p-2 -ml-2 -mr-2 -mb-2 mt-auto flex items-center gap-2 justify-between">
         <div className="flex items-center gap-1 justify-center" title="Card number">
-          <p className="text-[10px] text-zinc-400 capitalize">{card.number}</p>
+          <p className="text-[10px] text-zinc-400">{card.number}</p>
         </div>
         {card.cardType.includes(CardCardType.Relic) && (
           <div className="flex items-center gap-1 justify-center mr-auto text-lime-500" title="Relic">
             <Shirt size={12} strokeWidth={1} />
+          </div>
+        )}
+        {card.collection.id === UnlicensedCards.id && (
+          <div className="flex items-center gap-1 justify-center mr-auto text-red-500" title="Unlicensed card">
+            <TriangleAlert size={12} strokeWidth={1} />
           </div>
         )}
         <div className="flex items-center gap-1 justify-center ml-auto" title="Year">

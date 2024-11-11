@@ -1,13 +1,3 @@
-/**
- * @todo Missing data of [34bu] Excel data 4 more detail [no evidence]
- * @todo Missing data of [34r] Excel data 4 more detail [no evidence]
- * @todo Missing data of [34g] Excel data 4 more detail [no evidence]
- * @todo Missing data of [AA-34] Excel data 4 more detail [no evidence]
- * @todo Missing data of [AA-34gr] Excel data 4 more detail [no evidence]
- * @todo Missing data of [AA-34r] Excel data 4 more detail [no evidence]
- * @todo Missing data of [AA-34rb] Excel data 4 more detail [no evidence]
- * @todo Missing data of [AA-34g] Excel data 4 more detail [no evidence]
- */
 import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
@@ -22,6 +12,8 @@ import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25 from "../img/cards/aitan
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2 from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25_2.webp";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen49Auto.jpg";
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen25Auto.jpg";
+import tfcbwwts2324_34bu_0 from "../img/cards/tfcbwwts2324_34bu_0.jpg";
+import tfcbwwts2324_34bu_1 from "../img/cards/tfcbwwts2324_34bu_1.jpeg";
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
   id: 'topps-fc-barcelona-women-winners-team-set-2023-34',
@@ -63,6 +55,29 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34gr: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 99,
+};
+
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34bu: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-34bu',
+  number: '34bu',
+  images: [
+    tfcbwwts2324_34bu_0,
+    tfcbwwts2324_34bu_1,
+  ],
+  name: 'Aitana Bonmatí Base in action / Blue',
+  rarity: 3,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.BlueTopps,
+  collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  year: 2023,
+  cardSection: "Assist Queen",
+  cardType: [
+    CardType.BaseSet,
+    CardType.InAction,
+    CardType.Blue,
+  ],
+  productType: CardProductType.Card,
+  numbered: 49,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34pu: Card = {

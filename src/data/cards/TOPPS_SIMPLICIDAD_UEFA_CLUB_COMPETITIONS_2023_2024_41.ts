@@ -1,13 +1,4 @@
-/**
- * @todo Missing data of [41r] Excel data 4 more detail [no results]
- * @todo Missing data of [41g] Excel data 4 more detail [no results]
- * @todo Missing data of [41] Excel data 4 more detail [no results]
- * @todo Missing data of [A-41p99] Excel data 4 more detail [no results]
- * @todo Missing data of [A-41p49] Excel data 4 more detail [no results]
- * @todo Missing data of [A-41p25] Excel data 4 more detail [no results]
- * @todo Missing data of [A-41rb] Excel data 4 more detail [no results]
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsSimplicidadUefaClubCompetitions_2023_2024 } from "../collections"
 
 import toppsSimplicidad_23_24Aitana from "../img/cards/toppsSimplicidad_23_24AitanaFront.jpg";
@@ -29,8 +20,12 @@ import toppsSimplicidad_23_24Aitana41bu_2 from "../img/cards/toppsSimplicidad_23
 import toppsSimplicidad_23_24Aitana41bu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_3.webp";
 import tducc_9r_5 from "../img/cards/tducc_9r_5.webp";
 import tducc_9r_6 from "../img/cards/tducc_9r_6.webp";
+import tsucc2324_41r_0 from "../img/cards/tsucc2324_41r_0.jpg";
+import tsucc2324_41r_1 from "../img/cards/tsucc2324_41r_1.webp";
+import tsucc2324_41r_2 from "../img/cards/tsucc2324_41r_2.webp";
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41',
   number: 41,
   images: [
@@ -50,6 +45,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41: Card = {
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41bu: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41bu',
   number: '41bu',
   images: [
@@ -73,6 +69,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41bu: Card = {
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41gr: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41gr',
   number: '41gr',
   images: [
@@ -98,6 +95,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41gr: Card = {
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41pu: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41pu',
   number: '41pu',
   images: [
@@ -120,7 +118,32 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41pu: Card = {
   numbered: 25,
 };
 
+export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41r: Card = {
+  orientation: CardOrientation.Horizontal,
+  id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41r',
+  number: '41r',
+  images: [
+    tsucc2324_41r_0,
+    tsucc2324_41r_1,
+    tsucc2324_41r_2,
+  ],
+  name: 'Aitana Bonmatí Dynamic / Red',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.RedFoil,
+  collection: ToppsSimplicidadUefaClubCompetitions_2023_2024,
+  year: 2024,
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
+  cardType: [
+    CardType.Dynamic,
+    CardType.Red,
+  ],
+  numbered: 10,
+};
+
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41rb: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-41rb',
   number: '41rb',
   images: [
@@ -144,6 +167,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41rb: Card = {
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41r: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-A-41r',
   number: 'A-41r',
   images: [
@@ -167,6 +191,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41r: Card = {
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41g: Card = {
+  orientation: CardOrientation.Horizontal,
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-A-41g',
   number: 'A-41g',
   images: [
