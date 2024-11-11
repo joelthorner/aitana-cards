@@ -1,6 +1,3 @@
-/**
- * COMPLETED data
- */
 import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2022_2023 } from "../collections";
 

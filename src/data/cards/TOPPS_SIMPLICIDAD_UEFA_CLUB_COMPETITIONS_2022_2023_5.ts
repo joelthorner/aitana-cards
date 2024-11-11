@@ -25,6 +25,7 @@ import tus23_A5r_3 from "../img/cards/tus23_A5r_3.webp";
 import tus23_5rb_0 from "../img/cards/tus23_5rb_0.jpg";
 import tus23_5rb_1 from "../img/cards/tus23_5rb_1.webp";
 import tus23_5rb_2 from "../img/cards/tus23_5rb_2.webp";
+import tus23_A5pu_1 from "../img/cards/tus23_A5pu_1.jpeg";
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2022-2023-5',
@@ -187,6 +188,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5pu: Card = {
   number: 'A-5pu',
   images: [
     tus23_A5pu_0,
+    tus23_A5pu_1,
   ],
   name: 'Aitana Bonmatí Autograph / Purple',
   rarity: 5,

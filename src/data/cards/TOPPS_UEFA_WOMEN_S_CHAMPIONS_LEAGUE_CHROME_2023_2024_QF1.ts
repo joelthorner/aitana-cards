@@ -52,6 +52,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1g: Card = {
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
+  numbered: 50,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {
