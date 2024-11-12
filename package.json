@@ -2,7 +2,6 @@
   "name": "aitana-cards",
   "version": "2.0.16",
   "private": true,
-  "homepage": "https://joelthorner.github.io/aitana-cards",
   "dependencies": {
     "@algolia/client-search": "^5.10.2",
     "@popperjs/core": "^2.11.8",
