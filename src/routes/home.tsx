@@ -1,11 +1,10 @@
 import CardsGrid from "../components/cards-grid";
 import { useFilteredCards } from "../hooks/useFilteredCards";
-// import { Card } from "../types/card";
+import { useFiltersContext } from "../providers/filters";
 
 export default function Home() {
-  const filteredCards = useFilteredCards();
-
-  // const initialCards: Card[] = filteredCards.slice(0, 50);
+  useFilteredCards();
+  const { filteredCards } = useFiltersContext();
 
   return (
     <div className="p-2 2xl:container mx-auto pt-1 md:p-4">

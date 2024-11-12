@@ -24,12 +24,9 @@ export default function CollectionsGrid({ collections }: CollectionsGridProps) {
         // }
 
         return (
-          <>
-            {/* {title && title} */}
-            <div className="grid-item" key={collection.id}>
-              <Collection collection={collection} />
-            </div>
-          </>
+          <div className="grid-item" key={collection.id}>
+            <Collection collection={collection} />
+          </div>
         );
       })}
     </div>

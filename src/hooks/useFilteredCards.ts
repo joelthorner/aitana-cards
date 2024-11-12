@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { OrderByEnum, useFiltersContext } from "../providers/filters";
 import { cards } from "../data/cards";
 import { Card, CardStatus, CardType } from "../types/card";
 
 export function useFilteredCards() {
-  const [filteredCards, setFilteredCards] = useState(cards);
-  const { status, rarity, orderBy, collections, cardTypes, years } = useFiltersContext();
+  const { status, rarity, orderBy, collections, cardTypes, years, filteredCards, setFilteredCards } = useFiltersContext();
 
   useEffect(() => {
     const newFilteredCards = cards.filter((card: Card) => {
@@ -34,7 +33,11 @@ export function useFilteredCards() {
     }
 
     setFilteredCards(newOrderedCards);
-  }, [status, rarity, orderBy, collections, cardTypes, years]);
+  }, [status, rarity, orderBy, collections, cardTypes, years, setFilteredCards]);
 
   return filteredCards;
+}
+
+export function getCardsByIdList(idList: string[]) {
+  return cards.filter(card => idList.includes(card.id));
 }

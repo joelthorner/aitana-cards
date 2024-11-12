@@ -4,7 +4,7 @@ import { ToppsUefaChampionsLeague_2021_2022 } from "../collections";
 import tucl2122_644_0 from "../img/cards/tucl2122_644_0.jpg";
 import tucl2122_644_1 from "../img/cards/tucl2122_644_1.webp";
 import tucl2122_644_2 from "../img/cards/tucl2122_644_2.webp";
-import { AlexiaPutellas, AnaMariaCrnogorcevic, AndreaPereira, BrunaVilamala, CarolineGrahamHansen, CataColl, JenniHermoso, KheiraHamraoui, LaiaCodina, LeilaOuahabi, LiekeMartens, LluisCortesCava, MapiLeon, MarionaCaldentey, MartaTorrejon, VickyLosada } from "../teammates";
+import { AlexiaPutellas, AnaMariaCrnogorcevic, AndreaPereira, BrunaVilamala, CarolineGrahamHansen, CataColl, JenniHermoso, KheiraHamraoui, LaiaCodina, LeilaOuahabi, LiekeMartens, MapiLeon, MarionaCaldentey, MartaTorrejon, VickyLosada } from "../teammates";
 
 const TOPPS_UEFA_CHAMPIONS_LEAGUE_2021_2022_644: Card = {
   id: 'topps-uefa-champions-league-2021-2022-644',
@@ -45,7 +45,6 @@ SEASON 2021/2022
     CarolineGrahamHansen,
     LaiaCodina,
     AndreaPereira,
-    LluisCortesCava,
     LeilaOuahabi,
     LiekeMartens,
     MarionaCaldentey,

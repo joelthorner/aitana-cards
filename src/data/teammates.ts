@@ -23,9 +23,9 @@ import img_JanaFernandez from "./img/teammates/JanaFernandez.jpg";
 import img_GemmaFont from "./img/teammates/GemmaFont.jpg";
 import img_AndresIniesta from "./img/teammates/AndresIniesta.jpg";
 import img_AsisatOshoala from "./img/teammates/AsisatOshoala.jpg";
-import img_LluisCortesCava from "./img/teammates/LluisCortesCava.jpg";
 import img_MarionaCaldentey from "./img/teammates/MarionaCaldentey.jpg";
 import img_VickyLosada from "./img/teammates/VickyLosada.jpg";
+import img_OnaBatlle from "./img/teammates/OnaBatlle.jpg";
 
 export type Teammate = {
   number: number | string;
@@ -53,7 +53,6 @@ export const KheiraHamraoui: Teammate = { number: 10, name: 'Kheira Hamraoui', i
 export const LaiaCodina: Teammate = { number: 18, name: 'Laia Codina', image: img_LaiaCodina, };
 export const LeilaOuahabi: Teammate = { number: 3, name: 'Leila Ouahabi', image: img_LeilaOuahabi, };
 export const LiekeMartens: Teammate = { number: 14, name: 'Lieke Martens', image: img_LiekeMartens, };
-export const LluisCortesCava: Teammate = { number: 'C', name: 'Lluís Cortés Cava', image: img_LluisCortesCava, };
 export const MapiLeon: Teammate = { number: 4, name: 'Mapi León', image: img_MapiLeon, };
 export const MarionaCaldentey: Teammate = { number: 9, name: 'Mariona Caldentey', image: img_MarionaCaldentey, };
 export const MartaTorrejon: Teammate = { number: 20, name: 'Marta Torrejón', image: img_MartaTorrejon, };
@@ -61,3 +60,4 @@ export const MelanieSerrano: Teammate = { number: 5, name: 'Melanie Serrano', im
 export const PatriGuijarro: Teammate = { number: 8, name: 'Patri Guijarro', image: img_PatriGuijarro, };
 export const SandraPanos: Teammate = { number: 1, name: 'Sandra Paños', image: img_SandraPanos, };
 export const VickyLosada: Teammate = { number: 6, name: 'Vicky Losada', image: img_VickyLosada, };
+export const OnaBatlle: Teammate = { number: 22, name: 'Ona Batlle', image: img_OnaBatlle, };

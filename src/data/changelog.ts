@@ -75,6 +75,17 @@ import TOPPS_UEFA_CHAMPIONS_LEAGUE_2021_2022_644 from "./cards/TOPPS_UEFA_CHAMPI
 
 export const changelog: Changelog[] = [
   {
+    date: new Date('2024-11-12'),
+    items: [
+      {
+        type: LineType.CHANGED,
+        card: PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_21,
+        text: `Added \`2\` additional images, and \`teammates\`, \`cardTextFront\`, \`cardTextBack\` & \`language\` fields`,
+        user: 'joelthorner',
+      },
+    ],
+  },
+  {
     date: new Date('2024-11-11'),
     items: [
       {
@@ -90,7 +101,7 @@ export const changelog: Changelog[] = [
       {
         type: LineType.CHANGED,
         card: TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5pu,
-        text: `Added a additional \`image\``,
+        text: `Added \`1\` additional images`,
         user: 'joelthorner',
       },
       {
@@ -172,7 +183,7 @@ export const changelog: Changelog[] = [
       {
         type: LineType.CHANGED,
         card: TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70bu,
-        text: `New and better \`images\``,
+        text: `Changed \`3\` additional images`,
         user: 'joelthorner',
       },
       {
