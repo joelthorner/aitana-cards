@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aitana-cards/static/css/main.472b1893.css",
-    "main.js": "/aitana-cards/static/js/main.958d6876.js",
+    "main.css": "/aitana-cards/static/css/main.ec1d1031.css",
+    "main.js": "/aitana-cards/static/js/main.e6c39177.js",
     "static/js/453.73604254.chunk.js": "/aitana-cards/static/js/453.73604254.chunk.js",
     "static/media/tfbtyotdc_DEABw_1.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_1.fd1b3015cfbba701c2be.jpg",
     "static/media/tfbtyotdc_DEABw_2.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_2.cb55e41d2ae75e0fdac1.jpg",
@@ -961,12 +961,12 @@
     "static/media/c14pl_0.jpg": "/aitana-cards/static/media/c14pl_0.e9baf3735fe74ac37dbc.jpg",
     "static/media/c14pl_1.jpg": "/aitana-cards/static/media/c14pl_1.7251626b46390deaf51e.jpg",
     "index.html": "/aitana-cards/index.html",
-    "main.472b1893.css.map": "/aitana-cards/static/css/main.472b1893.css.map",
-    "main.958d6876.js.map": "/aitana-cards/static/js/main.958d6876.js.map",
+    "main.ec1d1031.css.map": "/aitana-cards/static/css/main.ec1d1031.css.map",
+    "main.e6c39177.js.map": "/aitana-cards/static/js/main.e6c39177.js.map",
     "453.73604254.chunk.js.map": "/aitana-cards/static/js/453.73604254.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.472b1893.css",
-    "static/js/main.958d6876.js"
+    "static/css/main.ec1d1031.css",
+    "static/js/main.e6c39177.js"
   ]
 }
