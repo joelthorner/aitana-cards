@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aitana-cards/static/css/main.472b1893.css",
-    "main.js": "/aitana-cards/static/js/main.771bdd0a.js",
+    "main.js": "/aitana-cards/static/js/main.958d6876.js",
     "static/js/453.73604254.chunk.js": "/aitana-cards/static/js/453.73604254.chunk.js",
     "static/media/tfbtyotdc_DEABw_1.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_1.fd1b3015cfbba701c2be.jpg",
     "static/media/tfbtyotdc_DEABw_2.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_2.cb55e41d2ae75e0fdac1.jpg",
@@ -805,6 +805,7 @@
     "static/media/lifaFTeam_1.webp": "/aitana-cards/static/media/lifaFTeam_1.4c1279b1905ad032c31b.webp",
     "static/media/inception22_23.jpg": "/aitana-cards/static/media/inception22_23.1875947ba1d9007d7227.jpg",
     "static/media/154franceWomanWC.jpg": "/aitana-cards/static/media/154franceWomanWC.ecdd7e54bc763b950698.jpg",
+    "static/media/2022PWE2022_21_2.webp": "/aitana-cards/static/media/2022PWE2022_21_2.11ddad5fb9a1f03af76c.webp",
     "static/media/tabpcs_68_1.webp": "/aitana-cards/static/media/tabpcs_68_1.f2c300d7a503e6b3071c.webp",
     "static/media/tp22_79_2.webp": "/aitana-cards/static/media/tp22_79_2.3384c1c5d035dcedf2f3.webp",
     "static/media/topps-now-wondergoal-seals-semi-final-spot.jpg": "/aitana-cards/static/media/topps-now-wondergoal-seals-semi-final-spot.5ad9889dd30b32cf605e.jpg",
@@ -863,7 +864,6 @@
     "static/media/2023-24 Topps - UWCL NOW -022f_cover.jpg": "/aitana-cards/static/media/2023-24 Topps - UWCL NOW -022f_cover.f02116cae69000e2212f.jpg",
     "static/media/ligaFPremium.jpg": "/aitana-cards/static/media/ligaFPremium.63691478db58e2a5a61e.jpg",
     "static/media/toppsSimplicidad_23_24Aitana_autograpth.jpg": "/aitana-cards/static/media/toppsSimplicidad_23_24Aitana_autograpth.8f2055f050e1366992b8.jpg",
-    "static/media/2022 Panini - Womens Euro 2022 -21_2.jpg": "/aitana-cards/static/media/2022 Panini - Womens Euro 2022 -21_2.ae5b0c3d0ddd9bd4449a.jpg",
     "static/media/Topps_Now_Logo_Black.jpg": "/aitana-cards/static/media/Topps_Now_Logo_Black.5f6bef471c98785425cc.jpg",
     "static/media/toppsSimplicidad_23_24Aitana41bu_3.webp": "/aitana-cards/static/media/toppsSimplicidad_23_24Aitana41bu_3.c0eeae6eef3b094c2ad2.webp",
     "static/media/tabpcs_69bu_2.webp": "/aitana-cards/static/media/tabpcs_69bu_2.4eeb4e62f6799a16b556.webp",
@@ -920,6 +920,7 @@
     "static/media/290974-18752677Bk.jpg": "/aitana-cards/static/media/290974-18752677Bk.102532cf72959c82661a.jpg",
     "static/media/topps-now-wondergoal-seals-semi-final-spot-back.webp": "/aitana-cards/static/media/topps-now-wondergoal-seals-semi-final-spot-back.c556ee328b58c70479fc.webp",
     "static/media/CarolineGrahamHansen.jpg": "/aitana-cards/static/media/CarolineGrahamHansen.9fc4e4cca656351571d4.jpg",
+    "static/media/2022PWE2022_21_3.webp": "/aitana-cards/static/media/2022PWE2022_21_3.f70594d1e1eba16ea4ca.webp",
     "static/media/tmh98us85b_3.webp": "/aitana-cards/static/media/tmh98us85b_3.23efdd15994c88949404.webp",
     "static/media/AlexiaPutellas.jpg": "/aitana-cards/static/media/AlexiaPutellas.340383eebb81f9eade79.jpg",
     "static/media/c_QAAB_1.webp": "/aitana-cards/static/media/c_QAAB_1.820d90e1e7228eed9156.webp",
@@ -934,10 +935,10 @@
     "static/media/AnaMariaCrnogorcevic.jpg": "/aitana-cards/static/media/AnaMariaCrnogorcevic.4776a534ab8556f0b536.jpg",
     "static/media/AitanaBonmati.jpg": "/aitana-cards/static/media/AitanaBonmati.eebe4da81e8d314065c4.jpg",
     "static/media/c_QAAB_2.webp": "/aitana-cards/static/media/c_QAAB_2.7a9e075b498e3d1cf8f1.webp",
-    "static/media/LluisCortesCava.jpg": "/aitana-cards/static/media/LluisCortesCava.7af695e3a866aa1ca750.jpg",
     "static/media/tffb2324_SAABy_2.webp": "/aitana-cards/static/media/tffb2324_SAABy_2.f8207579d5a6c0f509db.webp",
     "static/media/LaiaCodina.jpg": "/aitana-cards/static/media/LaiaCodina.57bc942548ebdfdf2791.jpg",
     "static/media/PatriGuijarro.jpg": "/aitana-cards/static/media/PatriGuijarro.38def1b6d9f50fac6dd0.jpg",
+    "static/media/OnaBatlle.jpg": "/aitana-cards/static/media/OnaBatlle.00615cd56d2bbc5490da.jpg",
     "static/media/c14o_1.webp": "/aitana-cards/static/media/c14o_1.143512704e23521a6f9c.webp",
     "static/media/BrunaVilamala.jpg": "/aitana-cards/static/media/BrunaVilamala.17ec0bd427e3558799fe.jpg",
     "static/media/2023-24-topps-womens-champions-league-now-back.webp": "/aitana-cards/static/media/2023-24-topps-womens-champions-league-now-back.23b3633708e543abfec1.webp",
@@ -961,11 +962,11 @@
     "static/media/c14pl_1.jpg": "/aitana-cards/static/media/c14pl_1.7251626b46390deaf51e.jpg",
     "index.html": "/aitana-cards/index.html",
     "main.472b1893.css.map": "/aitana-cards/static/css/main.472b1893.css.map",
-    "main.771bdd0a.js.map": "/aitana-cards/static/js/main.771bdd0a.js.map",
+    "main.958d6876.js.map": "/aitana-cards/static/js/main.958d6876.js.map",
     "453.73604254.chunk.js.map": "/aitana-cards/static/js/453.73604254.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.472b1893.css",
-    "static/js/main.771bdd0a.js"
+    "static/js/main.958d6876.js"
   ]
 }
