@@ -1,6 +1,3 @@
-/**
- * COMPLETED data
- */
 import { Card, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniUefaWomenSEuroEngland_2022 } from "../collections";
 import { AndreaPereira, LeilaOuahabi, MarionaCaldentey, OnaBatlle } from "../teammates";
