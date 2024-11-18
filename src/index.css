@@ -49,7 +49,7 @@ body {
 .swiper-card-detail {
   --swiper-pagination-bottom: 4.5rem;
   --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-inactive-color: #FFF;
+  --swiper-pagination-bullet-inactive-color: #fff;
 }
 
 .swiper-card-detail .swiper-pagination {
@@ -60,7 +60,7 @@ body {
   @apply pointer-events-none;
 }
 
-@media(min-width: 480px) {
+@media (min-width: 480px) {
   .aspect-square-2::before {
     content: "";
     display: block;
@@ -68,7 +68,7 @@ body {
   }
 }
 
-@media(min-width: 640px) {
+@media (min-width: 640px) {
   .aspect-square-2::before {
     content: "";
     display: block;
@@ -76,7 +76,7 @@ body {
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .aspect-square-2::before {
     content: "";
     display: block;
@@ -88,7 +88,8 @@ body {
   }
 }
 
-@layer utilities {}
+@layer utilities {
+}
 
 /* Afegir aquest CSS al teu fitxer de CSS global o al component */
 .markdown table {
@@ -101,4 +102,8 @@ body {
 
 .markdown td {
   @apply border border-gray-200 p-2;
+}
+
+.view-light .markdown hr {
+  @apply border-zinc-900;
 }

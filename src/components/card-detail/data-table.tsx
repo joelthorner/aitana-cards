@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Card } from "../../types/card";
 import { Archive, BookText, BookType, Calendar, ChevronRight, Clipboard, Fingerprint, Folder, Hash, Info, Languages, Medal, Package2, SwatchBook } from "lucide-react";
+import { useClassName } from "../../hooks/useClassName";
 
-export default function DataTable({ card }: { card: Card }) {
+export default function DataTable({ card, className }: { card: Card; className?: string }) {
+  const containerClassName = useClassName([className, "mt-6 lg:mt-2"]);
+
   const copyToClipboard = (text: string) => {
     navigator.clipboard
       .writeText(text)
@@ -16,7 +19,8 @@ export default function DataTable({ card }: { card: Card }) {
 
   return (
     <>
-      <ul className="mt-6 lg:mt-2 xl:grid xl:grid-cols-2 xl:gap-x-4">
+      <ul className={containerClassName}>
+        {/*  xl:grid xl:grid-cols-2 xl:gap-x-4 */}
         <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
           <div className="flex gap-x-3">
             <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">

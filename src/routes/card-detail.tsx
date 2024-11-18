@@ -61,6 +61,19 @@ export default function CardDetail() {
     }
   };
 
+  const scrollToClick = (id: string) => {
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - 64,
+          behavior: "smooth",
+        });
+      }
+    }, 0);
+  };
+
   const [card] = cards.filter((card) => card.id === cardId);
 
   useEffect(() => {
@@ -82,7 +95,7 @@ export default function CardDetail() {
 
   return (
     <>
-      <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:p-4 lg:items-start">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:p-4 lg:items-start 2xl:container 2xl:mx-auto">
         <div className="lg:flex lg:flex-col lg:gap-4 lg:sticky lg:top-20">
           <div id={"gallery-" + cardId} ref={galleryRef} className="aspect-square-2 fixed top-0 left-0 right-0 z-[5] md:relative lg:h-auto">
             <button className="absolute top-0 left-0 z-40 text-white py-4 px-4" onClick={() => navigate(-1)}>
@@ -140,33 +153,27 @@ export default function CardDetail() {
             </Swiper>
           </div>
 
-          {card.teammates && (
+          {/* {card.teammates && (
             <div className="hidden lg:block bg-white rounded-3xl p-4">
               <Teammates teammates={card.teammates} />
             </div>
-          )}
+          )} */}
         </div>
 
         <div className="aspect-square-2 md:hidden"></div>
 
         <div
-          className={`bg-white rounded-t-3xl px-5 pt-6 pb-20 relative z-20 flex flex-col gap-4 ${
+          className={`bg-white rounded-t-3xl px-5 pt-6 pb-20 relative z-20 flex flex-col gap-5 ${
             card.images.length > 1 ? "-mt-12" : "-mt-16"
-          } lg:mt-0 lg:rounded-3xl lg:py-6 lg:h-full`}
+          } lg:mt-0 lg:rounded-3xl lg:py-[10%] lg:px-[8%] lg:h-full`}
         >
-          <div className="flex flex-col gap-2">
-            <h1 className="text-xl font-medium leading-normal xl:text-2xl text-pretty">{card.name}</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-xl font-medium leading-snug lg:text-2xl lg:leading-snug xl:text-3xl xl:leading-snug text-pretty">{card.name}</h1>
 
             <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600">
               {card.collection.name}
             </Link>
           </div>
-
-          {card.description && (
-            <ReactMarkdown className="markdown grid gap-2 text-sm text-zinc-500" remarkPlugins={[remarkGfm]}>
-              {card.description}
-            </ReactMarkdown>
-          )}
 
           <div className="flex gap-2 flex-wrap items-center">
             <div className="hs-tooltip">
@@ -212,20 +219,94 @@ export default function CardDetail() {
             )}
           </div>
 
-          <DataTable card={card} />
+          {card.description && (
+            <ReactMarkdown className="markdown grid gap-2 text-zinc-500 lg:mt-2" remarkPlugins={[remarkGfm]}>
+              {card.description}
+            </ReactMarkdown>
+          )}
 
-          {(card.cardTextFront || card.cardTextBack) && <CardTexts className="lg:hidden" front={card.cardTextFront} back={card.cardTextBack} language={card.language} />}
+          <DataTable className="lg:hidden" card={card} />
 
           {card.teammates && <Teammates className="lg:hidden" teammates={card.teammates} />}
 
-          <CardLinks links={card.links} />
+          {(card.cardTextFront || card.cardTextBack) && (
+            <CardTexts id="mobile" className="lg:hidden" front={card.cardTextFront} back={card.cardTextBack} language={card.language} />
+          )}
+
+          <CardLinks className="lg:hidden" links={card.links} />
+
+          <div className="w-full gap-x-4 mt-auto d-none lg:d-flex">
+            <button
+              onClick={() => scrollToClick("features")}
+              className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
+            >
+              Features
+            </button>
+            {(card.cardTextFront || card.cardTextBack) && (
+              <button
+                onClick={() => scrollToClick("texts")}
+                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
+              >
+                Card texts
+              </button>
+            )}
+            {card.teammates && (
+              <button
+                onClick={() => scrollToClick("teammates")}
+                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
+              >
+                Teammates
+              </button>
+            )}
+            {card.links && card.links.length && (
+              <button
+                onClick={() => scrollToClick("links")}
+                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
+              >
+                Links
+              </button>
+            )}
+          </div>
         </div>
       </div>
-      <div className="lg:grid">
+
+      <div className="d-none lg:grid grid-cols-2 gap-4 px-4 items-start 2xl:container 2xl:mx-auto">
+        <div className="flex flex-col gap-4">
+          {card.teammates && (
+            <div className="bg-zinc-900 rounded-3xl py-4 px-6">
+              <div id="teammates">
+                <Teammates teammates={card.teammates} variation="light" />
+              </div>
+            </div>
+          )}
+          {(card.cardTextFront || card.cardTextBack) && (
+            <div className="bg-zinc-900 rounded-3xl py-4 px-6">
+              <div id="texts">
+                <CardTexts id="desktop" front={card.cardTextFront} back={card.cardTextBack} language={card.language} variation="light" />
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div id="features" className="bg-white rounded-3xl py-4 px-6 pb-6">
+            <div className="mb-4 mt-4 font-medium text-center text-lg">Features</div>
+            <DataTable card={card} />
+          </div>
+
+          {card.links && card.links.length && (
+            <div id="links" className="bg-white rounded-3xl py-4 px-6">
+              <CardLinks links={card.links} className="mb-4" />
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="lg:grid 2xl:container 2xl:mx-auto lg:mt-8 xl:mt-12">
         <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-12 lg:mt-0">
           {relatedCards.length > 0 && (
             <div>
-              <div className="mb-4 font-medium text-white text-center">Related cards</div>
+              <div className="mb-4 font-medium text-white text-center lg:text-lg xl:mb-6 xl:text-xl">Related cards</div>
               <CardsGridStatic cards={relatedCards} />
             </div>
           )}
