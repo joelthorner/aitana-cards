@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode, useMemo } from "react";
-import { CardStatus } from "../types/card";
+import { Card, CardStatus } from "../types/card";
+import { cards } from "../data/cards";
 
 export enum OrderByEnum {
   RECENTLY_ADDED = "recentlyAdded",
@@ -23,6 +24,7 @@ interface FiltersContextType {
   collections: string[];
   cardTypes: string[];
   filtering: boolean;
+  filteredCards: Card[];
   setRarity: (key: number[]) => void;
   setYears: (key: number[]) => void;
   setStatus: (key: keyof StatusType, value: boolean) => void;
@@ -30,6 +32,7 @@ interface FiltersContextType {
   setCollections: (value: string[]) => void;
   setCardTypes: (value: string[]) => void;
   resetFilters: () => void;
+  setFilteredCards: (value: Card[]) => void;
 }
 
 const FiltersContext = createContext<FiltersContextType | undefined>(undefined);
@@ -52,6 +55,7 @@ const defaultYears: number[] = [];
 const defaultCollections: string[] = [];
 const defaultCardTypes: string[] = [];
 const defaultOrderBy = OrderByEnum.RECENTLY_ADDED;
+const defaultFilteredCards = cards;
 
 export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [rarity, setRarityState] = useState<number[]>(() => {
@@ -78,6 +82,8 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     const savedCollections = localStorage.getItem(LOCAL_STORAGE_COLLECTIONS_KEY);
     return savedCollections ? JSON.parse(savedCollections) : defaultCollections;
   });
+
+  const [filteredCards, setFilteredCards] = useState<Card[]>(defaultFilteredCards);
 
   const [cardTypes, setCardTypesState] = useState<string[]>(() => {
     const savedCardTypes = localStorage.getItem(LOCAL_STORAGE_CARD_TYPES_KEY);
@@ -124,6 +130,7 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
     setOrderByState(defaultOrderBy);
     setCollectionsState(defaultCollections);
     setCardTypesState(defaultCardTypes);
+    setFilteredCards(defaultFilteredCards);
     localStorage.removeItem(LOCAL_STORAGE_YEARS_KEY);
     localStorage.removeItem(LOCAL_STORAGE_RARITY_KEY);
     localStorage.setItem(LOCAL_STORAGE_STATUS_KEY, JSON.stringify(defaultStatus));
@@ -153,6 +160,7 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
         collections,
         cardTypes,
         filtering,
+        filteredCards,
         setRarity,
         setYears,
         setStatus,
@@ -160,6 +168,7 @@ export const FiltersProvider: React.FC<{ children: ReactNode }> = ({ children })
         setCollections,
         setCardTypes,
         resetFilters,
+        setFilteredCards,
       }}
     >
       {children}
