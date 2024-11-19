@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsDecoUefaClubCompetitions_2023_2024 } from "../collections";
 
 import tducc_9_0 from "../img/cards/tducc_9_0.jpg";
@@ -47,6 +47,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9: Card = {
     CardType.CurrentStars,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9gr: Card = {
@@ -75,6 +76,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9gr: Card = {
     CardType.Green,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9b: Card = {
@@ -99,6 +101,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9b: Card = {
     CardType.Blue,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9p: Card = {
@@ -125,6 +128,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9p: Card = {
     CardType.Purple,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9r: Card = {
@@ -148,6 +152,7 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9r: Card = {
     CardType.Red,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_AU7r: Card = {
@@ -172,4 +177,5 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_AU7r: Card = {
     CardType.Autographs,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

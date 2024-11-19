@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsSimplicidadUefaClubCompetitions_2022_2023 } from "../collections";
 
 import tus23_1 from "../img/cards/tus23_1.jpg";
@@ -43,6 +43,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5: Card = {
     CardType.Filmstrip,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5gr: Card = {
@@ -67,6 +68,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5gr: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 99,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5p: Card = {
@@ -90,6 +92,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5p: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 49,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5pu: Card = {
@@ -111,6 +114,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5pu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5r: Card = {
@@ -134,6 +138,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5r: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 10,
+  orientation: CardOrientation.Vertical,
 };
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5rb: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2022-2023-5rb',
@@ -156,6 +161,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5rb: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 5,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5gr: Card = {
@@ -181,6 +187,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5gr: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 99,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5pu: Card = {
@@ -204,6 +211,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5pu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5r: Card = {
@@ -229,4 +237,5 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5r: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 10,
+  orientation: CardOrientation.Vertical,
 };

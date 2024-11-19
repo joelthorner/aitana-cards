@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from "../collections";
 
 import c_qf1r_0 from "../img/cards/c_qf1r_0.jpg";
@@ -51,6 +51,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   cardTextFront: `**QUEENS OF FOOTBALL**
 
 AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_QF1r: Card = {
@@ -82,4 +83,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
 **QUEENS OF FOOTBALL**
 
 AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
 };

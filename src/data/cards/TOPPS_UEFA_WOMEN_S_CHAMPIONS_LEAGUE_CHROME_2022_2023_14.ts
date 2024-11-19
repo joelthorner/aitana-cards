@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "../collections";
 
 import c14pp_0 from "../img/cards/c14pp_0.jpg";
@@ -82,6 +82,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref: Card = {
@@ -105,6 +106,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ref: Card = 
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl: Card = {
@@ -127,6 +129,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pl: Card = {
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap: Card = {
@@ -155,6 +158,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ap: Card = {
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup: Card = {
@@ -180,6 +184,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pup: Card = 
   ],
   productType: CardProductType.Card,
   numbered: 299,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm: Card = {
@@ -204,6 +209,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14bm: Card = {
     CardType.Mojo,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp: Card = {
@@ -230,6 +236,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14pp: Card = {
     CardType.Prism,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = {
@@ -254,6 +261,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14rgm: Card = 
     CardType.Mojo,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ng: Card = {
@@ -277,6 +285,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14ng: Card = {
     CardType.NeonGreen,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i: Card = {
@@ -300,6 +309,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14i: Card = {
     CardType.Inferno,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
@@ -323,6 +333,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14g: Card = {
     CardType.Gold,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
@@ -346,6 +357,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
@@ -370,6 +382,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14r: Card = {
     CardType.Refractor,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AAB: Card = {
@@ -392,6 +405,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AAB: Card = {
     CardType.Autographs,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp: Card = {
@@ -417,6 +431,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABpp: Card = 
     CardType.Prism,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABi: Card = {
@@ -440,6 +455,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABi: Card = {
     CardType.Inferno,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABg: Card = {
@@ -463,6 +479,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABg: Card = {
     CardType.Gold,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = {
@@ -488,4 +505,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_AABow: Card = 
     CardType.Wave,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

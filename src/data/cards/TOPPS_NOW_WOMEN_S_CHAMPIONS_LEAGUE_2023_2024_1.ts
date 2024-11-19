@@ -1,7 +1,4 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import ToppsNowAitanaBonmatiUefaWomenSPlayerOfTheYear2023 from "../img/cards/2023-24-topps-womens-champions-league-now--001-1.jpg";
@@ -30,6 +27,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1: Card = {
   cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1pu: Card = {
@@ -52,6 +50,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1pu: Card = {
   cardType: [CardType.Purple],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1bl: Card = {
@@ -74,6 +73,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1bl: Card = {
   cardType: [CardType.Black],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1g: Card = {
@@ -96,4 +96,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_1g: Card = {
   cardType: [CardType.Gold],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };

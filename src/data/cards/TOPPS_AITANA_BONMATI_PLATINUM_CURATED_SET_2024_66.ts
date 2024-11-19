@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
 import tabpcs_66bu_0 from "../img/cards/tabpcs_66bu_0.jpg";
 import tabpcs_66bu_1 from "../img/cards/tabpcs_66bu_1.jpg";
@@ -32,6 +32,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66bu: Card = {
@@ -54,6 +55,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66bu: Card = {
     CardType.Blue,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66r: Card = {
@@ -77,6 +79,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66r: Card = {
     CardType.Red,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66r: Card = {
@@ -100,6 +103,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66r: Card = {
     CardType.Red,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66p: Card = {
@@ -124,4 +128,5 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A66p: Card = {
     CardType.Pink,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

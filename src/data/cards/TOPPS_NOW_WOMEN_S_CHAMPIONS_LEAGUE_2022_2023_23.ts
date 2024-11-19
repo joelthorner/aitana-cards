@@ -22,4 +22,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2022_2023_23: Card = {
   cardType: [CardType.BaseSet, CardType.TeamCard],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };

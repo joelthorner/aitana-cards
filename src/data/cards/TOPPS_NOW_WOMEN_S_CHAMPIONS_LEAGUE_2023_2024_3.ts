@@ -1,6 +1,3 @@
-/**
- * COMPLETED data
- */
 import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 

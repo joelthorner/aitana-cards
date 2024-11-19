@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsMerlinHeritageUefaClubCompetitions_2023_2024 } from "../collections";
 
 import c70api_0 from "../img/cards/c70api_0.jpg";
@@ -41,6 +41,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70: Card = {
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pu: Card = {
@@ -64,6 +65,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pu: Card =
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70gr: Card = {
@@ -88,6 +90,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70gr: Card =
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70bu: Card = {
@@ -111,6 +114,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70bu: Card =
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pi: Card = {
@@ -134,6 +138,7 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70pi: Card =
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70api: Card = {
@@ -157,4 +162,5 @@ export const TOPPS_MERLIN_HERITAGE_UEFA_CLUB_COMPETITIONS_2023_2024_70api: Card 
   ],
   productType: CardProductType.Card,
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };

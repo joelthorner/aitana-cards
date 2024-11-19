@@ -150,12 +150,12 @@ export type Card = {
   collection: Collection,
   year: number,
   productType: CardProductType;
+  orientation: CardOrientation,
   description?: string,
   brilli?: CardBrilli,
   links?: string[];
   numbered?: number;
   cardSection?: string;
-  orientation?: CardOrientation,
   customRelatedsRegexp?: RegExp;
   // TODO implement
   language?: CardLanguage;

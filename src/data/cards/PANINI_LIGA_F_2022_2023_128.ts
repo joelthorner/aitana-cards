@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2022_2023 } from "../collections";
 import img1 from "../img/cards/finetwork-liga-f-22-23-panini.jpg";
 
@@ -18,6 +18,7 @@ const PANINI_LIGA_F_2022_2023_128: Card = {
   cardSection: 'FC Barcelona',
   cardType: [CardType.BaseSet],
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_LIGA_F_2022_2023_128;

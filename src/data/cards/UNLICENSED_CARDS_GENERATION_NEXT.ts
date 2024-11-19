@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { UnlicensedCards } from "../collections";
 
 import wonGn_1_0 from "../img/cards/wonGn_1_0.jpg";
@@ -41,6 +41,7 @@ As Barcelona won the Champions League for the second time in their history, Bonm
 
 © 2023 Generation Next. All Rights Reserved.  
 All logos and trademarks owned by respective organizations.`,
+  orientation: CardOrientation.Vertical,
 };
 
 export const UNLICENSED_CARDS_GENERATION_NEXT_WO_NUMBER_2cs: Card = {
@@ -81,4 +82,5 @@ As Barcelona won the Champions League for the second time in their history, Bonm
 © 2023 Generation Next. All Rights Reserved.  
 All logos and trademarks owned by respective organizations.`,
   brilli: CardBrilli.Holo,
+  orientation: CardOrientation.Vertical,
 };

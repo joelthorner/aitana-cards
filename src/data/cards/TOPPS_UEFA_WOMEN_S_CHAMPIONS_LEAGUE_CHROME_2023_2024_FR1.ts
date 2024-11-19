@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import fr1_0 from "../img/cards/fr1_0.jpg";
@@ -28,6 +28,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_FR1: Card = {
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
   customRelatedsRegexp: /FR-1[a-z]{1,6}?$/,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_FR1o: Card = {
@@ -52,4 +53,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_FR1o: Card = {
   brilli: CardBrilli.OrangeFoil,
   productType: CardProductType.Card,
   customRelatedsRegexp: /FR-1[a-z]{1,6}?$/,
+  orientation: CardOrientation.Vertical,
 };

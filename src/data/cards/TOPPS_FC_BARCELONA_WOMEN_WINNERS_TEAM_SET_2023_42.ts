@@ -31,6 +31,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
@@ -56,4 +57,5 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_42gr: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };

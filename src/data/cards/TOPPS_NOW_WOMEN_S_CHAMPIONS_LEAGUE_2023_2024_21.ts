@@ -1,6 +1,3 @@
-/**
- * COMPLETED data
- */
 import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
@@ -34,6 +31,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21: Card = {
   cardType: [CardType.BaseSet, CardType.TeamCard],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21pu: Card = {
@@ -58,6 +56,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21pu: Card = {
   productType: CardProductType.Card,
   numbered: 99,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21bl: Card = {
@@ -82,6 +81,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21bl: Card = {
   productType: CardProductType.Card,
   numbered: 10,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21g: Card = {
@@ -106,4 +106,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_21g: Card = {
   productType: CardProductType.Card,
   numbered: 1,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };

@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomensChampionsLeagueKnockout_2023 } from "../collections";
 
 import tuwclk_25_0 from "../img/cards/tuwclk_25_0.jpg";
@@ -34,6 +34,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25bu: Card = {
@@ -57,6 +58,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25bu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.BlueTopps,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25pu: Card = {
@@ -80,6 +82,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25pu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.PurpleFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
@@ -102,6 +105,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.BlackTopps,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25bu: Card = {
@@ -125,4 +129,5 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25bu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.BlueTopps,
+  orientation: CardOrientation.Vertical,
 };

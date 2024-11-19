@@ -15,6 +15,7 @@ import { MouseGyroProvider } from "./providers/mouse-gyro";
 import CardDetail from "./routes/card-detail";
 import Collections from "./routes/collections";
 import CollectionDetail from "./routes/collection-detail";
+import Contribute from "./routes/contribute";
 // import Algolia from "./routes/algolia";
 
 const router = createBrowserRouter(
@@ -47,6 +48,10 @@ const router = createBrowserRouter(
         {
           path: "/cards/:cardId",
           element: <CardDetail />,
+        },
+        {
+          path: "/contribute",
+          element: <Contribute />,
         },
         // {
         //   path: "/algolia",

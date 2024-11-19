@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023 } from "../collections";
 
 import sapp14_0 from "../img/cards/sapp14_0.jpg";
@@ -36,6 +36,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   cardType: [CardType.BaseSet, CardType.Sapphire],
   brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_14g: Card = {
@@ -54,6 +55,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   cardType: [CardType.BaseSet, CardType.Sapphire, CardType.Gold],
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_14gr: Card = {
@@ -74,6 +76,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   cardType: [CardType.BaseSet, CardType.Sapphire, CardType.Green],
   brilli: CardBrilli.GreenFoil,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_alt14: Card = {
@@ -93,6 +96,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   cardType: [CardType.Sapphire, CardType.AltImage],
   brilli: CardBrilli.BlueTopps,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_alt14g: Card = {
@@ -113,4 +117,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   cardType: [CardType.Sapphire, CardType.AltImage, CardType.Gold],
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

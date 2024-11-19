@@ -1,7 +1,4 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2023_2024 } from "../collections";
 
 import Ucl_23_24UwclTotsStickerAitanaBonmati_8_027 from "../img/cards/ucl-23-24-uwcl-tots-sticker-aitana-bonmati-8-027.jpg";
@@ -25,6 +22,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2023_2024_27: Card = {
     CardType.Holographic,
   ],
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Horizontal,
 };
 
 export default TOPPS_UEFA_CHAMPIONS_LEAGUE_2023_2024_27;

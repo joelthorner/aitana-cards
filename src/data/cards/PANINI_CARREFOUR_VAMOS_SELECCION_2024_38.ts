@@ -30,6 +30,7 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_38: Card = {
   status: CardStatus.Falti,
   rarity: 1,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export default PANINI_CARREFOUR_VAMOS_SELECCION_2024_38;

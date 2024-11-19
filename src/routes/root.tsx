@@ -28,7 +28,7 @@ function Root() {
   const headerClassName = useClassName([
     "h-16 bg-zinc-950",
     "md:fixed md:left-0 md:right-0 md:z-50 md:bg-transparent",
-    location.pathname === "/" || location.pathname === "/collections" || location.pathname === "/changelog" ? "" : "max-md:hidden",
+    location.pathname === "/" || location.pathname === "/collections" || location.pathname === "/changelog" || location.pathname === "/contribute" ? "" : "max-md:hidden",
   ]);
 
   return (

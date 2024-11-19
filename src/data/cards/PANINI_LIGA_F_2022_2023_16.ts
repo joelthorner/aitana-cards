@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2022_2023 } from "../collections";
 import paniniteam2 from "../img/cards/paniniteam2.jpg";
 
@@ -21,6 +21,8 @@ const PANINI_LIGA_F_2022_2023_16: Card = {
     CardType.TeamCard,
   ],
   productType: CardProductType.Sticker,
+  teammates: [],
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_LIGA_F_2022_2023_16;

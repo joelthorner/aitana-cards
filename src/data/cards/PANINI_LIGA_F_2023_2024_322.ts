@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2023_2024 } from "../collections";
 
 import ligaf2324onfire from '../img/cards/ligaf2324onfire.jpg';
@@ -21,6 +21,7 @@ const PANINI_LIGA_F_2023_2024_322: Card = {
   cardType: [CardType.Holographic],
   productType: CardProductType.Sticker,
   cardSection: 'On Fire',
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_LIGA_F_2023_2024_322;

@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from "../collections";
 
 import sappSS2b_0 from "../img/cards/sappSS2b_0.jpg";
@@ -54,4 +54,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
 
 *Aitana Bonmatí*`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };

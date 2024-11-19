@@ -1,8 +1,4 @@
-/**
- * @todo Missing data of [13g] Excel data 4 more detail [no evidence]
- * @todo Missing data of [13rb] Excel data 4 more detail [no evidence]
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
 import aitanaBonmatiBaseFcbWomenWinners_23Base from "../img/cards/aitanaBonmatiBaseFcbWomenWinners_23Base.jpg";
@@ -41,6 +37,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13gr: Card = {
@@ -65,6 +62,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13gr: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 99,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13bu: Card = {
@@ -91,6 +89,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13bu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 49,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13pu: Card = {
@@ -113,6 +112,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13pu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13r: Card = {
@@ -137,4 +137,5 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_13r: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 10,
+  orientation: CardOrientation.Vertical,
 };

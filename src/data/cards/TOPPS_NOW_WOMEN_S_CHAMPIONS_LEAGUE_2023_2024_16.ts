@@ -1,7 +1,4 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsNowWomenSChampionsLeague_2023_2024 } from "../collections";
 
 import toppsNowWondergoalSealsSemiFinalSpot from "../img/cards/topps-now-wondergoal-seals-semi-final-spot.jpg";
@@ -31,6 +28,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16: Card = {
   productType: CardProductType.Card,
   cardType: [CardType.BaseSet],
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16pu: Card = {
@@ -55,6 +53,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16pu: Card = {
   productType: CardProductType.Card,
   cardType: [CardType.Purple],
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16bl: Card = {
@@ -79,6 +78,7 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16bl: Card = {
   productType: CardProductType.Card,
   cardType: [CardType.Black],
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16g: Card = {
@@ -103,4 +103,5 @@ export const TOPPS_NOW_WOMEN_S_CHAMPIONS_LEAGUE_2023_2024_16g: Card = {
   productType: CardProductType.Card,
   cardType: [CardType.Gold],
   cardSection: 'FC Barcelona',
+  orientation: CardOrientation.Vertical,
 };

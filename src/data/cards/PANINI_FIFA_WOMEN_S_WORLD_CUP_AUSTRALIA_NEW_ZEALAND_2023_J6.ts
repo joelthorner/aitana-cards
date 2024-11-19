@@ -1,4 +1,4 @@
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniFifaWomenSWorldCupAustraliaNewZealand_2023 } from "../collections";
 
 import pfwwcanz23_j6_0 from "../img/cards/pfwwcanz23_j6_0.jpg";
@@ -22,4 +22,5 @@ export const PANINI_FIFA_WOMEN_S_WORLD_CUP_AUSTRALIA_NEW_ZEALAND_2023_J6: Card =
   name: 'Aitana Bonmatí',
   status: CardStatus.Falti,
   rarity: 2,
+  orientation: CardOrientation.Vertical,
 };

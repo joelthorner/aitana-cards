@@ -35,6 +35,11 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1: Card = {
   numbered: 10,
   productType: CardProductType.BookCard,
   orientation: CardOrientation.Horizontal,
+  teammates: [
+    AlexiaPutellas,
+    AsisatOshoala,
+    CarolineGrahamHansen,
+  ],
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1g: Card = {

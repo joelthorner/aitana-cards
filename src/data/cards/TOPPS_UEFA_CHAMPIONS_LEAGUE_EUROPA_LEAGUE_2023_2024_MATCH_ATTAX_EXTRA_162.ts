@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra } from "../collections";
 
 import i_162 from "../img/cards/aitana-bonmati-barcelona-162-match-attax-extra-23-24.jpg";
@@ -22,6 +22,7 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
     CardType.UWCL_Limelight,
   ],
   productType: CardProductType.GameCard,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXTRA_162bc: Card = {
@@ -43,4 +44,5 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
     CardType.BlueCrystall,
   ],
   productType: CardProductType.GameCard,
+  orientation: CardOrientation.Vertical,
 };

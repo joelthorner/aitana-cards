@@ -1,7 +1,4 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2021_2022 } from "../collections";
 
 import img_FC12_1 from "../img/cards/topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12.jpg";
@@ -29,6 +26,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12: Card = {
     CardType.Rookie,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card = {
@@ -53,6 +51,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card =
   ],
   numbered: 25,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = {
@@ -75,6 +74,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
   ],
   numbered: 5,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 // export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12sf: Card = {

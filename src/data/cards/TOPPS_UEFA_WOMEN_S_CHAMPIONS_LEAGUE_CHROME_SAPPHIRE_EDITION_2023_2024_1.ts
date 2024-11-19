@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from "../collections";
 
 import sapp1_0 from "../img/cards/sapp1_0.jpg";
@@ -81,6 +81,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_1g: Card = {
@@ -113,6 +114,7 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_1o: Card = {
@@ -145,6 +147,7 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_1b: Card = {
@@ -177,6 +180,7 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_1p: Card = {
@@ -209,6 +213,7 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_A_ABg: Card = {
@@ -244,6 +249,7 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: autoBaseTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 
@@ -280,4 +286,5 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: autoBaseTextBack,
+  orientation: CardOrientation.Vertical,
 };

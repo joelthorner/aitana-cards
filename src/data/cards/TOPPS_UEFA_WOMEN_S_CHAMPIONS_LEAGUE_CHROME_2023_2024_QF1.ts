@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import c_qf1_0 from "../img/cards/c_qf1_0.jpg";
@@ -33,6 +33,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1g: Card = {
@@ -56,6 +57,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1g: Card = {
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
   numbered: 50,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1o: Card = {
@@ -80,6 +82,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1o: Card = {
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {
@@ -104,5 +107,6 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
+  orientation: CardOrientation.Vertical,
 };
 

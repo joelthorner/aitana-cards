@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsInceptionUefaClubCompetitions_2022_2023 } from "../collections";
 
 import cSPA1r_0 from "../img/cards/cSPA1r_0.jpg";
@@ -28,4 +28,5 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2022_2023_SPA1r: Card = {
   brilli: CardBrilli.RedFoil,
   productType: CardProductType.Card,
   language: CardLanguage.EN,
+  orientation: CardOrientation.Vertical,
 };

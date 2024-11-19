@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import cHG1_0 from "../img/cards/cHG1_0.jpg";
@@ -54,4 +54,5 @@ ALL RIGHTS RESERVED. WWW.TOPPS.COM CODE #CMP072969.
 
 © FC BARCELONA  
 `,
+  orientation: CardOrientation.Vertical,
 };

@@ -2,7 +2,7 @@
  * COMPLETED data
  * @todo missing some image cards
  */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import aitanaBonmati_7ChromeFcb_22_23 from "../img/cards/aitana-bonmati-7-chrome-fcb-22-23.jpg";
@@ -36,6 +36,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_REFRACTOR_7rf: Card = {
@@ -57,6 +58,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_REFRACTOR_7rf: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7x: Card = {
@@ -78,6 +80,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7x: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7b: Card = {
@@ -99,6 +102,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7b: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
@@ -121,6 +125,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
@@ -145,6 +150,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
@@ -166,6 +172,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7g: Card = {
   ],
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
@@ -190,6 +197,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   brilli: CardBrilli.OrangeFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 // export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7pu: Card = {

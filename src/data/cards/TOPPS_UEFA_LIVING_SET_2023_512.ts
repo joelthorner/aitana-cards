@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaLivingSet_2023 } from "../collections";
 import img1 from "../img/cards/topps-uefa-livig-set-512-aitana-bonmati.webp";
 import img2 from "../img/cards/topps-uefa-livig-set-512-aitana-bonmati_2.webp";
@@ -27,6 +27,7 @@ const TOPPS_UEFA_LIVING_SET_2023_512: Card = {
   cardSection: "FC Barcelona",
   cardType: [CardType.BaseSet],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export default TOPPS_UEFA_LIVING_SET_2023_512;

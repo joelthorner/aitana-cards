@@ -1,13 +1,4 @@
-/**
- * @todo Missing data of [85gr] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85o] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85r] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85g] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85a] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85a-p] Excel data 4 more detail [search & add data]
- * @todo Missing data of [85a-g] Excel data 4 more detail [search & add data]
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsMerlinHeritage_98UccSeason_2022_2023 } from "../collections";
 
 import toppsMerlinHeritage_98UccSeason_2022_2023_85 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85.jpg";
@@ -48,6 +39,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85: Card = {
   cardType: [
     CardType.BaseSet,
   ],
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85gr: Card = {
@@ -72,6 +64,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85gr: Card = {
     CardType.BaseSet,
     CardType.Green,
   ],
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85b: Card = {
@@ -96,6 +89,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85b: Card = {
     CardType.BaseSet,
     CardType.Blue,
   ],
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85p: Card = {
@@ -117,6 +111,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85p: Card = {
     CardType.BaseSet,
     CardType.Purple,
   ],
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85r: Card = {
@@ -139,6 +134,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85r: Card = {
     CardType.BaseSet,
     CardType.Rainbow,
   ],
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
@@ -162,6 +158,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
     CardType.Blue,
   ],
   numbered: 49,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
@@ -185,6 +182,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
     CardType.Orange,
   ],
   numbered: 10,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
@@ -211,4 +209,5 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
     CardType.Rainbow,
   ],
   numbered: 5,
+  orientation: CardOrientation.Vertical,
 };

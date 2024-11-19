@@ -227,7 +227,7 @@ export default function CardDetail() {
 
           <DataTable className="lg:hidden" card={card} />
 
-          {card.teammates && <Teammates className="lg:hidden" teammates={card.teammates} />}
+          {card.teammates && card.teammates.length > 0 && <Teammates className="lg:hidden" teammates={card.teammates} />}
 
           {(card.cardTextFront || card.cardTextBack) && (
             <CardTexts id="mobile" className="lg:hidden" front={card.cardTextFront} back={card.cardTextBack} language={card.language} />
@@ -235,7 +235,7 @@ export default function CardDetail() {
 
           <CardLinks className="lg:hidden" links={card.links} />
 
-          <div className="w-full gap-x-4 mt-auto d-none lg:d-flex">
+          <div className="w-full gap-x-4 mt-auto hidden lg:d-flex">
             <button
               onClick={() => scrollToClick("features")}
               className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
@@ -250,7 +250,7 @@ export default function CardDetail() {
                 Card texts
               </button>
             )}
-            {card.teammates && (
+            {card.teammates && card.teammates.length > 0 && (
               <button
                 onClick={() => scrollToClick("teammates")}
                 className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
@@ -270,9 +270,9 @@ export default function CardDetail() {
         </div>
       </div>
 
-      <div className="d-none lg:grid grid-cols-2 gap-4 px-4 items-start 2xl:container 2xl:mx-auto">
+      <div className="hidden lg:grid grid-cols-2 gap-4 px-4 items-start 2xl:container 2xl:mx-auto">
         <div className="flex flex-col gap-4">
-          {card.teammates && (
+          {card.teammates && card.teammates.length > 0 && (
             <div className="bg-zinc-900 rounded-3xl py-4 px-6">
               <div id="teammates">
                 <Teammates teammates={card.teammates} variation="light" />
@@ -288,7 +288,7 @@ export default function CardDetail() {
           )}
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex-col gap-4 hidden lg:flex">
           <div id="features" className="bg-white rounded-3xl py-4 px-6 pb-6">
             <div className="mb-4 mt-4 font-medium text-center text-lg">Features</div>
             <DataTable card={card} />

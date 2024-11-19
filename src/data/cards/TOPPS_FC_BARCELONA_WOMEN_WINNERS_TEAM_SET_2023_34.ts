@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaWomenWinnersTeamSet_2023 } from "../collections";
 
 import aitanaBonmatiBaseFcbWomenWinners_23AssistQueen from "../img/cards/aitana-bonmati-base-fcb-women-winners-23-assist-queen.jpg";
@@ -32,6 +32,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
     CardType.InAction,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34gr: Card = {
@@ -55,6 +56,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34gr: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 99,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34bu: Card = {
@@ -78,6 +80,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34bu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 49,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34pu: Card = {
@@ -101,6 +104,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34pu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34rb: Card = {
@@ -126,6 +130,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34rb: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 5,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34bu: Card = {
@@ -148,6 +153,7 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34bu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 49,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34pu: Card = {
@@ -170,4 +176,5 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34pu: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 25,
+  orientation: CardOrientation.Vertical,
 };
