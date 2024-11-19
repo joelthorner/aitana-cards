@@ -41,6 +41,7 @@ export const CardTypeGroupToppsCards: CardType[][] = [
     CardType.DiamondEyesDragon,
     CardType.ShortPrint,
     CardType.Infinite,
+    CardType.Selections,
   ],
   [
     CardType.Refractor,

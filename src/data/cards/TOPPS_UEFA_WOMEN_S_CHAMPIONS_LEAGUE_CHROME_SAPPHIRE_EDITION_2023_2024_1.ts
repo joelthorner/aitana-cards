@@ -19,6 +19,9 @@ import sapp_AABg_2 from "../img/cards/sapp_AABg_2.jpg";
 import sapp1p_0 from "../img/cards/sapp1p_0.jpg";
 import sapp1p_1 from "../img/cards/sapp1p_1.webp";
 import sapp1p_2 from "../img/cards/sapp1p_2.webp";
+import sapp1o_0 from "../img/cards/sapp1o_0.jpg";
+import sapp1o_1 from "../img/cards/sapp1o_1.webp";
+import sapp1o_2 from "../img/cards/sapp1o_2.webp";
 
 const baseTextBack = `AITANA BONMATÍ  
 FC BARCELONA
@@ -94,6 +97,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   status: CardStatus.Falti,
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
   year: 2024,
+  numbered: 50,
   cardSection: "FC Barcelona",
   language: CardLanguage.EN,
   cardType: [
@@ -104,6 +108,38 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
   cardTextFront: `27/50
+
+AITANA **BONMATÍ**
+  
+MIDFIELER`,
+  cardTextBack: baseTextBack,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_1o: Card = {
+  customRelatedsRegexp: /(A-AB[a-z]*|(?<!QF-)1[a-z]?)/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-1o',
+  number: '1o',
+  images: [
+    sapp1o_0,
+    sapp1o_1,
+    sapp1o_2,
+  ],
+  name: "Aitana Bonmatí Orange / Sapphire",
+  rarity: 3,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Sapphire,
+    CardType.Orange,
+  ],
+  brilli: CardBrilli.OrangeFoil,
+  productType: CardProductType.Card,
+  cardTextFront: `11/25
 
 AITANA **BONMATÍ**
   

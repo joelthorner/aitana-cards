@@ -26,6 +26,7 @@ import img_AsisatOshoala from "./img/teammates/AsisatOshoala.jpg";
 import img_MarionaCaldentey from "./img/teammates/MarionaCaldentey.jpg";
 import img_VickyLosada from "./img/teammates/VickyLosada.jpg";
 import img_OnaBatlle from "./img/teammates/OnaBatlle.jpg";
+import img_Pedri from "./img/teammates/Pedri.jpg";
 
 export type Teammate = {
   number: number | string;
@@ -61,3 +62,4 @@ export const PatriGuijarro: Teammate = { number: 8, name: 'Patri Guijarro', imag
 export const SandraPanos: Teammate = { number: 1, name: 'Sandra Paños', image: img_SandraPanos, };
 export const VickyLosada: Teammate = { number: 6, name: 'Vicky Losada', image: img_VickyLosada, };
 export const OnaBatlle: Teammate = { number: 22, name: 'Ona Batlle', image: img_OnaBatlle, };
+export const Pedri: Teammate = { number: 16, name: 'Pedri', image: img_Pedri, };
