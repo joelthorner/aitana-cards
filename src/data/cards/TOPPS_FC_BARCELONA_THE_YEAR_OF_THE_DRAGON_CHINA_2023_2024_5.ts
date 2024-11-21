@@ -12,6 +12,9 @@ import tfbtyotdc_5gr_2 from "../img/cards/tfbtyotdc_5gr_2.webp";
 import tfbtyotdc_5w_0 from "../img/cards/tfbtyotdc_5w_0.jpg";
 import tfbtyotdc_5w_1 from "../img/cards/tfbtyotdc_5w_1.webp";
 import tfbtyotdc_5w_2 from "../img/cards/tfbtyotdc_5w_2.webp";
+import tfbtyotdc_5bu_0 from "../img/cards/tfbtyotdc_5bu_0.jpg";
+import tfbtyotdc_5bu_1 from "../img/cards/tfbtyotdc_5bu_1.jpg";
+import tfbtyotdc_5bu_2 from "../img/cards/tfbtyotdc_5bu_2.jpg";
 
 export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5: Card = {
   id: 'topps-fc-barcelona-the-year-of-the-dragon-china-2023-2024-5',
@@ -51,6 +54,29 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5w: Card 
   cardType: [
     CardType.BaseSet,
     CardType.Wooden,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_5bu: Card = {
+  id: 'topps-fc-barcelona-the-year-of-the-dragon-china-2023-2024-5bu',
+  number: '5bu',
+  images: [
+    tfbtyotdc_5bu_0,
+    tfbtyotdc_5bu_1,
+    tfbtyotdc_5bu_2,
+  ],
+  name: 'Aitana Bonmatí Blue',
+  rarity: 4,
+  numbered: 25,
+  status: CardStatus.Falti,
+  collection: ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
+  year: 2024,
+  cardSection: 'Base set',
+  cardType: [
+    CardType.BaseSet,
+    CardType.Blue,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,

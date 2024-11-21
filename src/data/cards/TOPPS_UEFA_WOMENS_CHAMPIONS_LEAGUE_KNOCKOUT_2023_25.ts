@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardFlag, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomensChampionsLeagueKnockout_2023 } from "../collections";
 
 import tuwclk_25_0 from "../img/cards/tuwclk_25_0.jpg";
@@ -15,6 +15,8 @@ import tuwclk_25b_1 from "../img/cards/tuwclk_25b_1.jpg";
 import tuwclk_25bu_0 from "../img/cards/tuwclk_25bu_0.jpg";
 import tuwclk_25bu_1 from "../img/cards/tuwclk_25bu_1.webp";
 import tuwclk_25bu_2 from "../img/cards/tuwclk_25bu_2.webp";
+import tuwclk_25gr_0 from "../img/cards/tuwclk_25gr_0.jpg";
+import tuwclk_25gr_1 from "../img/cards/tuwclk_25gr_1.jpg";
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
   id: 'topps-uefa-womens-champions-league-knockout-2023-25',
@@ -33,6 +35,29 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
   cardType: [
     CardType.BaseSet,
   ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25gr: Card = {
+  id: 'topps-uefa-womens-champions-league-knockout-2023-25gr',
+  number: '25gr',
+  images: [
+    tuwclk_25gr_0,
+    tuwclk_25gr_1,
+  ],
+  name: "Aitana Bonmatí Green",
+  rarity: 3,
+  numbered: 99,
+  status: CardStatus.Tengui,
+  collection: ToppsUefaWomensChampionsLeagueKnockout_2023,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.BaseSet,
+    CardType.Green,
+  ],
+  brilli: CardBrilli.GreenFoil,
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
 };
@@ -106,6 +131,9 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.BlackTopps,
   orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.PoorImage,
+  ],
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25bu: Card = {

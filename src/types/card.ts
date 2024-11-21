@@ -139,6 +139,10 @@ export enum CardLanguage {
   EN = 'English',
 };
 
+export enum CardFlag {
+  PoorImage = 'PoorImage',
+};
+
 export type Card = {
   id: string,
   images: string[],
@@ -162,6 +166,7 @@ export type Card = {
   cardTextFront?: string;
   cardTextBack?: string;
   teammates?: Teammate[];
+  flags?: CardFlag[];
 };
 
 export type CardSearch = {

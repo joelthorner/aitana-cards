@@ -12,7 +12,8 @@ import aitanaBonmati_7ChromeFcb_22_23_bnw_refractor from "../img/cards/aitanaBon
 import aitanaBonmati_7ChromeFcb_22_23_x_fractor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_x_fractor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_x_fractor_back.webp";
 import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor.jpg";
-import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back.webp";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor01 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor01.jpg";
+import aitanaBonmati_7ChromeFcb_22_23_barsa_refactor02 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_barsa_refactor02.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_blue from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_blue_detail_1 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_1.jpg";
 import aitanaBonmati_7ChromeFcb_22_23_blue_detail_2 from "../img/cards/aitanaBonmati_7ChromeFcb_22_23_blue_detail_2.jpg";
@@ -110,7 +111,8 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7ba: Card = {
   number: '7ba',
   images: [
     aitanaBonmati_7ChromeFcb_22_23_barsa_refactor,
-    aitanaBonmati_7ChromeFcb_22_23_barsa_refactor_back,
+    aitanaBonmati_7ChromeFcb_22_23_barsa_refactor01,
+    aitanaBonmati_7ChromeFcb_22_23_barsa_refactor02,
   ],
   name: 'Aitana Bonmatí Base card / Barça',
   rarity: 3,

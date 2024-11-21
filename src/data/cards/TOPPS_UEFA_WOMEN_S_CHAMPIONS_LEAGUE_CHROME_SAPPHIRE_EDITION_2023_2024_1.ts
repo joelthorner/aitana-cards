@@ -22,6 +22,9 @@ import sapp1p_2 from "../img/cards/sapp1p_2.webp";
 import sapp1o_0 from "../img/cards/sapp1o_0.jpg";
 import sapp1o_1 from "../img/cards/sapp1o_1.webp";
 import sapp1o_2 from "../img/cards/sapp1o_2.webp";
+import sapp_AAB_0 from "../img/cards/sapp_AAB_0.jpg";
+import sapp_AAB_1 from "../img/cards/sapp_AAB_1.jpg";
+import sapp_AAB_2 from "../img/cards/sapp_AAB_2.jpg";
 
 const baseTextBack = `AITANA BONMATÍ  
 FC BARCELONA
@@ -213,6 +216,38 @@ AITANA **BONMATÍ**
   
 MIDFIELER`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_A_AB: Card = {
+  customRelatedsRegexp: /(A-AB[a-z]*|(?<!QF-)1[a-z]?)/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-A-AB',
+  number: 'A-AB',
+  images: [
+    sapp_AAB_0,
+    sapp_AAB_1,
+    sapp_AAB_2,
+  ],
+  name: "Aitana Bonmatí Sapphire / Autograph",
+  rarity: 3,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.Sapphire,
+    CardType.Autographs,
+  ],
+  brilli: CardBrilli.BlueTopps,
+  productType: CardProductType.Card,
+  cardTextFront: `TOPPS CERTIFIED 
+AUTOGRAPH ISSUE
+
+AITANA **BONMATÍ**
+  
+MIDFIELER`,
+  cardTextBack: autoBaseTextBack,
   orientation: CardOrientation.Vertical,
 };
 

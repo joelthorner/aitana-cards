@@ -21,6 +21,7 @@ import tmh98us85r1 from "../img/cards/tmh98us85r1.jpg";
 import tmh98us85r2 from "../img/cards/tmh98us85r2.webp";
 import tmh85ao_1 from "../img/cards/tmh85ao_1.jpg";
 import tmh85ao_2 from "../img/cards/tmh85ao_2.jpg";
+import tmh85ao_3 from "../img/cards/tmh85ao_3.jpg";
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85: Card = {
   id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85',
@@ -167,6 +168,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
   images: [
     tmh85ao_1,
     tmh85ao_2,
+    tmh85ao_3,
   ],
   name: 'Aitana Bonmati Base card / Autograph / Orange',
   rarity: 5,

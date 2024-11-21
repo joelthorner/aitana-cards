@@ -63,6 +63,7 @@ import c14i2_2 from "../img/cards/c14i2_2.webp";
 import c14ng_0 from "../img/cards/c14ng_0.jpg";
 import c14ng_1 from "../img/cards/c14ng_1.webp";
 import c14ng_2 from "../img/cards/c14ng_2.webp";
+import c14o_2 from "../img/cards/c14o_2.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2022-2023-14',
@@ -342,6 +343,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_14o: Card = {
   images: [
     c14o_0,
     c14o_1,
+    c14o_2,
   ],
   name: 'Aitana Bonmatí Orange Refractor',
   numbered: 25,
