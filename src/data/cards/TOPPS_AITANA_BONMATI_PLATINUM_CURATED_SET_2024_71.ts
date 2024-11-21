@@ -15,6 +15,7 @@ import tabpcs_A71r_1 from "../img/cards/tabpcs_A71r_1.webp";
 import tabpcs_A71r_2 from "../img/cards/tabpcs_A71r_2.webp";
 import tabpcs_71g_0 from "../img/cards/tabpcs_71g_0.jpg";
 import tabpcs_71g_1 from "../img/cards/tabpcs_71g_1.jpg";
+import tabpcs_71g_2 from "../img/cards/tabpcs_71g_2.jpg";
 import tabpcs_71p_0 from "../img/cards/tabpcs_71p_0.jpg";
 import tabpcs_71p_1 from "../img/cards/tabpcs_71p_1.jpg";
 import tabpcs_71p_2 from "../img/cards/tabpcs_71p_2.jpg";
@@ -94,6 +95,7 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71g: Card = {
   images: [
     tabpcs_71g_0,
     tabpcs_71g_1,
+    tabpcs_71g_2,
   ],
   name: 'Marca en la final para ganar su tercera UEFA Women’s Champions League - Gold',
   rarity: 5,

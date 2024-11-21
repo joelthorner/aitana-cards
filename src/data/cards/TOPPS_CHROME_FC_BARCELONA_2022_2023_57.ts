@@ -1,7 +1,3 @@
-/**
- * COMPLETED data
- * @todo missing some image cards
- */
 import { Card, CardBrilli, CardType, CardStatus, CardProductType, CardOrientation } from "../../types/card";
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
@@ -47,6 +43,7 @@ import a57rf_2 from "../img/cards/a57rf_2.webp";
 import a57rf_3 from "../img/cards/a57rf_3.webp";
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57: Card = {
+  customRelatedsRegexp: /(?<!AA)-7[a-z]*$/,
   id: 'topps-chrome-fc-barcelona-2022-2023-n57',
   number: 57,
   images: [
@@ -236,26 +233,6 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57o: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-// export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57pu: Card = {
-//   id: 'topps-chrome-fc-barcelona-2022-2023-57pu',
-//   number: '57pu',
-//   images: [],
-//   missingImage: aitanaBonmati_57ChromeFcb_22_23,
-//   name: 'Aitana Bonmatí Base in action / Purple',
-//   rarity: 5,
-//   status: CardStatus.Falti,
-//   collection: ToppsChromeFcBarcelona_2022_2023,
-//   year: 2023,
-//   numbered: 15,
-//   cardType: [
-//     CardType.BaseSet,
-//     CardType.InAction,
-//     CardType.Purple,
-//   ],
-//   cardSection: 'FC Barcelona',
-//   productType: CardProductType.Card,
-// };
-
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57r: Card = {
   id: 'topps-chrome-fc-barcelona-2022-2023-57r',
   number: '57r',
@@ -282,29 +259,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57r: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-// export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57sf: Card = {
-//   id: 'topps-chrome-fc-barcelona-2022-2023-57sf',
-//   number: '57sf',
-//   images: [],
-//   missingImage: aitanaBonmati_57ChromeFcb_22_23,
-//   name: 'Aitana Bonmatí Base in action / SuperFractor',
-//   rarity: 5,
-//   status: CardStatus.Falti,
-//   collection: ToppsChromeFcBarcelona_2022_2023,
-//   year: 2023,
-//   numbered: 1,
-//   cardType: [
-//     CardType.BaseSet,
-//     CardType.InAction,
-//     CardType.SuperFractor,
-//   ],
-//   cardSection: 'FC Barcelona',
-//   productType: CardProductType.Card,
-// };
-
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-AA-7',
-  number: 'AA-7',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_AB: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-AB',
+  number: 'AU-AB',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57_2,
@@ -325,9 +282,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7y: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-AA-7y',
-  number: 'AA-7y',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABy: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-ABy',
+  number: 'AU-ABy',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldXN57_back,
@@ -350,9 +307,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7y: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7b: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-AA-7b',
-  number: 'AA-7b',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABb: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-ABb',
+  number: 'AU-ABb',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBlueN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBlueN57_2,
@@ -375,9 +332,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7b: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7g: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-AA-7g',
-  number: 'AA-7g',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABg: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-ABg',
+  number: 'AU-ABg',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoGoldN57_2,
@@ -404,9 +361,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7g: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7o: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-auto-orange-AA-7o',
-  number: 'AA-7o',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABo: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-auto-orange-AU-ABo',
+  number: 'AU-ABo',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoOrangeXN57_back,
@@ -429,9 +386,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7o: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7pu: Card = {
-  id: 'topps-chrome-fc-barcelona-2022-2023-AA-7pu',
-  number: 'AA-7pu',
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABpu: Card = {
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-ABpu',
+  number: 'AU-ABpu',
   images: [
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57,
     toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoPurpleN57_back,
@@ -452,44 +409,3 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7pu: Card = {
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
 };
-
-// export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7r: Card = {
-//   id: 'topps-chrome-fc-barcelona-2022-2023-AA-7r',
-//   number: 'AA-7r',
-//   images: [],
-//   missingImage: toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57,
-//   name: 'Aitana Bonmatí Action Autograph / Red X-Fractor',
-//   rarity: 5,
-//   status: CardStatus.Falti,
-//   collection: ToppsChromeFcBarcelona_2022_2023,
-//   year: 2023,
-//   numbered: 5,
-//   cardType: [
-//     CardType.InAction,
-//     CardType.Autographs,
-//     CardType.XFractor,
-//     CardType.Red,
-//   ],
-//   cardSection: 'FC Barcelona',
-//   productType: CardProductType.Card,
-// };
-
-// export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AA7sf: Card = {
-//   id: 'topps-chrome-fc-barcelona-2022-2023-AA-7sf',
-//   number: 'AA-7sf',
-//   images: [],
-//   missingImage: toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoN57,
-//   name: 'Aitana Bonmatí Action Autograph / SuperFractor',
-//   rarity: 5,
-//   status: CardStatus.Falti,
-//   collection: ToppsChromeFcBarcelona_2022_2023,
-//   year: 2023,
-//   numbered: 1,
-//   cardType: [
-//     CardType.InAction,
-//     CardType.Autographs,
-//     CardType.SuperFractor,
-//   ],
-//   cardSection: 'FC Barcelona',
-//   productType: CardProductType.Card,
-// };
