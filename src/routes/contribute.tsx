@@ -15,7 +15,7 @@ export default function Contribute() {
 
   const nextPage = () => setCurrentPage((prev) => prev + 1);
   const prevPage = () => setCurrentPage((prev) => prev - 1);
-  const goToPage = (page: number) => setCurrentPage(page);
+  // const goToPage = (page: number) => setCurrentPage(page);
 
   const totalPages = Math.ceil(addedCards.length / 50);
 

@@ -155,7 +155,7 @@ export default function CardDetail() {
 
           {/* {card.teammates && (
             <div className="hidden lg:block bg-white rounded-3xl p-4">
-              <Teammates teammates={card.teammates} />
+              <Teammates teammates={card.teammates} id="todo"/>
             </div>
           )} */}
         </div>
@@ -227,7 +227,7 @@ export default function CardDetail() {
 
           <DataTable className="lg:hidden" card={card} />
 
-          {card.teammates && card.teammates.length > 0 && <Teammates className="lg:hidden" teammates={card.teammates} />}
+          {card.teammates && card.teammates.length > 0 && <Teammates className="lg:hidden" teammates={card.teammates} id="desktop" />}
 
           {(card.cardTextFront || card.cardTextBack) && (
             <CardTexts id="mobile" className="lg:hidden" front={card.cardTextFront} back={card.cardTextBack} language={card.language} />
@@ -275,7 +275,7 @@ export default function CardDetail() {
           {card.teammates && card.teammates.length > 0 && (
             <div className="bg-zinc-900 rounded-3xl py-4 px-6">
               <div id="teammates">
-                <Teammates teammates={card.teammates} variation="light" />
+                <Teammates teammates={card.teammates} variation="light" id="mobile" />
               </div>
             </div>
           )}

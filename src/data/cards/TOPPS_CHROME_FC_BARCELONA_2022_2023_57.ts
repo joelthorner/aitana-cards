@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardType, CardStatus, CardProductType, CardOrientation } from "../../types/card";
+import { Card, CardBrilli, CardType, CardStatus, CardProductType, CardOrientation, CardLanguage, CardFlag } from "../../types/card";
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
 import ab_57CFcb_22_23 from "../img/cards/aitana-bonmati-57-chrome-fcb-22-23.jpg";
@@ -42,6 +42,56 @@ import tcfcbmquc_2223_a_PurpleN57_back from "../img/cards/tcfcbmquc_2223_a_Purpl
 import a57rf_2 from "../img/cards/a57rf_2.webp";
 import a57rf_3 from "../img/cards/a57rf_3.webp";
 
+const cardTextFront = `FC BARCELONA FEMENÍ
+
+**AITANA BONMATÍ**
+
+MIDFIELER`;
+
+const cardTextBack = `{{numbered}}
+
+**AITANA BONMATÍ**  
+
+**MIDFIELDER**  
+**FC BARCELONA FEMENÍ**  
+
+Spanish international Aitana Bonmatí holds a commanding presence in the heart of the Barça midfield, a natural leader who effectively instructs, organizes and communicates from her central position.  
+Having been born just 40 km west of Barcelona and joining the club’s youth set-up at the age of 14, Bonmatí knows exactly what it means to represent the Blaugrana.  
+
+{{refractor}}  
+
+© FC BARCELONA  
+
+Published Under License by The Topps Company, Inc.  
+© & © 2023. All Rights Reserved.`;
+
+const cardTextFrontAuto = `TOPPS CERTIFIED AUTOGRAPH ISSUE
+  
+FC BARCELONA FEMENÍ
+
+**AITANA BONMATÍ**
+
+MIDFIELER`;
+
+const cardTextBackAuto = `{{numbered}}
+
+**AITANA BONMATÍ**  
+
+**MIDFIELDER**  
+**FC BARCELONA FEMENÍ**  
+
+**Congratulations!**  
+You have just received an autograph from Topps Chrome Barcelona 2022/23.  
+
+---
+
+The signing of all Topps autograph cards is witnessed by a Topps representative to guarantee authenticity.  
+
+© FC BARCELONA  
+Published Under License by The Topps Company, Inc.  
+© & © 2023. All Rights Reserved.  
+`;
+
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57: Card = {
   customRelatedsRegexp: /(57[a-z]*|AU-AB[a-z]*)$/,
   id: 'topps-chrome-fc-barcelona-2022-2023-n57',
@@ -61,6 +111,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', ''),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57rf: Card = {
@@ -86,6 +139,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57rf: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', 'REFRACTOR').replace('{{numbered}}', ''),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57x: Card = {
@@ -110,6 +166,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57x: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', ''),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57b: Card = {
@@ -135,6 +194,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57b: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', ''),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57ba: Card = {
@@ -160,6 +222,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57ba: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', '09/99'),
+  flags: [
+    CardFlag.PoorImage
+  ],
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57bu: Card = {
@@ -186,6 +254,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57bu: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', '73/75'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57g: Card = {
@@ -211,6 +282,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57g: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', '40/50'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57o: Card = {
@@ -238,6 +312,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57o: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', '06/25'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57r: Card = {
@@ -265,6 +342,12 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_57r: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront,
+  cardTextBack: cardTextBack.replace('{{refractor}}', '').replace('{{numbered}}', 'n/5'),
+  flags: [
+    CardFlag.DuplicatedImage
+  ],
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_AB: Card = {
@@ -289,6 +372,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_AB: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', ''),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABy: Card = {
@@ -300,7 +386,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABy: Card = {
     tcfcbmquc_2223_a_GoldXN57_back,
   ],
   name: 'Aitana Bonmatí Action Autographs / Yellow X-Fractor',
-  rarity: 4,
+  rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.GoldFoil,
   collection: ToppsChromeFcBarcelona_2022_2023,
@@ -315,6 +401,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABy: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '99/99'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABb: Card = {
@@ -327,7 +416,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABb: Card = {
     tcfcbmquc_2223_a_BlueN57_back,
   ],
   name: 'Aitana Bonmatí Action Autograph / Blue',
-  rarity: 4,
+  rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlueTopps,
   collection: ToppsChromeFcBarcelona_2022_2023,
@@ -341,6 +430,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABb: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '50/75'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABg: Card = {
@@ -371,6 +463,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABg: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '17/50'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABo: Card = {
@@ -382,7 +477,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABo: Card = {
     tcfcbmquc_2223_a_OrangeXN57_back,
   ],
   name: 'Aitana Bonmatí Action Autograph / Orange X-Fractor',
-  rarity: 5,
+  rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.OrangeFoil,
   collection: ToppsChromeFcBarcelona_2022_2023,
@@ -397,6 +492,9 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABo: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '06/25'),
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABpu: Card = {
@@ -408,7 +506,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABpu: Card = {
     tcfcbmquc_2223_a_PurpleN57_back,
   ],
   name: 'Aitana Bonmatí Action Autograph / Purple',
-  rarity: 5,
+  rarity: 4,
   status: CardStatus.Falti,
   brilli: CardBrilli.PurpleFoil,
   collection: ToppsChromeFcBarcelona_2022_2023,
@@ -422,4 +520,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABpu: Card = {
   cardSection: 'FC Barcelona',
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '13/15'),
 };

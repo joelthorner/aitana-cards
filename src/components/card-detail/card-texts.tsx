@@ -62,14 +62,14 @@ export default function CardTexts({ front, back, language, className, id, variat
         <div className="p-4">
           <div id={"card-text-front-" + id} className={back ? "hidden" : ""} role="tabpanel" aria-labelledby={"basic-tabs-item-1-" + id}>
             <div className={cardTextClassName}>
-              <ReactMarkdown className="markdown markdown-card-text grid gap-2 text-xs" remarkPlugins={[remarkGfm]}>
+              <ReactMarkdown className="markdown markdown-card-text grid gap-2 lg:gap-4 text-xs" remarkPlugins={[remarkGfm]}>
                 {front}
               </ReactMarkdown>
             </div>
           </div>
           <div id={"card-text-back" + id} role="tabpanel" aria-labelledby={"basic-tabs-item-2-" + id}>
             <div className={cardTextClassName}>
-              <ReactMarkdown className="markdown markdown-card-text grid gap-2 text-xs" remarkPlugins={[remarkGfm]}>
+              <ReactMarkdown className="markdown markdown-card-text grid gap-2 lg:gap-4 text-xs" remarkPlugins={[remarkGfm]}>
                 {back}
               </ReactMarkdown>
             </div>
