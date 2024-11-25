@@ -19,6 +19,9 @@ import tabpcs_A56p_1 from "../img/cards/tabpcs_A56p_1.jpg";
 import tabpcs_56p_0 from "../img/cards/tabpcs_56p_0.jpg";
 import tabpcs_56p_1 from "../img/cards/tabpcs_56p_1.jpg";
 import tabpcs_56p_2 from "../img/cards/tabpcs_56p_2.jpg";
+import tabpcs_56r_0 from "../img/cards/tabpcs_56r_0.jpg";
+import tabpcs_56r_1 from "../img/cards/tabpcs_56r_1.jpg";
+import tabpcs_56r_2 from "../img/cards/tabpcs_56r_2.jpg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-56',
@@ -110,6 +113,30 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56pu: Card = {
   cardType: [
     CardType.BaseSet,
     CardType.Purple,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_56r: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-56r',
+  number: '56r',
+  images: [
+    tabpcs_56r_0,
+    tabpcs_56r_1,
+    tabpcs_56r_2,
+  ],
+  name: 'Aitana Bonmatí - Pioneras / Red',
+  rarity: 4,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Pioneras',
+  brilli: CardBrilli.RedFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Red,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,

@@ -4,6 +4,12 @@ import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from ".
 import sappSS2b_0 from "../img/cards/sappSS2b_0.jpg";
 import sappSS2b_1 from "../img/cards/sappSS2b_1.webp";
 import sappSS2b_2 from "../img/cards/sappSS2b_2.webp";
+import sappSSA_ABr_0 from "../img/cards/sappSSA_ABr_0.jpg";
+import sappSSA_ABr_1 from "../img/cards/sappSSA_ABr_1.jpg";
+import sappSSA_ABr_2 from "../img/cards/sappSSA_ABr_2.jpg";
+import sappSS2r_0 from "../img/cards/sappSS2r_0.jpg";
+import sappSS2r_1 from "../img/cards/sappSS2r_1.jpg";
+import sappSS2r_2 from "../img/cards/sappSS2r_2.jpg";
 
 const baseTextBack = `**SS-2**
 
@@ -23,7 +29,35 @@ The UEFA Women’s Champions League is greatly strengthened with the addition of
 
 **© FC BARCELONA**`;
 
+const baseTextBackAuto = `**SSA-AB**  
+
+*Aitana Bonmatí*  
+
+**FC BARCELONA - MIDFIELDER**  
+
+# Sapphire Selections  
+
+Sapphire Selections Autograph Card  
+from 2023/24 Topps Chrome  
+UEFA Women’s Champions League  
+
+The signing of all Topps autograph cards is witnessed by a Topps representative to guarantee authenticity.  
+
+
+© & ℗ 2024 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS AND  
+TOPPS CHROME ARE REGISTERED TRADEMARKS OF THE TOPPS COMPANY, INC. THE  
+WORD(S) UEFA, WOMEN'S CHAMPIONS LEAGUE, AND ALL OTHER UEFA WOMEN'S  
+CHAMPIONS LEAGUE MARKS, NAMES, LOGOS, MASCOTS AND TROPHIES ARE THE  
+PROPERTY, REGISTERED TRADEMARKS, DESIGNS AND/OR COPYRIGHT OF UEFA. ALL RIGHTS RESERVED.  
+
+www.topps.com CODE#CMP082741.  
+
+© FC BARCELONA  
+
+**Official Licensed Product**`;
+
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SS_2b: Card = {
+  customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
   id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-SS-2b',
   number: 'SS-2b',
   images: [
@@ -54,5 +88,76 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
 
 *Aitana Bonmatí*`,
   cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SS_2r: Card = {
+  customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-SS-2r',
+  number: 'SS-2r',
+  images: [
+    sappSS2r_0,
+    sappSS2r_1,
+    sappSS2r_2,
+  ],
+  name: "Aitana Bonmatí Sapphire Selections / Red",
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.Sapphire,
+    CardType.Selections,
+    CardType.Red,
+  ],
+  brilli: CardBrilli.RedFoil,
+  productType: CardProductType.Card,
+  cardTextFront: `**TOPPS CHROME**
+  
+5/5
+
+**Sapphire Selections**
+
+*Aitana Bonmatí*`,
+  cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SSA_ABr: Card = {
+  customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-SSA-ABr',
+  number: 'SSA-ABr',
+  images: [
+    sappSSA_ABr_0,
+    sappSSA_ABr_1,
+    sappSSA_ABr_2,
+  ],
+  name: "Aitana Bonmatí Selection Autograph / Red / Sapphire",
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.Sapphire,
+    CardType.Selections,
+    CardType.Red,
+    CardType.Autographs,
+  ],
+  brilli: CardBrilli.RedFoil,
+  productType: CardProductType.Card,
+  cardTextFront: `**TOPPS CHROME**
+  
+4/5
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+*Aitana Bonmatí*`,
+  cardTextBack: baseTextBackAuto,
   orientation: CardOrientation.Vertical,
 };

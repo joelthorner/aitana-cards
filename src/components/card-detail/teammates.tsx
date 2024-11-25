@@ -46,6 +46,10 @@ export default function Teammates({ teammates, className, variation = "dark", id
   useEffect(() => {
     const _teammates = [...teammates, AitanaBonmati];
 
+    if (teammates.length <= 0) {
+      return;
+    }
+
     const calculateVisibleTeammates = () => {
       if (containerRef.current) {
         const totalItems = Math.floor((containerRef.current.clientWidth + 12) / (64 + 12)) * 2 - 1;
@@ -81,7 +85,7 @@ export default function Teammates({ teammates, className, variation = "dark", id
         {shownTeammates.map((teammate) => (
           <TeammateItem key={teammate.name} teammate={teammate} teammateNameClassName={teammateNameClassName} />
         ))}
-        {hiddenTeammates && (
+        {hiddenTeammates && hiddenTeammates.length > 0 && (
           <button
             type="button"
             className="hs-collapse-toggle text-center w-16 flex flex-col items-center"
@@ -99,7 +103,7 @@ export default function Teammates({ teammates, className, variation = "dark", id
           </button>
         )}
       </div>
-      {hiddenTeammates && (
+      {hiddenTeammates && hiddenTeammates.length > 0 && (
         <div
           id={`teammates-collapse-${id}-heading`}
           className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300"

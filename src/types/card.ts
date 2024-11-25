@@ -145,19 +145,19 @@ export enum CardFlag {
 };
 
 export type Card = {
-  id: string,
-  images: string[],
-  name: string,
+  id: string;
+  images: string[];
+  name: string;
   number: number | string;
   cardType: CardType[];
-  rarity: 1 | 2 | 3 | 4 | 5,
-  status: CardStatus,
-  collection: Collection,
-  year: number,
+  rarity: 1 | 2 | 3 | 4 | 5;
+  status: CardStatus;
+  collection: Collection;
+  year: number;
   productType: CardProductType;
-  orientation: CardOrientation,
-  description?: string,
-  brilli?: CardBrilli,
+  orientation: CardOrientation;
+  description?: string;
+  brilli?: CardBrilli;
   links?: string[];
   numbered?: number;
   cardSection?: string;
