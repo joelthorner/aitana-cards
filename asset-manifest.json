@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aitana-cards/static/css/main.7da6b691.css",
-    "main.js": "/aitana-cards/static/js/main.028acc10.js",
+    "main.js": "/aitana-cards/static/js/main.dc147bee.js",
     "static/js/453.73604254.chunk.js": "/aitana-cards/static/js/453.73604254.chunk.js",
     "static/media/tmh85ao_3.jpg": "/aitana-cards/static/media/tmh85ao_3.c6b76f6853b5327a41f9.jpg",
     "static/media/tfbtyotdc_DEABw_1.jpg": "/aitana-cards/static/media/tfbtyotdc_DEABw_1.fd1b3015cfbba701c2be.jpg",
@@ -308,6 +308,7 @@
     "static/media/c_qf1g_1.jpg": "/aitana-cards/static/media/c_qf1g_1.32f2f32514493a3b68f4.jpg",
     "static/media/tabpcs_118_2.webp": "/aitana-cards/static/media/tabpcs_118_2.abc689bbcac95fe014ac.webp",
     "static/media/tabpcs_66r_0.jpg": "/aitana-cards/static/media/tabpcs_66r_0.0339030b16abcbc94a24.jpg",
+    "static/media/tabpcs_64r_0.jpg": "/aitana-cards/static/media/tabpcs_64r_0.1eaeb488f9b3e9750853.jpg",
     "static/media/c14A_ABg_2.webp": "/aitana-cards/static/media/c14A_ABg_2.73f30563cc8c2bbe093f.webp",
     "static/media/c14ref_3.webp": "/aitana-cards/static/media/c14ref_3.474855eeb86e68b01316.webp",
     "static/media/tabpcs_65_1.webp": "/aitana-cards/static/media/tabpcs_65_1.351939f5df426646234d.webp",
@@ -355,6 +356,7 @@
     "static/media/tabpcs_66r_2.webp": "/aitana-cards/static/media/tabpcs_66r_2.a5f52f845653e80a3506.webp",
     "static/media/tfbtyotdc_DEABb_3.webp": "/aitana-cards/static/media/tfbtyotdc_DEABb_3.127a87cd005c87c32bde.webp",
     "static/media/cCM_5o_1.webp": "/aitana-cards/static/media/cCM_5o_1.b7a2e1e4bd789180c02f.webp",
+    "static/media/tus23_2.webp": "/aitana-cards/static/media/tus23_2.a7acc9600224c5c0e2a1.webp",
     "static/media/pf365_24_425_0.jpg": "/aitana-cards/static/media/pf365_24_425_0.9682b30ecbff681bec6d.jpg",
     "static/media/QAB1ng_4.webp": "/aitana-cards/static/media/QAB1ng_4.3165c24e4e6ea5550a5c.webp",
     "static/media/c14ref_2.webp": "/aitana-cards/static/media/c14ref_2.86f3af637917f1750b6a.webp",
@@ -457,6 +459,7 @@
     "static/media/AAB1i_2.jpg": "/aitana-cards/static/media/AAB1i_2.ed28b979a4a7b854e291.jpg",
     "static/media/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_2.webp": "/aitana-cards/static/media/aitanaBonmatiBaseFcbWomenWinners_23AssistQueen5_2.388f384a78bf86ce351e.webp",
     "static/media/pf365_24_1.webp": "/aitana-cards/static/media/pf365_24_1.3bf69b1142b136193ef2.webp",
+    "static/media/tus23_3.webp": "/aitana-cards/static/media/tus23_3.76b415f28d9e5ceab408.webp",
     "static/media/c70bu_0.jpg": "/aitana-cards/static/media/c70bu_0.496f69c05e56188faa58.jpg",
     "static/media/tabpcs_69r_1.webp": "/aitana-cards/static/media/tabpcs_69r_1.60df188f3b2939370b69.webp",
     "static/media/cCM_55r_0.jpg": "/aitana-cards/static/media/cCM_55r_0.910ff84582fe2ea76db5.jpg",
@@ -668,6 +671,7 @@
     "static/media/c44_2.webp": "/aitana-cards/static/media/c44_2.fd0b8f1f3fdce0451d4b.webp",
     "static/media/sapp1o_0.jpg": "/aitana-cards/static/media/sapp1o_0.0ad95fab89980dd460be.jpg",
     "static/media/sapp14_4.webp": "/aitana-cards/static/media/sapp14_4.6777970933be68c1138f.webp",
+    "static/media/tabpcs_64r_1.webp": "/aitana-cards/static/media/tabpcs_64r_1.7ad79ac1407eaf860e6c.webp",
     "static/media/c70pu_1.webp": "/aitana-cards/static/media/c70pu_1.f0431d4036b72ec4fd3d.webp",
     "static/media/DA_RBbl_1.webp": "/aitana-cards/static/media/DA_RBbl_1.80e94b3cf729cdea8b68.webp",
     "static/media/sappalt14_0.jpg": "/aitana-cards/static/media/sappalt14_0.91376b868843ca93db9c.jpg",
@@ -741,6 +745,7 @@
     "static/media/tfbtyotdc_5w_2.webp": "/aitana-cards/static/media/tfbtyotdc_5w_2.73d4cd4639173a336bb8.webp",
     "static/media/AAB1rgm_2.webp": "/aitana-cards/static/media/AAB1rgm_2.21162c9d6ae160584a46.webp",
     "static/media/c14pup_2.webp": "/aitana-cards/static/media/c14pup_2.b7b1955f07b6528dff41.webp",
+    "static/media/tabpcs_64r_2.webp": "/aitana-cards/static/media/tabpcs_64r_2.d49c61d3d4072843fac8.webp",
     "static/media/img_FC12ow_2.webp": "/aitana-cards/static/media/img_FC12ow_2.9d70e22a05e147cf982e.webp",
     "static/media/pcvs_38_1.webp": "/aitana-cards/static/media/pcvs_38_1.7b96c87ad90079ac6772.webp",
     "static/media/tuwsclc2324.jpg": "/aitana-cards/static/media/tuwsclc2324.d43c76f04cc2c5a949a8.jpg",
@@ -1062,11 +1067,11 @@
     "static/media/c14pl_1.jpg": "/aitana-cards/static/media/c14pl_1.7251626b46390deaf51e.jpg",
     "index.html": "/aitana-cards/index.html",
     "main.7da6b691.css.map": "/aitana-cards/static/css/main.7da6b691.css.map",
-    "main.028acc10.js.map": "/aitana-cards/static/js/main.028acc10.js.map",
+    "main.dc147bee.js.map": "/aitana-cards/static/js/main.dc147bee.js.map",
     "453.73604254.chunk.js.map": "/aitana-cards/static/js/453.73604254.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7da6b691.css",
-    "static/js/main.028acc10.js"
+    "static/js/main.dc147bee.js"
   ]
 }
