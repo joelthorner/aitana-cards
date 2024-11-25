@@ -2,6 +2,7 @@ import { Plus } from "lucide-react";
 import { AitanaBonmati, Teammate } from "../../data/teammates";
 import { useClassName } from "../../hooks/useClassName";
 import { useEffect, useRef, useState } from "react";
+import { IStaticMethods } from "preline";
 
 interface TeammateType {
   teammate: Teammate;
@@ -13,6 +14,12 @@ interface TeammatesType {
   className?: string;
   variation?: "light" | "dark";
   id: string;
+}
+
+declare global {
+  interface Window {
+    HSCollapse: IStaticMethods;
+  }
 }
 
 function TeammateItem({ teammate, teammateNameClassName }: TeammateType) {
@@ -56,6 +63,7 @@ export default function Teammates({ teammates, className, variation = "dark", id
         setShownTeammates(_teammates.slice(0, totalItems));
         setHiddenTeammates(_teammates.slice(totalItems));
       }
+      window.HSCollapse.autoInit();
     };
 
     calculateVisibleTeammates();

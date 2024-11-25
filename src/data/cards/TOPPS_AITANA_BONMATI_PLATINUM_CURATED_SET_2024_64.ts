@@ -13,6 +13,9 @@ import tabpcs_64bu_3 from "../img/cards/tabpcs_64bu_3.jpg";
 import tabpcs_64pu_0 from "../img/cards/tabpcs_64pu_0.jpg";
 import tabpcs_64pu_1 from "../img/cards/tabpcs_64pu_1.jpg";
 import tabpcs_64pu_2 from "../img/cards/tabpcs_64pu_2.jpg";
+import tabpcs_64r_0 from "../img/cards/tabpcs_64r_0.jpg";
+import tabpcs_64r_1 from "../img/cards/tabpcs_64r_1.webp";
+import tabpcs_64r_2 from "../img/cards/tabpcs_64r_2.webp";
 
 const cardTextBack = `**MEJORES MOMENTOS**  
 
@@ -119,6 +122,39 @@ Mejores momentos
 **AITANA BONMATÍ**
 
 **FC BARCELONA**`,
+  cardTextBack,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_64r: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-64r',
+  number: '64r',
+  images: [
+    tabpcs_64r_0,
+    tabpcs_64r_1,
+    tabpcs_64r_2,
+  ],
+  name: 'Gana la UEFA Women’s Champions League por primera vez Red',
+  rarity: 5,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.RedFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Red,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+  language: CardLanguage.ES,
+  cardTextFront: `01/10
+
+  Mejores momentos
+  
+  **AITANA BONMATÍ**
+  
+  **FC BARCELONA**`,
   cardTextBack,
 };
 

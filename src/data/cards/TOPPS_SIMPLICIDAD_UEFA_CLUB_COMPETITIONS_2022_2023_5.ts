@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsSimplicidadUefaClubCompetitions_2022_2023 } from "../collections";
 
 import tus23_1 from "../img/cards/tus23_1.jpg";
@@ -26,12 +26,30 @@ import tus23_5rb_0 from "../img/cards/tus23_5rb_0.jpg";
 import tus23_5rb_1 from "../img/cards/tus23_5rb_1.webp";
 import tus23_5rb_2 from "../img/cards/tus23_5rb_2.webp";
 import tus23_A5pu_1 from "../img/cards/tus23_A5pu_1.jpeg";
+import tus23_2 from "../img/cards/tus23_2.webp";
+import tus23_3 from "../img/cards/tus23_3.webp";
+
+const cardTextBack = `**AITANA BONMATÍ**  
+
+**FC BARCELONA**  
+
+Una de las estrellas más grandes del fútbol femenino, Aitana Bonmatí es otra maravillosa jugadora que ha salido de ‘La Masia’. Una centrocampista técnica con visión, creatividad y que tiene gol, Bonmatí ha sido instrumental en los éxitos del FC Barcelona. La española marcó y fue nombrada mejor jugadora en la final de la UEFA Women’s Champions League 2020/21. Un talento enorme.
+
+© FC BARCELONA  
+
+*Topps OnDemand*  
+*Topps*  
+
+© 2023 THE TOPPS COMPANY, INC. ALL RIGHTS RESERVED. TOPPS IS A REGISTERED TRADEMARK OF THE TOPPS COMPANY, INC.  
+WWW.TOPPS.COM. THE WORD(S) UEFA WOMEN’S CHAMPIONS LEAGUE, AND ALL OTHER UEFA WOMEN’S CHAMPIONS LEAGUE MARKS, NAMES, LOGOS, MASCOTS AND TROPHIES ARE THE PROPERTY, REGISTERED TRADEMARKS, DESIGNS AND/OR COPYRIGHT OF UEFA. ALL RIGHTS RESERVED.`;
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2022-2023-5',
   number: 5,
   images: [
     tus23_1,
+    tus23_2,
+    tus23_3,
   ],
   name: 'Aitana Bonmatí #5 Filmstrip',
   rarity: 1,
@@ -44,6 +62,13 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5gr: Card = {
@@ -69,6 +94,15 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5gr: Card = {
   productType: CardProductType.Card,
   numbered: 99,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+83/99
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5p: Card = {
@@ -93,6 +127,15 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5p: Card = {
   productType: CardProductType.Card,
   numbered: 49,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+41/49
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5pu: Card = {
@@ -115,6 +158,15 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5pu: Card = {
   productType: CardProductType.Card,
   numbered: 25,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+12/25
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5r: Card = {
@@ -139,6 +191,15 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5r: Card = {
   productType: CardProductType.Card,
   numbered: 10,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+03/10
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5rb: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2022-2023-5rb',
@@ -162,6 +223,15 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_5rb: Card = {
   productType: CardProductType.Card,
   numbered: 5,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.ES,
+  cardTextFront: `**Topps Simplicidad 2023**  
+
+2/5
+
+**UEFA Women's Champions League**  
+
+**Aitana Bonmatí - FC Barcelona**`,
+  cardTextBack,
 };
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5gr: Card = {
