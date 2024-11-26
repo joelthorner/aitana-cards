@@ -12,6 +12,9 @@ import tabpcs_70p_0 from "../img/cards/tabpcs_70p_0.jpg";
 import tabpcs_70p_1 from "../img/cards/tabpcs_70p_1.webp";
 import tabpcs_70p_2 from "../img/cards/tabpcs_70p_2.webp";
 import tabpcs_70p_3 from "../img/cards/tabpcs_70p_3.webp";
+import tabpcs_70r_0 from "../img/cards/tabpcs_70r_0.jpg";
+import tabpcs_70r_1 from "../img/cards/tabpcs_70r_1.jpg";
+import tabpcs_70r_2 from "../img/cards/tabpcs_70r_2.jpg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-70',
@@ -76,6 +79,30 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70pu: Card = {
   cardType: [
     CardType.BaseSet,
     CardType.Purple,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_70r: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-70r',
+  number: '70r',
+  images: [
+    tabpcs_70r_0,
+    tabpcs_70r_1,
+    tabpcs_70r_2,
+  ],
+  name: 'Abre el marcador en una semifinal con una asistencia que batió todos los récord - Red',
+  rarity: 5,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.RedFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Red,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,

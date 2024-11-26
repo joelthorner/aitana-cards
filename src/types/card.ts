@@ -142,6 +142,7 @@ export enum CardLanguage {
 export enum CardFlag {
   PoorImage = 'PoorImage',
   DuplicatedImage = 'DuplicatedImage',
+  MissingBackImage = 'MissingBackImage',
 };
 
 export type Card = {

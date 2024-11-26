@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardFlag, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from "../collections";
 
 import sappSS2b_0 from "../img/cards/sappSS2b_0.jpg";
@@ -10,6 +10,9 @@ import sappSSA_ABr_2 from "../img/cards/sappSSA_ABr_2.jpg";
 import sappSS2r_0 from "../img/cards/sappSS2r_0.jpg";
 import sappSS2r_1 from "../img/cards/sappSS2r_1.jpg";
 import sappSS2r_2 from "../img/cards/sappSS2r_2.jpg";
+import sappSSA_ABb_0 from "../img/cards/sappSSA_ABb_0.jpg";
+import sappSSA_ABb_1 from "../img/cards/sappSSA_ABb_1.jpg";
+import sappSSA_ABb_2 from "../img/cards/sappSSA_ABb_2.jpg";
 
 const baseTextBack = `**SS-2**
 
@@ -124,6 +127,45 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
 *Aitana Bonmatí*`,
   cardTextBack: baseTextBack,
   orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SSA_ABb: Card = {
+  customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-SSA-ABb',
+  number: 'SSA-ABb',
+  images: [
+    sappSSA_ABb_0,
+    sappSSA_ABb_1,
+    sappSSA_ABb_2,
+  ],
+  name: "Aitana Bonmatí Selection Autograph / Black / Sapphire",
+  rarity: 5,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.Sapphire,
+    CardType.Selections,
+    CardType.Black,
+    CardType.Autographs,
+  ],
+  brilli: CardBrilli.BlackTopps,
+  productType: CardProductType.Card,
+  cardTextFront: `**TOPPS CHROME**
+  
+01/10
+
+TOPPS CERTIFIED AUTOGRAPH ISSUE
+
+*Aitana Bonmatí*`,
+  cardTextBack: baseTextBackAuto,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ]
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SSA_ABr: Card = {

@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
+import { Card, CardBrilli, CardFlag, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card"
 import { ToppsMerlinHeritage_98UccSeason_2022_2023 } from "../collections";
 
 import toppsMerlinHeritage_98UccSeason_2022_2023_85 from "../img/cards/topps-merlin-heritage-98-ucc-season-2022-2023_85.jpg";
@@ -22,6 +22,10 @@ import tmh98us85r2 from "../img/cards/tmh98us85r2.webp";
 import tmh85ao_1 from "../img/cards/tmh85ao_1.jpg";
 import tmh85ao_2 from "../img/cards/tmh85ao_2.jpg";
 import tmh85ao_3 from "../img/cards/tmh85ao_3.jpg";
+import tmh98us2223_85ag_0 from "../img/cards/tmh98us2223_85ag_0.jpg";
+import tmh98us2223_85ag_1 from "../img/cards/tmh98us2223_85ag_1.jpeg";
+import tmh85ap_0 from "../img/cards/tmh85ap_0.jpg";
+import tmh85ap_1 from "../img/cards/tmh85ap_1.jpeg";
 
 export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85: Card = {
   id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85',
@@ -79,7 +83,7 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85b: Card = {
     tmh98us85b_3,
   ],
   name: 'Aitana Bonmatí Blue',
-  rarity: 4,
+  rarity: 3,
   status: CardStatus.Falti,
   collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
   year: 2022,
@@ -138,15 +142,15 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85r: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
-  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85a-b',
-  number: '85a-b',
+export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_A_85bu: Card = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-A-85b',
+  number: 'A-85b',
   images: [
     toppsMerlinHeritage_98UccSeason_2022_2023_85_blue_xof49,
     toppsMerlinHeritage_98UccSeason_2022_2023_85_back,
   ],
   name: 'Aitana Bonmati	Base card / Autograph / Blue',
-  rarity: 5,
+  rarity: 3,
   status: CardStatus.Falti,
   collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
   year: 2022,
@@ -162,16 +166,43 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ab: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
-  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85a-o',
-  number: '85a-o',
+export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_A_85pu: Card = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-A-85pu',
+  number: 'A-85pu',
+  images: [
+    tmh85ap_0,
+    tmh85ap_1,
+  ],
+  name: 'Aitana Bonmati Base card / Autograph / Purple',
+  rarity: 3,
+  status: CardStatus.Falti,
+  collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
+  year: 2022,
+  brilli: CardBrilli.PurpleFoil,
+  productType: CardProductType.Card,
+  cardSection: 'FC Barcelona / Women',
+  cardType: [
+    CardType.BaseSet,
+    CardType.Autographs,
+    CardType.Purple,
+  ],
+  numbered: 25,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
+};
+
+export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_A_85o: Card = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-A-85o',
+  number: 'A-85o',
   images: [
     tmh85ao_1,
     tmh85ao_2,
     tmh85ao_3,
   ],
   name: 'Aitana Bonmati Base card / Autograph / Orange',
-  rarity: 5,
+  rarity: 4,
   status: CardStatus.Falti,
   collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
   year: 2022,
@@ -187,9 +218,9 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ao: Card = {
   orientation: CardOrientation.Vertical,
 };
 
-export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
-  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-85a-r',
-  number: '85a-r',
+export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_A_85r: Card = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-A-85r',
+  number: 'A-85r',
   images: [
     toppsMerlinHeritage_98UccSeason_2022_2023_85_rainbow_5of5,
     toppsMerlinHeritage_98UccSeason_2022_2023_85_back,
@@ -212,4 +243,31 @@ export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_85ar: Card = {
   ],
   numbered: 5,
   orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_MERLIN_HERITAGE_98_UCC_SEASON_2022_2023_A_85g: Card = {
+  id: 'topps-merlin-heritage-98-ucc-season-2022-2023-A-85g',
+  number: 'A-85g',
+  images: [
+    tmh98us2223_85ag_0,
+    tmh98us2223_85ag_1,
+  ],
+  name: 'Aitana Bonmati Base card / Autograph / Gold',
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsMerlinHeritage_98UccSeason_2022_2023,
+  year: 2022,
+  brilli: CardBrilli.GoldFoil,
+  productType: CardProductType.Card,
+  cardSection: 'FC Barcelona / Women',
+  cardType: [
+    CardType.BaseSet,
+    CardType.Autographs,
+    CardType.Gold,
+  ],
+  numbered: 1,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
 };

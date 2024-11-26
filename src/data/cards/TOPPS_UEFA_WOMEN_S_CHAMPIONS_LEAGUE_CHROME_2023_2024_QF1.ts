@@ -10,7 +10,7 @@ import c_QAAB_2 from "../img/cards/c_QAAB_2.webp";
 import c_qf1g_0 from "../img/cards/c_qf1g_0.jpg";
 import c_qf1g_1 from "../img/cards/c_qf1g_1.jpg";
 import c_qf1o_0 from "../img/cards/c_qf1o_0.jpg";
-import c_qf1o_1 from "../img/cards/c_qf1o_1.webp";
+import c_qf1o_1 from "../img/cards/c_qf1o_1.jpg";
 import c_qf1o_2 from "../img/cards/c_qf1o_2.webp";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {

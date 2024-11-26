@@ -12,6 +12,7 @@ import tuwclk_25pu_1 from "../img/cards/tuwclk_25pu_1.jpg";
 import tuwclk_25pu_2 from "../img/cards/tuwclk_25pu_2.jpg";
 import tuwclk_25b_0 from "../img/cards/tuwclk_25b_0.jpg";
 import tuwclk_25b_1 from "../img/cards/tuwclk_25b_1.jpg";
+import tuwclk_25b_2 from "../img/cards/tuwclk_25b_2.jpg";
 import tuwclk_25bu_0 from "../img/cards/tuwclk_25bu_0.jpg";
 import tuwclk_25bu_1 from "../img/cards/tuwclk_25bu_1.webp";
 import tuwclk_25bu_2 from "../img/cards/tuwclk_25bu_2.webp";
@@ -116,6 +117,7 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
   images: [
     tuwclk_25b_0,
     tuwclk_25b_1,
+    tuwclk_25b_2,
   ],
   numbered: 10,
   name: "Aitana Bonmatí Black",
@@ -131,9 +133,6 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25b: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.BlackTopps,
   orientation: CardOrientation.Vertical,
-  flags: [
-    CardFlag.PoorImage,
-  ],
 };
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25bu: Card = {

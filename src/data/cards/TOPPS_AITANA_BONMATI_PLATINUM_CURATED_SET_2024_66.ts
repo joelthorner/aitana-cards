@@ -17,6 +17,9 @@ import tabpcs_A66r_2 from "../img/cards/tabpcs_A66r_2.webp";
 import tabpcs_66pu_0 from "../img/cards/tabpcs_66pu_0.jpg";
 import tabpcs_66pu_1 from "../img/cards/tabpcs_66pu_1.jpg";
 import tabpcs_66pu_2 from "../img/cards/tabpcs_66pu_2.jpg";
+import tabpcs_66p_0 from "../img/cards/tabpcs_66p_0.jpg";
+import tabpcs_66p_1 from "../img/cards/tabpcs_66p_1.jpg";
+import tabpcs_66p_2 from "../img/cards/tabpcs_66p_2.jpg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-66',
@@ -104,6 +107,30 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66r: Card = {
   cardType: [
     CardType.BaseSet,
     CardType.Red,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_66p: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-66p',
+  number: '66p',
+  images: [
+    tabpcs_66p_0,
+    tabpcs_66p_1,
+    tabpcs_66p_2,
+  ],
+  name: 'Gana el premio UEFA Women\'s Player of the Year 2022/23 - Pink',
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.PinkFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Pink,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
