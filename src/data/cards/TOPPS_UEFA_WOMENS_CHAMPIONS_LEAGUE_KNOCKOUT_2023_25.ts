@@ -21,7 +21,9 @@ import tuwclk_25gr_1 from "../img/cards/tuwclk_25gr_1.jpg";
 import tuwclk_A25pu_0 from "../img/cards/tuwclk_A25pu_0.jpg";
 import tuwclk_A25pu_1 from "../img/cards/tuwclk_A25pu_1.jpg";
 import tuwclk_A25b_0 from "../img/cards/tuwclk_A25b_0.jpg";
-import tuwclk_A25b_1 from "../img/cards/tuwclk_A25b_1.jpeg";
+import tuwclk_A25b_1 from "../img/cards/tuwclk_A25b_1.jpg";
+import tuwclk_A25r_0 from "../img/cards/tuwclk_A25r_0.jpg";
+import tuwclk_A25r_1 from "../img/cards/tuwclk_A25r_1.jpg";
 
 export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_25: Card = {
   id: 'topps-uefa-womens-champions-league-knockout-2023-25',
@@ -186,5 +188,63 @@ export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25pu: Card = {
   orientation: CardOrientation.Vertical,
   flags: [
     CardFlag.MissingBackImage,
+  ],
+};
+
+export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25b: Card = {
+  id: 'topps-uefa-womens-champions-league-knockout-2023-A-25b',
+  number: 'A-25b',
+  images: [
+    tuwclk_A25b_0,
+    tuwclk_A25b_1,
+  ],
+  numbered: 10,
+  name: "Aitana Bonmatí Autograph / Black",
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomensChampionsLeagueKnockout_2023,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.Autographs,
+    CardType.Black,
+  ],
+  productType: CardProductType.Card,
+  brilli: CardBrilli.BlackTopps,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
+  links: [
+    'https://www.instagram.com/p/CzEh9HKsCyx/',
+  ],
+};
+
+export const TOPPS_UEFA_WOMENS_CHAMPIONS_LEAGUE_KNOCKOUT_2023_A25r: Card = {
+  id: 'topps-uefa-womens-champions-league-knockout-2023-A-25r',
+  number: 'A-25r',
+  images: [
+    tuwclk_A25r_0,
+    tuwclk_A25r_1,
+  ],
+  numbered: 5,
+  name: "Aitana Bonmatí Autograph / Red",
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomensChampionsLeagueKnockout_2023,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.Autographs,
+    CardType.Red,
+  ],
+  productType: CardProductType.Card,
+  brilli: CardBrilli.RedFoil,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
+  links: [
+    'https://www.instagram.com/p/CsokV65sdbS/',
   ],
 };
