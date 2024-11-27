@@ -30,6 +30,7 @@ const PANINI_FIFA_365_2024_421: Card = {
   orientation: CardOrientation.Horizontal,
   language: CardLanguage.EN,
   brilli: CardBrilli.GoldMetal,
+  teammates: [],
 };
 
 export default PANINI_FIFA_365_2024_421;

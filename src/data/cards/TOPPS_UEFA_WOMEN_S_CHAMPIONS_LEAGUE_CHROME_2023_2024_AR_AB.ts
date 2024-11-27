@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import carab_0 from "../img/cards/carab_0.jpg";
@@ -26,4 +26,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_ARAB: Card = {
   ],
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

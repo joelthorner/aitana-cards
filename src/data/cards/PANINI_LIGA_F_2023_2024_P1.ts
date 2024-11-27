@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniLigaF_2023_2024 } from "../collections";
 
 import ligaFPremium from '../img/cards/ligaFPremium.jpg';
@@ -23,6 +23,7 @@ const PANINI_LIGA_F_2023_2024_P1: Card = {
   cardSection: 'Premium',
   number: 'P1',
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_LIGA_F_2023_2024_P1;

@@ -33,6 +33,7 @@ export enum CardBrilli {
   FractedGoldEffect = 'fractedGoldEffect',
   TurquoiseFoil = 'turquoiseFoil',
   Papradascha = 'papradascha',
+  SuperFractor = 'superFractor',
 };
 
 /**
@@ -75,6 +76,7 @@ export enum CardType {
   DiamondEyesDragon = 'Diamond Eyes Dragon',
   ShortPrint = 'Short Print',
   Infinite = 'Infinite',
+  Selections = 'Selections',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -138,29 +140,36 @@ export enum CardLanguage {
   EN = 'English',
 };
 
+export enum CardFlag {
+  PoorImage = 'PoorImage',
+  DuplicatedImage = 'DuplicatedImage',
+  MissingBackImage = 'MissingBackImage',
+};
+
 export type Card = {
-  id: string,
-  images: string[],
-  name: string,
+  id: string;
+  images: string[];
+  name: string;
   number: number | string;
   cardType: CardType[];
-  rarity: 1 | 2 | 3 | 4 | 5,
-  status: CardStatus,
-  collection: Collection,
-  year: number,
+  rarity: 1 | 2 | 3 | 4 | 5;
+  status: CardStatus;
+  collection: Collection;
+  year: number;
   productType: CardProductType;
-  description?: string,
-  brilli?: CardBrilli,
+  orientation: CardOrientation;
+  description?: string;
+  brilli?: CardBrilli;
   links?: string[];
   numbered?: number;
   cardSection?: string;
-  orientation?: CardOrientation,
   customRelatedsRegexp?: RegExp;
   // TODO implement
   language?: CardLanguage;
   cardTextFront?: string;
   cardTextBack?: string;
   teammates?: Teammate[];
+  flags?: CardFlag[];
 };
 
 export type CardSearch = {

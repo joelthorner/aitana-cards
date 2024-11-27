@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsProject22Uefa_2022_2023 } from "../collections";
 
 import tp22_79_0 from "../img/cards/tp22_79_0.jpg";
@@ -54,6 +54,7 @@ export const TOPPS_PROJECT22_UEFA_2022_2023_79: Card = {
   description: desc,
   cardTextFront: `TOPPS`,
   cardTextBack: cardTextBack,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_PROJECT22_UEFA_2022_2023_79pu: Card = {
@@ -84,6 +85,7 @@ export const TOPPS_PROJECT22_UEFA_2022_2023_79pu: Card = {
   cardTextFront: `TOPPS  1/22`,
   cardTextBack: cardTextBack,
   brilli: CardBrilli.PurpleFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_PROJECT22_UEFA_2022_2023_79p: Card = {
@@ -114,6 +116,7 @@ export const TOPPS_PROJECT22_UEFA_2022_2023_79p: Card = {
   cardTextFront: `TOPPS  1/10`,
   cardTextBack: cardTextBack,
   brilli: CardBrilli.PinkFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_PROJECT22_UEFA_2022_2023_79g: Card = {
@@ -144,4 +147,5 @@ export const TOPPS_PROJECT22_UEFA_2022_2023_79g: Card = {
   cardTextFront: `TOPPS  1/1`,
   cardTextBack: cardTextBack,
   brilli: CardBrilli.GoldFoil,
+  orientation: CardOrientation.Vertical,
 };

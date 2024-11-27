@@ -36,7 +36,6 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   cardSection: "FC Barcelona",
   language: CardLanguage.EN,
   cardType: [
-    CardType.BaseSet,
     CardType.Infinite,
     CardType.Sapphire,
   ],

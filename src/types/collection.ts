@@ -17,6 +17,7 @@ export enum CollectionSerie {
   ToppsNow = 'Topps Now',
   ToppsSimplicidad = 'Topps Simplicidad',
   ToppsUEFAStickers = 'Topps UEFA Stickers',
+  ToppsFugenz = 'Topps Fugenz',
 };
 
 export interface Collection {
@@ -27,4 +28,5 @@ export interface Collection {
   brand: string;
   links: string[];
   serie?: CollectionSerie;
+  isComplete?: boolean;
 };

@@ -1,7 +1,4 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeague_2022_2023 } from "../collections";
 
 import aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21 from "../img/cards/aitanaBonmati_2022_23UwclStandoutPerformersOf_2021_22_21.jpg";
@@ -29,6 +26,7 @@ const TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Vertical,
 };
 
 export default TOPPS_UEFA_CHAMPIONS_LEAGUE_2022_2023_543;

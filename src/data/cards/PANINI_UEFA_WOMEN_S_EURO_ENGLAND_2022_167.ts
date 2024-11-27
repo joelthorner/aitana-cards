@@ -1,7 +1,7 @@
 /**
  * COMPLETED data
  */
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniUefaWomenSEuroEngland_2022 } from "../collections";
 
 import img1 from '../img/cards/PaniniUefaWomenSEuroEngland_2022_167.jpg';
@@ -24,6 +24,7 @@ const PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_167: Card = {
   cardType: [CardType.BaseSet],
   cardSection: 'Spain',
   productType: CardProductType.Sticker,
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_UEFA_WOMEN_S_EURO_ENGLAND_2022_167;

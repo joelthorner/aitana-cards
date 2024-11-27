@@ -25,6 +25,7 @@ const PANINI_LIGA_F_2023_2024_43: Card = {
   number: 43,
   productType: CardProductType.Sticker,
   orientation: CardOrientation.Horizontal,
+  teammates: [],
 };
 
 export default PANINI_LIGA_F_2023_2024_43;

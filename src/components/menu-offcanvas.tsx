@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Album, Bell, Github, Info, LayoutGrid } from "lucide-react";
+import { Album, Bell, FilePlus2, Github, Info, LayoutGrid } from "lucide-react";
 import { cards } from "../data/cards";
 import { collections } from "../data/collections";
 
 export default function MenuOffcanvas() {
-  const LinkItemClasses = "h-14 px-4 w-full justify-between items-center text-start flex font-medium hover:bg-gray-50 transition-colors";
+  const LinkItemClasses = "group h-14 px-4 w-full justify-between items-center text-start flex font-medium hover:bg-gray-50 transition-colors";
   const linkItemIcon = (
     <div className="size-8 flex items-center justify-center -rotate-90 transition-transform">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -53,21 +53,28 @@ export default function MenuOffcanvas() {
       <div className="h-[calc(100%-3.5rem)] overflow-y-auto flex flex-col">
         <div className="border-b border-b-zinc-200">
           <Link to="/" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
-            <LayoutGrid strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <LayoutGrid strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
             <span className="mr-auto">Cards</span>
             {linkItemIcon}
           </Link>
         </div>
         <div className="border-b border-b-zinc-200">
           <Link to="/collections" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
-            <Album strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <Album strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
             <span className="mr-auto">Collections</span>
             {linkItemIcon}
           </Link>
         </div>
         <div className="border-b border-b-zinc-200">
+          <Link to="/contribute" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
+            <FilePlus2 strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
+            <span className="mr-auto">Contribute</span>
+            {linkItemIcon}
+          </Link>
+        </div>
+        <div className="border-b border-b-zinc-200">
           <Link to="/changelog" className={LinkItemClasses} data-hs-overlay="#offcanvas-menu">
-            <Bell strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <Bell strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
             <span className="mr-auto">Changelog</span>
             {linkItemIcon}
           </Link>
@@ -81,26 +88,26 @@ export default function MenuOffcanvas() {
             aria-controls="hs-subscription-with-image"
             data-hs-overlay="#hs-subscription-with-image"
           >
-            <Info strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <Info strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
             <span className="mr-auto">Information</span>
             {linkItemIcon}
           </button>
         </div>
         <div className="border-b border-b-zinc-200">
           <a className={LinkItemClasses} href="https://github.com/joelthorner/aitana-cards" target="_blank" rel="noopener noreferrer">
-            <Github strokeWidth={1.5} size={20} className="mr-2 text-zinc-400" />
+            <Github strokeWidth={1.5} size={20} className="mr-2 text-zinc-400 group-hover:text-rose-500 transition-colors" />
             <span className="mr-auto">Github</span>
             {linkItemIcon}
           </a>
         </div>
 
-        <div className="mt-auto flex flex-col gap-2 mb-4 text-sm text-zinc-500">
+        <div className="mt-auto flex flex-col gap-2 mb-4 text-xs text-zinc-500">
           <div className="px-4 flex items-center justify-between">
-            <span className="font-medium">Total collections added</span>
+            <span className="">Total collections added</span>
             <span>{collections.length}</span>
           </div>
           <div className="px-4 flex items-center justify-between">
-            <span className="font-medium">Total cards added</span>
+            <span className="">Total cards added</span>
             <span>{cards.length}</span>
           </div>
         </div>

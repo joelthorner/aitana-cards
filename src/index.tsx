@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./assets/css/effects.css";
@@ -9,13 +9,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from "./routes/home";
-import Changelog from "./routes/changelog";
 import { FiltersProvider } from "./providers/filters";
 import { MouseGyroProvider } from "./providers/mouse-gyro";
-import CardDetail from "./routes/card-detail";
-import Collections from "./routes/collections";
-import CollectionDetail from "./routes/collection-detail";
 // import Algolia from "./routes/algolia";
+
+const Collections = React.lazy(() => import("./routes/collections"));
+const CollectionDetail = React.lazy(() => import("./routes/collection-detail"));
+const Changelog = React.lazy(() => import("./routes/changelog"));
+const CardDetail = React.lazy(() => import("./routes/card-detail"));
+const Contribute = React.lazy(() => import("./routes/contribute"));
 
 const router = createBrowserRouter(
   [
@@ -30,15 +32,27 @@ const router = createBrowserRouter(
         },
         {
           path: "/collections",
-          element: <Collections />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Collections />
+            </Suspense>
+          ),
         },
         {
           path: "/collections/:collectionId",
-          element: <CollectionDetail />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <CollectionDetail />
+            </Suspense>
+          ),
         },
         {
           path: "/changelog",
-          element: <Changelog />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Changelog />
+            </Suspense>
+          ),
         },
         {
           path: "/cards",
@@ -46,7 +60,19 @@ const router = createBrowserRouter(
         },
         {
           path: "/cards/:cardId",
-          element: <CardDetail />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <CardDetail />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/contribute",
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Contribute />
+            </Suspense>
+          ),
         },
         // {
         //   path: "/algolia",

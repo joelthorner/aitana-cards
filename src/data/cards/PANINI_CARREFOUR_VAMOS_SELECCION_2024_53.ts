@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { PaniniCarrefourVamosSeleccion_2024 } from "../collections";
 
 import pcvs_53_0 from "../img/cards/pcvs_53_0.jpg";
@@ -28,6 +28,7 @@ const PANINI_CARREFOUR_VAMOS_SELECCION_2024_53: Card = {
   status: CardStatus.Tengui,
   rarity: 1,
   brilli: CardBrilli.GoldMetal,
+  orientation: CardOrientation.Vertical,
 };
 
 export default PANINI_CARREFOUR_VAMOS_SELECCION_2024_53;

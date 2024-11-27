@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFocusFcBarcelona_2023_2024 } from "../collections";
 
 import tffb2324_12_0 from "../img/cards/tffb2324_12_0.jpg";
@@ -60,6 +60,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12: Card = {
     CardType.BaseSet,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
@@ -82,6 +83,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
@@ -106,6 +108,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
@@ -130,6 +133,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
@@ -154,6 +158,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
@@ -178,6 +183,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
@@ -201,6 +207,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
@@ -226,6 +233,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
@@ -251,6 +259,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
@@ -274,6 +283,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
@@ -298,6 +308,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
@@ -321,4 +332,5 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
+  orientation: CardOrientation.Vertical,
 };

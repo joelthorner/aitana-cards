@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardLanguage, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024 } from "../collections";
 
 import c_qf1r_0 from "../img/cards/c_qf1r_0.jpg";
@@ -6,6 +6,12 @@ import c_qf1r_1 from "../img/cards/c_qf1r_1.webp";
 import c_qf_1_0 from "../img/cards/c_qf_1_0.jpg";
 import c_qf_1_1 from "../img/cards/c_qf_1_1.webp";
 import c_qf_1_2 from "../img/cards/c_qf_1_2.webp";
+import c_qf1b_0 from "../img/cards/c_qf1b_0.jpg";
+import c_qf1b_1 from "../img/cards/c_qf1b_1.jpg";
+import c_qf1b_2 from "../img/cards/c_qf1b_2.jpg";
+import c_qf1p_0 from "../img/cards/c_qf1p_0.jpg";
+import c_qf1p_1 from "../img/cards/c_qf1p_1.jpg";
+import c_qf1p_2 from "../img/cards/c_qf1p_2.jpg";
 
 const cardTextBack = `**QF-1**
 
@@ -51,6 +57,40 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   cardTextFront: `**QUEENS OF FOOTBALL**
 
 AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_QF1b: Card = {
+  customRelatedsRegexp: /QF-1[a-z]?/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-QF-1b',
+  number: 'QF-1b',
+  images: [
+    c_qf1b_0,
+    c_qf1b_1,
+    c_qf1b_2,
+  ],
+  name: "Aitana Bonmatí Queens of Football / Black / Sapphire",
+  rarity: 5,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "Insert Cards",
+  cardType: [
+    CardType.QueensOfFootball,
+    CardType.Black,
+    CardType.Sapphire,
+  ],
+  brilli: CardBrilli.BlackTopps,
+  productType: CardProductType.Card,
+  language: CardLanguage.EN,
+  cardTextBack,
+  cardTextFront: `09/10
+
+**QUEENS OF FOOTBALL**
+
+AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_QF1r: Card = {
@@ -82,4 +122,38 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
 **QUEENS OF FOOTBALL**
 
 AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_QF1p: Card = {
+  customRelatedsRegexp: /QF-1[a-z]?/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-QF-1p',
+  number: 'QF-1p',
+  images: [
+    c_qf1p_0,
+    c_qf1p_1,
+    c_qf1p_2,
+  ],
+  name: "Aitana Bonmatí Queens of Football / Papradascha / Sapphire",
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "Insert Cards",
+  cardType: [
+    CardType.QueensOfFootball,
+    CardType.Papradascha,
+    CardType.Sapphire,
+  ],
+  brilli: CardBrilli.Papradascha,
+  productType: CardProductType.Card,
+  numbered: 1,
+  language: CardLanguage.EN,
+  cardTextBack,
+  cardTextFront: `1/1
+
+**QUEENS OF FOOTBALL**
+
+AITANA BONMATÍ`,
+  orientation: CardOrientation.Vertical,
 };

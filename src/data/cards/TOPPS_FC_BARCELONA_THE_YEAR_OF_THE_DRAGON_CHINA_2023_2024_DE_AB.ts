@@ -1,4 +1,4 @@
-import { Card, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024 } from "../collections";
 
 import tfbtyotdc_DEABw_0 from "../img/cards/tfbtyotdc_DEABw_0.jpg";
@@ -34,6 +34,7 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_DEABw: Ca
     CardType.DiamondEyesDragon,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_DEABb: Card = {
@@ -60,4 +61,5 @@ export const TOPPS_FC_BARCELONA_THE_YEAR_OF_THE_DRAGON_CHINA_2023_2024_DEABb: Ca
     CardType.DiamondEyesDragon,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

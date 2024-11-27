@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra } from "../collections";
 
 import i_343 from "../img/cards/aitanaclub100.jpg";
@@ -22,4 +22,5 @@ export const TOPPS_UEFA_CHAMPIONS_LEAGUE_EUROPA_LEAGUE_2023_2024_MATCH_ATTAX_EXT
     CardType.T_100Club,
   ],
   productType: CardProductType.GameCard,
+  orientation: CardOrientation.Vertical,
 };

@@ -13,7 +13,7 @@ export default function Collection({ collection }: CollectionProps) {
     <Link
       id={collection.id}
       to={"/collections/" + collection.id}
-      className="h-full flex flex-col bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition"
+      className="h-full flex flex-col border border-zinc-900 bg-zinc-900 text-white shadow-sm rounded-xl p-2 hover:shadow-lg focus:outline-none focus:shadow-lg transition md:hover:bg-zinc-950 md:hover:border-zinc-800"
     >
       <div className="w-full relative aspect-[768/530]">
         <img src={collection.image} alt={collection.name} className="w-full rounded-md" loading="lazy" />

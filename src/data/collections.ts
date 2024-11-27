@@ -1,43 +1,44 @@
 import { Collection, CollectionSerie } from "../types/collection";
 
-import uclw_fgc4624h_box_21_22 from "./img/collections/uclw_fgc4624h_box_21_22_b.jpg";
+import abcs from "./img/collections/abcs.jpg";
+import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.jpg";
+import carrefour24 from "./img/collections/carrefour24.jpg";
+import comprarUcl_21_22 from "./img/collections/comprarUcl_21_22.jpg";
+import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprarUcl_22_23Sobre_b.jpg";
+import cromosWomensEuro_2022DePanini from "./img/collections/cromosWomensEuro_2022DePanini.jpg";
+import deco2324 from "./img/collections/deco2324.jpg";
+import deco2425 from "./img/collections/deco2425.jpg";
+import dragon from "./img/collections/dragon.jpg";
+import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.jpg";
+import focus2324 from "./img/collections/focus.jpg";
+import fugenz2324 from "./img/collections/fugenz.jpg";
+import inception22_23 from "./img/collections/inception22_23.jpg";
+import inception2324 from "./img/collections/inception2324.jpg";
+import knockout23 from "./img/collections/knockout23.jpg";
+import matchattaxextra from "./img/collections/maxattax.jpg";
+import merlin98 from "./img/collections/merlin98-1.jpg";
+import merlinhucc2324 from "./img/collections/01-merlin-visual.jpg";
+import multipack_6Packets_1 from "./img/collections/multipack_6Packets_1_b.jpg";
+import nowballonor from "./img/collections/nowballonor.jpg";
+import p22_2223 from "./img/collections/p22_2223.jpg";
 import panini_004743spe3w_0 from "./img/collections/panini2223.jpg";
 import panini_004826spe3w_1_1 from "./img/collections/panini_004826spe3w_1_1.jpg";
+import panini_365_24 from "./img/collections/panini_365_24.jpg";
+import panini_365_24_25 from "./img/collections/panini_365_24_25.jpg";
 import paniniFifaWomenSWorldCupFrance_2019 from "./img/collections/4442.jpg";
+import sapphire22_23 from "./img/collections/sapphire22_23_b.jpg";
+import shap2324 from "./img/collections/shap2324.jpg";
+import simplicidad24 from "./img/collections/simplicidad24-1_b.jpg";
+import sL1200_480x from "./img/collections/sL1200_480x.jpg";
 import Topps_Now_Logo_Black from "./img/collections/Topps_Now_Logo_Black.jpg";
 import Topps_Now_Logo_Black_2 from "./img/collections/Topps_Now_Logo_Black_2.jpg";
 import Topps_Now_Logo_Black_3 from "./img/collections/Topps_Now_Logo_Black_3.jpg";
-import sL1200_480x from "./img/collections/sL1200_480x.jpg";
-import barcaWomenSetBoxVisual from "./img/collections/barca_women_set_box.jpg";
-import multipack_6Packets_1 from "./img/collections/multipack_6Packets_1_b.jpg";
-import comprarUcl_22_23SobreUefaChampionsLeagueBarato from "./img/collections/comprarUcl_22_23Sobre_b.jpg";
-import simplicidad24 from "./img/collections/simplicidad24-1_b.jpg";
-import merlin98 from "./img/collections/merlin98-1.jpg";
-import matchattaxextra from "./img/collections/maxattax.jpg";
-import cromosWomensEuro_2022DePanini from "./img/collections/cromosWomensEuro_2022DePanini.jpg";
 import toppsChampionsLeagueLivingSet_2022_2023Anuncio from "./img/collections/livingset.jpg";
 import tsucsb23 from "./img/collections/tsucsb23.jpg";
 import tuwsclc2223 from "./img/collections/tuwsclc2223.jpg";
-import merlinhucc2324 from "./img/collections/01-merlin-visual.jpg";
-import sapphire22_23 from "./img/collections/sapphire22_23_b.jpg";
-import fifaWomensWorldCup_2023PortadaAlbum from "./img/collections/fifa-womens-world-cup-2023-portada-album.jpg";
-import deco2324 from "./img/collections/deco2324.jpg";
-import carrefour24 from "./img/collections/carrefour24.jpg";
-import focus2324 from "./img/collections/focus.jpg";
-import knockout23 from "./img/collections/knockout23.jpg";
-import panini_365_24_25 from "./img/collections/panini_365_24_25.jpg";
-import panini_365_24 from "./img/collections/panini_365_24.jpg";
-import abcs from "./img/collections/abcs.jpg";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.jpg";
-import inception2324 from "./img/collections/inception2324.jpg";
-import dragon from "./img/collections/dragon.jpg";
-import inception22_23 from "./img/collections/inception22_23.jpg";
+import uclw_fgc4624h_box_21_22 from "./img/collections/uclw_fgc4624h_box_21_22_b.jpg";
 import un from "./img/collections/un.jpg";
-import nowballonor from "./img/collections/nowballonor.jpg";
-import deco2425 from "./img/collections/deco2425.jpg";
-import shap2324 from "./img/collections/shap2324.jpg";
-import p22_2223 from "./img/collections/p22_2223.jpg";
-import comprarUcl_21_22 from "./img/collections/comprarUcl_21_22.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -586,6 +587,19 @@ export const ToppsProject22Uefa_2022_2023: Collection = {
   ],
 };
 
+export const ToppsFugenzUefaClubCompetitions_2023_2024: Collection = {
+  id: 'topps-fugenz-uefa-club-competitions-2023-2024',
+  image: fugenz2324,
+  name: "Topps Fugenz UEFA Club Competitions 2023-2024",
+  description: `Topps FuGenZ brings you the ultimate collectible experience like no other!, India's first exclusive UEFA Club Competitions trading card collection! Celebrating the passion of football with the richness of Modern Madhubani art, this collection brings an artistic fusion that resonates with GenZ collectors. With 50 unique cards to collect, FuGenZ goes beyond card trading—it’s a tribute to football culture, creativity, and the spirit of India. Each box includes 6 packets with a total of 5 cards in each, featuring the thrill of an autograph card (1 in 3 boxes) and two parallel cards, making it an essential for every football lover and card enthusiast.`,
+  brand: 'Topps',
+  serie: CollectionSerie.ToppsFugenz,
+  links: [
+    'https://in.topps.com/products/topps-fugenz-uefa-club-competitions-2023-24-hobby-box-30-cards-with-guaranteed-2-numbered-parallels',
+    'https://gridcards.co.uk/blogs/collections/topps-fugenz-uefa-club-competitions-202324-hobby-football-soccer-collection-checklist-guide'
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniCarrefourVamosSeleccion_2024,
   PaniniFifa_365_2024,
@@ -602,6 +616,7 @@ export const collections: Collection[] = [
   ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   ToppsFocusFcBarcelona_2023_2024,
+  ToppsFugenzUefaClubCompetitions_2023_2024,
   ToppsInceptionUefaClubCompetitions_2022_2023,
   ToppsInceptionUefaClubCompetitions_2023_2024,
   ToppsMerlinHeritage_98UccSeason_2022_2023,
@@ -610,6 +625,7 @@ export const collections: Collection[] = [
   ToppsNowWomenSChampionsLeague_2021_2022,
   ToppsNowWomenSChampionsLeague_2022_2023,
   ToppsNowWomenSChampionsLeague_2023_2024,
+  ToppsProject22Uefa_2022_2023,
   ToppsSimplicidadUefaClubCompetitions_2022_2023,
   ToppsSimplicidadUefaClubCompetitions_2023_2024,
   ToppsUefaChampionsLeague_2021_2022,
@@ -623,7 +639,6 @@ export const collections: Collection[] = [
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
   ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
   ToppsUefaWomensChampionsLeagueKnockout_2023,
-  ToppsProject22Uefa_2022_2023,
   UnlicensedCards,
 ].sort((a, b) => {
   if (a.serie && b.serie) {

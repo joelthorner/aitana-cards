@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsInceptionUefaClubCompetitions_2023_2024 } from "../collections";
 
 import c44_0 from "../img/cards/c44_0.jpg";
@@ -66,6 +66,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44: Card = {
     CardType.StarQuality,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44rf: Card = {
@@ -91,6 +92,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44rf: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.Rainbow,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44t: Card = {
@@ -116,6 +118,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44t: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.TurquoiseFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44gr: Card = {
@@ -142,6 +145,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44gr: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.GreenFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44p: Card = {
@@ -167,6 +171,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44p: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.PinkFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44bu: Card = {
@@ -193,6 +198,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44bu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.BlueTopps,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44pu: Card = {
@@ -218,6 +224,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44pu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.PurpleFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44r: Card = {
@@ -244,6 +251,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44r: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.RedFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44o: Card = {
@@ -268,6 +276,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_44o: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.OrangeFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABbu: Card = {
@@ -294,6 +303,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABbu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.BlueTopps,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABpu: Card = {
@@ -320,6 +330,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABpu: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.PurpleFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABr: Card = {
@@ -346,6 +357,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABr: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.RedFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABo: Card = {
@@ -372,6 +384,7 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABo: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.OrangeFoil,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABg: Card = {
@@ -398,4 +411,5 @@ export const TOPPS_INCEPTION_UEFA_CLUB_COMPETITIONS_2023_2024_SQAABg: Card = {
   ],
   productType: CardProductType.Card,
   brilli: CardBrilli.GoldFoil,
+  orientation: CardOrientation.Vertical,
 };

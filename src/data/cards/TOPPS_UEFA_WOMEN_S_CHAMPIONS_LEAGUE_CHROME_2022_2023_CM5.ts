@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2022_2023 } from "../collections";
 
 import cCM_5g_0 from "../img/cards/cCM_5g_0.jpg";
@@ -35,6 +35,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5: Card = {
   ],
   brilli: CardBrilli.Holo,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5g: Card = {
@@ -58,6 +59,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5g: Card = {
   brilli: CardBrilli.GoldFoil,
   numbered: 50,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5o: Card = {
@@ -81,6 +83,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM5o: Card = {
   brilli: CardBrilli.OrangeFoil,
   numbered: 25,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM55r: Card = {
@@ -102,4 +105,5 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2022_2023_CM55r: Card = 
   brilli: CardBrilli.RedFoil,
   numbered: 5,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };

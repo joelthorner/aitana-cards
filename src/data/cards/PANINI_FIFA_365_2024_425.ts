@@ -27,6 +27,7 @@ const PANINI_FIFA_365_2024_425: Card = {
   productType: CardProductType.Sticker,
   orientation: CardOrientation.Horizontal,
   language: CardLanguage.EN,
+  teammates: [],
 };
 
 export default PANINI_FIFA_365_2024_425;

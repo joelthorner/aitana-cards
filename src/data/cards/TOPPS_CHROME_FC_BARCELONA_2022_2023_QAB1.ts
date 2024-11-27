@@ -1,9 +1,9 @@
 import { Card, CardBrilli, CardType, CardStatus, CardProductType, CardOrientation, CardLanguage } from "../../types/card";
 import { ToppsChromeFcBarcelona_2022_2023 } from "../collections";
 
-import QAB1 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook.jpg";
-import QAB1_2 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_2.jpg";
-import QAB1_3 from "../img/cards/toppsChromeFcBarcelonaMésQueUnClub_2022_23AutoBook_3.jpg";
+import QAB1 from "../img/cards/tcfcbmquc_2223_a_Book.jpg";
+import QAB1_2 from "../img/cards/tcfcbmquc_2223_a_Book_2.jpg";
+import QAB1_3 from "../img/cards/tcfcbmquc_2223_a_Book_3.jpg";
 import QAB1ng_0 from "../img/cards/QAB1ng_0.jpg";
 import QAB1ng_1 from "../img/cards/QAB1ng_1.webp";
 import QAB1ng_2 from "../img/cards/QAB1ng_2.webp";
@@ -35,6 +35,11 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1: Card = {
   numbered: 10,
   productType: CardProductType.BookCard,
   orientation: CardOrientation.Horizontal,
+  teammates: [
+    AlexiaPutellas,
+    AsisatOshoala,
+    CarolineGrahamHansen,
+  ],
 };
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_QAB1g: Card = {

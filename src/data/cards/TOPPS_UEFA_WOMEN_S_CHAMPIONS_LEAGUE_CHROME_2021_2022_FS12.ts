@@ -1,12 +1,10 @@
-/**
- * COMPLETED data
- */
-import { Card, CardBrilli, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2021_2022 } from "../collections";
 
 import img_FC12_1 from "../img/cards/topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12.jpg";
 import img_FC12_2 from "../img/cards/topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12_2.webp";
 import img_FC12r_1 from "../img/cards/img_FC12r_1.jpg";
+import img_FC12r_2 from "../img/cards/img_FC12r_2.jpg";
 import img_FC12ow_1 from "../img/cards/img_FC12ow_1.jpg";
 import img_FC12ow_2 from "../img/cards/img_FC12ow_2.webp";
 
@@ -29,6 +27,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12: Card = {
     CardType.Rookie,
   ],
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card = {
@@ -53,13 +52,15 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12ow: Card =
   ],
   numbered: 25,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2021-2022-FS-12-r',
   number: 'FS-12-r',
   images: [
-    img_FC12r_1
+    img_FC12r_1,
+    img_FC12r_2,
   ],
   name: 'Aitana Bonmatí RC Future Stars / Red',
   rarity: 5,
@@ -75,6 +76,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FC12r: Card = 
   ],
   numbered: 5,
   productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
 };
 
 // export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2021_2022_FS12sf: Card = {
