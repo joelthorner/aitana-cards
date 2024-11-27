@@ -33,6 +33,7 @@ export enum CardBrilli {
   FractedGoldEffect = 'fractedGoldEffect',
   TurquoiseFoil = 'turquoiseFoil',
   Papradascha = 'papradascha',
+  SuperFractor = 'superFractor',
 };
 
 /**

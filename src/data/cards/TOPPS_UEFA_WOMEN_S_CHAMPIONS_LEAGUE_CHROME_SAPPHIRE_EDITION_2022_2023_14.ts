@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardFlag, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023 } from "../collections";
 
 import sapp14_0 from "../img/cards/sapp14_0.jpg";
@@ -16,6 +16,8 @@ import sappalt14_2 from "../img/cards/sappalt14_2.webp";
 import sappalt14g_0 from "../img/cards/sappalt14g_0.jpg";
 import sappalt14g_1 from "../img/cards/sappalt14g_1.webp";
 import sappalt14g_2 from "../img/cards/sappalt14g_2.webp";
+import sappalt14pu_0 from "../img/cards/sappalt14pu_0.jpg";
+import sappalt14pu_1 from "../img/cards/sappalt14pu_1.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_14: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2022-2023-14',
@@ -46,7 +48,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
     sapp14g_0,
   ],
   name: "Aitana Bonmatí Sapphire Gold",
-  rarity: 4,
+  rarity: 3,
   numbered: 50,
   status: CardStatus.Falti,
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
@@ -108,7 +110,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
     sappalt14g_2,
   ],
   name: "Aitana Bonmatí Sapphire Image Variation Gold",
-  rarity: 4,
+  rarity: 3,
   numbered: 50,
   status: CardStatus.Falti,
   collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
@@ -118,4 +120,30 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_20
   brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2022_2023_alt14pu: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2022-2023-alt14pu',
+  number: 'alt14pu',
+  images: [
+    sappalt14pu_0,
+    sappalt14pu_1,
+  ],
+  name: "Aitana Bonmatí Sapphire Image Variation Purple",
+  rarity: 4,
+  numbered: 15,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2022_2023,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [CardType.Sapphire, CardType.AltImage, CardType.Purple],
+  brilli: CardBrilli.PurpleFoil,
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
+  links: [
+    'https://www.instagram.com/p/C1FX_YMOsA4/',
+  ],
 };

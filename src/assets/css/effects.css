@@ -3,19 +3,19 @@
   --space: 10%;
   --angle: 110deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(214, 49%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(212, 100%, 93%, 0.801) calc(var(--space)* 2),
-      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 3),
-      hsla(212, 100%, 97%, 0.5) calc(var(--space)* 4),
-      hsla(202, 100%, 68%, 0.5) calc(var(--space)* 5),
-      hsla(212, 100%, 93%, 0.5) calc(var(--space)* 6),
-      hsla(214, 100%, 70%, 0.5) calc(var(--space)* 7),
-      hsla(212, 100%, 82%, 0.5) calc(var(--space)* 8),
-      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 9),
-      hsla(207, 100%, 79%, 0.5) calc(var(--space)* 10),
-      hsla(202, 100%, 68%, 0.5) calc(var(--space)* 11));
+      hsla(214, 49%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(212, 100%, 93%, 0.801) calc(var(--space) * 2),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space) * 3),
+      hsla(212, 100%, 97%, 0.5) calc(var(--space) * 4),
+      hsla(202, 100%, 68%, 0.5) calc(var(--space) * 5),
+      hsla(212, 100%, 93%, 0.5) calc(var(--space) * 6),
+      hsla(214, 100%, 70%, 0.5) calc(var(--space) * 7),
+      hsla(212, 100%, 82%, 0.5) calc(var(--space) * 8),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space) * 9),
+      hsla(207, 100%, 79%, 0.5) calc(var(--space) * 10),
+      hsla(202, 100%, 68%, 0.5) calc(var(--space) * 11));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.5);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.5);
   mix-blend-mode: color-dodge;
 }
 
@@ -24,15 +24,15 @@
   --space: 5%;
   --angle: -22deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 1),
-      hsla(2, 74%, 59%, 0.75) calc(var(--space)* 2),
-      hsla(53, 67%, 53%, 0.75) calc(var(--space)* 3),
-      hsla(93, 56%, 52%, 0.75) calc(var(--space)* 4),
-      hsla(176, 38%, 50%, 0.75) calc(var(--space)* 5),
-      hsla(228, 100%, 77%, 0.75) calc(var(--space)* 6),
-      hsla(283, 49%, 61%, 0.75) calc(var(--space)* 7));
+      hsla(283, 49%, 60%, 0.75) calc(var(--space) * 1),
+      hsla(2, 74%, 59%, 0.75) calc(var(--space) * 2),
+      hsla(53, 67%, 53%, 0.75) calc(var(--space) * 3),
+      hsla(93, 56%, 52%, 0.75) calc(var(--space) * 4),
+      hsla(176, 38%, 50%, 0.75) calc(var(--space) * 5),
+      hsla(228, 100%, 77%, 0.75) calc(var(--space) * 6),
+      hsla(283, 49%, 61%, 0.75) calc(var(--space) * 7));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -41,13 +41,13 @@
   --space: 5%;
   --angle: 110deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 1),
-      hsla(2, 74%, 59%, 0.75) calc(var(--space)* 2),
-      hsla(53, 67%, 53%, 0.75) calc(var(--space)* 3),
-      hsla(176, 38%, 50%, 0.75) calc(var(--space)* 4),
-      hsla(228, 100%, 77%, 0.75) calc(var(--space)* 5));
+      hsla(283, 49%, 60%, 0.75) calc(var(--space) * 1),
+      hsla(2, 74%, 59%, 0.75) calc(var(--space) * 2),
+      hsla(53, 67%, 53%, 0.75) calc(var(--space) * 3),
+      hsla(176, 38%, 50%, 0.75) calc(var(--space) * 4),
+      hsla(228, 100%, 77%, 0.75) calc(var(--space) * 5));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -56,13 +56,13 @@
   --space: 10%;
   --angle: -22deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(45, 85%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(30, 100%, 88%, 0.5) calc(var(--space)* 2),
-      hsla(20, 100%, 72%, 0.5) calc(var(--space)* 3),
-      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
-      hsla(40, 90%, 65%, 0.5) calc(var(--space)* 6));
+      hsla(45, 85%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(30, 100%, 88%, 0.5) calc(var(--space) * 2),
+      hsla(20, 100%, 72%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 5),
+      hsla(40, 90%, 65%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -71,13 +71,13 @@
   --space: 10%;
   --angle: -27deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(0, 85%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(342, 100%, 90%, 0.5) calc(var(--space)* 2),
-      hsla(20, 100%, 60%, 0.5) calc(var(--space)* 3),
-      hsla(0, 100%, 94%, 0.5) calc(var(--space)* 5),
-      hsla(0, 85%, 60%, 0.5) calc(var(--space)* 6));
+      hsla(0, 85%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(342, 100%, 90%, 0.5) calc(var(--space) * 2),
+      hsla(20, 100%, 60%, 0.5) calc(var(--space) * 3),
+      hsla(0, 100%, 94%, 0.5) calc(var(--space) * 5),
+      hsla(0, 85%, 60%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -86,13 +86,13 @@
   --space: 10%;
   --angle: -27deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(332, 100%, 41%, 0.5) calc(var(--space)* 1),
-      hsla(335, 100%, 92%, 0.5) calc(var(--space)* 2),
-      hsla(327, 100%, 60%, 0.5) calc(var(--space)* 3),
-      hsla(332, 100%, 95%, 0.5) calc(var(--space)* 5),
-      hsla(332, 100%, 41%, 0.5) calc(var(--space)* 6));
+      hsla(332, 100%, 41%, 0.5) calc(var(--space) * 1),
+      hsla(335, 100%, 92%, 0.5) calc(var(--space) * 2),
+      hsla(327, 100%, 60%, 0.5) calc(var(--space) * 3),
+      hsla(332, 100%, 95%, 0.5) calc(var(--space) * 5),
+      hsla(332, 100%, 41%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -101,13 +101,13 @@
   --space: 10%;
   --angle: -27deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(308, 85%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(315, 100%, 90%, 0.5) calc(var(--space)* 2),
-      hsla(308, 100%, 60%, 0.5) calc(var(--space)* 3),
-      hsla(310, 100%, 94%, 0.5) calc(var(--space)* 5),
-      hsla(308, 85%, 60%, 0.5) calc(var(--space)* 6));
+      hsla(308, 85%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(315, 100%, 90%, 0.5) calc(var(--space) * 2),
+      hsla(308, 100%, 60%, 0.5) calc(var(--space) * 3),
+      hsla(310, 100%, 94%, 0.5) calc(var(--space) * 5),
+      hsla(308, 85%, 60%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -116,13 +116,13 @@
   --space: 10%;
   --angle: -36deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(288, 85%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(295, 100%, 88%, 0.5) calc(var(--space)* 2),
-      hsla(288, 100%, 72%, 0.5) calc(var(--space)* 3),
-      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
-      hsla(276, 90%, 65%, 0.5) calc(var(--space)* 6));
+      hsla(288, 85%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(295, 100%, 88%, 0.5) calc(var(--space) * 2),
+      hsla(288, 100%, 72%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 5),
+      hsla(276, 90%, 65%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -131,13 +131,13 @@
   --space: 10%;
   --angle: -36deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(167, 85%, 60%, 0.5) calc(var(--space)* 1),
-      hsla(162, 100%, 88%, 0.5) calc(var(--space)* 2),
-      hsla(165, 100%, 72%, 0.5) calc(var(--space)* 3),
-      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
-      hsla(167, 85%, 60%, 0.5) calc(var(--space)* 6));
+      hsla(167, 85%, 60%, 0.5) calc(var(--space) * 1),
+      hsla(162, 100%, 88%, 0.5) calc(var(--space) * 2),
+      hsla(165, 100%, 72%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 5),
+      hsla(167, 85%, 60%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -146,13 +146,13 @@
   --space: 10%;
   --angle: -56deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(101, 100%, 30%, 0.5) calc(var(--space)* 1),
-      hsla(83, 100%, 56%, 0.5) calc(var(--space)* 2),
-      hsla(135, 100%, 94%, 0.5) calc(var(--space)* 3),
-      hsla(91, 100%, 66%, 0.5) calc(var(--space)* 5),
-      hsla(101, 100%, 30%, 0.5) calc(var(--space)* 6));
+      hsla(101, 100%, 30%, 0.5) calc(var(--space) * 1),
+      hsla(83, 100%, 56%, 0.5) calc(var(--space) * 2),
+      hsla(135, 100%, 94%, 0.5) calc(var(--space) * 3),
+      hsla(91, 100%, 66%, 0.5) calc(var(--space) * 5),
+      hsla(101, 100%, 30%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
   mix-blend-mode: color-dodge;
 }
 
@@ -161,13 +161,13 @@
   --space: 15%;
   --angle: -36deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(12, 100%, 66%, 0.5) calc(var(--space)* 1),
-      hsla(47, 100%, 93%, 0.5) calc(var(--space)* 2),
-      hsla(32, 100%, 55%, 0.5) calc(var(--space)* 3),
-      hsla(59, 100%, 74%, 0.5) calc(var(--space)* 5),
-      hsla(12, 100%, 66%, 0.5) calc(var(--space)* 6));
+      hsla(12, 100%, 66%, 0.5) calc(var(--space) * 1),
+      hsla(47, 100%, 93%, 0.5) calc(var(--space) * 2),
+      hsla(32, 100%, 55%, 0.5) calc(var(--space) * 3),
+      hsla(59, 100%, 74%, 0.5) calc(var(--space) * 5),
+      hsla(12, 100%, 66%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -184,7 +184,22 @@
       hsla(0, 0%, 100%, 1) calc(var(--space) * 6),
       hsla(40, 65%, 50%, 0.5) calc(var(--space) * 7));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1.25);
+  mix-blend-mode: color-dodge;
+}
+
+.effect-superFractor {
+  background-size: 600% 600%;
+  --space: 5%;
+  --angle: 110deg;
+  background-image: repeating-linear-gradient(var(--angle),
+      hsla(283, 49%, 60%, 0.3) calc(var(--space) * 1),
+      hsla(2, 74%, 59%, 0.3) calc(var(--space) * 2),
+      hsla(53, 67%, 53%, 0.3) calc(var(--space) * 3),
+      hsla(176, 38%, 50%, 0.3) calc(var(--space) * 4),
+      hsla(228, 100%, 77%, 0.3) calc(var(--space) * 5));
+  background-blend-mode: color-dodge;
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -200,14 +215,14 @@
   --space: 10%;
   --angle: 110deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 1),
-      hsla(2, 74%, 59%, 0.75) calc(var(--space)* 2),
-      hsla(53, 67%, 53%, 0.75) calc(var(--space)* 3),
-      hsla(176, 38%, 50%, 0.75) calc(var(--space)* 4),
-      hsla(228, 100%, 77%, 0.75) calc(var(--space)* 5),
-      hsla(283, 49%, 60%, 0.75) calc(var(--space)* 6));
+      hsla(283, 49%, 60%, 0.75) calc(var(--space) * 1),
+      hsla(2, 74%, 59%, 0.75) calc(var(--space) * 2),
+      hsla(53, 67%, 53%, 0.75) calc(var(--space) * 3),
+      hsla(176, 38%, 50%, 0.75) calc(var(--space) * 4),
+      hsla(228, 100%, 77%, 0.75) calc(var(--space) * 5),
+      hsla(283, 49%, 60%, 0.75) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -216,14 +231,14 @@
   --space: 10%;
   --angle: 110deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(209, 98%, 65%, 0.75) calc(var(--space)* 1),
-      hsla(246, 74%, 59%, 0.75) calc(var(--space)* 2),
-      hsla(187, 100%, 50%, 0.5) calc(var(--space)* 3),
-      hsla(216, 88%, 60%, 0.75) calc(var(--space)* 4),
-      hsla(189, 100%, 76%, 0.5) calc(var(--space)* 5),
-      hsla(236, 49%, 60%, 0.75) calc(var(--space)* 6));
+      hsla(209, 98%, 65%, 0.75) calc(var(--space) * 1),
+      hsla(246, 74%, 59%, 0.75) calc(var(--space) * 2),
+      hsla(187, 100%, 50%, 0.5) calc(var(--space) * 3),
+      hsla(216, 88%, 60%, 0.75) calc(var(--space) * 4),
+      hsla(189, 100%, 76%, 0.5) calc(var(--space) * 5),
+      hsla(236, 49%, 60%, 0.75) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -232,14 +247,14 @@
   --space: 10%;
   --angle: 110deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(0, 0%, 16%, 0.75) calc(var(--space)* 1),
-      hsla(0, 0%, 89%, 0.75) calc(var(--space)* 2),
-      hsla(0, 0%, 1%, 0.5) calc(var(--space)* 3),
-      hsla(0, 0%, 55%, 0.75) calc(var(--space)* 4),
-      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
-      hsla(0, 0%, 16%, 0.75) calc(var(--space)* 6));
+      hsla(0, 0%, 16%, 0.75) calc(var(--space) * 1),
+      hsla(0, 0%, 89%, 0.75) calc(var(--space) * 2),
+      hsla(0, 0%, 1%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 55%, 0.75) calc(var(--space) * 4),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 5),
+      hsla(0, 0%, 16%, 0.75) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -248,14 +263,14 @@
   --space: 10%;
   --angle: 130deg;
   background-image: repeating-linear-gradient(var(--angle),
-      hsla(0, 0%, 16%, 0.5) calc(var(--space)* 1),
-      hsla(0, 0%, 89%, 0.5) calc(var(--space)* 2),
-      hsla(0, 0%, 29%, 0.5) calc(var(--space)* 3),
-      hsla(0, 0%, 55%, 0.5) calc(var(--space)* 4),
-      hsla(0, 0%, 100%, 0.5) calc(var(--space)* 5),
-      hsla(0, 0%, 16%, 0.5) calc(var(--space)* 6));
+      hsla(0, 0%, 16%, 0.5) calc(var(--space) * 1),
+      hsla(0, 0%, 89%, 0.5) calc(var(--space) * 2),
+      hsla(0, 0%, 29%, 0.5) calc(var(--space) * 3),
+      hsla(0, 0%, 55%, 0.5) calc(var(--space) * 4),
+      hsla(0, 0%, 100%, 0.5) calc(var(--space) * 5),
+      hsla(0, 0%, 16%, 0.5) calc(var(--space) * 6));
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -274,7 +289,7 @@
       hsla(340, 100%, 85%, 0.75) calc(var(--space) * 8));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -293,7 +308,7 @@
       hsla(30, 40%, 75%, 0.75) calc(var(--space) * 8));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -312,7 +327,7 @@
       hsla(180, 100%, 85%, 0.5) calc(var(--space) * 8));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
 }
 
@@ -331,9 +346,9 @@
       hsla(125, 100%, 85%, 0.75) calc(var(--space) * 8));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .effect-redRefractor {
@@ -351,9 +366,9 @@
       hsla(0, 100%, 85%, 0.75) calc(var(--space) * 8));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .effect-slimVerticalRefractor {
@@ -366,9 +381,9 @@
       hsla(0, 0%, 100%, 0.5) calc(var(--space) * 3));
 
   background-blend-mode: color-dodge;
-  filter: brightness(calc((0*0.3) + 0.5)) contrast(2.5) saturate(1);
+  filter: brightness(calc((0 * 0.3) + 0.5)) contrast(2.5) saturate(1);
   mix-blend-mode: color-dodge;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .effect-infernoRefractor {

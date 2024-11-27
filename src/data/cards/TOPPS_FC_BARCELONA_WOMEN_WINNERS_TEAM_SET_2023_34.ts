@@ -20,6 +20,9 @@ import tfcbwwts2324_34r_2 from "../img/cards/tfcbwwts2324_34r_2.jpg";
 import tfcbwwts2324_34r_3 from "../img/cards/tfcbwwts2324_34r_3.jpg";
 import abBFcbWW_23AA34r_0 from "../img/cards/abBFcbWW_23AA34r_0.jpg";
 import abBFcbWW_23AA34r_1 from "../img/cards/abBFcbWW_23AA34r_1.jpg";
+import abBFcbWW_23AA34g_0 from "../img/cards/abBFcbWW_23AA34g_0.jpg";
+import abBFcbWW_23AA34g_1 from "../img/cards/abBFcbWW_23AA34g_1.jpg";
+import abBFcbWW_23AA34g_2 from "../img/cards/abBFcbWW_23AA34g_2.jpg";
 
 export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_34: Card = {
   id: 'topps-fc-barcelona-women-winners-team-set-2023-34',
@@ -230,6 +233,31 @@ export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34r: Card = {
     CardType.InAction,
     CardType.Autographs,
     CardType.Red,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_FC_BARCELONA_WOMEN_WINNERS_TEAM_SET_2023_AA34g: Card = {
+  id: 'topps-fc-barcelona-women-winners-team-set-2023-AA-34g',
+  number: 'AA-34g',
+  images: [
+    abBFcbWW_23AA34g_0,
+    abBFcbWW_23AA34g_1,
+    abBFcbWW_23AA34g_2,
+  ],
+  name: 'Aitana Bonmatí Action Autograph / Gold',
+  rarity: 5,
+  numbered: 1,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.GoldFoil,
+  collection: ToppsFcBarcelonaWomenWinnersTeamSet_2023,
+  year: 2023,
+  cardSection: "Assist Queen Autograph",
+  cardType: [
+    CardType.InAction,
+    CardType.Autographs,
+    CardType.Gold,
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,

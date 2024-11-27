@@ -41,6 +41,8 @@ import tcfcbmquc_2223_a_PurpleN57 from "../img/cards/tcfcbmquc_2223_a_PurpleN57.
 import tcfcbmquc_2223_a_PurpleN57_back from "../img/cards/tcfcbmquc_2223_a_PurpleN57_back.webp";
 import a57rf_2 from "../img/cards/a57rf_2.webp";
 import a57rf_3 from "../img/cards/a57rf_3.webp";
+import ab_AU_ABsf_0 from "../img/cards/ab_AU_ABsf_0.jpg";
+import ab_AU_ABsf_1 from "../img/cards/ab_AU_ABsf_1.jpg";
 
 const cardTextFront = `FC BARCELONA FEMENÍ
 
@@ -523,4 +525,35 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABpu: Card = {
   language: CardLanguage.EN,
   cardTextFront: cardTextFrontAuto,
   cardTextBack: cardTextBackAuto.replace('{{numbered}}', '13/15'),
+};
+
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_AU_ABsf: Card = {
+  customRelatedsRegexp: /(57[a-z]*|AU-AB[a-z]*)$/,
+  id: 'topps-chrome-fc-barcelona-2022-2023-AU-ABsf',
+  number: 'AU-ABsf',
+  images: [
+    ab_AU_ABsf_0,
+    ab_AU_ABsf_1,
+  ],
+  name: 'Aitana Bonmatí Action Autograph / SuperFractor',
+  rarity: 5,
+  status: CardStatus.Falti,
+  brilli: CardBrilli.SuperFractor,
+  collection: ToppsChromeFcBarcelona_2022_2023,
+  year: 2023,
+  numbered: 1,
+  cardType: [
+    CardType.BaseSet,
+    CardType.InAction,
+    CardType.SuperFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto,
+  cardTextBack: cardTextBackAuto.replace('{{numbered}}', '1/1'),
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
 };

@@ -1,4 +1,4 @@
-import { Card, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFugenzUefaClubCompetitions_2023_2024 } from "../collections";
 
 import tfgucc2324_43_0 from "../img/cards/tfgucc2324_43_0.jpg";
@@ -68,6 +68,7 @@ export const TOPPS_FUGENZ_UEFA_CLUB_COMPETITIONS_2023_2024_43rb: Card = {
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
   language: CardLanguage.EN,
+  brilli: CardBrilli.Rainbow,
   cardTextFront: `TOPPS FUGENZ
 
 05/25
