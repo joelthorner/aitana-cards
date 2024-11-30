@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardFlag, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsUefaWomenSChampionsLeagueChrome_2023_2024 } from "../collections";
 
 import c_qf1_0 from "../img/cards/c_qf1_0.jpg";
@@ -12,6 +12,8 @@ import c_qf1g_1 from "../img/cards/c_qf1g_1.jpg";
 import c_qf1o_0 from "../img/cards/c_qf1o_0.jpg";
 import c_qf1o_1 from "../img/cards/c_qf1o_1.jpg";
 import c_qf1o_2 from "../img/cards/c_qf1o_2.webp";
+import c_qf1sf_0 from "../img/cards/c_qf1sf_0.jpg";
+import c_qf1sf_1 from "../img/cards/c_qf1sf_1.jpg";
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1: Card = {
   id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-QF-1',
@@ -83,6 +85,36 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1o: Card = {
   customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
   numbered: 25,
   orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QF1sf: Card = {
+  id: 'topps-uefa-women-s-champions-league-chrome-2023-2024-QF-1sf',
+  number: 'QF-1sf',
+  images: [
+    c_qf1sf_0,
+    c_qf1sf_1,
+  ],
+  name: "Aitana Bonmatí Queens of Football / SuperFractor",
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChrome_2023_2024,
+  year: 2024,
+  cardSection: "Insert Cards",
+  cardType: [
+    CardType.QueensOfFootball,
+    CardType.SuperFractor,
+  ],
+  brilli: CardBrilli.SuperFractor,
+  productType: CardProductType.Card,
+  customRelatedsRegexp: /(QF-1[a-z]*|QA-AB[a-z]*?)$/,
+  numbered: 1,
+  orientation: CardOrientation.Vertical,
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
+  links: [
+    'https://www.youtube.com/watch?v=yWgAGIaZI6M',
+  ],
 };
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_2023_2024_QAAB: Card = {

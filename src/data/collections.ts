@@ -39,6 +39,8 @@ import tuwsclc2223 from "./img/collections/tuwsclc2223.jpg";
 import tuwsclc2324 from "./img/collections/tuwsclc2324.jpg";
 import uclw_fgc4624h_box_21_22 from "./img/collections/uclw_fgc4624h_box_21_22_b.jpg";
 import un from "./img/collections/un.jpg";
+import tucl2425 from "./img/collections/tucl2425.jpg";
+import tfcb2425 from "./img/collections/tfcb2425.jpg";
 
 export const UnlicensedCards: Collection = {
   id: 'unlicensed-cards',
@@ -307,6 +309,20 @@ export const ToppsUefaChampionsLeague_2023_2024: Collection = {
   links: [
     'https://es.topps.com/products/uefa-champions-league-stickers-23-24-sobre',
     'https://www.laststicker.com/cards/topps_uefa_champions_league_2023-2024/checklist',
+  ],
+  serie: CollectionSerie.ToppsUEFAStickers,
+};
+
+export const ToppsUefaChampionsLeague_2024_2025: Collection = {
+  id: 'topps-uefa-champions-league-2024-2025',
+  image: tucl2425,
+  name: "Topps UEFA Champions League 2024-2025",
+  description: `The collection is released on Thursday, 29 November, 2024.  Look out for parallels of the 1st Sticker and Energy stickers. There are also ultra-rare Jersey Relic Sticker Cards numbered to just 100 copies of each. There are only 12 stickers per team - 11 players and the club badge.`,
+  brand: 'Topps',
+  links: [
+    'https://cartophilic-info-exch.blogspot.com/2024/11/topps-uefa-champions-league-official.html',
+    'http://www.owacgames.com/2024/07/coleccion-cromos-stickers-topps-uefa-champions-league-2024-2025-datos-fotos-listado.html',
+    'https://www.laststicker.com/cards/topps_uefa_champions_league_2024-2025/',
   ],
   serie: CollectionSerie.ToppsUEFAStickers,
 };
@@ -600,6 +616,36 @@ export const ToppsFugenzUefaClubCompetitions_2023_2024: Collection = {
   ],
 };
 
+export const ToppsFcBarcelonaTeamSet_2024_2025: Collection = {
+  id: 'topps-fc-barcelona-team-set-2024-2025',
+  image: tfcb2425,
+  name: "Topps FC Barcelona Team Set 2024-2025",
+  description: `¡Topps® se complace en revelar el nuevo FC Barcelona Team Set de 2024/25!
+
+Adéntrate en nuevos subsets únicos y colecciona impresionantes diseños de cartas que rinden homenaje a la larga lista de jugadores emblemáticos del club, haciendo de esta colección un 'must-have'.
+
+En el set base, descubre la emocionante y multicolor Barça Rumba, que refleja la identidad y el el estilo de juego del club, mientras que el 125 rinde homenaje a la famosa historia del FC Barcelona en su 125 aniversario.
+
+Para completar el set base, busca las cartas Bona fide Baller que incluye una selección de las mejores leyendas del club y actuales promesas de la plantilla masculina y del FC Barcelona Femení.
+
+Además de la colección base, Pathway celebra jugadores del primer equipo masculino y Femení, así como a leyendas históricas, en una de cada dos cases. Además, encontrarás las impresionantes Samba Swagger, la one of one con la conexión brasileña como centro del diseño.
+
+Para completar los inserts, busca la Rainbow Flick, que rinde homenaje a los regateadores a través de leyendas, jugadores del primer equipo masculino y del FC Barcelona Femení.
+
+Eleva tu colección con cartas especiales de autógrafos en los exquisitos diseños Barça Rumba y Bonafide Ballers  Autographs.
+
+Para completar este set, encuentra la one of one Badge of Honour Autograph Relics, centrado en el escudo del FC Barcelona con llamativas tarjetas doradas.`,
+  brand: 'Topps',
+  serie: CollectionSerie.ToppsFCBarcelona,
+  links: [
+    'https://es.topps.com/products/topps-fc-barcelona-team-set-2024-25',
+    'http://www.owacgames.com/2024/11/coleccion-fc-barcelona-team-set-2024-2025-datos-fotos-listado.html',
+    'https://cartophilic-info-exch.blogspot.com/2024/11/topps-fc-barcelona-team-set-202425.html',
+    'https://es.topps.com/amfile/file/download/file/5175/',
+    'https://www.collectosk.com/2024-25-topps-fc-barcelona-official-team-set-soccer-cards/',
+  ],
+};
+
 export const collections: Collection[] = [
   PaniniCarrefourVamosSeleccion_2024,
   PaniniFifa_365_2024,
@@ -613,6 +659,7 @@ export const collections: Collection[] = [
   ToppsChromeFcBarcelona_2022_2023,
   ToppsDecoUefaClubCompetitions_2023_2024,
   ToppsDecoUefaClubCompetitions_2024_2025,
+  ToppsFcBarcelonaTeamSet_2024_2025,
   ToppsFcBarcelonaTheYearOfTheDragonChina_2023_2024,
   ToppsFcBarcelonaWomenWinnersTeamSet_2023,
   ToppsFocusFcBarcelona_2023_2024,
@@ -631,6 +678,7 @@ export const collections: Collection[] = [
   ToppsUefaChampionsLeague_2021_2022,
   ToppsUefaChampionsLeague_2022_2023,
   ToppsUefaChampionsLeague_2023_2024,
+  ToppsUefaChampionsLeague_2024_2025,
   ToppsUefaChampionsLeagueEuropaLeague_2023_2024MatchAttaxExtra,
   ToppsUefaLivingSet_2023,
   ToppsUefaWomenSChampionsLeagueChrome_2021_2022,

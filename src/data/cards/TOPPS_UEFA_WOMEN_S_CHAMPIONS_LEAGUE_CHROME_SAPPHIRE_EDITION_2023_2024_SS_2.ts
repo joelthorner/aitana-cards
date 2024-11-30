@@ -13,6 +13,9 @@ import sappSS2r_2 from "../img/cards/sappSS2r_2.jpg";
 import sappSSA_ABb_0 from "../img/cards/sappSSA_ABb_0.jpg";
 import sappSSA_ABb_1 from "../img/cards/sappSSA_ABb_1.jpg";
 import sappSSA_ABb_2 from "../img/cards/sappSSA_ABb_2.jpg";
+import sappSS2_0 from "../img/cards/sappSS2_0.jpg";
+import sappSS2_1 from "../img/cards/sappSS2_1.jpg";
+import sappSS2_2 from "../img/cards/sappSS2_2.jpg";
 
 const baseTextBack = `**SS-2**
 
@@ -58,6 +61,37 @@ www.topps.com CODE#CMP082741.
 © FC BARCELONA  
 
 **Official Licensed Product**`;
+
+export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SS_2: Card = {
+  customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
+  id: 'topps-uefa-women-s-champions-league-chrome-sapphire-edition-2023-2024-SS-2',
+  number: 'SS-2',
+  images: [
+    sappSS2_0,
+    sappSS2_1,
+    sappSS2_2,
+  ],
+  name: "Aitana Bonmatí Sapphire Selections",
+  rarity: 2,
+  status: CardStatus.Falti,
+  collection: ToppsUefaWomenSChampionsLeagueChromeSapphireEdition_2023_2024,
+  year: 2024,
+  cardSection: "FC Barcelona",
+  language: CardLanguage.EN,
+  cardType: [
+    CardType.Sapphire,
+    CardType.Selections,
+  ],
+  brilli: CardBrilli.BlueCristall,
+  productType: CardProductType.Card,
+  cardTextFront: `**TOPPS CHROME**
+
+**Sapphire Selections**
+
+*Aitana Bonmatí*`,
+  cardTextBack: baseTextBack,
+  orientation: CardOrientation.Vertical,
+};
 
 export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_2024_SS_2b: Card = {
   customRelatedsRegexp: /(SS-2[a-z]*|SSA-AB[a-z]*)$/,
