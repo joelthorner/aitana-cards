@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardLanguage, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsFocusFcBarcelona_2023_2024 } from "../collections";
 
 import tffb2324_12_0 from "../img/cards/tffb2324_12_0.jpg";
@@ -41,8 +41,48 @@ import tffb2324_12o_3 from "../img/cards/tffb2324_12o_3.webp";
 import tffb2324_12r_0 from "../img/cards/tffb2324_12r_0.jpg";
 import tffb2324_12r_1 from "../img/cards/tffb2324_12r_1.jpg";
 import tffb2324_12r_2 from "../img/cards/tffb2324_12r_2.jpg";
+import tffb2324_SAABr_2 from "../img/cards/tffb2324_SAABr_2.webp";
+import tffb2324_SAABr_3 from "../img/cards/tffb2324_SAABr_3.webp";
+import tffb2324_SAABg_2 from "../img/cards/tffb2324_SAABg_2.webp";
+import tffb2324_SAABg_3 from "../img/cards/tffb2324_SAABg_3.webp";
+
+const cardTextFrontAuto = `# AITANA  
+
+**Topps Focus Collection 2023/2024**
+
+**Autograph Issue** 
+
+**{{numbered}}**  
+
+*Topps Certified Autograph Issue*  
+
+### FC Barcelona`;
+
+const cardTextBackAuto = `# TOPPS FOCUS COLLECTION 2023/2024  
+
+## AITANA  
+
+- **Place of Birth:** Sant Pere de Ribes  
+- **Date of Birth:** 18th January 1991  
+- **Position:** Midfielder  
+- **Country of Origin:** Spain  
+
+---
+
+### Snapshot Autograph Card  
+
+From Topps Barcelona Focus 2023/24.  
+
+The signing of all autograph cards is witnessed by a Topps representative to guarantee authenticity.  
+
+---
+
+Published under license by The Topps Company Inc.  
+© & ® 2024 The Topps Company, Inc. All rights reserved.  
+Topps is a registered trademark of The Topps Company, Inc.`;
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12',
   number: 12,
   images: [
@@ -64,6 +104,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12ss',
   number: '12ss',
   images: [
@@ -87,6 +128,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12ss: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12gr',
   number: '12gr',
   images: [
@@ -112,6 +154,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12gr: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12bu',
   number: '12bu',
   images: [
@@ -137,6 +180,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12bu: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12g',
   number: '12g',
   images: [
@@ -162,6 +206,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12g: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12o',
   number: '12o',
   images: [
@@ -187,6 +232,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12o: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-12r',
   number: '12r',
   images: [
@@ -211,6 +257,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_12r: Card = {
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-SA-ABy',
   number: 'SA-ABy',
   images: [
@@ -234,9 +281,13 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABy: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto.replace('{{numbered}}', '009/150'),
+  cardTextBack: cardTextBackAuto,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-SA-ABgr',
   number: 'SA-ABgr',
   images: [
@@ -260,14 +311,20 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABgr: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto.replace('{{numbered}}', '77/99'),
+  cardTextBack: cardTextBackAuto,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-SA-ABg',
   number: 'SA-ABg',
   images: [
     tffb2324_SAABg_0,
     tffb2324_SAABg_1,
+    tffb2324_SAABg_2,
+    tffb2324_SAABg_3,
   ],
   name: 'Aitana Bonmatí Autograph / Gold Rainbow',
   rarity: 4,
@@ -284,9 +341,13 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABg: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto.replace('{{numbered}}', '39/50'),
+  cardTextBack: cardTextBackAuto,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-SA-ABo',
   number: 'SA-ABo',
   images: [
@@ -309,14 +370,20 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABo: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto.replace('{{numbered}}', '08/25'),
+  cardTextBack: cardTextBackAuto,
 };
 
 export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
+  customRelatedsRegexp: /(SA-AB[a-z]*|12[a-z]*)$/,
   id: 'topps-focus-fc-barcelona-2023-2024-SA-ABr',
   number: 'SA-ABr',
   images: [
     tffb2324_SAABr_0,
     tffb2324_SAABr_1,
+    tffb2324_SAABr_2,
+    tffb2324_SAABr_3,
   ],
   name: 'Aitana Bonmatí Autograph / Red Rainbow',
   rarity: 5,
@@ -333,4 +400,7 @@ export const TOPPS_FOCUS_FC_BARCELONA_2023_2024_SAABr: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.ShinyHolo,
   orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+  cardTextFront: cardTextFrontAuto.replace('{{numbered}}', '3/5'),
+  cardTextBack: cardTextBackAuto,
 };

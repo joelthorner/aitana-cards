@@ -132,6 +132,9 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69p: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+  links: [
+    'https://x.com/FCBarcelonaBay/status/1827704242372583627',
+  ],
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A69r: Card = {

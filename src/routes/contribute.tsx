@@ -2,7 +2,7 @@ import { CircleAlert, CircleCheck, Pencil } from "lucide-react";
 import { cards as cardsData } from "../data/cards";
 import { Card } from "../types/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type GroupedCards = Record<string, Card[]>;
 
@@ -20,6 +20,10 @@ export function ContributeItem({ cards }: { cards: Card[] }) {
   // const goToPage = (page: number) => setCurrentPage(page);
 
   const totalPages = Math.ceil(addedCards.length / 10);
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
 
   return (
     <div className="">

@@ -84,6 +84,10 @@ export default function CardDetail() {
     };
   }, [pswp]);
 
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
+
   if (!cardId) {
     return <ErrorPage />;
   }

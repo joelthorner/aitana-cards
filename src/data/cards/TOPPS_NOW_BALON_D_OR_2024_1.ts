@@ -34,6 +34,8 @@ import tnbo_A1o_0 from "../img/cards/tnbo_A1o_0.jpg";
 import tnbo_A1o_1 from "../img/cards/tnbo_A1o_1.jpg";
 import tnbo_A1g_0 from "../img/cards/tnbo_A1g_0.jpg";
 import tnbo_A1g_1 from "../img/cards/tnbo_A1g_1.jpg";
+import tnbo_1ai_2 from "../img/cards/tnbo_1ai_2.webp";
+import tnbo_1ai_3 from "../img/cards/tnbo_1ai_3.webp";
 
 export const TOPPS_NOW_BALON_D_OR_2024_1: Card = {
   id: 'topps-now-balon-d-or-2024-1',
@@ -326,6 +328,8 @@ export const TOPPS_NOW_BALON_D_OR_2024_1ai: Card = {
     tnbo_1ai_0,
     tnbo_1ai_1,
     tnbo_1_back,
+    tnbo_1ai_2,
+    tnbo_1ai_3,
   ],
   name: "2024 Ballon d'Or Féminin Winner Image Variation",
   rarity: 3,

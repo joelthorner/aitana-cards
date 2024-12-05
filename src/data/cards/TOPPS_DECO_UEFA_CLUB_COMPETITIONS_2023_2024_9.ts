@@ -30,6 +30,9 @@ import tducc_AU7p_1 from "../img/cards/tducc_AU7p_1.jpeg";
 import tducc_AU7g_0 from "../img/cards/tducc_AU7g_0.jpg";
 import tducc_AU7g_1 from "../img/cards/tducc_AU7g_1.jpg";
 import tducc_AU7g_2 from "../img/cards/tducc_AU7g_2.jpg";
+import tducc_AU7pi_0 from "../img/cards/tducc_AU7pi_0.jpg";
+import tducc_AU7pi_1 from "../img/cards/tducc_AU7pi_1.webp";
+import tducc_AU7pi_2 from "../img/cards/tducc_AU7pi_2.webp";
 
 export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_9: Card = {
   customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
@@ -204,6 +207,32 @@ export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_AU7r: Card = {
   cardType: [
     CardType.CurrentStars,
     CardType.Red,
+    CardType.Autographs,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_DECO_UEFA_CLUB_COMPETITIONS_2023_2024_AU7pi: Card = {
+  customRelatedsRegexp: /(AU7[a-z]{1,6}?|9[a-z]{1,6}?)$/,
+  id: 'topps-deco-uefa-club-competitions-2023-2024-AU7pi',
+  number: 'AU7pi',
+  images: [
+    tducc_AU7pi_0,
+    tducc_AU7pi_1,
+    tducc_AU7pi_2,
+  ],
+  numbered: 5,
+  name: 'Aitana Bonmati Current Stars Autograph / Pink',
+  rarity: 5,
+  brilli: CardBrilli.PinkFoil,
+  status: CardStatus.Falti,
+  collection: ToppsDecoUefaClubCompetitions_2023_2024,
+  year: 2023,
+  cardSection: "FC Barcelona",
+  cardType: [
+    CardType.CurrentStars,
+    CardType.Pink,
     CardType.Autographs,
   ],
   productType: CardProductType.Card,
