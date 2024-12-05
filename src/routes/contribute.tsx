@@ -2,7 +2,7 @@ import { CircleAlert, CircleCheck, Pencil } from "lucide-react";
 import { cards as cardsData } from "../data/cards";
 import { Card } from "../types/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type GroupedCards = Record<string, Card[]>;
 
@@ -20,6 +20,10 @@ export function ContributeItem({ cards }: { cards: Card[] }) {
   // const goToPage = (page: number) => setCurrentPage(page);
 
   const totalPages = Math.ceil(addedCards.length / 10);
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
 
   return (
     <div className="">
@@ -128,7 +132,7 @@ export function ContributeItem({ cards }: { cards: Card[] }) {
                   <tr>
                     <th scope="col" className="px-4 py-3 text-start">
                       <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold uppercase tracking-wide text-gray-800">Card Id</span>
+                        <span className="text-xs font-semibold uppercase tracking-wide text-gray-800">Number</span>
                       </div>
                     </th>
 
@@ -208,7 +212,7 @@ export function ContributeItem({ cards }: { cards: Card[] }) {
                       <td className="size-px">
                         <Link id={card.id} to={`/cards/${card.id}`}>
                           <span className="block px-4 py-2">
-                            <span className="block whitespace-nowrap text-[11px] text-blue-600">{card.id}</span>
+                            <span className="block whitespace-nowrap text-[11px] text-blue-600">{card.number}</span>
                             {/* <span className="block text-[11px] text-gray-600">{card.name}</span> */}
                             {/* <span className="block text-[11px] text-gray-400">{card.collection.name}</span> */}
                           </span>

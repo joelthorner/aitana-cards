@@ -7,7 +7,6 @@ import { BookPlus, FilePlus2 } from "lucide-react";
 import { LineType } from "../types/changelog";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Sticky from "react-sticky-el";
 
 export default function Changelog() {
   const badgeClassName = (value: LineType) => {
@@ -43,18 +42,16 @@ export default function Changelog() {
   };
 
   return (
-    <div className="p-2 2xl:container mx-auto">
-      <div className="bg-zinc-900 px-5 pl-3 pt-5 pb-20 rounded-t-3xl relative">
+    <div className="p-2 2xl:container mx-auto sm:p-4">
+      <div className="bg-zinc-900 px-5 pl-3 pt-5 pb-20 rounded-t-3xl relative lg:py-10 lg:px-8">
         <div className="text-xl font-medium leading-normal text-white px-2 mb-4 mt-0">Changelog</div>
 
         <InfiniteScroll dataLength={items.length} next={fetchMoreData} hasMore={hasMore} loader={"TODO carregant spinner"}>
           {items.map((day, index) => (
             <div key={format(day.date, "dd MMM, yyyy")}>
-              <Sticky scrollElement="window" wrapperClassName="z-50 bg-zinc-900/40 backdrop-blur-sm">
-                <div className="ps-2 py-1 my-2">
-                  <h3 className="text-xs font-medium uppercase text-fuchsia-500">{format(day.date, "dd MMM, yyyy")}</h3>
-                </div>
-              </Sticky>
+              <div className="ps-2 py-1 my-2">
+                <h3 className="text-xs font-medium uppercase text-fuchsia-500">{format(day.date, "dd MMM, yyyy")}</h3>
+              </div>
 
               {day.items.map((item, index) => (
                 <div className="flex gap-x-3" key={index}>
@@ -65,29 +62,31 @@ export default function Changelog() {
                   </div>
 
                   <div className="grow pt-0.5 pb-8">
-                    {item.card && (
-                      <Link to={"/cards/" + item.card.id} className="font-semibold text-zinc-100 hover:text-lime-500 flex leading-tight">
-                        {item.card.name}
-                      </Link>
-                    )}
-                    {item.collection && (
-                      <Link to={"/collections/" + item.collection.id} className="font-semibold text-zinc-100 hover:text-yellow-500 flex leading-tight">
-                        {item.collection.name}
-                      </Link>
-                    )}
-                    {item.text && (
-                      <div className="mt-2 text-sm text-zinc-400">
-                        <ReactMarkdown className="markdown text-xs" remarkPlugins={[remarkGfm]}>
-                          {item.text}
-                        </ReactMarkdown>
-                      </div>
-                    )}
-                    {/* Show collection on new added card if text not exists */}
-                    {!item.text && item.type === LineType.ADDED && item.card && (
-                      <div className="mt-2 text-sm text-zinc-400">
-                        <span className="text-xs">{item.card.collection.name}</span>
-                      </div>
-                    )}
+                    <div className="sm:flex-1">
+                      {item.card && (
+                        <Link to={"/cards/" + item.card.id} className="font-semibold text-zinc-100 hover:text-lime-500 flex leading-tight">
+                          {item.card.name}
+                        </Link>
+                      )}
+                      {item.collection && (
+                        <Link to={"/collections/" + item.collection.id} className="font-semibold text-zinc-100 hover:text-yellow-500 flex leading-tight">
+                          {item.collection.name}
+                        </Link>
+                      )}
+                      {item.text && (
+                        <div className="mt-2 text-sm text-zinc-400">
+                          <ReactMarkdown className="markdown text-xs" remarkPlugins={[remarkGfm]}>
+                            {item.text}
+                          </ReactMarkdown>
+                        </div>
+                      )}
+                      {/* Show collection on new added card if text not exists */}
+                      {!item.text && item.type === LineType.ADDED && item.card && (
+                        <div className="mt-2 text-sm text-zinc-400">
+                          <span className="text-xs">{item.card.collection.name}</span>
+                        </div>
+                      )}
+                    </div>
                     <div className="flex gap-2 mt-2 items-center">
                       <div className={`inline-flex -ml-[2px] items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[11px] leading-none font-medium ${badgeClassName(item.type)}`}>
                         {item.type}

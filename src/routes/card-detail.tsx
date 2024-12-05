@@ -19,7 +19,7 @@ import { isRelatedCard } from "../utils/isRelatedCard";
 import CardsGridStatic from "../components/cards-grid-static";
 import Teammates from "../components/card-detail/teammates";
 import CardTexts from "../components/card-detail/card-texts";
-import CardLinks from "../components/card-detail/card-links";
+import Links from "../components/links";
 import remarkGfm from "remark-gfm";
 
 interface GalleryItem {
@@ -61,19 +61,6 @@ export default function CardDetail() {
     }
   };
 
-  const scrollToClick = (id: string) => {
-    setTimeout(() => {
-      const element = document.getElementById(id);
-      if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: elementPosition - 64,
-          behavior: "smooth",
-        });
-      }
-    }, 0);
-  };
-
   const [card] = cards.filter((card) => card.id === cardId);
 
   useEffect(() => {
@@ -83,6 +70,10 @@ export default function CardDetail() {
       }
     };
   }, [pswp]);
+
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, []);
 
   if (!cardId) {
     return <ErrorPage />;
@@ -152,12 +143,6 @@ export default function CardDetail() {
               ))}
             </Swiper>
           </div>
-
-          {/* {card.teammates && (
-            <div className="hidden lg:block bg-white rounded-3xl p-4">
-              <Teammates teammates={card.teammates} id="todo"/>
-            </div>
-          )} */}
         </div>
 
         <div className="aspect-square-2 md:hidden"></div>
@@ -167,12 +152,15 @@ export default function CardDetail() {
             card.images.length > 1 ? "-mt-12" : "-mt-16"
           } lg:mt-0 lg:rounded-3xl lg:py-[10%] lg:px-[8%] lg:h-full`}
         >
-          <div className="flex flex-col gap-4">
-            <h1 className="text-xl font-medium leading-snug lg:text-2xl lg:leading-snug xl:text-3xl xl:leading-snug text-pretty">{card.name}</h1>
+          <div className="flex gap-4">
+            <div className="flex flex-col gap-4 flex-1">
+              <h1 className="text-xl font-medium leading-snug lg:text-2xl lg:leading-snug xl:text-3xl xl:leading-snug text-pretty">{card.name}</h1>
 
-            <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600">
-              {card.collection.name}
-            </Link>
+              <Link to={`/collections/${card.collection.id}`} className="text-[12px] leading-normal tracking-wide uppercase text-gray-400 hover:text-rose-600">
+                {card.collection.name}
+              </Link>
+            </div>
+            {card.collection.brand.image && <img className="hidden sm:flex h-7 shrink-0" src={card.collection.brand.image} alt={card.collection.brand.name} />}
           </div>
 
           <div className="flex gap-2 flex-wrap items-center">
@@ -220,7 +208,7 @@ export default function CardDetail() {
           </div>
 
           {card.description && (
-            <ReactMarkdown className="markdown grid gap-2 text-zinc-500 lg:mt-2" remarkPlugins={[remarkGfm]}>
+            <ReactMarkdown className="markdown grid gap-2 text-zinc-500 lg:mt-2 text-sm sm:text-base" remarkPlugins={[remarkGfm]}>
               {card.description}
             </ReactMarkdown>
           )}
@@ -233,40 +221,7 @@ export default function CardDetail() {
             <CardTexts id="mobile" className="lg:hidden" front={card.cardTextFront} back={card.cardTextBack} language={card.language} />
           )}
 
-          <CardLinks className="lg:hidden" links={card.links} />
-
-          <div className="w-full gap-x-4 mt-auto hidden lg:d-flex">
-            <button
-              onClick={() => scrollToClick("features")}
-              className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
-            >
-              Features
-            </button>
-            {(card.cardTextFront || card.cardTextBack) && (
-              <button
-                onClick={() => scrollToClick("texts")}
-                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
-              >
-                Card texts
-              </button>
-            )}
-            {card.teammates && card.teammates.length > 0 && (
-              <button
-                onClick={() => scrollToClick("teammates")}
-                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
-              >
-                Teammates
-              </button>
-            )}
-            {card.links && card.links.length && (
-              <button
-                onClick={() => scrollToClick("links")}
-                className="hover:text-rose-600 inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full"
-              >
-                Links
-              </button>
-            )}
-          </div>
+          <Links className="lg:hidden" links={card.links} />
         </div>
       </div>
 
@@ -296,7 +251,7 @@ export default function CardDetail() {
 
           {card.links && card.links.length && (
             <div id="links" className="bg-white rounded-3xl py-4 px-6">
-              <CardLinks links={card.links} className="mb-4" />
+              <Links links={card.links} className="mb-4" />
             </div>
           )}
         </div>

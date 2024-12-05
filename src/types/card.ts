@@ -77,6 +77,7 @@ export enum CardType {
   ShortPrint = 'Short Print',
   Infinite = 'Infinite',
   Selections = 'Selections',
+  BonafideBaller = 'Bonafide Baller',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
@@ -85,6 +86,7 @@ export enum CardType {
   Wave = 'Wave',
   Prism = 'Prism',
   Mojo = 'Mojo',
+  StaticFoil = 'StaticFoil',
 
   Barça = 'Barça',
   Wooden = 'Wooden',
@@ -164,7 +166,6 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   customRelatedsRegexp?: RegExp;
-  // TODO implement
   language?: CardLanguage;
   cardTextFront?: string;
   cardTextBack?: string;

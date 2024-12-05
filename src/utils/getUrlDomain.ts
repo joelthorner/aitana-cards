@@ -1,7 +1,7 @@
 export function getUrlDomain(link: string): string {
   const noProtocol = link.replace(/(^\w+:|^)\/\//, '');
 
-  const domain = noProtocol.split('/')[0];
+  const domain = noProtocol.split('/')[0].replace('www.', '');
 
   let result = domain;
 

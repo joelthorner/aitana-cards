@@ -15,6 +15,8 @@ import tabpcs_69_2 from "../img/cards/tabpcs_69_2.webp";
 import tabpcs_69pu_0 from "../img/cards/tabpcs_69pu_0.jpg";
 import tabpcs_69pu_1 from "../img/cards/tabpcs_69pu_1.jpg";
 import tabpcs_69pu_2 from "../img/cards/tabpcs_69pu_2.jpg";
+import tabpcs_69p_0 from "../img/cards/tabpcs_69p_0.jpg";
+import tabpcs_69p_1 from "../img/cards/tabpcs_69p_1.jpeg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-69',
@@ -107,6 +109,32 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69r: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_69p: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-69p',
+  number: '69p',
+  images: [
+    tabpcs_69p_0,
+    tabpcs_69p_1,
+  ],
+  name: 'Marca un gol en El Clásico en una victoria de cuartos de final Pink',
+  rarity: 5,
+  numbered: 5,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.PinkFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Pink,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+  links: [
+    'https://x.com/FCBarcelonaBay/status/1827704242372583627',
+  ],
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A69r: Card = {

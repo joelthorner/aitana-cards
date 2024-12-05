@@ -28,6 +28,9 @@ import tus23_5rb_2 from "../img/cards/tus23_5rb_2.webp";
 import tus23_A5pu_1 from "../img/cards/tus23_A5pu_1.jpeg";
 import tus23_2 from "../img/cards/tus23_2.webp";
 import tus23_3 from "../img/cards/tus23_3.webp";
+import tus23_A5rb_0 from "../img/cards/tus23_A5rb_0.jpg";
+import tus23_A5rb_1 from "../img/cards/tus23_A5rb_1.webp";
+import tus23_A5rb_2 from "../img/cards/tus23_A5rb_2.webp";
 
 const cardTextBack = `**AITANA BONMATÍ**  
 
@@ -307,5 +310,30 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5r: Card = {
   ],
   productType: CardProductType.Card,
   numbered: 10,
+  orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2022_2023_A5rb: Card = {
+  id: 'topps-simplicidad-uefa-club-competitions-2022-2023-A-5rb',
+  number: 'A-5rb',
+  images: [
+    tus23_A5rb_0,
+    tus23_A5rb_1,
+    tus23_A5rb_2,
+  ],
+  name: 'Aitana Bonmatí Autograph / Rainbow',
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsSimplicidadUefaClubCompetitions_2022_2023,
+  year: 2023,
+  cardSection: 'FC Barcelona',
+  brilli: CardBrilli.Rainbow,
+  cardType: [
+    CardType.Filmstrip,
+    CardType.Autographs,
+    CardType.Rainbow,
+  ],
+  productType: CardProductType.Card,
+  numbered: 5,
   orientation: CardOrientation.Vertical,
 };
