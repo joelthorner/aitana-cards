@@ -1,3 +1,5 @@
+import { Brand } from "./brand";
+
 export enum CollectionSerie {
   _NONE = '_none',
   PaniniFamily = 'Panini Family',
@@ -25,7 +27,7 @@ export interface Collection {
   image?: string;
   name: string;
   description?: string;
-  brand: string;
+  brand: Brand;
   links: string[];
   serie?: CollectionSerie;
   isComplete?: boolean;

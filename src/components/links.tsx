@@ -1,8 +1,8 @@
 import { SquareArrowOutUpRight } from "lucide-react";
-import { getUrlDomain } from "../../utils/getUrlDomain";
-import { useClassName } from "../../hooks/useClassName";
+import { getUrlDomain } from "../utils/getUrlDomain";
+import { useClassName } from "../hooks/useClassName";
 
-export default function CardLinks({ links, className }: { links?: string[]; className?: string }) {
+export default function Links({ links, className }: { links?: string[]; className?: string }) {
   const containerClassName = useClassName([className, "flex flex-col mt-4"]);
 
   if (!links || links.length === 0) {

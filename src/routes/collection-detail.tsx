@@ -9,6 +9,8 @@ import { useRef } from "react";
 import { MoveLeft, SquareArrowOutUpRight } from "lucide-react";
 import { getUrlDomain } from "../utils/getUrlDomain";
 import remarkGfm from "remark-gfm";
+import Links from "../components/links";
+import CardsGridStatic from "../components/cards-grid-static";
 
 interface GalleryItem {
   src: string;
@@ -49,146 +51,143 @@ export default function CollectionDetail() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 aspect-[768/530] z-10" id={"gallery-" + collectionId} ref={galleryRef}>
-        <button className="absolute top-0 left-0 z-40 text-white py-4 px-4 drop-shadow-md" onClick={() => navigate(-1)}>
-          <MoveLeft />
-        </button>
-        <a href={collection.image} target="_blank" rel="noreferrer" className="transition cursor-pointer" onClick={(event) => initPhotoSwipe(event, 0)}>
-          <div className="relative">
-            <img src={collection.image} alt={collection.name} className="size-full" />
-          </div>
-        </a>
-      </div>
-      <div className="aspect-[768/530]"></div>
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4 lg:p-4 lg:items-start 2xl:container 2xl:mx-auto">
+        <div className="fixed top-0 left-0 right-0 aspect-[768/530] z-10 md:relative lg:h-auto" id={"gallery-" + collectionId} ref={galleryRef}>
+          <button className="absolute top-0 left-0 z-40 text-white py-4 px-4 drop-shadow-md" onClick={() => navigate(-1)}>
+            <MoveLeft />
+          </button>
+          <a href={collection.image} target="_blank" rel="noreferrer" className="transition cursor-pointer" onClick={(event) => initPhotoSwipe(event, 0)}>
+            <div className="relative">
+              <img src={collection.image} alt={collection.name} className="size-full lg:rounded-3xl" />
+            </div>
+          </a>
+        </div>
+        <div className="aspect-[768/530] md:hidden"></div>
 
-      <div className="bg-white px-5 pt-6 pb-20 rounded-t-3xl -mt-5 flex flex-col gap-4 relative z-20">
-        <h1 className="text-xl font-medium leading-normal">{collection.name}</h1>
-        <div className="flex gap-2 flex-wrap items-center">
-          <div className="hs-tooltip">
-            <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-              {collectionCards.length} cards
-            </span>
-            <span
-              className="hs-tooltip-content font-normal text-xs hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
-              role="tooltip"
-            >
-              Total cards found
-            </span>
+        <div className="bg-white px-5 pt-6 pb-20 rounded-t-3xl -mt-5 flex flex-col gap-4 relative z-20 lg:mt-0 lg:rounded-3xl lg:py-[10%] lg:px-[8%] lg:h-full">
+          <div className="flex gap-4">
+            <div className="flex flex-col gap-4 flex-1">
+              <h1 className="text-xl font-medium leading-snug lg:text-2xl lg:leading-snug xl:text-3xl xl:leading-snug text-pretty">{collection.name}</h1>
+            </div>
+            {collection.brand.image && <img className="hidden sm:flex h-7 shrink-0" src={collection.brand.image} alt={collection.brand.name} />}
           </div>
-          {collection.serie && (
+
+          <div className="flex gap-2 flex-wrap items-center">
             <div className="hs-tooltip">
               <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-                {collection.serie}
+                {collectionCards.length} cards
               </span>
               <span
                 className="hs-tooltip-content font-normal text-xs hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
                 role="tooltip"
               >
-                Collection serie
+                Total cards found
               </span>
             </div>
-          )}
-        </div>
 
-        {collection.description && collection.description.length > 0 && (
-          <ReactMarkdown className="markdown grid gap-2 text-sm mt-4 text-zinc-500" remarkPlugins={[remarkGfm]}>
-            {collection.description}
-          </ReactMarkdown>
-        )}
-
-        {collection.links.length > 0 && (
-          <div className="flex flex-col mt-4">
-            {collection.links?.map((link) => (
-              <a
-                key={link}
-                className="flex items-center gap-x-3.5 py-3 px-4 text-xs font-medium border border-gray-200 text-rose-600 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg hover:pl-6 transition-all"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SquareArrowOutUpRight size={16} className="shrink-0" />
-                {getUrlDomain(link)}
-              </a>
-            ))}
+            {collection.serie && (
+              <div className="hs-tooltip">
+                <span className="hs-tooltip-toggle inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                  {collection.serie}
+                </span>
+                <span
+                  className="hs-tooltip-content font-normal text-xs hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-white rounded-md"
+                  role="tooltip"
+                >
+                  Collection serie
+                </span>
+              </div>
+            )}
           </div>
-        )}
+
+          {collection.description && collection.description.length > 0 && (
+            <ReactMarkdown className="markdown grid gap-2 text-zinc-500 mt-4 text-sm sm:text-base" remarkPlugins={[remarkGfm]}>
+              {collection.description}
+            </ReactMarkdown>
+          )}
+
+          {collection.links.length > 0 && <Links links={collection.links} />}
+        </div>
       </div>
 
-      <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-6">
+      <div className="bg-zinc-950 rounded-t-3xl px-4 pt-6 pb-20 relative z-20 flex flex-col gap-16 -mt-6 lg:mt-0">
         <div>
-          <div className="mb-4 pl-[2px] font-medium text-white text-center">Collection cards</div>
           {collectionCards.length > 0 && (
-            <div className="bg-zinc-900 border border-zinc-950 rounded-xl shadow-sm overflow-hidden">
-              <table className="min-w-full divide-y divide-zinc-950 text-xs">
-                <thead className="bg-zinc-900">
-                  <tr>
-                    <th scope="col" className="ps-3 py-2 text-start">
-                      <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold tracking-wide text-zinc-200">#</span>
-                      </div>
-                    </th>
-
-                    <th scope="col" className="px-3 py-2 text-start">
-                      <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold tracking-wide text-zinc-200">Image</span>
-                      </div>
-                    </th>
-
-                    <th scope="col" className="w-1/2 py-2 text-start">
-                      <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold tracking-wide text-zinc-200">Name</span>
-                      </div>
-                    </th>
-
-                    <th scope="col" className="pe-3 py-2 text-start">
-                      <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold tracking-wide text-zinc-200">Status</span>
-                      </div>
-                    </th>
-
-                    <th scope="col" className="px-3 py-2 text-start">
-                      <div className="flex items-center gap-x-2">
-                        <span className="text-xs font-semibold tracking-wide text-zinc-200">Rarity</span>
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-
-                <tbody className="divide-y divide-zinc-950 text-[10px] text-zinc-300">
-                  {collectionCards.map((collectionCard) => (
-                    <tr key={collectionCard.id}>
-                      <td className="size-px whitespace-nowrap p-0">
-                        <div className="ps-3 py-2">
-                          <code className="text-yellow-500">{collectionCard.number}</code>
-                        </div>
-                      </td>
-                      <td className="size-px whitespace-nowrap p-0">
-                        <div className="px-3 py-2">
-                          {collectionCard.images.length > 0 && (
-                            <Link to={"/cards/" + collectionCard.id}>
-                              <div className="aspect-[5/7] relative w-9">
-                                <img className="absolute inset-0 object-cover rounded-lg" src={collectionCard.images[0]} alt={collectionCard.name} />
-                              </div>
-                            </Link>
-                          )}
-                        </div>
-                      </td>
-                      <td className="size-px w-1/2 p-0">
-                        <div className="py-2">
-                          <Link to={"/cards/" + collectionCard.id}>{collectionCard.name}</Link>
-                        </div>
-                      </td>
-                      <td className="size-px whitespace-nowrap p-0">
-                        <div className="pe-3 py-2 flex justify-center">{getCardStatusIcon(collectionCard.status)}</div>
-                      </td>
-                      <td className="size-px whitespace-nowrap p-0">
-                        <div className="px-3 py-2 flex justify-center">{collectionCard.rarity}/5</div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div>
+              <div className="mb-4 font-medium text-white text-center lg:text-lg xl:mb-6 xl:text-xl">Collection cards</div>
+              <CardsGridStatic cards={collectionCards} />
             </div>
+            // <div className="bg-zinc-900 border border-zinc-950 rounded-xl shadow-sm overflow-hidden">
+            //   <table className="min-w-full divide-y divide-zinc-950 text-xs">
+            //     <thead className="bg-zinc-900">
+            //       <tr>
+            //         <th scope="col" className="ps-3 py-2 text-start">
+            //           <div className="flex items-center gap-x-2">
+            //             <span className="text-xs font-semibold tracking-wide text-zinc-200">#</span>
+            //           </div>
+            //         </th>
+
+            //         <th scope="col" className="px-3 py-2 text-start">
+            //           <div className="flex items-center gap-x-2">
+            //             <span className="text-xs font-semibold tracking-wide text-zinc-200">Image</span>
+            //           </div>
+            //         </th>
+
+            //         <th scope="col" className="w-1/2 py-2 text-start">
+            //           <div className="flex items-center gap-x-2">
+            //             <span className="text-xs font-semibold tracking-wide text-zinc-200">Name</span>
+            //           </div>
+            //         </th>
+
+            //         <th scope="col" className="pe-3 py-2 text-start">
+            //           <div className="flex items-center gap-x-2">
+            //             <span className="text-xs font-semibold tracking-wide text-zinc-200">Status</span>
+            //           </div>
+            //         </th>
+
+            //         <th scope="col" className="px-3 py-2 text-start">
+            //           <div className="flex items-center gap-x-2">
+            //             <span className="text-xs font-semibold tracking-wide text-zinc-200">Rarity</span>
+            //           </div>
+            //         </th>
+            //       </tr>
+            //     </thead>
+
+            //     <tbody className="divide-y divide-zinc-950 text-[10px] text-zinc-300">
+            //       {collectionCards.map((collectionCard) => (
+            //         <tr key={collectionCard.id}>
+            //           <td className="size-px whitespace-nowrap p-0">
+            //             <div className="ps-3 py-2">
+            //               <code className="text-yellow-500">{collectionCard.number}</code>
+            //             </div>
+            //           </td>
+            //           <td className="size-px whitespace-nowrap p-0">
+            //             <div className="px-3 py-2">
+            //               {collectionCard.images.length > 0 && (
+            //                 <Link to={"/cards/" + collectionCard.id}>
+            //                   <div className="aspect-[5/7] relative w-9">
+            //                     <img className="absolute inset-0 object-cover rounded-lg" src={collectionCard.images[0]} alt={collectionCard.name} />
+            //                   </div>
+            //                 </Link>
+            //               )}
+            //             </div>
+            //           </td>
+            //           <td className="size-px w-1/2 p-0">
+            //             <div className="py-2">
+            //               <Link to={"/cards/" + collectionCard.id}>{collectionCard.name}</Link>
+            //             </div>
+            //           </td>
+            //           <td className="size-px whitespace-nowrap p-0">
+            //             <div className="pe-3 py-2 flex justify-center">{getCardStatusIcon(collectionCard.status)}</div>
+            //           </td>
+            //           <td className="size-px whitespace-nowrap p-0">
+            //             <div className="px-3 py-2 flex justify-center">{collectionCard.rarity}/5</div>
+            //           </td>
+            //         </tr>
+            //       ))}
+            //     </tbody>
+            //   </table>
+            // </div>
           )}
         </div>
       </div>

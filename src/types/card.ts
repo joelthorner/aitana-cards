@@ -166,7 +166,6 @@ export type Card = {
   numbered?: number;
   cardSection?: string;
   customRelatedsRegexp?: RegExp;
-  // TODO implement
   language?: CardLanguage;
   cardTextFront?: string;
   cardTextBack?: string;

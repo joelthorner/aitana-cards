@@ -20,7 +20,6 @@ export default function DataTable({ card, className }: { card: Card; className?:
   return (
     <>
       <ul className={containerClassName}>
-        {/*  xl:grid xl:grid-cols-2 xl:gap-x-4 */}
         <li className="py-3 [&:not(:last-child)]:border-b border-zinc-100">
           <div className="flex gap-x-3">
             <span className="flex border border-zinc-100 rounded-lg shrink-0 size-[38px] items-center justify-center mt-1">
@@ -221,7 +220,7 @@ export default function DataTable({ card, className }: { card: Card; className?:
             </span>
             <span className="flex-grow">
               <span className="font-medium text-zinc-800 block">Brand</span>
-              <span className="text-xs text-zinc-500 block">{card.collection.brand}</span>
+              <span className="text-xs text-zinc-500 block">{card.collection.brand.name}</span>
             </span>
           </div>
         </li>

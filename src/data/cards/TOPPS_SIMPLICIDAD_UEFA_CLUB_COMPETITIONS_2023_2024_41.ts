@@ -15,6 +15,7 @@ import toppsSimplicidad_23_24Aitana41rb_2 from "../img/cards/toppsSimplicidad_23
 import toppsSimplicidad_23_24Aitana41rb_3 from "../img/cards/toppsSimplicidad_23_24Aitana41rb_3.webp";
 import toppsSimplicidad_23_24Aitana_autograpthRed from "../img/cards/toppsSimplicidad_23_24Aitana_autograpthRed.jpg";
 import toppsSimplicidad_23_24Aitana_autograpthRed_2 from "../img/cards/451600600_1181376919733201_6458277606198802199_n.jpeg";
+import ts2324AAr from "../img/cards/ts2324AAr.jpg";
 import toppsSimplicidad_23_24Aitana41bu from "../img/cards/toppsSimplicidad_23_24Aitana41bu.jpg";
 import toppsSimplicidad_23_24Aitana41bu_2 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_2.webp";
 import toppsSimplicidad_23_24Aitana41bu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41bu_3.webp";
@@ -173,6 +174,7 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41r: Card = {
   images: [
     toppsSimplicidad_23_24Aitana_autograpthRed,
     toppsSimplicidad_23_24Aitana_autograpthRed_2,
+    ts2324AAr,
   ],
   name: 'Aitana Bonmatí Dynamic / Autograph / Red',
   rarity: 5,
