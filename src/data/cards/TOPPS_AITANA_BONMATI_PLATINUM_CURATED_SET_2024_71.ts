@@ -1,4 +1,4 @@
-import { Card, CardBrilli, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
+import { Card, CardBrilli, CardFlag, CardOrientation, CardProductType, CardStatus, CardType } from "../../types/card";
 import { ToppsAitanaBonmatiPlatinumCuratedSet_2024 } from "../collections";
 import tabpcs_A71p_0 from "../img/cards/tabpcs_116p_0.jpg";
 import tabpcs_A71p_1 from "../img/cards/tabpcs_116p_1.webp";
@@ -22,6 +22,8 @@ import tabpcs_71p_2 from "../img/cards/tabpcs_71p_2.jpg";
 import tabpcs_71bu_0 from "../img/cards/tabpcs_71bu_0.jpg";
 import tabpcs_71bu_1 from "../img/cards/tabpcs_71bu_1.jpg";
 import tabpcs_71bu_2 from "../img/cards/tabpcs_71bu_2.jpg";
+import tabpcs_71r_0 from "../img/cards/tabpcs_71r_0.jpg";
+import tabpcs_71r_1 from "../img/cards/tabpcs_71r_1.jpg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-71',
@@ -90,6 +92,33 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71pu: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71r: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-71r',
+  number: '71r',
+  images: [
+    tabpcs_71r_0,
+    tabpcs_71r_1,
+  ],
+  name: 'Marca en la final para ganar su tercera UEFA Women’s Champions League - Red',
+  rarity: 5,
+  numbered: 10,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.RedFoil,
+  cardType: [
+    CardType.BaseSet,
+    CardType.Red,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+  flags: [
+    CardFlag.MissingBackImage,
+    CardFlag.PoorImage,
+  ],
 };
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71p: Card = {

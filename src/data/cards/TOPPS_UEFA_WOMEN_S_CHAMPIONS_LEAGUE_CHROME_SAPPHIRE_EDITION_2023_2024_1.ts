@@ -201,7 +201,7 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
     sapp1p_1,
     sapp1p_2,
   ],
-  name: "Aitana Bonmatí Papradascha / Sapphire",
+  name: "Aitana Bonmatí Padparadscha / Sapphire",
   rarity: 5,
   numbered: 1,
   status: CardStatus.Falti,
@@ -212,9 +212,9 @@ export const TOPPS_UEFA_WOMEN_S_CHAMPIONS_LEAGUE_CHROME_SAPPHIRE_EDITION_2023_20
   cardType: [
     CardType.BaseSet,
     CardType.Sapphire,
-    CardType.Papradascha,
+    CardType.Padparadscha,
   ],
-  brilli: CardBrilli.Papradascha,
+  brilli: CardBrilli.Padparadscha,
   productType: CardProductType.Card,
   cardTextFront: `1/1
 

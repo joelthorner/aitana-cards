@@ -32,7 +32,7 @@ export enum CardBrilli {
   AquaPrism = 'aquaPrism',
   FractedGoldEffect = 'fractedGoldEffect',
   TurquoiseFoil = 'turquoiseFoil',
-  Papradascha = 'papradascha',
+  Padparadscha = 'padparadscha',
   SuperFractor = 'superFractor',
 };
 
@@ -101,7 +101,7 @@ export enum CardType {
   RoseGold = 'Rose Gold',
   Red = 'Red',
   Pink = 'Pink',
-  Papradascha = 'Papradascha',
+  Padparadscha = 'Padparadscha',
   Purple = 'Purple',
   Blue = 'Blue',
   Aqua = 'Aqua',
