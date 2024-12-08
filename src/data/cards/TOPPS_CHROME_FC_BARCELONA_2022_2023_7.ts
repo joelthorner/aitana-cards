@@ -20,6 +20,9 @@ import ab_7CFcb_22_23_gold_refractor_2 from "../img/cards/ab_7CFcb_22_23_gold_re
 import tcfcb_7o_0 from "../img/cards/tcfcb_7o_0.jpg";
 import tcfcb_7o_1 from "../img/cards/tcfcb_7o_1.jpg";
 import tcfcb_7o_2 from "../img/cards/tcfcb_7o_2.jpg";
+import tcfcb_7sf_0 from "../img/cards/tcfcb_7sf_0.jpg";
+import tcfcb_7sf_1 from "../img/cards/tcfcb_7sf_1.jpg";
+import tcfcb_7sf_2 from "../img/cards/tcfcb_7sf_2.jpg";
 
 export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7: Card = {
   customRelatedsRegexp: /(?<!AA)-7[a-z]*$/,
@@ -146,7 +149,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7bu: Card = {
     ab_7CFcb_22_23_blue_back,
   ],
   name: 'Aitana Bonmatí Base card / Blue',
-  rarity: 4,
+  rarity: 3,
   status: CardStatus.Falti,
   brilli: CardBrilli.BlueTopps,
   collection: ToppsChromeFcBarcelona_2022_2023,
@@ -196,7 +199,7 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
     tcfcb_7o_2,
   ],
   name: 'Aitana Bonmatí Base card / Orange X-Fractor',
-  rarity: 5,
+  rarity: 4,
   status: CardStatus.Falti,
   collection: ToppsChromeFcBarcelona_2022_2023,
   year: 2023,
@@ -210,4 +213,32 @@ export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7o: Card = {
   productType: CardProductType.Card,
   brilli: CardBrilli.OrangeFoil,
   orientation: CardOrientation.Vertical,
+};
+
+export const TOPPS_CHROME_FC_BARCELONA_2022_2023_7sf: Card = {
+  customRelatedsRegexp: /(?<!AA)-7[a-z]*$/,
+  id: 'topps-chrome-fc-barcelona-2022-2023-7sf',
+  number: '7sf',
+  images: [
+    tcfcb_7sf_0,
+    tcfcb_7sf_1,
+    tcfcb_7sf_2,
+  ],
+  name: 'Aitana Bonmatí Base card / SuperFractor',
+  rarity: 5,
+  status: CardStatus.Falti,
+  collection: ToppsChromeFcBarcelona_2022_2023,
+  year: 2023,
+  numbered: 1,
+  cardType: [
+    CardType.BaseSet,
+    CardType.SuperFractor,
+  ],
+  cardSection: 'FC Barcelona',
+  productType: CardProductType.Card,
+  brilli: CardBrilli.SuperFractor,
+  orientation: CardOrientation.Vertical,
+  links: [
+    'https://goldin.co/item/2023-topps-chrome-fc-barcelona-superfractor-7-aitana-bonmati-1-1o4vfn',
+  ],
 };
