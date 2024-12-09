@@ -78,6 +78,7 @@ export enum CardType {
   Infinite = 'Infinite',
   Selections = 'Selections',
   BonafideBaller = 'Bonafide Baller',
+  Pathway = 'Pathway',
 
   Refractor = 'Refractor',
   XFractor = 'X-Fractor',
