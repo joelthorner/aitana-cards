@@ -6,6 +6,10 @@ import { Hit } from "./hit";
 const appId = process.env.REACT_APP_ALGOLIA_SEARCH_APP_ID ?? "";
 const apiKey = process.env.REACT_APP_ALGOLIA_SEARCH_API_KEY ?? "";
 
+if (!appId || !apiKey) {
+  throw new Error("Algolia App ID o API Key no estan configurats. Comprova les variables d'entorn.");
+}
+
 const searchClient = algoliasearch(appId, apiKey);
 
 export const Search = () => {
