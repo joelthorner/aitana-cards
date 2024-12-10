@@ -24,6 +24,10 @@ import tabpcs_71bu_1 from "../img/cards/tabpcs_71bu_1.jpg";
 import tabpcs_71bu_2 from "../img/cards/tabpcs_71bu_2.jpg";
 import tabpcs_71r_0 from "../img/cards/tabpcs_71r_0.jpg";
 import tabpcs_71r_1 from "../img/cards/tabpcs_71r_1.jpg";
+import tabpcs_A71g_0 from "../img/cards/tabpcs_A71g_0.jpg";
+import tabpcs_A71g_1 from "../img/cards/tabpcs_A71g_1.jpeg";
+import tabpcs_A71g_2 from "../img/cards/tabpcs_A71g_2.jpeg";
+import tabpcs_A71g_3 from "../img/cards/tabpcs_A71g_3.jpeg";
 
 export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_71: Card = {
   id: 'topps-aitana-bonmati-platinum-curated-set-2024-71',
@@ -216,4 +220,35 @@ export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A71p: Card = {
   ],
   productType: CardProductType.Card,
   orientation: CardOrientation.Horizontal,
+};
+
+export const TOPPS_AITANA_BONMATI_PLATINUM_CURATED_SET_2024_A71g: Card = {
+  id: 'topps-aitana-bonmati-platinum-curated-set-2024-A-71g',
+  number: 'A-71g',
+  images: [
+    tabpcs_A71g_0,
+    tabpcs_A71g_1,
+    tabpcs_A71g_2,
+    tabpcs_A71g_3,
+  ],
+  name: 'Marca en la final para ganar su tercera UEFA Women’s Champions League Autographs / Gold',
+  rarity: 5,
+  numbered: 1,
+  status: CardStatus.Falti,
+  collection: ToppsAitanaBonmatiPlatinumCuratedSet_2024,
+  year: 2024,
+  cardSection: 'Mejores Momentos',
+  brilli: CardBrilli.GoldFoil,
+  cardType: [
+    CardType.Autographs,
+    CardType.Gold,
+  ],
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Horizontal,
+  links: [
+    'https://x.com/Ripping1Handed/status/1823447890972566014',
+  ],
+  flags: [
+    CardFlag.MissingBackImage,
+  ],
 };

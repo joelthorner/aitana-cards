@@ -11,6 +11,9 @@ import tfcbts2425_47bu_2 from "../img/cards/tfcbts2425_47bu_2.webp";
 import tfcbts2425_47fs_0 from "../img/cards/tfcbts2425_47fs_0.jpg";
 import tfcbts2425_47fs_1 from "../img/cards/tfcbts2425_47fs_1.webp";
 import tfcbts2425_47fs_2 from "../img/cards/tfcbts2425_47fs_2.webp";
+import tfcbts2425_47g_0 from "../img/cards/tfcbts2425_47g_0.jpg";
+import tfcbts2425_47g_1 from "../img/cards/tfcbts2425_47g_1.webp";
+import tfcbts2425_47g_2 from "../img/cards/tfcbts2425_47g_2.webp";
 
 export const TOPPS_FC_BARCELONA_TEAM_SET_2024_2025_47: Card = {
   id: 'topps-fc-barcelona-team-set-2024-2025-47',
@@ -76,6 +79,30 @@ export const TOPPS_FC_BARCELONA_TEAM_SET_2024_2025_47bu: Card = {
     CardType.BonafideBaller,
   ],
   brilli: CardBrilli.BlueTopps,
+  productType: CardProductType.Card,
+  orientation: CardOrientation.Vertical,
+  language: CardLanguage.EN,
+};
+
+export const TOPPS_FC_BARCELONA_TEAM_SET_2024_2025_47g: Card = {
+  id: 'topps-fc-barcelona-team-set-2024-2025-47g',
+  number: '47g',
+  images: [
+    tfcbts2425_47g_0,
+    tfcbts2425_47g_1,
+    tfcbts2425_47g_2,
+  ],
+  name: 'Aitana Barça Bonafide Baller Gold',
+  rarity: 5,
+  numbered: 1,
+  status: CardStatus.Falti,
+  collection: ToppsFcBarcelonaTeamSet_2024_2025,
+  year: 2024,
+  cardType: [
+    CardType.Gold,
+    CardType.BonafideBaller,
+  ],
+  brilli: CardBrilli.GoldFoil,
   productType: CardProductType.Card,
   orientation: CardOrientation.Vertical,
   language: CardLanguage.EN,

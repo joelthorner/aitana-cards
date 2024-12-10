@@ -1,6 +1,6 @@
 {
   "name": "aitana-cards",
-  "version": "2.0.30",
+  "version": "2.0.31",
   "private": true,
   "dependencies": {
     "@algolia/client-search": "^5.10.2",
