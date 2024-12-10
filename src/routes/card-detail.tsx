@@ -152,7 +152,7 @@ export default function CardDetail() {
             card.images.length > 1 ? "-mt-12" : "-mt-16"
           } lg:mt-0 lg:rounded-3xl lg:py-[10%] lg:px-[8%] lg:h-full`}
         >
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-baseline">
             <div className="flex flex-col gap-4 flex-1">
               <h1 className="text-xl font-medium leading-snug lg:text-2xl lg:leading-snug xl:text-3xl xl:leading-snug text-pretty">{card.name}</h1>
 

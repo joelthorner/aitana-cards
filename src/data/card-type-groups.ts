@@ -66,7 +66,7 @@ export const CardTypeGroupToppsCards: CardType[][] = [
     CardType.Orange,
     CardType.RoseGold,
     CardType.Red,
-    CardType.Papradascha,
+    CardType.Padparadscha,
     CardType.Pink,
     CardType.Purple,
     CardType.Blue,
