@@ -19,72 +19,67 @@ const Changelog = React.lazy(() => import("./routes/changelog"));
 const CardDetail = React.lazy(() => import("./routes/card-detail"));
 const Contribute = React.lazy(() => import("./routes/contribute"));
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Root />,
-      errorElement: <ErrorPage />,
-      children: [
-        {
-          path: "",
-          element: <Home />,
-        },
-        {
-          path: "/collections",
-          element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <Collections />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/collections/:collectionId",
-          element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <CollectionDetail />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/changelog",
-          element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <Changelog />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/cards",
-          element: <Home />,
-        },
-        {
-          path: "/cards/:cardId",
-          element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <CardDetail />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/contribute",
-          element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <Contribute />
-            </Suspense>
-          ),
-        },
-        // {
-        //   path: "/algolia",
-        //   element: <Algolia />,
-        // },
-      ],
-    },
-  ],
+const router = createBrowserRouter([
   {
-    basename: "/aitana-cards",
-  }
-);
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "/collections",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Collections />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/collections/:collectionId",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <CollectionDetail />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/changelog",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Changelog />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/cards",
+        element: <Home />,
+      },
+      {
+        path: "/cards/:cardId",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <CardDetail />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/contribute",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Contribute />
+          </Suspense>
+        ),
+      },
+      // {
+      //   path: "/algolia",
+      //   element: <Algolia />,
+      // },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
