@@ -6,7 +6,6 @@ import toppsSimplicidad_23_24Aitana_back from "../img/cards/toppsSimplicidad_23_
 import toppsSimplicidad_23_24Aitana41pu from "../img/cards/toppsSimplicidad_23_24Aitana41pu.jpg";
 import toppsSimplicidad_23_24Aitana41pu_2 from "../img/cards/toppsSimplicidad_23_24Aitana41pu_2.webp";
 import toppsSimplicidad_23_24Aitana41pu_3 from "../img/cards/toppsSimplicidad_23_24Aitana41pu_3.webp";
-import toppsSimplicidad_23_24Aitana_autograpth from "../img/cards/toppsSimplicidad_23_24Aitana_autograpth.jpg";
 import toppsSimplicidad_23_24Aitana41gr from "../img/cards/toppsSimplicidad_23_24Aitana41gr.jpg";
 import toppsSimplicidad_23_24Aitana41gr_2 from "../img/cards/toppsSimplicidad_23_24Aitana41gr_2.webp";
 import toppsSimplicidad_23_24Aitana41gr_3 from "../img/cards/toppsSimplicidad_23_24Aitana41gr_3.webp";
@@ -24,6 +23,9 @@ import tducc_9r_6 from "../img/cards/tducc_9r_6.webp";
 import tsucc2324_41r_0 from "../img/cards/tsucc2324_41r_0.jpg";
 import tsucc2324_41r_1 from "../img/cards/tsucc2324_41r_1.webp";
 import tsucc2324_41r_2 from "../img/cards/tsucc2324_41r_2.webp";
+import tsucc2324_141g_0 from "../img/cards/tsucc2324_141g_0.jpg";
+import tsucc2324_141g_1 from "../img/cards/tsucc2324_141g_1.jpg";
+import tsucc2324_141g_2 from "../img/cards/tsucc2324_141g_2.jpg";
 
 export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_41: Card = {
   orientation: CardOrientation.Horizontal,
@@ -197,7 +199,9 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41g: Card = {
   id: 'topps-simplicidad-uefa-club-competitions-2023-2024-A-41g',
   number: 'A-41g',
   images: [
-    toppsSimplicidad_23_24Aitana_autograpth,
+    tsucc2324_141g_0,
+    tsucc2324_141g_1,
+    tsucc2324_141g_2,
   ],
   name: 'Aitana Bonmatí Dynamic / Autograph / Gold',
   rarity: 5,
@@ -212,5 +216,8 @@ export const TOPPS_SIMPLICIDAD_UEFA_CLUB_COMPETITIONS_2023_2024_A41g: Card = {
     CardType.Dynamic,
     CardType.Autographs,
     CardType.Gold,
+  ],
+  links: [
+    'https://www.reddit.com/r/soccercard/comments/1ci0rl2/barcelona_cards_for_sale/',
   ],
 };
